@@ -1,6 +1,6 @@
 <template>
   <div>
     <!-- Remove this component to get started! -->
-    <NuxtWelcome />
+    <h1>First nuxt 3 deploy</h1>
   </div>
 </template>
