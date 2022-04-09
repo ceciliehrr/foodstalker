@@ -1,10 +1,32 @@
 :root {
-    --background-color: white;
+    /* Main */
+    --background-color: #FAFAFA;
     --text-color: black;
+    /* Recipecards */
+    --card-background-color: white;
+    --card-text-color: black;
+    --card-theme-circle: #FBD3C4;
+    --card-title-color: #4a686d;
+    --card-date-color: rgb(74, 104, 109, 0.9);
+    --card-shadow: rgba(0, 0, 0, 0.3);
+    --dark-pink: #CE8884;
+    --light-pink: #FBD3C4;
+    --vanilla: #FDF8E8;
+    --light-green: #BED5AE;
+    --font-color-green: #4a686d;
+    --font-purple: #746165;
+    --hover-pink: #cfaebf;
 }
 
 [data-theme="darkMode"] {
-    /* Variables for dark mode */
-    --background-color: black;
-    --text-color: white;
+    /* Main */
+    --background-color: #121212;
+    --text-color: rgb(255, 255, 255, 0.8);
+    /* Recipecards */
+    --card-background-color: #1F1B24;
+    --card-text-color: rgb(255, 255, 255, 0.8);
+    --card-date-color: rgb(255, 255, 255, 0.6);
+    --card-theme-circle: #BED5AE;
+    --card-title-color: rgb(255, 255, 255, 0.9);
+    --card-shadow: rgba(255, 255, 255, 0.3);
 }
