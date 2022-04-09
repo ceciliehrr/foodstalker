@@ -1,0 +1,10 @@
+:root {
+    --background-color: white;
+    --text-color: black;
+}
+
+[data-theme="darkMode"] {
+    /* Variables for dark mode */
+    --background-color: black;
+    --text-color: white;
+}
