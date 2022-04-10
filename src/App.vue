@@ -13,11 +13,16 @@ import Navigation from "./components/Navigation.vue";
 </template>
 
 <style>
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@300;400&display=swap");
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: var(--text-color);
   background-color: var(--background-color);
 }
