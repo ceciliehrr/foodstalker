@@ -1,4 +1,5 @@
 <template>
+  <Menubar></Menubar>
   <button @click="toggleTheme" aria-label="Toggle themes">
     <span>Toggle Theme</span>
   </button>
