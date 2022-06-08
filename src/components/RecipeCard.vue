@@ -3,30 +3,39 @@
     <Card>
       <template #header>
         <div class="emoji-container">
-          <img
-            alt="user header"
-            src="https://foodstalker.b-cdn.net/2022/chili-skrei/DSC02431-2.jpg"
-          />
-          <div class="emoji">🌽</div>
+          <img :src="recipe.imageurl" :alt="recipe.alt" loading="lazy" />
+          <div class="emoji" v-if="recipe.category === 'hverdag'">
+            <span>&#127836;</span>
+          </div>
+          <div class="emoji" v-else-if="recipe.category === 'helg'">
+            <span>&#127790;</span>
+          </div>
+          <div class="emoji" v-else-if="recipe.category === 'søtt'">
+            <span>&#127849;</span>
+          </div>
+          <div class="emoji" v-else-if="recipe.category === 'tilbehør'">
+            <span>&#127805;</span>
+          </div>
+          <div class="emoji" v-else-if="recipe.category === 'turmat'">
+            <span>&#128293;</span>
+          </div>
         </div>
       </template>
 
       <template #title>
-        <p class="text-left">Advanced Card with long tekst</p>
+        <p class="text-left">{{ recipe.title }}</p>
       </template>
+
       <template #content>
         <p class="text-left">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore
-          sed consequuntur error repudiandae numquam deserunt quisquam repellat
-          libero asperiores earum nam nobis, culpa ratione quam perferendis
-          esse, cupiditate neque quas!
+          {{ recipe.description }}
         </p>
       </template>
       <template #footer>
-        <p class="text-right">Dato: 02.02.2022</p>
+        <p class="text-right">{{ recipe.date }}</p>
       </template>
-    </Card></a
-  >
+    </Card>
+  </a>
 </template>
 
 <script lang="ts">
@@ -34,13 +43,22 @@ import { defineComponent } from "vue";
 
 export default defineComponent({
   name: "RecipeCard",
+  props: {
+    recipe: Object,
+  },
 });
 </script>
 
 <style lang="scss" scoped>
+img {
+  width: 100%;
+  height: 35vw;
+  object-fit: cover;
+}
 .p-card {
   background-color: var(--card-background-color);
   color: var(--card-text-color);
+  height: 100%;
 }
 .p-card:hover,
 .p-card:focus,
@@ -49,6 +67,13 @@ export default defineComponent({
   opacity: 0.9;
   filter: alpha(opacity=20);
   /* For IE8 and earlier */
+}
+:deep(.p-card-content) {
+  max-height: 100px;
+  min-height: 100px;
+}
+:deep(.p-card-body) {
+  height: 100%;
 }
 :deep(.p-card-title) {
   color: var(--card-title-color);
