@@ -1,0 +1,50 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import SeachCards from '../components/SeachCards.astro';
+---
+
+<Layout title="Welcome to Astro.">
+	<main>
+		<div class="flex flex-col m-4 md:flex-row md:m-8 content-center">
+			<div class="grid place-content-center md:basis-2/4 ">
+				<h1 class="text-2xl font-sans">FOODSTALKER</h1>
+				<p>TEsteer</p>
+			</div>
+			<div class="md:basis-2/4">
+				<img class="object-fill h-auto w-450" src="https://foodstalker.b-cdn.net/sitron2.jpg" alt="">
+			</div>
+		</div>
+		<div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+			<Card href="https://docs.astro.build/" title="Documentation"
+				body="Learn how Astro works and explore the official API docs." />
+			<Card href="https://astro.build/integrations/" title="Integrations"
+				body="Supercharge your project with new frameworks and libraries." />
+			<Card href="https://docs.astro.build/" title="Documentation"
+				body="Learn how Astro works and explore the official API docs." />
+			<Card href="https://astro.build/integrations/" title="Integrations"
+				body="Supercharge your project with new frameworks and libraries." />
+			<Card href="https://docs.astro.build/" title="Documentation"
+				body="Learn how Astro works and explore the official API docs." />
+			<Card href="https://astro.build/integrations/" title="Integrations"
+				body="Supercharge your project with new frameworks and libraries." />
+		</div>
+		<ul class="list-none">
+			<li>
+				<SeachCards />
+			</li>
+			<li>
+				<SeachCards />
+			</li>
+			<!-- ... -->
+		</ul>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1em;
+		max-width: 1000px;
+	}
+</style>

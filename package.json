@@ -1,23 +1,20 @@
 {
-    "name": "foodstalker",
+    "name": "@example/basics",
+    "version": "0.0.1",
     "private": true,
-    "version": "0.0.0",
     "scripts": {
-        "dev": "vite",
-        "build": "vue-tsc --noEmit && vite build",
-        "preview": "vite preview"
-    },
-    "dependencies": {
-        "primeflex": "^3.1.3",
-        "primeicons": "^5.0.0",
-        "primevue": "^3.12.4",
-        "vue": "^3.2.25"
+        "dev": "astro dev",
+        "start": "astro dev",
+        "build": "astro build",
+        "preview": "astro preview"
     },
     "devDependencies": {
-        "@vitejs/plugin-vue": "^2.3.1",
-        "sass": "^1.50.0",
-        "typescript": "^4.6.3",
-        "vite": "^2.9.1",
-        "vue-tsc": "^0.29.8"
+        "@astrojs/tailwind": "^0.2.5",
+        "@astrojs/vue": "^0.1.5",
+        "astro": "^1.0.7",
+        "vue": "^3.2.37"
+    },
+    "dependencies": {
+        "sass": "^1.54.5"
     }
 }
