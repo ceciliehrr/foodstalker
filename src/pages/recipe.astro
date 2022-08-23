@@ -1,0 +1,32 @@
+---
+---
+
+<main>
+    <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4">
+        <div class="recipe__main-content col-span-1 md:col-span-3 lg:col-span-3">
+            <h1>Tittel</h1>
+            <p>TEsteer</p>
+        </div>
+        <div class="recipe__side-content md:col-span-1 lg:col-span-1">
+            Ingredienser
+        </div>
+    </div>
+</main>
+
+<style lang="scss" scoped>
+    main {
+        margin: auto;
+        padding: 1em;
+        max-width: 1000px;
+    }
+
+    .recipe {
+        &__main-content {
+            background-color: pink;
+        }
+
+        &__side-content {
+            background-color: blue;
+        }
+    }
+</style>
