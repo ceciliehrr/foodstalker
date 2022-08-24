@@ -2,10 +2,9 @@
 <template>
     <Popover class="relative bg-vanilla">
         <div class="max-w-7xl mx-auto px-4 sm:px-6">
-            <div
-                class="flex justify-between items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
-                <div class="flex justify-start lg:w-0 lg:flex-1">
-                    <a href="#">
+            <div class="flex justify-between items-center border-b-2 border-black py-6 md:justify-start md:space-x-10">
+                <div class="flex center">
+                    <a href="/">
                         <span class="sr-only">Workflow</span>
                         <img class="h-8 w-auto sm:h-10" src="../assets/logo/lime.png" alt="" />
                     </a>
@@ -168,6 +167,7 @@
 </template>
 
 <script lang="ts" setup>
+
 import { Popover, PopoverButton, PopoverGroup, PopoverPanel } from '@headlessui/vue'
 import {
     BookmarkAltIcon,

@@ -1,26 +1,45 @@
 ---
 export interface Props {
-	title: string,
-	body: string,
-	href: string,
+  title: string;
+  body: string;
+  href: string;
 }
 const { href, title, body } = Astro.props;
 ---
 
-<a href="/recipe"
-	class="flex flex-col items-center bg-white rounded-lg shadow-md lg:flex-row lg:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-	<img class="object-cover w-full h-96 rounded-t-lg lg:h-full lg:w-48 lg:rounded-none lg:rounded-l-lg"
-		src="https://foodstalker.b-cdn.net/2022/chili-skrei/DSC02435.jpg" alt="">
+<a
+  href="/recipe"
+  class="flex flex-col items-center bg-white rounded-lg shadow-md lg:flex-row lg:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+>
+  <img
+    class="object-cover w-full h-96 rounded-t-lg lg:h-full lg:w-48 lg:rounded-none lg:rounded-l-lg"
+    src="https://foodstalker.b-cdn.net/2022/chili-skrei/DSC02435.jpg"
+    alt=""
+  />
 
-	<div class="flex flex-col justify-between p-4 leading-normal">
-		<div class="relative w-full h-2 md:h-10 visible md:invisible"> <div class="grid place-items-center absolute bg-pink-100 right-2 -top-10 md:-top-2 md:right-35 w-12 h-12 rounded-full shadow-lg"><span>&#127836;</span></div></div> 
-		<h5 class="mb-2 text-xl font-bold tracking-tight dark:text-white">Noteworthy technology
-			acquisitions 2021 </h5>
-		<p class="mb-3 font-normal dark:text-gray-400">Here are the biggest enterprise technology
-			acquisitions of 2021 so far, in reverse chronological order.</p>
-			<div class="relative w-full h-2 md:h-10 invisible md:visible"> <div class="grid place-items-center absolute bg-pink-100  md:bottom-0 md:right-0 w-12 h-12 rounded-full shadow-lg"><span>&#127790;</span></div></div> 
-	</div>
-
+  <div class="flex flex-col justify-between p-4 leading-normal">
+    <div class="relative w-full h-2 md:h-10 visible md:invisible">
+      <div
+        class="grid place-items-center absolute bg-green-100 right-2 -top-10 md:-top-2 md:right-35 w-10 h-10 rounded-full shadow-lg"
+      >
+        <span>&#127836;</span>
+      </div>
+    </div>
+    <h5 class="mb-2 text-xl font-bold tracking-tight dark:text-white">
+      Noteworthy technology acquisitions 2021
+    </h5>
+    <p class="mb-3 font-normal dark:text-gray-400">
+      Here are the biggest enterprise technology acquisitions of 2021 so far, in
+      reverse chronological order.
+    </p>
+    <div class="relative w-full h-2 md:h-10 invisible md:visible">
+      <div
+        class="grid place-items-center absolute bg-green-100 md:bottom-0 md:right-0 w-10 h-10 rounded-full shadow-lg"
+      >
+        <span>&#127790;</span>
+      </div>
+    </div>
+  </div>
 </a>
 <style>
 

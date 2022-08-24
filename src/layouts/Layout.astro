@@ -1,4 +1,6 @@
 ---
+import Navbar from "../components/Navbar.vue";
+import Footer from "../components/Footer.vue";
 export interface Props {
   title: string;
 }
@@ -8,44 +10,48 @@ const { title } = Astro.props as Props;
 
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <title>{title}</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
-  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-  <title>{title}</title>
-</head>
+  <body class="bg-vanilla text-black font-mono flex flex-col min-h-screen">
+    <Navbar client:load />
+    <slot />
+    <Footer />
+    <style>
+      :root {
+      }
 
-<body class="bg-vanilla text-black font-mono">
-  <slot />
-</body>
+      html {
+        font-family: system-ui, sans-serif;
+      }
 
+      body {
+        margin: 0;
+      }
+      main {
+        margin: auto;
+        padding: 1em;
+        max-width: 1000px;
+      }
+      :global(h1) {
+        font-size: var(--font-size-xl);
+      }
+
+      :global(h2) {
+        font-size: var(--font-size-lg);
+      }
+
+      :global(code) {
+        font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
+          DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+      }
+    </style>
+  </body>
 </html>
-
-<style>
-  :root {
-
-  }
-
-  html {
-    font-family: system-ui, sans-serif;
-
-  }
-
-  body {
-    margin: 0;
-  }
-
-  :global(h1) {
-    font-size: var(--font-size-xl);
-  }
-
-  :global(h2) {
-    font-size: var(--font-size-lg);
-  }
-
-  :global(code) {
-    font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-      Bitstream Vera Sans Mono, Courier New, monospace;
-  }
-</style>
