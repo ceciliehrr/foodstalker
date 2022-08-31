@@ -1,5 +1,5 @@
 <template>
-    <footer class="bg-vanilla text-center mt-auto">
+    <footer class="footer bg-vanilla text-center mt-auto">
         <div class="max-w-7xl mx-auto px-4 sm:px-6">
             <div class="border-t-2 mt-10 border-black py-6">
                 <img class="object-center w-12 h-12" src="../assets/logo/logo-pink.png" aria-hidden="true"
@@ -18,5 +18,11 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+.footer {
+    img {
+        display: inline;
+        margin-bottom: 4px;
+    }
+}
 </style>

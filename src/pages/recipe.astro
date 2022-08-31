@@ -1,5 +1,39 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import ImageGallery from "../components/ImageGallery.vue";
+
+const images = [
+  {
+    orientation: "landscape",
+    url: "https://foodstalker.b-cdn.net/2022/tacokrydder/IMG_6582.jpg",
+    alt: "hvitløkspulver i morter",
+  },
+  {
+    orientation: "portrait",
+    url: "https://foodstalker.b-cdn.net/2022/tacokrydder/DSC02874.jpg",
+    alt: "Krydder i bolle",
+  },
+  {
+    orientation: "portrait",
+    url: "https://foodstalker.b-cdn.net/2022/tacokrydder/DSC02856.jpg",
+    alt: "Løk i tørkemaskin",
+  },
+  {
+    orientation: "landscape",
+    url: "https://foodstalker.b-cdn.net/2022/tacokrydder/IMG_6617.jpg",
+    alt: "purreaske",
+  },
+  {
+    orientation: "landscape",
+    url: "https://foodstalker.b-cdn.net/2022/tacokrydder/DSC02896-2.jpg",
+    alt: "tacokrydder på glass",
+  },
+  {
+    orientation: "portrait",
+    url: "https://foodstalker.b-cdn.net/2022/tacokrydder/DSC02891.jpg",
+    alt: "",
+  },
+];
 ---
 
 <Layout title="Oppskrift">
@@ -13,6 +47,7 @@ import Layout from "../layouts/Layout.astro";
         Ingredienser
       </div>
     </div>
+    <ImageGallery images={images} />
   </main>
 </Layout>
 <style lang="scss" scoped>
