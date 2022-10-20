@@ -13,18 +13,18 @@
                     </svg>
                 </div>
                 <input type="text" id="voice-search"
-                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5"
-                    placeholder="Search Mockups, Logos, Design Templates..." required />
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-pink-300 focus:border-pink-300 block w-full pl-10 p-2.5"
+                    placeholder="Søk etter no digg.." required />
             </div>
             <button type="submit"
-                class="inline-flex items-center bg-white py-2.5 px-3 ml-2 text-sm font-medium text-black bg-blue-700 rounded-lg border hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                class="inline-flex items-center bg-white py-2.5 px-3 ml-2 text-sm font-medium text-black bg-blue-700 rounded-lg border hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-pink-300 hover:bg-pink-300 hover:text-white dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-pink-300">
                 Søk
             </button>
         </form>
     </div>
 </template>
 
-<script>
+<script lang="ts">
 export default {};
 </script>
 

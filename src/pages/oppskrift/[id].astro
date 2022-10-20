@@ -1,0 +1,60 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import ImageGallery from "../../components/ImageGallery.vue";
+import getRecipes from "../../data/recipes.json";
+
+export async function getStaticPaths() {
+  const recipes = getRecipes.recipes;
+  return recipes.map((post) => {
+    return {
+      params: { id: post.id },
+      props: { post },
+    };
+  });
+}
+
+const { id } = Astro.params;
+const { post } = Astro.props;
+
+const images = post.images;
+const mainImage = post.imageurl;
+---
+
+<Layout title="Oppskrift">
+  <main class="flex-grow w-full mt-6 md:mt-10">
+    <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4">
+      <div class="recipe__main-content col-span-1 md:col-span-3 lg:col-span-3">
+        <h1
+          class="text-green-200 w-2/3 text-4xl md:text-4xl lg:text-5xl font-semibold"
+        >
+          {post.title}
+        </h1>
+        <img class="recipe__main-image mb-10 mt-10" src={mainImage} alt="" />
+        <p>{id} {post.title}</p>
+      </div>
+      <div class="recipe__side-content md:col-span-1 lg:col-span-1 md:mt-">
+        <h2 class="text-2xl">Ingredienser</h2>
+      </div>
+    </div>
+    <ImageGallery images={images} />
+  </main>
+</Layout>
+<style lang="scss" scoped>
+  .recipe {
+    &__main-content {
+    }
+
+    &__side-content {
+    }
+    &__main-image {
+      @screen md {
+        max-width: 80% !important;
+      }
+    }
+  }
+  main {
+    margin: auto;
+    padding: 1em;
+    max-width: 1000px;
+  }
+</style>

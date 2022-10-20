@@ -1,0 +1,59 @@
+---
+import getRecipes from "../../data/recipes.json";
+
+import Layout from "../../layouts/Layout.astro";
+import Card from "../../components/cards/Card.astro";
+//import SearchBar from "../../components/SearchBar.vue";
+
+// emojis
+import hverdagEmoji from "../../assets/hverdag.svg";
+import helgEmoji from "../../assets/taco.svg";
+import turEmoji from "../../assets/tur.svg";
+
+import Grid from "../../components/Grid.astro";
+
+import Divider from "../../components/Divider.astro";
+
+export async function getStaticPaths() {
+  const recipes = getRecipes.recipes;
+  return recipes.map((post) => {
+    return {
+      params: { kategori: post.category },
+      props: { post },
+    };
+  });
+}
+const { post } = Astro.props;
+
+const recipes = getRecipes.recipes;
+
+const sortedRecipes = recipes
+  .slice(0)
+  .sort((a, b) => new Date(b.date).valueOf() - new Date(a.date).valueOf());
+
+const filteredRecipe = sortedRecipes.filter(function (recipes) {
+  return recipes.category === post.category;
+});
+---
+
+<Layout title={post.category}>
+  <div class="grid justify-center">
+    <img src="" alt="" aria-hidden="true" />
+  </div>
+
+  <Divider text={post.category} />
+  <Grid>
+    {
+      filteredRecipe.map((data) => (
+        <Card
+          href={"/oppskrift/" + data.id}
+          title={data.title}
+          emoji="🍜"
+          image={data.imageurl}
+          description={data.description}
+          date={data.date}
+        />
+      ))
+    }
+  </Grid>
+</Layout>

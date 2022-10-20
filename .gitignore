@@ -18,3 +18,7 @@ pnpm-debug.log*
 
 # macOS-specific files
 .DS_Store
+
+# HTTPS Proxy certificates
+localhost.pem
+localhost-key.pem

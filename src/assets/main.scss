@@ -1,0 +1,24 @@
+html {
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+main {
+  margin: auto;
+  padding: 1em;
+  max-width: 1000px;
+}
+:global(h1) {
+  font-size: var(--font-size-xl);
+}
+
+:global(h2) {
+  font-size: var(--font-size-lg);
+}
+
+:global(code) {
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}

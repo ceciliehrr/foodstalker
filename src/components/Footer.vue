@@ -7,12 +7,11 @@
                 <p class="text-s font-semibold">Made with <span>💖</span> from Pete&Cecilie </p>
                 <p class="text-xs"> Copyright © 2020-2022 All Rights Reserved Cecilie Hansen Rørås.</p>
             </div>
-
         </div>
     </footer>
 </template>
 
-<script>
+<script lang="ts">
 export default {
 
 }
