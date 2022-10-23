@@ -11,7 +11,7 @@ import Divider from "../components/Divider.astro";
 import IntroBanner from "../components/IntroBanner.astro";
 
 import getRecipes from "../data/recipes.json";
-const recipes = getRecipes.recipes;
+const recipes = getRecipes;
 const story = await getStory("home");
 
 const sortedRecipes = recipes
@@ -19,7 +19,7 @@ const sortedRecipes = recipes
   .sort((a, b) => new Date(b.date).valueOf() - new Date(a.date).valueOf());
 ---
 
-<Layout title="Foodstalker" story={story}>
+<Layout title="Foodstalker">
   <IntroBanner />
   <SearchBar />
   <Divider text="Siste oppskrifter" />

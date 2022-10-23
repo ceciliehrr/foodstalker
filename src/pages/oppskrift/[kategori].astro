@@ -15,7 +15,7 @@ import Grid from "../../components/Grid.astro";
 import Divider from "../../components/Divider.astro";
 
 export async function getStaticPaths() {
-  const recipes = getRecipes.recipes;
+  const recipes = getRecipes;
   return recipes.map((post) => {
     return {
       params: { kategori: post.category },
@@ -25,7 +25,7 @@ export async function getStaticPaths() {
 }
 const { post } = Astro.props;
 
-const recipes = getRecipes.recipes;
+const recipes = getRecipes;
 
 const sortedRecipes = recipes
   .slice(0)

@@ -1,0 +1,20 @@
+{
+    "ingredients": {
+        "Salat": [
+            {
+                "quantity": "4 stk",
+                "name": "tomat"
+            },
+            {
+                "quantity": "4 ss",
+                "name": "pepper"
+            }
+        ],
+        "Kjøttet": [
+            {
+                "quantity": "4 stk",
+                "name": "nakkekotelett"
+            }
+        ]
+    }
+}
