@@ -1,6 +1,6 @@
 {
     "ingredients": {
-        "Salat": [
+        "": [
             {
                 "quantity": "4 stk",
                 "name": "tomat"
@@ -10,10 +10,14 @@
                 "name": "pepper"
             }
         ],
-        "Kjøttet": [
+        "Mangosalat": [
             {
                 "quantity": "4 stk",
-                "name": "nakkekotelett"
+                "name": "mango"
+            },
+            {
+                "quantity": "4 stk",
+                "name": "chili"
             }
         ]
     }

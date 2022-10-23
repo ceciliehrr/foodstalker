@@ -1,34 +1,40 @@
 <template>
     <h2 class="text-2xl">Ingredienser</h2>
+
     <div v-for="(ingredient, title) in ingredients" :key=title>
         <div v-if="title">
             <div class="text-xl">{{title}}</div>
-            <ol>
-                <li class="mb-1" v-for="values in ingredient" :key="values.name">
-                    <label class="checkbox__container">
-                        <input type="checkbox" />
-                        <span class="checkmark"></span>
-                        <strong class="checkbox__text">
-                            {{values.quantity}}
-                        </strong>
-                        <span class="checkbox__text ml-3"> {{values.name}}</span>
-                    </label>
-                </li>
-            </ol>
         </div>
+        <ol>
+            <li class="mb-1" v-for="values in ingredient" :key="values.name">
+                <label class="checkbox__container">
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                    <strong class="checkbox__text" v-html="values.quantity">
+
+                    </strong>
+                    <span class="checkbox__text" v-html="values.name"> </span>
+                </label>
+            </li>
+        </ol>
+
     </div>
 
 </template>
 
 <script lang="ts">
-import testRecipe from "../data/test.json";
+//import getRecipe from "../data/recipes.json";
 
 export default {
-    components: {
+    props: {
+        ingredients: {
+            type: Object,
+            required: true,
+        },
     },
     data() {
         return {
-            ingredients: testRecipe.ingredients,
+            //ingredient: this.ingredients.map((ing) => ing.ingredients),
         }
     }
 }

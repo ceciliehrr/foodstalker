@@ -23,7 +23,7 @@ const mainImage = post.imageurl;
 
 <Layout title="Oppskrift">
   <main class="flex-grow w-full mt-6 md:mt-10">
-    <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-6">
+    <div class="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-6">
       <div class="recipe__main-content col-span-1 md:col-span-3 lg:col-span-4">
         <h1
           class="text-green-200 w-2/3 text-4xl md:text-4xl lg:text-5xl font-semibold"
@@ -31,12 +31,13 @@ const mainImage = post.imageurl;
           {post.title}
         </h1>
         <img class="recipe__main-image mb-10 mt-10" src={mainImage} alt="" />
+        <p>{id} {post.title}</p>
       </div>
-      <div class="recipe__side-content md:col-span-1 lg:col-span-2 md:mt-10">
-        <Ingredients />
+      <div class="recipe__side-content md:col-span-3 lg:col-span-2 md:mt-10">
+        <Ingredients ingredients={post.ingredients} />
       </div>
     </div>
-    <p>{id} {post.title}</p>
+
     <ImageGallery images={images} />
   </main>
 </Layout>
