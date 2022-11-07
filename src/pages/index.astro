@@ -29,7 +29,7 @@ const sortedRecipes = recipes
         <Card
           href={"/oppskrift/" + data.id}
           title={data.title}
-          emoji="🍜"
+          emoji={data.category}
           image={data.imageurl}
           description={data.description}
           date={data.date}

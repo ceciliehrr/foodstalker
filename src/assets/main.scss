@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@300;400&display=swap");
+
 html {
-  font-family: system-ui, sans-serif;
+  font-family: Roboto Mono, monospace, system-ui, sans-serif;
 }
 
 body {
@@ -21,4 +23,8 @@ main {
 :global(code) {
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+.bannerTitle {
+  font-family: Roboto;
 }

@@ -3,12 +3,14 @@ import getRecipes from "../../data/recipes.json";
 
 import Layout from "../../layouts/Layout.astro";
 import Card from "../../components/cards/Card.astro";
-//import SearchBar from "../../components/SearchBar.vue";
+import SearchBar from "../../components/SearchBar.vue";
 
 // emojis
 import hverdagEmoji from "../../assets/hverdag.svg";
 import helgEmoji from "../../assets/taco.svg";
 import turEmoji from "../../assets/tur.svg";
+import tilbehorEmoji from "../../assets/tilbehor.svg";
+import sottEmoji from "../../assets/donut.svg";
 
 import Grid from "../../components/Grid.astro";
 
@@ -34,21 +36,45 @@ const sortedRecipes = recipes
 const filteredRecipe = sortedRecipes.filter(function (recipes) {
   return recipes.category === post.category;
 });
+
+function emoji_category(cat) {
+  switch (cat) {
+    case "hverdag":
+      return hverdagEmoji;
+    case "helg":
+      return helgEmoji;
+    case "søtt":
+      return sottEmoji;
+    case "tilbehør":
+      return tilbehorEmoji;
+    case "turmat":
+      return turEmoji;
+    default:
+      return hverdagEmoji;
+  }
+}
 ---
 
 <Layout title={post.category}>
   <div class="grid justify-center">
-    <img src="" alt="" aria-hidden="true" />
+    <img
+      class="w-16 md:w-32 lg:w-48"
+      src={emoji_category(post.category)}
+      alt=""
+      aria-hidden="true"
+    />
   </div>
 
   <Divider text={post.category} />
+  <SearchBar />
+
   <Grid>
     {
       filteredRecipe.map((data) => (
         <Card
           href={"/oppskrift/" + data.id}
           title={data.title}
-          emoji="🍜"
+          emoji={data.category}
           image={data.imageurl}
           description={data.description}
           date={data.date}

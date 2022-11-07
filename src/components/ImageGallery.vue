@@ -12,9 +12,9 @@ export default {
         images: {
             type: Array,
             required: true,
-        },
-    },
-};
+        } as any, // the typecast causes TS to stop trying to match the type
+    }
+}
 </script>
 
 <style lang="scss" scoped>

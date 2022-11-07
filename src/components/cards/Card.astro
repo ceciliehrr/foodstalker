@@ -30,6 +30,23 @@ function convertDate(date_str) {
   );
 }
 const convertedDate = convertDate(date);
+
+function emoji_category(cat) {
+  switch (cat) {
+    case "hverdag":
+      return "🍜";
+    case "helg":
+      return "🌮";
+    case "søtt":
+      return "🍩";
+    case "tilbehør":
+      return "🌽";
+    case "turmat":
+      return "🔥";
+    default:
+      return "🍜";
+  }
+}
 ---
 
 <a
@@ -48,7 +65,7 @@ const convertedDate = convertDate(date);
       <div
         class="grid place-items-center absolute bg-green-100 right-2 -top-10 md:-top-2 md:right-35 w-10 h-10 rounded-full shadow-lg"
       >
-        <span>{emoji}</span>
+        <span>{emoji_category(emoji)}</span>
       </div>
     </div>
     <div class="flex flex-1 flex-col">
@@ -67,7 +84,7 @@ const convertedDate = convertDate(date);
       <div
         class="grid place-items-center absolute bg-green-100 md:bottom-0 md:right-0 w-10 h-10 rounded-full shadow-lg"
       >
-        <span>{emoji}</span>
+        <span>{emoji_category(emoji)}</span>
       </div>
     </div>
   </div>

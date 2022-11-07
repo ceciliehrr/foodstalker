@@ -1,7 +1,7 @@
 <template>
     <h2 class="text-2xl">Ingredienser</h2>
 
-    <div v-for="(ingredient, title) in ingredients" :key=title>
+    <div class="ingredients" v-for="(ingredient, title) in ingredients" :key=title>
         <div v-if="title">
             <div class="text-xl">{{title}}</div>
         </div>
