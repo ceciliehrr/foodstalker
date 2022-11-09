@@ -1,12 +1,11 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/cards/Card.astro";
-import SmallCards from "../components/cards/SmallCards.astro";
+
 import SearchBar from "../components/SearchBar.vue";
 
 import { getStory } from "../../utils/storyblock";
-import Grid from "../components/Grid.astro";
-import ListGrid from "../components/ListGrid.astro";
+import Grid from "../components/Grid.vue";
 import Divider from "../components/Divider.astro";
 import IntroBanner from "../components/IntroBanner.astro";
 
@@ -21,7 +20,7 @@ const sortedRecipes = recipes
 
 <Layout title="Foodstalker">
   <IntroBanner />
-  <SearchBar />
+  <SearchBar client:load />
   <Divider text="Siste oppskrifter" />
   <Grid>
     {
@@ -37,20 +36,4 @@ const sortedRecipes = recipes
       ))
     }
   </Grid>
-
-  <ListGrid>
-    <!-- ... -->
-    <li>
-      <SmallCards />
-    </li>
-    <li>
-      <SmallCards />
-    </li>
-    <li>
-      <SmallCards />
-    </li>
-    <li>
-      <SmallCards />
-    </li>
-  </ListGrid>
 </Layout>

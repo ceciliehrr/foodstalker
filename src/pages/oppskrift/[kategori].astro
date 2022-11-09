@@ -12,7 +12,7 @@ import turEmoji from "../../assets/tur.svg";
 import tilbehorEmoji from "../../assets/tilbehor.svg";
 import sottEmoji from "../../assets/donut.svg";
 
-import Grid from "../../components/Grid.astro";
+import Grid from "../../components/Grid.vue";
 
 import Divider from "../../components/Divider.astro";
 
@@ -66,7 +66,7 @@ function emoji_category(cat) {
   </div>
 
   <Divider text={post.category} />
-  <SearchBar />
+  <SearchBar client:load />
 
   <Grid>
     {

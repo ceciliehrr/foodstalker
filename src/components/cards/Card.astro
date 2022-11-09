@@ -8,7 +8,6 @@ export interface Props {
   date: string;
 }
 const { href, title, emoji, image, description, date } = Astro.props;
-
 var months = [
   "Januar",
   "Februar",
@@ -30,7 +29,6 @@ function convertDate(date_str) {
   );
 }
 const convertedDate = convertDate(date);
-
 function emoji_category(cat) {
   switch (cat) {
     case "hverdag":

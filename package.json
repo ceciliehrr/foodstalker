@@ -18,9 +18,11 @@
         "vue": "^3.2.39"
     },
     "dependencies": {
+        "@astrojs/image": "^0.11.1",
         "@headlessui/vue": "^1.6.7",
         "@heroicons/vue": "^1.0.6",
         "@storyblok/js": "^1.8.5",
-        "sass": "^1.54.7"
+        "sass": "^1.54.7",
+        "sharp": "^0.31.2"
     }
 }

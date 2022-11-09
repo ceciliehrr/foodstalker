@@ -3,6 +3,7 @@ import Layout from "../../layouts/Layout.astro";
 import ImageGallery from "../../components/ImageGallery.vue";
 import Ingredients from "../../components/Ingredients.vue";
 import getRecipes from "../../data/recipes.json";
+import { Picture } from "@astrojs/image/components";
 
 export async function getStaticPaths() {
   const recipes = getRecipes;
@@ -30,7 +31,17 @@ const mainImage = post.imageurl;
         >
           {post.title}
         </h1>
-        <img class="recipe__main-image mb-10 mt-10" src={mainImage} alt="" />
+        <Picture
+          class="recipe__main-image mb-10 mt-10"
+          src={mainImage}
+          alt=""
+          widths={[1024]}
+          aspectRatio="10:16"
+          sizes="(max-width: 800px) 100vw, 800px"
+          fit="cover"
+          format="webp"
+        />
+
         <p>{id} {post.title}</p>
       </div>
       <div class="recipe__side-content md:col-span-3 lg:col-span-2 md:mt-10">
