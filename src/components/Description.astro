@@ -1,0 +1,10 @@
+---
+export interface Props {
+  longdescription?: string;
+  description?: string;
+}
+const { description, longdescription } = Astro.props;
+---
+
+<p>{description}</p>
+<p>{longdescription}</p>

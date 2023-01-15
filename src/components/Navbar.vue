@@ -59,22 +59,23 @@
                         </div>
                         <div class="mt-6">
                             <nav class="grid gap-y-8">
-                                <a href="#" class="text-base font-medium text-gray-500">
+                                <a href="/oppskrift/hverdag/" class="text-base font-medium text-gray-500">
                                     <span>&#127836;</span> Hverdag
                                 </a>
-                                <a href="#" class="text-base font-medium text-gray-500">
+                                <a href="/oppskrift/helg/" class="text-base font-medium text-gray-500">
                                     <span>&#127790;</span> Helg
                                 </a>
-                                <a href="#" class="text-base font-medium text-gray-500">
+                                <a href="/oppskrift/søtt/" class="text-base font-medium text-gray-500">
                                     <span>&#127849;</span> Søtt
                                 </a>
-                                <a href="#" class="text-base font-medium text-gray-500">
+                                <a href="/oppskrift/tilbehør/" class="text-base font-medium text-gray-500">
                                     <span>&#127805;</span> Tilbehør
                                 </a>
-                                <a href="#" class="text-base font-medium text-gray-500">
+                                <a href="/oppskrift/turmat/" class="text-base font-medium text-gray-500">
                                     <span>&#128293;</span> Turmat
                                 </a>
-                                <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">
+                                <a href="/oppskrift/bonus/"
+                                    class="text-base font-medium text-gray-500 hover:text-gray-900">
                                     <span>&#128526;</span> Bonus
                                 </a>
                             </nav>
