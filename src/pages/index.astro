@@ -10,12 +10,13 @@ import Divider from "../components/Divider.astro";
 import IntroBanner from "../components/IntroBanner.astro";
 
 import getRecipes from "../data/recipes.json";
-const recipes = getRecipes;
-const story = await getStory("home");
+import TopList from "../components/TopList.astro";
 
+const recipes = getRecipes;
 const sortedRecipes = recipes
   .slice(0)
-  .sort((a, b) => new Date(b.date).valueOf() - new Date(a.date).valueOf());
+  .sort((a, b) => new Date(b.date).valueOf() - new Date(a.date).valueOf())
+  .slice(0, 20);
 ---
 
 <Layout title="Foodstalker">
@@ -36,4 +37,6 @@ const sortedRecipes = recipes
       ))
     }
   </Grid>
+  <Divider text="Topp 5" />
+  <TopList recipes={recipes} />
 </Layout>

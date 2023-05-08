@@ -26,12 +26,14 @@
             <div v-else>Fant ikke no</div>
 
 
-            <div v-for="recipe in recipeShowed" :key="recipe.id">
-                <Grid>
+            <Grid>
+                <div v-for="recipe in recipeShowed" :key="recipe.id">
+
                     <SmallCards :title="recipe.title" :description="recipe.description" :image="recipe.imageurl"
                         :href="'/oppskrift/' + recipe.id" />
-                </Grid>
-            </div>
+
+                </div>
+            </Grid>
         </div>
     </div>
 </template>
@@ -88,6 +90,4 @@ export default {
 </script>
 
 
-<style>
-
-</style>
+<style></style>

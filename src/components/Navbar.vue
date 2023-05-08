@@ -74,8 +74,7 @@
                                 <a href="/oppskrift/turmat/" class="text-base font-medium text-gray-500">
                                     <span>&#128293;</span> Turmat
                                 </a>
-                                <a href="/oppskrift/bonus/"
-                                    class="text-base font-medium text-gray-500 hover:text-gray-900">
+                                <a href="/oppskrift/bonus/" class="text-base font-medium text-gray-500 hover:text-gray-900">
                                     <span>&#128526;</span> Bonus
                                 </a>
                             </nav>
@@ -95,17 +94,7 @@ import {
     PopoverPanel,
 } from "@headlessui/vue";
 import {
-    BookmarkAltIcon,
-    CalendarIcon,
-    ChartBarIcon,
-    CursorClickIcon,
     MenuIcon,
-    PhoneIcon,
-    PlayIcon,
-    RefreshIcon,
-    ShieldCheckIcon,
-    SupportIcon,
-    ViewGridIcon,
     XIcon,
 } from "@heroicons/vue/outline";
 

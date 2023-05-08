@@ -8,8 +8,8 @@
         </div>
 
         <div class="ml-4">
-          <h2 class="font-semibold">{{title}}</h2>
-          <p class="mt-2 text-sm">{{description}}</p>
+          <h2 class="font-semibold">{{ title }}</h2>
+          <p class="mt-2 text-sm">{{ description }}</p>
         </div>
       </div>
     </div>
@@ -41,6 +41,4 @@ export default {
 }
 </script>
 
-<style>
-
-</style>
+<style></style>
