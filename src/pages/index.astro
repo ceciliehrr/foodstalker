@@ -22,6 +22,8 @@ const sortedRecipes = recipes
 <Layout title="Foodstalker">
   <IntroBanner />
   <SearchBar client:load />
+  <Divider text="Topp 5" />
+  <TopList recipes={recipes} />
   <Divider text="Siste oppskrifter" />
   <Grid>
     {
@@ -37,6 +39,5 @@ const sortedRecipes = recipes
       ))
     }
   </Grid>
-  <Divider text="Topp 5" />
-  <TopList recipes={recipes} />
+
 </Layout>

@@ -1,7 +1,7 @@
 <template>
-  <a :href=href>
+  <a class="small-cards focus:outline-pink-300 hover:bg-gray-100" :href=href>
     <div class="flex flex-col mt-4 md:flex-row">
-      <div class="flex items-start p-4 rounded-xl shadow-lg bg-white">
+      <div class="flex items-start p-4 rounded-xl shadow-lg bg-white w-full border-2 border-gray-300">
 
         <div class="flex flex-col shrink-0">
           <img class="object-cover h-full w-20 text-blue-400" :src=image alt="" />

@@ -25,6 +25,43 @@ const mainImage = post.imageurl;
 ---
 
 <Layout title="Oppskrift">
+  <main>
+    <div class="recipe-grid">
+      <div
+        class="recipe-title text-green-200 w-2/3 text-4xl md:text-4xl lg:text-5xl font-semibold"
+      >
+        <h1 class="">
+          {post.title}
+        </h1>
+      </div>
+      <div class="recipe-image">
+        <Picture
+          class="recipe__main-image"
+          src={mainImage}
+          alt=""
+          widths={[400, 800, 200]}
+          aspectRatio="10:16"
+          sizes="(max-width: 400px) 100vw, 800px"
+          fit="cover"
+          format="webp"
+        />
+      </div>
+      <div class="recipe-description">
+        <Description
+          description={post.description}
+          longdescription={post.longDescription}
+        />
+      </div>
+      <div class="recipe-steps">
+        <StepByStep description={post.steps} />
+      </div>
+
+      <div class="recipe-ingredients">
+        <Ingredients ingredients={post.ingredients} />
+      </div>
+    </div>
+
+    <!-- 
   <main class="flex-grow w-full mt-6 md:mt-10">
     <div class="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-6">
       <div class="recipe__main-content col-span-1 md:col-span-3 lg:col-span-4">
@@ -37,9 +74,9 @@ const mainImage = post.imageurl;
           class="recipe__main-image mb-10 mt-10"
           src={mainImage}
           alt=""
-          widths={[1024]}
+          widths={[400, 800, 200]}
           aspectRatio="10:16"
-          sizes="(max-width: 800px) 100vw, 800px"
+          sizes="(max-width: 400px) 100vw, 800px"
           fit="cover"
           format="webp"
         />
@@ -48,11 +85,13 @@ const mainImage = post.imageurl;
         <Ingredients ingredients={post.ingredients} />
       </div>
     </div>
+    <div class="grid grid-cols-1 md:grid-cols-1">
     <Description
       description={post.description}
       longdescription={post.longDescription}
-    />
-    <StepByStep description={post.steps} />
+    /> </div>
+  
+    <StepByStep description={post.steps} />-->
     <ImageGallery images={images} />
   </main>
 </Layout>
@@ -70,8 +109,69 @@ const mainImage = post.imageurl;
     }
   }
   main {
-    margin: auto;
+    margin: 16px auto;
     padding: 1em;
     max-width: 1000px;
+  }
+
+  .recipe-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 150px 800px;
+    grid-gap: 18px;
+    grid-template-areas:
+      "title title ingredients"
+      "image image ingredients"
+      "description description ingredients"
+      "steps steps ingredients";
+  }
+
+  .recipe-title {
+    grid-area: title;
+  }
+
+  .recipe-image {
+    grid-area: image;
+  }
+
+  .recipe-description {
+    grid-area: description;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+  }
+
+  .recipe-steps {
+    grid-area: steps;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+  }
+
+  .recipe-ingredients {
+    grid-area: ingredients;
+  }
+
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .recipe-grid {
+      grid-template-rows: 150px 650px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .recipe-grid {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      grid-template-areas:
+        "title"
+        "image"
+        "description"
+        "ingredients"
+        "steps";
+    }
+
+    .recipe-ingredients {
+
+    }
   }
 </style>

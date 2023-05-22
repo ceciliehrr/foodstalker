@@ -1,17 +1,16 @@
 <template>
-    <h2 class="text-2xl">Ingredienser</h2>
+    <h2 class="text-2xl mb-4">Ingredienser</h2>
 
     <div class="ingredients" v-for="(ingredient, title) in ingredients" :key=title>
         <div v-if="title">
-            <div class="text-xl">{{title}}</div>
+            <div class="text-xl mb-2">{{title}}</div>
         </div>
-        <ol>
-            <li class="mb-1" v-for="values in ingredient" :key="values.name">
+        <ol class="mb-4">
+            <li class="checkbox__list mb-1" v-for="values in ingredient" :key="values.name">
                 <label class="checkbox__container">
                     <input type="checkbox" />
                     <span class="checkmark"></span>
-                    <strong class="checkbox__text" v-html="values.quantity">
-
+                    <strong class="checkbox__text mr-3" v-html="values.quantity">
                     </strong>
                     <span class="checkbox__text" v-html="values.name"> </span>
                 </label>
@@ -70,19 +69,22 @@ export default {
     position: absolute;
     top: 0;
     left: 0;
-    height: 25px;
-    width: 25px;
+    height: 20px;
+    width: 20px;
     background-color: #eee;
+    border:1px solid #4a686d;
+    border-radius: 50%;
 }
 
 /* On mouse-over, add a grey background color */
 .checkbox__container:hover input~.checkmark {
     background-color: #ccc;
+
 }
 
 /* When the checkbox is checked, add a blue background */
 .checkbox__container input:checked~.checkmark {
-    background-color: var(--dark-pink);
+    background-color: #cfaebf;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
@@ -99,7 +101,8 @@ export default {
 
 .checkbox__container input:checked~.checkbox__text {
     text-decoration: line-through;
-    color: var(--dark-pink);
+    text-decoration-color: #cfaebf;
+    color: #4a686d;
 }
 
 /* Style the checkmark/indicator */

@@ -53,6 +53,10 @@ function emoji_category(cat) {
       return hverdagEmoji;
   }
 }
+
+function capitalizeFirstLetter(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
 ---
 
 <Layout title={post.category}>
@@ -65,8 +69,8 @@ function emoji_category(cat) {
     />
   </div>
 
-  <Divider text={post.category} />
-  <SearchBar client:load category={post.category} />
+  <Divider text={capitalizeFirstLetter(post.category)} />
+  <SearchBar client:load />
 
   <Grid>
     {

@@ -1,4 +1,5 @@
 ---
+import { Picture } from "@astrojs/image/components";
 export interface Props {
   title: string;
   emoji: string;
@@ -50,14 +51,22 @@ function emoji_category(cat) {
 <a
   id="card"
   href={href}
-  class="fs-card flex flex-col bg-white rounded-lg border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 lg:flex-row lg:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+  class="fs-card flex flex-col bg-white rounded-lg border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 lg:flex-row lg:max-w-xl hover:bg-gray-100 focus:outline-2 focus:outline-pink-300"
 >
   <div class="shrink-0">
-    <img
-      class="object-cover w-full h-full rounded-t-lg lg:h-full lg:w-48 lg:rounded-none lg:rounded-l-lg"
+    <Picture
+      class="rounded-t-lg lg:h-full lg:w-48 lg:rounded-none lg:rounded-l-lg"
       src={image}
       alt=""
+      widths={[400, 800, 200]}
+      aspectRatio="3:5"
+      sizes="(max-width: 1020px) 100vw, 200px"
+      fit="cover"
+      format="webp"
+      background="black"
     />
+
+
   </div>
   <div class="flex flex-1 flex-col justify-between p-4 leading-normal">
     <div class="relative w-full h-2 md:h-10 visible md:invisible">
@@ -68,20 +77,20 @@ function emoji_category(cat) {
       </div>
     </div>
     <div class="flex flex-1 flex-col">
-      <h5 class="mb-2 text-xl font-bold tracking-tight dark:text-white">
+      <h5 class="mb-2 text-xl font-bold tracking-tight">
         {title}
       </h5>
-      <p class="mb-3 font-normal dark:text-gray-400">
+      <p class="mb-3 font-normal text-black">
         {description}
       </p>
-      <div class="mt-3 visible md:invisible">{date}</div>
+      <div class="mt-3 visible text-gray-500 md:invisible">{convertedDate}</div>
     </div>
     <div
       class="flex content-end relative w-full h-2 md:h-10 invisible md:visible"
     >
       <div class="text-gray-500 self-end">{convertedDate}</div>
       <div
-        class="grid place-items-center absolute bg-green-100 md:bottom-0 md:right-0 w-10 h-10 rounded-full shadow-lg"
+        class="grid place-items-center z-0 absolute bg-green-100 md:bottom-0 md:right-0 w-10 h-10 rounded-full shadow-lg"
       >
         <span>{emoji_category(emoji)}</span>
       </div>
