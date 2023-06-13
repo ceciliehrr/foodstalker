@@ -1,10 +1,24 @@
 ---
-export interface Props {
-  title?: string;
+export interface Step {
+  title: string;
   description: string;
 }
-const { title, description } = Astro.props;
+
+export interface Props {
+  steps: Step[];
+}
+
+// Assuming Astro.props is of type Props
+const { steps } = Astro.props;
+
 ---
 
-<h3>{title}</h3>
-<p>{description}</p>
+{steps.map((step) => (
+  <div>
+    {step.title &&
+    <h3 class="text-xl">{step.title}</h3>
+    }
+    <p>{step.description}</p>
+  </div>
+))}
+

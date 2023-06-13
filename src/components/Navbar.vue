@@ -18,7 +18,7 @@
                 </div>
                 <div as="nav" class="hidden md:flex md:space-x-5 lg:space-x-10">
                     <a href="/oppskrift/hverdag/" class="text-base font-medium text-black hover:text-pink-300 focus:outline-pink-300">
-                        <span>&#127836;</span> Hverdag
+                        <span>🥦</span> Hverdag
                     </a>
                     <a href="/oppskrift/helg/" class="text-base font-medium text-black hover:text-pink-300 focus:outline-pink-300">
                         <span>&#127790;</span> Helg
@@ -60,7 +60,7 @@
                         <div class="mt-6">
                             <nav class="grid gap-y-8">
                                 <a href="/oppskrift/hverdag/" class="text-base font-medium text-gray-500">
-                                    <span>&#127836;</span> Hverdag
+                                    <span>🥦</span> Hverdag
                                 </a>
                                 <a href="/oppskrift/helg/" class="text-base font-medium text-gray-500">
                                     <span>&#127790;</span> Helg

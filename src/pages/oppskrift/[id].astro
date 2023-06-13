@@ -53,7 +53,7 @@ const mainImage = post.imageurl;
         />
       </div>
       <div class="recipe-steps">
-        <StepByStep description={post.steps} />
+        <StepByStep steps={post.steps} />
       </div>
 
       <div class="recipe-ingredients">
@@ -116,8 +116,6 @@ const mainImage = post.imageurl;
 
   .recipe-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 150px 800px;
     grid-gap: 18px;
     grid-template-areas:
       "title title ingredients"
@@ -165,8 +163,8 @@ const mainImage = post.imageurl;
       grid-template-areas:
         "title"
         "image"
-        "description"
         "ingredients"
+        "description"
         "steps";
     }
 

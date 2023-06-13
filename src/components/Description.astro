@@ -1,12 +1,27 @@
 ---
 export interface Props {
-  longdescription?: string;
+  longdescription?: longDescription;
   description?: string;
 }
+
+export interface longDescription {
+  text?: string;
+  href?: string;
+}
+
 const { description, longdescription } = Astro.props;
+
+// funksjon i stedenfor med set:html={rawHTMLString}
 ---
 
-<div class="">
+<div>
   <p>{description}</p>
-  <p>{longdescription}</p>
+  {longdescription && longdescription.text ? (
+    <p>
+      {longdescription.text.replace(
+        /link:([\w\s]+)/,
+        `<a href="${longdescription.href}">$1</a>`
+      )}
+    </p>
+  ) : null}
 </div>
