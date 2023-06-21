@@ -9,7 +9,7 @@
           class="flex justify-between items-center border-b-2 border-black py-6 md:justify-start md:space-x-10"
         >
           <div class="flex center">
-            <a class="focus:outline-pink-300" href="/">
+            <a class="focus:outline-pink-300" href="/" aria-label="tilbake til forsiden">
               <span class="sr-only">Go home</span>
               <img
                 class="h-8 w-auto sm:h-10"
@@ -85,14 +85,14 @@
           >
             <div class="pt-5 pb-6 px-5">
               <div class="flex items-center justify-between">
-                <div>
+                <a class="focus:outline-pink-300" href="/" aria-label="tilbake til forsiden">
                   <img
                     class="h-8 w-auto"
                     src="https://foodstalker.b-cdn.net/lime.png"
                     alt=""
                     role="presentation"
                   />
-                </div>
+                </a>
                 <div class="-mr-2">
                   <PopoverButton
                     class="bg-vanilla rounded-md p-2 inline-flex items-center justify-center text-black hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring focus:ring-inset focus:ring-pink-200"
