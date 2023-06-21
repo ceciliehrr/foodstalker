@@ -96,7 +96,7 @@ import {
 import {
     MenuIcon,
     XIcon,
-} from "@heroicons/vue/outline";
+} from "@heroicons/vue/outline/index.js";
 
 
 
