@@ -88,7 +88,7 @@
                 <div>
                   <img
                     class="h-8 w-auto"
-                    src="../assets/logo/lime.png"
+                    src="https://foodstalker.b-cdn.net/lime.png"
                     alt=""
                     role="presentation"
                   />
