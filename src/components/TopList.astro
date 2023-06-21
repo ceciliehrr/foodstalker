@@ -4,7 +4,7 @@ import SmallCards from "./cards/SmallCards.vue";
 const { recipes } = Astro.props;
 
 const data = await fetch(
-  `https://plausible.io/api/v1/stats/breakdown?site_id=foodstalker.no&period=month&property=event:page&limit=6`,
+  `https://plausible.io/api/v1/stats/breakdown?site_id=foodstalker.no&period=12mo&property=event:page&limit=6`,
   {
     method: "GET",
     headers: {
