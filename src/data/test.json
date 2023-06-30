@@ -1,24 +1,24 @@
 {
-    "ingredients": {
-        "": [
-            {
-                "quantity": "4 stk",
-                "name": "tomat"
-            },
-            {
-                "quantity": "4 ss",
-                "name": "pepper"
-            }
-        ],
-        "Mangosalat": [
-            {
-                "quantity": "4 stk",
-                "name": "mango"
-            },
-            {
-                "quantity": "4 stk",
-                "name": "chili"
-            }
-        ]
-    }
+  "ingredients": {
+    "": [
+      {
+        "quantity": "4 stk",
+        "name": "tomat"
+      },
+      {
+        "quantity": "4 ss",
+        "name": "pepper"
+      }
+    ],
+    "Mangosalat": [
+      {
+        "quantity": "4 stk",
+        "name": "mango"
+      },
+      {
+        "quantity": "4 stk",
+        "name": "chili"
+      }
+    ]
+  }
 }

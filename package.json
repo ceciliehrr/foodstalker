@@ -21,8 +21,6 @@
     "@astrojs/image": "^0.14.0",
     "@headlessui/vue": "^1.7.9",
     "@heroicons/vue": "^1.0.0",
-    "@storyblok/astro": "^2.5.0",
-    "@storyblok/js": "^2.2.1",
     "sass": "^1.58.0",
     "sharp": "^0.31.3",
     "vite": "^4.3.9"
