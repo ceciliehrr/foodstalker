@@ -181,15 +181,42 @@
       ]
     },
     "steps": [
-      "Ha alle de tørre ingrediensene i bakebollen, og bland det godt sammen.",
-      "Tilsett vannet og rør deigen raskt sammen med en sleiv eller lignende. Pass på at melet er blandet godt med væsken.",
-      "Deigen skal være litt klissete, men skal ikke flyte utover.",
-      "Ha på plastfolie over bakebollen, og la deigen heve i romtemperatur over natten, ca. 10-20 timer.",
-      "Sett ovnen på 225 grader.",
-      "Ta ut en litt klissete deig på et lett melet underlag. Del deigen i 8 like store biter.",
-      "Rull rundstykkene runde, ja det er klissete.",
-      "Legg rundstykkene på et stekebrett med bakepapir. Og stek i ca 20-25 minutter.",
-      "Avkjøl på rist."
+      {
+        "title": "",
+        "description": "Ha alle de tørre ingrediensene i bakebollen, og bland det godt sammen."
+      },
+      {
+        "title": "",
+        "description": "Tilsett vannet og rør deigen raskt sammen med en sleiv eller lignende. Pass på at melet er blandet godt med væsken."
+      },
+      {
+        "title": "",
+        "description": "Deigen skal være litt klissete, men skal ikke flyte utover."
+      },
+      {
+        "title": "",
+        "description": "Ha på plastfolie over bakebollen, og la deigen heve i romtemperatur over natten, ca. 10-20 timer."
+      },
+      {
+        "title": "",
+        "description": "Sett ovnen på 225 grader."
+      },
+      {
+        "title": "",
+        "description": "Ta ut en litt klissete deig på et lett melet underlag. Del deigen i 8 like store biter."
+      },
+      {
+        "title": "",
+        "description": "Rull rundstykkene runde, ja det er klissete."
+      },
+      {
+        "title": "",
+        "description": "Legg rundstykkene på et stekebrett med bakepapir. Og stek i ca 20-25 minutter."
+      },
+      {
+        "title": "",
+        "description": "Avkjøl på rist."
+      }
     ],
     "images": [
       {
@@ -325,16 +352,42 @@
       ]
     },
     "steps": [
-      "Hakk, kutt og mål opp alle ingredienser. Om du har kyllingfilet, kutt de i grove biter.",
-      "Ha sesamolje, revet ingefær og curry i en gryte og fres til du merker at aromaene frigis (ca 1-2 minutter), på medium varme.",
-      "Skru plata opp til medium høy varme og tilsett kyllingen. Brun kyllingen til den får litt stekeskorpe, men den trenger ikke være gjennomstekt. Tilsett de finhakkede urtene.",
-      "Reduser plata til medium lav varme.",
-      "Tilsett kokosmelk, soyasaus, vann og fish sauce og dekk til gryta med lokk. La det putre i ca 20-25 minutter til kyllingen er gjennomstekt.",
-      "Imens gryta står og putrer setter du på risen og koker den som anvist på pakken.",
-      "Når kyllingen i gryta er gjennomstekt tilsetter du peanøttsmør og smaker til med lime. La gryta tykne i 2-3 minutter. ",
-      "<b><u>Mangosalat</b></u>",
-      "Del opp mango i skiver, skjær opp agurk i skiver (gjerne med en skreller som du kan skjære på langs som gir lange tynne skiver), ha dette i en stor bolle.",
-      "Med en gaffel visper du sammen honning og limesaft i en egen liten skål. Del chili på langs og fjern frøene. Hakk opp chili og bland dette i lime- og honningsausen, og hell dressingen over salaten. Bland godt sammen."
+      {
+        "title": "",
+        "description": "Hakk, kutt og mål opp alle ingredienser. Om du har kyllingfilet, kutt de i grove biter."
+      },
+      {
+        "title": "",
+        "description": "Ha sesamolje, revet ingefær og curry i en gryte og fres til du merker at aromaene frigis (ca 1-2 minutter), på medium varme."
+      },
+      {
+        "title": "",
+        "description": "Skru plata opp til medium høy varme og tilsett kyllingen. Brun kyllingen til den får litt stekeskorpe, men den trenger ikke være gjennomstekt. Tilsett de finhakkede urtene."
+      },
+      {
+        "title": "",
+        "description": "Reduser plata til medium lav varme."
+      },
+      {
+        "title": "",
+        "description": "Tilsett kokosmelk, soyasaus, vann og fish sauce og dekk til gryta med lokk. La det putre i ca 20-25 minutter til kyllingen er gjennomstekt."
+      },
+      {
+        "title": "",
+        "description": "Imens gryta står og putrer setter du på risen og koker den som anvist på pakken."
+      },
+      {
+        "title": "",
+        "description": "Når kyllingen i gryta er gjennomstekt tilsetter du peanøttsmør og smaker til med lime. La gryta tykne i 2-3 minutter."
+      },
+      {
+        "title": "Mangosalat",
+        "description": "Del opp mango i skiver, skjær opp agurk i skiver (gjerne med en skreller som du kan skjære på langs som gir lange tynne skiver), ha dette i en stor bolle."
+      },
+      {
+        "title": "",
+        "description": "Med en gaffel visper du sammen honning og limesaft i en egen liten skål. Del chili på langs og fjern frøene. Hakk opp chili og bland dette i lime- og honningsausen, og hell dressingen over salaten. Bland godt sammen."
+      }
     ],
     "images": [
       {
@@ -378,7 +431,10 @@
     "date": "2020-12-04",
     "category": "søtt",
     "description": "Dette er min favorittkake, og på 17.mai pleier jeg å ta litt av, takket være Lise Finckenhagen",
-    "longDescription": { "text": "Mr. Lova Lova, Pavlova. Jeg lager denne med hjemmelaget link:bringebærsaus. Men du kan også blande syltetøy i kremen for å gjøre livet enklere.", "href": ["/oppskrift/juleflesk"]},
+    "longDescription": {
+      "text": "Mr. Lova Lova, Pavlova. Jeg lager denne med hjemmelaget link:bringebærsaus. Men du kan også blande syltetøy i kremen for å gjøre livet enklere.",
+      "href": ["/oppskrift/juleflesk"]
+    },
     "time": "2 timer 30 minutter",
     "portions": "1-6",
     "tips": "Pass på at bakebollen er ren og ikke har noe fett i seg, ellers vil marengsen aldri bli stiv. Jeg pleier å lage marengsen dagen før, slik at man kan bruke tida på champagnefrokosten den 17.mai.",
@@ -437,12 +493,30 @@
       ]
     },
     "steps": [
-      "Forvarm ovnen til 180 grader.",
-      "Bruk en kjøkkenmaskin og pisk eggehvitene med litt av sukkeret til myk skummende marengs ved middels hastighet. Bland maisenna sammen med resten av sukkeret og tilsett sukkeret i marengsen litt etter litt, øk hastigheten når alt sukkeret er tilsatt og pisk til tykk, blank og stiv marengs. Tilsett eddik og visp 10 sekunder til.",
-      "Tegn en sirkel (cirka 22-24 cm i diameter) på et bakepapir og legg bakepapiret på et stekebrett. Form marengsen som en krans langs med sirkelen (enklest er det å fylle marengsen i en sprøytepose for så å sprøyte ut ringer eller store «dotter» langs med den opptegnede sirkelen).",
-      "Sett marengsen inn i ovnen og senk temperaturen til 120 grader. Stek marengsen i cirka 1 time. Den skal bli sprø på utsiden og være myk som krem på innsiden.",
-      "Skru av ovnen, sett ovnsdøren på gløtt og avkjøl pavlovaen til romtemperatur inne i stekeovnen.",
-      "Løft pavlovaen forsiktig over på et fat. Vend sammen pisket krem og rørte bringebær,bringebærsyltetøy eller bringebærsirup til en rosa bringebærkrem. Fordel kremen over pavlovakransen og pynt med friske bær, melis og blomster. Drypp til slutt over litt saus hvis ønskelig."
+      {
+        "title": "",
+        "description": "Forvarm ovnen til 180 grader."
+      },
+      {
+        "title": "",
+        "description": "Bruk en kjøkkenmaskin og pisk eggehvitene med litt av sukkeret til myk skummende marengs ved middels hastighet. Bland maisenna sammen med resten av sukkeret og tilsett sukkeret i marengsen litt etter litt, øk hastigheten når alt sukkeret er tilsatt og pisk til tykk, blank og stiv marengs. Tilsett eddik og visp 10 sekunder til."
+      },
+      {
+        "title": "",
+        "description": "Tegn en sirkel (cirka 22-24 cm i diameter) på et bakepapir og legg bakepapiret på et stekebrett. Form marengsen som en krans langs med sirkelen (enklest er det å fylle marengsen i en sprøytepose for så å sprøyte ut ringer eller store «dotter» langs med den opptegnede sirkelen)."
+      },
+      {
+        "title": "",
+        "description": "Sett marengsen inn i ovnen og senk temperaturen til 120 grader. Stek marengsen i cirka 1 time. Den skal bli sprø på utsiden og være myk som krem på innsiden."
+      },
+      {
+        "title": "",
+        "description": "Skru av ovnen, sett ovnsdøren på gløtt og avkjøl pavlovaen til romtemperatur inne i stekeovnen."
+      },
+      {
+        "title": "",
+        "description": "Løft pavlovaen forsiktig over på et fat. Vend sammen pisket krem og rørte bringebær, bringebærsyltetøy eller bringebærsirup til en rosa bringebærkrem. Fordel kremen over pavlovakransen og pynt med friske bær, melis og blomster. Drypp til slutt over litt saus hvis ønskelig."
+      }
     ],
     "images": [
       {
@@ -564,7 +638,7 @@
           "name": "revet ost, gjerne cheddar"
         }
       ],
-      "Salsa": [
+      "Tomatsalsa": [
         {
           "quantity": "2 stk",
           "name": "plommetomat"
@@ -600,13 +674,30 @@
       ]
     },
     "steps": [
-      "Varm ovnen til 225 grader.",
-      "Finhakk løk og hvitløk. Skjær chorizoen i små biter. Bruk en romslig stekepanne eller gryte og fres løken myk og gyllen i en klunk olje. La hvitløken få frese med de siste minuttene. Hell løken over på en liten tallerken så lenge. Varm pannen på nytt. Tilsett kjøttdeig og chorizo og stek videre til kjøttdeigen er godt brunet. Ha løken tilbake i pannen sammen med de tørkede krydderne(eller tacokrydderet) og bland alt godt sammen.",
-      "Tilsett knuste tomater og la det hele putre videre i 5-10 minutter. Smak til med salt og pepper, juster eventuelt med mer krydder hvis nødvendig. Dette er spesielt viktig hvis du har hjemmelaget tacokrydder da den inneholder bra med salt.",
-      "Bruk en passende ildfast form og legg i et lag med nachochips. Legg på et lag kjøttsaus og dryss over litt ost. Fortsett slik med chips, kjøttsaus og ost lagvis. Avslutt med ost og gratiner det hele i ovnen til osten har smeltet, cirka 5-10 minutter.",
-      "<b><u>Salsa</b></u>",
-      "Skjær tomatene og paprikaen til toppingen i små terninger. Finhakk løk og hvitløk. Finsnitt chilien og bland sammen tomat, paprika, løk, hvitløk, chili, limesaft, koriander og en klype salt.",
-      "Server med rømme om du liker!"
+      {
+        "title": "",
+        "description": "Varm ovnen til 225 grader."
+      },
+      {
+        "title": "",
+        "description": "Finhakk løk og hvitløk. Skjær chorizoen i små biter. Bruk en romslig stekepanne eller gryte og fres løken myk og gyllen i en klunk olje. La hvitløken få frese med de siste minuttene. Hell løken over på en liten tallerken så lenge. Varm pannen på nytt. Tilsett kjøttdeig og chorizo og stek videre til kjøttdeigen er godt brunet. Ha løken tilbake i pannen sammen med de tørkede krydderne(eller tacokrydderet) og bland alt godt sammen."
+      },
+      {
+        "title": "",
+        "description": "Tilsett knuste tomater og la det hele putre videre i 5-10 minutter. Smak til med salt og pepper, juster eventuelt med mer krydder hvis nødvendig. Dette er spesielt viktig hvis du har hjemmelaget tacokrydder da den inneholder bra med salt."
+      },
+      {
+        "title": "",
+        "description": "Bruk en passende ildfast form og legg i et lag med nachochips. Legg på et lag kjøttsaus og dryss over litt ost. Fortsett slik med chips, kjøttsaus og ost lagvis. Avslutt med ost og gratiner det hele i ovnen til osten har smeltet, cirka 5-10 minutter."
+      },
+      {
+        "title": "Tomatsalsa",
+        "description": "Skjær tomatene og paprikaen til toppingen i små terninger. Finhakk løk og hvitløk. Finsnitt chilien og bland sammen tomat, paprika, løk, hvitløk, chili, limesaft, koriander og en klype salt."
+      },
+      {
+        "title": "",
+        "description": "Server med rømme om du liker!"
+      }
     ],
     "images": [
       {
@@ -709,13 +800,34 @@
       ]
     },
     "steps": [
-      "Del kjøttet i store grove biter. Hakk løken og riv hvitløk og ingefær fint. Kjør gjerne grovhakket hakket hvitløk og ingefær sammen til en fin mos i en liten hurtigmikser for å slippe å hakke på deg senebetennelse.Varm ovnen til 150 grader.",
-      "Varm en stor stekepanne og tilsett litt olje. Brun kjøttet godt på alle sider og krydre lett med salt.",
-      "Legg kjøttet over i en mellomstor tykkbunnet kasserolle. Ha løken over i stekepannen, senk temperaturen noe og la det frese til løken blir blank og myk. Rør jevnlig slik at det ikke fester seg i bunnen. Tilsett hvitløk og ingefær og la det frese videre i ca. 5 minutter, blir det tørt i pannen hell på mer olje og rør kontinuerlig.  Ha i stjerneanis og sort pepper underveis. Tilsett soyasaus, sukker og tomatpure og rør alt godt sammen.",
-      "Hell blandingen fra stekepannen over kjøttet og tilsett kraft slik at det akkurat dekker kjøttet. Gi det hele et oppkok, legg på lokk og sett hele kasserollen inn i stekeovnen. La kjøttet stå i ovnen i ca. 3 timer, eller til det er helt mørt og nesten faller fra hverandre.",
-      "Husk å sette på ris.",
-      "Løft kjøttet opp av kasserollen og kok sausen inn til den tykner noe. Rør ofte så det ikke fester seg i bunnen. Legg kjøttet tilbake i sausen og hold det varmt.",
-      "Rør inn hakket koriander i gryta og server med ris og eventuelt en salat om du vil."
+      {
+        "title": "",
+        "description": "Del kjøttet i store grove biter. Hakk løken og riv hvitløk og ingefær fint. Kjør gjerne grovhakket hakket hvitløk og ingefær sammen til en fin mos i en liten hurtigmikser for å slippe å hakke på deg senebetennelse. Varm ovnen til 150 grader."
+      },
+      {
+        "title": "",
+        "description": "Varm en stor stekepanne og tilsett litt olje. Brun kjøttet godt på alle sider og krydre lett med salt."
+      },
+      {
+        "title": "",
+        "description": "Legg kjøttet over i en mellomstor tykkbunnet kasserolle. Ha løken over i stekepannen, senk temperaturen noe og la det frese til løken blir blank og myk. Rør jevnlig slik at det ikke fester seg i bunnen. Tilsett hvitløk og ingefær og la det frese videre i ca. 5 minutter, blir det tørt i pannen hell på mer olje og rør kontinuerlig. Ha i stjerneanis og sort pepper underveis. Tilsett soyasaus, sukker og tomatpure og rør alt godt sammen."
+      },
+      {
+        "title": "",
+        "description": "Hell blandingen fra stekepannen over kjøttet og tilsett kraft slik at det akkurat dekker kjøttet. Gi det hele et oppkok, legg på lokk og sett hele kasserollen inn i stekeovnen. La kjøttet stå i ovnen i ca. 3 timer, eller til det er helt mørt og nesten faller fra hverandre."
+      },
+      {
+        "title": "",
+        "description": "Husk å sette på ris."
+      },
+      {
+        "title": "",
+        "description": "Løft kjøttet opp av kasserollen og kok sausen inn til den tykner noe. Rør ofte så det ikke fester seg i bunnen. Legg kjøttet tilbake i sausen og hold det varmt."
+      },
+      {
+        "title": "",
+        "description": "Rør inn hakket koriander i gryta og server med ris og eventuelt en salat om du vil."
+      }
     ],
     "images": [
       {
@@ -820,10 +932,22 @@
       ]
     },
     "steps": [
-      "Ha svineknoken, pepper og laurbærblad i en gryte, og dekk med vann, kok opp, skum av og la det småkoke i 1 ½ time.",
-      "Skrell grønnsakene og potetene og skjær alt opp i terninger. Ta opp knoken av kokevannet, skjær av fett og skjær kjøttet opp i mindre biter.",
-      "Kok grønnsakene møre i kokekraften fra svineknokene. Når grønnsakene er ferdig kokt tilsetter du kjøttet og varmer opp til deilig lapskaus.",
-      "Smak til med salt og pepper. Server med hakket persille og flattbrød."
+      {
+        "title": "",
+        "description": "Ha svineknoken, pepper og laurbærblad i en gryte, og dekk med vann, kok opp, skum av og la det småkoke i 1 ½ time."
+      },
+      {
+        "title": "",
+        "description": "Skrell grønnsakene og potetene og skjær alt opp i terninger. Ta opp knoken av kokevannet, skjær av fett og skjær kjøttet opp i mindre biter."
+      },
+      {
+        "title": "",
+        "description": "Kok grønnsakene møre i kokekraften fra svineknokene. Når grønnsakene er ferdig kokt tilsetter du kjøttet og varmer opp til deilig lapskaus."
+      },
+      {
+        "title": "",
+        "description": "Smak til med salt og pepper. Server med hakket persille og flattbrød."
+      }
     ],
     "images": [
       {
@@ -914,11 +1038,26 @@
       ]
     },
     "steps": [
-      "Rens løken og skjær den i syltynne skiver. Bland løkskivene med eddik og sukker. La løken marinere mens du gjør klart resten.",
-      "Del kotelettene i to, krydre godt med salt og pepper. Del plommene i to og fjern steinen.",
-      "Brun kotelettstykkene godt på begge sider i en stor stekepanne med både litt smør og olje. La kjøttet surre/steke i pannen i ca. 10 minutter.",
-      "Tilsett plommer og osten i tynne skiver. La det hele putre videre i ytterligere noen minutter til osten har smeltet.",
-      "Server kotelettene med ris(eventuelt salat), plommer og hell over stekesjyen. Topp retten med sylta rødløk."
+      {
+        "title": "",
+        "description": "Rens løken og skjær den i syltynne skiver. Bland løkskivene med eddik og sukker. La løken marinere mens du gjør klart resten."
+      },
+      {
+        "title": "",
+        "description": "Del kotelettene i to, krydre godt med salt og pepper. Del plommene i to og fjern steinen."
+      },
+      {
+        "title": "",
+        "description": "Brun kotelettstykkene godt på begge sider i en stor stekepanne med både litt smør og olje. La kjøttet surre/steke i pannen i ca. 10 minutter."
+      },
+      {
+        "title": "",
+        "description": "Tilsett plommer og osten i tynne skiver. La det hele putre videre i ytterligere noen minutter til osten har smeltet."
+      },
+      {
+        "title": "",
+        "description": "Server kotelettene med ris (eventuelt salat), plommer og hell over stekesjyen. Topp retten med sylta rødløk."
+      }
     ],
     "images": [
       {
@@ -1021,16 +1160,46 @@
       ]
     },
     "steps": [
-      "Skal du ha sticky rice skal risen legges til bløt over natta.",
-      "Skrell mangoene og skjær rundt steinen. Bruk en foodprosessor til å kjøre mangoen og sukkeret til sukkeret er løst opp. Nå er den en søt mangosaus.",
-      "Tilsett vann og glukose.",
-      "Kjør i ismaskin i cirka en time.",
-      "Skyll og sil risen",
-      "Risen skal dampes. Legg risen i et kjøkkenklede i en sil. Legg silen i en kjele med litt vann, legg lokk over. La vannet putre slik at risen blir dampet i ca 20 minutter.",
-      "Kok opp kokoskremen, ta den av plata og tilsett sukker og salt. Rør til sukkeret er løst opp.",
-      "Når risen er ferdig legger du risen i ei bolle(pass på, kledet er varmt!). Hell over kokosblandingen.",
-      "Legg plast over bollen og la det stå i ca. 30 minutter, slik at kokosblandingen får trukket inn i risen.",
-      "Server sticky rice med mangosorbet og et dryss med ristet sesamfrø."
+      {
+        "title": "",
+        "description": "Skal du ha sticky rice skal risen legges til bløt over natta."
+      },
+      {
+        "title": "",
+        "description": "Skrell mangoene og skjær rundt steinen. Bruk en foodprosessor til å kjøre mangoen og sukkeret til sukkeret er løst opp. Nå er den en søt mangosaus."
+      },
+      {
+        "title": "",
+        "description": "Tilsett vann og glukose."
+      },
+      {
+        "title": "",
+        "description": "Kjør i ismaskin i cirka en time."
+      },
+      {
+        "title": "",
+        "description": "Skyll og sil risen."
+      },
+      {
+        "title": "",
+        "description": "Risen skal dampes. Legg risen i et kjøkkenklede i en sil. Legg silen i en kjele med litt vann, legg lokk over. La vannet putre slik at risen blir dampet i ca 20 minutter."
+      },
+      {
+        "title": "",
+        "description": "Kok opp kokoskremen, ta den av plata og tilsett sukker og salt. Rør til sukkeret er løst opp."
+      },
+      {
+        "title": "",
+        "description": "Når risen er ferdig legger du risen i ei bolle (pass på, kledet er varmt!). Hell over kokosblandingen."
+      },
+      {
+        "title": "",
+        "description": "Legg plast over bollen og la det stå i ca. 30 minutter, slik at kokosblandingen får trukket inn i risen."
+      },
+      {
+        "title": "",
+        "description": "Server sticky rice med mangosorbet og et dryss med ristet sesamfrø."
+      }
     ],
     "images": [
       {
@@ -1105,12 +1274,30 @@
       ]
     },
     "steps": [
-      "Hvis du skal oppbevare løken en stund. Kok et glass. Jo renere jo lengre holdbarhetstid. ",
-      "Skjær løken i tynne skiver",
-      "Kok opp vann, sukker og eddik i en kasserolle.",
-      "Legg rødløk og pepperkorn i oppbevaringsglasset.",
-      "Når sukkeret er løst opp, hell eddikblandingen over i glasset med rødløk.",
-      "Avkjøl glasset med lokk på benken. Sett glasset i kjøleskapet. Løken er klar etter et par timer i kjøleskapet. Holdbar i minst 2 uker."
+      {
+        "title": "",
+        "description": "Hvis du skal oppbevare løken en stund. Kok et glass. Jo renere jo lengre holdbarhetstid."
+      },
+      {
+        "title": "",
+        "description": "Skjær løken i tynne skiver."
+      },
+      {
+        "title": "",
+        "description": "Kok opp vann, sukker og eddik i en kasserolle."
+      },
+      {
+        "title": "",
+        "description": "Legg rødløk og pepperkorn i oppbevaringsglasset."
+      },
+      {
+        "title": "",
+        "description": "Når sukkeret er løst opp, hell eddikblandingen over i glasset med rødløk."
+      },
+      {
+        "title": "",
+        "description": "Avkjøl glasset med lokk på benken. Sett glasset i kjøleskapet. Løken er klar etter et par timer i kjøleskapet. Holdbar i minst 2 uker."
+      }
     ],
     "images": [
       {
@@ -1225,16 +1412,46 @@
       ]
     },
     "steps": [
-      "Finsnitt chili, hvitløk og riv ingefær.",
-      "Mål opp sweet chili, østerssaus, soyasaus og sesamolje.",
-      "Varm litt olje i en stor stekepanne eller wok. Stek kjøttdeigen over høy varme.",
-      "Hakk den opp underveis i stekingen og stek til bitene blir gylne og litt «sprøstekte».",
-      "Tilsett ingefær, hvitløk og chili og la det frese godt under omrøring i et par minutter.",
-      "Husk, kok nudler",
-      "Tilsett sausblandingen. La alt surre sammen et par små minutter.",
-      "Smak til med lime og fiskesaus.",
-      "Bland inn finsnittet vårløk og grovhakkede urter.",
-      "Topp nudlene med «kjøttsausen» og dryss over hakkede peanøtter."
+      {
+        "title": "",
+        "description": "Finsnitt chili, hvitløk og riv ingefær."
+      },
+      {
+        "title": "",
+        "description": "Mål opp sweet chili, østerssaus, soyasaus og sesamolje."
+      },
+      {
+        "title": "",
+        "description": "Varm litt olje i en stor stekepanne eller wok. Stek kjøttdeigen over høy varme."
+      },
+      {
+        "title": "",
+        "description": "Hakk den opp underveis i stekingen og stek til bitene blir gylne og litt «sprøstekte»."
+      },
+      {
+        "title": "",
+        "description": "Tilsett ingefær, hvitløk og chili og la det frese godt under omrøring i et par minutter."
+      },
+      {
+        "title": "",
+        "description": "Husk, kok nudler."
+      },
+      {
+        "title": "",
+        "description": "Tilsett sausblandingen. La alt surre sammen et par små minutter."
+      },
+      {
+        "title": "",
+        "description": "Smak til med lime og fiskesaus."
+      },
+      {
+        "title": "",
+        "description": "Bland inn finsnittet vårløk og grovhakkede urter."
+      },
+      {
+        "title": "",
+        "description": "Topp nudlene med «kjøttsausen» og dryss over hakkede peanøtter."
+      }
     ],
     "images": [
       {
@@ -1341,16 +1558,46 @@
       ]
     },
     "steps": [
-      "Sett på vannet til nudlene.",
-      "Kutt laksen i litt store terninger.",
-      "Sett stekepanne på høy varme og la den bli varm før du legger i laks og olje, vi bruker olivenolje.",
-      "La laksen ligge i fred i stekepannen til den har fått en stekeskorpe.",
-      "Mens laksen steker, lag salaten. Men pass på så du ikke brenner laksen.",
-      "Kutt opp mango, agurk, tomater, chili og koriander. Bland sammen i en bolle og skvis litt lime over.",
-      "Legg nudler i det kokende vannet.",
-      "Snu laksebitene slik at de får stekeskorpe på alle sider, man skal være litt slem mot laksen for å få crispy skorpe.",
-      "Når laksen har stekeskorpe tilsett soyasaus og honning, og smak til med ca en halv lime.",
-      "Server laksen med mangosalat og nudler."
+      {
+        "title": "",
+        "description": "Sett på vannet til nudlene."
+      },
+      {
+        "title": "",
+        "description": "Kutt laksen i litt store terninger."
+      },
+      {
+        "title": "",
+        "description": "Sett stekepanne på høy varme og la den bli varm før du legger i laks og olje, vi bruker olivenolje."
+      },
+      {
+        "title": "",
+        "description": "La laksen ligge i fred i stekepannen til den har fått en stekeskorpe."
+      },
+      {
+        "title": "",
+        "description": "Mens laksen steker, lag salaten. Men pass på så du ikke brenner laksen."
+      },
+      {
+        "title": "",
+        "description": "Kutt opp mango, agurk, tomater, chili og koriander. Bland sammen i en bolle og skvis litt lime over."
+      },
+      {
+        "title": "",
+        "description": "Legg nudler i det kokende vannet."
+      },
+      {
+        "title": "",
+        "description": "Snu laksebitene slik at de får stekeskorpe på alle sider, man skal være litt slem mot laksen for å få crispy skorpe."
+      },
+      {
+        "title": "",
+        "description": "Når laksen har stekeskorpe tilsett soyasaus og honning, og smak til med ca en halv lime."
+      },
+      {
+        "title": "",
+        "description": "Server laksen med mangosalat og nudler."
+      }
     ],
     "images": [
       {
@@ -1441,13 +1688,26 @@
       ]
     },
     "steps": [
-      "Klem pølsefarsen ut av skinnet og ruller små kjøttboller. Rens og skjær sjampinjongen i skiver.",
-      "Bruk en stor nok gryte, varm opp gryta, tilsett olje og stek «kjøttbollene» gylne.",
-      "Tilsett sopp og fres videre til soppen får litt farge.",
-      "Ha i pasta, kraft, tomater, en god klype salt og noen runder kvernet pepper.",
-      "Gi det hele et oppkok og kok videre til pastaen er ferdigkokt og sausen har redusert og tyknet. Rør av og til slik at det ikke fester seg i bunnen.",
-      "Smak til med salt og pepper, pølsa kan ha en del krydder i seg, så vær litt forsiktig med pepper. Altså smak deg frem.",
-      "Rør til slutt inn basilikum. Server pastaen med revet parmesan."
+      {
+        "title": "",
+        "description": "Klem pølsefarsen ut av skinnet og rull små kjøttboller. Rens og skjær sjampinjongen i skiver."
+      },
+      {
+        "title": "",
+        "description": "Stek «kjøttbollene» og sopp. Bruk en stor nok gryte, varm opp gryta, tilsett olje og stek «kjøttbollene» gylne. Tilsett sopp og fres videre til soppen får litt farge."
+      },
+      {
+        "title": "",
+        "description": "Tilsett pasta, kraft, tomater og krydder. Ha i pasta, kraft, tomater, en god klype salt og noen runder kvernet pepper. Gi det hele et oppkok og kok videre til pastaen er ferdigkokt og sausen har redusert og tyknet. Rør av og til slik at det ikke fester seg i bunnen."
+      },
+      {
+        "title": "",
+        "description": "Smak til med salt, pepper og basilikum. Smak til med salt og pepper, vær forsiktig med pepper på grunn av krydderet i pølsefarsen. Rør til slutt inn basilikum."
+      },
+      {
+        "title": "",
+        "description": "Server pastaen med revet parmesan."
+      }
     ],
     "images": [
       {
@@ -1568,14 +1828,38 @@
       ]
     },
     "steps": [
-      "Krydre biffene med salt. La biffene ligge på benken for temperering og la saltet gjøre sine kjemiske ting med kjøttet, noe digg kjemisk.",
-      "Rens og del soppen. Skjær løken i tynne skiver og hakk eller finsnitt hvitløken.",
-      "Varm pannen, ha i litt olje og stek biffene over høy varme, cirka 3-4 minutter på hver side. Tilsett en klatt smør, hvitløksfeddene og en kvast urter om du har når du snur biffen.",
-      "La biffene hvile på en tallerken mens du fikser resten. Hell alt fettet fra pannen over biffene (ikke vask pannen).",
-      "Tilsett litt ekstra olje, og fres soppen sammen med løk. (Fres soppen i to eller flere omganger for å unngå at pannen blir avkjølt.) Fres godt under omrøring til soppen har fått en pen gyllen farge. Ha all soppen tilbake i pannen, tilsett vin/eplejuice og la det koke inn til det meste av væsken har fordampet.",
-      "Hell i kraft og fløte og la sausen småkoke i 5-10 minutter til den tykner noe, rør om av og til. Krydre lett med salt og pepper og tilsett parmesan og urter (og gjerne også kjøttsaften fra biffene).",
-      "Lag vinaigrett. Bland sammen alle ingrediensene og fyll på med en god olivenolje til blandingen tykner. Smak til med salt og pepper.",
-      "Server biffen med salat dynket i vinaigrett."
+      {
+        "title": "",
+        "description": "Krydre biffene med salt. La biffene ligge på benken for temperering og la saltet gjøre sine kjemiske ting med kjøttet, noe digg kjemisk."
+      },
+      {
+        "title": "",
+        "description": "Rens og del soppen. Skjær løken i tynne skiver og hakk eller finsnitt hvitløken."
+      },
+      {
+        "title": "",
+        "description": "Varm pannen, ha i litt olje og stek biffene over høy varme, cirka 3-4 minutter på hver side. Tilsett en klatt smør, hvitløksfeddene og en kvast urter om du har når du snur biffen."
+      },
+      {
+        "title": "",
+        "description": "La biffene hvile på en tallerken mens du fikser resten. Hell alt fettet fra pannen over biffene (ikke vask pannen)."
+      },
+      {
+        "title": "",
+        "description": "Tilsett litt ekstra olje, og fres soppen sammen med løk. (Fres soppen i to eller flere omganger for å unngå at pannen blir avkjølt.) Fres godt under omrøring til soppen har fått en pen gyllen farge. Ha all soppen tilbake i pannen, tilsett vin/eplejuice og la det koke inn til det meste av væsken har fordampet."
+      },
+      {
+        "title": "",
+        "description": "Hell i kraft og fløte og la sausen småkoke i 5-10 minutter til den tykner noe, rør om av og til. Krydre lett med salt og pepper og tilsett parmesan og urter (og gjerne også kjøttsaften fra biffene)."
+      },
+      {
+        "title": "",
+        "description": "Lag vinaigrett. Bland sammen alle ingrediensene og fyll på med en god olivenolje til blandingen tykner. Smak til med salt og pepper."
+      },
+      {
+        "title": "",
+        "description": "Server biffen med salat dynket i vinaigrett."
+      }
     ],
     "images": [
       {
@@ -1706,19 +1990,58 @@
       ]
     },
     "steps": [
-      "Kok potetene knapt møre i lettsaltet vann. Hell av vannet og damp potetene tørre.",
-      "Skjær et rutemønster på fettsiden av andebrystene, bruk en skarp kniv og vær forsiktig så du ikke skjærer ned i kjøttet. Gni brystene godt inn med salt og pepper.",
-      "Mål opp og ta frem ingrediensene til sausen.",
-      "Smelt sukkeret til sausen i en tykkbunnet kasserolle på over middels varme, ikke rør! da vil sukkeret krystallisere seg.",
-      "Tilsett balsamicoeddik og rødvinseddik når sukker har blitt til gyllen karamell. Nå kan du røre. La det koke til det meste av væsken er fordampet.",
-      "Tilsett kraft, anis, kanel og hvitløk. Kok opp og la det småkoke i cirka 20 minutter.",
-      "Legg andebrystene med fettsiden ned i en kald og tørr stekepanne. Om du har forvarmet panna vil den raskt bli brent. Sett på medium til høy varme. Stek til fettet blir helt sprøtt, 10-15 minutter.",
-      "Snu brystene og stek ytterligere i noen minutter. Øs over stekesjyen av og til. Ta brystene opp av pannen og la dem hvile 10 minutter - med fettsiden opp - før servering. Store bryst kan etterstekes i ovn ved 180 grader i cirka 10 minutter.",
-      "Legg potetene i stekepanne med andefettet. Knus hvitløkfeddene, med skallet på, med bredsiden av kniven. La hvitløken og timian få steke med potetene. Ha gjerne litt smør i etter hvert. De er ferdige når de er gyldne. Dryss over en klype flaksalt før servering.",
-      "Når sausen har kokt i 20 minutter. Visp inn kaldt smør i små terninger, litt etter litt. Smak til med salt og pepper og sil sausen. Tilsett bringebær rett før servering.",
-      "Fest hvitløkfeddet på en gaffel og varm opp en stor stekepanne til spinaten. Ha litt olje i pannen og tilsett spinaten. Rør med hvitløkgaffelen til spinaten har klappet sammen.",
-      "Ta umiddelbart spinaten ut av pannen og over på en tallerken så lenge.Krydre med salt, pepper og en bitte liten klype sukker.",
-      "Skjær andebrystene i pene skiver og server dem med spinat, poteter og saus."
+      {
+        "title": "",
+        "description": "Kok potetene knapt møre i lettsaltet vann. Hell av vannet og damp potetene tørre."
+      },
+      {
+        "title": "",
+        "description": "Skjær et rutemønster på fettsiden av andebrystene, bruk en skarp kniv og vær forsiktig så du ikke skjærer ned i kjøttet. Gni brystene godt inn med salt og pepper."
+      },
+      {
+        "title": "",
+        "description": "Mål opp og ta frem ingrediensene til sausen."
+      },
+      {
+        "title": "",
+        "description": "Smelt sukkeret til sausen i en tykkbunnet kasserolle på over middels varme, ikke rør! da vil sukkeret krystallisere seg."
+      },
+      {
+        "title": "",
+        "description": "Tilsett balsamicoeddik og rødvinseddik når sukker har blitt til gyllen karamell. Nå kan du røre. La det koke til det meste av væsken er fordampet."
+      },
+      {
+        "title": "",
+        "description": "Tilsett kraft, anis, kanel og hvitløk. Kok opp og la det småkoke i cirka 20 minutter."
+      },
+      {
+        "title": "",
+        "description": "Legg andebrystene med fettsiden ned i en kald og tørr stekepanne. Om du har forvarmet panna vil den raskt bli brent. Sett på medium til høy varme. Stek til fettet blir helt sprøtt, 10-15 minutter."
+      },
+      {
+        "title": "",
+        "description": "Snu brystene og stek ytterligere i noen minutter. Øs over stekesjyen av og til. Ta brystene opp av pannen og la dem hvile 10 minutter - med fettsiden opp - før servering. Store bryst kan etterstekes i ovn ved 180 grader i cirka 10 minutter."
+      },
+      {
+        "title": "",
+        "description": "Legg potetene i stekepanne med andefettet. Knus hvitløkfeddene, med skallet på, med bredsiden av kniven. La hvitløken og timian få steke med potetene. Ha gjerne litt smør i etter hvert. De er ferdige når de er gyldne. Dryss over en klype flaksalt før servering."
+      },
+      {
+        "title": "",
+        "description": "Når sausen har kokt i 20 minutter. Visp inn kaldt smør i små terninger, litt etter litt. Smak til med salt og pepper og sil sausen. Tilsett bringebær rett før servering."
+      },
+      {
+        "title": "",
+        "description": "Fest hvitløkfeddet på en gaffel og varm opp en stor stekepanne til spinaten. Ha litt olje i pannen og tilsett spinaten. Rør med hvitløkgaffelen til spinaten har klappet sammen."
+      },
+      {
+        "title": "",
+        "description": "Ta umiddelbart spinaten ut av pannen og over på en tallerken så lenge. Krydre med salt, pepper og en bitte liten klype sukker."
+      },
+      {
+        "title": "",
+        "description": "Skjær andebrystene i pene skiver og server dem med spinat, poteter og saus."
+      }
     ],
     "images": [
       {
@@ -1807,14 +2130,34 @@
       ]
     },
     "steps": [
-      "Kok opp fløte, melk, sukker og vanilje. Når det koker, heller du den varme massen over eggeplommene mens du pisker kraftig. ",
-      "Ha blandingen tilbake i kjelen og varm den opp til 84 grader mens du rører konstant. Blir den varmere enn dette, vil isen bli kornete.",
-      "Ha i pepperkakene og la stå i 20 min. Kjør blandingen med stavmikser og sil av. Avkjøl. Om du har tid, la røra ligge i kjøleskapet over natta for å la smakene sette seg ordentlig. ",
-      "Kjør røra i ismaskin. Dersom du ikke har ismaskin kan du sette blandingen i fryseren og røre hver halvtime til den har satt seg.",
-      "Klementinsaus:",
-      "Smelt sukkeret til gyllen karamell i en tykkbunnet kjele. Unngå å røre i sukkeret, da vil karamellen kunne krystallisere seg. Vend heller på kjelen ved behov. ",
-      "Hell oppi klementinjuicen mens du rører. Rør rundt til karamellen løser seg opp. Avkjøl.",
-      "Server pepperkakeisen med klementinkaramellen og litt knuste pepperkaker i bunn."
+      {
+        "title": "",
+        "description": "Kok opp fløte, melk, sukker og vanilje. Når det koker, heller du den varme massen over eggeplommene mens du pisker kraftig."
+      },
+      {
+        "title": "",
+        "description": "Ha blandingen tilbake i kjelen og varm den opp til 84 grader mens du rører konstant. Blir den varmere enn dette, vil isen bli kornete."
+      },
+      {
+        "title": "",
+        "description": "Ha i pepperkakene og la stå i 20 min. Kjør blandingen med stavmikser og sil av. Avkjøl. Om du har tid, la røra ligge i kjøleskapet over natta for å la smakene sette seg ordentlig."
+      },
+      {
+        "title": "",
+        "description": "Kjør røra i ismaskin. Dersom du ikke har ismaskin kan du sette blandingen i fryseren og røre hver halvtime til den har satt seg."
+      },
+      {
+        "title": "Klementinsaus",
+        "description": "Smelt sukkeret til gyllen karamell i en tykkbunnet kjele. Unngå å røre i sukkeret, da vil karamellen kunne krystallisere seg. Vend heller på kjelen ved behov."
+      },
+      {
+        "title": "",
+        "description": "Hell oppi klementinjuicen mens du rører. Rør rundt til karamellen løser seg opp. Avkjøl."
+      },
+      {
+        "title": "",
+        "description": "Server pepperkakeisen med klementinkaramellen og litt knuste pepperkaker i bunn."
+      }
     ],
     "images": [
       {
@@ -1936,12 +2279,30 @@
       ]
     },
     "steps": [
-      "Hakk løk og hvitløk. Stek gul løk i en gryte i litt olje til den en blank.",
-      "Ha i hvitløk og kjøttdeigen og brun kjøttet med løken.",
-      "Gjør klar paprikapulver, hvetemel, merian, tomatpurè, laubærblad og knus karve i morter(om du har). Ha alt i gryta når kjøttdeigen er brunet. Hell over kraft.",
-      "Kok opp, og la gryta putre på svak varme i 10-15 minutter.",
-      "Hakk grønnsakene i terninger. Legg grønnsakene i gryta og trekke til de er møre. Dette pleier å ta ca 30-45 minutter.",
-      "Server med hakket persille om du har, og godt brød."
+      {
+        "title": "",
+        "description": "Hakk løk og hvitløk. Stek gul løk i en gryte i litt olje til den en blank."
+      },
+      {
+        "title": "",
+        "description": "Ha i hvitløk og kjøttdeigen og brun kjøttet med løken."
+      },
+      {
+        "title": "",
+        "description": "Gjør klar paprikapulver, hvetemel, merian, tomatpurè, laubærblad og knus karve i morter (om du har). Ha alt i gryta når kjøttdeigen er brunet. Hell over kraft."
+      },
+      {
+        "title": "",
+        "description": "Kok opp, og la gryta putre på svak varme i 10-15 minutter."
+      },
+      {
+        "title": "",
+        "description": "Hakk grønnsakene i terninger. Legg grønnsakene i gryta og trekke til de er møre. Dette pleier å ta ca 30-45 minutter."
+      },
+      {
+        "title": "",
+        "description": "Server med hakket persille om du har, og godt brød."
+      }
     ],
     "images": [
       {
@@ -2058,14 +2419,38 @@
       ]
     },
     "steps": [
-      "Om fisken ikke er saltet, legg fisken i salt(se bilde nedenfor). Men ikke la den ligge sånn for lenge, da får du tørrfisk! (eller tørr fisk da..)",
-      "Lag mangosalsa. Kutt mango i terninger, hakk rødløken og bland alt i ei bolle sammen med koriander, lime og chili.",
-      "Fyll vann i dampkjelen eller kok opp litt vann i en kjele som er romslig nok til å romme bambusdamperen.",
-      "Rens og del vårløken i to. Legg vårløken på risten og legg fiskestykkene oppå. Krydre med litt kvernet pepper.",
-      "Rens og del pak choy-bladene, legg bladene innimellom fiskestykkene. Dryss over sesamfrø og fordel chili og lime.",
-      "Rør sammen soyasaus, honning og ingefær og drypp en teskje av soyablandingen over hvert fiskestykke.",
-      "Sett risten i dampkjelen eller sett bambusdamperen i kjelen (husk at vannet ikke skal berøre fisken). Legg på lokket og damp fisken i 5-10 minutter litt avhengig av tykkelsen. Fisken er klar når den flaker seg ved et lett trykk.",
-      "Ha over koriander og drypp over restene av soyasausen ved servering. Server med mangosalsa og eventuelt ris."
+      {
+        "title": "",
+        "description": "Om fisken ikke er saltet, legg fisken i salt (se bilde nedenfor). Men ikke la den ligge sånn for lenge, da får du tørrfisk! (eller tørr fisk da..)"
+      },
+      {
+        "title": "",
+        "description": "Lag mangosalsa. Kutt mango i terninger, hakk rødløken og bland alt i ei bolle sammen med koriander, lime og chili."
+      },
+      {
+        "title": "",
+        "description": "Fyll vann i dampkjelen eller kok opp litt vann i en kjele som er romslig nok til å romme bambusdamperen."
+      },
+      {
+        "title": "",
+        "description": "Rens og del vårløken i to. Legg vårløken på risten og legg fiskestykkene oppå. Krydre med litt kvernet pepper."
+      },
+      {
+        "title": "",
+        "description": "Rens og del pak choy-bladene, legg bladene innimellom fiskestykkene. Dryss over sesamfrø og fordel chili og lime."
+      },
+      {
+        "title": "",
+        "description": "Rør sammen soyasaus, honning og ingefær og drypp en teskje av soyablandingen over hvert fiskestykke."
+      },
+      {
+        "title": "",
+        "description": "Sett risten i dampkjelen eller sett bambusdamperen i kjelen (husk at vannet ikke skal berøre fisken). Legg på lokket og damp fisken i 5-10 minutter litt avhengig av tykkelsen. Fisken er klar når den flaker seg ved et lett trykk."
+      },
+      {
+        "title": "",
+        "description": "Ha over koriander og drypp over restene av soyasausen ved servering. Server med mangosalsa og eventuelt ris."
+      }
     ],
     "images": [
       {
@@ -2206,16 +2591,46 @@
       ]
     },
     "steps": [
-      "Krydre kjøttet godt med salt og pepper.",
-      "Hakk hvitløk.",
-      "Skjær baconet i terninger. Varm en tykkbunnet gryte med litt olje. Sprøstek baconet, og løft det ut av gryta. La fettet være igjen.",
-      "Brun kjøttstykket slik at hele stykket blir skikkelig brunet. Ta ut kjøttstykket av gryta. Legg bacon i gryta og tilsett deretter tomatpure, hvitløk, timian og laurbær. Dryss over melet, rør godt og tilsett kraft og vin.",
-      "Legg kjøttstykket tilbake i gryta. La den få et oppkok under omrøring.",
-      "Legg på lokk, og la gryten småputre til kjøttet er helt mørt, eller detter fra hverandre som vi pleier å si. Det kan ta ca 6-7 timer.",
-      "Mot slutten av koketiden legg gulrøttene i gryta.",
-      "Stek delikatesseløken gyllen i litt smør i en stor stekepanne. Gjør det samme med soppen, og ha alt sammen i gryta. La det putre videre til løken er mør. Juster smaken med salt og pepper hvis nødvendig.",
-      "Skjær pastinakk og poteter i like store terninger. Kok de møre. Stapp med en stapper eller stavmikser. Smak til med smør, fløte, parmesan, salt og pepper.",
-      "Server biff burgund med pastinakkpurè."
+      {
+        "title": "",
+        "description": "Krydre kjøttet godt med salt og pepper."
+      },
+      {
+        "title": "",
+        "description": "Hakk hvitløk."
+      },
+      {
+        "title": "",
+        "description": "Skjær baconet i terninger. Varm en tykkbunnet gryte med litt olje. Sprøstek baconet, og løft det ut av gryta. La fettet være igjen."
+      },
+      {
+        "title": "",
+        "description": "Brun kjøttstykket slik at hele stykket blir skikkelig brunet. Ta ut kjøttstykket av gryta. Legg bacon i gryta og tilsett deretter tomatpuré, hvitløk, timian og laurbær. Dryss over melet, rør godt og tilsett kraft og vin."
+      },
+      {
+        "title": "",
+        "description": "Legg kjøttstykket tilbake i gryta. La den få et oppkok under omrøring."
+      },
+      {
+        "title": "",
+        "description": "Legg på lokk, og la gryten småputre til kjøttet er helt mørt, eller detter fra hverandre som vi pleier å si. Det kan ta ca 6-7 timer."
+      },
+      {
+        "title": "",
+        "description": "Mot slutten av koketiden legg gulrøttene i gryta."
+      },
+      {
+        "title": "",
+        "description": "Stek delikatesse løken gyllen i litt smør i en stor stekepanne. Gjør det samme med soppen, og ha alt sammen i gryta. La det putre videre til løken er mør. Juster smaken med salt og pepper hvis nødvendig."
+      },
+      {
+        "title": "",
+        "description": "Skjær pastinakk og poteter i like store terninger. Kok de møre. Stapp med en stapper eller stavmikser. Smak til med smør, fløte, parmesan, salt og pepper."
+      },
+      {
+        "title": "",
+        "description": "Server biff burgund med pastinakkpuré."
+      }
     ],
     "images": [
       {
@@ -2332,17 +2747,50 @@
       ]
     },
     "steps": [
-      "Begynn dagen før med pizzadeigen",
-      "Rør gjæren ut i vann. Tilsett mel, salt og sukker",
-      "Elt deigen i 10-15 minutter, til den føles elastisk og bløt",
-      "Del deigen i 6 like store deler og rull dem til boller",
-      "Legg bollene over på et olja stekebrett som får plass i kjøleskapet. Dryss litt ekstra mel på toppen av bollene, ellers klistrer deigen seg, og dekk med plastfolie.",
-      "Sett brettet i kjøleskapet natten over.",
-      "Ta ut deigen ca en time før bruk. Sett på stekeovn på 250 grader. Bruk gjerne pizzastein.",
-      "Bruk kjevle, eller bare klem og dra bollene til tynne pizzabunner.",
-      "Smør bunnen med tomatsaus, del mozzarella og blåmuggost i biter og fordel utover. Rull små boller av innholdet i salsiccia-pølsa og fordel over pizzaen.",
-      "Stek i ca 8 minutter, eller følg med på ovnen. Har du pizzaspade, dryss litt semulegryn på spaden for at pizzaen ikke sitter fast på spaden.",
-      "Dryss over granateple før servering"
+      {
+        "title": "",
+        "description": "Begynn dagen før med pizzadeigen"
+      },
+      {
+        "title": "",
+        "description": "Rør gjæren ut i vann. Tilsett mel, salt og sukker"
+      },
+      {
+        "title": "",
+        "description": "Elt deigen i 10-15 minutter, til den føles elastisk og bløt"
+      },
+      {
+        "title": "",
+        "description": "Del deigen i 6 like store deler og rull dem til boller"
+      },
+      {
+        "title": "",
+        "description": "Legg bollene over på et olja stekebrett som får plass i kjøleskapet. Dryss litt ekstra mel på toppen av bollene, ellers klistrer deigen seg, og dekk med plastfolie."
+      },
+      {
+        "title": "",
+        "description": "Sett brettet i kjøleskapet natten over."
+      },
+      {
+        "title": "",
+        "description": "Ta ut deigen ca en time før bruk. Sett på stekeovn på 250 grader. Bruk gjerne pizzastein."
+      },
+      {
+        "title": "",
+        "description": "Bruk kjevle, eller bare klem og dra bollene til tynne pizzabunner."
+      },
+      {
+        "title": "",
+        "description": "Smør bunnen med tomatsaus, del mozzarella og blåmuggost i biter og fordel utover. Rull små boller av innholdet i salsiccia-pølsa og fordel over pizzaen."
+      },
+      {
+        "title": "",
+        "description": "Stek i ca 8 minutter, eller følg med på ovnen. Har du pizzaspade, dryss litt semulegryn på spaden for at pizzaen ikke sitter fast på spaden."
+      },
+      {
+        "title": "",
+        "description": "Dryss over granateple før servering"
+      }
     ],
     "images": [
       {
@@ -2441,15 +2889,42 @@
       ]
     },
     "steps": [
-      "Grovhakk løk og knus hvitløk, trenger ikke finhakkes.",
-      "I en gryte fres guk løk til den er blank i litt olje. Tilsett hvitløken, og la den steke med i ett minutt.",
-      "Tilsett rødvinseddik, bland den godt inn med løken. Deretter tilsett tomater, vann og fond.",
-      "Kok opp og la putre med lokk så lenge du har tid. Minimum en time. Jo lengre, jo bedre. Ikke fosskoke.",
-      "Når den har putret lenge nok, kjør den glatt med stavmikser. Tilsett krydderne.",
-      "Smak til med salt, pepper og sukker.",
-      "Om du er usikker på hvor du skal begynne så start med en teskje salt og sukker, og en halv teskje pepper.",
-      "Er det lite smak nå? Kjør på med mer salt. Er det lite sødme? Kjør på med mer sukker.",
-      "Avkjøl før du har det i bokser. Frys ned."
+      {
+        "title": "",
+        "description": "Grovhakk løk og knus hvitløk, trenger ikke finhakkes."
+      },
+      {
+        "title": "",
+        "description": "I en gryte fres guk løk til den er blank i litt olje. Tilsett hvitløken, og la den steke med i ett minutt."
+      },
+      {
+        "title": "",
+        "description": "Tilsett rødvinseddik, bland den godt inn med løken. Deretter tilsett tomater, vann og fond."
+      },
+      {
+        "title": "",
+        "description": "Kok opp og la putre med lokk så lenge du har tid. Minimum en time. Jo lengre, jo bedre. Ikke fosskoke."
+      },
+      {
+        "title": "",
+        "description": "Når den har putret lenge nok, kjør den glatt med stavmikser. Tilsett krydderne."
+      },
+      {
+        "title": "",
+        "description": "Smak til med salt, pepper og sukker."
+      },
+      {
+        "title": "",
+        "description": "Om du er usikker på hvor du skal begynne så start med en teskje salt og sukker, og en halv teskje pepper."
+      },
+      {
+        "title": "",
+        "description": "Er det lite smak nå? Kjør på med mer salt. Er det lite sødme? Kjør på med mer sukker."
+      },
+      {
+        "title": "",
+        "description": "Avkjøl før du har det i bokser. Frys ned."
+      }
     ],
     "images": [
       {
@@ -2552,32 +3027,94 @@
       ]
     },
     "steps": [
-      "<strong>Vannbakkels:</strong>",
-      "Mål opp ingredienser før du starter.",
-      "Kok opp vannet i en tykkbunnet kjele. Ikke kok for lenge, da blir det raskt feil mengde vann.",
-      "Smelt smøret i det kokende vannet, pass på så det ikke koker over i denne prosessen. Bruk en tresleiv for å røre med.",
-      "Hell i alt melet på en gang under omrøring med tresleiva.",
-      "La ovnen stå på middels varme og rør til det blir en stor klump. Fortsett å røre over varmen i et par minutter til deigklumpen har fått varme på alle sider.",
-      "Ha deigen over i en kjøkkenmaskin med K-krok. Rør inn ett og ett egg. Ikke tilsett det neste egget før det forrige er rørt helt inn.",
-      "Sett ovnen til 200 grader. Fyll vannbakkelsrøren i en sprøytepose. Legg sprøyteposen i et stort glass, så har du mer kontroll på den klissete deigen.",
-      "Finn fram et stekebrett med bakepapir. Sprøyt ut 7-8 boller på størrelse med en klementiner. Vannbakkelsen vil ese litt ut, så ha avstand mellom dem.",
-      "Stek vannbakkelsen midt i ovnen, i ca. 40 minutter. Avkjøl på rist.",
-      "<strong>Sitronkrem:</strong>",
-      "Press sitronsaft. Sil over i en kjele og kok opp.",
-      "Bland sukker og maisenna i en bolle. Pisk inn eggene.",
-      "Hell den kokende sitronsaften over eggeblandingen mens du pisker (for å unngå at eggene «korner» seg).",
-      "Hell alt tilbake i kjelen, og la det få et skikkelig oppkok under konstant pisking. Mot slutten av koketiden tykner det til krem. Da er den ferdigkokt.",
-      "Ta kjelen av varmen. Avkjøl litt før du visper inn smøret.",
-      "<strong>Marengs:</strong>",
-      "Lag marengsen rett før servering, den er best fersk.",
-      "Pisk sammen eggehviter og sukker i en romslig stålbolle.",
-      "Sett bollen over vannbad og pisk marengsen over varmen til sukkeret har løst seg opp og blandingen er cirka 60 grader.",
-      "Ha marengsen i en kjøkkenmaskin og pisk ved full hastighet til den er blank og stiv.",
-      "<strong>Montering:</strong>",
-      "Skjær toppene av vannbakkelsene med en brødkniv.",
-      "Fyll dem med et par spiseskjeer sitronkrem",
-      "Fyll en sprøytepose med marengs og sprøyt et fint lokk over vannbakkelsen.",
-      "Brenn marengsen lett med flammekaster'n! (eller gassbrenner som det egentlig heter)"
+      {
+        "title": "Vannbakkels",
+        "description": "Mål opp ingredienser før du starter."
+      },
+      {
+        "title": "",
+        "description": "Kok opp vannet i en tykkbunnet kjele. Ikke kok for lenge, da blir det raskt feil mengde vann."
+      },
+      {
+        "title": "",
+        "description": "Smelt smøret i det kokende vannet, pass på så det ikke koker over i denne prosessen. Bruk en tresleiv for å røre med."
+      },
+      {
+        "title": "",
+        "description": "Hell i alt melet på en gang under omrøring med tresleiva."
+      },
+      {
+        "title": "",
+        "description": "La ovnen stå på middels varme og rør til det blir en stor klump. Fortsett å røre over varmen i et par minutter til deigklumpen har fått varme på alle sider."
+      },
+      {
+        "title": "",
+        "description": "Ha deigen over i en kjøkkenmaskin med K-krok. Rør inn ett og ett egg. Ikke tilsett det neste egget før det forrige er rørt helt inn."
+      },
+      {
+        "title": "",
+        "description": "Sett ovnen til 200 grader. Fyll vannbakkelsrøren i en sprøytepose. Legg sprøyteposen i et stort glass, så har du mer kontroll på den klissete deigen."
+      },
+      {
+        "title": "",
+        "description": "Finn fram et stekebrett med bakepapir. Sprøyt ut 7-8 boller på størrelse med en klementiner. Vannbakkelsen vil ese litt ut, så ha avstand mellom dem."
+      },
+      {
+        "title": "",
+        "description": "Stek vannbakkelsen midt i ovnen, i ca. 40 minutter. Avkjøl på rist."
+      },
+      {
+        "title": "Sitronkrem",
+        "description": "Press sitronsaft. Sil over i en kjele og kok opp."
+      },
+      {
+        "title": "",
+        "description": "Bland sukker og maisenna i en bolle. Pisk inn eggene."
+      },
+      {
+        "title": "",
+        "description": "Hell den kokende sitronsaften over eggeblandingen mens du pisker (for å unngå at eggene «korner» seg)."
+      },
+      {
+        "title": "",
+        "description": "Hell alt tilbake i kjelen, og la det få et skikkelig oppkok under konstant pisking. Mot slutten av koketiden tykner det til krem. Da er den ferdigkokt."
+      },
+      {
+        "title": "",
+        "description": "Ta kjelen av varmen. Avkjøl litt før du visper inn smøret."
+      },
+      {
+        "title": "Marengs",
+        "description": "Lag marengsen rett før servering, den er best fersk."
+      },
+      {
+        "title": "",
+        "description": "Pisk sammen eggehviter og sukker i en romslig stålbolle."
+      },
+      {
+        "title": "",
+        "description": "Sett bollen over vannbad og pisk marengsen over varmen til sukkeret har løst seg opp og blandingen er cirka 60 grader."
+      },
+      {
+        "title": "",
+        "description": "Ha marengsen i en kjøkkenmaskin og pisk ved full hastighet til den er blank og stiv."
+      },
+      {
+        "title": "Montering",
+        "description": "Skjær toppene av vannbakkelsene med en brødkniv."
+      },
+      {
+        "title": "",
+        "description": "Fyll dem med et par spiseskjeer sitronkrem"
+      },
+      {
+        "title": "",
+        "description": "Fyll en sprøytepose med marengs og sprøyt et fint lokk over vannbakkelsen."
+      },
+      {
+        "title": "",
+        "description": "Brenn marengsen lett med flammekaster'n! (eller gassbrenner som det egentlig heter)"
+      }
     ],
     "images": [
       {
@@ -2660,14 +3197,38 @@
       ]
     },
     "steps": [
-      "Kutt opp løk og blomkål. Legg noen pene små blomkålbuketter til side for topping.",
-      "Varm olje i stekepanne og fres løken til den blir blank og myk",
-      "Tilsett blomkålen og fres sammen med løken i ett par minutter, ha det over i en kjele og tilsett kraft",
-      "Kok opp og la det koke under lokk til blomkålen er helt mør(altså bløt)",
-      "Mens suppa koker kan du steke toppingen, vi har valgt chorizo og blomkålbuketter. Topping kan varieres til det uendelige. Kanskje ikke hockeypulver.",
-      "Kjør suppa med stavmikser til den blir helt glatt",
-      "Smak til med fløte, salt og pepper",
-      "Dryss over topping og chiliolje. Kan serveres med godt brød"
+      {
+        "title": "",
+        "description": "Kutt opp løk og blomkål. Legg noen pene små blomkålbuketter til side for topping."
+      },
+      {
+        "title": "",
+        "description": "Varm olje i stekepanne og fres løken til den blir blank og myk."
+      },
+      {
+        "title": "",
+        "description": "Tilsett blomkålen og fres sammen med løken i ett par minutter, ha det over i en kjele og tilsett kraft."
+      },
+      {
+        "title": "",
+        "description": "Kok opp og la det koke under lokk til blomkålen er helt mør (altså bløt)."
+      },
+      {
+        "title": "",
+        "description": "Mens suppa koker kan du steke toppingen, vi har valgt chorizo og blomkålbuketter. Topping kan varieres til det uendelige. Kanskje ikke hockeypulver."
+      },
+      {
+        "title": "",
+        "description": "Kjør suppa med stavmikser til den blir helt glatt."
+      },
+      {
+        "title": "",
+        "description": "Smak til med fløte, salt og pepper."
+      },
+      {
+        "title": "",
+        "description": "Dryss over topping og chiliolje. Kan serveres med godt brød."
+      }
     ],
     "images": [
       {
@@ -2777,11 +3338,26 @@
       ]
     },
     "steps": [
-      "Skrell, rens og grovkutt alle grønnsaker.",
-      "Ha alt i en kjele med oljen og fres lett på medium varme.",
-      "Hell på vann så det akkurat dekker grønnsakene.",
-      "Gi det et oppkok, og la kraften trekke på svak varme i 1 time",
-      "Sil kraften. Avkjøl. Oppbevares i glass med lokk i kjøleskap."
+      {
+        "title": "",
+        "description": "Skrell, rens og grovkutt alle grønnsaker."
+      },
+      {
+        "title": "",
+        "description": "Ha alt i en kjele med oljen og fres lett på medium varme."
+      },
+      {
+        "title": "",
+        "description": "Hell på vann så det akkurat dekker grønnsakene."
+      },
+      {
+        "title": "",
+        "description": "Gi det et oppkok, og la kraften trekke på svak varme i 1 time."
+      },
+      {
+        "title": "",
+        "description": "Sil kraften. Avkjøl. Oppbevares i glass med lokk i kjøleskap."
+      }
     ],
     "images": [
       {
@@ -2884,12 +3460,30 @@
       ]
     },
     "steps": [
-      "Forvarm ovnen til 170 grader. Bak hel, uskrelt hvitløk i 60 minutter. Bak hel, uskrelt sjalottløk i de siste 45 minuttene, til de er helt myke.",
-      "Avkjøl og rens løken",
-      "Rist svart kardemomme, korianderfrø og spisskummen i tørr panne til det lukter digg krydder. Avkjøl.",
-      "Kutt chili, sitrongress, galangal, gurkemeie og ingefær i tynne skiver.",
-      "Knus alle ingrediensene sammen i en morter eller i en foodprosessor til det er en fin mos.",
-      "Varm en panne med litt olje og fres pastaen i ca 5 minutter. Om du skal bruke pastaen med en gang kan du hoppe over dette steget."
+      {
+        "title": "",
+        "description": "Forvarm ovnen til 170 grader. Bak hel, uskrelt hvitløk i 60 minutter. Bak hel, uskrelt sjalottløk i de siste 45 minuttene, til de er helt myke."
+      },
+      {
+        "title": "",
+        "description": "Avkjøl og rens løken."
+      },
+      {
+        "title": "",
+        "description": "Rist svart kardemomme, korianderfrø og spisskummen i tørr panne til det lukter digg krydder. Avkjøl."
+      },
+      {
+        "title": "",
+        "description": "Kutt chili, sitrongress, galangal, gurkemeie og ingefær i tynne skiver."
+      },
+      {
+        "title": "",
+        "description": "Knus alle ingrediensene sammen i en morter eller i en foodprosessor til det er en fin mos."
+      },
+      {
+        "title": "",
+        "description": "Varm en panne med litt olje og fres pastaen i ca 5 minutter. Om du skal bruke pastaen med en gang kan du hoppe over dette steget."
+      }
     ],
     "images": [
       {
@@ -2980,12 +3574,30 @@
       ]
     },
     "steps": [
-      "Forvarm ovnen til 180 grader. Legg beina i en langpanne og stek i 30-40 minutter.",
-      "Når beina er gylne, legg dem over i en kjele. Dekk med vann og kok opp.",
-      "Mens beina koker opp, skrell, rens og grovkutt grønnsakene.",
-      "Ha alle ingredienser opp i sammen med kyllingen. Fjern skummet som legger seg på toppen under oppkoking.",
-      "Når det koker, skru ned varmen og la den småkoke i 6 timer. Skum av underveis også.",
-      "Sil kraften og bruk i no digg middag. Kan oppbevares i rent glass i kjøleskapet."
+      {
+        "title": "",
+        "description": "Forvarm ovnen til 180 grader. Legg beina i en langpanne og stek i 30-40 minutter."
+      },
+      {
+        "title": "",
+        "description": "Når beina er gylne, legg dem over i en kjele. Dekk med vann og kok opp."
+      },
+      {
+        "title": "",
+        "description": "Mens beina koker opp, skrell, rens og grovkutt grønnsakene."
+      },
+      {
+        "title": "",
+        "description": "Ha alle ingredienser opp i sammen med kyllingen. Fjern skummet som legger seg på toppen under oppkoking."
+      },
+      {
+        "title": "",
+        "description": "Når det koker, skru ned varmen og la den småkoke i 6 timer. Skum av underveis også."
+      },
+      {
+        "title": "",
+        "description": "Sil kraften og bruk i no digg middag. Kan oppbevares i rent glass i kjøleskapet."
+      }
     ],
     "images": [
       {
@@ -3096,19 +3708,58 @@
       ]
     },
     "steps": [
-      "Forvarm ovnen til 200 grader.",
-      "Varm en teflonpanne eller kjele.",
-      "Bruk en skje og ta den øverste kremen fra en boks kokosmelk og legg i panna.",
-      "Kok kokoskremen helt til den skiller seg. Ca 15 minutter på litt over medium varme. Jo mer skilt curry jo mer respekt.",
-      "Når kokoskremen er skilt, bland i red curry paste og fres dette samme i ca 5 minutter.",
-      "Hell kyllingkraft og kokosmelk i og kok i 30 minutter.",
-      "Varm en panne med litt olje. Legg i en klatt smør sammen med kyllingbrystet. Det skal frese godt, men pass på at det ikke brennes. Når skinnet er gyllent og sprøtt legg inn i en passende ildfast form i ovnen.",
-      "Steketid varierer med størrelsen på brystet, men etter ca 10 minutter kjenn på kyllingen. Begynner den å bli hard/bouncy kan du ta den ut av formen og la den hvile på rist.",
-      "Kok nudlene",
-      "Varm matolje til 180 grader. Friter litt av nudlene til de blir gyldne og la de tørke på et papir.",
-      "Smak til curryen med soyasaus, fiskesaus, palmesukker og lime.",
-      "Kutt sjalottløk og vårløk i tynne skiver. Skjær opp kyllingbrystet i skiver.",
-      "Server nudler med curry og kylling toppet med sjalottløk, vårløk, koriander og friterte nudler."
+      {
+        "title": "",
+        "description": "Forvarm ovnen til 200 grader."
+      },
+      {
+        "title": "",
+        "description": "Varm en teflonpanne eller kjele."
+      },
+      {
+        "title": "",
+        "description": "Bruk en skje og ta den øverste kremen fra en boks kokosmelk og legg i panna."
+      },
+      {
+        "title": "",
+        "description": "Kok kokoskremen helt til den skiller seg. Ca 15 minutter på litt over medium varme. Jo mer skilt curry jo mer respekt."
+      },
+      {
+        "title": "",
+        "description": "Når kokoskremen er skilt, bland i red curry paste og fres dette samme i ca 5 minutter."
+      },
+      {
+        "title": "",
+        "description": "Hell kyllingkraft og kokosmelk i og kok i 30 minutter."
+      },
+      {
+        "title": "",
+        "description": "Varm en panne med litt olje. Legg i en klatt smør sammen med kyllingbrystet. Det skal frese godt, men pass på at det ikke brennes. Når skinnet er gyllent og sprøtt legg inn i en passende ildfast form i ovnen."
+      },
+      {
+        "title": "",
+        "description": "Steketid varierer med størrelsen på brystet, men etter ca 10 minutter kjenn på kyllingen. Begynner den å bli hard/bouncy kan du ta den ut av formen og la den hvile på rist."
+      },
+      {
+        "title": "",
+        "description": "Kok nudlene"
+      },
+      {
+        "title": "",
+        "description": "Varm matolje til 180 grader. Friter litt av nudlene til de blir gyldne og la de tørke på et papir."
+      },
+      {
+        "title": "",
+        "description": "Smak til curryen med soyasaus, fiskesaus, palmesukker og lime."
+      },
+      {
+        "title": "",
+        "description": "Kutt sjalottløk og vårløk i tynne skiver. Skjær opp kyllingbrystet i skiver."
+      },
+      {
+        "title": "",
+        "description": "Server nudler med curry og kylling toppet med sjalottløk, vårløk, koriander og friterte nudler."
+      }
     ],
     "images": [
       {
@@ -3227,27 +3878,78 @@
       ]
     },
     "steps": [
-      "Sett ovnen på 180 grader",
-      "Legg poteter i passende ildfast form, dryss over olje så det dekker alle potene godt. Salt potene med havsalt. Sett formen i ovnen.",
-      "Stek potetene til de er gyldne. Det tar 30-40 minutter med små poteter.",
-      "<strong>Fisken:</strong>",
-      "Dekk skreien med salt, og legg i kjøleskap i minst 20 minutter",
-      "Ta ut fisken. Skyll av overflødig salt med kaldt vann.",
-      "Tørk fisken godt med papir.",
-      "Salte og pepre fisken lett. Og sett i ovnen med samme temperatur som potetene.",
-      "Fisken er ferdig når den flaker seg når du trykker lett på den. Maks 10 minutter, sannsynligvis kortere.",
-      "<strong>Smørsaus:</strong>",
-      "Finkutt sjalottløk, kutt smør i terninger.",
-      "Ha hvitvin, hvitvinseddik, sjalottløk og laurbærblad i en kjele. Kok til du har redusert væsken til ca 2 spiseskjeer.",
-      "Pisk inn kremfløte og kok til det tykner litt.",
-      "Skru temperaturen til lav varme, pisk inn kaldt smør i terning for terning.",
-      "Smak til med sitronsaft, salt, pepper.",
-      "Rør inn gressløk rett før servering, for å bevare grønnfargen.",
-      "<strong>Appelsinkokt gulrøtter:</strong>",
-      "Kutt gulrøtter i staver, eller i strimler med en potetskreller.",
-      "Ha gulrøtter og appelsinjuice i en kjele, kok opp og la koke til gulrøttene er al dente, at de fortsatt har litt tyggemotstand. Ca 7-8 minutter. Dette spørs på størrelsen du har kuttet.",
-      "Ta gulrøttene ut av appelsinjuicen og kok inn appelsinjuicen til den tykner. Smak til med salt, pepper og eventuelt honning om den er for syrlig.",
-      "Ha oppi gulrøttene og la stå på svak varme til servering."
+      {
+        "title": "",
+        "description": "Sett ovnen på 180 grader"
+      },
+      {
+        "title": "",
+        "description": "Legg poteter i passende ildfast form, dryss over olje så det dekker alle potene godt. Salt potene med havsalt. Sett formen i ovnen."
+      },
+      {
+        "title": "",
+        "description": "Stek potetene til de er gyldne. Det tar 30-40 minutter med små poteter."
+      },
+      {
+        "title": "Fisken",
+        "description": "Dekk skreien med salt, og legg i kjøleskap i minst 20 minutter"
+      },
+      {
+        "title": "",
+        "description": "Ta ut fisken. Skyll av overflødig salt med kaldt vann."
+      },
+      {
+        "title": "",
+        "description": "Tørk fisken godt med papir."
+      },
+      {
+        "title": "",
+        "description": "Salte og pepre fisken lett. Og sett i ovnen med samme temperatur som potetene."
+      },
+      {
+        "title": "",
+        "description": "Fisken er ferdig når den flaker seg når du trykker lett på den. Maks 10 minutter, sannsynligvis kortere."
+      },
+      {
+        "title": "Smørsaus",
+        "description": "Finkutt sjalottløk, kutt smør i terninger."
+      },
+      {
+        "title": "",
+        "description": "Ha hvitvin, hvitvinseddik, sjalottløk og laurbærblad i en kjele. Kok til du har redusert væsken til ca 2 spiseskjeer."
+      },
+      {
+        "title": "",
+        "description": "Pisk inn kremfløte og kok til det tykner litt."
+      },
+      {
+        "title": "",
+        "description": "Skru temperaturen til lav varme, pisk inn kaldt smør i terning for terning."
+      },
+      {
+        "title": "",
+        "description": "Smak til med sitronsaft, salt, pepper."
+      },
+      {
+        "title": "",
+        "description": "Rør inn gressløk rett før servering, for å bevare grønnfargen."
+      },
+      {
+        "title": "Appelsinkokt gulrøtter",
+        "description": "Kutt gulrøtter i staver, eller i strimler med en potetskreller."
+      },
+      {
+        "title": "",
+        "description": "Ha gulrøtter og appelsinjuice i en kjele, kok opp og la koke til gulrøttene er al dente, at de fortsatt har litt tyggemotstand. Ca 7-8 minutter. Dette spørs på størrelsen du har kuttet."
+      },
+      {
+        "title": "",
+        "description": "Ta gulrøttene ut av appelsinjuicen og kok inn appelsinjuicen til den tykner. Smak til med salt, pepper og eventuelt honning om den er for syrlig."
+      },
+      {
+        "title": "",
+        "description": "Ha oppi gulrøttene og la stå på svak varme til servering."
+      }
     ],
     "images": [
       {
@@ -3339,15 +4041,42 @@
       ]
     },
     "steps": [
-      "Kok opp masse vann. Salt vannet. Vannet er nok salta når det smaker som havet.",
-      "Finhakk chili, hvitløk og bladpersille. Riv sitronskall av en sitron.",
-      "Når pastavannet koker, legg i pastaen.",
-      "Ha olivenolje, chili og hvitløk i kald stekepanne og sett på høy varme. Vi bruker nest høyest.",
-      "Når du hører det freser i panna, tilsett scampi. Og gi den en rask varmebehandling. Pass på at den ikke blir overkokt, da blir den gummi.",
-      "Når pastaen er al dente. Altså smak om den har litt tyggemotstand, men ikke hard. Sil av vannet. Ha i sitronskallet. Skvis over saften av en halv sitron. Og tilsett ca 1 ss olivenolje. Ha i bladpersille og bland alt sammen.",
-      "Smak pastaen til med salt og pepper.",
-      "Serveres umiddelbart i en skål med pasta og scampi i skjønn forening.",
-      "Så poppes boblene."
+      {
+        "title": "",
+        "description": "Kok opp masse vann. Salt vannet. Vannet er nok salta når det smaker som havet."
+      },
+      {
+        "title": "",
+        "description": "Finhakk chili, hvitløk og bladpersille. Riv sitronskall av en sitron."
+      },
+      {
+        "title": "",
+        "description": "Når pastavannet koker, legg i pastaen."
+      },
+      {
+        "title": "",
+        "description": "Ha olivenolje, chili og hvitløk i kald stekepanne og sett på høy varme. Vi bruker nest høyest."
+      },
+      {
+        "title": "",
+        "description": "Når du hører det freser i panna, tilsett scampi. Og gi den en rask varmebehandling. Pass på at den ikke blir overkokt, da blir den gummi."
+      },
+      {
+        "title": "",
+        "description": "Når pastaen er al dente. Altså smak om den har litt tyggemotstand, men ikke hard. Sil av vannet. Ha i sitronskallet. Skvis over saften av en halv sitron. Og tilsett ca 1 ss olivenolje. Ha i bladpersille og bland alt sammen."
+      },
+      {
+        "title": "",
+        "description": "Smak pastaen til med salt og pepper."
+      },
+      {
+        "title": "",
+        "description": "Serveres umiddelbart i en skål med pasta og scampi i skjønn forening."
+      },
+      {
+        "title": "",
+        "description": "Så poppes boblene."
+      }
     ],
     "images": [
       {
@@ -3544,29 +4273,78 @@
       ]
     },
     "steps": [
-      "Massèr svinenakken med nok tacokrydder så det dekker hele kjøttstykket. Legg den i en ildfast form med plastfolie over i kjøleskapet helst natten over.",
-      "Ta ut kjøttet til temperering på kjøkkenbenken, hell eplejuice i bunnen av formen. Sett ovnen på 120 grader. La plastfolien være stramt på, legg over aluminiumsfolie. Ved å ha plasten på vil all saften forbli i maten. Sett kjøttet i ovnen.",
-      "La den stå i 4-5 timer, til kjøttet kan dras fra hverandre som pulled pork.",
-      "<u><b>Chipotlemajones</b></u>",
-      "Legg chipotle i en skål og hell over kokende vann så den dekker chipotlen.",
-      "Når chipotlen er myk, etter ca 20 minutter, finhakk den og ha den i majones sammen med finhakket hvitløk. Om du lager <a href='/oppskrift/majones'>majones</a> selv bytter du ut sriracha med grovhakka chipotle og mikser det sammen med de andre majonesingrediensene. Smak til med sitron, salt og pepper.",
-      "<u><b>Mangosalsa</b></u>",
-      "Kutt mango i små terninger. Finhakk rødløk, rens chili for frø og finhakk, grovhakk koriander. Bland mango, chili, rødløk og koriander i en bolle. Smak til med olivenolje og lime.",
-      "<u><b>Tomatsalsa</b></u>",
-      "Kutt tomatene i 4, legg dem i en bolle, og ha i en klype salt. Tilsett finhakket hvitløk. La dette stå i noen minutter for å marinere seg. Tilsett finhakket renset chili, koriander og rødløk. Smak til med olivenolje og lime. Synes du den er for syrlig, tilsett litt sukker.",
-      "<u><b>Tortillalefser</b></u>",
-      "Mål opp maismel i en bolle. Tilsett en klype salt. Hell i vann til du får riktig konsistens. Her gjelder det å føle seg frem, siden maismel gjør at konsistensen blir porøs og ikke elastisk som mel. Riktig konsistens er når du klarer å rulle små boller av den. ",
-      "Sett på tørr stekepanne på høy varme.",
-      "Rull en liten bolle på størrelsen med en golfball. Press ballen til en flat rund pannekake, her er det best å bruke en presse. Hvis du ikke har tortillapresse kan du bruke en kjele. En kjevle duger altså ikke med maismel.",
-      "Stek lefsa 1-2 minutter på hver side. Mens du steker lefse ruller du og presser en ny.",
-      "Server tortillalefse med kjøtt, salsa og revet fetaost.",
-      "<u><b>Vegetarversjon</b></u>",
-      "Sil av bønner og skyll de godt. La de stå og renne av seg vannet",
-      "Finhakk løk og hvitløk. Stek løk til den blir gylden, ha i hvitløk mot slutten.",
-      "Tilsett tacokrydder, bland godt og la det frese videre i ett minutt.",
-      "Tilsett sriracha, tomatpuré, honning og vann. Gi det et skikkelig oppkok under omrøring.",
-      "Tilsett bønnene og la det småputre i et par-tre minutter. Hvis det blir for tørt, tilsett mer vann.",
-      "Smak til med salt og pepper, og bland til slutt inn hakket koriander."
+      {
+        "title": "",
+        "description": "Massèr svinenakken med nok tacokrydder så det dekker hele kjøttstykket. Legg den i en ildfast form med plastfolie over i kjøleskapet helst natten over."
+      },
+      {
+        "title": "",
+        "description": "Ta ut kjøttet til temperering på kjøkkenbenken, hell eplejuice i bunnen av formen. Sett ovnen på 120 grader. La plastfolien være stramt på, legg over aluminiumsfolie. Ved å ha plasten på vil all saften forbli i maten. Sett kjøttet i ovnen."
+      },
+      {
+        "title": "",
+        "description": "La den stå i 4-5 timer, til kjøttet kan dras fra hverandre som pulled pork."
+      },
+      {
+        "title": "Chipotlemajones",
+        "description": "Legg chipotle i en skål og hell over kokende vann så den dekker chipotlen."
+      },
+      {
+        "title": "",
+        "description": "Når chipotlen er myk, etter ca 20 minutter, finhakk den og ha den i majones sammen med finhakket hvitløk. Om du lager majones selv bytter du ut sriracha med grovhakka chipotle og mikser det sammen med de andre majonesingrediensene. Smak til med sitron, salt og pepper."
+      },
+      {
+        "title": "Mangosalsa",
+        "description": "Kutt mango i små terninger. Finhakk rødløk, rens chili for frø og finhakk, grovhakk koriander. Bland mango, chili, rødløk og koriander i en bolle. Smak til med olivenolje og lime."
+      },
+      {
+        "title": "Tomatsalsa",
+        "description": "Kutt tomatene i 4, legg dem i en bolle, og ha i en klype salt. Tilsett finhakket hvitløk. La dette stå i noen minutter for å marinere seg. Tilsett finhakket renset chili, koriander og rødløk. Smak til med olivenolje og lime. Synes du den er for syrlig, tilsett litt sukker."
+      },
+      {
+        "title": "Tortillalefser",
+        "description": "Mål opp maismel i en bolle. Tilsett en klype salt. Hell i vann til du får riktig konsistens. Her gjelder det å føle seg frem, siden maismel gjør at konsistensen blir porøs og ikke elastisk som mel. Riktig konsistens er når du klarer å rulle små boller av den."
+      },
+      {
+        "title": "",
+        "description": "Sett på tørr stekepanne på høy varme."
+      },
+      {
+        "title": "",
+        "description": "Rull en liten bolle på størrelsen med en golfball. Press ballen til en flat rund pannekake, her er det best å bruke en presse. Hvis du ikke har tortillapresse kan du bruke en kjele. En kjevle duger altså ikke med maismel."
+      },
+      {
+        "title": "",
+        "description": "Stek lefsa 1-2 minutter på hver side. Mens du steker lefse ruller du og presser en ny."
+      },
+      {
+        "title": "",
+        "description": "Server tortillalefse med kjøtt, salsa og revet fetaost."
+      },
+      {
+        "title": "Vegetarversjon",
+        "description": "Sil av bønner og skyll de godt. La de stå og renne av seg vannet"
+      },
+      {
+        "title": "",
+        "description": "Finhakk løk og hvitløk. Stek løk til den blir gylden, ha i hvitløk mot slutten."
+      },
+      {
+        "title": "",
+        "description": "Tilsett tacokrydder, bland godt og la det frese videre i ett minutt."
+      },
+      {
+        "title": "",
+        "description": "Tilsett sriracha, tomatpuré, honning og vann. Gi det et skikkelig oppkok under omrøring."
+      },
+      {
+        "title": "",
+        "description": "Tilsett bønnene og la det småputre i et par-tre minutter. Hvis det blir for tørt, tilsett mer vann."
+      },
+      {
+        "title": "",
+        "description": "Smak til med salt og pepper, og bland til slutt inn hakket koriander."
+      }
     ],
     "images": [
       {
@@ -3649,14 +4427,38 @@
       ]
     },
     "steps": [
-      "Sett ovnen på 200 grader",
-      "Legg hvitløksfeddene uskrelt i en liten form",
-      "Dryss over en god del olivenolje, snurr litt på formen så oljen dekker hvitløken godt",
-      "La hvitløken bake i ca 10 miutter. Til de er bløte. Kjenn etter.",
-      "Riv parmesan, eller ha parmesan i biter i en liten foodprosessor, en sånn som følger med en stavmikser. Blir jo ikke enklere.",
-      "Skrell den bakte hvitløken og knus/hakk hvitløken og bland det med crème fraîche og parmesan.",
-      "Smak til med en god olivenolje (smaker oljen vondt, smaker maten vondt), salt og pepper. Husk at parmesan allerede er salt. Så smak til der altså.",
-      "Server til noe digg grillmat"
+      {
+        "title": "",
+        "description": "Sett ovnen på 200 grader"
+      },
+      {
+        "title": "",
+        "description": "Legg hvitløksfeddene uskrelt i en liten form"
+      },
+      {
+        "title": "",
+        "description": "Dryss over en god del olivenolje, snurr litt på formen så oljen dekker hvitløken godt"
+      },
+      {
+        "title": "",
+        "description": "La hvitløken bake i ca 10 minutter. Til de er bløte. Kjenn etter."
+      },
+      {
+        "title": "",
+        "description": "Riv parmesan, eller ha parmesan i biter i en liten foodprosessor, en sånn som følger med en stavmikser. Blir jo ikke enklere."
+      },
+      {
+        "title": "",
+        "description": "Skrell den bakte hvitløken og knus/hakk hvitløken og bland det med crème fraîche og parmesan."
+      },
+      {
+        "title": "",
+        "description": "Smak til med en god olivenolje (smaker oljen vondt, smaker maten vondt), salt og pepper. Husk at parmesan allerede er salt. Så smak til der altså."
+      },
+      {
+        "title": "",
+        "description": "Server til noe digg grillmat"
+      }
     ],
     "images": [
       {
@@ -3766,13 +4568,34 @@
       ]
     },
     "steps": [
-      "Finhakk sjalottløk og hvitløk",
-      "Varm en kjele med solsikkeolje, brun sjalottløk og hvitløk",
-      "Tilsett timian, knuste sorte pepperkorn, laurbærblad, rødvinseddik og rødvin.",
-      "Kok dette så ned til halv mengde væske.",
-      "Tilsett oksekraft og fortsett å koke ned sausen til den er ca 5 dl. Det tar jo litt tid. Sett på en podkast.",
-      "Sil sausen og jevne den med maisstivelse som er utrørt i kaldt vann.",
-      "Smak sausen til med salt, pepper, sitron og sukker så du får riktig smak av søtt, salt og syrlig."
+      {
+        "title": "",
+        "description": "Finhakk sjalottløk og hvitløk"
+      },
+      {
+        "title": "",
+        "description": "Varm en kjele med solsikkeolje, brun sjalottløk og hvitløk"
+      },
+      {
+        "title": "",
+        "description": "Tilsett timian, knuste sorte pepperkorn, laurbærblad, rødvinseddik og rødvin."
+      },
+      {
+        "title": "",
+        "description": "Kok dette så ned til halv mengde væske."
+      },
+      {
+        "title": "",
+        "description": "Tilsett oksekraft og fortsett å koke ned sausen til den er ca 5 dl. Det tar jo litt tid. Sett på en podkast."
+      },
+      {
+        "title": "",
+        "description": "Sil sausen og jevne den med maisstivelse som er utrørt i kaldt vann."
+      },
+      {
+        "title": "",
+        "description": "Smak sausen til med salt, pepper, sitron og sukker så du får riktig smak av søtt, salt og syrlig."
+      }
     ],
     "images": [
       {
@@ -3875,12 +4698,30 @@
       ]
     },
     "steps": [
-      "Varm oljen i en vid kjele. Når det nesten ryker er det varmt nok, ha i skallene. Pass på at du ikke har for mye skall av gangen. Det skal stekes ikke kokes.",
-      "Stek hver runde i ca 5 minutter. Legg ferdigstekt skall til side og ha i ny runde. Blir det tørt, ha i litt mer olje.",
-      "I siste runde har du i tomatpurè og rører dette rundt. Ha alle skallene tilbake i kjelen, tilsett grønnsaker.",
-      "Dekk alt med vann og kok opp. Ta av skummet som kommer opp til overflaten, dette inneholder ting du ikke vil ha i kraften. Som blod for eksempel.",
-      "Når kraften har kokt opp, skru ned varmen så det vidt putrer. La småkoke i 1 time. Skru av varmen og la trekke i 30 minutter.",
-      "Sil kraften."
+      {
+        "title": "",
+        "description": "Varm oljen i en vid kjele. Når det nesten ryker er det varmt nok, ha i skallene. Pass på at du ikke har for mye skall av gangen. Det skal stekes ikke kokes."
+      },
+      {
+        "title": "",
+        "description": "Stek hver runde i ca 5 minutter. Legg ferdigstekt skall til side og ha i ny runde. Blir det tørt, ha i litt mer olje."
+      },
+      {
+        "title": "",
+        "description": "I siste runde har du i tomatpurè og rører dette rundt. Ha alle skallene tilbake i kjelen, tilsett grønnsaker."
+      },
+      {
+        "title": "",
+        "description": "Dekk alt med vann og kok opp. Ta av skummet som kommer opp til overflaten, dette inneholder ting du ikke vil ha i kraften. Som blod for eksempel."
+      },
+      {
+        "title": "",
+        "description": "Når kraften har kokt opp, skru ned varmen så det vidt putrer. La småkoke i 1 time. Skru av varmen og la trekke i 30 minutter."
+      },
+      {
+        "title": "",
+        "description": "Sil kraften."
+      }
     ],
     "images": [
       {
@@ -4019,19 +4860,50 @@
       ]
     },
     "steps": [
-      "<u><b>Prepping før tur:</b></u>",
-      "Bland sammen krydderne. Skjær kylling i biter. ",
-      "Legg kyllingen i en brødpose sammen med krydderblandingen. Knyt posen og rist så krydderne blandes godt med kyllingen.",
-      "Finhakk løk , legg i en liten boks",
-      "Snitt vårløk, legg i en annen liten boks",
-      "Bland ut kyllingfond, eller kanskje du har rester fra denne <a href='/oppskrift/kyllingkraft'>kyllingkrafta?</a> Ha kraft i en beholder.",
-      "Pakk resten og gå på tur!",
-      "<u><b>Matlaging ute på tur:</b></u>",
-      "Varm kjelen. Tilsett olivenolje og smør. Tilsett kyllingen og stek til den får litt farge.",
-      "Kyllingen trenger ikke være ferdigstekt på dette tidspunktet, den skal kokes videre etterpå",
-      "Tilsett løk og stek med i ca 2 minutter, til den begynner å bli blank.",
-      "Tilsett pasta, tomat og kyllingfond. Bland godt sammen og kok opp. La koke til pastaen er spiseklar.",
-      "Rør inn 2 gode spiseskjeer kremost. Server med vårløk på toppen. DIGG!"
+      {
+        "title": "Prepping før tur",
+        "description": "Bland sammen krydderne. Skjær kylling i biter."
+      },
+      {
+        "title": "",
+        "description": "Legg kyllingen i en brødpose sammen med krydderblandingen. Knyt posen og rist så krydderne blandes godt med kyllingen."
+      },
+      {
+        "title": "",
+        "description": "Finhakk løk, legg i en liten boks."
+      },
+      {
+        "title": "",
+        "description": "Snitt vårløk, legg i en annen liten boks."
+      },
+      {
+        "title": "",
+        "description": "Bland ut kyllingfond, eller kanskje du har rester fra denne <a href='/oppskrift/kyllingkraft'>kyllingkrafta?</a> Ha kraft i en beholder."
+      },
+      {
+        "title": "",
+        "description": "Pakk resten og gå på tur!"
+      },
+      {
+        "title": "Matlaging ute på tur",
+        "description": "Varm kjelen. Tilsett olivenolje og smør. Tilsett kyllingen og stek til den får litt farge."
+      },
+      {
+        "title": "",
+        "description": "Kyllingen trenger ikke være ferdigstekt på dette tidspunktet, den skal kokes videre etterpå."
+      },
+      {
+        "title": "",
+        "description": "Tilsett løk og stek med i ca 2 minutter, til den begynner å bli blank."
+      },
+      {
+        "title": "",
+        "description": "Tilsett pasta, tomat og kyllingfond. Bland godt sammen og kok opp. La koke til pastaen er spiseklar."
+      },
+      {
+        "title": "",
+        "description": "Rør inn 2 gode spiseskjeer kremost. Server med vårløk på toppen. DIGG!"
+      }
     ],
     "images": [
       {
@@ -4125,14 +4997,38 @@
       ]
     },
     "steps": [
-      "Mål opp og bland alle ingredienser i en kjøkkenmaskinbolle. Spar ett egg til pensling. Bruk en eltekrok og elt i kjøkkenmaskinen i ca 15 minutter.",
-      "Ikke slurv med eltingen. Dette skal man bruke tid på for å få gluten til å gjøre jobben for å få luftige fine brød. Sett på ei stoppeklokke.",
-      "Dekk bollen med plast og sett deigen til heving. Deigen skal heve til dobbel størrelse, ca 45-60 minutter.",
-      "Finn frem stekebrett og dekk med bakepapir.",
-      "Strø litt mel på kjøkkenbenken og velt uten deigen på bordet. Del den i to med en bakeskrape(om du har, om ikke, kjøp en). Del hver halvdel i åtte biter og rull dem til boller som legges på brettet.",
-      "Ha litt mel på hånden og trykk bollene flate. Dekk med rent kjøkkenhåndkle og la de heve til dobbel størrelse, ca 30 minutter.",
-      "Når brøda er ferdighevet, pensle dem forsiktig med pisket egg og strø over sesamfrø.",
-      "Stek brødene midt i ovnen på 180 grader i ca 20 minutter."
+      {
+        "title": "",
+        "description": "Mål opp og bland alle ingredienser i en kjøkkenmaskinbolle. Spar ett egg til pensling. Bruk en eltekrok og elt i kjøkkenmaskinen i ca 15 minutter."
+      },
+      {
+        "title": "",
+        "description": "Ikke slurv med eltingen. Dette skal man bruke tid på for å få gluten til å gjøre jobben for å få luftige fine brød. Sett på ei stoppeklokke."
+      },
+      {
+        "title": "",
+        "description": "Dekk bollen med plast og sett deigen til heving. Deigen skal heve til dobbel størrelse, ca 45-60 minutter."
+      },
+      {
+        "title": "",
+        "description": "Finn frem stekebrett og dekk med bakepapir."
+      },
+      {
+        "title": "",
+        "description": "Strø litt mel på kjøkkenbenken og velt uten deigen på bordet. Del den i to med en bakeskrape (om du har, om ikke, kjøp en). Del hver halvdel i åtte biter og rull dem til boller som legges på brettet."
+      },
+      {
+        "title": "",
+        "description": "Ha litt mel på hånden og trykk bollene flate. Dekk med rent kjøkkenhåndkle og la de heve til dobbel størrelse, ca 30 minutter."
+      },
+      {
+        "title": "",
+        "description": "Når brøda er ferdighevet, pensle dem forsiktig med pisket egg og strø over sesamfrø."
+      },
+      {
+        "title": "",
+        "description": "Stek brødene midt i ovnen på 180 grader i ca 20 minutter."
+      }
     ],
     "images": [
       {
@@ -4194,7 +5090,7 @@
       "Sett ovnen på 200 grader.",
       "Riv parmesan over på et stekebrett med bakepapir i 4 like hauger.",
       "Stek i ovnen til osten er smeltet og er gylden, ca 10-15 minutter.",
-      "FØLG MED! Steker du for lite blir den seig, steker du den for mye smaker de brent."
+      "Følg med!!! Steker du for lite blir den seig, steker du den for mye smaker de brent."
     ],
     "images": [
       {

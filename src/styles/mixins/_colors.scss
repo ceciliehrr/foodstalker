@@ -1,0 +1,11 @@
+/* 
+ * Colors
+ */
+
+@use "../variables" as variables;
+
+:root {
+  @each $name, $color in variables.$colors {
+    --#{$name}: #{$color};
+  }
+}

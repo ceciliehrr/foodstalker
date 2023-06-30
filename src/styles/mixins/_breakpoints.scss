@@ -1,0 +1,54 @@
+// Breakpoints mixin
+
+@mixin bp($name) {
+    @if $name== 'mobile' {
+      @media screen and (min-width: 0rem) and (max-width: 35.938rem) {
+        @content;
+      }
+    } @else if $name== 'mobile-up' {
+      @media screen and (min-width: 0rem) {
+        @content;
+      }
+    } @else if $name== 'phablet' {
+      @media screen and (min-width: 35.938rem) and (max-width: 47.938rem) {
+        @content;
+      }
+    } @else if $name== 'phablet-up' {
+      @media screen and (min-width: 35.938rem) {
+        @content;
+      }
+    } @else if $name== 'tablet' {
+      @media screen and (min-width: 48rem) and (max-width: 63.938rem) {
+        @content;
+      }
+    } @else if $name== 'tablet-up' {
+      @media screen and (min-width: 48rem) {
+        @content;
+      }
+    } @else if $name== 'tablet-big' {
+      @media screen and (min-width: 64rem) and (max-width: 79.938rem) {
+        @content;
+      }
+    } @else if $name== 'tablet-big-up' {
+      @media screen and (min-width: 64rem) {
+        @content;
+      }
+    } @else if $name== 'laptop' {
+      @media screen and (min-width: 80rem) and (max-width: 99.938rem) {
+        @content;
+      }
+    } @else if $name== 'laptop-up' {
+      @media screen and (min-width: 80rem) {
+        @content;
+      }
+    } @else if $name== 'desktop-up' {
+      @media screen and (min-width: 100rem) {
+        @content;
+      }
+    } @else {
+      @media screen and (min-width: $name) {
+        @content;
+      }
+    }
+  }
+  

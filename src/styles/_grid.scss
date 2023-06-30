@@ -1,0 +1,115 @@
+/* 
+ * CSS Grid layouts
+ */
+ @use 'sass:map';
+ @use 'sass:math';
+ @use './variables';
+ @use './mixins/breakpoints' as *;
+ 
+ $gapsSmall: map.get(variables.$spacing, 'size-16');
+ $gapsMedium: map.get(variables.$spacing, 'size-32');
+ 
+ .fs-grid {
+   display: grid;
+   gap: $gapsSmall;
+   grid-template-columns: repeat(12, 1fr);
+   margin-left: auto;
+   margin-right: auto;
+   width: 100%;
+ 
+   @include bp('tablet-up') {
+     gap: $gapsMedium;
+   }
+   // Widths
+   &--full {
+     max-width: 100%;
+   }
+   @include bp('phablet-up') {
+     &--phablet {
+       max-width: map.get(variables.$breakpoints, 'phablet');
+     }
+   }
+   @include bp('tablet-up') {
+     &--tablet {
+       max-width: map.get(variables.$breakpoints, 'tablet');
+     }
+   }
+   @include bp('tablet-big-up') {
+     &--tablet-big {
+       max-width: map.get(variables.$breakpoints, 'tablet-big');
+     }
+   }
+   @include bp('laptop-up') {
+     &--laptop {
+       max-width: map.get(variables.$breakpoints, 'laptop');
+     }
+   }
+   @include bp('desktop-up') {
+     &--desktop {
+       max-width: map.get(variables.$breakpoints, 'desktop');
+     }
+   }
+ 
+   // Alignment
+   &--left {
+     margin-left: 0;
+     margin-right: auto;
+   }
+   &--center {
+     margin-left: auto;
+     margin-right: auto;
+   }
+   &--right {
+     margin-left: auto;
+     margin-right: 0;
+   }
+ 
+   // Gap
+   @each $sp-name, $sp-value in variables.$spacing {
+     &--gap-#{$sp-name} {
+       gap: $sp-value;
+     }
+     &--colgap-#{$sp-name} {
+       column-gap: $sp-value;
+     }
+     &--rowgap-#{$sp-name} {
+       row-gap: $sp-value;
+     }
+   }
+ 
+   @each $bp-name, $bp-value in variables.$breakpoints {
+     @include bp('#{$bp-value}') {
+       @each $sp-name, $sp-value in variables.$spacing {
+         &--gap-#{$sp-name}-#{$bp-name}-up {
+           gap: $sp-value;
+         }
+         &--colgap-#{$sp-name}-#{$bp-name}-up {
+           column-gap: $sp-value;
+         }
+         &--rowgap-#{$sp-name}-#{$bp-name}-up {
+           row-gap: $sp-value;
+         }
+       }
+     }
+   }
+ 
+   // grid cell
+   & > .cell {
+     @for $i from 2 through 12 {
+       &.cell--span#{$i} {
+         grid-column-end: span $i;
+       }
+     }
+ 
+     @each $bp-name, $bp-value in variables.$breakpoints {
+       @include bp('#{$bp-value}') {
+         @for $i from 2 through 12 {
+           &.cell--span#{$i}-#{$bp-name}-up {
+             grid-column-end: span $i;
+           }
+         }
+       }
+     }
+   }
+ }
+ 

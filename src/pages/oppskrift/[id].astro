@@ -25,7 +25,7 @@ const mainImage = post.imageurl;
 ---
 
 <Layout title="Oppskrift">
-  <main>
+  <div class="recipe">
     <div class="recipe-grid">
       <div
         class="recipe-title text-green-200 w-2/3 text-4xl md:text-4xl lg:text-5xl font-semibold"
@@ -60,43 +60,12 @@ const mainImage = post.imageurl;
         <Ingredients ingredients={post.ingredients} />
       </div>
     </div>
-
-    <!-- 
-  <main class="flex-grow w-full mt-6 md:mt-10">
-    <div class="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-6">
-      <div class="recipe__main-content col-span-1 md:col-span-3 lg:col-span-4">
-        <h1
-          class="text-green-200 w-2/3 text-4xl md:text-4xl lg:text-5xl font-semibold"
-        >
-          {post.title}
-        </h1>
-        <Picture
-          class="recipe__main-image mb-10 mt-10"
-          src={mainImage}
-          alt=""
-          widths={[400, 800, 200]}
-          aspectRatio="10:16"
-          sizes="(max-width: 400px) 100vw, 800px"
-          fit="cover"
-          format="webp"
-        />
-      </div>
-      <div class="recipe__side-content md:col-span-3 lg:col-span-2 md:mt-10">
-        <Ingredients ingredients={post.ingredients} />
-      </div>
-    </div>
-    <div class="grid grid-cols-1 md:grid-cols-1">
-    <Description
-      description={post.description}
-      longdescription={post.longDescription}
-    /> </div>
-  
-    <StepByStep description={post.steps} />-->
     <ImageGallery images={images} />
-  </main>
+  </div>
 </Layout>
 <style lang="scss" scoped>
   .recipe {
+    margin: 16px auto;
     &__main-content {
     }
 
@@ -107,11 +76,6 @@ const mainImage = post.imageurl;
         max-width: 80% !important;
       }
     }
-  }
-  main {
-    margin: 16px auto;
-    padding: 1em;
-    max-width: 1000px;
   }
 
   .recipe-grid {
@@ -148,6 +112,7 @@ const mainImage = post.imageurl;
 
   .recipe-ingredients {
     grid-area: ingredients;
+    max-width: 260px;
   }
 
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
@@ -169,7 +134,6 @@ const mainImage = post.imageurl;
     }
 
     .recipe-ingredients {
-
     }
   }
 </style>
