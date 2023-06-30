@@ -9,7 +9,11 @@
           class="flex justify-between items-center border-b-2 border-black py-6 md:justify-start md:space-x-10"
         >
           <div class="flex center">
-            <a class="focus:outline-pink-300" href="/" aria-label="tilbake til forsiden">
+            <a
+              class="focus:outline-pink-300"
+              href="/"
+              aria-label="tilbake til forsiden"
+            >
               <span class="sr-only">Go home</span>
               <img
                 class="h-8 w-auto sm:h-10"
@@ -59,7 +63,7 @@
               <span>&#128293;</span> Turmat
             </a>
             <a
-              href="#"
+              href="/om-oss"
               class="text-base font-medium text-black hover:text-pink-300 focus:outline-pink-300"
             >
               <span>&#128526;</span> Bonus
@@ -85,7 +89,11 @@
           >
             <div class="pt-5 pb-6 px-5">
               <div class="flex items-center justify-between">
-                <a class="focus:outline-pink-300" href="/" aria-label="tilbake til forsiden">
+                <a
+                  class="focus:outline-pink-300"
+                  href="/"
+                  aria-label="tilbake til forsiden"
+                >
                   <img
                     class="h-8 w-auto"
                     src="https://foodstalker.b-cdn.net/lime.png"

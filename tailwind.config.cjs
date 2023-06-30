@@ -4,6 +4,8 @@ module.exports = {
     extend: {},
     fontFamily: {
       bannerTitle: ["Roboto", "sans-serif"],
+      sans: ["Roboto Mono", "monospace"],
+      serif: ["Roboto Mono", "Georgia"],
     },
     colors: {
       transparent: "transparent",

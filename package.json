@@ -1,28 +1,30 @@
 {
-    "name": "@example/basics",
-    "version": "0.0.1",
-    "private": true,
-    "scripts": {
-        "dev": "astro dev",
-        "start": "astro dev",
-        "build": "astro build",
-        "preview": "astro preview",
-        "proxy": "mkcert -install && mkcert localhost && local-ssl-proxy --source 3010 --target 3000 --cert localhost.pem --key localhost-key.pem"
-    },
-    "devDependencies": {
-        "@astrojs/tailwind": "^3.0.1",
-        "@astrojs/vue": "^2.0.1",
-        "astro": "^2.0.6",
-        "prettier": "^2.7.1",
-        "prettier-plugin-astro": "^0.8.0",
-        "vue": "^3.2.47"
-    },
-    "dependencies": {
-        "@astrojs/image": "^0.14.0",
-        "@headlessui/vue": "^1.7.9",
-        "@heroicons/vue": "^1.0.0",
-        "@storyblok/js": "^1.8.5",
-        "sass": "^1.58.0",
-        "sharp": "^0.31.3"
-    }
+  "name": "@example/basics",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "proxy": "mkcert -install && mkcert localhost && local-ssl-proxy --source 3010 --target 3000 --cert localhost.pem --key localhost-key.pem"
+  },
+  "devDependencies": {
+    "@astrojs/tailwind": "^3.0.1",
+    "@astrojs/vue": "^2.0.1",
+    "astro": "^2.7.2",
+    "prettier": "^2.7.1",
+    "prettier-plugin-astro": "^0.8.0",
+    "vue": "^3.2.47"
+  },
+  "dependencies": {
+    "@astrojs/image": "^0.14.0",
+    "@headlessui/vue": "^1.7.9",
+    "@heroicons/vue": "^1.0.0",
+    "@storyblok/astro": "^2.5.0",
+    "@storyblok/js": "^2.2.1",
+    "sass": "^1.58.0",
+    "sharp": "^0.31.3",
+    "vite": "^4.3.9"
+  }
 }
