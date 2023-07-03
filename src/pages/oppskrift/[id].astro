@@ -2,7 +2,7 @@
 import Layout from "../../layouts/Layout.astro";
 import ImageGallery from "../../components/ImageGallery.vue";
 import Ingredients from "../../components/Ingredients.vue";
-import getRecipes from "../../data/recipes.json";
+import getRecipes from "../../../src/pages/admin/recipe.json";
 import { Picture } from "@astrojs/image/components";
 import Description from "../../components/Description.astro";
 import StepByStep from "../../components/StepByStep.astro";
@@ -57,6 +57,7 @@ const mainImage = post.imageurl;
       </div>
 
       <div class="recipe-ingredients">
+        {post.ingredients}
         <Ingredients ingredients={post.ingredients} />
       </div>
     </div>

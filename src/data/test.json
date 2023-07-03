@@ -1,24 +1,133 @@
-{
-  "ingredients": {
-    "": [
+[
+  {
+    "id": "nakkekoteletter-med-nektarin",
+    "imageurl": "https://foodstalker.b-cdn.net/2020/kotelett%20nektarin/kotelett-nektarin-7.jpg",
+    "alt": "bilde av kotelett med grønn salat og honning og sennepsaus",
+    "title": "Nakkekoteletter med nektarin",
+    "date": "2020-12-01",
+    "category": "hverdag",
+    "description": "Klar for en rask middag? Denne er lett, sommerlig, frisk og god!",
+    "longDescription": "",
+    "time": "30 min",
+    "portions": "4",
+    "tips": "Finner du ikke nektarin, kan du bruke syrlige plommer.",
+    "chef": "Lise Finckenhagen",
+    "tipsurl": "https://www.godt.no/oppskrift/8947/slik-lager-du-saftige-koteletter",
+    "ingredients": {
+      "": [
+        {
+          "quantity": "4 stykker",
+          "name": "nakkekoteletter"
+        },
+        {
+          "quantity": "4 fedd",
+          "name": "hvitløk"
+        },
+        {
+          "quantity": "2 ss",
+          "name": "dijonsennep, grov"
+        },
+        {
+          "quantity": "2 ss",
+          "name": "honning, flytende"
+        },
+        {
+          "quantity": "3 stk",
+          "name": "nektarin"
+        },
+        {
+          "quantity": "2 stk",
+          "name": "mozzarella, fersk"
+        },
+        {
+          "quantity": "150 g",
+          "name": "ruccola"
+        },
+        {
+          "quantity": "0.25 stk",
+          "name": "sitron"
+        },
+        {
+          "quantity": "",
+          "name": "olivenolje"
+        },
+        {
+          "quantity": "",
+          "name": "hakket persille"
+        },
+        {
+          "quantity": "",
+          "name": "salt og kvernet pepper"
+        },
+        {
+          "quantity": "",
+          "name": "olje, til steking"
+        }
+      ]
+    },
+    "steps": [
       {
-        "quantity": "4 stk",
-        "name": "tomat"
+        "title": "Kjøttet",
+        "description": "Krydre kotelettene med salt og kvernet pepper. Knus hvitløksfeddene med bredsiden av kniven."
       },
       {
-        "quantity": "4 ss",
-        "name": "pepper"
+        "title": "",
+        "description": "Rør sammen sennep og honning."
+      },
+      {
+        "title": "",
+        "description": "Bruk en stor stekepanne og stek kotelettene over høy varme med olje, cirka 4 minutter på hver side, litt avhengig av tykkelsen på kotelettene. La hvitløksfeddene få steke med og ha i en klatt med smør mot slutten av steketiden."
+      },
+      {
+        "title": "",
+        "description": "Skru ned varmen og hell sennep- og honningblandingen over kotelettene. La det surre noen minutter over lav varme. Dette blir digg stekesjy!"
+      },
+      {
+        "title": "Nektarinsalaten",
+        "description": "Rens og del nektarinene i jevne biter eller smale båter. La mozzarellaen få renne godt av seg før du river den i jevne biter."
+      },
+      {
+        "title": "",
+        "description": "Ha nektariner, mozzarella, salat og hakket persille i en bolle. Drypp over sitronsaft og en stråle olivenolje. Krydre med salt og kvernet pepper og vend alt lett sammen."
+      },
+      {
+        "title": "",
+        "description": "Server kotelettene med nektarinsalaten og sjyen fra pannen."
       }
     ],
-    "Mangosalat": [
+
+    "images": [
       {
-        "quantity": "4 stk",
-        "name": "mango"
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2020/kotelett%20nektarin/kotelett-nektarin-1.jpg",
+        "alt": "Koteletter som stekes i stekepanne, godt med olje og smør."
       },
       {
-        "quantity": "4 stk",
-        "name": "chili"
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2020/kotelett%20nektarin/kotelett-nektarin-7.jpg",
+        "alt": "bilde av koteletter og grønn salat med digg saus på en hvit tallerken"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2020/kotelett%20nektarin/kotelett-nektarin-7.jpg",
+        "alt": "koteletter og grønn salat med digg saus på en hvit tallerken"
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2020/kotelett%20nektarin/kotelett-nektarin-3.jpg",
+        "alt": "bilde av koteletter og grønn salat med digg saus på en hvit tallerken"
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2020/kotelett%20nektarin/kotelett-nektarin-5.jpg",
+        "alt": "koteletter og grønn salat med digg saus som drypper ned på maten"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2020/kotelett%20nektarin/kotelett-nektarin-7.jpg",
+        "alt": "koteletter og grønn salat med digg saus på en hvit tallerken"
       }
-    ]
+    ],
+    "keyword": ["kjøtt", "kotelett", "salat", "sunn", "svin", "gris"]
   }
-}
+]
