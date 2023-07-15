@@ -23,3 +23,5 @@ pnpm-debug.log*
 # HTTPS Proxy certificates
 localhost.pem
 localhost-key.pem
+
+src/pages/admin/*

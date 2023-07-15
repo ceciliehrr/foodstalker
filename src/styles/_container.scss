@@ -1,0 +1,75 @@
+@use 'sass:map';
+@use 'sass:math';
+@use './variables';
+@use './mixins/breakpoints' as *;
+
+$-gapsSmall: map.get(variables.$spacing, 'size-16');
+$-gapsMedium: map.get(variables.$spacing, 'size-32');
+
+.fs-container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: $-gapsSmall;
+    padding-right: $-gapsSmall;
+    width: 100%;
+
+    @include bp('tablet-up') {
+        padding-left: $-gapsMedium;
+        padding-right: $-gapsMedium;
+    }
+
+    @include bp('laptop-up') {
+        max-width: map.get(variables.$breakpoints, 'laptop');
+    }
+
+    // Widths
+    &--full {
+        max-width: 100%;
+    }
+
+    @include bp('phablet-up') {
+        &--phablet {
+            max-width: map.get(variables.$breakpoints, 'phablet');
+        }
+    }
+
+    @include bp('tablet-up') {
+        &--tablet {
+            max-width: map.get(variables.$breakpoints, 'tablet');
+        }
+    }
+
+    @include bp('tablet-big-up') {
+        &--tablet-big {
+            max-width: map.get(variables.$breakpoints, 'tablet-big');
+        }
+    }
+
+    @include bp('laptop-up') {
+        &--laptop {
+            max-width: map.get(variables.$breakpoints, 'laptop');
+        }
+    }
+
+    @include bp('desktop-up') {
+        &--desktop {
+            max-width: map.get(variables.$breakpoints, 'desktop');
+        }
+    }
+
+    // Alignment
+    &--left {
+        margin-left: 0;
+        margin-right: auto;
+    }
+
+    &--center {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &--right {
+        margin-left: auto;
+        margin-right: 0;
+    }
+}

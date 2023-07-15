@@ -1,23 +1,21 @@
 $colors: (
     // grays
-    color-transparent: transparent,
-    color-white: #fff,
-    color-black: #1f1209,
-    color-gray-100: #f3f4f6,
-    color-gray-200: #e5e7eb,
-    color-gray-300: #cbd5e1,
-    color-gray-400: #9ca3af,
-    color-gray-500: #6b7280,
-
+    fs-transparent: transparent,
+    fs-white: #fff,
+    fs-black: #1f1209,
+    fs-gray-100: #f3f4f6,
+    fs-gray-200: #e5e7eb,
+    fs-gray-300: #cbd5e1,
+    fs-gray-400: #9ca3af,
+    fs-gray-500: #6b7280,
     // Brand colors
-    color-vanilla: #FDF8E8,
-    // greens
-    color-green-100: #BED5AE,
-    color-green-200: #D1E1C8,
+    fs-vanilla: #FDF8E8,
 
-    // pinks
-    color-pink-100: #FBD3C4,
-    color-pink-200: #cfaebf,
-    color-pink-300: #CE8884,
+    fs-green-100: #BED5AE,
+    fs-green-200: #D1E1C8,
 
- ) !default;
+    fs-pink-100: #FBD3C4,
+    fs-pink-200: #cfaebf,
+    fs-pink-300: #CE8884,
+
+    ) !default;
