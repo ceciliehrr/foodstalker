@@ -2,28 +2,19 @@
 <template>
   <header>
     <Popover class="">
-      <div
-        class="max-w-7xl mx-auto px-4 sm:px-6 fixed top-0 left-0 right-0 bg-vanilla z-10"
-      >
-        <div
-          class="flex justify-between items-center border-b-2 border-black py-6 md:justify-start md:space-x-10"
-        >
-          <div class="flex center">
-            <a
-              class="focus:outline-pink-300"
-              href="/"
-              aria-label="tilbake til forsiden"
-            >
-              <span class="sr-only">Go home</span>
-              <img
-                class="h-8 w-auto sm:h-10"
-                src="https://foodstalker.b-cdn.net/lime.png"
-                alt=""
-                role="presentation"
-              />
-            </a>
-          </div>
-          <div class="-mr-2 -my-2 md:hidden">
+      <div class="fs-header">
+        <div class="fs-header__content">
+          <a href="/" aria-label="tilbake til forsiden">
+            <span class="sr-only">Go home</span>
+            <img
+              class="h-8 w-auto sm:h-10"
+              src="https://foodstalker.b-cdn.net/lime.png"
+              alt=""
+              role="presentation"
+            />
+          </a>
+
+          <div class="fs-header__hamburger">
             <PopoverButton
               class="bg-vanilla border rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-pink-200"
             >
