@@ -2,7 +2,7 @@
 import Layout from "../../layouts/Layout.astro";
 import ImageGallery from "../../components/ImageGallery.vue";
 import Ingredients from "../../components/Ingredients.vue";
-import getRecipes from "../../../src/pages/admin/recipe.json";
+import getRecipes from "../../data/new_recipes.json";
 import { Picture } from "@astrojs/image/components";
 import Description from "../../components/Description.astro";
 import StepByStep from "../../components/StepByStep.astro";
@@ -47,6 +47,7 @@ const mainImage = post.imageurl;
         />
       </div>
       <div class="recipe-description">
+        <h2>Beskrivelse</h2>
         <Description
           description={post.description}
           longdescription={post.longDescription}
@@ -57,7 +58,6 @@ const mainImage = post.imageurl;
       </div>
 
       <div class="recipe-ingredients">
-        {post.ingredients}
         <Ingredients ingredients={post.ingredients} />
       </div>
     </div>
@@ -67,6 +67,11 @@ const mainImage = post.imageurl;
 <style lang="scss" scoped>
   .recipe {
     margin: 16px auto;
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
     &__main-content {
     }
 

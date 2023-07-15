@@ -2649,10 +2649,6 @@
         "title": "Pastinakkpurè",
         "ingredients": [
           {
-            "quantity": "<u><b></b></u>",
-            "name": ""
-          },
-          {
             "quantity": "4-5",
             "name": "pastinakk"
           },
@@ -2771,7 +2767,7 @@
     "date": "2021-01-23",
     "category": "helg",
     "description": "Pizza med fermentert pizzadeig. Toppet med salsicciapølse og granateple.",
-    "longDescription": "Fermentert? Ja, fermentering skjer når man lar deigen ligge over natta i kjøleskapet. Gjæren koser seg med sukker og så blir det sur stemning eller noe, Google it! Det er digg! <br> Oppskriften blir 6 pizzabunner. Bruk <a href='/oppskrift/tomatsaus'>hjemmelaget tomatsaus.</a><br> Vi har her prøvd oss på Hellstrøms metode med maltekstrakt og derfor vil pizzabunnen se litt tynnere ut. Vi velger å dele Lise Finckenhagen sin metode som er hakket enklere, vi har ikke bestemt oss for hvem som er best.<br><br> Topping varierer vi etter humøret(til kjøleskapet). Men noen ganger er det greit å prøve noe man ikke har til overs. Min yndlingstopping er Pizza Parma som bare inneholder tomatsaus og mozzarella under steking, og toppes med rista pinjekjerner, revet parmesan, ruccola og spekeskinke og et dryss god balsamicoeddik. <br> Her deler vi Lise Finckenhagens tips!",
+    "longDescription": "Fermentert? Ja, fermentering skjer når man lar deigen ligge over natta i kjøleskapet. Gjæren koser seg med sukker og så blir det sur stemning eller noe, Google it! Det er digg! <br> Oppskriften blir 6 pizzabunner. qqqqqBruk [hjemmelaget tomatsaus](/oppskrift/tomatsaus)<br> Vi har her prøvd oss på Hellstrøms metode med maltekstrakt og derfor vil pizzabunnen se litt tynnere ut. Vi velger å dele Lise Finckenhagen sin metode som er hakket enklere, vi har ikke bestemt oss for hvem som er best.<br><br> Topping varierer vi etter humøret(til kjøleskapet). Men noen ganger er det greit å prøve noe man ikke har til overs. Min yndlingstopping er Pizza Parma som bare inneholder tomatsaus og mozzarella under steking, og toppes med rista pinjekjerner, revet parmesan, ruccola og spekeskinke og et dryss god balsamicoeddik. <br> Her deler vi Lise Finckenhagens tips!",
     "time": "12-16 timer",
     "portions": "6",
     "tips": "Denne oppskriften er funnet i Lises Gatekjøkken-boka.",
@@ -5266,10 +5262,22 @@
       }
     ],
     "steps": [
-      "Sett ovnen på 200 grader.",
-      "Riv parmesan over på et stekebrett med bakepapir i 4 like hauger.",
-      "Stek i ovnen til osten er smeltet og er gylden, ca 10-15 minutter.",
-      "Følg med!!! Steker du for lite blir den seig, steker du den for mye smaker de brent."
+      {
+        "title": "",
+        "description": "Sett ovnen på 200 grader."
+      },
+      {
+        "title": "",
+        "description": "Riv parmesan over på et stekebrett med bakepapir i 4 like hauger."
+      },
+      {
+        "title": "",
+        "description": "Stek i ovnen til osten er smeltet og er gylden, ca 10-15 minutter."
+      },
+      {
+        "title": "",
+        "description": "Følg med!!! Steker du for lite blir den seig, steker du den for mye smaker de brent."
+      }
     ],
     "images": [
       {
@@ -5343,10 +5351,22 @@
       }
     ],
     "steps": [
-      "Kutt løk i tynne skiver.",
-      "Stek løken i litt olje på svak til middels varme. Vær forsiktig med varmen. Løken skal bare falle sammen, bli blank og ikke stekes brun.",
-      "Dette vil ta tid, ca 15-20 minutter.",
-      "Mot slutten ha i sukker og balsamicoeddik, smak til med salt. Er den for søt? Syrlig? Balanser med mer sukker eller balsamicoeddik. Server!"
+      {
+        "title": "",
+        "description": "Kutt løk i tynne skiver."
+      },
+      {
+        "title": "",
+        "description": "Stek løken i litt olje på svak til middels varme. Vær forsiktig med varmen. Løken skal bare falle sammen, bli blank og ikke stekes brun."
+      },
+      {
+        "title": "",
+        "description": "Dette vil ta tid, ca 15-20 minutter."
+      },
+      {
+        "title": "",
+        "description": "Mot slutten ha i sukker og balsamicoeddik, smak til med salt. Er den for søt? Syrlig? Balanser med mer sukker eller balsamicoeddik. Server!"
+      }
     ],
     "images": [
       {
@@ -5490,25 +5510,74 @@
       }
     ],
     "steps": [
-      "<u><b>Potetsalat</b></u>",
-      "Kok poteter til de er møre. Hell av vannet og la dampe av.",
-      "Rør sammen creme fraiche, sennep, olje, hvitvinseddik og sukker. Smak til. Smak tilslutt med salt og pepper.",
-      "Kutt fennikel i passe tynne skiver. Når potetene er avkjølt kutt i passe store biter. Bland fennikel, poteter og sennepsausen. Pynt med den grønne busken fra fennikelen.",
-      "<u><b>Agurksalat</b></u>",
-      "Ha eddik, vann, sukker og chili i en kjele. Kok opp og sett til side til avkjøling.",
-      "Kutt sjalottløk i tynne skiver. Skrell skallet av agurken. Del agurken i fire på langs, slik at du kan skrape ut kjernen med en teskje. Kutt agurken i terninger.",
-      "Når man tar ut kjernen av agurken smaker den bedre agurk, og holder seg sprø.",
-      "Ha agurk og løk i en liten bolle. Hell over laken.",
-      "<u><b>Fisken</b></u>",
-      "Bland sammen sennep, brunt sukker og dill i en liten bolle.",
-      "Ta frem aluminiumsfolie som skal fungere som et rom for fisken på grillen.",
-      "I bunnen av aluminiumsfolien har du i masse grovt salt.",
-      "Varm grillen og legg på aluminiumsfolien med saltet. Saltet skal altså varmes opp i ca 10 minutter på direkte varme før du har i fisken.",
-      "Salte og pepre fisken. Legg sennepsblandingen over hele fisken. Når saltet er varmt, legg fisken med skinnet ned på saltet. Lukk aluminiumsfolien.",
-      "Stek under lokk hvis du har. (Om du griller over bål/bålpanne vil grilltiden være lengre.)",
-      "Tykkelsen på fisken har også mye å si for steketid. Men følg med. Det vil ta ca 15-20 minutter med lokk.",
-      "Du vet den er ferdig når den løsner fra skinnet og flaker seg.",
-      "Server med potetsalat og agurksalat. Eller alt du digger til fisk!"
+      {
+        "title": "Potetsalat",
+        "description": ""
+      },
+      {
+        "title": "",
+        "description": "Kok poteter til de er møre. Hell av vannet og la dampe av."
+      },
+      {
+        "title": "",
+        "description": "Rør sammen creme fraiche, sennep, olje, hvitvinseddik og sukker. Smak til. Smak tilslutt med salt og pepper."
+      },
+      {
+        "title": "",
+        "description": "Kutt fennikel i passe tynne skiver. Når potetene er avkjølt kutt i passe store biter. Bland fennikel, poteter og sennepsausen. Pynt med den grønne busken fra fennikelen."
+      },
+      {
+        "title": "Agurksalat",
+        "description": "Ha eddik, vann, sukker og chili i en kjele. Kok opp og sett til side til avkjøling."
+      },
+      {
+        "title": "",
+        "description": "Kutt sjalottløk i tynne skiver. Skrell skallet av agurken. Del agurken i fire på langs, slik at du kan skrape ut kjernen med en teskje. Kutt agurken i terninger."
+      },
+      {
+        "title": "",
+        "description": "Når man tar ut kjernen av agurken smaker den bedre agurk, og holder seg sprø."
+      },
+      {
+        "title": "",
+        "description": "Ha agurk og løk i en liten bolle. Hell over laken."
+      },
+      {
+        "title": "Fisken",
+        "description": "Bland sammen sennep, brunt sukker og dill i en liten bolle."
+      },
+      {
+        "title": "",
+        "description": "Ta frem aluminiumsfolie som skal fungere som et rom for fisken på grillen."
+      },
+      {
+        "title": "",
+        "description": "I bunnen av aluminiumsfolien har du i masse grovt salt."
+      },
+      {
+        "title": "",
+        "description": "Varm grillen og legg på aluminiumsfolien med saltet. Saltet skal altså varmes opp i ca 10 minutter på direkte varme før du har i fisken."
+      },
+      {
+        "title": "",
+        "description": "Salte og pepre fisken. Legg sennepsblandingen over hele fisken. Når saltet er varmt, legg fisken med skinnet ned på saltet. Lukk aluminiumsfolien."
+      },
+      {
+        "title": "",
+        "description": "Stek under lokk hvis du har. (Om du griller over bål/bålpanne vil grilltiden være lengre.)"
+      },
+      {
+        "title": "",
+        "description": "Tykkelsen på fisken har også mye å si for steketid. Men følg med. Det vil ta ca 15-20 minutter med lokk."
+      },
+      {
+        "title": "",
+        "description": "Du vet den er ferdig når den løsner fra skinnet og flaker seg."
+      },
+      {
+        "title": "",
+        "description": "Server med potetsalat og agurksalat. Eller alt du digger til fisk!"
+      }
     ],
     "images": [
       {
@@ -5711,24 +5780,70 @@
       }
     ],
     "steps": [
-      "Bland sammen alle ingrediensene til krydderpastaen i en mikser/stavmikser",
-      "Sett på stekeovnen på 125 grader.",
-      "Del kyllingen i 2 fra hals til stjert. Så kommer slitet, dra av all skinnet på kyllingen. Det går bra.",
-      "Gni hele kyllingen inn med krydderpasten.",
-      "Stek kyllingen ca 2 minutt på hver side i smør. Legg kyllingen i en ildfast form med snittsiden ned.",
-      "Skjær toppen av den hele hvitløken, del sjalottløken i to og legg de sammen med kyllingen.",
-      "Bland sammen ingrediensene til sausen og hell oppi den ildfaste formen.",
-      "Kle formen med aluminiumsfolie. Sett midt i ovnen i 2-2 1/2 time.",
-      "For å sjekke om kyllingen er ferdig tar du ut formen, bruk en gaffel og prøv å dra kjøttet fra beinet. Er den fortsatt rosa og er stuck i beinet trenger den mer tid.",
-      "Når kjøttet kan dras av beinet er den ferdig. Ta ut kyllingen og ha i sausen og løken over i en kjele.",
-      "Kok opp sausen og la den koke til den er redusert til ca halvparten.",
-      "Mens sausen koker dra kjøttet av beinet med et par gafler. Pass på så du ikke legger igjen noe bein i det rivde kjøttet.",
-      "Kjør sausen med en stavmikser, smak til med salt og pepper. Og bland sausen med kjøttet.",
-      "<u><b>Råkostsalat</b></u>",
-      "Kutt alle ingredienser, ha i en bolle og skvis sitron over. Ha i sukker, salt og pepper. Bland og smak til.",
-      "<u><b>Myntedressing</b></u>",
-      "Ha yoghurten i en bolle, ha i hakket mynte og sennep. Om du lager denne i god tid før middag, smak til med sitron, salt og pepper rett før servering.",
-      "Stek pitabrød og server røska høne i digg saus med myntedressing, råkostsalat og pitabrød."
+      {
+        "title": "",
+        "description": "Bland sammen alle ingrediensene til krydderpastaen i en mikser/stavmikser"
+      },
+      {
+        "title": "",
+        "description": "Sett på stekeovnen på 125 grader."
+      },
+      {
+        "title": "",
+        "description": "Del kyllingen i 2 fra hals til stjert. Så kommer slitet, dra av all skinnet på kyllingen. Det går bra."
+      },
+      {
+        "title": "",
+        "description": "Gni hele kyllingen inn med krydderpasten."
+      },
+      {
+        "title": "",
+        "description": "Stek kyllingen ca 2 minutt på hver side i smør. Legg kyllingen i en ildfast form med snittsiden ned."
+      },
+      {
+        "title": "",
+        "description": "Skjær toppen av den hele hvitløken, del sjalottløken i to og legg de sammen med kyllingen."
+      },
+      {
+        "title": "",
+        "description": "Bland sammen ingrediensene til sausen og hell oppi den ildfaste formen."
+      },
+      {
+        "title": "",
+        "description": "Kle formen med aluminiumsfolie. Sett midt i ovnen i 2-2 1/2 time."
+      },
+      {
+        "title": "",
+        "description": "For å sjekke om kyllingen er ferdig tar du ut formen, bruk en gaffel og prøv å dra kjøttet fra beinet. Er den fortsatt rosa og er stuck i beinet trenger den mer tid."
+      },
+      {
+        "title": "",
+        "description": "Når kjøttet kan dras av beinet er den ferdig. Ta ut kyllingen og ha i sausen og løken over i en kjele."
+      },
+      {
+        "title": "",
+        "description": "Kok opp sausen og la den koke til den er redusert til ca halvparten."
+      },
+      {
+        "title": "",
+        "description": "Mens sausen koker dra kjøttet av beinet med et par gafler. Pass på så du ikke legger igjen noe bein i det rivde kjøttet."
+      },
+      {
+        "title": "",
+        "description": "Kjør sausen med en stavmikser, smak til med salt og pepper. Og bland sausen med kjøttet."
+      },
+      {
+        "title": "Råkostsalat",
+        "description": "Kutt alle ingredienser, ha i en bolle og skvis sitron over. Ha i sukker, salt og pepper. Bland og smak til."
+      },
+      {
+        "title": "Myntedressing",
+        "description": "Ha yoghurten i en bolle, ha i hakket mynte og sennep. Om du lager denne i god tid før middag, smak til med sitron, salt og pepper rett før servering."
+      },
+      {
+        "title": "",
+        "description": "Stek pitabrød og server røska høne i digg saus med myntedressing, råkostsalat og pitabrød."
+      }
     ],
     "images": [
       {
@@ -5841,13 +5956,34 @@
       }
     ],
     "steps": [
-      "Om du har reker og krepsehale i lake, sil ut all laken og la stå. Tørk gjerne med papir.",
-      "Ta frem ei stor bolle. Kutt isbergsalaten og ha i bollen.",
-      "Finsnitt rødløken og stangselleri. Ha det oppi bollen.",
-      "Skrell agurken. Del den på langs. Ta en skje og skrap ut kjernen av agurken. Hakk agurken i biter og ha alt oppi en bolle. Denne måten å kutte agurk på gjør at agurken holder seg crispy og ikke vanner ut salaten. Ha agurk i salatbollen.",
-      "Ha majones i en liten bolle. Finhakk hvitløk og bland i med majonesen. Ha i noen klunker fløte og rør sammen. Skvis en sitron i og smak til med et par klyper salt og pepper.",
-      "Ha i skalldyr og majonesen i salatbollen. Bland godt sammen.",
-      "Pynt med dill. Server med loff, smør og no godt i glasset."
+      {
+        "title": "",
+        "description": "Om du har reker og krepsehale i lake, sil ut all laken og la stå. Tørk gjerne med papir."
+      },
+      {
+        "title": "",
+        "description": "Ta frem ei stor bolle. Kutt isbergsalaten og ha i bollen."
+      },
+      {
+        "title": "",
+        "description": "Finsnitt rødløken og stangselleri. Ha det oppi bollen."
+      },
+      {
+        "title": "",
+        "description": "Skrell agurken. Del den på langs. Ta en skje og skrap ut kjernen av agurken. Hakk agurken i biter og ha alt oppi en bolle. Denne måten å kutte agurk på gjør at agurken holder seg crispy og ikke vanner ut salaten. Ha agurk i salatbollen."
+      },
+      {
+        "title": "",
+        "description": "Ha majones i en liten bolle. Finhakk hvitløk og bland i med majonesen. Ha i noen klunker fløte og rør sammen. Skvis en sitron i og smak til med et par klyper salt og pepper."
+      },
+      {
+        "title": "",
+        "description": "Ha i skalldyr og majonesen i salatbollen. Bland godt sammen."
+      },
+      {
+        "title": "",
+        "description": "Pynt med dill. Server med loff, smør og no godt i glasset."
+      }
     ],
     "images": [
       {
@@ -5953,15 +6089,42 @@
       }
     ],
     "steps": [
-      "Skjær vekk skorper av loff. Bløt skivene i melk eller vann.",
-      "Finhakk hvitløk og kruspersille. Rist pinjekjerner kjapt i tørr stekepanne. Med varme. (ikke bare riste på en stekepanne med pinjekjerner)",
-      "Bland alle ingredienser i en kjøkkenmaskin med k-krok til alt er godt blandet. (Gjør livet enklere også videre..)",
-      "Stek en liten testbolle for å eventuelt smake til med mer salt/pepper, eller annet du ønsker.",
-      "Sett ovnen på 200 grader.",
-      "Form kjøttbollene til like store boller, og stek på medium til høy varme med olje. Stek så de får skorpe og legg i ildfast form.",
-      "Stek de ferdige i ovn, ca 10 minutter. Ta ut en bolle og sjekk om de er gjennomstekt.",
-      "Server med <a href='/oppskrift/tomatsaus'>hjemmelaget tomatsaus</a> og et dryss parmesan og friske basilikumblader om du har.",
-      "Frys ned rester. Vi på to personer fryser ned 8-10 stk kjøttboller(spørs på størrelsen) slik at hver boks er klar til en middag. "
+      {
+        "title": "",
+        "description": "Skjær vekk skorper av loff. Bløt skivene i melk eller vann."
+      },
+      {
+        "title": "",
+        "description": "Finhakk hvitløk og kruspersille. Rist pinjekjerner kjapt i tørr stekepanne. Med varme. (ikke bare riste på en stekepanne med pinjekjerner)"
+      },
+      {
+        "title": "",
+        "description": "Bland alle ingredienser i en kjøkkenmaskin med k-krok til alt er godt blandet. (Gjør livet enklere også videre..)"
+      },
+      {
+        "title": "",
+        "description": "Stek en liten testbolle for å eventuelt smake til med mer salt/pepper, eller annet du ønsker."
+      },
+      {
+        "title": "",
+        "description": "Sett ovnen på 200 grader."
+      },
+      {
+        "title": "",
+        "description": "Form kjøttbollene til like store boller, og stek på medium til høy varme med olje. Stek så de får skorpe og legg i ildfast form."
+      },
+      {
+        "title": "",
+        "description": "Stek de ferdige i ovn, ca 10 minutter. Ta ut en bolle og sjekk om de er gjennomstekt."
+      },
+      {
+        "title": "",
+        "description": "Server med <a href='/oppskrift/tomatsaus'>hjemmelaget tomatsaus</a> og et dryss parmesan og friske basilikumblader om du har."
+      },
+      {
+        "title": "",
+        "description": "Frys ned rester. Vi på to personer fryser ned 8-10 stk kjøttboller(spørs på størrelsen) slik at hver boks er klar til en middag."
+      }
     ],
     "images": [
       {
@@ -6073,22 +6236,70 @@
       }
     ],
     "steps": [
-      "<a href='/oppskrift/parmesankrem'>Parmesankremen</a> kan med fordel lages på forhånd. Eventuelt NÅ!",
-      "Ta ut svinefileten og tørk den godt med papir. Dryss over et jevnt lag med fint salt over hele kjøttstykket.",
-      "La fileten ligge til den er romtemperert. Ca 30 minutter.",
-      "Om du bruker gassgrill: sett den på og la den blir ordentlig varm.",
-      "Mens kjøttet tempereres og grillen varmes, lag vinaigrette og salat",
-      "Bland sennep, hvitvinseddik i en liten bolle. Tilsett olivenolje i en tynn stråle og visp dette sammen slik at den tykner. Smak til med honning. Start med 1 ss honning. Smaker det for mye sennep og eddik kjør på med mer honning. Smak så til med et dryss salt og pepper.",
-      "Del nektarin (eller plommer) i båter. Disse kan grilles raskt over direkte varme til de får riller fra grillristen. (kan sløyfes, men bør prøves).",
-      "Del opp mozzarella i biter.",
-      "Skyll salaten og bland vinaigretten godt i salaten. Topp med frukten og mozzarellaen.",
-      "Når grillen er varm legg på svinefileten over direkte varme, og lukk igjen lokket.",
-      "Kjøttet skal få en gylden brun farge på stekesiden før den snus. Med vår grill tar det ca 4 minutter. Når den er gylden brun rundt hele, kan den legges på indirekte varme og stekes ferdig under lokk. Følg med jevnlig eller bruk termometer.",
-      "Om du ønsker å sjekke tempen på'n, skal den ha en kjernetemperatur på 65-70 grader.",
-      "Om du ikke har termometer, kjenn på'n. Den skal kjennes ut som muskelen på tommelen din når du holder tommel og lillefinger mot hverandre. Google it!",
-      "Ta den av grillen, pepre godt og la den hvile i minst 10 minutter. Skjær opp i fine stykker.",
-      "Server kjøttet med salat, parmesankrem og kanskje du har grilla litt maiskolber?",
-      "God sommer!"
+      {
+        "title": "",
+        "description": "<a href='/oppskrift/parmesankrem'>Parmesankremen</a> kan med fordel lages på forhånd. Eventuelt NÅ!"
+      },
+      {
+        "title": "",
+        "description": "Ta ut svinefileten og tørk den godt med papir. Dryss over et jevnt lag med fint salt over hele kjøttstykket."
+      },
+      {
+        "title": "",
+        "description": "La fileten ligge til den er romtemperert. Ca 30 minutter."
+      },
+      {
+        "title": "",
+        "description": "Om du bruker gassgrill: sett den på og la den blir ordentlig varm."
+      },
+      {
+        "title": "",
+        "description": "Mens kjøttet tempereres og grillen varmes, lag vinaigrette og salat"
+      },
+      {
+        "title": "",
+        "description": "Bland sennep, hvitvinseddik i en liten bolle. Tilsett olivenolje i en tynn stråle og visp dette sammen slik at den tykner. Smak til med honning. Start med 1 ss honning. Smaker det for mye sennep og eddik kjør på med mer honning. Smak så til med et dryss salt og pepper."
+      },
+      {
+        "title": "",
+        "description": "Del nektarin (eller plommer) i båter. Disse kan grilles raskt over direkte varme til de får riller fra grillristen. (kan sløyfes, men bør prøves)."
+      },
+      {
+        "title": "",
+        "description": "Del opp mozzarella i biter."
+      },
+      {
+        "title": "",
+        "description": "Skyll salaten og bland vinaigretten godt i salaten. Topp med frukten og mozzarellaen."
+      },
+      {
+        "title": "",
+        "description": "Når grillen er varm legg på svinefileten over direkte varme, og lukk igjen lokket."
+      },
+      {
+        "title": "",
+        "description": "Kjøttet skal få en gylden brun farge på stekesiden før den snus. Med vår grill tar det ca 4 minutter. Når den er gylden brun rundt hele, kan den legges på indirekte varme og stekes ferdig under lokk. Følg med jevnlig eller bruk termometer."
+      },
+      {
+        "title": "",
+        "description": "Om du ønsker å sjekke tempen på'n, skal den ha en kjernetemperatur på 65-70 grader."
+      },
+      {
+        "title": "",
+        "description": "Om du ikke har termometer, kjenn på'n. Den skal kjennes ut som muskelen på tommelen din når du holder tommel og lillefinger mot hverandre. Google it!"
+      },
+      {
+        "title": "",
+        "description": "Ta den av grillen, pepre godt og la den hvile i minst 10 minutter. Skjær opp i fine stykker."
+      },
+      {
+        "title": "",
+        "description": "Server kjøttet med salat, parmesankrem og kanskje du har grilla litt maiskolber?"
+      },
+      {
+        "title": "",
+        "description": "God sommer!"
+      }
     ],
     "images": [
       {
@@ -6181,10 +6392,22 @@
       }
     ],
     "steps": [
-      "Rens jordbærene og skjær dem i to eller ha dem hele på spyd. Grill over høy varme, så de får grillmerker.",
-      "Riv mozzarella i biter. Ha mozzarella, spekeskinke, jordbær og basilikum på et fat, eventuelt fordel på tallerkener for koronavennlig forrett.",
-      "Dryss over en god olivenolje og balsamico(gjerne en søt variant). Knus litt flaksalt over og avslutt med litt kvernet pepper.",
-      "Server med no sprudlende!"
+      {
+        "title": "",
+        "description": "Rens jordbærene og skjær dem i to eller ha dem hele på spyd. Grill over høy varme, så de får grillmerker."
+      },
+      {
+        "title": "",
+        "description": "Riv mozzarella i biter. Ha mozzarella, spekeskinke, jordbær og basilikum på et fat, eventuelt fordel på tallerkener for koronavennlig forrett."
+      },
+      {
+        "title": "",
+        "description": "Dryss over en god olivenolje og balsamico(gjerne en søt variant). Knus litt flaksalt over og avslutt med litt kvernet pepper."
+      },
+      {
+        "title": "",
+        "description": "Server med no sprudlende!"
+      }
     ],
     "images": [
       {
@@ -6276,11 +6499,26 @@
       }
     ],
     "steps": [
-      "Rens jordbær. Hakk i bittesmå terninger.",
-      "Skrell agurken. Del agurken i to på langs. Skrap ut kjernen med en skje. Kutt i bittesmå terninger.",
-      "Ved å skrape ut kjernen på agurken gjør den salsaen mindre soggy. Og agurken holder seg crispy.",
-      "Finhakk rødløk og basilikum.",
-      "Bland alt sammen. Smak til med salt, pepper og lime."
+      {
+        "title": "",
+        "description": "Rens jordbær. Hakk i bittesmå terninger."
+      },
+      {
+        "title": "",
+        "description": "Skrell agurken. Del agurken i to på langs. Skrap ut kjernen med en skje. Kutt i bittesmå terninger."
+      },
+      {
+        "title": "",
+        "description": "Ved å skrape ut kjernen på agurken gjør den salsaen mindre soggy. Og agurken holder seg crispy."
+      },
+      {
+        "title": "",
+        "description": "Finhakk rødløk og basilikum."
+      },
+      {
+        "title": "",
+        "description": "Bland alt sammen. Smak til med salt, pepper og lime."
+      }
     ],
     "images": [
       {
@@ -6430,27 +6668,82 @@
       }
     ],
     "steps": [
-      "<u><b>Prepping før tur:</b></u>",
-      "Kutt gulrot i staver, løken i tynne skiver og paprika i strimler og legg i en boks med lokk (eventuelt pose hvis du ikke har bokser)",
-      "Riv ingefær og legg i liten boks.",
-      "Finhakk hvitløk og legg i egen boks.",
-      "Rens og del bønner i to, legg i boks",
-      "Kutt lime i båter, legg i boks.",
-      "Kutt kylling i biter, ha i boks eller pose",
-      "Ha ferdig utblanda kyllingfond i et gammelt syltetøyglass eller boks.",
-      "Pakk med red curry paste, olje, kokosmelk(hvordan åpner du den i skogen?), sukker, soyasaus, fishsauce, nudler og koriander.",
-      "Gå på tur!",
-      "<u><b>Matlaging ute på tur:</b></u>",
-      "Legg frem alt som skal brukes, det kan gå fort i svingene her.",
-      "Sett på primusen, varm olje i kjelen og stek kyllingbitene raskt til de får litt farge. Legg kyllingen til side i en bolle.",
-      "Ha i mer olje i kjelen om det trengs, stek løk, paprika og gulrøtter til de er møre. Tilsett hvitløken mot slutten og fres med i et minutt. Ha alt til side i en bolle.",
-      "Ha i olje og la red curry paste frese med oljen i ca et halvt minutt til den frigir digg lukt. Tilsett ingefær, kokosmelk og kyllingfond. Tilsett de stekte grønnsakene. Smak til med fishsauce, soyasaus og sukker. La suppa putre i ca 10 minutter på lav varme.",
-      "Tilsett aspargesbønner mot slutten, spørs på tykkelsen men kokes med suppa i ca 3-4 minutter.",
-      "Tilsett kyllingen og ta kjelen av primusen og legg på lokk.",
-      "Kok opp vann i den andre kjelen, ha i nudler og kok til nudlene er ferdig, sil av vannet.",
-      "Ha kyllingsuppa tilbake på primusen for å varme den litt og smak den til med lime.",
-      "Ha nudler i bunnen av skålen. Fordel suppe og kylling over og topp med koriander.",
-      "Nyt! Men husk å ta med deg søpla di hjem! "
+      {
+        "title": "Prepping før tur:",
+        "description": "Kutt gulrot i staver, løken i tynne skiver og paprika i strimler og legg i en boks med lokk (eventuelt pose hvis du ikke har bokser)"
+      },
+      {
+        "title": "",
+        "description": "Riv ingefær og legg i liten boks."
+      },
+      {
+        "title": "",
+        "description": "Finhakk hvitløk og legg i egen boks."
+      },
+      {
+        "title": "",
+        "description": "Rens og del bønner i to, legg i boks"
+      },
+      {
+        "title": "",
+        "description": "Kutt lime i båter, legg i boks."
+      },
+      {
+        "title": "",
+        "description": "Kutt kylling i biter, ha i boks eller pose"
+      },
+      {
+        "title": "",
+        "description": "Ha ferdig utblanda kyllingfond i et gammelt syltetøyglass eller boks."
+      },
+      {
+        "title": "",
+        "description": "Pakk med red curry paste, olje, kokosmelk(hvordan åpner du den i skogen?), sukker, soyasaus, fishsauce, nudler og koriander."
+      },
+      {
+        "title": "",
+        "description": "Gå på tur!"
+      },
+      {
+        "title": "Matlaging ute på tur:",
+        "description": "Legg frem alt som skal brukes, det kan gå fort i svingene her."
+      },
+      {
+        "title": "",
+        "description": "Sett på primusen, varm olje i kjelen og stek kyllingbitene raskt til de får litt farge. Legg kyllingen til side i en bolle."
+      },
+      {
+        "title": "",
+        "description": "Ha i mer olje i kjelen om det trengs, stek løk, paprika og gulrøtter til de er møre. Tilsett hvitløken mot slutten og fres med i et minutt. Ha alt til side i en bolle."
+      },
+      {
+        "title": "",
+        "description": "Ha i olje og la red curry paste frese med oljen i ca et halvt minutt til den frigir digg lukt. Tilsett ingefær, kokosmelk og kyllingfond. Tilsett de stekte grønnsakene. Smak til med fishsauce, soyasaus og sukker. La suppa putre i ca 10 minutter på lav varme."
+      },
+      {
+        "title": "",
+        "description": "Tilsett aspargesbønner mot slutten, spørs på tykkelsen men kokes med suppa i ca 3-4 minutter."
+      },
+      {
+        "title": "",
+        "description": "Tilsett kyllingen og ta kjelen av primusen og legg på lokk."
+      },
+      {
+        "title": "",
+        "description": "Kok opp vann i den andre kjelen, ha i nudler og kok til nudlene er ferdig, sil av vannet."
+      },
+      {
+        "title": "",
+        "description": "Ha kyllingsuppa tilbake på primusen for å varme den litt og smak den til med lime."
+      },
+      {
+        "title": "",
+        "description": "Ha nudler i bunnen av skålen. Fordel suppe og kylling over og topp med koriander."
+      },
+      {
+        "title": "",
+        "description": "Nyt! Men husk å ta med deg søpla di hjem!"
+      }
     ],
     "images": [
       {
@@ -6605,14 +6898,30 @@
       }
     ],
     "steps": [
-      "<u><b>Prepping før tur:</b></u>",
-      "Bland mel og salt, og tilsett ca. halvparten av melken. Rør godt med visp til du får en tykk og klumpfri røre. Tilsett resten av melken og visp inn eggene til slutt. Hell over i ei flaske.",
-      "Åpne mozzarellaen og legg i en passende boks, så slipper du søppelet på tur. Vask og pakk alle ingredienser i passende beholdere.",
-      "Lag <a href='/oppskrift/sjokoladesaus'>sjokoladesausen</a>",
-      "<u><b>Matlaging ute på tur:</b></u>",
-      "Varm stekepanne og ha i en klatt smør. Hell i nok røre så den dekker pannen. Stek raskt på høy varme så begge sider blir gyldne.",
-      "Del tomater i to og ha i ønsket ingredienser. NYT!",
-      "Når du er klar for dessert så fyller du pannekake med rensa rips og sjokoladesaus."
+      {
+        "title": "Prepping før tur:",
+        "description": "Bland mel og salt, og tilsett ca. halvparten av melken. Rør godt med visp til du får en tykk og klumpfri røre. Tilsett resten av melken og visp inn eggene til slutt. Hell over i ei flaske."
+      },
+      {
+        "title": "",
+        "description": "Åpne mozzarellaen og legg i en passende boks, så slipper du søppelet på tur. Vask og pakk alle ingredienser i passende beholdere."
+      },
+      {
+        "title": "",
+        "description": "Lag <a href='/oppskrift/sjokoladesaus'>sjokoladesausen</a>"
+      },
+      {
+        "title": "Matlaging ute på tur:",
+        "description": "Varm stekepanne og ha i en klatt smør. Hell i nok røre så den dekker pannen. Stek raskt på høy varme så begge sider blir gyldne."
+      },
+      {
+        "title": "",
+        "description": "Del tomater i to og ha i ønsket ingredienser. NYT!"
+      },
+      {
+        "title": "",
+        "description": "Når du er klar for dessert så fyller du pannekake med rensa rips og sjokoladesaus."
+      }
     ],
     "images": [
       {
@@ -6698,10 +7007,22 @@
       }
     ],
     "steps": [
-      "Kok opp smør, sukker og fløte i en tykkbunnet kjele under omrøring. La blandingen småkoke under konstant røring i ca 2 minutter.",
-      "Trekk kjelen av platen og rør til den har avkjølt seg litt.",
-      "Brekk opp sjokoladen og rør inn litt om gangen. Rør til all sjokoladen er smeltet og sausen har blitt blank og tykk.",
-      "Avkjøl og ha den i for eksempel ei flaske. Oppbevares i kjøleskapet og varm den opp igjen når den skal serveres."
+      {
+        "title": "",
+        "description": "Kok opp smør, sukker og fløte i en tykkbunnet kjele under omrøring. La blandingen småkoke under konstant røring i ca 2 minutter."
+      },
+      {
+        "title": "",
+        "description": "Trekk kjelen av platen og rør til den har avkjølt seg litt."
+      },
+      {
+        "title": "",
+        "description": "Brekk opp sjokoladen og rør inn litt om gangen. Rør til all sjokoladen er smeltet og sausen har blitt blank og tykk."
+      },
+      {
+        "title": "",
+        "description": "Avkjøl og ha den i for eksempel ei flaske. Oppbevares i kjøleskapet og varm den opp igjen når den skal serveres."
+      }
     ],
     "images": [
       {
@@ -6771,11 +7092,26 @@
       }
     ],
     "steps": [
-      "Plukk multer!",
-      "Rens bærene ved å fjerne skitt og lort som er tatt med fra skogen.",
-      "Kok opp vann og sukker. Ha i multene og la trekke på svak varme i 5 minutter.",
-      "Ta kjelen av ovnen og avkjøl, helst til neste dag.",
-      "Sil av multene, og ha i sirup i et passende glass eller flaske som helst er kokt for at sirupen skal vare lengst mulig."
+      {
+        "title": "",
+        "description": "Plukk multer!"
+      },
+      {
+        "title": "",
+        "description": "Rens bærene ved å fjerne skitt og lort som er tatt med fra skogen."
+      },
+      {
+        "title": "",
+        "description": "Kok opp vann og sukker. Ha i multene og la trekke på svak varme i 5 minutter."
+      },
+      {
+        "title": "",
+        "description": "Ta kjelen av ovnen og avkjøl, helst til neste dag."
+      },
+      {
+        "title": "",
+        "description": "Sil av multene, og ha i sirup i et passende glass eller flaske som helst er kokt for at sirupen skal vare lengst mulig."
+      }
     ],
     "images": [
       {
@@ -6849,14 +7185,38 @@
       }
     ],
     "steps": [
-      "Vask og rens rabarbra.(ikke nødvendig å skrelle) Kutt i terninger.",
-      "Kok opp vann og sukker. Legg i rabarbraen og la koke på svak varme i ca 30 minutter. Den skal være mør, altså bløt.",
-      "Fjern det hvite skummet som dannes.",
-      "Sil rabarbraen i en ny kjele. Klem rabarbraen slik at mest mulig saft blir silt igjennom sila.",
-      "Sett kjelen med sirupen på ovnen igjen og la småkoke for å redusere til ca halvparten. Jo mer redusering jo mer konsentrert sirup.",
-      "Smak til med sukker og sitron mot slutten. Er det for søtt? Er det for surt?",
-      "Ha sirup i rene glass, som helst er kokt for at sirupen skal holde lengst mulig. Om glasset er rent og er ordentlig lukket vil sirupen vare i et par måneder i kjøleskapet.",
-      "Bruk sirupen til å blande i sitronbrus, eller til en is eller sorbet."
+      {
+        "title": "",
+        "description": "Vask og rens rabarbra.(ikke nødvendig å skrelle) Kutt i terninger."
+      },
+      {
+        "title": "",
+        "description": "Kok opp vann og sukker. Legg i rabarbraen og la koke på svak varme i ca 30 minutter. Den skal være mør, altså bløt."
+      },
+      {
+        "title": "",
+        "description": "Fjern det hvite skummet som dannes."
+      },
+      {
+        "title": "",
+        "description": "Sil rabarbraen i en ny kjele. Klem rabarbraen slik at mest mulig saft blir silt igjennom sila."
+      },
+      {
+        "title": "",
+        "description": "Sett kjelen med sirupen på ovnen igjen og la småkoke for å redusere til ca halvparten. Jo mer redusering jo mer konsentrert sirup."
+      },
+      {
+        "title": "",
+        "description": "Smak til med sukker og sitron mot slutten. Er det for søtt? Er det for surt?"
+      },
+      {
+        "title": "",
+        "description": "Ha sirup i rene glass, som helst er kokt for at sirupen skal holde lengst mulig. Om glasset er rent og er ordentlig lukket vil sirupen vare i et par måneder i kjøleskapet."
+      },
+      {
+        "title": "",
+        "description": "Bruk sirupen til å blande i sitronbrus, eller til en is eller sorbet."
+      }
     ],
     "images": [
       {
@@ -6967,16 +7327,42 @@
       }
     ],
     "steps": [
-      "Press saften av lime og riv skallet(zest) av en lime.",
-      "Kok opp sukker og vann. Avkjøl mens du kutter eplene i biter, og finhakk mynteblader.",
-      "Ha epler, limesaft og zest og mynte i en foodprosessor og kjør lett til en purè. Ha i sukkerlaken tilslutt og kjør raskt så alt er blandet.",
-      "Press blandingen igjennom en sil og bland i glukose og salt.",
-      "Kjør i ismaskin.",
-      "Lag <a href='/oppskrift/rabarbrasirup'>rabarbrasirup</a>.",
-      "Kutt jordbær i små biter.",
-      "<u><b>Montering</b></u>",
-      "Ha i et par skjeer kuttet jordbær i en dessertskål, hell over rabarbrasirup så det dekker bunnen. Ha en kule sorbet i midten og dryss over minimarshmallows",
-      "Server!"
+      {
+        "title": "",
+        "description": "Press saften av lime og riv skallet(zest) av en lime."
+      },
+      {
+        "title": "",
+        "description": "Kok opp sukker og vann. Avkjøl mens du kutter eplene i biter, og finhakk mynteblader."
+      },
+      {
+        "title": "",
+        "description": "Ha epler, limesaft og zest og mynte i en foodprosessor og kjør lett til en purè. Ha i sukkerlaken tilslutt og kjør raskt så alt er blandet."
+      },
+      {
+        "title": "",
+        "description": "Press blandingen igjennom en sil og bland i glukose og salt."
+      },
+      {
+        "title": "",
+        "description": "Kjør i ismaskin."
+      },
+      {
+        "title": "",
+        "description": "Lag <a href='/oppskrift/rabarbrasirup'>rabarbrasirup</a>."
+      },
+      {
+        "title": "",
+        "description": "Kutt jordbær i små biter."
+      },
+      {
+        "title": "Montering",
+        "description": "Ha i et par skjeer kuttet jordbær i en dessertskål, hell over rabarbrasirup så det dekker bunnen. Ha en kule sorbet i midten og dryss over minimarshmallows"
+      },
+      {
+        "title": "",
+        "description": "Server!"
+      }
     ],
     "images": [
       {
@@ -7066,10 +7452,22 @@
       }
     ],
     "steps": [
-      "Bruk den høye smale beholderen som pleier å følge med en stavmikser. Den må ikke være for stor, men passe smal så man akkurat får en stavmikser oppi.",
-      "Om du skal ha plain majones ha egg, solsikkeolje (altså ikke olje med mye smak) og sennep i beholderen. Om du vil ha aioli ha hvitløk i også. Om du skal lage chilimajones ha i sriracha i tillegg.",
-      "Sett stavmikseren i bunnen og kjør til alt er blandet, ca 10 sekunder. Så starter du å dra stavmikseren sakte oppover til overflaten, mens den kjører. TADA! Majones!",
-      "Smak til med salt, pepper og lime eller sitron."
+      {
+        "title": "",
+        "description": "Bruk den høye smale beholderen som pleier å følge med en stavmikser. Den må ikke være for stor, men passe smal så man akkurat får en stavmikser oppi."
+      },
+      {
+        "title": "",
+        "description": "Om du skal ha plain majones ha egg, solsikkeolje (altså ikke olje med mye smak) og sennep i beholderen. Om du vil ha aioli ha hvitløk i også. Om du skal lage chilimajones ha i sriracha i tillegg."
+      },
+      {
+        "title": "",
+        "description": "Sett stavmikseren i bunnen og kjør til alt er blandet, ca 10 sekunder. Så starter du å dra stavmikseren sakte oppover til overflaten, mens den kjører. TADA! Majones!"
+      },
+      {
+        "title": "",
+        "description": "Smak til med salt, pepper og lime eller sitron."
+      }
     ],
     "images": [
       {
@@ -7171,12 +7569,30 @@
       }
     ],
     "steps": [
-      "Sett ovnen på 200 grader.",
-      "Skrell betene med skreller og skjær dem i passe tynne skiver. Ha betene over i en ildfast form.",
-      "Dryss over olivenolje, rør litt rundt og ha over en kvast rosmarin. Sett i ovnen og stek til møre, ca 30 minutter. Betene kan godt avkjøles før du har dem i salaten.",
-      "Rist nøtter i en tørr stekepanne til de blir gyldne, eller til det begynner å lukte godt av nøttene. Bland i honning og smør og la steke med i et lite minutt. Ta av stekepanna og skvis over sitron.",
-      "Skjær chevre i skiver. Legg osten i en form dekt med bakepapir. Ha i ovnen og sett på grill. La osten få en gylden farge, dette tar noen minutter. Spørs på ovnen.",
-      "Ha salat i en bolle, dryss over en god olivenolje og balsamicoeddik og bland sammen. Del betene i passende biter, ha i salaten. Dryss over havsalt. Ha i nøtter og ost. Server!"
+      {
+        "title": "",
+        "description": "Sett ovnen på 200 grader."
+      },
+      {
+        "title": "",
+        "description": "Skrell betene med skreller og skjær dem i passe tynne skiver. Ha betene over i en ildfast form."
+      },
+      {
+        "title": "",
+        "description": "Dryss over olivenolje, rør litt rundt og ha over en kvast rosmarin. Sett i ovnen og stek til møre, ca 30 minutter. Betene kan godt avkjøles før du har dem i salaten."
+      },
+      {
+        "title": "",
+        "description": "Rist nøtter i en tørr stekepanne til de blir gyldne, eller til det begynner å lukte godt av nøttene. Bland i honning og smør og la steke med i et lite minutt. Ta av stekepanna og skvis over sitron."
+      },
+      {
+        "title": "",
+        "description": "Skjær chevre i skiver. Legg osten i en form dekt med bakepapir. Ha i ovnen og sett på grill. La osten få en gylden farge, dette tar noen minutter. Spørs på ovnen."
+      },
+      {
+        "title": "",
+        "description": "Ha salat i en bolle, dryss over en god olivenolje og balsamicoeddik og bland sammen. Del betene i passende biter, ha i salaten. Dryss over havsalt. Ha i nøtter og ost. Server!"
+      }
     ],
     "images": [
       {
@@ -7292,24 +7708,70 @@
       }
     ],
     "steps": [
-      "<u><b>Vaniljesaus</b></u>",
-      "Ha melk, fløte, halvparten av sukkeret i en kjele.",
-      "Skjær vaniljestangen på langs, bruk baksiden av kniven for å dra ut vaniljefrøene. Ha frø og stang i melkeblandingen. Kok opp.",
-      "Ha eggeplommer og resten av sukkeret i en bolle. Pisk sammen til det meste av sukkeret er løst opp.",
-      "Spe den varme melkeblandingen over eggeblandingen mens du pisker. Man sper litt og litt for å unngå at eggene koagulerer av den varme melken.",
-      "Ha blandingen tilbake i kjelen. Varm forsiktig opp mens du pisker til den tykner, dette gjør den ved ca 84 grader. Går den forbi dette kan den bli til eggerøre.",
-      "Ha sausen over i en kald beholder, ha plast over og dekk plast helt ned til sausen for å unngå snærk! Sett sausen i kjøleskapet. ",
-      "<u><b>Eplepai</b></u>",
-      "Ha kjøleskapskald smør, mel, melis og bakepulver i en foodprosessor. Bland raskt sammen slik at den er en smuldredeig. Kjører du den for lenge har den blitt en deigklump og dette er ikke ønskelig.",
-      "Ha deigen på benken, samle den raskt sammen med hendene. Denne blandingen er viktig å holde kald. Jobb derfor raskt. Pakk deigen inn i plast og sett den i kjøleskapet, minst 1 time.",
-      "Kjevle deigen mellom to stk bakepapir til den er jevn og tynn. Ta av øverste lag av papir. Legg deigen over en paiform og ta av andre del av papiret. Sørg for at paideigen går helt ned i kantene. Skjær av overflødig paideig og legg restene i kjøleskapet. Dette skal brukes senere",
-      "Lag noen prikker her og der i deigen med en gaffel. Legg et bakepapir på paideigen og hell på tørre erter. Dette gjøres for å holde deigen nede under steking.",
-      "Forstek paibunnen på 170 grader i 15 minutter.",
-      "Mens paibunnen steker kan du skrelle epler og kutte dem i båter.",
-      "Når du har tatt ut paibunnen la den avkjøles litt så du kan ta ut ertene.",
-      "Dandèr eplene i paibunnen. Hell på vaniljesaus til det nesten dekker eplene. Tar du for mye i, vil vaniljesausen koke og grise til ovnen din.",
-      "Kjevle paideigrestene slik at du kan lage tynne strimler av den. Legg strimlene i et rutenett over eplene. Dryss over sukker og kanel til du syns det er nok.",
-      "Sett i ovnen på 200 grader i ca 35 minutter. Det kan være lurt å ha bakepapir under formen.(ref. tidligere setning om koking)"
+      {
+        "title": "Vaniljesaus",
+        "description": "Ha melk, fløte, halvparten av sukkeret i en kjele."
+      },
+      {
+        "title": "",
+        "description": "Skjær vaniljestangen på langs, bruk baksiden av kniven for å dra ut vaniljefrøene. Ha frø og stang i melkeblandingen. Kok opp."
+      },
+      {
+        "title": "",
+        "description": "Ha eggeplommer og resten av sukkeret i en bolle. Pisk sammen til det meste av sukkeret er løst opp."
+      },
+      {
+        "title": "",
+        "description": "Spe den varme melkeblandingen over eggeblandingen mens du pisker. Man sper litt og litt for å unngå at eggene koagulerer av den varme melken."
+      },
+      {
+        "title": "",
+        "description": "Ha blandingen tilbake i kjelen. Varm forsiktig opp mens du pisker til den tykner, dette gjør den ved ca 84 grader. Går den forbi dette kan den bli til eggerøre."
+      },
+      {
+        "title": "",
+        "description": "Ha sausen over i en kald beholder, ha plast over og dekk plast helt ned til sausen for å unngå snærk! Sett sausen i kjøleskapet."
+      },
+      {
+        "title": "Eplepai",
+        "description": "Ha kjøleskapskald smør, mel, melis og bakepulver i en foodprosessor. Bland raskt sammen slik at den er en smuldredeig. Kjører du den for lenge har den blitt en deigklump og dette er ikke ønskelig."
+      },
+      {
+        "title": "",
+        "description": "Ha deigen på benken, samle den raskt sammen med hendene. Denne blandingen er viktig å holde kald. Jobb derfor raskt. Pakk deigen inn i plast og sett den i kjøleskapet, minst 1 time."
+      },
+      {
+        "title": "",
+        "description": "Kjevle deigen mellom to stk bakepapir til den er jevn og tynn. Ta av øverste lag av papir. Legg deigen over en paiform og ta av andre del av papiret. Sørg for at paideigen går helt ned i kantene. Skjær av overflødig paideig og legg restene i kjøleskapet. Dette skal brukes senere"
+      },
+      {
+        "title": "",
+        "description": "Lag noen prikker her og der i deigen med en gaffel. Legg et bakepapir på paideigen og hell på tørre erter. Dette gjøres for å holde deigen nede under steking."
+      },
+      {
+        "title": "",
+        "description": "Forstek paibunnen på 170 grader i 15 minutter."
+      },
+      {
+        "title": "",
+        "description": "Mens paibunnen steker kan du skrelle epler og kutte dem i båter."
+      },
+      {
+        "title": "",
+        "description": "Når du har tatt ut paibunnen la den avkjøles litt så du kan ta ut ertene."
+      },
+      {
+        "title": "",
+        "description": "Dandèr eplene i paibunnen. Hell på vaniljesaus til det nesten dekker eplene. Tar du for mye i, vil vaniljesausen koke og grise til ovnen din."
+      },
+      {
+        "title": "",
+        "description": "Kjevle paideigrestene slik at du kan lage tynne strimler av den. Legg strimlene i et rutenett over eplene. Dryss over sukker og kanel til du syns det er nok."
+      },
+      {
+        "title": "",
+        "description": "Sett i ovnen på 200 grader i ca 35 minutter. Det kan være lurt å ha bakepapir under formen.(ref. tidligere setning om koking)"
+      }
     ],
     "images": [
       {
@@ -7440,19 +7902,54 @@
       }
     ],
     "steps": [
-      "Har du husket å lage <a href='/oppskrift/multesirup'>multesirup?</a>",
-      "Skjær kjøttet i passe store terninger, salt og pepre kjøttet.",
-      "Kutt sellerirot i terninger. Kutt sopp og løken i grove biter. Soppen kommer til å suge til seg digg smak, derfor er tykke grove skiver av sopp ganske digg her.",
-      "Brun kjøttet i smør i en stekepanne i omganger, og ha kjøttet i ei gryte. Stek sopp, løk og selleri i omganger, i samme stekepanne til løken er blank og soppen er brunet. Ha i smør om det blir tørt.",
-      "Ha alt over i gryta. Hell rødvin over i samme stekepanne og kok rødvinen til den har redusert til under halv mengde.",
-      "Ha innkokt vin, fløte, kraft, knust einebær og timian i gryta. Kok opp.",
-      "La gryta putre til kjøttet er mørt. For reinsdyret ble det ca 1,5 time. Spørs på størrelse, stykningsdel og type kjøtt.",
-      "Husk å lage potetstappe eller kok ris.",
-      "Rør inn gelè, rømme og multesirup mot slutten av koketiden. Salte og pepre gryta. Ta en skje, smak. Her gjelder det å smake seg frem til en godt balansert gryte. Lite salt? Ha i mer salt. Lite syre? Ha i mer ripsgelè. Alt for syrlig eller lite fylde? Ta mer rømme.. osv!",
-      "<b><u>Rørte tyttebær</b></u>",
-      "Plukk tyttebær!",
-      "Rens og vask bærene, ha dem i en bolle. Ha over et par spiseskjeer sukker per 4 never tyttebær og rør godt. Ha i en liten skvis sitron. Litt slump her altså, smak deg frem.",
-      "La stå litt før servering."
+      {
+        "title": "",
+        "description": "Har du husket å lage <a href='/oppskrift/multesirup'>multesirup?</a>"
+      },
+      {
+        "title": "",
+        "description": "Skjær kjøttet i passe store terninger, salt og pepre kjøttet."
+      },
+      {
+        "title": "",
+        "description": "Kutt sellerirot i terninger. Kutt sopp og løken i grove biter. Soppen kommer til å suge til seg digg smak, derfor er tykke grove skiver av sopp ganske digg her."
+      },
+      {
+        "title": "",
+        "description": "Brun kjøttet i smør i en stekepanne i omganger, og ha kjøttet i ei gryte. Stek sopp, løk og selleri i omganger, i samme stekepanne til løken er blank og soppen er brunet. Ha i smør om det blir tørt."
+      },
+      {
+        "title": "",
+        "description": "Ha alt over i gryta. Hell rødvin over i samme stekepanne og kok rødvinen til den har redusert til under halv mengde."
+      },
+      {
+        "title": "",
+        "description": "Ha innkokt vin, fløte, kraft, knust einebær og timian i gryta. Kok opp."
+      },
+      {
+        "title": "",
+        "description": "La gryta putre til kjøttet er mørt. For reinsdyret ble det ca 1,5 time. Spørs på størrelse, stykningsdel og type kjøtt."
+      },
+      {
+        "title": "",
+        "description": "Husk å lage potetstappe eller kok ris."
+      },
+      {
+        "title": "",
+        "description": "Rør inn gelè, rømme og multesirup mot slutten av koketiden. Salte og pepre gryta. Ta en skje, smak. Her gjelder det å smake seg frem til en godt balansert gryte. Lite salt? Ha i mer salt. Lite syre? Ha i mer ripsgelè. Alt for syrlig eller lite fylde? Ta mer rømme.. osv!"
+      },
+      {
+        "title": "Rørte tyttebær",
+        "description": "Plukk tyttebær!"
+      },
+      {
+        "title": "",
+        "description": "Rens og vask bærene, ha dem i en bolle. Ha over et par spiseskjeer sukker per 4 never tyttebær og rør godt. Ha i en liten skvis sitron. Litt slump her altså, smak deg frem."
+      },
+      {
+        "title": "",
+        "description": "La stå litt før servering."
+      }
     ],
     "images": [
       {
@@ -7626,25 +8123,70 @@
       }
     ],
     "steps": [
-      "<b><u>Medisterdeig</b></u>",
-      "Skjær svinenakken i terninger. Kvern kjøttet.",
-      "Bland det kverna kjøttet raskt sammen med spekket, og kvern igjen slik at spekket blir ordentlig blandet med svinekjøttet.",
-      "<b><u>Medisterpølser</b></u>",
-      "Bland alle krydderne og potetmel i en liten bolle.",
-      "Ha kjøttet og krydderblandingen over i kjøkkenmaskinen og kjør rolig med k-krok til alt er godt blanda.",
-      "Spe på med melk til du har fått ønsket konsistens, den må ikke være for løs.",
-      "Skyll tarmen med saltvann.",
-      "Sett tarmen på pølsestapper-tappen(?!), og stapp pølse jevnt. Vi bruker hastighet 2 på Kenwood. Avslutt med å klippe av resten av tarm og knyt en knute.",
-      "Når alt er stappet til pølse, snurr pølsa i ønsket pølsestørrelser.",
-      "Legg pølsene i kaldt vann. Varm dette forsiktig opp og la pølsene trekke i ca 20 minutter på ca 85 grader.",
-      "Før servering brun pølsene i smør, hele hvitløksfedd og laubærblad.",
-      "<b><u>Medisterkaker</b></u>",
-      "Bland alle krydderne og potetmel i en liten bolle.",
-      "Finhakk hvitløk og sjalottløk.",
-      "Ha kjøttet, krydderblandingen, løken og egg over i kjøkkenmaskinen og kjør rolig med k-krok til alt er godt blanda.",
-      "Spe på med den kalde melka og kjør til alt er godt blanda og ganske seigt.",
-      "Varm en panne med smør og olje. Form små kaker og stek dem brune på hver side.",
-      "Ha medisterkakene over i en form og sett dem i ovn på 200 grader i ca 10 minutter. Spørs på størrelsen, sjekk om de er ferdigstekt ved å dele en i to."
+      {
+        "title": "Medisterdeig",
+        "description": "Skjær svinenakken i terninger. Kvern kjøttet."
+      },
+      {
+        "title": "",
+        "description": "Bland det kverna kjøttet raskt sammen med spekket, og kvern igjen slik at spekket blir ordentlig blandet med svinekjøttet."
+      },
+      {
+        "title": "Medisterpølser",
+        "description": "Bland alle krydderne og potetmel i en liten bolle."
+      },
+      {
+        "title": "",
+        "description": "Ha kjøttet og krydderblandingen over i kjøkkenmaskinen og kjør rolig med k-krok til alt er godt blanda."
+      },
+      {
+        "title": "",
+        "description": "Spe på med melk til du har fått ønsket konsistens, den må ikke være for løs."
+      },
+      {
+        "title": "",
+        "description": "Skyll tarmen med saltvann."
+      },
+      {
+        "title": "",
+        "description": "Sett tarmen på pølsestapper-tappen(?!), og stapp pølse jevnt. Vi bruker hastighet 2 på Kenwood. Avslutt med å klippe av resten av tarm og knyt en knute."
+      },
+      {
+        "title": "",
+        "description": "Når alt er stappet til pølse, snurr pølsa i ønsket pølsestørrelser."
+      },
+      {
+        "title": "",
+        "description": "Legg pølsene i kaldt vann. Varm dette forsiktig opp og la pølsene trekke i ca 20 minutter på ca 85 grader."
+      },
+      {
+        "title": "",
+        "description": "Før servering brun pølsene i smør, hele hvitløksfedd og laubærblad."
+      },
+      {
+        "title": "Medisterkaker",
+        "description": "Bland alle krydderne og potetmel i en liten bolle."
+      },
+      {
+        "title": "",
+        "description": "Finhakk hvitløk og sjalottløk."
+      },
+      {
+        "title": "",
+        "description": "Ha kjøttet, krydderblandingen, løken og egg over i kjøkkenmaskinen og kjør rolig med k-krok til alt er godt blanda."
+      },
+      {
+        "title": "",
+        "description": "Spe på med den kalde melka og kjør til alt er godt blanda og ganske seigt."
+      },
+      {
+        "title": "",
+        "description": "Varm en panne med smør og olje. Form små kaker og stek dem brune på hver side."
+      },
+      {
+        "title": "",
+        "description": "Ha medisterkakene over i en form og sett dem i ovn på 200 grader i ca 10 minutter. Spørs på størrelsen, sjekk om de er ferdigstekt ved å dele en i to."
+      }
     ],
     "images": [
       {
@@ -7718,13 +8260,34 @@
       }
     ],
     "steps": [
-      "Sett ovnen på 180 grader.",
-      "Skill eggene. Ha eggehviter i en kjele.",
-      "Visp eggehvitene med en visp til det skummer og er på vei å blir hvitt.",
-      "Bland inn sukker, vaniljesukker og kokosmasse. Rør godt sammen.",
-      "Varm opp blandingen på middels varme mens du rører. Dette gjør du frem til konsistensen ligner tykk grøt, ca 10 minutter.",
-      "Bruk skje eller sprøytepose med stor tupp. Eller bruk en liten ringform og form kokosmakroner på et bakepapirdekt stekebrett.",
-      "Sett i midten av ovnen og stek i ca 10-15 minutter. De skal være gyldne. Avkjøl på rist."
+      {
+        "title": "",
+        "description": "Sett ovnen på 180 grader."
+      },
+      {
+        "title": "",
+        "description": "Skill eggene. Ha eggehviter i en kjele."
+      },
+      {
+        "title": "",
+        "description": "Visp eggehvitene med en visp til det skummer og er på vei å blir hvitt."
+      },
+      {
+        "title": "",
+        "description": "Bland inn sukker, vaniljesukker og kokosmasse. Rør godt sammen."
+      },
+      {
+        "title": "",
+        "description": "Varm opp blandingen på middels varme mens du rører. Dette gjør du frem til konsistensen ligner tykk grøt, ca 10 minutter."
+      },
+      {
+        "title": "",
+        "description": "Bruk skje eller sprøytepose med stor tupp. Eller bruk en liten ringform og form kokosmakroner på et bakepapirdekt stekebrett."
+      },
+      {
+        "title": "",
+        "description": "Sett i midten av ovnen og stek i ca 10-15 minutter. De skal være gyldne. Avkjøl på rist."
+      }
     ],
     "images": [
       {
@@ -7838,14 +8401,38 @@
       }
     ],
     "steps": [
-      "Varm melk og vørterøl til 37 grader i en kjele. Rør ut gjær i den lunkne væska.",
-      "Tilsett salt, sukker, anis, nellik, pepper og sirup i kjelen og rør om.",
-      "Ha blandingen over i en kjøkkenmaskin. Bruk eltekroken og elt inn melet. Elt i ca 15 minutter på lav hastighet.",
-      "Dekk bollen med plastfolie og la heve i ca 1 time.",
-      "Del deigen i to og elt inn rosiner. Form deigen til to brød og legg dem i brødformer.",
-      "Ha over plastfolie og etterhev i ca 30-45 minutter.",
-      "Sett på ovnen på 180 grader. Bland sammen litt melk og sirup og pensle brødene med blandingen før du setter dem i midten av ovnen. Stekes i ca 1 time.",
-      "Avkjøl på rist. Skal det ikke spises med en gang? Legg dem i fryser og varm opp til julefrokosten."
+      {
+        "title": "",
+        "description": "Varm melk og vørterøl til 37 grader i en kjele. Rør ut gjær i den lunkne væska."
+      },
+      {
+        "title": "",
+        "description": "Tilsett salt, sukker, anis, nellik, pepper og sirup i kjelen og rør om."
+      },
+      {
+        "title": "",
+        "description": "Ha blandingen over i en kjøkkenmaskin. Bruk eltekroken og elt inn melet. Elt i ca 15 minutter på lav hastighet."
+      },
+      {
+        "title": "",
+        "description": "Dekk bollen med plastfolie og la heve i ca 1 time."
+      },
+      {
+        "title": "",
+        "description": "Del deigen i to og elt inn rosiner. Form deigen til to brød og legg dem i brødformer."
+      },
+      {
+        "title": "",
+        "description": "Ha over plastfolie og etterhev i ca 30-45 minutter."
+      },
+      {
+        "title": "",
+        "description": "Sett på ovnen på 180 grader. Bland sammen litt melk og sirup og pensle brødene med blandingen før du setter dem i midten av ovnen. Stekes i ca 1 time."
+      },
+      {
+        "title": "",
+        "description": "Avkjøl på rist. Skal det ikke spises med en gang? Legg dem i fryser og varm opp til julefrokosten."
+      }
     ],
     "images": [
       {
@@ -7944,19 +8531,50 @@
       }
     ],
     "steps": [
-      "<b><u>Bringebærsirup</b></u>",
-      "Ha sukker og bringebær i en kjele og varm forsiktig opp. Varm til sukkeret har løst seg opp.",
-      "Sil av sausen og unngå å klemme bærene. Da får du en klarere saft, altså ikke gromsete.",
-      "Smak til med sitron.",
-      "<b><u>Juleflesk</b></u>",
-      "Ha kaldt vann i en stor bolle og legg gelatinplatene i vannet. La stå mens du gjør andre ting.",
-      "Kle en form på rundt 22x25 cm med bakepapir. Dekk kanter også, ellers vil det bli veldig klissete å få juleflesken av.",
-      "Ha bringebærsirup og sukker i en kjele (jada, enda mer sukker). Kok opp på lav varme og la den småkoke til sukkeret er oppløst.",
-      "Nå skal gelatinen løses opp. Kok opp 0.5 dl vann i en liten kjele. Skvis vannet ut av gelatinen og legg i det kokende vannet mens du rører det ut. Ta litt og litt av gangen.",
-      "Ha gelatinvannet i sukkerlaken. Smak til med sitron.",
-      "Hell blandingen i formen og sett i kjøleskap til dagen etter.",
-      "Ha juleflesken ut av formen og skjær i terninger. Nå er juleflesken sticky, den setter seg fast overalt, men hold ut og vær tålmodig. Det blir digg til slutt.",
-      "Mort sukker så det blir finkornet, ha i en bolle.  Vend juleflesken bit for bit i sukkeret, til den ikke er så sticky lenger."
+      {
+        "title": "Bringebærsirup",
+        "description": "Ha sukker og bringebær i en kjele og varm forsiktig opp. Varm til sukkeret har løst seg opp."
+      },
+      {
+        "title": "",
+        "description": "Sil av sausen og unngå å klemme bærene. Da får du en klarere saft, altså ikke gromsete."
+      },
+      {
+        "title": "",
+        "description": "Smak til med sitron."
+      },
+      {
+        "title": "Juleflesk",
+        "description": "Ha kaldt vann i en stor bolle og legg gelatinplatene i vannet. La stå mens du gjør andre ting."
+      },
+      {
+        "title": "",
+        "description": "Kle en form på rundt 22x25 cm med bakepapir. Dekk kanter også, ellers vil det bli veldig klissete å få juleflesken av."
+      },
+      {
+        "title": "",
+        "description": "Ha bringebærsirup og sukker i en kjele (jada, enda mer sukker). Kok opp på lav varme og la den småkoke til sukkeret er oppløst."
+      },
+      {
+        "title": "",
+        "description": "Nå skal gelatinen løses opp. Kok opp 0.5 dl vann i en liten kjele. Skvis vannet ut av gelatinen og legg i det kokende vannet mens du rører det ut. Ta litt og litt av gangen."
+      },
+      {
+        "title": "",
+        "description": "Ha gelatinvannet i sukkerlaken. Smak til med sitron."
+      },
+      {
+        "title": "",
+        "description": "Hell blandingen i formen og sett i kjøleskap til dagen etter."
+      },
+      {
+        "title": "",
+        "description": "Ha juleflesken ut av formen og skjær i terninger. Nå er juleflesken sticky, den setter seg fast overalt, men hold ut og vær tålmodig. Det blir digg til slutt."
+      },
+      {
+        "title": "",
+        "description": "Mort sukker så det blir finkornet, ha i en bolle.  Vend juleflesken bit for bit i sukkeret, til den ikke er så sticky lenger."
+      }
     ],
     "images": [
       {
@@ -8074,14 +8692,38 @@
       }
     ],
     "steps": [
-      "Start med prepping. Skrell og riv ingefær. Rens kardemommefrø, de svarte frøene i kapslene er de du skal morte. Mort de hele krydderne hver for seg. ",
-      "Kvern mandler til en fin masse, ha dem i kjøkkenmaskinbolle sammen med hvetemel og natron.",
-      "Ha smør, vann, sirup, melis og krydderne i en kjele og kok forsiktig opp mens du rører hele tiden.",
-      "Sil det våte over det tørre og bland sammen med k-krok til det har blitt en fin og klissete pepperkakedeig.",
-      "La deigen avkjøles litt på benken slik at den er enklere å håndtere. Ha deigen over plasfolie for å pakke den godt sammen som en julegave og legg i kjøleskap over natta.",
-      "Legg deigen på benken i noen minutter før du begynner å jobbe med den. Del opp i passende arbeidsstørrelser og kjevle ut på melet bord. Bruk former som du pleier til pepperkaker.",
-      "Stek pepperkaker på bakepapirkledd stekebrett på 180 grader i 8 minutter. Avkjøl på rist.",
-      "Server pepperkaker med Kraftkar(blåmuggost) og en god portvin. Eller pynt med melis og nonstop for barnas skyld. (1 eggehvite, 4 dl melis og en skvis sitron)"
+      {
+        "title": "",
+        "description": "Start med prepping. Skrell og riv ingefær. Rens kardemommefrø, de svarte frøene i kapslene er de du skal morte. Mort de hele krydderne hver for seg."
+      },
+      {
+        "title": "",
+        "description": "Kvern mandler til en fin masse, ha dem i kjøkkenmaskinbolle sammen med hvetemel og natron."
+      },
+      {
+        "title": "",
+        "description": "Ha smør, vann, sirup, melis og krydderne i en kjele og kok forsiktig opp mens du rører hele tiden."
+      },
+      {
+        "title": "",
+        "description": "Sil det våte over det tørre og bland sammen med k-krok til det har blitt en fin og klissete pepperkakedeig."
+      },
+      {
+        "title": "",
+        "description": "La deigen avkjøles litt på benken slik at den er enklere å håndtere. Ha deigen over plasfolie for å pakke den godt sammen som en julegave og legg i kjøleskap over natta."
+      },
+      {
+        "title": "",
+        "description": "Legg deigen på benken i noen minutter før du begynner å jobbe med den. Del opp i passende arbeidsstørrelser og kjevle ut på melet bord. Bruk former som du pleier til pepperkaker."
+      },
+      {
+        "title": "",
+        "description": "Stek pepperkaker på bakepapirkledd stekebrett på 180 grader i 8 minutter. Avkjøl på rist."
+      },
+      {
+        "title": "",
+        "description": "Server pepperkaker med Kraftkar(blåmuggost) og en god portvin. Eller pynt med melis og nonstop for barnas skyld. (1 eggehvite, 4 dl melis og en skvis sitron)"
+      }
     ],
     "images": [
       {
@@ -8212,16 +8854,38 @@
       }
     ],
     "steps": [
-      "<u><b>Prepping før tur:</b></u>",
-      "Om man ikke lager den hjemme, så er prepping veldig lurt!",
-      "Finhakk løk og ha i en beholder.",
-      "Finhakk hvitløk, gulrøtter, søtpotet og eple og ha i en beholder. Jo mindre terninger på grønnsakene jo raskere blir de kokt der ute i skogen.",
-      "Pakk andre ingredienser i passende beholdere og gå på tur!",
-      "<u><b>Matlaging ute på tur:</b></u>",
-      "Smelt smør og varm olje i kjelen. Fres gul løk til den er blank og myk. Tilsett hvitløk, gulrøtter, søtpotet og eple. La alt frese under omrøring i ca 5 minutter.",
-      "Rør inn karri og tomater. Tilsett kraft og kok opp. La det småkoke under lokk til alle grønnsakene er møre.",
-      "Hell i kokosmelk og la det få et oppkok. Smak til med salt, pepper og lime.",
-      "Varm nanbrød i litt smør i stekepanne. Topp suppen med koriander. Server med nanbrød og mangochutney."
+      {
+        "title": "Prepping før tur:",
+        "description": "Om man ikke lager den hjemme, så er prepping veldig lurt!"
+      },
+      {
+        "title": "",
+        "description": "Finhakk løk og ha i en beholder."
+      },
+      {
+        "title": "",
+        "description": "Finhakk hvitløk, gulrøtter, søtpotet og eple og ha i en beholder. Jo mindre terninger på grønnsakene jo raskere blir de kokt der ute i skogen."
+      },
+      {
+        "title": "",
+        "description": "Pakk andre ingredienser i passende beholdere og gå på tur!"
+      },
+      {
+        "title": "Matlaging ute på tur:",
+        "description": "Smelt smør og varm olje i kjelen. Fres gul løk til den er blank og myk. Tilsett hvitløk, gulrøtter, søtpotet og eple. La alt frese under omrøring i ca 5 minutter."
+      },
+      {
+        "title": "",
+        "description": "Rør inn karri og tomater. Tilsett kraft og kok opp. La det småkoke under lokk til alle grønnsakene er møre."
+      },
+      {
+        "title": "",
+        "description": "Hell i kokosmelk og la det få et oppkok. Smak til med salt, pepper og lime."
+      },
+      {
+        "title": "",
+        "description": "Varm nanbrød i litt smør i stekepanne. Topp suppen med koriander. Server med nanbrød og mangochutney."
+      }
     ],
     "images": [
       {
@@ -8319,9 +8983,18 @@
       }
     ],
     "steps": [
-      "Rist alle krydderne, bortsett fra gurkemeie og paprikapulver, på sterk varme i en tørr stekepanne. Rist til det ryker. Huske å riste litt på panna.",
-      "Ha alle krydderne i en kvern eller lignende. Mal alt til fint krydder.",
-      "Ha krydderet i et lukket glass og oppbevar mørkt."
+      {
+        "title": "",
+        "description": "Rist alle krydderne, bortsett fra gurkemeie og paprikapulver, på sterk varme i en tørr stekepanne. Rist til det ryker. Huske å riste litt på panna."
+      },
+      {
+        "title": "",
+        "description": "Ha alle krydderne i en kvern eller lignende. Mal alt til fint krydder."
+      },
+      {
+        "title": "",
+        "description": "Ha krydderet i et lukket glass og oppbevar mørkt."
+      }
     ],
     "images": [
       {
@@ -8457,14 +9130,38 @@
       }
     ],
     "steps": [
-      "Sett på ovnen 180 grader. Legg fisken på en seng med grovt salt og legg i kjøleskapet mens du lager chilisausen.",
-      "Skjær chilien på langs og fjern frøene. Grovhakk chili og hvitløk. Ha chili, hvitløk, soyasaus, fiskesaus, limesaft, sukker, vann og koriander i en hurtigmikser(eller stavmikser). Kjør raskt sammen.",
-      "Ta ut fisken og skyll vekk salt som henger igjen, tørk med papir og ha fisken i en ildfast form. Salte og pepre fisken. Ha halvparten av sausen over fisken. Og ha i ovnen i ca 20 minutter (følg med). For å sjekke om fisken er ferdig ved å trykke lett på den med en skje, flaker den seg er den ferdig.",
-      "Kok ris.",
-      "Rens brokkoli og del opp i mindre buketter. Skjær hvitløk i tynne skiver.",
-      "Varm en stekepanne med litt olje og stek brokkolien i et par minutter på høy varme så det freser. Tilsett hvitløk mot slutten. Ha i ca 0,5 dl vann og la det dampe vekk før du blander inn oystersaus og sesamfrø",
-      "Hakk peanøtter og vårløk.",
-      "Ha fiskefilet på en tallerken og hell over resten av sausen. Topp fisken med peanøtter, vårløk og koriander. Server med ris og brokkoli."
+      {
+        "title": "",
+        "description": "Sett på ovnen 180 grader. Legg fisken på en seng med grovt salt og legg i kjøleskapet mens du lager chilisausen."
+      },
+      {
+        "title": "",
+        "description": "Skjær chilien på langs og fjern frøene. Grovhakk chili og hvitløk. Ha chili, hvitløk, soyasaus, fiskesaus, limesaft, sukker, vann og koriander i en hurtigmikser(eller stavmikser). Kjør raskt sammen."
+      },
+      {
+        "title": "",
+        "description": "Ta ut fisken og skyll vekk salt som henger igjen, tørk med papir og ha fisken i en ildfast form. Salte og pepre fisken. Ha halvparten av sausen over fisken. Og ha i ovnen i ca 20 minutter (følg med). For å sjekke om fisken er ferdig ved å trykke lett på den med en skje, flaker den seg er den ferdig."
+      },
+      {
+        "title": "",
+        "description": "Kok ris."
+      },
+      {
+        "title": "",
+        "description": "Rens brokkoli og del opp i mindre buketter. Skjær hvitløk i tynne skiver."
+      },
+      {
+        "title": "",
+        "description": "Varm en stekepanne med litt olje og stek brokkolien i et par minutter på høy varme så det freser. Tilsett hvitløk mot slutten. Ha i ca 0,5 dl vann og la det dampe vekk før du blander inn oystersaus og sesamfrø"
+      },
+      {
+        "title": "",
+        "description": "Hakk peanøtter og vårløk."
+      },
+      {
+        "title": "",
+        "description": "Ha fiskefilet på en tallerken og hell over resten av sausen. Topp fisken med peanøtter, vårløk og koriander. Server med ris og brokkoli."
+      }
     ],
     "images": [
       {
@@ -8594,20 +9291,46 @@
       }
     ],
     "steps": [
-      "<u><b>Purreaske</b></u>",
-      "Sett ovnen på 230 grader med grillfunksjon.",
-      "Skjær bort roten og den grønne delen av purra. Del purre i fire på langs, og spre skivene utover et stekebrett.",
-      "La stå i ovnen til de blir helt svarte, ca 15 minutter",
-      "Avkjøl purra. Mort eller kjør dem til pulver i en krydderkvern.",
-      "Oppbevar i et glass med tett lokk. Holder seg i 100 år.",
-      "<u><b>Sellerisalt</b></u>",
-      "Rist sellerifrø i en tørr, varm stekepanne i noen minutter. Pass på de så de ikke svir seg.",
-      "Mort eller kvern i maskin til fint pulver. Bland pulveret med saltet og fortsett å støt til alt er blandet til et fint pulver.",
-      "Ha saltet i et glass med tett lokk.",
-      "<u><b>Tacokrydder</b></u>",
-      "Bland sammen alle krydderne. Oppbevar i et glass med tett lokk.",
-      "<u><b>På tacofredag</b></u>",
-      "Bytt ut kjøpt posekrydder med 3-4 ts hjemmelaget tacokrydder med 400 gram kjøttdeig. Smak deg frem!"
+      {
+        "title": "Purreaske",
+        "description": "Sett ovnen på 230 grader med grillfunksjon."
+      },
+      {
+        "title": "",
+        "description": "Skjær bort roten og den grønne delen av purra. Del purre i fire på langs, og spre skivene utover et stekebrett."
+      },
+      {
+        "title": "",
+        "description": "La stå i ovnen til de blir helt svarte, ca 15 minutter"
+      },
+      {
+        "title": "",
+        "description": "Avkjøl purra. Mort eller kjør dem til pulver i en krydderkvern."
+      },
+      {
+        "title": "",
+        "description": "Oppbevar i et glass med tett lokk. Holder seg i 100 år."
+      },
+      {
+        "title": "Sellerisalt",
+        "description": "Rist sellerifrø i en tørr, varm stekepanne i noen minutter. Pass på de så de ikke svir seg."
+      },
+      {
+        "title": "",
+        "description": "Mort eller kvern i maskin til fint pulver. Bland pulveret med saltet og fortsett å støt til alt er blandet til et fint pulver."
+      },
+      {
+        "title": "",
+        "description": "Ha saltet i et glass med tett lokk."
+      },
+      {
+        "title": "Tacokrydder",
+        "description": "Bland sammen alle krydderne. Oppbevar i et glass med tett lokk."
+      },
+      {
+        "title": "På tacofredag",
+        "description": "Bytt ut kjøpt posekrydder med 3-4 ts hjemmelaget tacokrydder med 400 gram kjøttdeig. Smak deg frem!"
+      }
     ],
     "images": [
       {
@@ -8702,17 +9425,50 @@
       }
     ],
     "steps": [
-      "Sett smøret på benken og la den få romtemperatur. Sett på ovnen på 200 grader.",
-      "Pisk smør og sukker hvitt. Det betyr at det skal piskes til blandingen ser hvit og fluffy ut.",
-      "Skill eggene. Rør inn eggeplommer, en av gangen.",
-      "Sikt inn mel og bakepulver og bland godt før du har i melken litt og litt mens det røres forsiktig.",
-      "I en annen bolle, stivpisk eggehvitene.",
-      "Vend stivpisket eggehviter forsiktig inn i kakedeigen med en slikkepott. Dette er viktig for å bevare lufta.",
-      "Kle 2 brødformer med enten smør eller bakepapir. Ha i deigen.",
-      "Sett formene i ovnen på nederste rille, stek i ca 1 time.",
-      "Følg med så kakene ikke blir brent på toppen. Om det begynner å se svart ut dekk kakene med aluminiumsfolie.",
-      "Stikk en pinne i kaka for å se om den er ferdig. Henger det masse deig igjen, stek litt lenger.",
-      "Bland melis og sitron til ønsket konsistens. Server rykende fersk formkake med sitronglasuren!"
+      {
+        "title": "",
+        "description": "Sett smøret på benken og la den få romtemperatur. Sett på ovnen på 200 grader."
+      },
+      {
+        "title": "",
+        "description": "Pisk smør og sukker hvitt. Det betyr at det skal piskes til blandingen ser hvit og fluffy ut."
+      },
+      {
+        "title": "",
+        "description": "Skill eggene. Rør inn eggeplommer, en av gangen."
+      },
+      {
+        "title": "",
+        "description": "Sikt inn mel og bakepulver og bland godt før du har i melken litt og litt mens det røres forsiktig."
+      },
+      {
+        "title": "",
+        "description": "I en annen bolle, stivpisk eggehvitene."
+      },
+      {
+        "title": "",
+        "description": "Vend stivpisket eggehviter forsiktig inn i kakedeigen med en slikkepott. Dette er viktig for å bevare lufta."
+      },
+      {
+        "title": "",
+        "description": "Kle 2 brødformer med enten smør eller bakepapir. Ha i deigen."
+      },
+      {
+        "title": "",
+        "description": "Sett formene i ovnen på nederste rille, stek i ca 1 time."
+      },
+      {
+        "title": "",
+        "description": "Følg med så kakene ikke blir brent på toppen. Om det begynner å se svart ut dekk kakene med aluminiumsfolie."
+      },
+      {
+        "title": "",
+        "description": "Stikk en pinne i kaka for å se om den er ferdig. Henger det masse deig igjen, stek litt lenger."
+      },
+      {
+        "title": "",
+        "description": "Bland melis og sitron til ønsket konsistens. Server rykende fersk formkake med sitronglasuren!"
+      }
     ],
     "images": [
       {
@@ -8876,20 +9632,50 @@
       }
     ],
     "steps": [
-      "<u><b>Prepp dagen før tur</b></u>",
-      "Kjøttet bør helst få ligge litt i marinade, så start gjerne dagen før. Skjær kjøttet i strimler.",
-      "Bland sammen yoghurt, sitronsaft, finhakket hvitløk, løk i strimler og alle krydderne.",
-      "Bland kjøttet sammen med yoghurtblandingen. Ha over i ei brødpose og legg i kjøleskapet.",
-      "<u><b>Prepp før tur</b></u>",
-      "Lag myntedressing. Bland sammen yoghurt, finhakket mynte, honning og sennep. Smak til med salt og pepper. Ha den i en boks.",
-      "Kutt dine valgte grønnsaker og rens granateple. Legg i bokser.",
-      "Pakk brød, boksene med mat, utstyr og gå på tur.",
-      "<u><b>På tur</b></u>",
-      "Stek brødene i tørr panne.",
-      "Stekingen av kjøttet bør skje i omganger om man ikke har stor nok panne, slik at man får god stekevarme.",
-      "Varm opp pannen. Ha i olje, deretter kjøttblandingen. Kjøttet skal stekes på høy varme med marinade og løken.",
-      "Rør ofte så det ikke brenner seg.",
-      "Server kebab med myntedressing, grønnsaker, granateple, kjøtt og brød."
+      {
+        "title": "Prepp dagen før tur",
+        "description": "Kjøttet bør helst få ligge litt i marinade, så start gjerne dagen før. Skjær kjøttet i strimler."
+      },
+      {
+        "title": "",
+        "description": "Bland sammen yoghurt, sitronsaft, finhakket hvitløk, løk i strimler og alle krydderne."
+      },
+      {
+        "title": "",
+        "description": "Bland kjøttet sammen med yoghurtblandingen. Ha over i ei brødpose og legg i kjøleskapet."
+      },
+      {
+        "title": "Prepp før tur",
+        "description": "Lag myntedressing. Bland sammen yoghurt, finhakket mynte, honning og sennep. Smak til med salt og pepper. Ha den i en boks."
+      },
+      {
+        "title": "",
+        "description": "Kutt dine valgte grønnsaker og rens granateple. Legg i bokser."
+      },
+      {
+        "title": "",
+        "description": "Pakk brød, boksene med mat, utstyr og gå på tur."
+      },
+      {
+        "title": "På tur",
+        "description": "Stek brødene i tørr panne."
+      },
+      {
+        "title": "",
+        "description": "Stekingen av kjøttet bør skje i omganger om man ikke har stor nok panne, slik at man får god stekevarme."
+      },
+      {
+        "title": "",
+        "description": "Varm opp pannen. Ha i olje, deretter kjøttblandingen. Kjøttet skal stekes på høy varme med marinade og løken."
+      },
+      {
+        "title": "",
+        "description": "Rør ofte så det ikke brenner seg."
+      },
+      {
+        "title": "",
+        "description": "Server kebab med myntedressing, grønnsaker, granateple, kjøtt og brød."
+      }
     ],
     "images": [
       {
@@ -9016,13 +9802,34 @@
       }
     ],
     "steps": [
-      "Ta frem alle ingredienser.",
-      "Gjør klar salaten. Kutt tomater i båter, agurk i biter, sjalottløk i tynne skiver, finkutt kålen. Rens sitrongress for de tørre ytterste lagene og finkutt kjernen. Ha alt i en bolle.",
-      "Finhakk hvitløk. Varm en stekepanne og ha i en klunk olje og hvitløken. Fres hvitløk til den bli gyllen, pass på så du ikke brenner den.",
-      "Tilsett kyllingkjøttdeig, ha i kyllingkraft og salt. Kok opp mens du hakker kyllingkjøttdeigen til fine små biter med stekespaden.",
-      "La kjøttdeigen koke i et par minutter. Når den er gjennomkokt smak til med chilipulver, fiskesaus, limesaft og sukker. Den skal smake mye syre og et sting av styrke fra chilien.",
-      "Bland alt fra stekepannen i salaten. Finhakk urtene og bland dette i salaten.",
-      "Du er ferdig! Enkelt, raskt og digg, sant?"
+      {
+        "title": "",
+        "description": "Ta frem alle ingredienser."
+      },
+      {
+        "title": "",
+        "description": "Gjør klar salaten. Kutt tomater i båter, agurk i biter, sjalottløk i tynne skiver, finkutt kålen. Rens sitrongress for de tørre ytterste lagene og finkutt kjernen. Ha alt i en bolle."
+      },
+      {
+        "title": "",
+        "description": "Finhakk hvitløk. Varm en stekepanne og ha i en klunk olje og hvitløken. Fres hvitløk til den bli gyllen, pass på så du ikke brenner den."
+      },
+      {
+        "title": "",
+        "description": "Tilsett kyllingkjøttdeig, ha i kyllingkraft og salt. Kok opp mens du hakker kyllingkjøttdeigen til fine små biter med stekespaden."
+      },
+      {
+        "title": "",
+        "description": "La kjøttdeigen koke i et par minutter. Når den er gjennomkokt smak til med chilipulver, fiskesaus, limesaft og sukker. Den skal smake mye syre og et sting av styrke fra chilien."
+      },
+      {
+        "title": "",
+        "description": "Bland alt fra stekepannen i salaten. Finhakk urtene og bland dette i salaten."
+      },
+      {
+        "title": "",
+        "description": "Du er ferdig! Enkelt, raskt og digg, sant?"
+      }
     ],
     "images": [
       {
@@ -9112,14 +9919,38 @@
       }
     ],
     "steps": [
-      "Løs opp gjæren i det lunka vannet i en bakebolle. Tilsett resten av ingrediensene.",
-      "Kjør deigen i kjøkkemaskin i ca 10 minutter. Om du gjør det for hånd, elt til den er smidig, skinnende og elastisk. Den er litt klissete. Husk å ikke bruk for mye mel.",
-      "Legg deigen i en oljesmurt bolle, drypp litt av oljen på toppen av deigen. Dekk bollen med plastfolie og et kjøkkenhåndkle.",
-      "Hev deigen til den er dobbelt så stor.",
-      "Kna deigen sammen på et melet bord. Del den i 6 like store biter og rull til boller.",
-      "Dekk bollene med plastfolie og la hvile i 10 minutter.",
-      "Varm grillen eller en stekepanne. Stek dem på ca 45 sekunder per side.",
-      "Dekk de ferdig stekte brødene med en håndkle slik at de holder seg varme og myke."
+      {
+        "title": "",
+        "description": "Løs opp gjæren i det lunka vannet i en bakebolle. Tilsett resten av ingrediensene."
+      },
+      {
+        "title": "",
+        "description": "Kjør deigen i kjøkkemaskin i ca 10 minutter. Om du gjør det for hånd, elt til den er smidig, skinnende og elastisk. Den er litt klissete. Husk å ikke bruk for mye mel."
+      },
+      {
+        "title": "",
+        "description": "Legg deigen i en oljesmurt bolle, drypp litt av oljen på toppen av deigen. Dekk bollen med plastfolie og et kjøkkenhåndkle."
+      },
+      {
+        "title": "",
+        "description": "Hev deigen til den er dobbelt så stor."
+      },
+      {
+        "title": "",
+        "description": "Kna deigen sammen på et melet bord. Del den i 6 like store biter og rull til boller."
+      },
+      {
+        "title": "",
+        "description": "Dekk bollene med plastfolie og la hvile i 10 minutter."
+      },
+      {
+        "title": "",
+        "description": "Varm grillen eller en stekepanne. Stek dem på ca 45 sekunder per side."
+      },
+      {
+        "title": "",
+        "description": "Dekk de ferdig stekte brødene med en håndkle slik at de holder seg varme og myke."
+      }
     ],
     "images": [
       {
@@ -9357,25 +10188,62 @@
       }
     ],
     "steps": [
-      "<u><b>Grillspyd</b></u>",
-      "Skjær kjøttet i jevne biter. Salte det lett.",
-      "Rør sammen honning, soyasaus, revet ingefær, revet hvitløk og sriracha-saus.",
-      "Ha marinaden i en brødpose, legg kjøttbitene sammen med marinaden og marinèr så lenge du har tid. Helst et døgn, minst 30 minutter.",
-      "Rens rødløk og kutt i grove biter. Tre kjøtt og løk på grillspyd.",
-      "Bruker du trepinner, husk å bløtlegge i en halvtimes tid.",
-      "Pensle spydene med litt olje og grill dem over høy varme i et par minutter på hver side.",
-      " <u><b>Perfekt sidesalat</b></u>",
-      "Vask salaten godt, og tørk i en salatslynge eller håndkle. Ha den i en stor bolle.",
-      "Finhakk sjalottløk og ha den i en liten bolle. Bland sammen med eddik, honning, sennep, sennepsfrø, revet sitronskall(pass på så du ikke tar med det hvite i skallet, dette smaker bittert) og sitronsaft.",
-      "Hell olivenolje i en tynn stråle over blandingen mens du pisker. Tilsett det varme vannet. Nå sitter du igjen med en dressing med litt tykkelse.",
-      "Finhakk ansjosen og visp den inn i dressingen. Smak til med salt og kvernet pepper.",
-      "Hell dressingen over salaten.",
-      "<u><b>Chilimajones</b></u>",
-      "Rens hvitløk og grovhakk den, legg den og alle ingredienser i en avlang beholder. Se <a href='/oppskrift/majones'>majones-oppskrift</a> for fremgangsmetode. Smak til med kvernet pepper.",
-      " <u><b>Parmesankrem</b></u>",
-      "Følg stegene fra denne <a href='/oppskrift/parmesankrem'>oppskriften til parmesankrem</a>.",
-      "<u><b>Grilla brød</b></u>",
-      "Følg stegene fra denne <a href='/oppskrift/pannebrød'>oppskriften til grilla brød</a>."
+      {
+        "title": "Grillspyd",
+        "description": "Skjær kjøttet i jevne biter. Salte det lett."
+      },
+      {
+        "title": "",
+        "description": "Rør sammen honning, soyasaus, revet ingefær, revet hvitløk og sriracha-saus."
+      },
+      {
+        "title": "",
+        "description": "Ha marinaden i en brødpose, legg kjøttbitene sammen med marinaden og marinèr så lenge du har tid. Helst et døgn, minst 30 minutter."
+      },
+      {
+        "title": "",
+        "description": "Rens rødløk og kutt i grove biter. Tre kjøtt og løk på grillspyd."
+      },
+      {
+        "title": "",
+        "description": "Bruker du trepinner, husk å bløtlegge i en halvtimes tid."
+      },
+      {
+        "title": "",
+        "description": "Pensle spydene med litt olje og grill dem over høy varme i et par minutter på hver side."
+      },
+      {
+        "title": "Perfekt sidesalat",
+        "description": "Vask salaten godt, og tørk i en salatslynge eller håndkle. Ha den i en stor bolle."
+      },
+      {
+        "title": "",
+        "description": "Finhakk sjalottløk og ha den i en liten bolle. Bland sammen med eddik, honning, sennep, sennepsfrø, revet sitronskall(pass på så du ikke tar med det hvite i skallet, dette smaker bittert) og sitronsaft."
+      },
+      {
+        "title": "",
+        "description": "Hell olivenolje i en tynn stråle over blandingen mens du pisker. Tilsett det varme vannet. Nå sitter du igjen med en dressing med litt tykkelse."
+      },
+      {
+        "title": "",
+        "description": "Finhakk ansjosen og visp den inn i dressingen. Smak til med salt og kvernet pepper."
+      },
+      {
+        "title": "",
+        "description": "Hell dressingen over salaten."
+      },
+      {
+        "title": "Chilimajones",
+        "description": "Rens hvitløk og grovhakk den, legg den og alle ingredienser i en avlang beholder. Se <a href='/oppskrift/majones'>majones-oppskrift</a> for fremgangsmetode. Smak til med kvernet pepper."
+      },
+      {
+        "title": "Parmesankrem",
+        "description": "Følg stegene fra denne <a href='/oppskrift/parmesankrem'>oppskriften til parmesankrem</a>."
+      },
+      {
+        "title": "Grilla brød",
+        "description": "Følg stegene fra denne <a href='/oppskrift/pannebrød'>oppskriften til grilla brød</a>."
+      }
     ],
     "images": [
       {
@@ -9486,15 +10354,42 @@
       }
     ],
     "steps": [
-      "Ta ut smøret så det blir romtemperert.",
-      "Sett på ovnen på 180 grader.",
-      "Kle en liten 20cm kakeform med bakepapir, eventuelt en jernpanne.",
-      "Visp smør og sukker i en kjøkkenmaskin. Visp til det blir luftig og nærmest hvitt i fargen.",
-      "Tilsett ett egg av gangen og rør mellom hver gang.",
-      "Tilsett hvetemel, bakepulver, vaniljesukker, kardemomme, salt og creme fraiche. Visp i 2 minutter til.",
-      "Ha røren i formen.",
-      "Skjær epler i tynne skiver, med skall. Trykke skivene ned i røren og dryss 1 spiseskje brunt sukker over.",
-      "Stekes i ca 30 minutter. Spørs på ovnen, sjekk med en pinne."
+      {
+        "title": "",
+        "description": "Ta ut smøret så det blir romtemperert."
+      },
+      {
+        "title": "",
+        "description": "Sett på ovnen på 180 grader."
+      },
+      {
+        "title": "",
+        "description": "Kle en liten 20cm kakeform med bakepapir, eventuelt en jernpanne."
+      },
+      {
+        "title": "",
+        "description": "Visp smør og sukker i en kjøkkenmaskin. Visp til det blir luftig og nærmest hvitt i fargen."
+      },
+      {
+        "title": "",
+        "description": "Tilsett ett egg av gangen og rør mellom hver gang."
+      },
+      {
+        "title": "",
+        "description": "Tilsett hvetemel, bakepulver, vaniljesukker, kardemomme, salt og creme fraiche. Visp i 2 minutter til."
+      },
+      {
+        "title": "",
+        "description": "Ha røren i formen."
+      },
+      {
+        "title": "",
+        "description": "Skjær epler i tynne skiver, med skall. Trykke skivene ned i røren og dryss 1 spiseskje brunt sukker over."
+      },
+      {
+        "title": "",
+        "description": "Stekes i ca 30 minutter. Spørs på ovnen, sjekk med en pinne."
+      }
     ],
     "images": [
       {

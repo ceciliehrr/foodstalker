@@ -10,23 +10,21 @@ export interface Props {
 
 // Assuming Astro.props is of type Props
 const { steps } = Astro.props;
-
 ---
 
-{steps.map((step, index) => (
-  <div class="step" data-key={index}>
-    {step.title &&
-    <h3 class="text-xl">{step.title}</h3>
-    }
-    <p class="step__description">{step.description}</p>
-  </div>
-))}
+{
+  steps.map((step, index) => (
+    <div class="step" data-key={index}>
+      {step.title && <h3 class="text-xl">{step.title}</h3>}
+      <p class="step__description" set:html={step.description} />
+    </div>
+  ))
+}
 
 <style scoped lang="scss">
-.step {
-  &__description {
-    padding: 16px 32px 16px 0;
+  .step {
+    &__description {
+      padding: 16px 32px 16px 0;
+    }
   }
-}
-  
 </style>

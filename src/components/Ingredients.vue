@@ -1,29 +1,29 @@
 <template>
-  <h2 class="text-2xl mb-4">Ingredienser</h2>
+  <div>
+    <h2 class="text-2xl mb-4">Ingredienser</h2>
 
-  <div
-    class="ingredients"
-    v-for="(ingredient, title) in ingredients"
-    :key="title"
-  >
-    <div v-if="title">
-      <div class="text-xl mb-2">{{ title }}</div>
+    <div v-for="(group, index) in ingredients" :key="index">
+      <div v-if="group.title">
+        <div class="text-xl mb-2">{{ group.title }}</div>
+      </div>
+      <ol class="mb-4">
+        <li
+          class="checkbox__list mb-1"
+          v-for="ingredient in group.ingredients"
+          :key="ingredient.name"
+        >
+          <label class="checkbox__container">
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+            <strong
+              class="checkbox__text mr-3"
+              v-html="ingredient.quantity"
+            ></strong>
+            <span class="checkbox__text" v-html="ingredient.name"></span>
+          </label>
+        </li>
+      </ol>
     </div>
-    <ol class="mb-4">
-      <li
-        class="checkbox__list mb-1"
-        v-for="values in ingredient"
-        :key="values.name"
-      >
-        <label class="checkbox__container">
-          <input type="checkbox" />
-          <span class="checkmark"></span>
-          <strong class="checkbox__text mr-3" v-html="values.quantity">
-          </strong>
-          <span class="checkbox__text" v-html="values.name"> </span>
-        </label>
-      </li>
-    </ol>
   </div>
 </template>
 
