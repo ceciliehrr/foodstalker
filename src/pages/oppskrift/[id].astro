@@ -6,6 +6,8 @@ import getRecipes from "../../data/new_recipes.json";
 import { Picture } from "@astrojs/image/components";
 import Description from "../../components/Description.astro";
 import StepByStep from "../../components/StepByStep.astro";
+import Divider from "../../components/Divider.astro";
+import Tips from "../../components/Tips.astro";
 
 export async function getStaticPaths() {
   const recipes = getRecipes;
@@ -22,80 +24,110 @@ const { post } = Astro.props;
 
 const images = post.images;
 const mainImage = post.imageurl;
+
+const title = post.title;
 ---
 
-<Layout title="Oppskrift">
+<Layout title={title}>
   <div class="recipe">
     <div class="recipe-grid">
-      <div
-        class="recipe-title text-green-200 w-2/3 text-4xl md:text-4xl lg:text-5xl font-semibold"
-      >
-        <h1 class="">
+      <div class="recipe-title">
+        <h1>
           {post.title}
         </h1>
       </div>
-      <div class="recipe-image">
+      <div class="recipe-image fade-in">
         <Picture
           class="recipe__main-image"
           src={mainImage}
           alt=""
-          widths={[400, 800, 200]}
+          widths={[400, 500, 200]}
           aspectRatio="10:16"
-          sizes="(max-width: 400px) 100vw, 800px"
+          sizes="(max-width: 400px) 100vw, 500px"
           fit="cover"
           format="webp"
         />
       </div>
       <div class="recipe-description">
-        <h2>Beskrivelse</h2>
         <Description
           description={post.description}
           longdescription={post.longDescription}
         />
+        <Divider />
       </div>
+
       <div class="recipe-steps">
+        <h2>Oppskriften</h2>
+
         <StepByStep steps={post.steps} />
       </div>
 
       <div class="recipe-ingredients">
         <Ingredients ingredients={post.ingredients} />
+        <Tips tips={post.tips} chef={post.chef} tipsurl={post.tipsurl} />
       </div>
     </div>
     <ImageGallery images={images} />
   </div>
 </Layout>
 <style lang="scss" scoped>
+  @use "sass:map";
+  @use "../../styles/variables/" as *;
+  @use "../../styles/mixins/breakpoints" as *;
   .recipe {
     margin: 16px auto;
+    h1 {
+      font-weight: 600;
+      font-size: 2.25rem;
+      line-height: 2.5rem;
+      margin-bottom: 8px;
+      color: var(--fs-green-300);
+      width: 66.666667%;
+      text-wrap: balance;
+
+      @include bp("tablet-up") {
+        font-size: 3rem;
+        line-height: 1;
+      }
+    }
     h2 {
-      font-size: 1.5rem;
+      font-size: 2rem;
       font-weight: 600;
       margin-bottom: 8px;
+      color: var(--fs-green-300);
     }
     &__main-content {
     }
 
     &__side-content {
     }
-    &__main-image {
-      @screen md {
-        max-width: 80% !important;
-      }
-    }
   }
 
   .recipe-grid {
     display: grid;
     grid-gap: 18px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
     grid-template-areas:
-      "title title ingredients"
-      "image image ingredients"
-      "description description ingredients"
-      "steps steps ingredients";
+      "title"
+      "image"
+      "description"
+      "aside"
+      "steps";
+
+    @include bp("tablet-up") {
+      grid-template-columns: 2fr;
+      grid-template-areas:
+        "title title aside"
+        "image image aside"
+        "description description aside"
+        "steps steps aside";
+    }
   }
 
   .recipe-title {
     grid-area: title;
+    align-self: center;
   }
 
   .recipe-image {
@@ -104,42 +136,18 @@ const mainImage = post.imageurl;
 
   .recipe-description {
     grid-area: description;
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    word-break: break-word;
   }
 
   .recipe-steps {
     grid-area: steps;
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    word-break: break-word;
   }
 
   .recipe-ingredients {
-    grid-area: ingredients;
-    max-width: 260px;
-  }
+    grid-area: aside;
+    max-width: 360px;
 
-  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-    .recipe-grid {
-      grid-template-rows: 150px 650px;
-    }
-  }
-
-  @media (max-width: 768px) {
-    .recipe-grid {
-      grid-template-columns: 1fr;
-      grid-template-rows: auto;
-      grid-template-areas:
-        "title"
-        "image"
-        "ingredients"
-        "description"
-        "steps";
-    }
-
-    .recipe-ingredients {
+    @include bp("tablet-up") {
+      grid-row-start: 2;
     }
   }
 </style>

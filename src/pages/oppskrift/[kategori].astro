@@ -60,13 +60,8 @@ function capitalizeFirstLetter(string) {
 ---
 
 <Layout title={post.category}>
-  <div class="grid justify-center">
-    <img
-      class="w-16 md:w-32 lg:w-48"
-      src={emoji_category(post.category)}
-      alt=""
-      aria-hidden="true"
-    />
+  <div class="fs-category__emoji">
+    <img src={emoji_category(post.category)} alt="" aria-hidden="true" />
   </div>
 
   <Divider text={capitalizeFirstLetter(post.category)} />
@@ -87,3 +82,24 @@ function capitalizeFirstLetter(string) {
     }
   </Grid>
 </Layout>
+
+<style lang="scss" scoped>
+  @use "sass:map";
+  @use "../../styles/variables/" as *;
+  @use "../../styles/mixins/breakpoints" as *;
+
+  .fs-category__emoji {
+    display: grid;
+    justify-content: center;
+
+    & img {
+      width: 4rem;
+      @include bp("tablet-up") {
+        width: 8rem;
+      }
+      @include bp("tablet-big-up") {
+        width: 12rem;
+      }
+    }
+  }
+</style>

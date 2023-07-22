@@ -20,12 +20,12 @@
 }
 
 html {
+  line-height: 1.5;
   font-family: Roboto Mono, monospace, system-ui, sans-serif;
 }
 
 body {
   margin: 0;
-  //margin-top: 20rem; fjern tailwind
 }
 
 main {
@@ -34,17 +34,16 @@ main {
   max-width: 1000px;
 }
 
-:global(h1) {
-  font-size: var(--font-size-xl);
-}
-
-:global(h2) {
-  font-size: var(--font-size-lg);
-}
-
-:global(code) {
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
 }
 
 .bannerTitle {
@@ -55,7 +54,6 @@ main {
   background-color: var(--fs-vanilla) !important;
   display: flex;
   flex-direction: column;
-  margin-top: 5rem;
   min-height: 100vh
 }
 
@@ -108,5 +106,21 @@ main {
 }
 
 a {
-  color: var(--fs-pink-300);
+  color: var(--fs-pink-500);
+  text-decoration: underline;
+  font-weight: 600;
+
+  &:hover {
+    color: var(--fs-pink-300);
+  }
+}
+
+.fs-link {
+  color: var(--fs-pink-500);
+  text-decoration: underline;
+  font-weight: 600;
+
+  &:hover {
+    color: var(--fs-pink-300);
+  }
 }

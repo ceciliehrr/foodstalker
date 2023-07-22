@@ -1,14 +1,14 @@
 <template>
-  <div>
-    <h2 class="text-2xl mb-4">Ingredienser</h2>
+  <div class="fs-ingredients">
+    <h2 class="fs-ingredients__title">Ingredienser</h2>
 
     <div v-for="(group, index) in ingredients" :key="index">
       <div v-if="group.title">
-        <div class="text-xl mb-2">{{ group.title }}</div>
+        <h3 class="fs-ingredients__group-title">{{ group.title }}</h3>
       </div>
-      <ol class="mb-4">
+      <ul class="fs-ingredients__ol-list" tabindex="0">
         <li
-          class="checkbox__list mb-1"
+          class="checkbox__list"
           v-for="ingredient in group.ingredients"
           :key="ingredient.name"
         >
@@ -16,13 +16,13 @@
             <input type="checkbox" />
             <span class="checkmark"></span>
             <strong
-              class="checkbox__text mr-3"
+              class="checkbox__quantity"
               v-html="ingredient.quantity"
             ></strong>
             <span class="checkbox__text" v-html="ingredient.name"></span>
           </label>
         </li>
-      </ol>
+      </ul>
     </div>
   </div>
 </template>
@@ -46,11 +46,38 @@ export default {
 </script>
 
 <style scoped lang="scss">
-/**Checkbox*/
+.fs-ingredients {
+  & h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  & h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.4rem;
+  }
 
+  &__ol-list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+  }
+}
+/**Checkbox*/
+.checkbox__list {
+  display: flex;
+}
+.checkbox__quantity {
+  margin-right: 0.75rem;
+  flex: auto 0 0;
+}
 /* The container */
 .checkbox__container {
-  display: block;
+  display: flex;
+  flex: auto;
+  flex-wrap: wrap;
   position: relative;
   padding-left: 35px;
   margin-bottom: 12px;
@@ -73,10 +100,10 @@ export default {
 /* Create a custom checkbox */
 .checkmark {
   position: absolute;
-  top: 0;
-  left: 0;
-  height: 20px;
-  width: 20px;
+  top: 5px;
+  left: 8px;
+  height: 15px;
+  width: 15px;
   background-color: #eee;
   border: 1px solid #4a686d;
   border-radius: 50%;
@@ -89,7 +116,7 @@ export default {
 
 /* When the checkbox is checked, add a blue background */
 .checkbox__container input:checked ~ .checkmark {
-  background-color: #cfaebf;
+  background-color: var(--fs-pink-300);
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
@@ -104,20 +131,21 @@ export default {
   display: block;
 }
 
-.checkbox__container input:checked ~ .checkbox__text {
+.checkbox__container input:checked ~ .checkbox__text,
+.checkbox__container input:checked ~ .checkbox__quantity {
   text-decoration: line-through;
-  text-decoration-color: #cfaebf;
+  text-decoration-color: var(--fs-pink-500);
   color: #4a686d;
 }
 
 /* Style the checkmark/indicator */
 .checkbox__container .checkmark:after {
-  top: 20%;
-  left: 40%;
+  top: 2%;
+  left: 30%;
   width: 5px;
   height: 10px;
   border: solid white;
-  border-width: 0 3px 3px 0;
+  border-width: 0 2px 2px 0;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
