@@ -1,0 +1,33 @@
+---
+export interface Props {
+  tips?: string;
+  chef?: string;
+  tipsurl?: string;
+}
+const { tips, chef, tipsurl } = Astro.props;
+---
+
+<div class="recipe-tips">
+  <h2 class="recipe-tips__title">Tips</h2>
+  <p set:html={tips} />
+  <p class="recipe-tips__stalking">Hvem har vi stalket?</p>
+  <a target="_blank" href={tipsurl}>{chef}</a>
+</div>
+
+<style lang="scss" scoped>
+  .recipe-tips {
+    background-color: white;
+    border: 1px solid var(--fs-gray-400);
+    margin-top: 16px;
+    padding: 1rem;
+
+    &__title {
+      color: var(--fs-pink-400);
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+    &__stalking {
+      margin-top: 16px;
+    }
+  }
+</style>

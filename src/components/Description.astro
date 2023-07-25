@@ -9,8 +9,22 @@ const { description, longdescription } = Astro.props;
 // funksjon i stedenfor med set:html={rawHTMLString}
 ---
 
-<div>
-  <p set:html={description} />
+<div class="fs-description">
+  <p class="fs-description__ingress" set:html={description} />
 
-  <p set:html={longdescription} />
+  <p class="fs-description__text" set:html={longdescription} />
 </div>
+
+<style lang="scss" scoped>
+  .fs-description {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    &__ingress {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    &__text {
+    }
+  }
+</style>

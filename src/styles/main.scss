@@ -3,6 +3,9 @@
 @use 'sass:map';
 @use 'index.scss';
 
+@use './variables';
+@use './mixins/breakpoints' as *;
+
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@300;400&display=swap");
 //@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&display=swap');
 
@@ -17,12 +20,12 @@
 }
 
 html {
+  line-height: 1.5;
   font-family: Roboto Mono, monospace, system-ui, sans-serif;
 }
 
 body {
   margin: 0;
-  //margin-top: 20rem; fjern tailwind
 }
 
 main {
@@ -31,23 +34,99 @@ main {
   max-width: 1000px;
 }
 
-:global(h1) {
-  font-size: var(--font-size-xl);
-}
-
-:global(h2) {
-  font-size: var(--font-size-lg);
-}
-
-:global(code) {
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
 }
 
 .bannerTitle {
   font-family: Roboto;
 }
 
+.fs-body {
+  background-color: var(--fs-vanilla) !important;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh
+}
+
+.fs-header {
+  background-color: var(--fs-vanilla) !important;
+  //max-width: 80rem;
+  z-index: 100;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  right: 0;
+  left: 0;
+  top: 0;
+  position: fixed;
+
+  @include bp('tablet-up') {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid var(--fs-black);
+
+    img {
+      margin-right: 32px;
+    }
+
+    @include bp('tablet-up') {
+      justify-content: flex-start;
+    }
+  }
+
+  &__hamburger {
+    margin-right: -0.5rem;
+    margin-top: -0.5rem;
+    margin-bottom: -0.5rem;
+    cursor: pointer;
+
+    @include bp('tablet-up') {
+      display: none;
+    }
+  }
+}
+
 a {
-  color: var(--fs-pink-300);
+  color: var(--fs-pink-500);
+  text-decoration: underline;
+  font-weight: 600;
+
+  &:hover {
+    color: var(--fs-pink-300);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--fs-pink-500);
+    border-radius: 0.75rem;
+    background-color: var(--fs-gray-100);
+  }
+}
+
+.fs-link {
+  color: var(--fs-pink-500);
+  text-decoration: underline;
+  font-weight: 600;
+
+  &:hover {
+    color: var(--fs-pink-300);
+  }
 }

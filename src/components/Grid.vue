@@ -1,6 +1,18 @@
 <template>
-    <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
-        <slot />
-    </div>
+  <div class="fs-grid__container">
+    <slot />
+  </div>
 </template>
 
+<style lang="scss" scoped>
+/* Custom SCSS styles for fs-grid */
+.fs-grid__container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+</style>

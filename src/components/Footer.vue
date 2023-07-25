@@ -1,27 +1,25 @@
 <template>
-  <footer class="footer bg-vanilla text-center mt-auto">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6">
-      <div
-        class="border-t-2 mt-10 border-black py-6 grid grid-cols-1 place-items-center"
-      >
+  <footer class="fs-footer">
+    <div class="fs-footer-content">
+      <div class="fs-footer-divider">
         <img
-          class="object-center w-12 h-12"
-          src="https://foodstalker.b-cdn.net/logo-pink.png"
+          class="fs-footer-logo"
+          src="https://foodstalker.b-cdn.net/logo/logo-pink96x96.png"
           aria-hidden="true"
           alt="circle logo with lime"
         />
-        <p class="text-s font-semibold">
+        <p class="fs-footer-made-with-text">
           Made with <span>💖</span> from Pete&Cecilie
         </p>
-        <p class="text-xs">
+        <p class="fs-footer-copyright">
           Copyright © 2020-2023 All Rights Reserved Cecilie Hansen Rørås.
         </p>
 
-        <p class="text-xs text-gray-500 mt-10 lg:w-3/6">
+        <p class="fs-footer-gdpr-text">
           Vi stalker kokker, ikke deg! Dette er en GDPR-vennlig nettside, vi
           lagrer ingenting og selger ingenting som kan identifisere deg som
           person. Les mer om vårt verktøy for besøksstatistikk
-          <a href="https://plausible.io/">Plausible her!</a>
+          <a class="fs-link" href="https://plausible.io/">Plausible her!</a>
         </p>
       </div>
     </div>
@@ -33,10 +31,46 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
-.footer {
-  img {
-    display: inline;
-    margin-bottom: 4px;
-  }
+.fs-footer {
+  text-align: center;
+}
+
+.fs-footer-content {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.fs-footer-divider {
+  border-top: 2px solid #000;
+  margin-top: 1rem;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+}
+
+.fs-footer-logo {
+  object-fit: contain;
+  width: 48px;
+  height: 48px;
+  display: inline;
+  margin-bottom: 4px;
+}
+
+.fs-footer-made-with-text {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.fs-footer-copyright {
+  font-size: 0.875rem;
+}
+
+.fs-footer-gdpr-text {
+  font-size: 0.75rem;
+  color: #717171;
+  margin-top: 1.5rem;
+  line-height: 1.4;
 }
 </style>

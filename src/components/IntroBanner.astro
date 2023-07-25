@@ -2,16 +2,12 @@
 import { Picture } from "@astrojs/image/components";
 ---
 
-<div class="flex flex-col m-4 md:flex-row md:m-8 content-center">
-  <div class="grid place-content-center md:basis-2/4">
-    <h1 class="bannerTitle text-2xl md:text-2xl lg:text-3xl text-center">
-      F O O D S T A L K E R
-    </h1>
-    <p class="text-center max-w-xs">
-      Vi stalker flinke kokker og deler våre favorittoppskrifter
-    </p>
+<div class="fs-banner fade-in">
+  <div class="fs-banner__text">
+    <h1 class="bannerTitle">F O O D S T A L K E R</h1>
+    <p>Vi stalker flinke kokker og deler våre favorittoppskrifter</p>
   </div>
-  <div class="md:basis-2/4 mt-8">
+  <div class="fs-banner__image">
     <Picture
       src="https://foodstalker.b-cdn.net/sitron2.jpg"
       alt=""
@@ -23,3 +19,42 @@ import { Picture } from "@astrojs/image/components";
     />
   </div>
 </div>
+<style lang="scss" scoped>
+  @use "sass:map";
+  @use "../styles/variables/" as *;
+  @use "../styles/mixins/breakpoints" as *;
+
+  .fs-banner {
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+
+    @include bp("tablet-up") {
+      flex-direction: row;
+      margin: 2rem;
+    }
+    &__text {
+      display: grid;
+      place-content: center;
+      text-align: center;
+      @include bp("tablet-up") {
+        flex-basis: 50%;
+      }
+      & h1 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        @include bp("tablet-up") {
+          font-size: 1.875rem;
+          line-height: 2.25rem;
+        }
+      }
+      & p {
+        max-width: 20rem;
+      }
+    }
+    &__image {
+      margin-top: 2rem;
+      flex-basis: 50%;
+    }
+  }
+</style>

@@ -1,16 +1,12 @@
 <template>
-  <div
-    class="p-4 pb-8 mt-4 mb-4 md:p-10 md:mt-10 md:mb-10 bg-green-100 rounded-lg"
-  >
-    <h2 class="text-1xl text-center m-3">Søk i oppskrifter</h2>
-    <div class="flex justify-center">
+  <div class="fs-search-bar">
+    <h2>Søk i oppskrifter</h2>
+    <div class="fs-search-bar__container">
       <label for="search" class="sr-only">Søk</label>
-      <div class="relative w-full md:w-1/2">
-        <div
-          class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none"
-        >
+      <div class="fs-search-bar__search-bar">
+        <div class="fs-search-bar__icon">
           <svg
-            class="w-5 h-5 text-gray-500"
+            class=""
             fill="currentColor"
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
@@ -26,18 +22,17 @@
           type="text"
           id="search"
           v-model="search"
-          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full pl-10 p-2.5 focus:outline-pink-300 active:outline-pink-300"
+          class="fs-search-bar__input"
           placeholder="Søk etter no digg.."
           required
         />
       </div>
     </div>
     <div v-if="search.length">
-      <p class="txt-sm text-center" v-if="sortedItems.length >= 1">
+      <p class="fs-search-bar__searchtxt" v-if="sortedItems.length >= 1">
         Du fant {{ sortedItems.length }} oppskrifter
       </p>
       <div v-else>Fant ikke no</div>
-
       <Grid>
         <div v-for="recipe in recipeShowed" :key="recipe.id">
           <SmallCards
@@ -104,4 +99,73 @@ export default {
 };
 </script>
 
-<style></style>
+<style lang="scss" scoped>
+@use "sass:map";
+@use "../styles/variables/" as *;
+@use "../styles/mixins/breakpoints" as *;
+.fs-search-bar {
+  background-color: var(--fs-green-100);
+  padding: 1rem;
+  padding-bottom: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  @include bp("tablet-up") {
+    padding: 2.5rem;
+    margin-top: 2.5rem;
+  }
+
+  & h2 {
+    margin: 0.75rem;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__search-bar {
+    position: relative;
+    width: 100%;
+    @include bp("tablet-up") {
+      width: 80%;
+    }
+  }
+  &__input {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    padding: 0.5rem 0.5rem 0.5rem 2.5rem;
+    border: 1px solid var(--fs-gray-300);
+    border-radius: 0.5rem;
+    width: 100%;
+    display: block;
+
+    &:focus,
+    &:active {
+      outline: 2px solid var(--fs-pink-500);
+    }
+  }
+  &__searchtxt {
+    text-align: center;
+    margin: 1rem;
+  }
+  &__icon {
+    display: flex;
+    position: absolute;
+    padding-left: 0.75rem;
+    align-items: center;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    pointer-events: none;
+  }
+  & svg {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: var(--fs-gray-500);
+  }
+}
+</style>

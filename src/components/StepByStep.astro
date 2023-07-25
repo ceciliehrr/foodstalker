@@ -14,15 +14,23 @@ const { steps } = Astro.props;
 
 {
   steps.map((step, index) => (
-    <div class="step" data-key={index}>
-      {step.title && <h3 class="text-xl">{step.title}</h3>}
-      <p class="step__description" set:html={step.description} />
-    </div>
+    <ul class="fs-step" data-key={index}>
+      {step.title && <h3>{step.title}</h3>}
+      <li class="fs-step__description" set:html={step.description} />
+    </ul>
   ))
 }
 
 <style scoped lang="scss">
-  .step {
+  .fs-step {
+    & h3 {
+      font-size: 1.25rem;
+      line-height: 1.75rem;
+    }
+    & li {
+      list-style: disc;
+      margin-left: 24px;
+    }
     &__description {
       padding: 16px 32px 16px 0;
     }

@@ -48,14 +48,10 @@ function emoji_category(cat) {
 }
 ---
 
-<a
-  id="card"
-  href={href}
-  class="fs-card flex flex-col bg-white rounded-lg border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 lg:flex-row lg:max-w-xl hover:bg-gray-100 focus:outline-2 focus:outline-pink-300"
->
-  <div class="shrink-0">
+<a id="card" href={href} class="fs-card">
+  <div class="fs-card__image">
     <Picture
-      class="rounded-t-lg lg:h-full lg:w-48 lg:rounded-none lg:rounded-l-lg"
+      class="fs-card__picture"
       src={image}
       alt=""
       widths={[400, 800, 200]}
@@ -65,35 +61,164 @@ function emoji_category(cat) {
       format="webp"
       background="black"
     />
-
-
   </div>
-  <div class="flex flex-1 flex-col justify-between p-4 leading-normal">
-    <div class="relative w-full h-2 md:h-10 visible md:invisible">
-      <div
-        class="grid place-items-center absolute bg-green-100 right-2 -top-10 md:-top-2 md:right-35 w-10 h-10 rounded-full shadow-lg"
-      >
+  <div class="fs-card__content">
+    <div class="fs-card__mobile-emoji">
+      <div class="fs-card__mobile-emoji-circle">
         <span>{emoji_category(emoji)}</span>
       </div>
     </div>
-    <div class="flex flex-1 flex-col">
-      <h5 class="mb-2 text-xl font-bold tracking-tight">
+    <div class="fs-card__text">
+      <h2>
         {title}
-      </h5>
-      <p class="mb-3 font-normal text-black">
+      </h2>
+      <p>
         {description}
       </p>
-      <div class="mt-3 visible text-gray-500 md:invisible">{convertedDate}</div>
+      <div class="fs-card__text-date-mobile">
+        {convertedDate}
+      </div>
     </div>
-    <div
-      class="flex content-end relative w-full h-2 md:h-10 invisible md:visible"
-    >
-      <div class="text-gray-500 self-end">{convertedDate}</div>
-      <div
-        class="grid place-items-center z-0 absolute bg-green-100 md:bottom-0 md:right-0 w-10 h-10 rounded-full shadow-lg"
-      >
+    <div class="fs-card__laptop-emoji">
+      <div class="fs-card__laptop-emoji-date">{convertedDate}</div>
+      <div class="fs-card__laptop-emoji-circle">
         <span>{emoji_category(emoji)}</span>
       </div>
     </div>
   </div>
 </a>
+
+<style lang="scss">
+  @use "sass:map";
+  @use "../../styles/variables/" as *;
+  @use "../../styles/mixins/breakpoints" as *;
+
+  .fs-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--fs-gray-400);
+    border-left-width: 1px;
+    border-bottom-width: 1px;
+    border-right-width: 1px;
+    border-radius: 0.5rem;
+    background-color: white;
+    color: var(--fs-black);
+    text-decoration: none;
+
+    @include bp("tablet-big-up") {
+      flex-direction: row;
+      border-top-width: 1px;
+      max-width: 36rem;
+    }
+    &:hover {
+      background-color: var(--fs-gray-100);
+      color: var(--fs-black);
+      outline: 2px solid var(--fs-pink-500);
+    }
+    &:focus-visible {
+      outline: 2px solid var(--fs-pink-500);
+      background-color: var(--fs-gray-100);
+    }
+    &:active {
+      background-color: var(--fs-gray-200);
+      color: var(--fs-black);
+    }
+    & &__image {
+      flex-shrink: 0;
+    }
+    &__picture {
+      border-top-left-radius: 0.5rem;
+      border-top-right-radius: 0.5rem;
+
+      @include bp("tablet-big-up") {
+        border-radius: 0px;
+        border-top-left-radius: 0.5rem;
+        border-bottom-left-radius: 0.5rem;
+        width: 12rem;
+        height: 100%;
+      }
+    }
+    &__content {
+      display: flex;
+      flex-direction: column;
+      flex: 1 1 0%;
+      padding: 1rem;
+    }
+    &__mobile-emoji {
+      position: relative;
+
+      &-circle {
+        display: grid;
+        background-color: var(--fs-green-100);
+        place-items: center;
+        box-shadow: var(--fs-black, 0 0 #0000), var(--fs-black, 0 0 #0000),
+          var(--fs-black);
+        border-radius: 9999px;
+        width: 2.5rem;
+        height: 2.5rem;
+        top: -2.5rem;
+        right: 0.5rem;
+        position: absolute;
+      }
+      @include bp("tablet-up") {
+        display: none;
+      }
+    }
+
+    &__laptop-emoji {
+      display: none;
+      @include bp("tablet-up") {
+        display: flex;
+        height: 2.5rem;
+        position: relative;
+      }
+      &-date {
+        display: none;
+        @include bp("tablet-up") {
+          display: flex;
+          margin-top: 0.75rem;
+          color: var(--fs-gray-500);
+          font-weight: 400;
+        }
+      }
+      &-circle {
+        display: grid;
+        position: absolute;
+        background-color: var(--fs-green-100);
+        right: 0px;
+        bottom: 0px;
+        width: 2.5rem;
+        height: 2.5rem;
+        place-items: center;
+        box-shadow: var(--fs-black, 0 0 #0000), var(--fs-black, 0 0 #0000),
+          var(--fs-black);
+        border-radius: 9999px;
+        z-index: 0;
+      }
+    }
+    &__text {
+      display: flex;
+      flex-direction: column;
+      flex: 1 1 0%;
+
+      & h2 {
+        font-weight: 600;
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+      }
+      & p {
+        font-weight: 400;
+        margin-bottom: 0.75rem;
+      }
+      &-date-mobile {
+        margin-top: 0.75rem;
+        color: var(--fs-gray-500);
+        font-weight: 400;
+
+        @include bp("tablet-up") {
+          display: none;
+        }
+      }
+    }
+  }
+</style>

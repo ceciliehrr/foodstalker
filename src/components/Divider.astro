@@ -1,13 +1,42 @@
 ---
 export interface Props {
-  text: string;
+  text?: string;
 }
 
 const { text } = Astro.props as Props;
 ---
 
-<div class="relative flex py-5 items-center">
-  <div class="flex-grow border-t border-black"></div>
-  <span class="flex-shrink mx-4 text-black">{text}</span>
-  <div class="flex-grow border-t border-black"></div>
+<div class="fs-divider-container">
+  <div class="fs-divider-line"></div>
+  {
+    text && (
+      <>
+        <span class="fs-divider-text">{text}</span>
+        <div class="fs-divider-line" />
+      </>
+    )
+  }
+
+  <style>
+    /* Custom CSS classes for the fs-divider */
+    .fs-divider-container {
+      position: relative;
+      display: flex;
+      padding-top: 1.25rem;
+      padding-bottom: 1.25rem;
+      align-items: center;
+    }
+
+    .fs-divider-line {
+      flex-grow: 1;
+      border-top: 1px solid #000;
+    }
+
+    .fs-divider-text {
+      flex-shrink: 1;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      color: #000;
+    }
+  </style>
 </div>
