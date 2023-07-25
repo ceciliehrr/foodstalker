@@ -133,7 +133,7 @@ export default {
     width: 50%;
   }
   &__input {
-    font-size: 0.875rem;
+    font-size: 1rem;
     line-height: 1.25rem;
     padding: 0.5rem 0.5rem 0.5rem 2.5rem;
     border: 1px solid var(--fs-gray-300);
