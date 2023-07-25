@@ -2,7 +2,10 @@
   <header class="navbar">
     <div class="navbar-container">
       <a href="/" class="logo">
-        <img src="/src/assets/logo/lime-96x96.png" alt="Logo" />
+        <img
+          src="https://foodstalker.b-cdn.net/logo/lime-96x96.png"
+          alt="Logo"
+        />
       </a>
       <nav class="nav-links">
         <a href="/oppskrift/hverdag"> <span>🥦</span> Hverdag</a>

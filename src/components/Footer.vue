@@ -4,7 +4,7 @@
       <div class="fs-footer-divider">
         <img
           class="fs-footer-logo"
-          src="/src/assets/logo/logo-pink96x96.png"
+          src="https://foodstalker.b-cdn.net/logo/logo-pink96x96.png"
           aria-hidden="true"
           alt="circle logo with lime"
         />
