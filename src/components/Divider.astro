@@ -1,18 +1,20 @@
 ---
 export interface Props {
   text?: string;
+  grey?: boolean;
 }
 
-const { text } = Astro.props as Props;
+const { text, grey } = Astro.props as Props;
+const greyModifier = "fs-divider-line--grey";
 ---
 
 <div class="fs-divider-container">
-  <div class="fs-divider-line"></div>
+  <div class:list={["fs-divider-line", grey && greyModifier]}></div>
   {
     text && (
       <>
         <span class="fs-divider-text">{text}</span>
-        <div class="fs-divider-line" />
+        <div class:list={["fs-divider-line", grey && greyModifier]} />
       </>
     )
   }
@@ -29,7 +31,10 @@ const { text } = Astro.props as Props;
 
     .fs-divider-line {
       flex-grow: 1;
-      border-top: 1px solid #000;
+      border-top: 1px solid var(--fs-black);
+    }
+    .fs-divider-line--grey {
+      border-top: 1px solid var(--fs-gray-400);
     }
 
     .fs-divider-text {

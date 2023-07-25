@@ -1,15 +1,23 @@
 ---
+import Divider from "./Divider.astro";
 export interface Props {
   longdescription?: string;
   description?: string;
+  time?: string;
+  portions?: string;
 }
 
-const { description, longdescription } = Astro.props;
+const { description, longdescription, time, portions } = Astro.props;
 
 // funksjon i stedenfor med set:html={rawHTMLString}
 ---
 
 <div class="fs-description">
+  <div class="fs-description__emojis">
+    <span>👯 {portions} posjoner</span>
+    <span>⏳ {time}</span>
+  </div>
+  <Divider grey />
   <p class="fs-description__ingress" set:html={description} />
 
   <p class="fs-description__text" set:html={longdescription} />
@@ -25,6 +33,11 @@ const { description, longdescription } = Astro.props;
       margin-bottom: 1rem;
     }
     &__text {
+    }
+    &__emojis {
+      flex-direction: row;
+      margin: 18px 0;
+      color: var(--fs-gray-500);
     }
   }
 </style>
