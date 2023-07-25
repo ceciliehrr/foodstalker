@@ -113,6 +113,12 @@ a {
   &:hover {
     color: var(--fs-pink-300);
   }
+
+  &:focus-visible {
+    outline: 2px solid var(--fs-pink-500);
+    border-radius: 0.75rem;
+    background-color: var(--fs-gray-100);
+  }
 }
 
 .fs-link {

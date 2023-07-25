@@ -8,18 +8,33 @@
       </div>
       <ul class="fs-ingredients__ol-list" tabindex="0">
         <li
+          tabindex="0"
           class="checkbox__list"
-          v-for="ingredient in group.ingredients"
+          v-for="(ingredient, ingredientIndex) in group.ingredients"
           :key="ingredient.name"
         >
-          <label class="checkbox__container">
-            <input type="checkbox" />
+          <label
+            :for="'ingredient-' + index + '-' + ingredientIndex"
+            class="checkbox__container"
+          >
+            <input
+              type="checkbox"
+              :id="'ingredient-' + index + '-' + ingredientIndex"
+              :aria-labelledby="
+                'label-ingredient-' + index + '-' + ingredientIndex
+              "
+            />
             <span class="checkmark"></span>
             <strong
+              :id="'label-ingredient-' + index + '-' + ingredientIndex"
               class="checkbox__quantity"
               v-html="ingredient.quantity"
             ></strong>
-            <span class="checkbox__text" v-html="ingredient.name"></span>
+            <p
+              :id="'label-ingredient-' + index + '-' + ingredientIndex"
+              class="checkbox__text"
+              v-html="ingredient.name"
+            ></p>
           </label>
         </li>
       </ul>

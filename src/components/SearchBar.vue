@@ -130,7 +130,9 @@ export default {
   &__search-bar {
     position: relative;
     width: 100%;
-    width: 50%;
+    @include bp("tablet-up") {
+      width: 80%;
+    }
   }
   &__input {
     font-size: 1rem;

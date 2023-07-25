@@ -47,14 +47,14 @@ export default {
   margin-top: 0.5rem;
   color: var(--fs-black);
   text-decoration: none;
-
+  border-radius: 0.5rem;
   @include bp("tablet-big-up") {
     flex-direction: column;
   }
-  &:focus {
-    outline: var(--fs-pink-500);
+  &:focus-visible {
+    outline: 2px solid var(--fs-pink-500);
   }
-  &:hover {
+  &:focus-visible .fs-small-cards__container {
     background-color: var(--fs-gray-100);
   }
   &__container {
@@ -64,6 +64,17 @@ export default {
     box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
     padding: 1rem;
     background-color: white;
+
+    &:hover {
+      background-color: var(--fs-gray-100);
+      color: var(--fs-black);
+      outline: 2px solid var(--fs-pink-500);
+    }
+
+    &:active {
+      background-color: var(--fs-gray-200);
+      color: var(--fs-black);
+    }
   }
   &__image {
     flex-shrink: 0;

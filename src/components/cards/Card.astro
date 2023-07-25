@@ -112,8 +112,18 @@ function emoji_category(cat) {
     }
     &:hover {
       background-color: var(--fs-gray-100);
+      color: var(--fs-black);
+      outline: 2px solid var(--fs-pink-500);
     }
-    &__image {
+    &:focus-visible {
+      outline: 2px solid var(--fs-pink-500);
+      background-color: var(--fs-gray-100);
+    }
+    &:active {
+      background-color: var(--fs-gray-200);
+      color: var(--fs-black);
+    }
+    & &__image {
       flex-shrink: 0;
     }
     &__picture {
