@@ -1,9 +1,19 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { Picture } from "@astrojs/image/components";
 ---
 
 <Layout title="Om oss">
   <h1>Om oss</h1>
+  <Picture
+    src="https://foodstalker.b-cdn.net/about/pete-cec-1.jpeg"
+    alt=""
+    widths={[200, 400, 800]}
+    aspectRatio="3:2"
+    sizes="(max-width: 400px) 100vw, 400px"
+    format="webp"
+    background={"#0000"}
+  />
 </Layout>
 
 <style lang="scss" scoped>
