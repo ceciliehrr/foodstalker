@@ -87,6 +87,17 @@ export default {
   }
   &__text {
     margin-left: 1rem;
+
+    /**Truncate**/
+    overflow: hidden;
+    max-height: 145px;
+    -webkit-box-orient: vertical;
+    display: block;
+    display: -webkit-box;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 4;
+
     & h2 {
       font-weight: 600;
     }

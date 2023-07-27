@@ -32,7 +32,10 @@
       <p class="fs-search-bar__searchtxt" v-if="sortedItems.length >= 1">
         Du fant {{ sortedItems.length }} oppskrifter
       </p>
-      <div v-else>Fant ikke no</div>
+      <div class="fs-search-bar__searchtxt" v-else>
+        <p>Oh no! <span style="font-size: 50px">🙈</span></p>
+        <p>Be oss om å lage det!</p>
+      </div>
       <Grid>
         <div v-for="recipe in recipeShowed" :key="recipe.id">
           <SmallCards
@@ -119,6 +122,7 @@ export default {
     margin: 0.75rem;
     font-size: 16px;
     text-align: center;
+    font-weight: 400;
   }
 
   &__container {

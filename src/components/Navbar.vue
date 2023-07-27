@@ -131,6 +131,7 @@ export default {
     display: block;
     color: var(--fs-green-300);
     font-size: 1rem;
+    font-weight: 400;
     text-decoration: none;
     margin-bottom: 0.5rem;
     padding: 0.5rem;

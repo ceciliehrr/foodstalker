@@ -65,7 +65,7 @@ function capitalizeFirstLetter(string) {
   </div>
 
   <Divider text={capitalizeFirstLetter(post.category)} />
-  <SearchBar client:load />
+  <SearchBar client:only="vue" />
 
   <Grid>
     {

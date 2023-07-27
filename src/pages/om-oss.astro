@@ -4,20 +4,146 @@ import { Picture } from "@astrojs/image/components";
 ---
 
 <Layout title="Om oss">
-  <h1>Om oss</h1>
-  <Picture
-    src="https://foodstalker.b-cdn.net/about/pete-cec-1.jpeg"
-    alt=""
-    widths={[200, 400, 800]}
-    aspectRatio="3:2"
-    sizes="(max-width: 400px) 100vw, 400px"
-    format="webp"
-    background={"#0000"}
-  />
-</Layout>
+  <div class="fs-about">
+    <div class="fs-about__banner">
+      <h1 class="fs-about__title">Om oss</h1>
+      <Picture
+        class="fs-about__image fade-in"
+        src="https://foodstalker.b-cdn.net/about/pete-cec-1.jpeg"
+        alt=""
+        widths={[200, 400, 800]}
+        aspectRatio="3:2"
+        sizes="(max-width: 400px) 100vw, 400px"
+        format="webp"
+        background={"#0000"}
+      />
+    </div>
+    <p class="fs-about__text" data-aos="fade-in">
+      <span class="fs-about__ingress">Norge,Oslo</span> nærmere bestemt i Gamlebyen
+      holder foodstalkerne Cecilie og Petter til. Ja, hans virkelige navn er Petter.
+      Mars 2020 flyttet vi fra Kongsberg til Oslo og gledet oss til alle mulighetene
+      Oslo kunne by på på restaurantfronten. Men så vet vi alle hva som skjedde mars
+      2020. Lockdown og stengte kraner. Med hjemmekontor og altfor mye tid for oss
+      selv i leiligheten så begynte vi å kombinere en del hobbyer.
+    </p>
+    <p class="fs-about__text">
+      Vi får ofte spørsmål om å få oppskrifter av ting vi har laget, så vi
+      bestemte oss for å lage en lettbein nettside for å samle oppskrifter.
+      Nettsiden er ikke bare for deling men også et sted for oss selv for å få
+      oversikt over våre yndlingsoppskrifter fra ulike kokker eller egenutvikla
+      oppskrifter. Så når man først begynner å lage en nettside og man lærer seg
+      noe nytt (Vue.js for spesielt interesserte), og slenger man på en pandemi
+      samtidig så baller det fort på seg. Så hvem er vi?
+    </p>
+    <p class="fs-about__text">
+      <span class="fs-about__ingress">Head foodstalker og SoMe-minister</span> Cecilie
+      er fra Kongsberg, er arkivar/informatiker og jobber som utvikler. Det er Cecilie
+      som har styr på utvikling av nettsiden, <a
+        href="https://www.instagram.com/foodstalker.no/"
+        target="_blank">instagram</a
+      >, <a href="https://ceciliefoto.no/" target="_blank">foto</a> og a-endingene.
+    </p>
+    <p class="fs-about__text">
+      <span class="fs-about__question"> Hva hører du på når du lager mat?</span>
+      - Petter som plystrer eller synger. Men om vi setter på Bose'n går det i norsk
+      musikk. Alt fra Odd Nordstoga til Musti.
+    </p>
+    <p class="fs-about__text">
+      <span class="fs-about__question">
+        Hva lager du når du er alene hjemme?</span
+      >
+      - Pimpa Grandis pepperoni! Eller poteter og egg..
+    </p>
+    <p class="fs-about__text">
+      <span class="fs-about__question"> Hva er din guilty pleasure?</span> - Dronningens
+      kebab
+    </p>
+    <p class="fs-about__text">
+      <span class="fs-about__question"> Hva spiser du aldri?</span> - Kaffedesserter.
+      Liker ikke kaffe..
+    </p>
+    <div class="fs-about__image-wrapper">
+      <img
+        class="fade-in"
+        src="https://foodstalker.b-cdn.net/about/cec-'.jpeg"
+        alt="cecilie"
+      />
+      <img
+        class="fade-in"
+        src="https://foodstalker.b-cdn.net/about/pete-1.jpeg"
+        alt="petter"
+      />
+    </div>
+    <p class="fs-about__text">
+      <span class="fs-about__ingress">Sous-foodstalker Petter</span> er fra Konnerud,
+      er historiker og jobber som arkivfaglig rådgiver. Men på privaten er han egentlig
+      ganske spennende.
+    </p>
+    <p class="fs-about__text">
+      <span class="fs-about__question"> Hva hører du på når du lager mat?</span>
+      - Cecilie
+    </p>
+    <p class="fs-about__text">
+      <span class="fs-about__question"
+        >Hva lager du når du er alene hjemme?</span
+      > - Pølser, helst fra Annis pølsemakeri for eksempel.
+    </p>
+    <p class="fs-about__text">
+      <span class="fs-about__question"> Hva er din guilty pleasure?</span> - Bridgeblanding
+    </p>
+    <p class="fs-about__text">
+      <span class="fs-about__question">Hva spiser du aldri?</span> - Makrell i tomat.
+    </p>
 
-<style lang="scss" scoped>
-  h1 {
-    font-size: 65px;
-  }
-</style>
+    <style lang="scss" scoped>
+      .fs-about {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        &__banner {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+        &__title {
+          font-size: 4rem;
+        }
+        &__text {
+          margin-top: 2rem;
+          max-width: 800px;
+        }
+        &__question {
+          font-weight: 600;
+          width: 100%;
+          display: block;
+        }
+        &__ingress {
+          font-size: 2rem;
+          font-weight: 600;
+          line-height: 1;
+        }
+        &__image-wrapper {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          width: 100%;
+          img {
+            margin: 2rem;
+            max-width: 400px;
+            height: auto;
+            width: 100%;
+          }
+        }
+      }
+      h1 {
+        text-align: center;
+        font-size: 65px;
+      }
+    </style>
+  </div>
+</Layout>

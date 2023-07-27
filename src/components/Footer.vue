@@ -12,7 +12,8 @@
           Made with <span>💖</span> from Pete&Cecilie
         </p>
         <p class="fs-footer-copyright">
-          Copyright © 2020-2023 All Rights Reserved Cecilie Hansen Rørås.
+          Copyright © 2020-{{ copyrightYear }} All Rights Reserved Cecilie
+          Hansen Rørås.
         </p>
 
         <p class="fs-footer-gdpr-text">
@@ -27,7 +28,22 @@
 </template>
 
 <script lang="ts">
-export default {};
+export default {
+  data() {
+    return {
+      copyrightYear: null,
+    };
+  },
+  mounted() {
+    this.getCurrentYear();
+  },
+  methods: {
+    getCurrentYear() {
+      const currentYear = new Date().getFullYear();
+      this.copyrightYear = currentYear;
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>

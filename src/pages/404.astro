@@ -1,1 +1,27 @@
-<p>Fant ingenting</p>
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="404">
+  <div class="fs-404">
+    <h1>OH NO, 404!</h1>
+    <p>Her var det tomt!</p>
+    <img
+      src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbHkzbDU2MWFqYTBwODN4eWJ0Z255NjQ0M2R1YjNkNXN0cDB3a3d4cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/10u6gt11vnm812/giphy.gif"
+    />
+    <a href="/">Tilbake på kjøkkenet med deg ➡</a>
+  </div>
+</Layout>
+
+<style lang="scss" scoped>
+  .fs-404 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    & a {
+      margin-top: 1rem;
+      align-self: self-start;
+    }
+  }
+</style>
