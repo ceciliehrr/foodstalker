@@ -81,15 +81,27 @@ export default {
     },
     filteredRecipes() {
       return this.sortedByCategory.filter((recipe) => {
+        const search = this.search.toLowerCase();
+        const title = recipe.title ? recipe.title.toLowerCase() : "";
+        const category = recipe.category ? recipe.category.toLowerCase() : "";
+        const chef = recipe.chef ? recipe.chef.toLowerCase() : "";
+        const description = recipe.description
+          ? recipe.description.toLowerCase()
+          : "";
+        const keywords = recipe.keyword
+          ? recipe.keyword.map((k) => k.toLowerCase())
+          : [];
+
         return (
-          recipe.title.toLowerCase().match(this.search.toLowerCase()) ||
-          recipe.category.toLowerCase().match(this.search.toLowerCase()) ||
-          recipe.chef.toLowerCase().match(this.search.toLowerCase()) ||
-          recipe.description.toLowerCase().match(this.search.toLowerCase()) ||
-          recipe.keyword.includes(this.search.toLowerCase())
+          title.includes(search) ||
+          category.includes(search) ||
+          chef.includes(search) ||
+          description.includes(search) ||
+          keywords.includes(search)
         );
       });
     },
+
     sortedItems: function () {
       return this.filteredRecipes
         .slice(0)
