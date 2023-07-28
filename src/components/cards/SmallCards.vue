@@ -7,7 +7,8 @@
 
       <div class="fs-small-cards__text">
         <h2>{{ title }}</h2>
-        <p>{{ description }}</p>
+        <p class="fs-small-cards__description">{{ description }}</p>
+        <p class="fs-small-cards__description-mobile">{{ truncatedText }}</p>
       </div>
     </div>
   </a>
@@ -33,6 +34,11 @@ export default {
       required: true,
     },
   },
+  computed: {
+    truncatedText() {
+      return `${this.description.slice(0, 50)}... `;
+    },
+  },
 };
 </script>
 
@@ -40,10 +46,10 @@ export default {
 @use "sass:map";
 @use "../../styles/variables/" as *;
 @use "../../styles/mixins/breakpoints" as *;
+@use "../../styles/mixins/" as *;
 .fs-small-cards {
   display: flex;
   flex-direction: column;
-  font-weight: 400;
   margin-top: 0.5rem;
   color: var(--fs-black);
   text-decoration: none;
@@ -85,24 +91,34 @@ export default {
       height: 100%;
     }
   }
+  &__description {
+    display: none;
+    @include bp("tablet-up") {
+      display: block;
+    }
+  }
+  &__description-mobile {
+    display: block;
+    @include bp("tablet-up") {
+      display: none;
+    }
+  }
   &__text {
     margin-left: 1rem;
 
-    /**Truncate**/
-    overflow: hidden;
-    max-height: 145px;
-    -webkit-box-orient: vertical;
-    display: block;
-    display: -webkit-box;
-    overflow: hidden !important;
-    text-overflow: ellipsis;
-    -webkit-line-clamp: 4;
-
     & h2 {
+      @include get-text("fs-h6");
       font-weight: 600;
+
+      @include bp("tablet-up") {
+        @include get-text("fs-h5");
+        font-weight: 600;
+      }
     }
+
     & p {
-      margin-top: 0.5rem;
+      font-weight: 400;
+      //margin-top: 0.5rem;
       max-width: 500px;
     }
   }

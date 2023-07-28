@@ -15,6 +15,7 @@ const { tips, chef, tipsurl } = Astro.props;
 </div>
 
 <style lang="scss" scoped>
+  @use "../styles/mixins/" as *;
   .recipe-tips {
     background-color: white;
     border: 1px solid var(--fs-gray-400);
@@ -23,8 +24,13 @@ const { tips, chef, tipsurl } = Astro.props;
 
     &__title {
       color: var(--fs-pink-400);
-      font-size: 1.5rem;
-      line-height: 2rem;
+      @include get-text("fs-h5");
+      font-weight: 600;
+
+      @include bp("tablet-up") {
+        @include get-text("fs-h4");
+        font-weight: 600;
+      }
     }
     &__stalking {
       margin-top: 16px;

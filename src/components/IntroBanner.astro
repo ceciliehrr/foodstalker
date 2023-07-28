@@ -23,6 +23,7 @@ import { Picture } from "@astrojs/image/components";
   @use "sass:map";
   @use "../styles/variables/" as *;
   @use "../styles/mixins/breakpoints" as *;
+  @use "../styles/mixins/" as *;
 
   .fs-banner {
     display: flex;
@@ -41,11 +42,9 @@ import { Picture } from "@astrojs/image/components";
         flex-basis: 50%;
       }
       & h1 {
-        font-size: 1.5rem;
-        line-height: 2rem;
+        @include get-text("fs-h5");
         @include bp("tablet-up") {
-          font-size: 1.875rem;
-          line-height: 2.25rem;
+          @include get-text("fs-h4");
         }
       }
       & p {

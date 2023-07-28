@@ -24,12 +24,14 @@ const { description, longdescription, time, portions } = Astro.props;
 </div>
 
 <style lang="scss" scoped>
+  @use "../styles/mixins/" as *;
+
   .fs-description {
     display: flex;
     flex-direction: column;
     max-width: 500px;
     &__ingress {
-      font-size: 1.5rem;
+      @include get-text("fs-h5");
       margin-bottom: 1rem;
     }
     &__text {

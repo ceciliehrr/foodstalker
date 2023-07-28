@@ -22,10 +22,17 @@ const { steps } = Astro.props;
 }
 
 <style scoped lang="scss">
+  @use "../styles/mixins/" as *;
+
   .fs-step {
     & h3 {
-      font-size: 1.25rem;
-      line-height: 1.75rem;
+      @include get-text("fs-subtitle1");
+      text-decoration: underline;
+      margin-top: 1rem;
+
+      @include bp("tablet-up") {
+        margin-top: 2rem;
+      }
     }
     & li {
       list-style: disc;

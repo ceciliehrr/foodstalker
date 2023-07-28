@@ -75,12 +75,12 @@ function emoji_category(cat) {
       <p>
         {description}
       </p>
-      <div class="fs-card__text-date-mobile">
+      <p class="fs-card__text-date-mobile">
         {convertedDate}
-      </div>
+      </p>
     </div>
     <div class="fs-card__laptop-emoji">
-      <div class="fs-card__laptop-emoji-date">{convertedDate}</div>
+      <p class="fs-card__laptop-emoji-date">{convertedDate}</p>
       <div class="fs-card__laptop-emoji-circle">
         <span>{emoji_category(emoji)}</span>
       </div>
@@ -92,7 +92,7 @@ function emoji_category(cat) {
   @use "sass:map";
   @use "../../styles/variables/" as *;
   @use "../../styles/mixins/breakpoints" as *;
-
+  @use "../../styles/mixins/" as *;
   .fs-card {
     display: flex;
     flex-direction: column;
@@ -174,12 +174,12 @@ function emoji_category(cat) {
         position: relative;
       }
       &-date {
+        @include get-text("fs-body1");
         display: none;
         @include bp("tablet-up") {
           display: flex;
           margin-top: 0.75rem;
           color: var(--fs-gray-500);
-          font-weight: 400;
         }
       }
       &-circle {
@@ -203,18 +203,16 @@ function emoji_category(cat) {
       flex: 1 1 0%;
 
       & h2 {
-        font-weight: 600;
-        font-size: 1.25rem;
+        @include get-text("fs-h6");
         margin-bottom: 1rem;
       }
       & p {
-        font-weight: 400;
+        @include get-text("fs-body1");
         margin-bottom: 0.75rem;
       }
       &-date-mobile {
         margin-top: 0.75rem;
         color: var(--fs-gray-500);
-        font-weight: 400;
 
         @include bp("tablet-up") {
           display: none;

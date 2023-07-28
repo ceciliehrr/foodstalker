@@ -61,15 +61,14 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@use "../styles/mixins/" as *;
 .fs-ingredients {
   & h2 {
-    font-size: 1.5rem;
-    line-height: 2rem;
+    @include get-text("fs-h5");
     margin-bottom: 0.5rem;
   }
   & h3 {
-    font-size: 1rem;
-    font-weight: 500;
+    @include get-text("fs-subtitle2");
     margin-bottom: 0.4rem;
   }
 
