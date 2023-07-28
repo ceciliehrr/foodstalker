@@ -70,6 +70,7 @@ export default {
   & h3 {
     @include get-text("fs-subtitle2");
     margin-bottom: 0.4rem;
+    margin-top: 1rem;
   }
 
   &__ol-list {
