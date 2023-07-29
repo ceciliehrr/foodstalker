@@ -10678,5 +10678,109 @@
       "jul",
       "nyttår"
     ]
+  },
+  {
+    "id": "jordbær-og-mascarpone",
+    "imageurl": "https://foodstalker.b-cdn.net/2023/jordb%C3%A6r-og-mascarpone/DSC00304.jpg",
+    "alt": "jordbær",
+    "title": "Jordbær og mascarpone",
+    "date": "2023-07-29",
+    "category": "søtt",
+    "description": "Spise jordbær om sommeren er obligatorisk. Marinér jordbæra i lime og server med søt ost!",
+    "longDescription": "Dette er vår vri på \"jordbær med fløte og sukker\". Bytt ut fløte med søt ost - mascarpone! Fås på de fleste butikker i ostehylla. Ingenting snakker sommer mer enn denne desserten! God sommer!",
+    "time": "45 minutter",
+    "portions": "4",
+    "tips": "Er du typen til å lage granskuddsirup? Bytt ut søtninga i mascarponen med sirupen! Begynn med ca 2 ss granskuddsirup, smak til - det skal smake søtt nok.",
+    "chef": "Pete",
+    "tipsurl": "",
+    "ingredients": [
+      {
+        "title": "",
+        "ingredients": [
+          {
+            "quantity": "1 kurv",
+            "name": "jordbær"
+          },
+          {
+            "quantity": "1 stk",
+            "name": "lime"
+          },
+          {
+            "quantity": "2-3 ss",
+            "name": "sukker"
+          },
+          {
+            "quantity": "1 boks",
+            "name": "mascarpone"
+          },
+          {
+            "quantity": "smak til",
+            "name": "melis, eller granskuddsirup"
+          },
+          {
+            "quantity": "",
+            "name": "revet limeskall"
+          }
+        ]
+      }
+    ],
+    "steps": [
+      {
+        "title": "Jordbær",
+        "description": "Rens og del jordbærene i ønsket størrelse."
+      },
+      {
+        "title": "",
+        "description": "Dryss sukker over jordbæra og bland forsiktig. Og la dette stå og marinere i minimum 20 minutter. "
+      },
+      {
+        "title": "",
+        "description": "Etter marinering, smak til med lime og eventuelt mer sukker hvis det ikke er søtt nok."
+      },
+      {
+        "title": "Mascarponekrem",
+        "description": "Bland mascarpone og melis/sirup i ei bolle. Riv limeskall(ikke det hvite) fra den ene limen i bollen. Smak til! Smaker det søtt? Ikke? Mer sødme. Smaker du limeskall? Ikke? mer limeskall.(absolutt ikke ta det hvite!)  Bland godt! "
+      }
+    ],
+    "images": [
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2023/jordb%C3%A6r-og-mascarpone/DSC00266.jpg",
+        "alt": ""
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2023/jordb%C3%A6r-og-mascarpone/DSC00298.jpg",
+        "alt": ""
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2023/jordb%C3%A6r-og-mascarpone/DSC00347.jpg",
+        "alt": ""
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2023/jordb%C3%A6r-og-mascarpone/DSC00281.jpg",
+        "alt": ""
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2023/jordb%C3%A6r-og-mascarpone/DSC00311-2.jpg",
+        "alt": ""
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2023/jordb%C3%A6r-og-mascarpone/DSC00276.jpg",
+        "alt": ""
+      }
+    ],
+    "keywords": [
+      "søtt",
+      "dessert",
+      "sommer",
+      "jordbær",
+      "mascarpone",
+      "granskuddsirup"
+    ]
   }
 ]
