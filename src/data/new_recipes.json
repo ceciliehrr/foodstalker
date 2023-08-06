@@ -9881,7 +9881,7 @@
     "date": "2022-07-06",
     "category": "tilbehør",
     "description": "Grill eller stek brød i panne. Ferskt brød er godt til de fleste anledninger!",
-    "longDescription": "Godt tilbehør til grillmat, gyros eller <a href='/oppskrift/kebab'>kebab</a>.",
+    "longDescription": "Godt tilbehør til grillmat, gyros eller <a href='/oppskrift/kebab'>kebab</a>. Hvis du synes denne oppskriften så skremmende ut, prøv ut en enklere versjon med <a href='/oppskrift/yoghurtbrød'>yoghurtbrød</a>",
     "time": "2 timer",
     "portions": "6",
     "tips": "",
@@ -10781,6 +10781,333 @@
       "jordbær",
       "mascarpone",
       "granskuddsirup"
+    ]
+  },
+  {
+    "id": "salsa-verde",
+    "imageurl": "https://foodstalker.b-cdn.net/2023/salsa-verde/DSC00215.jpg",
+    "alt": "salsaverde",
+    "title": "Poteter med salsa verde",
+    "date": "2023-08-06",
+    "category": "tilbehør",
+    "description": "Denne har blitt årets sommertilbehør. Potetsalat går aldri av moten om sommer'n, men prøv denne grønne varianten!",
+    "longDescription": "Denne har en digg urtesmak med syrlige toner. Det er forresten ikke lov å hoppe over ansjosen, ansjos avrunder den syrlige smaken og gir en umamismak. Smak til før og etter om du ikke tror på meg. Denne passer meget godt ved siden av en caprese!\r\n Eller hva med til denne <a href='/oppskrift/grillspyd'>grillmaten?</a>",
+    "time": "30 minutter",
+    "portions": "4 posjoner",
+    "tips": "Kan serveres til grillmat, koldtbord, lunsj, turmat, park-mat osv. Fungerer veldig godt ved siden av en tomatsalat som caprese for eksempel.\r\nDenne oppskriften er hentet fra Aichas salatfantasier. Sjekk ut flere av hennes oppskrifter! ",
+    "chef": "Aicha Bouhlou",
+    "tipsurl": "https://aichasmat.no/",
+    "ingredients": [
+      {
+        "title": "",
+        "ingredients": [
+          {
+            "quantity": "700 g",
+            "name": "små nypoteter"
+          }
+        ]
+      },
+      {
+        "title": "Salsa verde",
+        "ingredients": [
+          {
+            "quantity": "2 stk",
+            "name": "hvitløksfedd"
+          },
+          {
+            "quantity": "1 ss",
+            "name": "kapers"
+          },
+          {
+            "quantity": "2 stk",
+            "name": "ansjosfileter"
+          },
+          {
+            "quantity": "1 bunt",
+            "name": "bladpersille"
+          },
+          {
+            "quantity": "1 bunt",
+            "name": "basilikum"
+          },
+          {
+            "quantity": "1 stk",
+            "name": "vårløk"
+          },
+          {
+            "quantity": "1/2 stk",
+            "name": "grønn chili"
+          },
+          {
+            "quantity": "1 ts",
+            "name": "dijonsennep"
+          },
+          {
+            "quantity": "3 ss",
+            "name": "rødvinseddik"
+          },
+          {
+            "quantity": "ca 1 dl",
+            "name": "extra virgin olivenolje"
+          },
+          {
+            "quantity": "smak til ",
+            "name": "med salt og pepper"
+          }
+        ]
+      }
+    ],
+    "steps": [
+      {
+        "title": "",
+        "description": "Kok poteter i saltet vann. Hell vannet ut, sett potetene til siden for å avkjøles.\r\nEr potetene for store kan du kutte potetene i to, eller fire. Spørs hvor store de er."
+      },
+      {
+        "title": "",
+        "description": "Skrell hvitløk, finsnitt vårløk og chili. Ha alle dressing-ingredienser i en bolle, stavmikserbeholder eller foodprosessor-bolle. Kjør ingrediensene med stavmikser enn foodprossesor til en jevn saus. Smak til med salt og pepper."
+      },
+      {
+        "title": "",
+        "description": "Bland dressingen med poteter. Server!"
+      }
+    ],
+    "images": [
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2023/salsa-verde/DSC00201.jpg",
+        "alt": "salsaverde på bord"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2023/salsa-verde/DSC09986.jpg",
+        "alt": "salsa verde"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2023/salsa-verde/DSC00062.jpg",
+        "alt": "salsa verde"
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2023/salsa-verde/DSC09999.jpg",
+        "alt": "salsa verde"
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2023/salsa-verde/DSC00201.jpg",
+        "alt": "salsa verde"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2023/salsa-verde/DSC00215.jpg",
+        "alt": "salsa verde"
+      }
+    ],
+    "keywords": [
+      "potetsalat",
+      "salsa",
+      "tilbehør",
+      "sommer",
+      "grillmat",
+      "grilltilbehør",
+      "poteter"
+    ]
+  },
+  {
+    "id": "fetadipp",
+    "imageurl": "https://foodstalker.b-cdn.net/2023/fetadip/DSC00223.jpg",
+    "alt": "fetadipp",
+    "title": "Fetadipp",
+    "date": "2023-08-06",
+    "category": "tilbehør",
+    "description": "Bak feta og bland med yoghurt og du har laget en himmelsk god dipp eller grilltilbehør!",
+    "longDescription": "Denne er en veldig allsidig dipp som tilbehør til for eksempel en <a href='/oppskrift/grillspyd'>grillmiddag</a> eller som snacks på festbordet. ",
+    "time": "40 minutter",
+    "portions": "6 posjoner",
+    "tips": "Denne er hentet fra en av våre favoritt kokebøker - Spis sammen av julies matblogg.",
+    "chef": "Julie Ilona Balas",
+    "tipsurl": "https://juliesmatblogg.no/",
+    "ingredients": [
+      {
+        "title": "",
+        "ingredients": [
+          {
+            "quantity": "200 g",
+            "name": "fetaost"
+          },
+          {
+            "quantity": "3 ss",
+            "name": "flytende honning"
+          },
+          {
+            "quantity": "1 ss",
+            "name": "olivenolje"
+          },
+          {
+            "quantity": "1 klype",
+            "name": "salt og pepper"
+          },
+          {
+            "quantity": "1 håndfull",
+            "name": "frisk oregano"
+          },
+          {
+            "quantity": "2 dl",
+            "name": "gresk yoghurt"
+          },
+          {
+            "quantity": "1/2 stk",
+            "name": "sitron"
+          }
+        ]
+      }
+    ],
+    "steps": [
+      {
+        "title": "",
+        "description": "Sett ovnen på 200 grader."
+      },
+      {
+        "title": "",
+        "description": "Legg fetaosten i en liten ildfast form."
+      },
+      {
+        "title": "",
+        "description": "Ha over flytende honning og olivenoljen. Krydre med salt og pepper. Sett i ovnen og stek i ca 20-30 minutter. Fetaosten skal være gyllenbrun (se bilder)"
+      },
+      {
+        "title": "",
+        "description": "Ha fetaost i en foodprosessor, blender eller lignende sammen med oregano, yoghurt og sitronsaft. Kjør til en jevn og smidig dipp."
+      }
+    ],
+    "images": [
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2023/fetadip/DSC09941.jpg",
+        "alt": "fetadipp"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2023/fetadip/DSC09958.jpg",
+        "alt": "fetadipp"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2023/fetadip/DSC09990.jpg",
+        "alt": "fetadipp"
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2023/fetadip/DSC00225.jpg",
+        "alt": "fetadipp"
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2023/fetadip/DSC00025.jpg",
+        "alt": "fetadipp"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2023/fetadip/DSC00013.jpg",
+        "alt": "fetadipp"
+      }
+    ],
+    "keywords": ["fetaost", "yoghurt", "tilbehør", "dipp"]
+  },
+  {
+    "id": "yoghurtbrød",
+    "imageurl": "https://foodstalker.b-cdn.net/2023/yoghurtbr%C3%B8d/DSC00178.jpg",
+    "alt": "yoghurtbrød",
+    "title": "Yoghurtbrød",
+    "date": "2023-08-06",
+    "category": "tilbehør",
+    "description": "Synes du gjærdeig, elting og heving er stress? Lag yoghurtbrød, superkjapp brød til grillmaten, eller til å duppe i digge dipper.",
+    "longDescription": "Ferskt brød til middag er fantastisk. Spesielt til grillmat med ulik tilbehør, for eksempel: <a href='/oppskrift/parmesankrem'>parmesankrem</a>, <a href='/oppskrift/fetadipp'>fetadipp</a>, <a href='/oppskrift/salsa-verde'>salsa verde</a>.\r\nDu kan enten grille brødene eller steke dem i en tørr panne.",
+    "time": "20 minutter",
+    "portions": "4 posjoner",
+    "tips": "",
+    "chef": "Jamie Oliver",
+    "tipsurl": "",
+    "ingredients": [
+      {
+        "title": "",
+        "ingredients": [
+          {
+            "quantity": "200 g",
+            "name": "naturell yoghurt, vi bruker ofte den tyrkiske"
+          },
+          {
+            "quantity": "200 g",
+            "name": "hvetemel"
+          },
+          {
+            "quantity": "1.5 ts",
+            "name": "bakepulver"
+          },
+          {
+            "quantity": "1 ts",
+            "name": "salt"
+          }
+        ]
+      }
+    ],
+    "steps": [
+      {
+        "title": "",
+        "description": "Bland alle ingrediensene raskt sammen."
+      },
+      {
+        "title": "",
+        "description": "Del deigen opp i 4 like store emner. Strø litt mel på bordet og kjevle emnene til flate brød. "
+      },
+      {
+        "title": "",
+        "description": "Varm opp ei stekepanne. Vi pleier å ha middels høy varme på komfyren.\r\nStek et brød til den ryker lett, snu og stek på andre siden. Det går fort, følg med så du ikke brenner brødene.\r\n"
+      },
+      {
+        "title": "",
+        "description": "Om du skal steke yoghurtbrødene på grillen bør du smøre brødene med litt olje før du legger dem direkte på en varm grillrist."
+      }
+    ],
+    "images": [
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2023/yoghurtbr%C3%B8d/DSC00135.jpg",
+        "alt": "brøddeig"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2023/yoghurtbr%C3%B8d/DSC09635.jpg",
+        "alt": "brøddeig blir eltet"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2023/yoghurtbr%C3%B8d/DSC00178.jpg",
+        "alt": "ferdigstekt brød"
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2023/yoghurtbr%C3%B8d/DSC09980.jpg",
+        "alt": "ingredienser"
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2023/yoghurtbr%C3%B8d/DSC00190.jpg",
+        "alt": "ferdigstekt brød"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2023/yoghurtbr%C3%B8d/DSC00169.jpg",
+        "alt": "ferdigstekt brød"
+      }
+    ],
+    "keywords": [
+      "brød",
+      "pannebrød",
+      "grillbrød",
+      "grillmat",
+      "tilbehør",
+      "grilltilbehør"
     ]
   }
 ]

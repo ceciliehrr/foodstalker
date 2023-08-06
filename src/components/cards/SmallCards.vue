@@ -93,12 +93,14 @@ export default {
   }
   &__description {
     display: none;
+    margin-top: 0.5rem;
     @include bp("tablet-up") {
       display: block;
     }
   }
   &__description-mobile {
     display: block;
+    margin-top: 0.5rem;
     @include bp("tablet-up") {
       display: none;
     }
