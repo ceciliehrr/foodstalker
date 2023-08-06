@@ -10793,7 +10793,7 @@
     "description": "Denne har blitt årets sommertilbehør. Potetsalat går aldri av moten om sommer'n, men prøv denne grønne varianten!",
     "longDescription": "Denne har en digg urtesmak med syrlige toner. Det er forresten ikke lov å hoppe over ansjosen, ansjos avrunder den syrlige smaken og gir en umamismak. Smak til før og etter om du ikke tror på meg. Denne passer meget godt ved siden av en caprese!\r\n Eller hva med til denne <a href='/oppskrift/grillspyd'>grillmaten?</a>",
     "time": "30 minutter",
-    "portions": "4 posjoner",
+    "portions": "4",
     "tips": "Kan serveres til grillmat, koldtbord, lunsj, turmat, park-mat osv. Fungerer veldig godt ved siden av en tomatsalat som caprese for eksempel.\r\nDenne oppskriften er hentet fra Aichas salatfantasier. Sjekk ut flere av hennes oppskrifter! ",
     "chef": "Aicha Bouhlou",
     "tipsurl": "https://aichasmat.no/",
@@ -10923,7 +10923,7 @@
     "description": "Bak feta og bland med yoghurt og du har laget en himmelsk god dipp eller grilltilbehør!",
     "longDescription": "Denne er en veldig allsidig dipp som tilbehør til for eksempel en <a href='/oppskrift/grillspyd'>grillmiddag</a> eller som snacks på festbordet. ",
     "time": "40 minutter",
-    "portions": "6 posjoner",
+    "portions": "6",
     "tips": "Denne er hentet fra en av våre favoritt kokebøker - Spis sammen av julies matblogg.",
     "chef": "Julie Ilona Balas",
     "tipsurl": "https://juliesmatblogg.no/",
@@ -10977,7 +10977,7 @@
       },
       {
         "title": "",
-        "description": "Ha fetaost i en foodprosessor, blender eller lignende sammen med oregano, yoghurt og sitronsaft. Kjør til en jevn og smidig dipp."
+        "description": "Ha fetaost i en foodprosessor, blender eller lignende sammen med oregano, yoghurt og sitronsaft. Kjør til en jevn og smidig dipp. Smak til med salt og pepper, eventuelt mer sitron om den trenger mer syre."
       }
     ],
     "images": [
@@ -11024,7 +11024,7 @@
     "description": "Synes du gjærdeig, elting og heving er stress? Lag yoghurtbrød, superkjapp brød til grillmaten, eller til å duppe i digge dipper.",
     "longDescription": "Ferskt brød til middag er fantastisk. Spesielt til grillmat med ulik tilbehør, for eksempel: <a href='/oppskrift/parmesankrem'>parmesankrem</a>, <a href='/oppskrift/fetadipp'>fetadipp</a>, <a href='/oppskrift/salsa-verde'>salsa verde</a>.\r\nDu kan enten grille brødene eller steke dem i en tørr panne.",
     "time": "20 minutter",
-    "portions": "4 posjoner",
+    "portions": "4",
     "tips": "",
     "chef": "Jamie Oliver",
     "tipsurl": "",
@@ -11062,7 +11062,7 @@
       },
       {
         "title": "",
-        "description": "Varm opp ei stekepanne. Vi pleier å ha middels høy varme på komfyren.\r\nStek et brød til den ryker lett, snu og stek på andre siden. Det går fort, følg med så du ikke brenner brødene.\r\n"
+        "description": "Varm opp ei stekepanne. Vi pleier å ha middels høy varme på komfyren.\r\nStek et brød til den ryker lett, snu og stek på andre siden. Det går fort, følg med så du ikke brenner brødene.\r\n Etterhvert som brødene er ferdigstekte legg dem i et rent håndkle så de holder seg varme til servering. "
       },
       {
         "title": "",
