@@ -9,6 +9,7 @@ import StepByStep from "../../components/StepByStep.astro";
 import Divider from "../../components/Divider.astro";
 import Tips from "../../components/Tips.astro";
 import VinTips from "src/components/VinTips.astro";
+import CookingMode from "src/components/CookingMode.vue";
 
 export async function getStaticPaths() {
   const recipes = getRecipes;
@@ -47,6 +48,13 @@ const title = post.title;
           sizes="(max-width: 400px) 100vw, 500px"
           format="webp"
           quality="max"
+        />
+      </div>
+      <div class="recipe-modal">
+        <CookingMode
+          steps={post.steps}
+          ingredients={post.ingredients}
+          client:only="vue"
         />
       </div>
       <div class="recipe-description">
@@ -122,6 +130,7 @@ const title = post.title;
       "image"
       "description"
       "aside"
+      "cookingmode"
       "steps";
 
     @include bp("tablet-up") {
@@ -130,6 +139,7 @@ const title = post.title;
         "title title aside"
         "image image aside"
         "description description aside"
+        "cookingmode cookingmode aside"
         "steps steps aside";
     }
   }
@@ -141,6 +151,9 @@ const title = post.title;
 
   .recipe-image {
     grid-area: image;
+  }
+  .recipe-modal {
+    grid-area: cookingmode;
   }
 
   .recipe-description {

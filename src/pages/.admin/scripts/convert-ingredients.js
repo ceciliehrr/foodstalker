@@ -1,4 +1,4 @@
-const recipeData = require("./old_recipes.json"); // Assuming the recipe data is in a file named recipe.json
+const recipeData = require("../../admin/scripts/old_recipes.json"); // Assuming the recipe data is in a file named recipe.json
 
 // Function to convert ingredients object to the new format
 function convertIngredients(ingredients) {
