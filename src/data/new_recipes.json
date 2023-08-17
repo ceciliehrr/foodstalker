@@ -3923,20 +3923,20 @@
     "title": "Skrei med smørsaus",
     "date": "2021-03-05",
     "category": "helg",
-    "description": "Skrei med appelsinkokte gulrøtter og smørsaus.",
-    "longDescription": "Skrei er en megatorsk som er i sesong fra januar til april. Denne oppskriften er en god blanding av gode erfaringer og Ida Gran Jansens smørsaus. <br> Det kan være nyttig å time fisken slik at den er ferdig til servering. Altså ikke sett den i ovnen for tidlig.",
+    "description": "Skrei med appelsinkokte gulrøtter og smørsaus med grønn kardemomme.",
+    "longDescription": "Skrei er en megatorsk som er i sesong fra januar til april. Denne oppskriften er en god blanding av erfaring og inspirasjon fra restaurantbesøk. Kardemomme i sausen var noe vi fikk med kamskjell og syltet knutekål på Hyde. Det var så fantastisk at vi prøvde selv. Grønn kardemomme kjøper vi i butikker som har asiatiske varer. <br> Det kan være nyttig å time fisken slik at den er ferdig til servering. Altså ikke sett den i ovnen for tidlig.",
     "time": "1 time",
     "portions": "4",
-    "tips": "Fisk er digg! <br> Denne oppskriften kan også lages med ulike purèer, for eksempel pastinakkpurè. Smørsausen kommer fra Ida Gran Jansen's kokebok Julemat.",
-    "chef": "Ida Gran Jansen",
-    "tipsurl": "https://idagranjansen.com/",
+    "tips": "Fisk er digg! <br> Denne oppskriften kan også lages med ulike purèer, for eksempel pastinakkpurè. Smørsaus med kardemomme er inspirert av en rett vi fikk på restauranten Hyde i Oslo.",
+    "chef": "Hyde",
+    "tipsurl": "http://restauranthyde.no/",
     "ingredients": [
       {
         "title": "",
         "ingredients": [
           {
             "quantity": "600-800 gram",
-            "name": "skrei"
+            "name": "skrei eller torsk"
           },
           {
             "quantity": "en seng",
@@ -3969,7 +3969,7 @@
         "title": "Smørsaus",
         "ingredients": [
           {
-            "quantity": "1,5 dl",
+            "quantity": "2 dl",
             "name": "hvitvin"
           },
           {
@@ -3977,16 +3977,12 @@
             "name": "hvitvinseddik"
           },
           {
-            "quantity": "1 stor",
-            "name": "sjalottløk"
+            "quantity": "50 g",
+            "name": "finhakket sjalottløk"
           },
           {
-            "quantity": "2",
-            "name": "laurbærblad"
-          },
-          {
-            "quantity": "1/2 dl",
-            "name": "kremfløte"
+            "quantity": "20 stk",
+            "name": "grønn kardemomme"
           },
           {
             "quantity": "200 g",
@@ -4042,27 +4038,31 @@
       },
       {
         "title": "Smørsaus",
-        "description": "Finkutt sjalottløk, kutt smør i terninger."
+        "description": "Finkutt sjalottløk. Kutt smør i terninger. Hold smøret kaldt til du skal bruke det. Knus kardemommekapslene lett slik at de åpner seg, vi bruker en morter."
       },
       {
         "title": "",
-        "description": "Ha hvitvin, hvitvinseddik, sjalottløk og laurbærblad i en kjele. Kok til du har redusert væsken til ca 2 spiseskjeer."
+        "description": "Fres løken blank i en kjele med en terning av smøret."
       },
       {
         "title": "",
-        "description": "Pisk inn kremfløte og kok til det tykner litt."
+        "description": "Ha hvitvin, hvitvinseddik, og kardemomme i en kjele. Kok til du har redusert væsken til ca 2 spiseskjeer."
       },
       {
         "title": "",
-        "description": "Skru temperaturen til lav varme, pisk inn kaldt smør i terning for terning."
+        "description": "Sil væsken over i en ny kjele, og kast løk og kardemomme. Nå har sausebasen en lett rosa farge."
       },
       {
         "title": "",
-        "description": "Smak til med sitronsaft, salt, pepper."
+        "description": "Hold lav temperatur på sausen, og pisk inn smørterningene, en terning om gangen. Pisk godt mellom hver terning. Det skal ikke koke, da risikerer du at den skiller seg. Temperaturen skal være på 80-90 grader, slik at smøret smelter men sausen ikke koker."
       },
       {
         "title": "",
-        "description": "Rør inn gressløk rett før servering, for å bevare grønnfargen."
+        "description": "Når alt smøret er pisket inn kan du smake til med sitronsaft, salt, pepper. Den er allerede litt syrlig, men en liten skvis sitron vil runde av syrligheten fra eddiken."
+      },
+      {
+        "title": "",
+        "description": "Rør inn gressløk rett før servering, for å bevare grønnfargen på gressløken."
       },
       {
         "title": "Appelsinkokt gulrøtter",
@@ -4121,7 +4121,9 @@
       "søndagsmiddag",
       "bedre enn fjordland",
       "saus",
-      "pescetar"
+      "pescetar",
+      "smørsaus",
+      "kardemomme"
     ]
   },
   {
