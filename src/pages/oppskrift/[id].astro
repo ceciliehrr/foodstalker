@@ -8,6 +8,7 @@ import Description from "../../components/Description.astro";
 import StepByStep from "../../components/StepByStep.astro";
 import Divider from "../../components/Divider.astro";
 import Tips from "../../components/Tips.astro";
+import VinTips from "src/components/VinTips.astro";
 
 export async function getStaticPaths() {
   const recipes = getRecipes;
@@ -67,6 +68,14 @@ const title = post.title;
       <div class="recipe-ingredients">
         <Ingredients ingredients={post.ingredients} />
         <Tips tips={post.tips} chef={post.chef} tipsurl={post.tipsurl} />
+        {
+          post.vintipsnavn && (
+            <VinTips
+              vintipsNavn={post.vintipsnavn}
+              vintipsUrl={post.vintipsUrl}
+            />
+          )
+        }
       </div>
     </div>
     <ImageGallery images={images} />

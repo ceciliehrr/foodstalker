@@ -1,0 +1,33 @@
+---
+export interface Props {
+  vintipsNavn?: string;
+  vintipsUrl?: string;
+}
+const { vintipsNavn, vintipsUrl } = Astro.props;
+---
+
+<div class="recipe-vintips">
+  <h2 class="recipe-vintips__title">🥂</h2>
+  <a target="_blank" href={vintipsUrl}>{vintipsNavn}</a>
+</div>
+
+<style lang="scss" scoped>
+  @use "../styles/mixins/" as *;
+  .recipe-vintips {
+    background-color: white;
+    border: 1px solid var(--fs-gray-400);
+    margin-top: 16px;
+    padding: 1rem;
+
+    &__title {
+      color: var(--fs-pink-400);
+      @include get-text("fs-h5");
+      font-weight: 600;
+
+      @include bp("tablet-up") {
+        @include get-text("fs-h4");
+        font-weight: 600;
+      }
+    }
+  }
+</style>
