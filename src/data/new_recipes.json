@@ -10305,6 +10305,8 @@
     "longDescription": "Når det er eplesesong blir det bakt en del med epler her i heimen, spesielt denne som går så raskt å lage. Favorittepletypen til denne kaken er Discovery.",
     "time": "45 minutter",
     "portions": "8",
+    "vintipsnavn": "Egge Gård Iseple",
+    "vintipsUrl": "https://www.vinmonopolet.no/Land/Norge/Egge-G%C3%A5rd-Iseple/p/9624602",
     "tips": "Vi pleier å halvere denne siden vi er 2 personer, også har vi deigen i en liten støpejernsstekepanne(15cm).",
     "chef": "Ida Gran Jansen",
     "tipsurl": "https://idagranjansen.com/oppskrifter/enkel-og-smakfull-eplekake-med-kardemomme",
@@ -10442,7 +10444,9 @@
     "longDescription": "Denne forretten har blitt til ved å kombinere ting vi tenker fungerer sammen, og vipps så ble det en magisk forrett!",
     "time": "2-3 dager",
     "portions": "6",
-    "tips": "Server med <a href='https://meny.no/varer/bakeri/tort-brod/flatbrod/skjenning-7051290000020'>skjenning</a>, et typisk trøndersk flatbrød med en søtlig smak. Serveres med en god norsk eplesider med frisk eplesmak, for eksempel <a href='https://www.vinmonopolet.no/Land/Norge/Vestland/Alde-Eplesider-2021/p/5895501'>Alde sider</a>",
+    "vintipsnavn": "Alde Eplesider",
+    "vintipsUrl": "https://www.vinmonopolet.no/Land/Norge/Vestland/Alde-Eplesider-2022/p/5895501",
+    "tips": "Server med <a href='https://meny.no/varer/bakeri/tort-brod/flatbrod/skjenning-7051290000020'>skjenning</a>, et typisk trøndersk flatbrød med en søtlig smak.",
     "chef": "En god blanding av Trines matblogg, Ida Gran Jansen(Julemat) og egenkomponert",
     "tipsurl": "",
     "ingredients": [
@@ -11218,5 +11222,114 @@
       }
     ],
     "keywords": ["munker", "søtt", "dessert", "æbleskiver", "boller"]
+  },
+  {
+    "id": "sriracha",
+    "imageurl": "https://foodstalker.b-cdn.net/2023/sriracha/DSC03761.jpg",
+    "alt": "sriracha i norgesglass",
+    "title": "Sriracha",
+    "date": "2023-08-19",
+    "category": "tilbehør",
+    "description": "Lag din egen sriracha! Hva er det, spør du? Digg chilisaus! svarer vi. ",
+    "longDescription": "Sriracha kan brukes til så mangt. Både som ekstra styrke på middagen(tacofredag) eller frokosten(på egg), eller som en <a href=\"/oppskrift/majones\">chilimajones</a>. \r\n",
+    "time": "6 dager",
+    "portions": "et norgesglass",
+    "tips": "Bytt ut chilitypen for litt variasjon. Om du er glad i superhot kan du la frøene bli.\r\nOm du ikke får tak i palmesukker, kan du bruke demerarasukker eller vanlig sukker.",
+    "chef": "Caroline Dafsgård Widnersson",
+    "tipsurl": "",
+    "vintips": "",
+    "vintipsurl": "",
+    "ingredients": [
+      {
+        "title": "",
+        "ingredients": [
+          {
+            "quantity": "300 g",
+            "name": "fersk rød chili"
+          },
+          {
+            "quantity": "50 g",
+            "name": "hvitløk"
+          },
+          {
+            "quantity": "1 ts",
+            "name": "salt"
+          },
+          {
+            "quantity": "1 ss",
+            "name": "nøytral eddik"
+          },
+          {
+            "quantity": "1 dl",
+            "name": "vann"
+          },
+          {
+            "quantity": "0.5 ss",
+            "name": "fiskesaus"
+          },
+          {
+            "quantity": "0.5 ss",
+            "name": "palmesukker"
+          }
+        ]
+      }
+    ],
+    "steps": [
+      {
+        "title": "",
+        "description": "Rens chili for frø og kjør chili med resten av ingrediensene til den har grov grøtkonsistens med en stavmikset eller blender."
+      },
+      {
+        "title": "",
+        "description": "Hell sausen over i et glass og dekk med silduk. La glasset stå på benken i 5 døgn. Sjekk hver dag om det har dannet seg mugg, fjern mugg hvis det oppstår.\r\n"
+      },
+      {
+        "title": "",
+        "description": "Hell sausen over i en kjele. Kok opp og la putre i 2-3 minutter. Kjør blandingen til en glatt saus med stavmikser. Om du ikke synes den er jevn nok kan du tilsette litt vann."
+      },
+      {
+        "title": "",
+        "description": "Kok et norgesglass. Jo renere glass, jo lengre holdbarhet. Hell sausen oppi glasset. La den stå på benken og modne ett døgn.\r\nSett srirachaen i kjøleskapet og den holder seg minst 6 måneder."
+      }
+    ],
+    "images": [
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2023/sriracha/DSC00238.jpg",
+        "alt": "sriracha med silduk"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2023/sriracha/DSC03437.jpg",
+        "alt": "chili"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2023/sriracha/DSC03429.jpg",
+        "alt": "chili"
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2023/sriracha/DSC03702.jpg",
+        "alt": "chili i kjele"
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2023/sriracha/DSC03770-2.jpg",
+        "alt": "chili på glass"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2023/sriracha/DSC03742.jpg",
+        "alt": "sriracha på glass"
+      }
+    ],
+    "keywords": [
+      "chili",
+      "chilisaus",
+      "srirachasaus",
+      "srirachamajones",
+      "tilbehør"
+    ]
   }
 ]
