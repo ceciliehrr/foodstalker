@@ -143,7 +143,7 @@ export default {
 <style scoped>
 /* Add your CSS styles here */
 .modal {
-  z-index: 100;
+  z-index: 99999;
   position: fixed;
   top: 0;
   left: 0;
