@@ -5,90 +5,81 @@
     </button>
     <swipe-modal
       v-model="isModal"
-      contents-height="98vh"
+      contents-height="88vh"
       border-top-radius="24px"
     >
-      <div class="modal">
-        <div class="modal-content">
-          <div class="modal-buttonwrapper">
-            <button class="close-button" @click="closeModal"></button>
+      <div class="tabs">
+        <button
+          v-for="(tab, index) in tabs"
+          :key="index"
+          class="tab-button"
+          :class="{ active: activeTab === tab.id }"
+          @click="switchTab(tab.id)"
+        >
+          {{ tab.label }}
+        </button>
+      </div>
+      <div class="tab-content" v-show="activeTab === 'ingredients'">
+        <div v-for="(group, index) in ingredients" :key="index">
+          <div v-if="group.title">
+            <h3 class="fs-ingredients__group-title">{{ group.title }}</h3>
           </div>
-          <div class="tabs">
-            <button
-              v-for="(tab, index) in tabs"
-              :key="index"
-              class="tab-button"
-              :class="{ active: activeTab === tab.id }"
-              @click="switchTab(tab.id)"
+          <ul class="fs-ingredients__ol-list" tabindex="0">
+            <li
+              tabindex="0"
+              class="fs-checkbox__list"
+              v-for="(ingredient, ingredientIndex) in group.ingredients"
+              :key="ingredient.name"
             >
-              {{ tab.label }}
-            </button>
-          </div>
-          <div class="tab-content" v-show="activeTab === 'ingredients'">
-            <div v-for="(group, index) in ingredients" :key="index">
-              <div v-if="group.title">
-                <h3 class="fs-ingredients__group-title">{{ group.title }}</h3>
-              </div>
-              <ul class="fs-ingredients__ol-list" tabindex="0">
-                <li
-                  tabindex="0"
-                  class="fs-checkbox__list"
-                  v-for="(ingredient, ingredientIndex) in group.ingredients"
-                  :key="ingredient.name"
-                >
-                  <label
-                    :for="'ingredient-' + index + '-' + ingredientIndex"
-                    class="fs-checkbox__container"
-                  >
-                    <input
-                      type="checkbox"
-                      :id="'ingredient-' + index + '-' + ingredientIndex"
-                      :aria-labelledby="
-                        'label-ingredient-' + index + '-' + ingredientIndex
-                      "
-                    />
-                    <span class="fs-checkmark"></span>
-                    <strong
-                      :id="'label-ingredient-' + index + '-' + ingredientIndex"
-                      class="fs-checkbox__text"
-                      v-html="ingredient.quantity"
-                    ></strong>
-                    <p
-                      :id="'label-ingredient-' + index + '-' + ingredientIndex"
-                      class="fs-checkbox__text"
-                      v-html="ingredient.name"
-                    ></p>
-                  </label>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="tab-content" v-show="activeTab === 'steps'">
-            <div v-for="(step, stepsIndex) in steps">
-              <ul class="fs-ingredients__ol-list">
-                {{
-                  step.title
-                }}
-                <li class="fs-checkbox__list">
-                  <label
-                    :for="'ingredient-' + stepsIndex"
-                    class="fs-checkbox__container"
-                  >
-                    <input
-                      type="checkbox"
-                      :id="'ingredient-' + stepsIndex"
-                      :aria-labelledby="'label-ingredient-' + stepsIndex" />
-                    <span class="fs-checkmark"></span>
-                    <p
-                      :id="'label-ingredient-' + stepsIndex"
-                      class="fs-checkbox__text"
-                      v-html="step.description"
-                    ></p
-                  ></label>
-                </li>
-              </ul>
-            </div>
-          </div>
+              <label
+                :for="'ingredient-' + index + '-' + ingredientIndex"
+                class="fs-checkbox__container"
+              >
+                <input
+                  type="checkbox"
+                  :id="'ingredient-' + index + '-' + ingredientIndex"
+                  :aria-labelledby="
+                    'label-ingredient-' + index + '-' + ingredientIndex
+                  "
+                />
+                <span class="fs-checkmark"></span>
+                <strong
+                  :id="'label-ingredient-' + index + '-' + ingredientIndex"
+                  class="fs-checkbox__text"
+                  v-html="ingredient.quantity"
+                ></strong>
+                <p
+                  :id="'label-ingredient-' + index + '-' + ingredientIndex"
+                  class="fs-checkbox__text"
+                  v-html="ingredient.name"
+                ></p>
+              </label>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="tab-content" v-show="activeTab === 'steps'">
+        <div v-for="(step, stepsIndex) in steps">
+          <h3>{{ step.title }}</h3>
+          <ul class="fs-ingredients__ol-list">
+            <li class="fs-checkbox__list">
+              <label
+                :for="'ingredient-' + stepsIndex"
+                class="fs-checkbox__container"
+              >
+                <input
+                  type="checkbox"
+                  :id="'ingredient-' + stepsIndex"
+                  :aria-labelledby="'label-ingredient-' + stepsIndex" />
+                <span class="fs-checkmark"></span>
+                <p
+                  :id="'label-ingredient-' + stepsIndex"
+                  class="fs-checkbox__text"
+                  v-html="step.description"
+                ></p
+              ></label>
+            </li>
+          </ul>
         </div>
       </div>
     </swipe-modal>
@@ -140,35 +131,34 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss">
 /* Add your CSS styles here */
-.modal {
-  z-index: 99999;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-
-  background-color: rgba(0, 0, 0, 0.5);
-  justify-content: center;
-  align-items: center;
+.modal-contents {
+  max-height: 95vh !important;
 }
-
-.modal-content {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 1.5rem 1.5rem 0 0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  position: relative;
-  height: 100%;
+.modal-contents-chip-wrapper {
+  height: 50px !important;
+}
+.modal-contents-chip {
+  height: 10px !important;
+  background-color: var(--fs-pink-300) !important;
 }
 
 .tabs {
   display: flex;
-
   margin-bottom: 20px;
   border-bottom: 1px solid var(--fs-gray-200);
+}
+
+.tab-content {
+  padding: 28px;
+  h3 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  ul {
+    margin-top: 8px;
+  }
 }
 
 .tab-button {
@@ -191,7 +181,6 @@ export default {
 .modal-buttonwrapper {
   display: flex;
   justify-content: center;
-
   margin-bottom: 24px;
 }
 .close-button {
