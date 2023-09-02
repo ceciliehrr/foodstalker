@@ -1,12 +1,14 @@
 <template>
   <div>
-    <button class="open-modal-button" @click="isModal = true">
+    <button class="open-modal-button" @click="openModal()">
       👩🏼‍🍳 Matlagingsmodus
     </button>
     <swipe-modal
       v-model="isModal"
       contents-height="88vh"
       border-top-radius="24px"
+      @close="closeModal()"
+      client:only="vue"
     >
       <div class="tabs">
         <button
@@ -120,11 +122,11 @@ export default {
       this.activeTab = tabId;
     },
     openModal() {
-      this.showModal = true;
+      this.isModal = true;
       document.body.style.overflow = "hidden"; // Prevent page scrolling
     },
     closeModal() {
-      this.showModal = false;
+      this.isModal = false;
       document.body.style.overflow = ""; // Revert back to default scrolling
     },
   },
@@ -133,11 +135,14 @@ export default {
 
 <style lang="scss">
 /* Add your CSS styles here */
+
 .modal-contents {
-  max-height: 95vh !important;
+  height: 95vh !important;
 }
 .modal-contents-chip-wrapper {
   height: 50px !important;
+  position: sticky !important;
+  background-color: white;
 }
 .modal-contents-chip {
   height: 10px !important;
@@ -148,10 +153,15 @@ export default {
   display: flex;
   margin-bottom: 20px;
   border-bottom: 1px solid var(--fs-gray-200);
+  position: sticky !important;
+  top: 50px;
+  z-index: 4;
+  background-color: white;
 }
 
 .tab-content {
   padding: 28px;
+
   h3 {
     margin-top: 8px;
     margin-bottom: 8px;
