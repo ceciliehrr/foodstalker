@@ -10,14 +10,13 @@
     "proxy": "mkcert -install && mkcert localhost && local-ssl-proxy --source 3010 --target 3000 --cert localhost.pem --key localhost-key.pem"
   },
   "devDependencies": {
-    "@astrojs/vue": "^2.0.1",
-    "astro": "^2.7.2",
+    "@astrojs/vue": "^3.0.0",
+    "astro": "^3.0.7",
     "prettier": "^2.7.1",
     "prettier-plugin-astro": "^0.8.0",
     "vue": "^3.2.47"
   },
   "dependencies": {
-    "@astrojs/image": "^0.14.0",
     "express": "^4.18.2",
     "fs-extra": "^11.1.1",
     "sass": "^1.58.0",

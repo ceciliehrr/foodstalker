@@ -1,5 +1,5 @@
 ---
-import { Picture } from "@astrojs/image/components";
+import { Image } from "astro:assets";
 ---
 
 <div class="fs-banner fade-in">
@@ -8,14 +8,11 @@ import { Picture } from "@astrojs/image/components";
     <p>Vi stalker flinke kokker og deler våre favorittoppskrifter</p>
   </div>
   <div class="fs-banner__image">
-    <Picture
+    <Image
       src="https://foodstalker.b-cdn.net/sitron2.jpg"
       alt=""
-      widths={[200, 400, 800]}
-      aspectRatio="16:10"
-      sizes="(max-width: 800px) 100vw, 800px"
-      format="webp"
-      background={"#0000"}
+      width={400}
+      height={200}
     />
   </div>
 </div>
