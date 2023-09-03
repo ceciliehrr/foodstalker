@@ -154,6 +154,9 @@ const title = post.title;
   }
   .recipe-modal {
     grid-area: cookingmode;
+    @include bp("tablet-up") {
+      display: none;
+    }
   }
 
   .recipe-description {
