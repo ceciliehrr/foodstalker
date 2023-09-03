@@ -1,5 +1,5 @@
 ---
-import { Picture } from "@astrojs/image/components";
+import { Image } from "astro:assets";
 export interface Props {
   title: string;
   emoji: string;
@@ -50,16 +50,14 @@ function emoji_category(cat) {
 
 <a id="card" href={href} class="fs-card">
   <div class="fs-card__image">
-    <Picture
+    <Image
       class="fs-card__picture"
       src={image}
       alt=""
-      widths={[400, 800, 200]}
-      aspectRatio="3:5"
+      width={1000}
+      height={300}
       sizes="(max-width: 1020px) 100vw, 200px"
-      fit="cover"
       format="webp"
-      background="black"
     />
   </div>
   <div class="fs-card__content">

@@ -1,21 +1,20 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import { Picture } from "@astrojs/image/components";
+import { Image } from "astro:assets";
 ---
 
 <Layout title="Om oss">
   <div class="fs-about">
     <div class="fs-about__banner">
       <h1 class="fs-about__title">Om oss</h1>
-      <Picture
+      <Image
         class="fs-about__image fade-in"
         src="https://foodstalker.b-cdn.net/about/pete-cec-1.jpeg"
         alt=""
-        widths={[200, 400, 800]}
-        aspectRatio="3:2"
+        width={400}
+        height={400}
         sizes="(max-width: 400px) 100vw, 400px"
         format="webp"
-        background={"#0000"}
       />
     </div>
     <p class="fs-about__text" data-aos="fade-in">
@@ -63,15 +62,19 @@ import { Picture } from "@astrojs/image/components";
       Liker ikke kaffe..
     </p>
     <div class="fs-about__image-wrapper">
-      <img
+      <Image
         class="fade-in"
         src="https://foodstalker.b-cdn.net/about/cec-'.jpeg"
         alt="cecilie"
+        width={400}
+        height={400}
       />
-      <img
+      <Image
         class="fade-in"
         src="https://foodstalker.b-cdn.net/about/pete-1.jpeg"
         alt="petter"
+        width={400}
+        height={400}
       />
     </div>
     <p class="fs-about__text">

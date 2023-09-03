@@ -3,7 +3,7 @@ import Layout from "../../layouts/Layout.astro";
 import ImageGallery from "../../components/ImageGallery.vue";
 import Ingredients from "../../components/Ingredients.vue";
 import getRecipes from "../../data/new_recipes.json";
-import { Picture } from "@astrojs/image/components";
+import { Image } from "astro:assets";
 import Description from "../../components/Description.astro";
 import StepByStep from "../../components/StepByStep.astro";
 import Divider from "../../components/Divider.astro";
@@ -38,14 +38,13 @@ const title = post.title;
         </h1>
       </div>
       <div class="recipe-image fade-in">
-        <Picture
+        <Image
           class="recipe__main-image"
           src={mainImage}
           alt=""
-          widths={[400, 500, 200]}
-          aspectRatio="10:16"
+          width={500}
+          height={640}
           sizes="(max-width: 400px) 100vw, 500px"
-          fit="cover"
           format="webp"
         />
       </div>

@@ -1,10 +1,11 @@
 ---
+import { ContentCollectionTypeMismatchError } from "astro/dist/core/errors/errors-data";
 import Divider from "./Divider.astro";
 import SmallCards from "./cards/SmallCards.vue";
 const { recipes } = Astro.props;
 
 const data = await fetch(
-  `https://plausible.io/api/v1/stats/breakdown?site_id=foodstalker.no&period=month&property=event:page&limit=6`,
+  `https://plausible.io/api/v1/stats/breakdown?site_id=foodstalker.no&period=30d&property=event:page&limit=6`,
   {
     method: "GET",
     headers: {
@@ -14,17 +15,17 @@ const data = await fetch(
 );
 
 const pages = await data.json();
-
 const filteredPages = pages.results
   .filter((page) => page.page.startsWith("/oppskrift/"))
   .map((page) => ({
     id: page.page.slice("/oppskrift/".length, -1),
     visitors: page.visitors,
   }));
+
 const sortedPages = filteredPages.sort((a, b) => b.visitors - a.visitors);
 const topFivePages = sortedPages.slice(0, 5);
 const recipeIds = topFivePages.map((page) => page.id);
-console.log(recipeIds);
+
 const topFiveSorted = recipes
   .filter((recipe) => recipeIds.includes(recipe.id))
   .reverse();
