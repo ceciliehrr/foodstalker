@@ -24,11 +24,10 @@ const filteredPages = pages.results
 const sortedPages = filteredPages.sort((a, b) => b.visitors - a.visitors);
 const topFivePages = sortedPages.slice(0, 5);
 const recipeIds = topFivePages.map((page) => page.id);
-
-const topFiveSorted = recipes.filter((recipe) =>
-  recipeIds.includes(recipe.id)
-);
-
+console.log(recipeIds);
+const topFiveSorted = recipes
+  .filter((recipe) => recipeIds.includes(recipe.id))
+  .reverse();
 ---
 
 {
@@ -36,7 +35,13 @@ const topFiveSorted = recipes.filter((recipe) =>
     <ul>
       {topFiveSorted.map((page) => (
         <li>
-          <SmallCards title={page.title} description={page.description} image={page.imageurl} href={"/oppskrift/" + page.id} /></li>
+          <SmallCards
+            title={page.title}
+            description={page.description}
+            image={page.imageurl}
+            href={"/oppskrift/" + page.id}
+          />
+        </li>
       ))}
     </ul>
   ) : (
