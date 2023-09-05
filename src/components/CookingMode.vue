@@ -123,11 +123,11 @@ export default {
     },
     openModal() {
       this.isModal = true;
-      // document.body.style.overflow = "hidden"; // Prevent page scrolling
+      document.body.style.overflow = "hidden"; // Prevent page scrolling
     },
     closeModal() {
       this.isModal = false;
-      //document.body.style.overflow = ""; // Revert back to default scrolling
+      document.body.style.overflow = ""; // Revert back to default scrolling
     },
   },
 };
@@ -137,7 +137,7 @@ export default {
 /* Add your CSS styles here */
 
 .modal-contents {
-  height: 95vh !important;
+  height: 65vh !important;
 }
 .modal-contents-chip-wrapper {
   height: 50px !important;
