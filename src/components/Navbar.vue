@@ -15,7 +15,12 @@
         <a href="/oppskrift/turmat"><span>&#128293;</span> Turmat</a>
         <a href="/om-oss"><span>&#128526;</span> Bonus</a>
       </nav>
-      <button class="hamburger-btn" @click="toggleMobileMenu">
+      <button
+        role="button"
+        aria-label="menu-button"
+        class="hamburger-btn"
+        @click="toggleMobileMenu"
+      >
         <div class="hamburger" v-if="!showMobileMenu">
           <span class="bar"></span>
           <span class="bar"></span>

@@ -1,0 +1,29 @@
+[
+  {
+    "position": [59.9072, 10.75609],
+    "city": "Oslo",
+    "title": "Egon",
+    "descripion": "Best burgers in town",
+    "category": "Restaurant",
+    "imageUrl": "https://foodstalker.b-cdn.net/2023/munker/DSC01480.jpg",
+    "webPage": "https://www.foodstalker.no"
+  },
+  {
+    "position": [59.91273, 10.74609],
+    "city": "Oslo",
+    "title": "Munchies",
+    "description": "Best burgers in town Best burgers in townBest burgers in townBest burgers in townBest burgers in townBest burgers in townBest burgers in townBest burgers intownBest burgers in ttownBest burgers in ttownBest burgers in ttownBest burgers in ttownBest burgers in ttownBest burgers in ttownBest burgers in ttownBest burgers in ttownBest burgers in ttownBest burgers in t town",
+    "category": "Casual",
+    "imageUrl": "https://foodstalker.b-cdn.net/2023/crying-tiger/DSC01640.jpg",
+    "webPage": "https://www.foodstalker.no"
+  },
+  {
+    "position": [59.3293, 18.0686],
+    "city": "Stockholm",
+    "title": "Munchies",
+    "description": "Best burgers in town Best burgers in townBest burgers in townBest burgers in townBest burgers in townBest burgers in townBest burgers in townBest burgers intownBest burgers in ttownBest burgers in ttownBest burgers in ttownBest burgers in ttownBest burgers in ttownBest burgers in ttownBest burgers in ttownBest burgers in ttownBest burgers in ttownBest burgers in t town",
+    "category": "Casual",
+    "imageUrl": "https://foodstalker.b-cdn.net/2023/crying-tiger/DSC01640.jpg",
+    "webPage": "https://www.foodstalker.no"
+  }
+]
