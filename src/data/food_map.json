@@ -1,21 +1,52 @@
 [
   {
-    "position": [59.9072, 10.75609],
+    "position": [59.907657562789446, 10.772765099423395],
     "city": "Oslo",
-    "title": "Egon",
-    "descripion": "Best burgers in town",
-    "category": "Restaurant",
-    "imageUrl": "https://foodstalker.b-cdn.net/2023/munker/DSC01480.jpg",
+    "title": "The Foodstalkers",
+    "description": "Hjemmelaget er alltid best. Mest kjent for taco!",
+    "category": "Home",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_8334.jpg",
     "webPage": "https://www.foodstalker.no"
   },
   {
-    "position": [59.91273, 10.74609],
+    "position": [59.91532463794866, 10.719338497578114],
     "city": "Oslo",
-    "title": "Munchies",
-    "description": "Best burgers in town Best burgers in townBest burgers in townBest burgers in townBest burgers in townBest burgers in townBest burgers in townBest burgers intownBest burgers in ttownBest burgers in ttownBest burgers in ttownBest burgers in ttownBest burgers in ttownBest burgers in ttownBest burgers in ttownBest burgers in ttownBest burgers in ttownBest burgers in t town",
+    "title": "Ahaan",
+    "description": "Ahaan ligger i det nyrestaurerte bygget Sommerro på Solli. Vi startet kvelden med en fordrink på Ekspedisjonshallen. Ahaan er et sted med god stemning fra første stund, hyggelig og trygg servitør. \n Vi gikk for en 5 retters meny og en flaske hvitvin, en tørr Riesling anbefalt av servitøren. Den passet perfekt til thaimat med mye smak. \n Første rett var en reke i limeblad med peanøtter og saus. Digg start! \n Andre servering med fritert blekksprut, en nydelige saus. Samt fritert squash med sesamsaus.\n Tredje rett var grillet entrecôte med chili og fritert sticky rice, så enkelt med så godt. Så til en fantastisk red curry med ris. \n Dessert med kokosis, mango parfait, rista kokos og mangosaus, servert med en appelsin-spritz anbefalt av servitør. Digg kombo, frisk og treffende avslutning, kanskje vår dessertfavoritt all time. \n\n Alt i alt var Ahaan en svært god opplevelse. Dog bærer den litt preg av sin plassering, da den var full av folk som synes Solli er ytterkanten av hvor langt øst de bevevger seg i byen. ",
+    "category": "Restaurant",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_9440.jpg",
+    "webPage": "https://ahaan.no/",
+    "dateVisited": "Juli, 2023"
+  },
+  {
+    "position": [59.90996165998961, 10.765261801334278],
+    "city": "Oslo",
+    "title": "Corral's",
+    "description": "Dette er en foodtruck som ligger rett utenfor baren Rampen(Som har masse digg norsk sider, og takterasse om sommeren). \n Vi bestilte tre taco med alt, medium sterk. Og kjøpte en Kvestad cider 1808 på Rampen. Denne dagen var en fin sommerkveld og vi kunne sitte ute på bordene utenfor foodtrucken. Ellers kan man ta med taco'n inn på Rampen. \n Fantastisk taco, nesten like god som den vi lager selv. Lefsene, 100% mais, var helt fantastisk. Var litt sprø i kanten, så var et godt element. Ble servert med feta/yoghurt, frisk korriander og syltet rødløk. Nydelig balansert chilistyrke. \n  Kjøttet var storfe, kokt til det falt fra hverandre. \n \n Digg taco kan være grisete, heldigvis fikk vi hansker! Service!",
     "category": "Casual",
-    "imageUrl": "https://foodstalker.b-cdn.net/2023/crying-tiger/DSC01640.jpg",
-    "webPage": "https://www.foodstalker.no"
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_0040.jpg",
+    "webPage": "https://www.instagram.com/corralstacos/",
+    "dateVisited": "Juli, 2023"
+  },
+  {
+    "position": [59.91900883627447, 10.709979482699854],
+    "city": "Oslo",
+    "title": "Kolonihagen",
+    "description": "Helt nydelig mat og spennende sammensettinger. Bra kvalitet på alle ledd, og god drikke. Fantastiske og morsomme smaker, med ukjente og spennende ingredienser. \n Vi gikk for 5 retters med vinpakke. Starter med surdeigsbrød fra Kolonialen(kan kjøpes på Rema1000) og smør fra en gård i Hedmark. Retten som utmerket seg mest var rødbete, pepperrot, emulsjon med meldestokk og feta fra Rygge. Denne fikk vi en Cremant d’Alsasse til. Veldig frisk og fin til retten. \n For å forklare morsomme retter: en liten overraskelse på slutten med daim med steinsopp og sukkerspinn med mjødurt. \n \n En restaurant vi absolutt kan anbefale!",
+    "category": "Restaurant",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_6154.jpg",
+    "webPage": "https://kolonihagenfrogner.no/",
+    "dateVisited": "April, 2023"
+  },
+  {
+    "position": [59.931796135557235, 10.735588601796954],
+    "city": "Oslo",
+    "title": "Ansjosen",
+    "description": "Trivelig bitteliten italiensk nabolagsrestaurant på Adamstuen. Vi gikk for ulike 3 retters og anbefalinger av vin fra servitør. Petter gikk for bruschetta til forrett, Cecilie tok ceviche. Lett og digg start! \n Petter gikk for Tagliata til hovedrett og Cecilie valgte pasta. \n Vi gikk for to ulike panna cottas til dessert. \n \n Alt i alt en veldig hyggelig kveld med god mat og drikke. ",
+    "category": "Restaurant",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_6575.jpg",
+    "webPage": "https://www.ansjosen.no/",
+    "dateVisited": "Mai, 2023"
   },
   {
     "position": [59.3293, 18.0686],
@@ -24,6 +55,7 @@
     "description": "Best burgers in town Best burgers in townBest burgers in townBest burgers in townBest burgers in townBest burgers in townBest burgers in townBest burgers intownBest burgers in ttownBest burgers in ttownBest burgers in ttownBest burgers in ttownBest burgers in ttownBest burgers in ttownBest burgers in ttownBest burgers in ttownBest burgers in ttownBest burgers in t town",
     "category": "Casual",
     "imageUrl": "https://foodstalker.b-cdn.net/2023/crying-tiger/DSC01640.jpg",
-    "webPage": "https://www.foodstalker.no"
+    "webPage": "https://www.foodstalker.no",
+    "dateVisited": "Januar, 2023"
   }
 ]

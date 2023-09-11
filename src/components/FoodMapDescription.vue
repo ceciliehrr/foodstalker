@@ -7,14 +7,20 @@
 
       <div class="fs-small-cards__text">
         <h2>{{ title }}</h2>
-        <p class="fs-small-cards__description">{{ description }}</p>
+        <p v-if="dateVisited" class="fs-small-cards__date">
+          Besøkt: {{ dateVisited }}
+        </p>
         <a
           v-if="webPage"
           :href="webPage"
           target="_blank"
           rel="noopener noreferrer"
-          >Besøk restauranten</a
+          >Sjekk ut deres nettside</a
         >
+        <p
+          class="fs-small-cards__description"
+          v-html="formatDescription(description)"
+        ></p>
       </div>
     </div>
   </div>
@@ -28,6 +34,12 @@ export default {
     category: String,
     imageUrl: String,
     webPage: String,
+    dateVisited: String,
+  },
+  methods: {
+    formatDescription(text) {
+      return text.replace(/\n/g, "<br>");
+    },
   },
 };
 </script>
@@ -72,6 +84,9 @@ export default {
   }
   &__description {
     margin-top: 0.5rem;
+  }
+  &__date {
+    color: var(--fs-gray-500);
   }
 
   &__text {

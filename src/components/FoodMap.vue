@@ -58,6 +58,7 @@
     :imageUrl="imageUrl"
     :description="description"
     :webPage="webPage"
+    :dateVisited="dateVisited"
   ></FoodMapDescription>
 </template>
 
@@ -76,14 +77,14 @@ export default {
   },
   data() {
     // Cities
-    const oslo = [59.91273, 10.74609];
+    const oslo = [59.907657562789446, 10.772765099423395];
     const stockholm = [59.3293, 18.0686];
 
     // Marker icons
     const CasualIcon = "https://foodstalker.b-cdn.net/CasualMarker.svg";
     const RestaurantIcon = "https://foodstalker.b-cdn.net/restaurantMarker.svg";
     const DrinksIcon = "https://foodstalker.b-cdn.net/DrinkMarker.svg";
-
+    const LogoMarker = "https://foodstalker.b-cdn.net/logoMarker.svg";
     // Default zoom
     const defaultZoom = 13;
 
@@ -104,12 +105,14 @@ export default {
       drinkIconUrl: DrinksIcon,
       restaurantIconUrl: RestaurantIcon,
       casualIconUrl: CasualIcon,
+      logoMarkerUrl: LogoMarker,
       iconSize: [50, 52],
       iconAnchor: [16, 37],
-      title: "",
-      imageUrl: "",
-      description: "",
-      webPage: "",
+      title: "The Foodstalkers",
+      imageUrl: "https://foodstalker.b-cdn.net/restauranter/IMG_8334.jpg",
+      description: "Hjemmelaget er alltid best. Mest kjent for taco!",
+      webPage: "https://www.foodstalker.no",
+      dateVisited: "2023-01-01",
       selectedCity: "Oslo", // Initial city
       defaultCity: "Oslo", // Default city when no city is selected
       oslo: oslo,
@@ -121,12 +124,12 @@ export default {
       if (city === "Oslo") {
         this.center = this.oslo;
         this.$nextTick(() => {
-          this.zoom = 13;
+          this.zoom = this.defaultZoom;
         });
       } else if (city === "Stockholm") {
         this.center = this.stockholm;
         this.$nextTick(() => {
-          this.zoom = 13;
+          this.zoom = this.defaultZoom;
         });
       }
     },
@@ -136,6 +139,7 @@ export default {
       this.imageUrl = marker.imageUrl;
       this.description = marker.description;
       this.webPage = marker.webPage;
+      this.dateVisited = marker.dateVisited;
       this.center = marker.position;
       this.scrollToDescription();
     },
@@ -147,31 +151,29 @@ export default {
       } else if (category === "Drinks") {
         return this.drinkIconUrl;
       }
+      return this.logoMarkerUrl;
     },
     scrollToDescription() {
-      // Check if it's a mobile view (you can adjust the breakpoint accordingly)
-      if (window.innerWidth <= 768) {
-        // Find the target element by its id
-        const targetElement = document.getElementById("foodmap-card");
+      // Find the target element by its id
+      const targetElement = document.getElementById("foodmap-card");
 
-        if (targetElement) {
-          // Calculate the offset based on the height you want
-          //const offset = 10; // Change this value to your desired offset
+      if (targetElement) {
+        // Calculate the offset based on the height you want
+        // const offset = 10; // Change this value to your desired offset
 
-          // Scroll to the target element with the offset
-          targetElement.scrollIntoView({
-            behavior: "smooth",
-            block: "center", // You can also use 'end' if you want to scroll to the bottom of the element
-            inline: "nearest",
-            //offsetTop: offset, // Add the offset here
-          });
-        }
+        // Scroll to the target element with the offset
+        targetElement.scrollIntoView({
+          behavior: "smooth",
+          block: "start", // You can also use 'end' if you want to scroll to the bottom of the element
+          inline: "nearest",
+          //offsetTop: offset, // Add the offset here
+        });
       }
     },
   },
   computed: {
     uniqueCities() {
-      // Extract unique cities from your data with capitalized first letters
+      // Extract unique cities from markerdata with capitalized first letters
       const cities = new Set();
       for (const marker of foodmapMarkers) {
         const cityName =
@@ -225,17 +227,21 @@ export default {
   background-color: white;
 }
 
+label:hover {
+  cursor: pointer;
+}
+input[type="radio"] {
+  appearance: none;
+}
+
 input[type="radio"]:after {
   width: 15px;
   height: 15px;
   border-radius: 15px;
-  top: -2px;
-  left: -1px;
   position: relative;
   background-color: var(--fs-pink-100);
   content: "";
   display: inline-block;
-  visibility: visible;
   border: 1px solid var(--fs-pink-500);
 }
 
@@ -243,13 +249,10 @@ input[type="radio"]:checked:after {
   width: 15px;
   height: 15px;
   border-radius: 15px;
-  top: -2px;
-  left: -1px;
   position: relative;
   background-color: var(--fs-pink-500);
   content: "";
   display: inline-block;
-  visibility: visible;
   border: 1px solid var(--fs-pink-500);
 }
 </style>
