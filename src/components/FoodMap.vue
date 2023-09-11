@@ -79,6 +79,7 @@ export default {
     // Cities
     const oslo = [59.907657562789446, 10.772765099423395];
     const stockholm = [59.3293, 18.0686];
+    const stavanger = [58.96956842492558, 5.735700010074111];
 
     // Marker icons
     const CasualIcon = "https://foodstalker.b-cdn.net/CasualMarker.svg";
@@ -117,6 +118,7 @@ export default {
       defaultCity: "Oslo", // Default city when no city is selected
       oslo: oslo,
       stockholm: stockholm,
+      stavanger: stavanger,
     };
   },
   methods: {
@@ -128,6 +130,11 @@ export default {
         });
       } else if (city === "Stockholm") {
         this.center = this.stockholm;
+        this.$nextTick(() => {
+          this.zoom = this.defaultZoom;
+        });
+      } else if (city === "Stavanger") {
+        this.center = this.stavanger;
         this.$nextTick(() => {
           this.zoom = this.defaultZoom;
         });
@@ -159,14 +166,14 @@ export default {
 
       if (targetElement) {
         // Calculate the offset based on the height you want
-        // const offset = 10; // Change this value to your desired offset
+        //const offset = 10; // Change this value to your desired offset
 
         // Scroll to the target element with the offset
         targetElement.scrollIntoView({
           behavior: "smooth",
           block: "start", // You can also use 'end' if you want to scroll to the bottom of the element
           inline: "nearest",
-          //offsetTop: offset, // Add the offset here
+          // offsetTop: offset, // Add the offset here
         });
       }
     },
