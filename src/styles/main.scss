@@ -90,7 +90,8 @@ body {
   }
 }
 
-a {
+a,
+button {
   color: var(--fs-pink-500);
   text-decoration: underline;
   font-weight: 600;
