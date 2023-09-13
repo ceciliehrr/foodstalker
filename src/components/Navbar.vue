@@ -8,14 +8,47 @@
         />
       </a>
       <nav class="nav-links">
-        <a href="/oppskrift/hverdag"> <span>🥦</span> Hverdag</a>
-        <a href="/oppskrift/helg"> <span>&#127790;</span> Helg</a>
-        <a href="/oppskrift/søtt"><span>&#127849;</span> Søtt</a>
-        <a href="/oppskrift/tilbehør"><span>&#127805;</span> Tilbehør</a>
-        <a href="/oppskrift/turmat"><span>&#128293;</span> Turmat</a>
-        <a href="/om-oss"><span>&#128526;</span> Bonus</a>
+        <ul>
+          <li>
+            <a href="/oppskrift/hverdag"><span>🥦</span> Hverdag</a>
+          </li>
+          <li>
+            <a href="/oppskrift/helg"><span>&#127790;</span> Helg</a>
+          </li>
+          <li>
+            <a href="/oppskrift/søtt"><span>&#127849;</span> Søtt</a>
+          </li>
+          <li>
+            <a href="/oppskrift/tilbehør"><span>&#127805;</span> Tilbehør</a>
+          </li>
+          <li>
+            <a href="/oppskrift/turmat"><span>&#128293;</span> Turmat</a>
+          </li>
+          <li>
+            <div class="dropdown" @click="toggleDropdown">
+              <button class="dropbtn">
+                &#128526; Bonus <i class="arrow down arrow--margin-left"></i>
+              </button>
+              <div class="dropdown-content" :class="{ open: isDropdownOpen }">
+                <!-- Add your dropdown content here -->
+                <ul>
+                  <li>
+                    <a href="/om-oss">Om oss</a>
+                  </li>
+                  <li><a href="/kart">Restaurantkart</a></li>
+                </ul>
+                <!-- Add more dropdown items if needed -->
+              </div>
+            </div>
+          </li>
+        </ul>
       </nav>
-      <button class="hamburger-btn" @click="toggleMobileMenu">
+      <button
+        role="button"
+        aria-label="menu-button"
+        class="hamburger-btn"
+        @click="toggleMobileMenu"
+      >
         <div class="hamburger" v-if="!showMobileMenu">
           <span class="bar"></span>
           <span class="bar"></span>
@@ -25,12 +58,47 @@
       </button>
     </div>
     <nav class="mobile-menu" v-show="showMobileMenu">
-      <a href="/oppskrift/hverdag"><span>🥦</span> Hverdag</a>
-      <a href="/oppskrift/helg"><span>&#127790;</span> Helg</a>
-      <a href="/oppskrift/søtt"><span>&#127849;</span> Søtt</a>
-      <a href="/oppskrift/tilbehør"><span>&#127805;</span> Tilbehør</a>
-      <a href="/oppskrift/turmat"><span>&#128293;</span> Turmat</a>
-      <a href="/om-oss"><span>&#128526;</span> Bonus</a>
+      <ul>
+        <li>
+          <a href="/oppskrift/hverdag"><span>🥦</span> Hverdag</a>
+        </li>
+        <li>
+          <a href="/oppskrift/helg"><span>&#127790;</span> Helg</a>
+        </li>
+        <li>
+          <a href="/oppskrift/søtt"><span>&#127849;</span> Søtt</a>
+        </li>
+        <li>
+          <a href="/oppskrift/tilbehør"><span>&#127805;</span> Tilbehør</a>
+        </li>
+        <li>
+          <a href="/oppskrift/turmat"><span>&#128293;</span> Turmat</a>
+        </li>
+        <li>
+          <div class="dropdown dropdown__mobile" @click="toggleDropdown">
+            <button class="dropbtn">
+              &#128526; Bonus <i class="arrow down arrow--margin-left"></i>
+            </button>
+            <div class="dropdown-content" :class="{ open: isDropdownOpen }">
+              <!-- Add your dropdown content here -->
+              <ul>
+                <li>
+                  <a href="/om-oss"
+                    ><i class="arrow right arrow--margin-right"></i>Om oss</a
+                  >
+                </li>
+                <li>
+                  <a href="/kart"
+                    ><i class="arrow right arrow--margin-right"></i
+                    >Restaurantkart</a
+                  >
+                </li>
+              </ul>
+              <!-- Add more dropdown items if needed -->
+            </div>
+          </div>
+        </li>
+      </ul>
     </nav>
   </header>
 </template>
@@ -41,6 +109,7 @@ export default {
     return {
       showMobileMenu: false,
       closeIcon: "×",
+      isDropdownOpen: false,
     };
   },
   methods: {
@@ -48,6 +117,24 @@ export default {
       this.showMobileMenu = !this.showMobileMenu;
       this.closeIcon = this.showMobileMenu ? "close" : "hamburger";
     },
+    toggleDropdown() {
+      this.isDropdownOpen = !this.isDropdownOpen;
+    },
+    closeDropdownOnClickOutside(event) {
+      if (
+        this.isDropdownOpen &&
+        !this.$el.contains(event.target) &&
+        !document.querySelector(".dropdown").contains(event.target)
+      ) {
+        this.isDropdownOpen = false;
+      }
+    },
+  },
+  mounted() {
+    document.addEventListener("click", this.closeDropdownOnClickOutside);
+  },
+  beforeDestroy() {
+    document.removeEventListener("click", this.closeDropdownOnClickOutside);
   },
 };
 </script>
@@ -78,8 +165,9 @@ export default {
   margin: 0.5rem;
 }
 
-.nav-links {
+.nav-links ul {
   display: flex;
+  flex-direction: row;
   align-items: center;
 }
 
@@ -167,5 +255,78 @@ export default {
   .close:after {
     transform: rotate(-45deg);
   }
+}
+
+.dropdown ul {
+  position: relative;
+  display: inline-block;
+
+  @include bp("tablet-up") {
+  }
+}
+
+/* Style the dropdown button */
+.dropbtn {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
+  font-weight: 300;
+  padding: 0.5rem;
+
+  @include bp("tablet-up") {
+    margin-left: 1rem;
+  }
+}
+
+/* Style the dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--fs-vanilla);
+  min-width: 160px;
+  z-index: 1;
+
+  @include bp("tablet-up") {
+    margin-left: 1rem;
+    background-color: white;
+    border: 1px solid black;
+  }
+}
+
+/* Style the dropdown links */
+.dropdown-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  color: #333;
+  margin-left: 1.5rem;
+  margin-bottom: 0;
+
+  @include bp("tablet-up") {
+    border-bottom: 1px solid black;
+    margin-left: 0;
+  }
+}
+
+/* Change the color of dropdown links when hovered */
+.dropdown-content a:hover {
+  background-color: var(--fs-gray-100);
+}
+
+.open {
+  position: relative;
+  display: block;
+
+  @include bp("tablet-up") {
+    position: absolute;
+  }
+}
+
+.open + .content-below {
+  margin-top: 1rem;
 }
 </style>

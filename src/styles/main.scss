@@ -12,18 +12,12 @@
 //@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400;500;600;700&display=swap');
 
 html {
-  font-family:  monospace, system-ui, sans-serif;
+  font-family: monospace, system-ui, sans-serif;
 }
 
 body {
   @include get-text("fs-body1");
   margin: 0;
-}
-
-main {
-  margin: auto;
-  padding: 1em;
-  max-width: 1000px;
 }
 
 .sr-only {
@@ -96,7 +90,8 @@ main {
   }
 }
 
-a {
+a,
+button {
   color: var(--fs-pink-500);
   text-decoration: underline;
   font-weight: 600;
