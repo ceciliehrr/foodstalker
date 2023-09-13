@@ -3,6 +3,10 @@ import Layout from "../layouts/Layout.astro";
 import FoodMap from "../components/FoodMap.vue";
 ---
 
-<Layout title="Restauranttips">
+<Layout
+  title="Restauranttips"
+  image="https://foodstalker.b-cdn.net/map.png"
+  description="Foodstalkers map over restaurants they recommend"
+>
   <FoodMap client:load />
 </Layout>
