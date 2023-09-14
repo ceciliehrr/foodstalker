@@ -11331,5 +11331,123 @@
       "srirachamajones",
       "tilbehør"
     ]
+  },
+  {
+    "id": "crying-tiger",
+    "imageurl": "https://foodstalker.b-cdn.net/2023/crying-tiger/DSC01640.jpg",
+    "alt": "entrecote",
+    "title": "Crying tiger entrecote",
+    "date": "2023-09-14",
+    "category": "helg",
+    "description": "En veldig rask og enkel grillmiddag med punch!",
+    "longDescription": "Denne retten fikk vi servert på Ahaan. Vi digget den, og dro hjem og fant oppskriften i kokken Terje Ommundsens kokebok Thaimani. Årets biff-middag! Vi serverer den med <a href=\"/oppskrift/grillspyd\">perfekt sidesalat.</a>",
+    "time": "40 minutter",
+    "portions": "4",
+    "tips": "",
+    "chef": "Terje Ommundsen",
+    "tipsurl": "https://ahaan.no/",
+    "ingredients": [
+      {
+        "title": "",
+        "ingredients": [
+          {
+            "quantity": "200 g",
+            "name": "entrecote per porsjon"
+          },
+          {
+            "quantity": "1 stk",
+            "name": "finsnittet rød chili"
+          }
+        ]
+      },
+      {
+        "title": "Chilisaus",
+        "ingredients": [
+          {
+            "quantity": "2 ts",
+            "name": "rå ukokt jasminris"
+          },
+          {
+            "quantity": "2 ts",
+            "name": "chilipulver"
+          },
+          {
+            "quantity": "1 ss",
+            "name": "sukker"
+          },
+          {
+            "quantity": "3 ss",
+            "name": "limesaft"
+          },
+          {
+            "quantity": "2 ss",
+            "name": "fiskesaus"
+          },
+          {
+            "quantity": "2 ss",
+            "name": "finkuttet sjalottløk"
+          }
+        ]
+      }
+    ],
+    "steps": [
+      {
+        "title": "Chilisaus",
+        "description": "Rist risen i en tørr stekepanne til de er gyldne, gjør det samme med chilien. Avkjøl."
+      },
+      {
+        "title": "",
+        "description": "Behold litt av risen til å ha over retten før servering. Knus resten av risen til pulver, for eksempel i en morter. Ha risen, sukker, chili, limesaft, fiskesaus og finkuttet sjalottløk i en liten bolle, bland sammen."
+      },
+      {
+        "title": "",
+        "description": "Finsnitt en chili og finhakk 2 spiseskjeer sjalottløk."
+      },
+      {
+        "title": "Entrecote",
+        "description": "Krydre biffene med salt. La biffene ligge på benken for temperering. "
+      },
+      {
+        "title": "",
+        "description": "Varm opp grillen. Og grill biffene etter ønsket stekegrad. Vi griller 3-4 minutter per side, spørs på tykkelsen. Legg biffene til hvile på en tallerken."
+      },
+      {
+        "title": "Servering",
+        "description": "Skjær opp biffen i skiver.  Legg på et fat og ha over chilisausen og dryss over rista ris og finsnittet chili. Server med <a href='/oppskrift/grillspyd'>perfekt sidesalat</a>."
+      }
+    ],
+    "images": [
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2023/crying-tiger/DSC00992.jpg",
+        "alt": "chilisaus"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2023/crying-tiger/DSC01671.jpg",
+        "alt": "Crying tiger og salat på tallerken"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2023/crying-tiger/DSC01644-2.jpg",
+        "alt": "drysser ris over biffen"
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2023/crying-tiger/DSC01607.jpg",
+        "alt": "biff på grill"
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2023/crying-tiger/DSC01638.jpg",
+        "alt": "crying tiger"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2023/crying-tiger/DSC01613.jpg",
+        "alt": "biff på grill"
+      }
+    ],
+    "keywords": ["grill", "grillmat", "biff", "sommer", "entrecote"]
   }
 ]
