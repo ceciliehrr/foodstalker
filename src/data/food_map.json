@@ -164,5 +164,38 @@
     "webPage": "https://www.kagges.com/",
     "dateVisited": "September, 2022",
     "tags": ["smart casual", "nordisk"]
+  },
+  {
+    "position": [59.90606960691944, 10.775032682237052],
+    "city": "Oslo",
+    "title": "ZZ pizza",
+    "description": "Byens beste pizza, og vår nabolagsrestaurant! Anbefaler alle pizzaene(vi har aldri hatt plass til pizzadesserten, men den ser gøy ut). Kan også anbefale sider som blir laget på bakrommet, bokstavelig talt. ",
+    "category": "Casual",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/20220423_174041.jpg",
+    "webPage": "https://www.zz.pizza/",
+    "dateVisited": "August, 2023",
+    "tags": ["casual", "pizza"]
+  },
+  {
+    "position": [59.90675801851711, 10.768224053978646],
+    "city": "Oslo",
+    "title": "Preik",
+    "description": "Preik er vår nabolagsbar. Fantastisk uteplass på solfylte dager, og serverer Cecilies favoritt mimosa! Her kan du også få noe å spise om du er sulten. ",
+    "category": "Drinks",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_9997.jpg",
+    "webPage": "https://preikoslo.no/",
+    "dateVisited": "August, 2023",
+    "tags": ["casual", "småmat", "lunsj", "drinks", "bar"]
+  },
+  {
+    "position": [59.9020440825497, 10.741393126412374],
+    "city": "Oslo",
+    "title": "Vippa",
+    "description": "Vippa ute på Vippetangen representerer sommer i Oslo perfekt. Avslappet stemning med en fantastisk uteservering rett ved fjorden. Her kan man sitte og bare ta en drink, eller spise mat fra ulike boder. Maten varierer veldig på kvalitet, men noen gullkorn innimellom,  vår favoritt er fish and chips!",
+    "category": "Casual",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/20220727_162544.jpg",
+    "webPage": "https://www.vippa.no/",
+    "dateVisited": "Juli, 2023",
+    "tags": ["casual", "småmat", "lunsj", "drinks", "bar", "uteservering"]
   }
 ]
