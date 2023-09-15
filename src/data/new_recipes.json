@@ -11359,6 +11359,10 @@
           {
             "quantity": "1 stk",
             "name": "finsnittet rød chili"
+          },
+          {
+            "quantity": "en bunt",
+            "name": "frisk koriander"
           }
         ]
       },
@@ -11415,7 +11419,7 @@
       },
       {
         "title": "Servering",
-        "description": "Skjær opp biffen i skiver.  Legg på et fat og ha over chilisausen og dryss over rista ris og finsnittet chili. Server med <a href='/oppskrift/grillspyd'>perfekt sidesalat</a>."
+        "description": "Skjær opp biffen i skiver.  Legg på et fat og ha over chilisausen og dryss over rista ris, koriander og finsnittet chili. Server med <a href='/oppskrift/grillspyd'>perfekt sidesalat</a>."
       }
     ],
     "images": [
