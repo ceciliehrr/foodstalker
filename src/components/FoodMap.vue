@@ -80,6 +80,7 @@ export default {
     const oslo = [59.907657562789446, 10.772765099423395];
     const stockholm = [59.3293, 18.0686];
     const stavanger = [58.96956842492558, 5.735700010074111];
+    const bergen = [60.3913, 5.3221];
 
     // Marker icons
     const CasualIcon = "https://foodstalker.b-cdn.net/CasualMarker.svg";
@@ -119,6 +120,7 @@ export default {
       oslo: oslo,
       stockholm: stockholm,
       stavanger: stavanger,
+      bergen: bergen,
     };
   },
   methods: {
@@ -135,6 +137,11 @@ export default {
         });
       } else if (city === "Stavanger") {
         this.center = this.stavanger;
+        this.$nextTick(() => {
+          this.zoom = this.defaultZoom;
+        });
+      } else if (city === "Bergen") {
+        this.center = this.bergen;
         this.$nextTick(() => {
           this.zoom = this.defaultZoom;
         });

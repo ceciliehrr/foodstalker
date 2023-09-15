@@ -230,5 +230,27 @@
     "webPage": "https://www.vintagekitchen.no/",
     "dateVisited": "Mai, 2022",
     "tags": ["smart casual", "dansk", "vinbar", "lunsj", "brunsj"]
+  },
+  {
+    "position": [60.39335348695182, 5.323185782724735],
+    "city": "Bergen",
+    "title": "Allmuen",
+    "description": "Bergen har mange restauranter å by på. Dette er en hyggelig plass å dra på med venner. Vi gikk for Åpen mat og vinpakke. Åpen mat betyr flere småretter som varieres basert på dagens råvarer. En ting vi har tatt med oss med denne matopplevelsen er krabbeklør med lime og dillmajones. Digg!",
+    "category": "Restaurant",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/20220722_191239.jpg",
+    "webPage": "https://www.allmuenbistro.no/",
+    "dateVisited": "Juli, 2022",
+    "tags": ["smart casual", "nordisk", "vinbar", "lunsj", "brunsj"]
+  },
+  {
+    "position": [60.38850151398352, 5.32736576443456],
+    "city": "Bergen",
+    "title": "Hoggorm pizza",
+    "description": "Dette er virkelig en pizza man ikke glemmer. I et bittelite lokale serveres spennende smaker på pizza. Anbefales!",
+    "category": "Casual",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/DSC_0212.jpg",
+    "webPage": "https://www.hoggormpizza.no/",
+    "dateVisited": "August, 2018",
+    "tags": ["casual", "pizza"]
   }
 ]
