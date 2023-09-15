@@ -197,5 +197,38 @@
     "webPage": "https://www.vippa.no/",
     "dateVisited": "Juli, 2023",
     "tags": ["casual", "småmat", "lunsj", "drinks", "bar", "uteservering"]
+  },
+  {
+    "position": [59.92019486916005, 10.74901057670226],
+    "city": "Oslo",
+    "title": "Hyde",
+    "description": "Dette var Cecilies julegave til Petter. Sikkert fordi hun hadde lyst til å dra på en Michelin-restaurant for første gang. Men uansett, det var en veldig bra matopplevelse. Flere høydepunkter og vi har tatt med inspirasjon til å bruke kardemomme i smørsaus. Takk, Hyde! Vinpakken var også veldig bra til hver rett.",
+    "category": "Restaurant",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_3667.jpg",
+    "webPage": "http://restauranthyde.no/",
+    "dateVisited": "Januar, 2023",
+    "tags": ["fine dining", "michelin", "nordisk"]
+  },
+  {
+    "position": [59.9194028249312, 10.758136446021355],
+    "city": "Oslo",
+    "title": "Le Benjamin bar og bistro",
+    "description": "Le Benjamin er et sted vi har dratt tilbake til flere ganger. En kjempehyggelig fransk bistro med god mat og drikke. Og ikke minst veldig hyggelig og trygge ansatte.",
+    "category": "Restaurant",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/20200808_170147.jpg",
+    "webPage": "https://lebenjamin.no/",
+    "dateVisited": "Februar, 2023",
+    "tags": ["smart casual", "fransk"]
+  },
+  {
+    "position": [59.917032287247096, 10.76256371291869],
+    "city": "Oslo",
+    "title": "Vintage kitchen",
+    "description": "Vintage kitchen er en skjult perle på Grønland/Tøyen. Vi har bare spist lunsj og drukket vin her, men vi har veldig lyst til å komme tilbake for middag. Til lunsj kan man for eksempel få veldig bra danske smørbrød. Og vinkartet er også veldig bra! Det var her vi smakte Nigard sider fra Sideriet for første gang. Smak av høst!",
+    "category": "Restaurant",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/20210619_133451.jpg",
+    "webPage": "https://www.vintagekitchen.no/",
+    "dateVisited": "Mai, 2022",
+    "tags": ["smart casual", "dansk", "vinbar", "lunsj", "brunsj"]
   }
 ]
