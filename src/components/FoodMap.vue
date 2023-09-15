@@ -17,16 +17,17 @@
           type="radio"
           v-model="selectedCity"
           :value="city"
-          @change="setTown(selectedCity)"
+          @change="setTown(toLowerCase(selectedCity))"
         />
         {{ city }}
       </label>
     </div>
   </div>
-
+  <!--Toggle map/list-->
   <p>{{ toggleName }}</p>
   <ToggleButton @setIsActive="toggleTheMap"></ToggleButton>
-  <template v-if="!isActive">
+  <!--The map-->
+  <div :class="{ hidden: isActive }">
     <div class="foodstalker-map">
       <l-map
         ref="map"
@@ -64,8 +65,9 @@
       :webPage="webPage"
       :dateVisited="dateVisited"
     ></FoodMapDescription>
-  </template>
-  <div v-else>
+  </div>
+  <!--The list-->
+  <div :class="{ hidden: !isActive }">
     <div v-for="restaurant in filteredMarkers">
       <FoodMapDescription
         :title="restaurant.title"
@@ -96,22 +98,24 @@ export default {
     SmallCards,
   },
   data() {
-    // Cities
-    const oslo = [59.907657562789446, 10.772765099423395];
-    const stockholm = [59.3293, 18.0686];
-    const stavanger = [58.96956842492558, 5.735700010074111];
-    const bergen = [60.3913, 5.3221];
+    const cities = {
+      oslo: [59.907657562789446, 10.772765099423395],
+      stockholm: [59.3293, 18.0686],
+      stavanger: [58.96956842492558, 5.735700010074111],
+      bergen: [60.3913, 5.3221],
+    };
 
-    // Marker icons
-    const CasualIcon = "https://foodstalker.b-cdn.net/CasualMarker.svg";
-    const RestaurantIcon = "https://foodstalker.b-cdn.net/restaurantMarker.svg";
-    const DrinksIcon = "https://foodstalker.b-cdn.net/DrinkMarker.svg";
-    const LogoMarker = "https://foodstalker.b-cdn.net/logoMarker.svg";
+    const icons = {
+      CasualIcon: "https://foodstalker.b-cdn.net/CasualMarker.svg",
+      RestaurantIcon: "https://foodstalker.b-cdn.net/restaurantMarker.svg",
+      DrinksIcon: "https://foodstalker.b-cdn.net/DrinkMarker.svg",
+      LogoMarker: "https://foodstalker.b-cdn.net/logoMarker.svg",
+    };
     // Default zoom
     const defaultZoom = 13;
 
     return {
-      center: oslo,
+      center: cities.oslo,
       zoom: defaultZoom,
       layers: {
         CartoDB_Voyager: {
@@ -124,10 +128,10 @@ export default {
         },
       },
       markers: foodmapMarkers,
-      drinkIconUrl: DrinksIcon,
-      restaurantIconUrl: RestaurantIcon,
-      casualIconUrl: CasualIcon,
-      logoMarkerUrl: LogoMarker,
+      drinkIconUrl: icons.DrinksIcon,
+      restaurantIconUrl: icons.RestaurantIcon,
+      casualIconUrl: icons.CasualIcon,
+      logoMarkerUrl: icons.LogoMarker,
       iconSize: [50, 52],
       iconAnchor: [16, 37],
       title: "The Foodstalkers",
@@ -137,42 +141,31 @@ export default {
       dateVisited: "2023-01-01",
       selectedCity: "Oslo", // Initial city
       defaultCity: "Oslo", // Default city when no city is selected
-      oslo: oslo,
-      stockholm: stockholm,
-      stavanger: stavanger,
-      bergen: bergen,
+      cities,
       isActive: false,
+      hidden: "hidden",
+      visible: "visible",
     };
   },
   methods: {
+    toLowerCase(str) {
+      return str.toLowerCase();
+    },
+
     toggleTheMap(isActive) {
-      // Update the isActive state when the toggleButton emits the event
       this.isActive = isActive;
+      if (!isActive) {
+        this.setTown(this.toLowerCase(this.selectedCity));
+      }
     },
     setTown(city) {
-      if (city === "Oslo") {
-        this.center = this.oslo;
-        this.$nextTick(() => {
-          this.zoom = this.defaultZoom;
-        });
-      } else if (city === "Stockholm") {
-        this.center = this.stockholm;
-        this.$nextTick(() => {
-          this.zoom = this.defaultZoom;
-        });
-      } else if (city === "Stavanger") {
-        this.center = this.stavanger;
-        this.$nextTick(() => {
-          this.zoom = this.defaultZoom;
-        });
-      } else if (city === "Bergen") {
-        this.center = this.bergen;
+      if (this.cities[city]) {
+        this.center = this.cities[city];
         this.$nextTick(() => {
           this.zoom = this.defaultZoom;
         });
       }
     },
-
     onMarkerClick(marker) {
       this.title = marker.title;
       this.imageUrl = marker.imageUrl;
@@ -183,29 +176,22 @@ export default {
       this.scrollToDescription();
     },
     categorizedMarkers(category) {
-      if (category === "Restaurant") {
-        return this.restaurantIconUrl;
-      } else if (category === "Casual") {
-        return this.casualIconUrl;
-      } else if (category === "Drinks") {
-        return this.drinkIconUrl;
-      }
-      return this.logoMarkerUrl;
+      const categoryIcons = {
+        Restaurant: this.restaurantIconUrl,
+        Casual: this.casualIconUrl,
+        Drinks: this.drinkIconUrl,
+      };
+      return categoryIcons[category] || this.logoMarkerUrl;
     },
     scrollToDescription() {
       // Find the target element by its id
       const targetElement = document.getElementById("foodmap-card");
 
       if (targetElement) {
-        // Calculate the offset based on the height you want
-        //const offset = 10; // Change this value to your desired offset
-
-        // Scroll to the target element with the offset
         targetElement.scrollIntoView({
           behavior: "smooth",
-          block: "start", // You can also use 'end' if you want to scroll to the bottom of the element
+          block: "start",
           inline: "nearest",
-          // offsetTop: offset, // Add the offset here
         });
       }
     },
@@ -302,5 +288,11 @@ input[type="radio"]:checked:after {
   content: "";
   display: inline-block;
   border: 1px solid var(--fs-pink-500);
+}
+.visible {
+  display: block;
+}
+.hidden {
+  display: none;
 }
 </style>
