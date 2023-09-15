@@ -2,7 +2,7 @@
   <a class="fs-small-cards" :href="href">
     <div class="fs-small-cards__container">
       <div class="fs-small-cards__image">
-        <img :src="image" alt="" />
+        <img :src="image" alt="" loading="lazy" />
       </div>
 
       <div class="fs-small-cards__text">

@@ -9,6 +9,7 @@
     </div>
 
     <hr />
+
     <!-- Loop through cities and create radio buttons -->
     <div class="map-cities">
       <label v-for="city in uniqueCities" :key="city">
@@ -23,43 +24,58 @@
     </div>
   </div>
 
-  <div class="foodstalker-map">
-    <l-map
-      ref="map"
-      v-model:zoom="zoom"
-      :center="center"
-      :use-global-leaflet="false"
-    >
-      <l-tile-layer
-        :url="layers.CartoDB_Voyager.url"
-        :attribution="layers.CartoDB_Voyager.attribution"
-        :options="layers.CartoDB_Voyager.options"
-        :marker="layers.CartoDB_Voyager.marker"
-        layer-type="base"
-        name="OpenStreetMap"
-      ></l-tile-layer>
-      <l-marker
-        v-for="marker in markers"
-        :key="marker.id"
-        :lat-lng.sync="marker.position"
-        @click="onMarkerClick(marker)"
+  <p>{{ toggleName }}</p>
+  <ToggleButton @setIsActive="toggleTheMap"></ToggleButton>
+  <template v-if="!isActive">
+    <div class="foodstalker-map">
+      <l-map
+        ref="map"
+        v-model:zoom="zoom"
+        :center="center"
+        :use-global-leaflet="false"
       >
-        <l-icon
-          :icon-size="iconSize"
-          :icon-anchor="iconAnchor"
-          :icon-url="categorizedMarkers(marker.category)"
-        />
-      </l-marker>
-    </l-map>
+        <l-tile-layer
+          :url="layers.CartoDB_Voyager.url"
+          :attribution="layers.CartoDB_Voyager.attribution"
+          :options="layers.CartoDB_Voyager.options"
+          :marker="layers.CartoDB_Voyager.marker"
+          layer-type="base"
+          name="OpenStreetMap"
+        ></l-tile-layer>
+        <l-marker
+          v-for="marker in markers"
+          :key="marker.id"
+          :lat-lng.sync="marker.position"
+          @click="onMarkerClick(marker)"
+        >
+          <l-icon
+            :icon-size="iconSize"
+            :icon-anchor="iconAnchor"
+            :icon-url="categorizedMarkers(marker.category)"
+          />
+        </l-marker>
+      </l-map>
+    </div>
+    <FoodMapDescription
+      id="foodmap-card"
+      :title="title"
+      :imageUrl="imageUrl"
+      :description="description"
+      :webPage="webPage"
+      :dateVisited="dateVisited"
+    ></FoodMapDescription>
+  </template>
+  <div v-else>
+    <div v-for="restaurant in filteredMarkers">
+      <FoodMapDescription
+        :title="restaurant.title"
+        :description="restaurant.description"
+        :imageUrl="restaurant.imageUrl"
+        :webPage="restaurant.webPage"
+        :dateVisited="restaurant.dateVisited"
+      ></FoodMapDescription>
+    </div>
   </div>
-  <FoodMapDescription
-    id="foodmap-card"
-    :title="title"
-    :imageUrl="imageUrl"
-    :description="description"
-    :webPage="webPage"
-    :dateVisited="dateVisited"
-  ></FoodMapDescription>
 </template>
 
 <script>
@@ -67,6 +83,8 @@ import "leaflet/dist/leaflet.css";
 import { LMap, LTileLayer, LMarker, LIcon } from "@vue-leaflet/vue-leaflet";
 import FoodMapDescription from "../components/FoodMapDescription.vue";
 import foodmapMarkers from "../data/food_map.json";
+import ToggleButton from "./ToggleButton.vue";
+import SmallCards from "./cards/SmallCards.vue";
 export default {
   components: {
     LMap,
@@ -74,6 +92,8 @@ export default {
     LMarker,
     LIcon,
     FoodMapDescription,
+    ToggleButton,
+    SmallCards,
   },
   data() {
     // Cities
@@ -121,9 +141,14 @@ export default {
       stockholm: stockholm,
       stavanger: stavanger,
       bergen: bergen,
+      isActive: false,
     };
   },
   methods: {
+    toggleTheMap(isActive) {
+      // Update the isActive state when the toggleButton emits the event
+      this.isActive = isActive;
+    },
     setTown(city) {
       if (city === "Oslo") {
         this.center = this.oslo;
@@ -196,6 +221,15 @@ export default {
         cities.add(cityName);
       }
       return Array.from(cities);
+    },
+    filteredMarkers() {
+      const filtered = this.markers.filter(
+        (marker) => marker.city === this.selectedCity
+      );
+      return filtered.sort((a, b) => a.city.localeCompare(b.city));
+    },
+    toggleName() {
+      return this.isActive ? "Vis som kart" : "Vis som liste";
     },
   },
 };
