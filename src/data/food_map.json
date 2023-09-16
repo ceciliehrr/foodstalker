@@ -252,5 +252,60 @@
     "webPage": "https://www.hoggormpizza.no/",
     "dateVisited": "August, 2018",
     "tags": ["casual", "pizza"]
+  },
+  {
+    "position": [59.88471351296411, 10.722380646021357],
+    "city": "Oslo",
+    "title": "Gressholmen kro",
+    "description": "Er du som oss som digger en dag på svaberg om sommeren, duppe i havet og lese en bok? Hva med å avslutte dagen med loff, reker og en kald pils mens håret tørker i sola? Gressholmen kro serverer akkurat det du har lyst på etter en sånn sommerdag, en liten perle i Oslofjorden om sommeren. Hit kan du ta båten ut med ruterbilletten! ",
+    "category": "Casual",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_8719.jpg",
+    "webPage": "https://www.gressholmenkro.no/",
+    "dateVisited": "Juli, 2023",
+    "tags": ["casual", "reker", "uteservering", "lunsj", "brunsj", "middag"]
+  },
+  {
+    "position": [59.91443183578802, 10.751583544175565],
+    "city": "Oslo",
+    "title": "Himkok",
+    "description": "Er du gira på velbalanserte og digge drinker? Himkok er stedet. Ikke drikk for mange...",
+    "category": "Drinks",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/20210806_191100.jpg",
+    "webPage": "https://www.himkok.no/",
+    "dateVisited": "Oktober, 2022",
+    "tags": ["drinker", "bar"]
+  },
+  {
+    "position": [59.92113467053003, 10.749552707383163],
+    "city": "Oslo",
+    "title": "Chez Colin",
+    "description": "Denne restauranten ligger i en gate med mye spennende konsepter i mat og drikkeverden. Chez Colin er en hyggelig liten uhøytidelig fransk restaurant. Vi valgte hver vår 3 retters med vinpakke. Forretten var virkelig en høydare, en av de beste fiskesuppene vi har smakt! Petter gikk for kjøtt, Cecilie fisk til hovedrett. Rause og gode posjoner. Burde kanskje stoppet der, men Cecilie ville ha sin favoritt dessert, nemlig sitronterte med marengs. Fantastisk! Chez Colin anbefales, men Le Benjamin er fortsatt vår favoritt franske bistro.",
+    "category": "Restaurant",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/20210806_181200.jpg",
+    "webPage": "https://www.chezcolin.no/",
+    "dateVisited": "August, 2022",
+    "tags": ["smart casual", "fransk"]
+  },
+  {
+    "position": [59.92347340197965, 10.77166527142706],
+    "city": "Oslo",
+    "title": "Szechuan Chengdu",
+    "description": "Dette er en veldig populær kinesisk restaurant, ofte full og mye liv. Dette fordi det er fantastisk autentisk god kinesisk mat. Men bestill fra den røde menyen, pliiis! Eller be servitøren om anbefalinger. Her er det lov å dele! Lokalet er typisk kinesisk, litt brun pub-preg, men med innslag av kinesisk krimskrams. Lave skuldre og forventningene til maten lavere, dermed blir man ekstra overrasket over kjærligheten som ligger i denne maten. Kos deg! ",
+    "category": "Restaurant",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/20220628_201459.jpg",
+    "webPage": "https://szechuanrestaurant.no/en/home/",
+    "dateVisited": "Juni, 2022",
+    "tags": ["casual", "kinesisk", "kina"]
+  },
+  {
+    "position": [59.91265361651851, 10.726617271417858],
+    "city": "Oslo",
+    "title": "Via Village Food Court",
+    "description": "Via Village er mathallen vi pleier å dra innom før en kinodate på Vika kino. Og når vi har lyst på krabbedumplingsene til Golden Chimp! Via Village er en mathall med mange ulike matboder, så her varierer kvaliteten også. Men mye bra å velge mellom. Spesielt Golden Chimp og empanadas fra De Mi Tierra.",
+    "category": "Casual",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_0064.jpg",
+    "webPage": "https://viavillage.no/",
+    "dateVisited": "August, 2023",
+    "tags": ["casual", "streetfood", "boder"]
   }
 ]
