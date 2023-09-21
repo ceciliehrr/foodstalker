@@ -272,7 +272,7 @@ export default {
   background-color: transparent;
   border: none;
   cursor: pointer;
-  color: black;
+  color: var(--fs-green-300);
   text-decoration: none;
   font-weight: 300;
   padding: 0.5rem;
