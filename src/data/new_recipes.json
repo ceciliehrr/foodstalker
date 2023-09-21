@@ -8792,6 +8792,10 @@
             "name": "hvitløk"
           },
           {
+            "quantity": "0.5 stk",
+            "name": "chili"
+          },
+          {
             "quantity": "2 stk",
             "name": "gulrøtter"
           },
@@ -8823,6 +8827,7 @@
             "quantity": "2 dl",
             "name": "kokosmelk"
           },
+
           {
             "quantity": "1 stk",
             "name": "lime"
@@ -8870,7 +8875,7 @@
       },
       {
         "title": "",
-        "description": "Finhakk hvitløk, gulrøtter, søtpotet og eple og ha i en beholder. Jo mindre terninger på grønnsakene jo raskere blir de kokt der ute i skogen."
+        "description": "Finhakk hvitløk, gulrøtter, søtpotet, chili og eple og ha i en beholder. Jo mindre terninger på grønnsakene jo raskere blir de kokt der ute i skogen."
       },
       {
         "title": "",
@@ -8878,7 +8883,7 @@
       },
       {
         "title": "Matlaging ute på tur:",
-        "description": "Smelt smør og varm olje i kjelen. Fres gul løk til den er blank og myk. Tilsett hvitløk, gulrøtter, søtpotet og eple. La alt frese under omrøring i ca 5 minutter."
+        "description": "Smelt smør og varm olje i kjelen. Fres gul løk til den er blank og myk. Tilsett hvitløk, chili, gulrøtter, søtpotet og eple. La alt frese under omrøring i ca 5 minutter."
       },
       {
         "title": "",
