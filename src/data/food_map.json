@@ -307,5 +307,27 @@
     "webPage": "https://viavillage.no/",
     "dateVisited": "August, 2023",
     "tags": ["casual", "streetfood", "boder"]
+  },
+  {
+    "position": [59.920158411082625, 10.743656007383162],
+    "city": "Oslo",
+    "title": "Rett i gapet",
+    "description": "Vi skulle ut å spise etter kinodate. Men etter å ha sett Triangle of sadness var det vanskelig å ha lyst på noe. En ting vi visste var at vi trengte litt bobler. Det ble en spontan tur til Rett i Gapet. Det var en hyggelig overraskelse med flere gode anbefalinger på både vin og bobler. I tillegg hadde de smårettet. Hyggelig liten vinbar! Anbefales!",
+    "category": "Drinks",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_4267.jpg",
+    "webPage": "http://www.rettigapet.no/",
+    "dateVisited": "Februar, 2023",
+    "tags": ["casual", "drinks", "vinbar", "lunsj", "brunsj"]
+  },
+  {
+    "position": [59.91448418429321, 10.767386082453433],
+    "city": "Oslo",
+    "title": "Golden Chimp",
+    "description": "I høstferien har flere restauranter i Oslo tilbud på 3,4,5-retters. Golden chimp hadde vi hørt mye om, og et steinkast fra oss på Grønland. I tillegg til høstferietilbudet gikk for for vinpakke med flere saker. Veldig spennende! Noe traff veldig bra, andre ikke helt vår favoritt. Men dumplings, det kan de absolutt. Vår favoritt og overraskende var dumplingsuppe. Suppe inni dumpling, digg! Det var travelt denne kvelden, vi var nok ikke alene om å slå til på et så bra tilbud så servicen var litt treg til tider. Men absolutt hyggelige folk som jobber her. Anbefales for vennegjengen! ",
+    "category": "Restaurant",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_7771.jpg",
+    "webPage": "https://www.thegoldenchimp.no/",
+    "dateVisited": "Oktober, 2022",
+    "tags": ["casual", "dumplings", "asiatisk"]
   }
 ]
