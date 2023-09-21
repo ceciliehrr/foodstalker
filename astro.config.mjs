@@ -7,6 +7,12 @@ export default defineConfig({
   integrations: [vue()],
   image: {
     domains: ["https://foodstalker.b-cdn.net"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "foodstalker.b-cdn.net",
+      },
+    ],
   },
   vite: {
     resolve: {
