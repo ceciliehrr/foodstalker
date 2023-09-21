@@ -174,7 +174,7 @@
     "imageUrl": "https://foodstalker.b-cdn.net/restauranter/20220423_174041.jpg",
     "webPage": "https://www.zz.pizza/",
     "dateVisited": "August, 2023",
-    "tags": ["casual", "pizza"]
+    "tags": ["casual", "pizza", "take away"]
   },
   {
     "position": [59.90675801851711, 10.768224053978646],
@@ -329,5 +329,35 @@
     "webPage": "https://www.thegoldenchimp.no/",
     "dateVisited": "Oktober, 2022",
     "tags": ["casual", "dumplings", "asiatisk"]
+  },
+  {
+    "position": [59.91323769943694, 10.745193296219075],
+    "city": "Oslo",
+    "title": "Cousins",
+    "description": "Cecilie har hatt sin arbeidsplass på Glassmagasinet i noen år, og naturlig nok har vi dratt innom denne koselige 'kantina'. Veldig god lunsj og hyggelige ansatte! Anbefales for en lunsj eller brunsj etter shoppingturen!",
+    "category": "Casual",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_7777.jpg",
+    "webPage": "https://cousins.no/",
+    "dateVisited": "Mai, 2023",
+    "tags": ["casual", "lunsj", "brunsj"]
+  },
+  {
+    "position": [59.90631435111539, 10.759572701372313],
+    "city": "Oslo",
+    "title": "Mike's corner",
+    "description": "Cecilie er Karpe-fan, så hjørnet til Mike er hennes favoritt-hjørne. En ordentlig amerikansk chicken parm er digg dagen derpå. Mike's har også en veldig fin uteservering, digg å ta seg en utepils.",
+    "category": "Casual",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_6726.JPG",
+    "webPage": "https://oslobukta.no/oppdag/mike-s-corner/",
+    "dateVisited": "Mai, 2023",
+    "tags": [
+      "casual",
+      "lunsj",
+      "brunsj",
+      "dagen derpå",
+      "søndag",
+      "take away",
+      "amerikansk"
+    ]
   }
 ]
