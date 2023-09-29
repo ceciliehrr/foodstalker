@@ -8827,7 +8827,6 @@
             "quantity": "2 dl",
             "name": "kokosmelk"
           },
-
           {
             "quantity": "1 stk",
             "name": "lime"
@@ -11468,11 +11467,13 @@
     "title": "Sopprisotto",
     "date": "2023-09-14",
     "category": "hverdag",
+    "vintipsnavn": "Delorme Cremant de Bourgogne Blanc de Noirs Brut",
+    "vintipsUrl": "https://www.vinmonopolet.no/Land/Frankrike/Burgund/Cr%C3%A9mant-de-Bourgogne/Delorme-Cremant-de-Bourgogne-Blanc-de-Noirs-Brut/p/9099801",
     "description": "En kjempegod sopprisotto med steinsopp, perfekt for høstens sanking!",
     "longDescription": "Denne sopprisottoen er velbalansert og har en nydelig smak! Vi lager den utenom sesong også med aromasopp. Kos deg!",
     "time": "1.5 time",
     "portions": "4",
-    "tips": "Denne lager vi hele året, og har ikke alltid tilgang til steinsopp så da lager vi den av aromasopp.",
+    "tips": "Denne lager vi hele året, og har ikke alltid tilgang til steinsopp så da lager vi den av aromasopp. ",
     "chef": "Eivind Hellstrøm",
     "tipsurl": "https://www.ark.no/produkt/boker/hobbyboker-og-fritid/hellstroms-gronne-hemmeligheter-9788248928287?",
     "ingredients": [
@@ -11598,5 +11599,208 @@
       }
     ],
     "keywords": ["sopp", "risotto", "høst", ""]
+  },
+  {
+    "id": "bringebærpai",
+    "imageurl": "https://foodstalker.b-cdn.net/2023/bringeb%C3%A6rpai/DSC00469.jpg",
+    "alt": "bringebærpai",
+    "title": "Bringebærpai",
+    "date": "2023-09-29",
+    "category": "søtt",
+    "vintipsnavn": "Innocent Bystander Victoria Moscato",
+    "vintipsUrl": "https://www.vinmonopolet.no/Land/Australia/Victoria/Innocent-Bystander-Victoria-Moscato-2021/p/117901",
+    "description": "Denne paien har vært igjennom mange revisjoner. Nå er den perfeksjonert til fingerspissene og den er fantastisk god! ",
+    "longDescription": "Dette er paien Petter imponerte undertegnede med i starten av vårt forhold. Det fungerte. Det går ikke en sommer uten denne paien på bordet. Om vi har tatt en tur i marka og plukket villbringebær bruker vi disse til geléen. Etter alle revisjonene er det lite snarveier igjen med denne paien, men det er lov å lage kjøpegelé og til nød kjøpesaus, men da er det nød!",
+    "time": "4 timer",
+    "portions": "8",
+    "tips": "Det er også mulig å gjøre denne med jordbær. Bytt ut bringebær med jordbær. Du kan også jukse, men smaken er selvfølgelig aller best når du lage alt fra bunnen av. \r\n Det er noen kritiske punkter i denne oppskriften, så følg den nøye og pass på temperaturer. Sett av god tid.",
+    "chef": "Pascal, Paul Hollywood, Sverre Sætre",
+    "tipsurl": "",
+    "ingredients": [
+      {
+        "title": "Mørdeig",
+        "ingredients": [
+          {
+            "quantity": "160 g",
+            "name": "kaldt meierismør"
+          },
+          {
+            "quantity": "1 klype",
+            "name": "salt"
+          },
+          {
+            "quantity": "100 g",
+            "name": "melis"
+          },
+          {
+            "quantity": "35 g",
+            "name": "mandelmel"
+          },
+          {
+            "quantity": "1 stk",
+            "name": "egg"
+          },
+          {
+            "quantity": "270 g",
+            "name": "hvetemel"
+          },
+          {
+            "quantity": "",
+            "name": ""
+          }
+        ]
+      },
+      {
+        "title": "Vaniljekrem",
+        "ingredients": [
+          {
+            "quantity": "1 stk",
+            "name": "vaniljestang"
+          },
+          {
+            "quantity": "2.5 dl",
+            "name": "H-melk"
+          },
+          {
+            "quantity": "0.75 dl",
+            "name": "kremfløte"
+          },
+          {
+            "quantity": "55 g",
+            "name": "sukker"
+          },
+          {
+            "quantity": "2 stk",
+            "name": "eggeplommer"
+          },
+          {
+            "quantity": "2 ss",
+            "name": "maisenna"
+          }
+        ]
+      },
+      {
+        "title": "Bringebærgelé",
+        "ingredients": [
+          {
+            "quantity": "250 g",
+            "name": "bringebær"
+          },
+          {
+            "quantity": "1.5 dl",
+            "name": "vann"
+          },
+          {
+            "quantity": "150 g",
+            "name": "sukker"
+          },
+          {
+            "quantity": "skvis av",
+            "name": "sitron"
+          },
+          {
+            "quantity": "6 plater",
+            "name": "gelatin"
+          }
+        ]
+      },
+      {
+        "title": "Montering",
+        "ingredients": [
+          {
+            "quantity": "300 g",
+            "name": "bringebær til topping"
+          }
+        ]
+      }
+    ],
+    "steps": [
+      {
+        "title": "Mørdeig",
+        "description": "Mål opp og ha alle ingrediensene i en foodprosessor (kjøkkenmaskin med kniver). Kjør sammen i ca 1.5 minutter, til deigen har samlet seg.\r\nPakk deigen inn i plastfolie og legg i kjøleskapet i minimum 2 timer."
+      },
+      {
+        "title": "",
+        "description": "Bruk en paiform i keramikk eller metall. Kjevle deigen til ca 2mm tykkelse. Legg deigen i paiformen og trykk den forsiktig ned i formen. Skjær av overflødig deig. Stikk mange hull i deigen med en gaffel. La deigen hvile i 1-2 timer i kjøleskapet."
+      },
+      {
+        "title": "",
+        "description": " Sett på ovnen 170 grader. Sett paiformen midt i ovnen i ca 45 minutter. Avkjøl på benken."
+      },
+      {
+        "title": "Vaniljekrem",
+        "description": "Ha 2 dl av H-melka, fløte og sukker i en kjele. Del vaniljestangen på langs og skrap ut frøene med den uskarpe enden av kniven. Ha frøene og hele vaniljestangen i kjelen.\r\nRør sammen og varm melkeblandinga til kokepunktet."
+      },
+      {
+        "title": "",
+        "description": "Visp sammen 0.5 dl H-melk og maisenna i en liten bolle. Visp inn eggeplommene i melka.  Visp inn 2/3 del av den varme melken, litt og litt i eggeblandinga. Det er viktig at det vispes inn litt av gangen ellers koagulerer egget. Hell alt tilbake i kjelen og la det koke opp, og deretter koke i ett minutt. Rør med vispa hele tiden."
+      },
+      {
+        "title": "",
+        "description": "Etter koking i ett minutt ta kjelen av varmen, ta ut vaniljestangen og ha vaniljekremen over i en bolle, dekk med plast og dytt plasten helt inntil kremen for da vil du unngå snærk. Sett i kjøleskapet til den er avkjølt."
+      },
+      {
+        "title": "Bringebærgelé",
+        "description": "Før du begynner på geléen må paideig og vaniljekrem være klart. Ha i vann og bær i en kjele. Varm sakte opp uten å røre(vi har den på 3 av 9 på vår komfyr), du må ikke røre hvis du vil ha en klar og fin gelé."
+      },
+      {
+        "title": "",
+        "description": "Når bærene har sluppet safta, og det er en klar saft i kjelen, sil safta opp i en annen kjele. Tilsett sukker. Varm opp på middels varme, rør til sukkeret har løst seg helt opp. (du ser ikke lenger noe sukkerkorn) Smak saften til med en skvis sitron, og eventuelt mer sukker om du vil ha den søtere.\r\n"
+      },
+      {
+        "title": "",
+        "description": "Mens du løser opp sukker, legg gelatinen i en bolle med iskaldt vann. Når alt sukker er borte, klem vannet ut av gelatinen og rør den i safta. Rør godt til gelatinen er helt oppløst. Hell i saften i en bolle og avkjøl i kjøleskapet. Ta den ut før den stivner, den skal ikke være varm men avkjølt. "
+      },
+      {
+        "title": "Montering",
+        "description": "Ta frem den avkjølte paibunnen og vaniljekremen. Dekk hele bunnen med vaniljekrem med en slikkepott. Fyller du for mye vil det ikke bli plass til resten. (se bilde nederst).\r\n"
+      },
+      {
+        "title": "",
+        "description": "Skyll bringebær. Legg bringebærene på vaniljekremen i et fint mønster. Når geléen er avkjølt men fortsatt rennende, bruk en spiseskje og legg saus forsiktig imellom bærene. Pass på så det ikke renner over kanten. Ha kaken i kjøleskap. Den er klar når geléen har stivna. Enjoy!"
+      }
+    ],
+    "images": [
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2023/bringeb%C3%A6rpai/DSC00485.jpg",
+        "alt": "pai"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2023/bringeb%C3%A6rpai/DSC00469.jpg",
+        "alt": "pai på bordet"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2023/bringeb%C3%A6rpai/DSC00903.jpg",
+        "alt": "vaniljekrem i pai"
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2023/bringeb%C3%A6rpai/DSC00968.jpg",
+        "alt": "jordbærpai"
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2023/bringeb%C3%A6rpai/DSC00905.jpg",
+        "alt": "vaniljekrem"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2023/bringeb%C3%A6rpai/DSC00907.jpg",
+        "alt": "bærgelé"
+      }
+    ],
+    "keywords": [
+      "søtt",
+      "dessert",
+      "pai",
+      "bringebær",
+      "sommerpai",
+      "mørdeig",
+      "vaniljekrem",
+      "gelé"
+    ]
   }
 ]
