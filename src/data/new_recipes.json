@@ -11798,5 +11798,118 @@
       "vaniljekrem",
       "gelé"
     ]
+  },
+  {
+    "id": "gulrotsuppe",
+    "imageurl": "https://foodstalker.b-cdn.net/2023/gulrotsuppe/DSC01803.jpg",
+    "alt": "gulrotsuppe",
+    "title": "Gulrotsuppe",
+    "date": "2023-09-29",
+    "category": "hverdag",
+    "description": "Gulrotsuppe er en favoritt i hverdagen om høsten da vi får hjemmedyrka gulrøtter fra Heistadmoen. Topp med din favoritt sprø topping så har du hverdagsluksus på en mandag.",
+    "longDescription": "På høsten er vi på slang hos familie på Heistadmoen for å ta ferske gulrøtter rett fra jorda! Ingenting smaker bedre enn hjemmedyrka grønnsaker. Denne suppa kan altså endre seg fra gang til gang, spørs på hva vi har i kjøleskapet. Men grunnoppskriften er ganske lik. Du må lage en suppe med riktig konsistens og du må toppe den med noe knasende! Det skal smake søtt, salt, sterkt og syrlig.",
+    "time": "30 minutter",
+    "portions": "4",
+    "tips": "Hvis du har fløte eller rømmerester i kjøleskapet kan du jevne suppa med det. Server med et godt brød eller <a href=\"/oppskrift/eltefrie-rundstykker\">eltefrie rundstykker</a>",
+    "chef": "",
+    "tipsurl": "",
+    "ingredients": [
+      {
+        "title": "",
+        "ingredients": [
+          {
+            "quantity": "1 kg",
+            "name": "gulrot"
+          },
+          {
+            "quantity": "1 stk",
+            "name": "gul løk"
+          },
+          {
+            "quantity": "4 fedd",
+            "name": "hvitløk"
+          },
+          {
+            "quantity": "ca 1 liter",
+            "name": "kylling/grønnsakskraft"
+          },
+          {
+            "quantity": "smak til",
+            "name": "salt og pepper(eller kayennepepper)"
+          }
+        ]
+      },
+      {
+        "title": "Topping",
+        "ingredients": [
+          {
+            "quantity": "",
+            "name": "chorizo, bacon, spekeskinke, rista gresskarkjerner, chiliolje, chiliflak, frisk koriander/kruspersille, små regnbuegulrøtter osv..."
+          }
+        ]
+      }
+    ],
+    "steps": [
+      {
+        "title": "Suppa",
+        "description": "Kutt løk og hvitløk. Vask og rens gulrøtter og kutt dem i grove biter. Stek løken til den er blank i litt olivenolje, gjerne i kjele. Ha i gulrøtter og hvitløk og stek dette sammen med løken i ett par minutter. Ha over kraft så det akkurat dekker grønnsakene."
+      },
+      {
+        "title": "",
+        "description": "Kok opp og la det koke under lokk til gulrøttene er helt møre. Det tar ca 20-30 minutter, spørs på tykkelsen på bitene. "
+      },
+      {
+        "title": "",
+        "description": "Imens gulrøttene koker kan du steke topping. Litt crunch er viktig, men hva slags topping kan du bestemme selv. Hvis vi har litt chorizo til overs steker vi biter av dette i nøytral olje(raps eller solsikke). Da får du gratis chorizoolje fra stekeoljen som du kan toppe suppa med. Eller/og du kan steke noen små regnbuegulrøtter til de er møre med litt tyggemotstand.\r\n"
+      },
+      {
+        "title": "",
+        "description": "Når gulrøttene er møre kjør med stavmikser. Smak til med salt og pepper eller en klype kayennepepper om du har. Hvis den er for tykk kan du spe den med det du har for hånden, kraft, fløte, melk, rømme eller vann. "
+      },
+      {
+        "title": "",
+        "description": "Ha suppa i skåler. Topp med den stekte toppingen og chiliolje. "
+      }
+    ],
+    "images": [
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2023/gulrotsuppe/DSC01814.jpg",
+        "alt": "gulrotsuppe i skål"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2023/gulrotsuppe/20220828_192013.jpg",
+        "alt": "gulrøtter i hage"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2023/gulrotsuppe/DSC01803.jpg",
+        "alt": "gulrotsuppe"
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2023/gulrotsuppe/DSC01814.jpg",
+        "alt": "gulrotsuppe ferdig "
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2023/gulrotsuppe/DSC01814.jpg",
+        "alt": "gulrotsuppe"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2023/gulrotsuppe/IMG_2069.jpg",
+        "alt": "gulrøtter på bord"
+      }
+    ],
+    "keywords": [
+      "suppe",
+      "gulrot",
+      "gulrøtter",
+      "høst",
+      "hverdagsmat",
+      "middag"
+    ]
   }
 ]
