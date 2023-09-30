@@ -11911,5 +11911,273 @@
       "hverdagsmat",
       "middag"
     ]
+  },
+  {
+    "id": "vegetartaco",
+    "imageurl": "https://foodstalker.b-cdn.net/2023/vegetartaco/DSC01968.jpg",
+    "alt": "vegetartaco",
+    "title": "Vegetartaco",
+    "date": "2023-09-30",
+    "category": "helg",
+    "vintipsnavn": "Mold Sider Etterstad",
+    "vintipsUrl": "https://www.vinmonopolet.no/Land/Norge/Oslo/Mold-Sider-Etterstad/p/15368101",
+    "description": "Hver dag er en tacodag, spesielt når det kan gjøres så enkelt og så godt! ",
+    "longDescription": "Vår <a href='/oppskrift/taco-med-svinenakke'>favoritt-taco med svinenakke</a> og <a href='/oppskrift/tacokrydder'>hjemmelaget tacokrydder</a> er fantastisk, men det tar jo litt tid med dette kjøttet. Hva med å lage en rask vegetarvariant? Gjør deg klar til tacofest i en fei! Eller.. raskest om du kjøper tortillalefser(av mais)! Det er vel lov i hverdagens kjas og mas!",
+    "time": "1 time",
+    "portions": "4",
+    "tips": "Om du ikke har tid eller lyst til å lage tortillalefser selv så kan vi anbefale å kjøpe tortillalefser av maismel! Halvtørr sider fra for eksempel Mold er bra til litt sterke smaker!",
+    "chef": "Lise Finckenhagen",
+    "tipsurl": "https://www.instagram.com/lisefinckenhagen/?hl=nb",
+    "ingredients": [
+      {
+        "title": "Bønner",
+        "ingredients": [
+          {
+            "quantity": "6 dl",
+            "name": "sorte eller brune bønner"
+          },
+          {
+            "quantity": "1 stk",
+            "name": "gul løk"
+          },
+          {
+            "quantity": "3 fedd",
+            "name": "hvitløk"
+          },
+          {
+            "quantity": "2-3 ss",
+            "name": "<a href='/oppskrift/tacokrydder'>hjemmelaget tacokrydder</a>"
+          },
+          {
+            "quantity": "1-2 ss",
+            "name": "sriracha"
+          },
+          {
+            "quantity": "2 ss",
+            "name": "tomatpuré"
+          },
+          {
+            "quantity": "2 ts",
+            "name": "akasie honning"
+          },
+          {
+            "quantity": "0.5 dl",
+            "name": "vann"
+          },
+          {
+            "quantity": "1 bunt",
+            "name": "fersk koriander"
+          },
+          {
+            "quantity": "",
+            "name": "salt og pepper"
+          },
+          {
+            "quantity": "",
+            "name": "olje til steking"
+          }
+        ]
+      },
+      {
+        "title": "Chipotlemajones",
+        "ingredients": [
+          {
+            "quantity": "1 stor",
+            "name": "chipotle"
+          },
+          {
+            "quantity": "1 fedd",
+            "name": "hvitløk"
+          },
+          {
+            "quantity": "2 dl",
+            "name": "<a href='/oppskrift/majones'>majones</a>(bytt ut sriracha med hakket chipotle)"
+          },
+          {
+            "quantity": "smak til",
+            "name": "med sitron, salt og pepper"
+          }
+        ]
+      },
+      {
+        "title": "Mangosalsa",
+        "ingredients": [
+          {
+            "quantity": "1",
+            "name": "mango"
+          },
+          {
+            "quantity": "1 liten",
+            "name": "rødløk"
+          },
+          {
+            "quantity": "1 halv",
+            "name": "chili"
+          },
+          {
+            "quantity": "1 halv",
+            "name": "lime"
+          }
+        ]
+      },
+      {
+        "title": "Tomatsalsa",
+        "ingredients": [
+          {
+            "quantity": "ca 150 g",
+            "name": "cherrytomater"
+          },
+          {
+            "quantity": "1 fedd",
+            "name": "hvitløk"
+          },
+          {
+            "quantity": "en halv",
+            "name": "lime"
+          },
+          {
+            "quantity": "en halv",
+            "name": "chili"
+          },
+          {
+            "quantity": "1 liten",
+            "name": "rødløk"
+          },
+          {
+            "quantity": "klunk",
+            "name": "olivenolje"
+          },
+          {
+            "quantity": "",
+            "name": "koriander"
+          }
+        ]
+      },
+      {
+        "title": "Tortillalefser med maismel",
+        "ingredients": [
+          {
+            "quantity": "350 g",
+            "name": "maseca mel"
+          },
+          {
+            "quantity": "5 dl",
+            "name": "vann"
+          },
+          {
+            "quantity": "1 klype",
+            "name": "salt"
+          }
+        ]
+      },
+      {
+        "title": "Annet tilbehør",
+        "ingredients": [
+          {
+            "quantity": "",
+            "name": "mer koriander, sriracha, fersk chili fetaost, limebåter, eller annet tilbehør du syns er digg!"
+          }
+        ]
+      }
+    ],
+    "steps": [
+      {
+        "title": "Chipotlemajones",
+        "description": "Legg chipotle i en skål og hell over kokende vann så den dekker chipotlen."
+      },
+      {
+        "title": "",
+        "description": "Når chipotlen er myk, etter ca 20 minutter, finhakk den og ha den i majones sammen med finhakket hvitløk. Om du lager majones selv bytter du ut sriracha med grovhakka chipotle og mikser det sammen med de andre majonesingrediensene. Smak til med sitron, salt og pepper. La stå å i kjøleskap frem til servering."
+      },
+      {
+        "title": "Mangosalsa",
+        "description": "Kutt mango i små terninger. Finhakk rødløk, rens chili for frø og finhakk, grovhakk koriander. Bland mango, chili, rødløk og koriander i en bolle. Smak til med olivenolje og lime."
+      },
+      {
+        "title": "Tomatsalsa",
+        "description": "Kutt tomatene i 4, legg dem i en bolle, og ha i en klype salt. Tilsett finhakket hvitløk. La dette stå i noen minutter for å marinere seg. Tilsett finhakket renset chili, koriander og rødløk. Smak til med olivenolje og lime. Synes du den er for syrlig, tilsett litt sukker."
+      },
+      {
+        "title": "Tortillalefser",
+        "description": "Mål opp maismel i en bolle. Tilsett en klype salt. Hell i vann til du får riktig konsistens. Her gjelder det å føle seg frem, siden maismel gjør at konsistensen blir porøs og ikke elastisk som mel. Riktig konsistens er når du klarer å rulle små boller av den."
+      },
+      {
+        "title": "",
+        "description": "Sett på tørr stekepanne på høy varme."
+      },
+      {
+        "title": "",
+        "description": "Rull en liten bolle på størrelsen med en golfball. Press ballen til en flat rund pannekake, her er det best å bruke en presse. Hvis du ikke har tortillapresse kan du bruke en kjele. En kjevle duger altså ikke med maismel."
+      },
+      {
+        "title": "",
+        "description": "Stek lefsa 1-2 minutter på hver side. Mens du steker lefse ruller du og presser en ny."
+      },
+      {
+        "title": "",
+        "description": "Server tortillalefse med kjøtt, salsa og revet fetaost."
+      },
+      {
+        "title": "Bønner",
+        "description": "Sil av bønner og skyll de godt. La de stå og renne av seg vannet"
+      },
+      {
+        "title": "",
+        "description": "Finhakk løk og hvitløk. Stek løk til den blir gylden, ha i hvitløk mot slutten."
+      },
+      {
+        "title": "",
+        "description": "Tilsett tacokrydder, bland godt og la det frese videre i ett minutt."
+      },
+      {
+        "title": "",
+        "description": "Tilsett sriracha, tomatpuré, honning og vann. Gi det et skikkelig oppkok under omrøring."
+      },
+      {
+        "title": "",
+        "description": "Tilsett bønnene og la det småputre i et par-tre minutter. Hvis det blir for tørt, tilsett mer vann."
+      },
+      {
+        "title": "",
+        "description": "Smak til med salt og pepper, og bland til slutt inn hakket koriander."
+      },
+      {
+        "title": "",
+        "description": "Ha frem chipotlemajones, mangosalsa, tomatsalsa, fetaost, sriracha, chili, koriander, lime "
+      }
+    ],
+    "images": [
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2023/vegetartaco/DSC01907.jpg",
+        "alt": "sorte bønner"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2023/vegetartaco/DSC01915.jpg",
+        "alt": "løk og tomatpurè i kjele"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2023/vegetartaco/DSC01917.jpg",
+        "alt": "mangosalsa i skål"
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2023/vegetartaco/DSC01910.jpg",
+        "alt": "ingredienser"
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2023/vegetartaco/DSC01925.jpg",
+        "alt": "koriander og løkblanding i kjele"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2023/vegetartaco/DSC01961.jpg",
+        "alt": "taco i tortillalefse"
+      }
+    ],
+    "keywords": ["taco", "vegetar", "pescetar", "fest", "hverdagsmat", "bønner"]
   }
 ]
