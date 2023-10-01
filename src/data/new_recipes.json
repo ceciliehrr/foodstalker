@@ -4255,10 +4255,10 @@
     "date": "2021-03-31",
     "category": "helg",
     "description": "Langtidsstekt svinenakke i tacokrydder med hjemmelaget tortillalefser.",
-    "longDescription": "Cecilie er ikke så glad i tacofredag, sjokkerende! Så hvordan lager man taco til den tacokresne? Jo man eksperimenterer. Det er ikke mulig å ikke like tacofredag, vel?? <br><br> Etter en del tacofredag-forskning har vi konkludert med at taco ikke er godt nok før den inkluderer minimum langtidsstekt kjøtt med vår tacokrydder spessial, hjemmelaga tortillalefser og salsa, med mango.<br><br> Denne oppskriften kan serveres med alt digg du kan tenke deg til taco. Om høsten går vi på Jalapeño-slang hos <a href='https://www.instagram.com/brukshagen_pa_landet/'>Linda</a> som vi sylter på glass og serverer til tacoen.<br> Ønsker du en vegetarversjon, bytt ut kjøtt med bønneoppskriften.",
+    "longDescription": "Cecilie er ikke så glad i tacofredag, sjokkerende! Så hvordan lager man taco til den tacokresne? Jo man eksperimenterer. Det er ikke mulig å ikke like tacofredag, vel?? <br><br> Etter en del tacofredag-forskning har vi konkludert med at taco ikke er godt nok før den inkluderer minimum langtidsstekt kjøtt med vår tacokrydder spessial, hjemmelaga tortillalefser og salsa, med mango.<br><br> Denne oppskriften kan serveres med alt digg du kan tenke deg til taco. Om høsten går vi på Jalapeño-slang hos <a href='https://www.instagram.com/brukshagen_pa_landet/'>Linda</a> som vi sylter på glass og serverer til tacoen.<br> Ønsker du en <a href='/oppskrift/vegetartaco'>vegetarversjon har vi oppskrift for det også her.</a>",
     "time": "7 timer",
     "portions": "4",
-    "tips": "Lag egen tacokrydder. Du finner oppskrift på <a href='/oppskrift/tacokrydder'>hjemmelaget tacokrydder her.</a> Du kan også Google tacokrydder eller spørre oss om vi har noe på lager.<br><br> For vegetarversjon bytt ut kjøtt med bønneoppskriften <br><br>Denne oppskriften er laga på erfaringer vi har opparbeida oss. Vi kan også nevne at erfaringen handler mye om TV-titting,  og Ole Martin Alfsen.",
+    "tips": "Lag egen tacokrydder. Du finner oppskrift på <a href='/oppskrift/tacokrydder'>hjemmelaget tacokrydder her.</a> Om du ikke har/finner alle ingredienser som skal til for å lage vårt tacokrydder er det mulig å sløyfe dem, det er garantert bedre enn tacoblandingen fra butikken. Du kan også Google tacokrydder eller spørre oss om vi har noe på lager.<br><br>Denne oppskriften er laga på erfaringer vi har opparbeida oss. Vi kan også nevne at erfaringen handler mye om TV-titting,  og Ole Martin Alfsen.",
     "chef": "Cecilie og Pete og Ole Martin Alfsen",
     "tipsurl": "",
     "ingredients": [
@@ -4296,7 +4296,7 @@
           },
           {
             "quantity": "smak til",
-            "name": "med sitron, salt og pepper"
+            "name": "med lime, salt og pepper"
           }
         ]
       },
@@ -4374,55 +4374,6 @@
             "name": "annen tilbehør du liker. For eksempel smuldret ren fetaost. Mais. Sriracha. o.s.v"
           }
         ]
-      },
-      {
-        "title": "Vegetarversjon",
-        "ingredients": [
-          {
-            "quantity": "6 dl",
-            "name": "brune eller sorte bønner"
-          },
-          {
-            "quantity": "1 stk",
-            "name": "løk"
-          },
-          {
-            "quantity": "3 fedd",
-            "name": "hvitløk"
-          },
-          {
-            "quantity": "2-3 ss",
-            "name": "<a href='/oppskrift/tacokrydder'>hjemmelaget tacokrydder</a>"
-          },
-          {
-            "quantity": "1-2 ss",
-            "name": "sriracha"
-          },
-          {
-            "quantity": "1 ss",
-            "name": "tomatpuré"
-          },
-          {
-            "quantity": "2 ts",
-            "name": "honning"
-          },
-          {
-            "quantity": "0.5 dl",
-            "name": "vann"
-          },
-          {
-            "quantity": "1 bunt",
-            "name": "fersk koriander"
-          },
-          {
-            "quantity": "salt og pepper",
-            "name": ""
-          },
-          {
-            "quantity": "olje til steking",
-            "name": ""
-          }
-        ]
       }
     ],
     "steps": [
@@ -4473,30 +4424,6 @@
       {
         "title": "",
         "description": "Server tortillalefse med kjøtt, salsa og revet fetaost."
-      },
-      {
-        "title": "Vegetarversjon",
-        "description": "Sil av bønner og skyll de godt. La de stå og renne av seg vannet"
-      },
-      {
-        "title": "",
-        "description": "Finhakk løk og hvitløk. Stek løk til den blir gylden, ha i hvitløk mot slutten."
-      },
-      {
-        "title": "",
-        "description": "Tilsett tacokrydder, bland godt og la det frese videre i ett minutt."
-      },
-      {
-        "title": "",
-        "description": "Tilsett sriracha, tomatpuré, honning og vann. Gi det et skikkelig oppkok under omrøring."
-      },
-      {
-        "title": "",
-        "description": "Tilsett bønnene og la det småputre i et par-tre minutter. Hvis det blir for tørt, tilsett mer vann."
-      },
-      {
-        "title": "",
-        "description": "Smak til med salt og pepper, og bland til slutt inn hakket koriander."
       }
     ],
     "images": [
@@ -11922,10 +11849,10 @@
     "vintipsnavn": "Mold Sider Etterstad",
     "vintipsUrl": "https://www.vinmonopolet.no/Land/Norge/Oslo/Mold-Sider-Etterstad/p/15368101",
     "description": "Hver dag er en tacodag, spesielt når det kan gjøres så enkelt og så godt! ",
-    "longDescription": "Vår <a href='/oppskrift/taco-med-svinenakke'>favoritt-taco med svinenakke</a> og <a href='/oppskrift/tacokrydder'>hjemmelaget tacokrydder</a> er fantastisk, men det tar jo litt tid med dette kjøttet. Hva med å lage en rask vegetarvariant? Gjør deg klar til tacofest i en fei! Eller.. raskest om du kjøper tortillalefser(av mais)! Det er vel lov i hverdagens kjas og mas!",
+    "longDescription": "Vår <a href='/oppskrift/taco-med-svinenakke'>favoritt-taco med svinenakke</a> og <a href='/oppskrift/tacokrydder'>hjemmelaget tacokrydder</a> er fantastisk, men det tar jo litt tid med dette kjøttet. Hva med å lage en rask vegetarvariant? Gjør deg klar til tacofest i en fei! Eller.. det går raskest om du kjøper tortillalefser(av mais)! Det er vel lov i hverdagens kjas og mas! Om du ikke har/finner alle ingredienser som skal til for å lage vårt tacokrydder er det mulig å sløyfe dem, det er garantert bedre enn tacoblandingen fra butikken.",
     "time": "1 time",
     "portions": "4",
-    "tips": "Om du ikke har tid eller lyst til å lage tortillalefser selv så kan vi anbefale å kjøpe tortillalefser av maismel! Halvtørr sider fra for eksempel Mold er bra til litt sterke smaker!",
+    "tips": "Om du ikke har tid eller lyst til å lage tortillalefser selv så kan vi anbefale å kjøpe tortillalefser av maismel. \r\n Drikke? Halvtørr sider fra for eksempel Mold er bra til litt sterke smaker! \r\n  ",
     "chef": "Lise Finckenhagen",
     "tipsurl": "https://www.instagram.com/lisefinckenhagen/?hl=nb",
     "ingredients": [
@@ -11950,7 +11877,7 @@
           },
           {
             "quantity": "1-2 ss",
-            "name": "sriracha"
+            "name": "<a href='/oppskrift/sriracha'>sriracha</a>, kan også kjøpes i vanlige butikker"
           },
           {
             "quantity": "2 ss",
@@ -11995,7 +11922,7 @@
           },
           {
             "quantity": "smak til",
-            "name": "med sitron, salt og pepper"
+            "name": "med lime, salt og pepper"
           }
         ]
       },
@@ -12075,7 +12002,7 @@
         "ingredients": [
           {
             "quantity": "",
-            "name": "mer koriander, sriracha, fersk chili fetaost, limebåter, eller annet tilbehør du syns er digg!"
+            "name": "mer koriander, sriracha, fersk chili fetaost, limebåter, jalapeño, eller annet tilbehør du syns er digg!"
           }
         ]
       }
