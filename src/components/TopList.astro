@@ -5,7 +5,7 @@ import SmallCards from "./cards/SmallCards.vue";
 const { recipes } = Astro.props;
 
 const data = await fetch(
-  `https://plausible.io/api/v1/stats/breakdown?site_id=foodstalker.no&period=30d&property=event:page&limit=6`,
+  `https://plausible.io/api/v1/stats/breakdown?site_id=foodstalker.no&period=30d&property=event:page&limit=10`,
   {
     method: "GET",
     headers: {
@@ -15,26 +15,44 @@ const data = await fetch(
 );
 
 const pages = await data.json();
-const filteredPages = pages.results
+
+const recipeIdRegex = /^\/oppskrift\/([^/]+)/;
+
+// Extract recipe IDs and visitors
+const recipesData = pages.results
   .filter((page) => page.page.startsWith("/oppskrift/"))
-  .map((page) => ({
-    id: page.page.slice("/oppskrift/".length, -1),
-    visitors: page.visitors,
-  }));
+  .map((page) => {
+    const match = page.page.match(recipeIdRegex);
+    if (match) {
+      const id = match[1]; // Extract the recipe ID from the URL
+      return {
+        id,
+        visitors: parseInt(page.visitors),
+      };
+    }
+    return null;
+  })
+  .filter((page) => page !== null);
 
-const sortedPages = filteredPages.sort((a, b) => b.visitors - a.visitors);
-const topFivePages = sortedPages.slice(0, 5);
-const recipeIds = topFivePages.map((page) => page.id);
+// Sort recipes by visitors in descending order
+recipesData.sort((a, b) => b.visitors - a.visitors);
 
-const topFiveSorted = recipes
-  .filter((recipe) => recipeIds.includes(recipe.id))
-  .reverse();
+// Take the top 5 recipes
+const topFiveRecipes = recipesData.slice(0, 5);
+
+// Extract recipe IDs
+const recipeIds = topFiveRecipes.map((recipe) => recipe.id);
+
+// Filter recipes based on the top 5 IDs
+const sortedRecipes = recipeIds.map((id) =>
+  recipes.find((recipe) => recipe.id === id)
+);
 ---
 
 {
-  topFiveSorted ? (
+  sortedRecipes.length > 0 ? (
     <ul>
-      {topFiveSorted.map((page) => (
+      {sortedRecipes.map((page) => (
         <li>
           <SmallCards
             title={page.title}
