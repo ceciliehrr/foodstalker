@@ -11,7 +11,7 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-
+src/components/colors.vue
 # environment variables
 .env
 .env.local
