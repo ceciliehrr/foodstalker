@@ -4,6 +4,8 @@ import Divider from "./Divider.astro";
 import SmallCards from "./cards/SmallCards.vue";
 const { recipes } = Astro.props;
 
+export const prerender = false;
+
 const data = await fetch(
   `https://plausible.io/api/v1/stats/breakdown?site_id=foodstalker.no&period=30d&property=event:page&limit=10`,
   {
