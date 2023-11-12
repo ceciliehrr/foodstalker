@@ -88,8 +88,8 @@ export default {
         const description = recipe.description
           ? recipe.description.toLowerCase()
           : "";
-        const keywords = recipe.keyword
-          ? recipe.keyword.map((k) => k.toLowerCase())
+        const keywords = recipe.keywords
+          ? recipe.keywords.map((k) => k.toLowerCase())
           : [];
 
         return (

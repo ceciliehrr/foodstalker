@@ -130,7 +130,7 @@
         "alt": "koteletter og grønn salat med digg saus på en hvit tallerken"
       }
     ],
-    "keyword": ["kjøtt", "kotelett", "salat", "sunn", "svin", "gris"]
+    "keywords": ["kjøtt", "kotelett", "salat", "sunn", "svin", "gris"]
   },
   {
     "id": "eltefrie-rundstykker",
@@ -255,7 +255,7 @@
         "alt": "stekte rundstykker"
       }
     ],
-    "keyword": [
+    "keywords": [
       "bakst",
       "frokost",
       "tilbehør",
@@ -432,7 +432,7 @@
         "alt": "Tørket chili hengende i en krok ved et vindu, med friske urter i potte i vinduskarmen"
       }
     ],
-    "keyword": ["kylling", "curry", "indisk", "satay", "kokosmelk"]
+    "keywords": ["kylling", "curry", "indisk", "satay", "kokosmelk"]
   },
   {
     "id": "pavlova",
@@ -570,7 +570,7 @@
         "alt": "pavlova med masse friske bær, rosa krem, sitronmelisse, stemorsblomster og dryss med melis"
       }
     ],
-    "keyword": [
+    "keywords": [
       "pavlova",
       "søtt",
       "kake",
@@ -757,7 +757,7 @@
         "alt": "nærbilde av nachos på en tallerken"
       }
     ],
-    "keyword": ["taco", "nachos", "fredag", "kjøttdeig", "meksikansk"]
+    "keywords": ["taco", "nachos", "fredag", "kjøttdeig", "meksikansk"]
   },
   {
     "id": "høyrygg-med-anis",
@@ -890,7 +890,7 @@
         "alt": "kutta ingefær"
       }
     ],
-    "keyword": [
+    "keywords": [
       "høyrygg",
       "kjøtt",
       "gryte",
@@ -1013,7 +1013,7 @@
         "alt": "dyp tallerken med knokesupp med et dryss persille på."
       }
     ],
-    "keyword": ["suppe", "gris", "grønnskaker", "sunt", "svin"]
+    "keywords": ["suppe", "gris", "grønnskaker", "sunt", "svin"]
   },
   {
     "id": "nakkekotelett-med-plommer",
@@ -1126,7 +1126,7 @@
         "alt": "Nakkekotelett med plommer og blåmuggeostsaus toppet med sylta rødløk på en tallerken."
       }
     ],
-    "keyword": [
+    "keywords": [
       "svin",
       "gris",
       "koteletter",
@@ -1274,7 +1274,7 @@
         "alt": "Kjele med kokt kokoskrem."
       }
     ],
-    "keyword": ["søtt", "dessert", "is", "mango", "kokos", "asiatisk"]
+    "keywords": ["søtt", "dessert", "is", "mango", "kokos", "asiatisk"]
   },
   {
     "id": "syltet-rødløk",
@@ -1375,7 +1375,7 @@
         "alt": "Løk i norgesglass med lokk etter oppbevaring i 2 uker."
       }
     ],
-    "keyword": ["sylte", "rask", "løk", "syltet", "sylting"]
+    "keywords": ["sylte", "rask", "løk", "syltet", "sylting"]
   },
   {
     "id": "nudler-med-kyllingkjøttdeig",
@@ -1532,7 +1532,7 @@
         "alt": "Kyllingkjøttdeig stekes i stekepanne."
       }
     ],
-    "keyword": [
+    "keywords": [
       "kylling",
       "thai",
       "peanøtter",
@@ -1681,7 +1681,7 @@
         "alt": "Kokende nudler i kjele"
       }
     ],
-    "keyword": ["rask", "fisk", "laks", "sunt", "pescetar"]
+    "keywords": ["rask", "fisk", "laks", "sunt", "pescetar"]
   },
   {
     "id": "one-pot-pasta-med-salciccia",
@@ -1794,7 +1794,7 @@
         "alt": "En hånd som river parmesan over pastaen."
       }
     ],
-    "keyword": ["pasta", "rask"]
+    "keywords": ["pasta", "rask"]
   },
   {
     "id": "entrecôte-med-soppsaus",
@@ -1952,7 +1952,7 @@
         "alt": "En skje heller over smør og olje over en stekende biff"
       }
     ],
-    "keyword": ["biff", "sopp", "entrecote"]
+    "keywords": ["biff", "sopp", "entrecote"]
   },
   {
     "id": "and-med-bringebær",
@@ -2143,7 +2143,7 @@
         "alt": "And på spinat med bringebærsaus og poteter på en hvit tallerken"
       }
     ],
-    "keyword": ["and", "fest", "selskap", "poteter", "kyllingkraft"]
+    "keywords": ["and", "fest", "selskap", "poteter", "kyllingkraft"]
   },
   {
     "id": "pepperkakeis",
@@ -2265,7 +2265,7 @@
         "alt": "Pepperkakeisrøre blir helt oppi en sil med en bolle under"
       }
     ],
-    "keyword": [
+    "keywords": [
       "is",
       "vaniljeis",
       "dessert",
@@ -2413,7 +2413,7 @@
         "alt": "Dyp skål med ferdig gulasjsuppe toppet med hakket bladpersille og en skive brød ved siden av"
       }
     ],
-    "keyword": ["suppe", "sunt", "potet", "høst", "grønnsaker"]
+    "keywords": ["suppe", "sunt", "potet", "høst", "grønnsaker"]
   },
   {
     "id": "dampet-torsk",
@@ -2567,7 +2567,7 @@
         "alt": "Skål med mangosalsa og en skål med soyablandingen"
       }
     ],
-    "keyword": ["fisk", "torsk", "skrei", "sunt", "bambus", "pescetar"]
+    "keywords": ["fisk", "torsk", "skrei", "sunt", "bambus", "pescetar"]
   },
   {
     "id": "bouf-bourgogne",
@@ -2749,7 +2749,7 @@
         "alt": "Bacon, tomatpurè, hvitløk og timian stekes i gryta"
       }
     ],
-    "keyword": [
+    "keywords": [
       "gryte",
       "biff burgund",
       "høyrygg",
@@ -2915,7 +2915,7 @@
         "alt": "Stekt pizza med salsiccia og granatepler"
       }
     ],
-    "keyword": ["italiensk", "pizzadeig", "pizzabunn"]
+    "keywords": ["italiensk", "pizzadeig", "pizzabunn"]
   },
   {
     "id": "tomatsaus",
@@ -3052,7 +3052,7 @@
         "alt": "Putrende tomatsaus på komfyren"
       }
     ],
-    "keyword": ["basis", "tomat", "bedre enn toro"]
+    "keywords": ["basis", "tomat", "bedre enn toro"]
   },
   {
     "id": "vannbakkels-med-sitronkrem",
@@ -3251,7 +3251,7 @@
         "alt": "Halvspist vannbakkels på tallerken med sitronkrem og marengs"
       }
     ],
-    "keyword": ["dessert", "kake", "sitron"]
+    "keywords": ["dessert", "kake", "sitron"]
   },
   {
     "id": "blomkålsuppe",
@@ -3368,7 +3368,7 @@
         "alt": "Blomkålsuppe i dyp skål med brød ved siden av"
       }
     ],
-    "keyword": [
+    "keywords": [
       "suppe",
       "blomkål",
       "vinter",
@@ -3500,7 +3500,7 @@
         "alt": "Bolle med ulike grønnsaker"
       }
     ],
-    "keyword": ["Kraft", "basis", "bedre enn toro"]
+    "keywords": ["Kraft", "basis", "bedre enn toro"]
   },
   {
     "id": "red-curry-paste",
@@ -3629,7 +3629,7 @@
         "alt": "Korianderfrø og svart kardemomme i en morter"
       }
     ],
-    "keyword": ["thailand", "thai", "curry", "paste", "chili"]
+    "keywords": ["thailand", "thai", "curry", "paste", "chili"]
   },
   {
     "id": "kyllingkraft",
@@ -3746,7 +3746,7 @@
         "alt": "Kokende kraft i en kjele"
       }
     ],
-    "keyword": [
+    "keywords": [
       "kraft",
       "kylling",
       "restemat",
@@ -3914,7 +3914,7 @@
         "alt": "Kylling med currysaus i skål, toppet med fritert nudler"
       }
     ],
-    "keyword": ["thailand", "thai", "kylling", "nudler", "kyllingkraft"]
+    "keywords": ["thailand", "thai", "kylling", "nudler", "kyllingkraft"]
   },
   {
     "id": "skrei-med-smørsaus",
@@ -4113,7 +4113,7 @@
         "alt": "Ferdig smørsaus med finhakket gressløk i en kjele og en ballongvisp"
       }
     ],
-    "keyword": [
+    "keywords": [
       "fisk",
       "torsk",
       "skrei",
@@ -4245,7 +4245,7 @@
         "alt": "Sitronpasta med scampi på tallerken med baguette ved siden av."
       }
     ],
-    "keyword": ["italiensk", "sjømat", "pasta", "scampi", "sitron", "hverdag"]
+    "keywords": ["italiensk", "sjømat", "pasta", "scampi", "sitron", "hverdag"]
   },
   {
     "id": "taco-med-svinenakke",
@@ -4458,7 +4458,7 @@
         "alt": "tortillalefser i klede"
       }
     ],
-    "keyword": [
+    "keywords": [
       "taco",
       "meksikansk",
       "svin",
@@ -4575,7 +4575,7 @@
         "alt": "Parmesan i en bolle på et utebord, med ruccolasalat i en bolle i bakgrunnen."
       }
     ],
-    "keyword": [
+    "keywords": [
       "grill",
       "krem",
       "parmesan",
@@ -4715,7 +4715,7 @@
         "alt": "Rødvinssaus over rødbeter og lammecarrè på en tallerken"
       }
     ],
-    "keyword": ["saus", "rødvin", "tilbehør", "lam"]
+    "keywords": ["saus", "rødvin", "tilbehør", "lam"]
   },
   {
     "id": "skalldyrkraft",
@@ -4844,7 +4844,7 @@
         "alt": "Fiskesuppe i skål"
       }
     ],
-    "keyword": ["skalldyr", "kraft", "reke", "fisk", "pescetar"]
+    "keywords": ["skalldyr", "kraft", "reke", "fisk", "pescetar"]
   },
   {
     "id": "cajun-kylling",
@@ -5035,7 +5035,7 @@
         "alt": "cajun kylling i turtallerken toppet med vårløk"
       }
     ],
-    "keyword": [
+    "keywords": [
       "turmat",
       "kylling",
       "pasta",
@@ -5163,7 +5163,7 @@
         "alt": "ferdigstekte hamburgerbrød med burger og parmesanchips"
       }
     ],
-    "keyword": ["hamburger", "brød", "bakst"]
+    "keywords": ["hamburger", "brød", "bakst"]
   },
   {
     "id": "parmesanchips",
@@ -5240,7 +5240,7 @@
         "alt": "nærbilde av stekt parmesanchips i en burger"
       }
     ],
-    "keyword": ["parmesan", "hamburger", "tilbehør", "snacks", "ost"]
+    "keywords": ["parmesan", "hamburger", "tilbehør", "snacks", "ost"]
   },
   {
     "id": "karamellisert-løk",
@@ -5329,7 +5329,7 @@
         "alt": "karamellisert løk i skål"
       }
     ],
-    "keyword": ["burger", "hamburger", "løk", "tilbehør"]
+    "keywords": ["burger", "hamburger", "løk", "tilbehør"]
   },
   {
     "id": "grilla-ørret",
@@ -5540,7 +5540,7 @@
         "alt": "ferdiggrillet ørret i folie"
       }
     ],
-    "keyword": [
+    "keywords": [
       "grillmat",
       "sjømat",
       "fisk",
@@ -5808,7 +5808,7 @@
         "alt": "pulled chicken med råkostsalat, myntedressing og pitabrød på en tallerken"
       }
     ],
-    "keyword": [
+    "keywords": [
       "kylling",
       "råkostsalat",
       "myntedressing",
@@ -5948,7 +5948,7 @@
         "alt": "nærbilde av skalldyrsalat i bolle med loff i bakgrunnen"
       }
     ],
-    "keyword": [
+    "keywords": [
       "skalldyr",
       "salat",
       "forrett",
@@ -6089,7 +6089,7 @@
         "alt": "Ferdigstekte kjøttboller i en haug"
       }
     ],
-    "keyword": ["italiensk", "kjøtt", "kjøttboller", "fryser"]
+    "keywords": ["italiensk", "kjøtt", "kjøttboller", "fryser"]
   },
   {
     "id": "grilla-svinefilet",
@@ -6264,7 +6264,7 @@
         "alt": "Grillet svinefile på et fat. Omringet av boller med salat og parmesankrem."
       }
     ],
-    "keyword": [
+    "keywords": [
       "grillmat",
       "grill",
       "svin",
@@ -6374,7 +6374,7 @@
         "alt": "jordbær og mozzarella med spekeskinke og oljer på en tallerken"
       }
     ],
-    "keyword": [
+    "keywords": [
       "italiensk",
       "grillmat",
       "forrett",
@@ -6485,7 +6485,7 @@
         "alt": "jordbærsalsa omringet av focaccia, spekemat og ost"
       }
     ],
-    "keyword": [
+    "keywords": [
       "salsa",
       "jordbær",
       "basilikum",
@@ -6710,7 +6710,7 @@
         "alt": "Ferdig thaisuppe med nudler i turskål toppet med koriander og lime."
       }
     ],
-    "keyword": [
+    "keywords": [
       "thai",
       "suppe",
       "kylling",
@@ -6888,7 +6888,7 @@
         "alt": "sjokoladesaus på flaske"
       }
     ],
-    "keyword": [
+    "keywords": [
       "fransk",
       "pannekaker",
       "turmat",
@@ -6989,7 +6989,7 @@
         "alt": "Sjokoladesaus på flaske"
       }
     ],
-    "keyword": ["søtt", "dessert", "sjokolade", "iskrem", "saus"]
+    "keywords": ["søtt", "dessert", "sjokolade", "iskrem", "saus"]
   },
   {
     "id": "multesirup",
@@ -7078,7 +7078,7 @@
         "alt": "ferdig silt multer i kjele, sirup i en annen kjele"
       }
     ],
-    "keyword": ["bær", "multer", "sirup", "is", "tilbehør", "søtt", "dessert"]
+    "keywords": ["bær", "multer", "sirup", "is", "tilbehør", "søtt", "dessert"]
   },
   {
     "id": "rabarbrasirup",
@@ -7183,7 +7183,7 @@
         "alt": "Rabarbra kuttet i terninger i en kjele"
       }
     ],
-    "keyword": [
+    "keywords": [
       "dessert",
       "sorbet",
       "is",
@@ -7329,7 +7329,7 @@
         "alt": ""
       }
     ],
-    "keyword": [
+    "keywords": [
       "lime",
       "sorbet",
       "dessert",
@@ -7434,7 +7434,7 @@
         "alt": "Aioli og foccacia"
       }
     ],
-    "keyword": ["majones", "tilbehør", "chili"]
+    "keywords": ["majones", "tilbehør", "chili"]
   },
   {
     "id": "betesalat",
@@ -7559,7 +7559,7 @@
         "alt": "Beter"
       }
     ],
-    "keyword": [
+    "keywords": [
       "høst",
       "beter",
       "salat",
@@ -7738,7 +7738,7 @@
         "alt": "Ferdigstekt pai på en benk med epler"
       }
     ],
-    "keyword": ["kake", "pai", "høst", "epler", "vaniljesaus", "søtt"]
+    "keywords": ["kake", "pai", "høst", "epler", "vaniljesaus", "søtt"]
   },
   {
     "id": "viltgryte",
@@ -7916,7 +7916,7 @@
         "alt": "Nærbilde av Rørte tyttebær i en bolle"
       }
     ],
-    "keyword": [
+    "keywords": [
       "multer",
       "selskap",
       "tyttebær",
@@ -8153,7 +8153,7 @@
         "alt": "Ferdigstekte medisterkaker på en tallerken"
       }
     ],
-    "keyword": ["jul", "medister", "svinekjøtt", "svin"]
+    "keywords": ["jul", "medister", "svinekjøtt", "svin"]
   },
   {
     "id": "kokosmakroner",
@@ -8254,7 +8254,7 @@
         "alt": "ustekte kokosmakroner på et stekebrett."
       }
     ],
-    "keyword": [
+    "keywords": [
       "jul",
       "søtt",
       "dessert",
@@ -8399,7 +8399,7 @@
         "alt": "Ferdigstekt vørterbrød med brunost"
       }
     ],
-    "keyword": ["jul", "brød", "julebakst", "dessert", "sirup"]
+    "keywords": ["jul", "brød", "julebakst", "dessert", "sirup"]
   },
   {
     "id": "juleflesk",
@@ -8541,7 +8541,7 @@
         "alt": "Bringebær blir silt igjennom en sil og oppi en bolle"
       }
     ],
-    "keyword": [
+    "keywords": [
       "jul",
       "bringebærsaus",
       "bringebær",
@@ -8690,7 +8690,7 @@
         "alt": "stekte og melispyntede pepperkaker på et bord"
       }
     ],
-    "keyword": ["jul", "kake", "julebakst", "ingefær", "søtt"]
+    "keywords": ["jul", "kake", "julebakst", "ingefær", "søtt"]
   },
   {
     "id": "mulligatawny",
@@ -8856,7 +8856,7 @@
         "alt": "kutter en lime i to"
       }
     ],
-    "keyword": [
+    "keywords": [
       "lime",
       "indisk",
       "suppe",
@@ -8965,7 +8965,7 @@
         "alt": "karrikrydder i krukke"
       }
     ],
-    "keyword": ["krydder", "curry", "karri", "indisk"]
+    "keywords": ["krydder", "curry", "karri", "indisk"]
   },
   {
     "id": "chili-skrei",
@@ -9132,7 +9132,7 @@
         "alt": "fisk på en tallerken med brokkolini"
       }
     ],
-    "keyword": [
+    "keywords": [
       "fisk",
       "torsk",
       "skrei",
@@ -9301,7 +9301,7 @@
         "alt": ""
       }
     ],
-    "keyword": ["krydder", "taco", "meksikansk"]
+    "keywords": ["krydder", "taco", "meksikansk"]
   },
   {
     "id": "formkake",
@@ -9439,7 +9439,7 @@
         "alt": "stekt formkake"
       }
     ],
-    "keyword": ["kake", "søtt", "dessert"]
+    "keywords": ["kake", "søtt", "dessert"]
   },
   {
     "id": "kebab",
@@ -9646,7 +9646,7 @@
         "alt": "kebab i brød med granateple"
       }
     ],
-    "keyword": ["kebab", "lam", "kjøtt", "brød", "turmat"]
+    "keywords": ["kebab", "lam", "kjøtt", "brød", "turmat"]
   },
   {
     "id": "larpgai",
@@ -9800,7 +9800,7 @@
         "alt": "larp gai"
       }
     ],
-    "keyword": [
+    "keywords": [
       "thai",
       "thailand",
       "asiatisk",
@@ -9921,7 +9921,14 @@
         "alt": "pannebrød"
       }
     ],
-    "keyword": ["gjærbakst", "brød", "pannebrød", "grillbrød", "grill", "kebab"]
+    "keywords": [
+      "gjærbakst",
+      "brød",
+      "pannebrød",
+      "grillbrød",
+      "grill",
+      "kebab"
+    ]
   },
   {
     "id": "grillspyd",
@@ -10214,7 +10221,7 @@
         "alt": "grillspyd med pannebrød"
       }
     ],
-    "keyword": [
+    "keywords": [
       "grill",
       "grillspyd",
       "sommer",
@@ -10362,7 +10369,7 @@
         "alt": "eplekake"
       }
     ],
-    "keyword": ["kake", "epler", "rask", "middag", "søtt", "dessert"]
+    "keywords": ["kake", "epler", "rask", "middag", "søtt", "dessert"]
   },
   {
     "id": "gravet-laks",
@@ -11719,7 +11726,8 @@
       "sommerpai",
       "mørdeig",
       "vaniljekrem",
-      "gelé"
+      "gelé",
+      "gele"
     ]
   },
   {
