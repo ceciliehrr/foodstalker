@@ -359,5 +359,173 @@
       "take away",
       "amerikansk"
     ]
+  },
+  {
+    "position": [43.76835046770531, 11.25477450520732],
+    "city": "Firenze",
+    "title": "Ino",
+    "description": "Dette var det første vi spiste i Italia! Vi trengte en rask lunsj før vi skulle bli kjent med Firenze. Vi bestilte en panino med pesto, burrata og mortadella. Fantastiske råvarer og fersk panino-brød! Anbefalses!",
+    "category": "Casual",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_3141.JPG",
+    "webPage": "https://www.inofirenze.com/",
+    "dateVisited": "Oktober, 2023",
+    "tags": ["casual", "lunsj", "brunsj", "dagen derpå", "søndag", "italiensk"]
+  },
+  {
+    "position": [43.76751382205651, 11.259690184657929],
+    "city": "Firenze",
+    "title": "Ristorante del Fagioli",
+    "description": "Firenze er kjent for sin Florentine steak, og denne restauranten er virkelig stedet for å teste ut biffen. Vi bestilte en biff på 1.3 kg og en tomatsalat. Det enkle er virkelig det beste. Fantastisk god biff, og veldig hyggelig betjening. De har ikke nettside, og vi var innom for å reservere da de var åpne til lunsj, det var lurt for her var det fullt og folk sto i kø utenfor. ",
+    "category": "Restaurant",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_3565.JPG",
+    "webPage": "",
+    "dateVisited": "Oktober, 2023",
+    "tags": [
+      "smart casual",
+      "middag",
+      "brunsj",
+      "florentine steak",
+      "biff",
+      "italiensk"
+    ]
+  },
+  {
+    "position": [43.77611457722778, 11.255470781292036],
+    "city": "Firenze",
+    "title": "La Ménagère",
+    "description": "Bar og restaurant der det selges gaver, blomster, veldig gode cocktailer og kafémat.",
+    "category": "Drinks",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_3306.JPG",
+    "webPage": "https://www.lamenagere.it/",
+    "dateVisited": "Oktober, 2023",
+    "tags": ["casual", "lunsj", "brunsj", "drinks", "italiensk"]
+  },
+  {
+    "position": [43.77182110453394, 11.268015569667767],
+    "city": "Firenze",
+    "title": "Nugolo",
+    "description": "Anbefaling fra Michelinguiden og det var en veldig god anbefaling. Vi gikk for 5 retters med vinpakke. Fantastisk god mat med høstlige-ingredienser, hasselnøtt gikk igjen som tema.",
+    "category": "Restaurant",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_3805.JPG",
+    "webPage": "https://ilnugolo.com/",
+    "dateVisited": "Oktober, 2023",
+    "tags": ["restaurant", "fine dining", "lunsj", "brunsj", "italiensk"]
+  },
+  {
+    "position": [43.776077959478954, 11.258091194179999],
+    "city": "Firenze",
+    "title": "Gelateria Carabè Firenze",
+    "description": "En tommelfingerregel i Italia for å kjøpe god gelato er å unngå stedene som har is i store hauger, dette er bare salgstriks og er ikke god hjemmelaget is - gå helst for de som har isen under lokk. Dette stedet derimot var en ekte gelaleria med veldig spennende smaker. Vi prøvde oss på noe så spesielt som pecorino og bjørnebær(more), det var faktisk digg.",
+    "category": "Søtt",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_4066.JPG",
+    "webPage": "http://www.ilparcocarabe.it",
+    "dateVisited": "Oktober, 2023",
+    "tags": ["gelato", "is", "søtt", "italiensk"]
+  },
+  {
+    "position": [43.771524002607514, 11.26116656551377],
+    "city": "Firenze",
+    "title": "RivaReno Gelato Firenze",
+    "description": "En tommelfingerregel i Italia for å kjøpe god gelato er å unngå stedene som har is i store hauger, dette er bare salgstriks og er ikke god hjemmelaget is - gå helst for de som har isen under lokk. Dette stedet derimot var en ekte gelaleria med veldig rene gode smaker. Vi gikk for pistasj og sjokolade, og det var veldig godt.",
+    "category": "Søtt",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_3236.JPG",
+    "webPage": "",
+    "dateVisited": "Oktober, 2023",
+    "tags": ["gelato", "is", "søtt", "italiensk"]
+  },
+  {
+    "position": [43.77646408594275, 11.25283589576255],
+    "city": "Firenze",
+    "title": "Mercato Centrale Firenze",
+    "description": "Mercato Centrale er en stor mathall med mange ulike boder. Her kan du få alt fra pizza, pasta, gelato, sjømat, kjøtt, ost, vin, you name it. Vi gikk for et glass rødvin og en arancini som er en fritert ball med ost (kan være andre stuffinger enn ost også). ",
+    "category": "Casual",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_3768.JPG",
+    "webPage": "https://www.mercatocentrale.it/",
+    "dateVisited": "Oktober, 2023",
+    "tags": ["street food", "marked", "italiensk"]
+  },
+  {
+    "position": [43.77646408594275, 11.25283589576255],
+    "city": "Firenze",
+    "title": "Arà: è Sicilia",
+    "description": "Cannoli var noe vi ville smake på fra de som kan det. Det ble ikke bare en cannoli i løpet av Italiaturen...",
+    "category": "Søtt",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_4095.JPG",
+    "webPage": "",
+    "dateVisited": "Oktober, 2023",
+    "tags": ["street food", "sweet", "italiensk", "søtt"]
+  },
+  {
+    "position": [43.77218830513954, 11.255859166066136],
+    "city": "Firenze",
+    "title": "Enoteca Alessi",
+    "description": "Vi skulle finne oss et sted og ta et glass rødvin før vi skulle videre mot middag. Alessi er en vinbar med småmat, vinsmaking og alkoholbutikk i samme lokale. Veldig god småmat og vin.",
+    "category": "Drinks",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_3488.JPG",
+    "webPage": "https://www.enotecaalessi.it/",
+    "dateVisited": "Oktober, 2023",
+    "tags": ["wine", "drinks", "italiensk", "småmat"]
+  },
+  {
+    "position": [45.4408587540265, 12.328505562504352],
+    "city": "Venezia",
+    "title": "La Zucca",
+    "description": "Dette var første sted vi spiste i Venezia, vi hadde veldig flaks da vi fikk plass her. Dette var virkelig det beste stedet vi spiste på vår Italiatur. Vi delte en burrata med caponata di verdure, som en kaldrett med middelhavsgrønnsaker. Til hovedrett spiste undertegnede tagliatelle med gorgonzola og pistasjnøtter, og Petter spiste tagliatelle med ragu. Fantastisk!",
+    "category": "Restaurant",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_4174.JPG",
+    "webPage": "https://www.lazucca.it/",
+    "dateVisited": "Oktober, 2023",
+    "tags": ["wine", "restaurant", "italiensk", "lunsj", "brunsj"]
+  },
+  {
+    "position": [45.4389466908249, 12.334300459442723],
+    "city": "Venezia",
+    "title": "Alla Fonda",
+    "description": "Noe som er populært å spise som lunsj/mellomrett i Venezia er cichetti, snitter kaller vi det på godt norsk. Men selvfølgelig hakket mer spennende enn karbonade med løk. Cichetti serveres med typisk italiensk topping som ulike skinker, burrata, oliven etc. Alla Fonda var et veldig bra valg for å teste ut dette, men det fantes mange bra muligheter i samme område om det skulle være fullt her.",
+    "category": "Casual",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_4317.JPG",
+    "webPage": "",
+    "dateVisited": "Oktober, 2023",
+    "tags": ["casual", "lunsj", "italiensk", "brunsj"]
+  },
+  {
+    "position": [45.437252507521, 12.331216163916192],
+    "city": "Venezia",
+    "title": "Pasticceria Rizzardini",
+    "description": "Midt i smørøyet i Venezia finnes dette lille konditoriet. Her kan du få deg en shot cappuccino og noe søtt, (og ei lita Moscato). For de som liker kaffe - de har en fantastisk god tiramisu her! Men alt smaker digg og hjemmelaget.",
+    "category": "Søtt",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_4329.JPG",
+    "webPage": "",
+    "dateVisited": "Oktober, 2023",
+    "tags": ["casual", "søtt", "konditori", "bakeri"]
+  },
+  {
+    "position": [45.43916986906944, 12.333440428072263],
+    "city": "Venezia",
+    "title": "Cantina do Spade",
+    "description": "Om du vil teste typiske sjømatretter fra Venezia er dette plassen. Vi hadde flaks denne gangen også og fikk bord på et populært sted. Vi var tre til bords og spiste Bigoli in salsa, Spaghetti alla vongole og Frittolin. Og selvfølgelig god vin som alltid i Italia. ",
+    "category": "Restaurant",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_4473.JPG",
+    "webPage": "https://cantinadospade.com/",
+    "dateVisited": "Oktober, 2023",
+    "tags": [
+      "smart casual",
+      "restaurant",
+      "middag",
+      "italiensk",
+      "sjømat",
+      "brunsj"
+    ]
+  },
+  {
+    "position": [45.4388046605278, 12.335446571134405],
+    "city": "Venezia",
+    "title": "Osteria Bancogiro",
+    "description": "Vårt aller siste måltid i Italia ble på denne nydelige uterestauranten rett ved Canal Grande. Vi gikk for å dele noen antipasti, og hver vår primi og dolce. Det var absolutt god mat, men kanskje litt dyrt i forhold til kvalitet. Men veldig innafor god mat og vin, vi har blitt bortskjemte på denne Italiaturen. Absolutt verdt et besøket når vi vet at flere restauranter i Venezia er en turistfelle! ",
+    "category": "Restaurant",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_4574.jpg",
+    "webPage": "https://www.osteriabancogiro.it/",
+    "dateVisited": "Oktober, 2023",
+    "tags": ["smart casual", "restaurant", "middag", "italiensk"]
   }
 ]

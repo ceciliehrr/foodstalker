@@ -6,6 +6,7 @@
       <p>🍴 = Restaurant</p>
       <p>🍟 = Casual/Lunsj/Brunch</p>
       <p>🥂 = Drinks</p>
+      <p>🍦 = Sweets</p>
     </div>
 
     <hr />
@@ -103,6 +104,8 @@ export default {
       stockholm: [59.3293, 18.0686],
       stavanger: [58.96956842492558, 5.735700010074111],
       bergen: [60.3913, 5.3221],
+      firenze: [43.7696, 11.2558],
+      venezia: [45.4408, 12.3155],
     };
 
     const icons = {
@@ -110,6 +113,7 @@ export default {
       RestaurantIcon: "https://foodstalker.b-cdn.net/restaurantMarker.svg",
       DrinksIcon: "https://foodstalker.b-cdn.net/DrinkMarker.svg",
       LogoMarker: "https://foodstalker.b-cdn.net/logoMarker.svg",
+      SweetIcon: "https://foodstalker.b-cdn.net/SweetIcon.svg",
     };
     // Default zoom
     const defaultZoom = 13;
@@ -131,6 +135,7 @@ export default {
       drinkIconUrl: icons.DrinksIcon,
       restaurantIconUrl: icons.RestaurantIcon,
       casualIconUrl: icons.CasualIcon,
+      sweetIconUrl: icons.SweetIcon,
       logoMarkerUrl: icons.LogoMarker,
       iconSize: [50, 52],
       iconAnchor: [16, 37],
@@ -180,6 +185,7 @@ export default {
         Restaurant: this.restaurantIconUrl,
         Casual: this.casualIconUrl,
         Drinks: this.drinkIconUrl,
+        Søtt: this.sweetIconUrl,
       };
       return categoryIcons[category] || this.logoMarkerUrl;
     },
