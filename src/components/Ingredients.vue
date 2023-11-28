@@ -1,7 +1,10 @@
 <template>
   <div class="fs-ingredients">
     <h2 class="fs-ingredients__title">Ingredienser</h2>
-
+    <label for="serving">Portions :</label>
+    <input type="number" v-model="serving" />
+    <button @click="decreaseServing">-</button>
+    <button @click="increaseServing">+</button>
     <div v-for="(group, index) in ingredients" :key="index">
       <div v-if="group.title">
         <h3 class="fs-ingredients__group-title">{{ group.title }}</h3>
@@ -28,8 +31,8 @@
             <strong
               :id="'label-ingredient-' + index + '-' + ingredientIndex"
               class="fs-checkbox__text"
-              v-html="ingredient.quantity"
-            ></strong>
+              >{{ serving * getNumericValue(ingredient.quantity) }}</strong
+            >
             <p
               :id="'label-ingredient-' + index + '-' + ingredientIndex"
               class="fs-checkbox__text"
@@ -51,11 +54,46 @@ export default {
       type: Object,
       required: true,
     },
+    portions: {
+      type: String,
+      required: true,
+    },
   },
   data() {
     return {
+      portion: this.portions,
+
       //ingredient: this.ingredients.map((ing) => ing.ingredients),
     };
+  },
+  computed: {
+    serving: {
+      get() {
+        return this.portion;
+      },
+      set(value) {
+        this.$emit("update:portion", value);
+      },
+    },
+  },
+  methods: {
+    decreaseServing() {
+      this.serving = this.serving - 1;
+    },
+    increaseServing() {
+      this.serving = this.serving + 1;
+    },
+    getNumericValue(quantity) {
+      // Use regular expression to extract numeric value, including decimals
+      const match = quantity.match(/\d+(\.\d+)?/);
+
+      if (match) {
+        const numericValue = parseFloat(match[0]);
+        return isNaN(numericValue) ? 0 : numericValue;
+      }
+
+      return 0; // Default value if no numeric value is found
+    },
   },
 };
 </script>
