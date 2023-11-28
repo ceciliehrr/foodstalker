@@ -12110,5 +12110,105 @@
       }
     ],
     "keywords": ["taco", "vegetar", "pescetar", "fest", "hverdagsmat", "bønner"]
+  },
+  {
+    "id": "enkel-tomatsaus",
+    "imageurl": "https://foodstalker.b-cdn.net/2023/enkel-tomatsaus/DSC03141.jpg",
+    "alt": "spaghetti med tomatsaus",
+    "title": "Enkel tomatsaus",
+    "date": "2023-11-28",
+    "category": "hverdag",
+    "description": "Italia! Vi er inspirert! Enklere og renere blir ikke tomatsausen. Bruk til pizza, spaghetti, suppe osv.",
+    "longDescription": "Denne er den enkleste tomatsausen vi kan, men det betyr ikke dårligere. Dette er faktisk den beste. Hva med en middag på 20 minutter? Kok linguine og bland i denne tomatsausen, topp med parmesan eller jukseburrata og basilikum. Prego!",
+    "time": "15 minutter",
+    "portions": "4",
+    "tips": "",
+    "chef": "Hellstrøm",
+    "tipsurl": "",
+    "ingredients": [
+      {
+        "title": "",
+        "ingredients": [
+          {
+            "quantity": "1 kg",
+            "name": "cherrytomater"
+          },
+          {
+            "quantity": "1 dl",
+            "name": "olivenolje"
+          },
+          {
+            "quantity": "2 fedd",
+            "name": "hvitløk"
+          },
+          {
+            "quantity": "",
+            "name": "vann etter ønske"
+          },
+          {
+            "quantity": "et par dryss",
+            "name": "salt og sukker"
+          }
+        ]
+      }
+    ],
+    "steps": [
+      {
+        "title": "",
+        "description": "Rens og del tomatene i to. Rens og knus hvitløk med et trykk med kniven."
+      },
+      {
+        "title": "",
+        "description": "Mål opp olivenolje. Bruk en stekepanne med høye kanter. Ha i oljen. Varm opp til middels høy varme."
+      },
+      {
+        "title": "",
+        "description": "Ha i tomatene og hvitløk. De skal frese slik under konstant omrøring. Når tomatene blir bløte mos de med stekespaden. Ha i litt vann etter ønsket konsistens, ikke for mye hvis du skal bruke den på pizza. Ha i salt og sukker."
+      },
+      {
+        "title": "",
+        "description": "Fres tomatsausen i 10-15 minutter. Smak om den trenger mer salt eller sukker, men pass deg - sykt varmt!"
+      }
+    ],
+    "images": [
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2023/enkel-tomatsaus/DSC02904.jpg",
+        "alt": "spaghetti med tomatsaus"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2023/enkel-tomatsaus/DSC02869.jpg",
+        "alt": "tomater på benk"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2023/enkel-tomatsaus/DSC03118.jpg",
+        "alt": "spaghetti med tomatsaus i tallerken"
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2023/enkel-tomatsaus/DSC02904.jpg",
+        "alt": "tomatsaus og spaghetti"
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2023/enkel-tomatsaus/DSC02880.jpg",
+        "alt": "tomatsaus i stekepanne"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2023/enkel-tomatsaus/DSC02872.jpg",
+        "alt": "tomater"
+      }
+    ],
+    "keywords": [
+      "tomat",
+      "italiensk",
+      "tomatsaus",
+      "bedre enn toro",
+      "enkel",
+      "spaghetti"
+    ]
   }
 ]
