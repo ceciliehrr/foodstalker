@@ -9,7 +9,7 @@
     "description": "Klar for en rask middag? Denne er lett, sommerlig, frisk og god!",
     "longDescription": "",
     "time": "30 min",
-    "portions": "4",
+    "portions": 4,
     "tips": "Finner du ikke nektarin, kan du bruke syrlige plommer.",
     "chef": "Lise Finckenhagen",
     "tipsurl": "https://www.godt.no/oppskrift/8947/slik-lager-du-saftige-koteletter",
@@ -18,7 +18,7 @@
         "title": "",
         "ingredients": [
           {
-            "quantity": "4 stykker",
+            "quantity": "4 stk",
             "name": "nakkekoteletter"
           },
           {
@@ -142,7 +142,7 @@
     "description": "Lag en rundstykkedeig før du legger deg, lag ferske rundstykker til frokost!",
     "longDescription": "Denne oppskriften pleier jeg å doble og fryse raskt etter avkjøling. Oppskriften egner seg godt på hyttetur. Ha de tørre ingrediensene i en boks, bortsett fra saltet. Jeg er redd for at saltet skal ødelegge gjæren, salt og vann blander du i på hytta.",
     "time": "12-20 timer",
-    "portions": "8",
+    "portions": 8,
     "tips": "Pensle rundstykkene med litt vann og dryss over ekstra frø før steking.",
     "chef": "Trine Sandberg",
     "tipsurl": "https://trinesmatblogg.no/oppskrift/eltefrie-frokostrundstykker/",
@@ -163,7 +163,7 @@
             "name": "salt (ca.)"
           },
           {
-            "quantity": "1/4 ts",
+            "quantity": "0.25 ts",
             "name": "tørrgjær"
           },
           {
@@ -274,7 +274,7 @@
     "description": "En overraskende enkel og god kylling satay med frisk mangosalat og ris.",
     "longDescription": "Som kokken Silje skriver forventer noen ofte at satay skal være så mektig. Men denne er godt balansert, og bruker man peanøttsmør med høyt innhold av peanøtter smaker denne himmelsk på en hverdag. Jeg bruker lett kokosmelk til hverdags!",
     "time": "35 minutter",
-    "portions": "4-6",
+    "portions": 5,
     "tips": "Bruk peanøttsmør med høyt innhold av peanøtter, gjerne økologisk. <br> Rød curry fra ulike produsenter har ofte ulik smak og styrke, smak deg frem. <br> Blir det saus igjen, spar den til lunsjen dagen etter. Luksus!  ",
     "chef": "Silje Sandberg",
     "tipsurl": "https://siljespiser.no/2020/09/01/rask-gryte-kylling-satay-med-mangosalat/",
@@ -311,11 +311,11 @@
             "name": "kokosmelk (gjerne lett)"
           },
           {
-            "quantity": "0,5 dl",
+            "quantity": "0.5 dl",
             "name": "vann"
           },
           {
-            "quantity": "0,5 dl",
+            "quantity": "0.5 dl",
             "name": "soyasaus med mindre saltinnhold"
           },
           {
@@ -323,11 +323,11 @@
             "name": "fish sauce"
           },
           {
-            "quantity": "4-5",
-            "name": "rause spiseskjeer peanøttsmør(høyt innhold av peanøtter)"
+            "quantity": "4-5 rause ss",
+            "name": "peanøttsmør(høyt innhold av peanøtter)"
           },
           {
-            "quantity": "1",
+            "quantity": "1 stk",
             "name": "lime"
           },
           {
@@ -340,15 +340,15 @@
         "title": "Mangosalat",
         "ingredients": [
           {
-            "quantity": "1",
+            "quantity": "1 stk",
             "name": "mango"
           },
           {
-            "quantity": "1",
+            "quantity": "1 stk",
             "name": "agurk"
           },
           {
-            "quantity": "1",
+            "quantity": "1 stk",
             "name": "chili"
           },
           {
@@ -356,7 +356,7 @@
             "name": "akasiehonning"
           },
           {
-            "quantity": "1",
+            "quantity": "1 stk",
             "name": "lime"
           }
         ]
@@ -447,7 +447,7 @@
       "href": ["/oppskrift/juleflesk"]
     },
     "time": "2 timer 30 minutter",
-    "portions": "1-6",
+    "portions": 6,
     "tips": "Pass på at bakebollen er ren og ikke har noe fett i seg, ellers vil marengsen aldri bli stiv. Jeg pleier å lage marengsen dagen før, slik at man kan bruke tida på champagnefrokosten den 17.mai.",
     "chef": "Lise Finckenhagen",
     "tipsurl": "https://www.godt.no/oppskrift/8843/pavlova-krans-med-bringebaerkrem-og-baer",
@@ -591,7 +591,7 @@
     "description": "Nachosfredag! Nachos er en slager på fredager hos oss, med frisk salsa ved siden av.",
     "longDescription": "Denne lager vi med vår <a href='/oppskrift/tacokrydder'>hjemmelaget tacokrydder</a>. Bytt ut krydderne i denne oppskriften med 3-4 ts med hjemmelaget tacokrydder. Ha en teskje ekstra hvis 3-4 smaker for lite.",
     "time": "1 time",
-    "portions": "4",
+    "portions": 4,
     "tips": "For de som liker avokado kan ha 1 avokado i salsaen.",
     "chef": "Lise Finckenhagen",
     "tipsurl": "https://www.godt.no/oppskrift/8093/nachos-med-frisk-salsa",
@@ -769,7 +769,7 @@
     "description": "Langtidskokt høyrygg med dyp smak av anis. Serveres med ris.",
     "longDescription": "En putrende høyrygg i ovnen er noe man ofte kan se på våre hytteturer. Når kjøttet er mørt og faller fra hverandre er den klar. Blir det for lite grønt pleier vi å servere denne med en babyleaf-salat med en sennep og honning vinaigrett.",
     "time": "3 h 30 min",
-    "portions": "4",
+    "portions": 4,
     "tips": "Vi pleier alltid å kjøpe en ekstra stor ingefær for å kutte opp og ha i fryseren. Skrell den ferske ingefæren, kutt opp i tommeltottstore biter og frys det ned i en tett boks. Når den er halvfryst er den enklere å rive også.",
     "chef": "Lise Finckenhagen",
     "tipsurl": "https://www.godt.no/oppskrift/7450/moer-og-saftig-helgemiddag",
@@ -782,7 +782,7 @@
             "name": " høyrygg, renskåret"
           },
           {
-            "quantity": "2",
+            "quantity": "2 stk",
             "name": "løk"
           },
           {
@@ -798,7 +798,7 @@
             "name": "sort pepper, knust"
           },
           {
-            "quantity": "5 stykker",
+            "quantity": "5 stk",
             "name": "stjerneanis"
           },
           {
@@ -912,7 +912,7 @@
     "description": "Knokesuppe med grønnsaker og svineknoke. Dette er barndomsminner.",
     "longDescription": "",
     "time": "2,5 timer",
-    "portions": "4",
+    "portions": 4,
     "tips": "En svineknoke har skuffende lite kjøtt i seg, så om dere er flere enn 2-3 personer ville jeg kokt 2 knoker.",
     "chef": "Eivind Hellstrøm",
     "tipsurl": "http://oppskriften.net/varmmat/lys-lapskaus-hellstrom-oppskrift/",
@@ -949,7 +949,7 @@
             "name": "purre"
           },
           {
-            "quantity": "8stk",
+            "quantity": "8 stk",
             "name": "poteter"
           },
           {
@@ -1025,7 +1025,7 @@
     "description": "Komboen plommer og smeltet blåmuggeost, toppet med syltet rødløk er helt himmelsk!",
     "longDescription": "Jeg innrømmer at denne middagen blir laget til hverdags når vi har lyst på noe kjapt og digg. Har du allerede et glass med <a href='/oppskrift/syltet-rødløk'>sylta rødløk</a> i kjøleskapet er dette en ganske kjapp middag.",
     "time": "30 minutter",
-    "portions": "4",
+    "portions": 4,
     "tips": "",
     "chef": "Lise Finckenhagen",
     "tipsurl": "https://www.godt.no/oppskrift/7018/nakkekoteletter-med-blaamuggost-plommer-og-sursoet-loek",
@@ -1148,7 +1148,7 @@
     "description": "Mangosorbet på en seng av sticky rice. Vi er klare for sommer! ",
     "longDescription": "Siden vi ofte har mangosalat til middager skjer det at vi har noe mango til overs. Lag en sorbet før den må kastes! Og for å pimpe den opp til en helaftens dessert kan du servere sticky rice med mangosorbet.",
     "time": "1 døgn",
-    "portions": "6",
+    "portions": 6,
     "tips": "Sticky rice kan også kombineres med for eksempel kokossorbet. Disse oppskriftene har jeg fra boka Thaimani av Terje Ommundsen.",
     "chef": "Terje Ommundsen",
     "tipsurl": "https://www.ark.no/boker/Terje-Ommundsen-Thaimani-9788281881273?gclid=CjwKCAiAoOz-BRBdEiwAyuvA64_0vpvorXNWAUCpJlS7XwUZQNmN7Drb3G3jL1CcXusKcPK6azfqAhoC4swQAvD_BwE&gclsrc=aw.ds",
@@ -1157,7 +1157,7 @@
         "title": "Mangosorbet",
         "ingredients": [
           {
-            "quantity": "2",
+            "quantity": "2 stk",
             "name": "mangoer"
           },
           {
@@ -1286,7 +1286,7 @@
     "description": "Sylt rødløken! Så kan du pimpe opp maten din.",
     "longDescription": "Har du rødløk til overs. Sylt den før den blir ødelagt! Denne serveres til alt fra middager til pålegg på brødskiva.",
     "time": "2 timer",
-    "portions": "6",
+    "portions": 6,
     "tips": "Syltet rødløk kan tilsettes mer smak enn bare pepper. For eksempel chili og ingefær. Eller anis til juleversjonen.",
     "chef": "Matprat",
     "tipsurl": "https://www.matprat.no/oppskrifter/gjester/syltet-rodlok/",
@@ -1295,7 +1295,7 @@
         "title": "",
         "ingredients": [
           {
-            "quantity": "2",
+            "quantity": "2 stk",
             "name": "rødløk"
           },
           {
@@ -1387,7 +1387,7 @@
     "description": "En rask middag med masse gode smaker som ingefær og chili! Hverdagsfavoritt.",
     "longDescription": "Masse smak betyr ikke sterk men bra balansert med syre, salt og søtt. Om du er redd for litt styrke bruk en halv chili.",
     "time": "30 minutter",
-    "portions": "4",
+    "portions": 4,
     "tips": "Vår favorittkokk briljerer igjen:",
     "chef": "Lise Finckenhagen",
     "tipsurl": "https://www.godt.no/oppskrift/9042/nudler-med-smaksrik-kjoettdeig",
@@ -1552,7 +1552,7 @@
     "description": "En meget rask middag med laks, mangosalat og nudler",
     "longDescription": "Laksen blir hardt stekt slik at den får en skorpe med smak av soya. Serveres med nudler og mangosalat.",
     "time": "30 minutter",
-    "portions": "4",
+    "portions": 4,
     "tips": "Denne er såpass sunn, at vi har nok blitt inspirert av Roede. Men det er nok en spinoff av en eller annen laks og mango-oppskrift der ute.",
     "chef": "",
     "tipsurl": "",
@@ -1565,7 +1565,7 @@
             "name": "laksefileter"
           },
           {
-            "quantity": "1 stor",
+            "quantity": "1 stk",
             "name": "mango"
           },
           {
@@ -1581,7 +1581,7 @@
             "name": "chili, finsnittet"
           },
           {
-            "quantity": "liten neve",
+            "quantity": "1 neve",
             "name": "fersk koriander, kuttet"
           },
           {
@@ -1597,7 +1597,7 @@
             "name": "honning"
           },
           {
-            "quantity": "1",
+            "quantity": "1 stk",
             "name": "lime"
           },
           {
@@ -1693,7 +1693,7 @@
     "description": "Rask one pot pasta med kjøttboller og tomater som smaker luksus på en helt vanlig tirsdag.",
     "longDescription": "Den rare ingrediensen her er rå salciccia-pølse som fås på for eksempel meny. Den er med på å lage god krydret smak på sausen. Så ikke skipp pølsa! Men det er lov å prøve med andre typer rå krydrede pølser.",
     "time": "30 minutter",
-    "portions": "4",
+    "portions": 4,
     "tips": "Digg med brød til. Pass på å få god stekeskorpe på kjøttbollene. Vi bruker fullkorns pennepasta.",
     "chef": "Lise Finckenhagen",
     "tipsurl": "https://www.godt.no/oppskrift/7294/alt-i-en-gryte-pasta-med-kjoettboller",
@@ -1722,7 +1722,7 @@
             "name": "cherrytomater"
           },
           {
-            "quantity": "liten neve",
+            "quantity": "1 neve",
             "name": "basilikum"
           },
           {
@@ -1806,7 +1806,7 @@
     "description": "Entrecôte med soppsaus og salat. En helgesjarmør!",
     "longDescription": "Denne har erstattet den tradisjonelle 'biff med bærne' hos oss. Server med en frisk salat dynket i vinagraitte.",
     "time": "45 minutter",
-    "portions": "4",
+    "portions": 4,
     "tips": "Entrecôte har litt mer fett enn andre og derfor tar til seg smak bedre. Også er den billigere enn andre bifftyper, to fluer i en smekk!",
     "chef": "Lise Finckenhagen",
     "tipsurl": "https://www.godt.no/oppskrift/8951/entrecote-i-kremet-soppsaus",
@@ -1815,7 +1815,7 @@
         "title": "",
         "ingredients": [
           {
-            "quantity": "4 skiver",
+            "quantity": "4 stk",
             "name": "entrecôte"
           },
           {
@@ -1843,7 +1843,7 @@
             "name": "fløte"
           },
           {
-            "quantity": "1 håndfull",
+            "quantity": "1 neve",
             "name": "parmesan, revet"
           },
           {
@@ -1964,7 +1964,7 @@
     "description": "Stekt and med bringbærsaus, anis og spinat.",
     "longDescription": "Karamell og bringebær? Er ikke dette dessert? Nei! Dette er er den beste anderetten, ever! Sausen har smak av jul og godteri på en gang.. Frem med slikkepotten!",
     "time": "45 minutter",
-    "portions": "4",
+    "portions": 4,
     "tips": "For å ha kontroll på smelting av sukker til karamell blander jeg noen spiseskjeer vann i sukkeret før oppvarming.",
     "chef": "Lise Finckenhagen",
     "tipsurl": "https://www.nrk.no/mat/sprostekt-andebryst-med-anis--og-bringebaersaus-1.15231165",
@@ -2018,11 +2018,11 @@
             "name": "stjerneanis"
           },
           {
-            "quantity": "1 bit",
+            "quantity": "1 stk",
             "name": "kanelstang"
           },
           {
-            "quantity": "2",
+            "quantity": "2 stk",
             "name": "knuste hvitløkfedd"
           },
           {
@@ -2043,11 +2043,11 @@
             "name": "små poteter"
           },
           {
-            "quantity": "6",
-            "name": "hvitløkfedd"
+            "quantity": "6 fedd",
+            "name": "hvitløk"
           },
           {
-            "quantity": "1",
+            "quantity": "1 stk",
             "name": "god kvast frisk timian"
           },
           {
@@ -2155,7 +2155,7 @@
     "description": "Pepperkakeis med klementinsaus er årets juledessert!",
     "longDescription": "Denne isen har vært populær hos oss i desember! Isen får meg tilbake til barndommen da man spiste rå pepperkakedeig...Ja ok, gjør det fortsatt.",
     "time": "1 døgn",
-    "portions": "4",
+    "portions": 4,
     "tips": "Denne oppskriften har en god grunnoppskrift for vaniljeis. Karamellsausen tykner etter avkjøling.",
     "chef": "Truls Torp Karlsen",
     "tipsurl": "https://www.finessekokken.no/pepperkakeis-og-klementinkaramell/",
@@ -2284,7 +2284,7 @@
     "description": "Ta hverdagen tilbake med varmende gulasjsuppe.",
     "longDescription": "Denne suppa har fulgt Cecilie på sin vei i livet, og blitt skrevet ned i ei bok, og derfor vet vi ikke hvem som er stalket. Men kan love at det er gode smaker!",
     "time": "1.5 timer",
-    "portions": "6",
+    "portions": 6,
     "tips": "Siden vi er to personer i dette møblerte hjemmet, har vi ofte en 2-dagers gulasj, like god om ikke bedre dagen derpå.<br> Denne kan fint fryses, og tas med ut på tur og varmes opp på bålet, med pinnebrød.<br>  Du kan bytte ut kjøttdeig  med for eksempel høyrygg i terninger, men da må kjøttet putre i 3-4 timer, istedenfor 15 minutter.",
     "chef": "Cecilie",
     "tipsurl": "",
@@ -2293,12 +2293,12 @@
         "title": "",
         "ingredients": [
           {
-            "quantity": "2",
+            "quantity": "2 stk",
             "name": "gul løk"
           },
           {
-            "quantity": "2",
-            "name": "hvitløksfedd"
+            "quantity": "2 fedd",
+            "name": "hvitløk"
           },
           {
             "quantity": "400 g",
@@ -2325,7 +2325,7 @@
             "name": "tomatpurè"
           },
           {
-            "quantity": "1",
+            "quantity": "1 stk",
             "name": "laubærblad"
           },
           {
@@ -2333,11 +2333,11 @@
             "name": "okse- eller grønnsakskraft"
           },
           {
-            "quantity": "1",
+            "quantity": "1 stk",
             "name": "grønn paprika"
           },
           {
-            "quantity": "4-5",
+            "quantity": "4-5 stk",
             "name": "poteter"
           },
           {
@@ -2345,7 +2345,7 @@
             "name": "sellerirot"
           },
           {
-            "quantity": "1",
+            "quantity": "1 stk",
             "name": "gulrot"
           },
           {
@@ -2425,7 +2425,7 @@
     "description": "Friske rene smaker av ingefær og soya",
     "longDescription": "Dette er en lett og frisk middag. Kan serveres med ris.",
     "time": "30 minutter",
-    "portions": "4",
+    "portions": 4,
     "tips": "Finner du ikke pak choy kan den byttes ut med kinakål.<br> Hvis du har ingefær igjen, ikke la den bli råtten,  frys den i tommelstore terninger. <br> <br> Det begynner å bli synlig at vi har en yndlingskokk:",
     "chef": "Lise Finckenhagen",
     "tipsurl": "https://www.godt.no/oppskrift/9106/dampet-skrei-med-soyasaus-og-ingefaer",
@@ -2434,7 +2434,7 @@
         "title": "",
         "ingredients": [
           {
-            "quantity": "600 - 800 g ",
+            "quantity": "600-800 g",
             "name": "torsk eller skrei"
           },
           {
@@ -2487,7 +2487,7 @@
             "name": "rød løk, liten"
           },
           {
-            "quantity": "ca halv",
+            "quantity": "0.5 stk",
             "name": "chili"
           },
           {
@@ -2495,7 +2495,7 @@
             "name": "koriander"
           },
           {
-            "quantity": "0.5",
+            "quantity": "0.5 stk",
             "name": "lime"
           }
         ]
@@ -2579,7 +2579,7 @@
     "description": "Høyrygg kokt i vin, kraft og bacon i flere timer. Hyttekos!",
     "longDescription": "Langtidskokt høyrygg er noe vi ofte spiser på hytta. Den lager seg sjæl mens vi stikker på tur.<br> Ønsker du en kjappere gryte kan du skjære høyryggen i biter og brune de godt, da vil gryta være ferdig etter ca en og en halv time. <br> Serveres med stappe med en blanding av pastinakk og potet.",
     "time": "6-7 timer",
-    "portions": "4",
+    "portions": 4,
     "tips": "Vi bruker en fruktig Bourgogne rødvin i gryta. Smak på vinen, smaker vinen vondt blir maten vond.",
     "chef": "Lise Finckenhagen",
     "tipsurl": "https://www.nrk.no/mat/biff-burgund-1.12811122",
@@ -2592,7 +2592,7 @@
             "name": "høyrygg"
           },
           {
-            "quantity": "150 g ",
+            "quantity": "150 g",
             "name": "blokk bacon, i terninger"
           },
           {
@@ -2604,15 +2604,15 @@
             "name": "tomatpuré"
           },
           {
-            "quantity": "2 fedd ",
+            "quantity": "2 fedd",
             "name": "hvitløk (finhakket)"
           },
           {
-            "quantity": "en håndfull",
+            "quantity": "1 håndfull",
             "name": "frisk timian"
           },
           {
-            "quantity": "2",
+            "quantity": "2 stk",
             "name": "laurbærblad"
           },
           {
@@ -2620,11 +2620,11 @@
             "name": "rødvin"
           },
           {
-            "quantity": "2,5 dl",
+            "quantity": "2.5 dl",
             "name": "oksekraft eller kalvekraft"
           },
           {
-            "quantity": "2",
+            "quantity": "2 stk",
             "name": "gulrøtter i biter"
           },
           {
@@ -2649,15 +2649,15 @@
         "title": "Pastinakkpurè",
         "ingredients": [
           {
-            "quantity": "4-5",
+            "quantity": "4-5 stk",
             "name": "pastinakk"
           },
           {
-            "quantity": "1-2",
-            "name": "potet"
+            "quantity": "1-2 stk",
+            "name": "poteter"
           },
           {
-            "quantity": "litt",
+            "quantity": "1 klunk",
             "name": "fløte"
           },
           {
@@ -2769,7 +2769,7 @@
     "description": "Pizza med fermentert pizzadeig. Toppet med salsicciapølse og granateple.",
     "longDescription": "Fermentert? Ja, fermentering skjer når man lar deigen ligge over natta i kjøleskapet. Gjæren koser seg med sukker og så blir det sur stemning eller noe, Google it! Det er digg! <br> Oppskriften blir 6 pizzabunner. qqqqqBruk [hjemmelaget tomatsaus](/oppskrift/tomatsaus)<br> Vi har her prøvd oss på Hellstrøms metode med maltekstrakt og derfor vil pizzabunnen se litt tynnere ut. Vi velger å dele Lise Finckenhagen sin metode som er hakket enklere, vi har ikke bestemt oss for hvem som er best.<br><br> Topping varierer vi etter humøret(til kjøleskapet). Men noen ganger er det greit å prøve noe man ikke har til overs. Min yndlingstopping er Pizza Parma som bare inneholder tomatsaus og mozzarella under steking, og toppes med rista pinjekjerner, revet parmesan, ruccola og spekeskinke og et dryss god balsamicoeddik. <br> Her deler vi Lise Finckenhagens tips!",
     "time": "12-16 timer",
-    "portions": "6",
+    "portions": 6,
     "tips": "Denne oppskriften er funnet i Lises Gatekjøkken-boka.",
     "chef": "Lise Finckenhagen",
     "tipsurl": "",
@@ -2927,7 +2927,7 @@
     "description": "Lag masse tomatsaus som kan fryses og brukes for eksempel til kjøttdeigen, altså Bolognese som det heter på godt italiensk.",
     "longDescription": "En tomatsaus er praktisk å ha i frysern. Ta opp tomatsausen for pastaen, suppa eller pizzaen. Denne forandres raskt til en tomatsuppe ved å spe på med litt <a href='/oppskrift/grønnsakskraft'> hjemmelaget grønnsakskraft.</a> <br> Denne tomatsausen blir ca 1 liter.",
     "time": "tja.. 3 timer?",
-    "portions": "10?",
+    "portions": 10,
     "tips": "Denne oppskriften varieres i forhold til hva vi har i kjøleskapet. Har du tomater, bruk dem! Har du en gulrot eller en stangselleri, hakk dem og bruk dem som løken. <br> Dette er Pete's tomatsaus.",
     "chef": "Pete",
     "tipsurl": "",
@@ -2936,7 +2936,7 @@
         "title": "",
         "ingredients": [
           {
-            "quantity": "1",
+            "quantity": "1 stk",
             "name": "stor gul løk"
           },
           {
@@ -2960,11 +2960,11 @@
             "name": "oksefond (ublanda)"
           },
           {
-            "quantity": "ca 1 ss",
+            "quantity": "1 ss",
             "name": "tørket oregano"
           },
           {
-            "quantity": "ca 1 ss",
+            "quantity": "1 ss",
             "name": "tørket basilikum"
           },
           {
@@ -2972,7 +2972,7 @@
             "name": "kanel"
           },
           {
-            "quantity": "smakt til med",
+            "quantity": "smak til med",
             "name": "salt, pepper og sukker"
           },
           {
@@ -3064,7 +3064,7 @@
     "description": "Vannbakkels med sitronkrem toppet med marengs.",
     "longDescription": "Sitron og marengs er en superkombo. Når vi har noe sitrusfrukter til overs som bør brukes, er det en unnskyldning for å lage sitronkrem. Den kan brukes til flere typer desserter eller kanskje du vil pimpe opp frokostgrøten?<br> Skulle du ikke ha nok sitron men har en appelsin, fyll på med det. <br> Jeg har også hatt mangosaft i sitronkremen når jeg hadde for lite væske. Det funker!",
     "time": "2 timer og 30 minutter",
-    "portions": "7",
+    "portions": 7,
     "tips": "Denne oppskriften er inspirert av den Oslobaserte restauranten Hrimir Ramen. Oppskriftene er en god blanding av Lise Finckenhagen's desserter.<br> I januar og februar er det Amalfi-sitron-sesong. Just sayin'",
     "chef": "Lise Finckenhagen",
     "tipsurl": "https://www.godt.no/oppskrift/7930/vannbakkelsboller-med-pasjonsfrukt",
@@ -3085,7 +3085,7 @@
             "name": "hvetemel"
           },
           {
-            "quantity": "4",
+            "quantity": "4 stk",
             "name": "egg"
           }
         ]
@@ -3106,7 +3106,7 @@
             "name": "maisenna"
           },
           {
-            "quantity": "4",
+            "quantity": "4 stk",
             "name": "egg"
           },
           {
@@ -3119,7 +3119,7 @@
         "title": "Marengs",
         "ingredients": [
           {
-            "quantity": "3",
+            "quantity": "3 stk",
             "name": "eggehviter"
           },
           {
@@ -3263,7 +3263,7 @@
     "description": "Blomkålsuppe toppet med stekt chorizo og chiliolje",
     "longDescription": "På vinteren er det alltid digg med varm suppe. Og når man har laget <a href='/oppskrift/grønnsakskraft'>grønnsakskraft</a> og har litt chorizo, spekeskinke eller bacon til overs, trenger man ikke dra på restaurant!",
     "time": "30 minutter",
-    "portions": "4",
+    "portions": 4,
     "tips": "Bruk <a href='/oppskrift/grønnsakskraft'> hjemmelaget grønnsakskraft</a> <br> Med toppingen kan man være kreativ. Hva med ristede gresskarkjerner?",
     "chef": "Pete",
     "tipsurl": "",
@@ -3272,19 +3272,19 @@
         "title": "",
         "ingredients": [
           {
-            "quantity": "1",
+            "quantity": "1 stk",
             "name": "gul løk"
           },
           {
-            "quantity": "1",
+            "quantity": "1 stk",
             "name": "blomkål"
           },
           {
-            "quantity": "ca 1 liter",
+            "quantity": "1 liter",
             "name": "kylling- eller grønnsakskraft"
           },
           {
-            "quantity": "ei klunk",
+            "quantity": "1 klunk",
             "name": "fløte hvis du har"
           },
           {
@@ -3387,7 +3387,7 @@
     "description": "Lag grønnsakskraft av grønnsaker du ikke har en plan for før det må kastes.",
     "longDescription": "Oppskriften på grønnsakskraft endres etter hva vi har i kjøleskapet, både mengde og type. Noen ganger har vi purre, andre ganger vårløk. Noen ganger pastinakk, andre ganger persillerot, og sånn går no dagan. Derfor endres mengde kraft etter hva man har oppi.",
     "time": "1,5 time",
-    "portions": "Tja..",
+    "portions": 5,
     "tips": "Inspirert av boka Kokkelære",
     "chef": "Tom Victor Gausdal",
     "tipsurl": "https://www.norli.no/kokkelaere",
@@ -3396,11 +3396,11 @@
         "title": "",
         "ingredients": [
           {
-            "quantity": "2",
+            "quantity": "2 stk",
             "name": "gule løk"
           },
           {
-            "quantity": "2",
+            "quantity": "2 stk",
             "name": "gulrøtter"
           },
           {
@@ -3408,27 +3408,27 @@
             "name": "hvitløk"
           },
           {
-            "quantity": "3",
+            "quantity": "3 stk",
             "name": "vårløk"
           },
           {
-            "quantity": "en halv",
+            "quantity": "0.5 stk",
             "name": "sellerirot"
           },
           {
-            "quantity": "en liten",
+            "quantity": "1 liten",
             "name": "persillerot"
           },
           {
-            "quantity": "en kvart",
+            "quantity": "1 kvart",
             "name": "kålrabi"
           },
           {
-            "quantity": "3",
+            "quantity": "3 stk",
             "name": "stangselleri"
           },
           {
-            "quantity": "en halv",
+            "quantity": "0.5 stk",
             "name": "fennikel"
           },
           {
@@ -3436,7 +3436,7 @@
             "name": "pepperkorn"
           },
           {
-            "quantity": "2",
+            "quantity": "2 stk",
             "name": "laubærblad"
           },
           {
@@ -3512,7 +3512,7 @@
     "description": "Red curry paste alà Terje Ommundsen. Lag egen red currypaste!",
     "longDescription": "Nå har vi laget thaisuppe og curryer i noen år. Da har vi erfart at en red curry paste er ikke bare èn red curry paste. Spennende! Dette vil vi lage selv!",
     "time": "1.5 timer",
-    "portions": "ca 4",
+    "portions": 4,
     "tips": "Om du varmebehandler pastaen vil den holde i ca 2 uker i et rent og lukket glass i kjøleskapet. Om du ikke varmebehandler den, vil den fermenteres.",
     "chef": "Terje Ommundsen",
     "tipsurl": "https://www.ark.no/forfattere/terje-ommundsen?as_templateId=4714412&gclid=CjwKCAiAg8OBBhA8EiwAlKw3klHRFuTlLAHhiAKSwQScpN2GqtQ8Rq8FrDJZHeJlyb5nS3EPxTgkxBoCI_kQAvD_BwE&gclsrc=aw.ds",
@@ -3521,11 +3521,11 @@
         "title": "",
         "ingredients": [
           {
-            "quantity": "1.5",
-            "name": "hvitløksfedd"
+            "quantity": "1.5 fedd",
+            "name": "hvitløk"
           },
           {
-            "quantity": "3",
+            "quantity": "3 stk",
             "name": "små sjalottløk"
           },
           {
@@ -3533,7 +3533,7 @@
             "name": "svart kardemomme"
           },
           {
-            "quantity": "ca 1 ss",
+            "quantity": "1 ss",
             "name": "korianderfrø"
           },
           {
@@ -3545,11 +3545,11 @@
             "name": "salt"
           },
           {
-            "quantity": "6-10",
+            "quantity": "6-10 stk",
             "name": "røde chilier"
           },
           {
-            "quantity": "1",
+            "quantity": "1 stk",
             "name": "sitrongresskjerne"
           },
           {
@@ -3641,7 +3641,7 @@
     "description": "Aldri kast kyllingrester om du har renset en hel kylling. Lag kyllingkraft på det.",
     "longDescription": "Hjemmelaget kyllingkraft er alfa omega for å lage en god ramen for eksempel. Vi pleier å kjøpe en hel Hovelsrudkylling for å ha ulike kyllingretter i løpet av uka. Kyllingben og restene etter denne lager vi kraft på.<br><br> Sjekk ut appen 'dyrevennlig' for å velge en litt mer dyrevennlig kylling.(Eller andre dyreprodukter)",
     "time": "4-6 timer",
-    "portions": "ca 1 liter",
+    "portions": 10,
     "tips": "Kylling kan byttes ut med and.",
     "chef": "Tom Victor Gausdal",
     "tipsurl": "https://www.google.com/search?sxsrf=ALeKk03Wevjoa4S-Uxev3-qu34GPwrq0Zg%3A1613849571204&ei=42MxYNL3C8-wrgS-u73IDw&q=kokkel%C3%A6re&oq=kokkel%C3%A6re&gs_lcp=Cgdnd3Mtd2l6EAEYADIECCMQJzIKCAAQxwEQrwEQCjICCAAyAggAMgIIADIECAAQCjICCAAyBAgAEAoyAggAMgQIABAKOg0IABDHARCvARCwAxBDOgcIABCwAxBDOgsIABDHARCvARCwAzoFCAAQsAM6BggjECcQEzoICAAQsQMQgwE6CwgAELEDEMcBEKMCOgIILjoFCAAQsQM6BAguEEM6CAgAEMcBEK8BOgUILhCxAzoICC4QsQMQgwE6BAguEApQghFYxDBg3zVoBnAAeACAAW-IAbAHkgEEMTAuMZgBAKABAaoBB2d3cy13aXrIAQrAAQE&sclient=gws-wiz",
@@ -3654,11 +3654,11 @@
             "name": "kylling"
           },
           {
-            "quantity": "1",
+            "quantity": "1 stk",
             "name": "gulrot"
           },
           {
-            "quantity": "1",
+            "quantity": "1 stk",
             "name": "løk"
           },
           {
@@ -3666,11 +3666,11 @@
             "name": "hvitløk"
           },
           {
-            "quantity": "0.5",
+            "quantity": "0.5 stk",
             "name": "purreløk"
           },
           {
-            "quantity": "1/4",
+            "quantity": "0.25 stk",
             "name": "sellerirot"
           },
           {
@@ -3678,11 +3678,11 @@
             "name": "timian"
           },
           {
-            "quantity": "5",
+            "quantity": "5 stk",
             "name": "pepperkorn"
           },
           {
-            "quantity": "2",
+            "quantity": "2 stk",
             "name": "laubærblad"
           }
         ]
@@ -3764,7 +3764,7 @@
     "description": "Kyllingbryst med curry toppet med friterte nudler.",
     "longDescription": "Denne curryen heter Khao soi gai og er fra boken til Terje Ommundsen 'Thai-Obsessed'.  Hvis du har laget <a href='/oppskrift/kyllingkraft'>kyllingkraft</a> og denne <a href='/oppskrift/red-curry-paste'>red curry pastaen</a>, vil denne retten være lekende lett.<br> Er du ute etter litt spenning i livet fritèr litt nudler.  Det minner meg om da vi som kids panta flasker på Shell og brukt pengene på en pakke nudler for 3 kroner på Asiabutikken for å spise dem ukokt.",
     "time": "1-2 timer",
-    "portions": "4",
+    "portions": 4,
     "tips": "",
     "chef": "Terje Ommundsen",
     "tipsurl": "https://www.ark.no/forfattere/terje-ommundsen?as_templateId=4714412&gclid=CjwKCAiAg8OBBhA8EiwAlKw3klHRFuTlLAHhiAKSwQScpN2GqtQ8Rq8FrDJZHeJlyb5nS3EPxTgkxBoCI_kQAvD_BwE&gclsrc=aw.ds",
@@ -3773,7 +3773,7 @@
         "title": "",
         "ingredients": [
           {
-            "quantity": "1",
+            "quantity": "1 stk",
             "name": "kyllingbryst"
           },
           {
@@ -3797,7 +3797,7 @@
             "name": "palmesukker"
           },
           {
-            "quantity": "1",
+            "quantity": "1 stk",
             "name": "lime"
           },
           {
@@ -3926,7 +3926,7 @@
     "description": "Skrei med appelsinkokte gulrøtter og smørsaus med grønn kardemomme.",
     "longDescription": "Skrei er en megatorsk som er i sesong fra januar til april. Denne oppskriften er en god blanding av erfaring og inspirasjon fra restaurantbesøk. Kardemomme i sausen var noe vi fikk med kamskjell og syltet knutekål på Hyde. Det var så fantastisk at vi prøvde selv. Grønn kardemomme kjøper vi i butikker som har asiatiske varer. <br> Det kan være nyttig å time fisken slik at den er ferdig til servering. Altså ikke sett den i ovnen for tidlig.",
     "time": "1 time",
-    "portions": "4",
+    "portions": 4,
     "tips": "Fisk er digg! <br> Denne oppskriften kan også lages med ulike purèer, for eksempel pastinakkpurè. Smørsaus med kardemomme er inspirert av en rett vi fikk på restauranten Hyde i Oslo.",
     "chef": "Hyde",
     "tipsurl": "http://restauranthyde.no/",
@@ -3939,12 +3939,12 @@
             "name": "skrei eller torsk"
           },
           {
-            "quantity": "en seng",
+            "quantity": "1 seng",
             "name": "grovt havsalt (sånn stor pose)"
           },
           {
-            "quantity": "6 små",
-            "name": "poteter per person"
+            "quantity": "6 stk",
+            "name": "småpoteter per person"
           },
           {
             "quantity": "",
@@ -3956,7 +3956,7 @@
         "title": "Appelsinkokte gulrøtter",
         "ingredients": [
           {
-            "quantity": "4-6",
+            "quantity": "4-6 stk",
             "name": "gulrøtter"
           },
           {
@@ -4136,7 +4136,7 @@
     "description": "Sitronpasta med scampi er en kjapp hverdagsmiddag. ",
     "longDescription": "Det går ikke raskere enn å koke pasta og varme scampi. Skvis no sitron over også er du plutselig i Italia. Serveres gjerne med noe godt brød. ",
     "time": "30 min",
-    "portions": "2",
+    "portions": 2,
     "tips": "Ikke overkok pastaen a! <br> Denne oppskriften har vi hentet fra ulik erfaring og god gammeldags tv-titting.",
     "chef": "Cecilie og Pete",
     "tipsurl": "",
@@ -4145,7 +4145,7 @@
         "title": "",
         "ingredients": [
           {
-            "quantity": "nok til 2 personer",
+            "quantity": "2 personer",
             "name": "pasta, tagliatelle"
           },
           {
@@ -4153,15 +4153,15 @@
             "name": "hvitløk"
           },
           {
-            "quantity": "en halv",
+            "quantity": "0.5 stk",
             "name": "chili"
           },
           {
-            "quantity": "ca 3 ss",
+            "quantity": "3 ss",
             "name": "olivenolje"
           },
           {
-            "quantity": "bunt",
+            "quantity": "1 bunt",
             "name": "bladpersille"
           },
           {
@@ -4169,7 +4169,7 @@
             "name": "scampi"
           },
           {
-            "quantity": "1",
+            "quantity": "1 stk",
             "name": "sitron (skyll godt)"
           }
         ]
@@ -4257,7 +4257,7 @@
     "description": "Langtidsstekt svinenakke i tacokrydder med hjemmelaget tortillalefser.",
     "longDescription": "Cecilie er ikke så glad i tacofredag, sjokkerende! Så hvordan lager man taco til den tacokresne? Jo man eksperimenterer. Det er ikke mulig å ikke like tacofredag, vel?? <br><br> Etter en del tacofredag-forskning har vi konkludert med at taco ikke er godt nok før den inkluderer minimum langtidsstekt kjøtt med vår tacokrydder spessial, hjemmelaga tortillalefser og salsa, med mango.<br><br> Denne oppskriften kan serveres med alt digg du kan tenke deg til taco. Om høsten går vi på Jalapeño-slang hos <a href='https://www.instagram.com/brukshagen_pa_landet/'>Linda</a> som vi sylter på glass og serverer til tacoen.<br> Ønsker du en <a href='/oppskrift/vegetartaco'>vegetarversjon har vi oppskrift for det også her.</a>",
     "time": "7 timer",
-    "portions": "4",
+    "portions": 4,
     "tips": "Lag egen tacokrydder. Du finner oppskrift på <a href='/oppskrift/tacokrydder'>hjemmelaget tacokrydder her.</a> Om du ikke har/finner alle ingredienser som skal til for å lage vårt tacokrydder er det mulig å sløyfe dem, det er garantert bedre enn tacoblandingen fra butikken. Du kan også Google tacokrydder eller spørre oss om vi har noe på lager.<br><br>Denne oppskriften er laga på erfaringer vi har opparbeida oss. Vi kan også nevne at erfaringen handler mye om TV-titting,  og Ole Martin Alfsen.",
     "chef": "Cecilie og Pete og Ole Martin Alfsen",
     "tipsurl": "",
@@ -4283,8 +4283,8 @@
         "title": "Chipotlemajones",
         "ingredients": [
           {
-            "quantity": "1 stor",
-            "name": "chipotle"
+            "quantity": "1 stk",
+            "name": "stor chipotle"
           },
           {
             "quantity": "1 fedd",
@@ -4304,19 +4304,19 @@
         "title": "Mangosalsa",
         "ingredients": [
           {
-            "quantity": "1",
+            "quantity": "1 stk",
             "name": "mango"
           },
           {
-            "quantity": "1 liten",
-            "name": "rødløk"
+            "quantity": "1 stk",
+            "name": "liten rødløk"
           },
           {
-            "quantity": "1 halv",
+            "quantity": "0.5 stk",
             "name": "chili"
           },
           {
-            "quantity": "1 halv",
+            "quantity": "0.5 stk",
             "name": "lime"
           }
         ]
@@ -4325,7 +4325,7 @@
         "title": "Tomatsalsa",
         "ingredients": [
           {
-            "quantity": "ca 150 g",
+            "quantity": "150 g",
             "name": "cherrytomater"
           },
           {
@@ -4333,11 +4333,11 @@
             "name": "hvitløk"
           },
           {
-            "quantity": "en halv",
+            "quantity": "0.5 stk",
             "name": "lime"
           },
           {
-            "quantity": "en halv",
+            "quantity": "0.5 stk",
             "name": "chili"
           },
           {
@@ -4345,7 +4345,7 @@
             "name": "rødløk"
           },
           {
-            "quantity": "klunk",
+            "quantity": "1 klunk",
             "name": "olivenolje"
           },
           {
@@ -4478,7 +4478,7 @@
     "description": "Parmesankrem er en tradisjon i grillmatsesongen. Smaken av bakt hvitløk og parmesan!",
     "longDescription": "Kremen, kremen skal du hete for du gjør min grillmat god! Pete blir kalt kremen blant gode venner. Det er fordi han tar med dette grilltilbehøret. En schläger i grillsesongen!<br><br>Vi serverer den til kjøtt eller en rykende fersk focaccia, men passer også til fisk. Denne gangen lagde vi grillet svinefilet med en ruccolasalat med grilla plommer og revet mozarella.",
     "time": "20 minutter ",
-    "portions": "4",
+    "portions": 4,
     "tips": "Denne har vært med oss noen år. Men kommer opprinnelig fra kiwi-heftet når Kiwi-Tina delte oppskrifter hos dem. ",
     "chef": "Tina Nordström",
     "tipsurl": "https://www.godt.no/aktuelt/i/RR5j0d/det-beste-jeg-vet-med-tina-nordstrom",
@@ -4594,7 +4594,7 @@
     "description": "Rødvinssaus kan serveres til for eksempel en påskemiddag med lam, pastinakkpurè og saltbakte rødbeter.",
     "longDescription": "Denne oppskriften hadde vi behov for å lagre et sted, siden den bare befinner seg på en gammel iPad. Så hvorfor ikke lagre den i vår egen nettkokebok! ",
     "time": "1 time",
-    "portions": "4",
+    "portions": 4,
     "tips": "Bruk en god rødvin. Smaker rødvinen vondt, smaker sausen vondt. <br> Oppskriften ble en gang funnet i DN smak. Men vi finner den ikke lenger på nettet.",
     "chef": "Cecilie og Pete, og DN smak",
     "tipsurl": "",
@@ -4619,7 +4619,7 @@
             "name": "timian"
           },
           {
-            "quantity": "5",
+            "quantity": "5 stk",
             "name": "knuste pepperkorn"
           },
           {
@@ -4727,7 +4727,7 @@
     "description": "Kast aldri skallet fra rekeaften. Lag digg kraft til å ha i fiskesuppa til Trine Sandberg!",
     "longDescription": "Advarsel! Dødens lukt.. Denne kraften lukter ikke like digg som <a href='/oppskrift/kyllingkraft'>kyllingkraft</a> eller <a href='/oppskrift/grønnsakskraft'>grønnsakskraft</a>. Men vi lover, du pimper opp maten et par hakk med hjemmelaget kraft. Bruk kraften i for eksempel sjømatrisotto eller <a href='https://trinesmatblogg.no/recipe/verdens-beste-fiskesuppe-versjon-2-0/'>verdens beste fiskesuppe.</a> (Men husk å smak til suppa med sitron, hvit pepper og salt til slutt.)",
     "time": "1 time og 30 minutter",
-    "portions": "ca 1 liter",
+    "portions": 10,
     "tips": "Kraften kan fryses hvis du ikke har en plan for den enda. Oppskrift fra Kokkelære av:",
     "chef": "Tom Victor Gausdal",
     "tipsurl": "https://www.norli.no/kokkelaere",
@@ -4736,7 +4736,7 @@
         "title": "",
         "ingredients": [
           {
-            "quantity": "5 l",
+            "quantity": "5 liter",
             "name": "skall av skalldyr, som for eksempel reker"
           },
           {
@@ -4748,7 +4748,7 @@
             "name": "tomatpurè"
           },
           {
-            "quantity": "1",
+            "quantity": "1 stk",
             "name": "løk"
           },
           {
@@ -4756,7 +4756,7 @@
             "name": "hvitløk"
           },
           {
-            "quantity": "1/2",
+            "quantity": "0.5 stk",
             "name": "fennikel"
           },
           {
@@ -4768,19 +4768,19 @@
             "name": "sellerirot"
           },
           {
-            "quantity": "1/4",
+            "quantity": "0.25 stk",
             "name": "purreløk"
           },
           {
-            "quantity": "1",
+            "quantity": "1 stk",
             "name": "gulrot"
           },
           {
-            "quantity": "5",
+            "quantity": "5 stk",
             "name": "pepperkorn"
           },
           {
-            "quantity": "2",
+            "quantity": "2 stk",
             "name": "laubærblad"
           }
         ]
@@ -4856,7 +4856,7 @@
     "description": "Ingenting er så enkelt og digg som one pot pasta på tur.",
     "longDescription": "Under pandemien har vi en gang i blant laga middagen ute. Dette er en fin avveksling når man er lei av hjemmekontoret. <br> Husk at du bør preppe hjemme, da blir turlivet så mye enklere. Vi har brukt stormkjøkken med gassflamme og en kjele.",
     "time": "30 minutter",
-    "portions": "4",
+    "portions": 4,
     "tips": "",
     "chef": "Beth fra BudgetBytes.com",
     "tipsurl": "https://www.budgetbytes.com/",
@@ -4877,23 +4877,23 @@
             "name": "tørket timian"
           },
           {
-            "quantity": "1/2 ts",
+            "quantity": "0.5 ts",
             "name": "hvitløkspulver"
           },
           {
-            "quantity": "1/2 ts",
+            "quantity": "0.5 ts",
             "name": "løkpulver"
           },
           {
-            "quantity": "1/4 ts",
+            "quantity": "0.25 ts",
             "name": "cajennepepper"
           },
           {
-            "quantity": "1/4 ts",
+            "quantity": "0.25 ts",
             "name": "sort kvernet pepper"
           },
           {
-            "quantity": "1/4 ts",
+            "quantity": "0.25 ts",
             "name": "salt"
           }
         ]
@@ -4914,7 +4914,7 @@
             "name": "kyllinglårfilet, eller kyllingfileter"
           },
           {
-            "quantity": "1",
+            "quantity": "1 stk",
             "name": "gul løk"
           },
           {
@@ -4934,7 +4934,7 @@
             "name": "naturell kremost"
           },
           {
-            "quantity": "3-4",
+            "quantity": "3-4 stk",
             "name": "vårløk"
           }
         ]
@@ -5054,7 +5054,7 @@
     "description": "Fyll frysern med hjemmelaget hamburgerbrød!",
     "longDescription": "",
     "time": "2 timer",
-    "portions": "16",
+    "portions": 16,
     "tips": "Lag hjemmelaget burger og server med for eksempel <a href='/oppskrift/parmesanchips'>parmesanchips</a> og <a href='/oppskrift/karamellisert-løk'>karamellisert løk</a>",
     "chef": "Eivind Hellstrøm",
     "tipsurl": "https://www.godt.no/oppskrift/7797/hellstroems-hamburger",
@@ -5175,7 +5175,7 @@
     "description": "Pimp opp hva som helst med parmesanchips. Superdigg til hamburger!",
     "longDescription": "Alle disse ostene som kom og gikk, ikke visste jeg at parmesan var selve livet. ",
     "time": "15 minutter",
-    "portions": "4",
+    "portions": 4,
     "tips": "Lag hjemmelaget burger og server med parmesanchips og <a href='/oppskrift/karamellisert-løk'>karamellisert løk</a>. Parmesanchips til burger er inspirert av Kverneriet",
     "chef": "Kverneriet",
     "tipsurl": "https://www.kverneriet.com/",
@@ -5252,7 +5252,7 @@
     "description": "Lyst på smak av søtt og syrlig på burgern? Karamelliser løk!",
     "longDescription": "",
     "time": "25 minutter",
-    "portions": "4",
+    "portions": 4,
     "tips": "Lag hjemmelaget burger og server med <a href='/oppskrift/parmesanchips'>parmesanchips</a>",
     "chef": "Pete og Cecilie",
     "tipsurl": "",
@@ -5341,7 +5341,7 @@
     "description": "Grill sennepsmarinert ørret på en seng av grovsalt, servert med potetsalat og agurksalat.",
     "longDescription": "Ørret er en favoritt på grillen. Skulle helst fiska den sjæl, si! <br> Denne gangen klarte vi å glemme det grove saltet som fisken skal grilles på, vi er fortsatt sikre på at saltgrilling er best. <br>",
     "time": "1 time",
-    "portions": "4",
+    "portions": 4,
     "tips": "Du kan også bruke laks. Vi har stalket flere kokker til denne retten. Tipset om måten å kutte agurken på slik at agurksalaten blir crispy er fra Terje Ommundsen.<br> Fisk med sennep, dill og sukker er fra den utrolig blide sjokolademestern Sverre Sætre.<br><br>Når vi skal saltbake ting bruker vi <a href='https://meny.no/varer/middagstilbehor/salt-og-pepper/salt/havsalt-grovt-7038490004010'>dette saltet.</a> Altså ikke Maldon, det blir dyrt!",
     "chef": "Pete, Cecilie og alle vi stalker",
     "tipsurl": "",
@@ -5366,7 +5366,7 @@
             "name": "brunt sukker"
           },
           {
-            "quantity": "godt lag",
+            "quantity": "1 godt lag",
             "name": "grovt salt (som du tror du skal strø med, billig)"
           }
         ]
@@ -5379,7 +5379,7 @@
             "name": "poteter"
           },
           {
-            "quantity": "1/2",
+            "quantity": "0.5 stk",
             "name": "fennikel"
           },
           {
@@ -5424,7 +5424,7 @@
             "name": "hvitvinseddik"
           },
           {
-            "quantity": "1/2",
+            "quantity": "0.5 stk",
             "name": "chili"
           },
           {
@@ -5561,7 +5561,7 @@
     "description": "Pulled chicken, eller røska høne på godt norsk. Kanskje vår favorittmiddag!",
     "longDescription": "Server med råkostsalat og myntedressing og pitabrød. Vi takker deg Trine!",
     "time": "3 timer",
-    "portions": "4",
+    "portions": 4,
     "vintipsnavn": "Humlepung fra Aga sideri",
     "vintipsUrl": "https://www.vinmonopolet.no/Land/Norge/Vestland/Aga-Sideri-Humlepung/p/11077001",
     "tips": "Vi bruker økologisk kylling, som for eksempel Hovelsrud, sjekk ut dyrevennlig-appen for å velge dyrevennlig.",
@@ -5576,8 +5576,8 @@
             "name": "kylling"
           },
           {
-            "quantity": "2 små",
-            "name": "sjalottløk"
+            "quantity": "2 stk",
+            "name": "små sjalottløk"
           },
           {
             "quantity": "1 hel",
@@ -5609,15 +5609,15 @@
             "name": "salt"
           },
           {
-            "quantity": "2-3",
+            "quantity": "2-3 stk",
             "name": "sjalottløk"
           },
           {
-            "quantity": "1/2 stk",
+            "quantity": "0.5 stk",
             "name": "chili"
           },
           {
-            "quantity": "1/2 stk",
+            "quantity": "0.5 stk",
             "name": "sitron"
           },
           {
@@ -5659,19 +5659,19 @@
             "name": "grønt eple i staver"
           },
           {
-            "quantity": "1 liten",
-            "name": "rødløk"
+            "quantity": "1 stk",
+            "name": "liten rødløk"
           },
           {
             "quantity": "3 stk",
             "name": "reddiker i tynne skiver"
           },
           {
-            "quantity": "1/2 ts",
+            "quantity": "0.5 ts",
             "name": "sukker"
           },
           {
-            "quantity": "1/2 stk",
+            "quantity": "0.5 stk",
             "name": "sitron"
           },
           {
@@ -5688,15 +5688,15 @@
             "name": "gresk yoghurt"
           },
           {
-            "quantity": "1 håndfull",
-            "name": "mynte"
+            "quantity": "1 stk",
+            "name": "håndfull mynte"
           },
           {
             "quantity": "2 ts",
             "name": "dijonsennep"
           },
           {
-            "quantity": "litt",
+            "quantity": "1 skvis",
             "name": "sitronsaft"
           },
           {
@@ -5827,7 +5827,7 @@
     "description": "Skalldyrsalaten kan serveres med god loff og et glass Jura.",
     "longDescription": "Denne salaten har fulgt med Cecilie siden hun feiret sin 17-årsdag hos Rønnaug og Aage med gode venner. Hun skulle helst sett at det ble hummer, kreps, blåskjell og ferske reker.  Som et kompromiss ble det denne skalldyrsalaten servert med <a href='/oppskrift/pavlova/'>Pavlova</a> til dessert. <br><br> Bak deg en rykende fersk <a href='https://www.godt.no/oppskrift/6870/baker-hansens-kongeloff'>Kongeloff</a>, og spis et royalt måltid!",
     "time": "20 minutter",
-    "portions": "4",
+    "portions": 4,
     "tips": "Om du ikke bruker fersk hvitløk så bør man passe på mengden litt. Fersk hvitløk er mildere og rundere i smaken. Server med bobler, for eksempel Cremant du Jura.",
     "chef": "Cecilie og Rønnaug",
     "tipsurl": "",
@@ -5968,7 +5968,7 @@
     "description": "Kjøttboller i hjemmelaget tomatsaus er en hverdagsfavoritt.",
     "longDescription": "Lag masse kjøttboller en dag du har tid og frys dem ned, da har du en superkjapp middag til hverdags eller til å ta med på tur. Ta opp kjøttboller og <a href='/oppskrift/tomatsaus'>hjemmelaget tomatsaus</a> fra fryseren og varm de opp. Kjøttbollene og tomatsausen kan tines sammen i en kjele. Server med pasta og/eller godt brød.",
     "time": "45 minutter",
-    "portions": "10",
+    "portions": 10,
     "tips": "I boka Truls à la Hellstrøm bruker de nykvernet biffkjøtt. Altså det er mulig å være kreativ med kjøttet her!",
     "chef": "Eivind Hellstrøm (og Truls)",
     "tipsurl": "https://www.ark.no/boker/Eyvind-Hellstrom-Truls-a-la-Hellstrom-9788248920465?gclid=Cj0KCQjwhr2FBhDbARIsACjwLo1XVp4GC6_p3Tg-YJdb1PNxwk2-n7QTqwcwP7fpbBj-Y_1I8HBTpvwaAhykEALw_wcB&gclsrc=aw.ds",
@@ -5989,7 +5989,7 @@
             "name": "loff uten skorpe"
           },
           {
-            "quantity": "1 liten bunt",
+            "quantity": "1 bunt",
             "name": "kruspersille"
           },
           {
@@ -6009,7 +6009,7 @@
             "name": "egg"
           },
           {
-            "quantity": "1/2 ss",
+            "quantity": "0.5 ss",
             "name": "hvit pepper"
           },
           {
@@ -6101,7 +6101,7 @@
     "description": "Det er sommer! Server grilla svinefilet med mozzarellasalat og parmesankrem.",
     "longDescription": "Nå er nektarinene i butikken, komboen mozzarella og nektarin er god sommersmak. Vi bruker plommer om vi ikke får tak i nektarin. Serveres med <a href='/oppskrift/parmesankrem'>parmesankrem</a> og grill no maiskolber! <br><br> Kan anbefale en rødvin fra Hellas til denne middagen, <a href='https://www.vinmonopolet.no/Land/Hellas/Thymiopoulos-Naoussa-Alta-2019/p/11441401'>Alta Naoussa.</a>",
     "time": "40 minutter",
-    "portions": "4",
+    "portions": 4,
     "tips": "Server med <a href='/oppskrift/parmesankrem'>parmesankrem</a><br><br> Vi har stalket flere kokker her. Parmesankremen fra svenske kokken Tina Nordström, og nektarinsalaten Lise Finckenhagen.",
     "chef": "God blanding",
     "tipsurl": "",
@@ -6123,19 +6123,19 @@
         "title": "Mozzarellasalat",
         "ingredients": [
           {
-            "quantity": "3-4",
+            "quantity": "3-4 stk",
             "name": "nektariner eller plommer"
           },
           {
-            "quantity": "1-2",
+            "quantity": "1-2 stk",
             "name": "mozzarella"
           },
           {
-            "quantity": "2 håndfull",
+            "quantity": "2 never",
             "name": "ruccola"
           },
           {
-            "quantity": "2 håndfull",
+            "quantity": "2 never",
             "name": "babyleafmix"
           }
         ]
@@ -6144,15 +6144,15 @@
         "title": "Vinaigrette",
         "ingredients": [
           {
-            "quantity": "ca 1 ts",
+            "quantity": "1 ts",
             "name": "Dijonsennep"
           },
           {
-            "quantity": "ca 1 ss",
+            "quantity": "1 ss",
             "name": "hvitvinseddik"
           },
           {
-            "quantity": "ca 2 ss",
+            "quantity": "2 ss",
             "name": "god olivenolje"
           },
           {
@@ -6287,7 +6287,7 @@
     "description": "Det er jordbærsesong! Grill jordbær så har du noe digg å servere til sultne grillgjester.",
     "longDescription": "Server grilla jordbær med mozzarella, basilikum og digge oljer på et fat så dine grillgjester har noe annet enn ventepølser å spise på.",
     "time": "10 minutter",
-    "portions": "6",
+    "portions": 6,
     "vintipsnavn": "Meinklang Prosa",
     "vintipsUrl": "https://www.vinmonopolet.no/Land/%C3%98sterrike/%C3%96sterreichischer-W-/Meinklang-Prosa-2022/p/437901",
     "tips": "",
@@ -6306,7 +6306,7 @@
             "name": "mozzarella"
           },
           {
-            "quantity": "ca 12 stk",
+            "quantity": "12 stk",
             "name": "spekeskinke"
           },
           {
@@ -6396,7 +6396,7 @@
     "description": "Det er jordbærsesong! Ha jordbærsalsa til grillmaten eller koldtbordet.",
     "longDescription": "Norske jordbær er definisjonen på sommerferie. Våre beste kulinariske barndomsminner er jordbær, fløte og sukker. Jordbær behøver ikke alltid være en dessert. Passer perfekt til grillmat eller koldtbord.",
     "time": "15 minutter",
-    "portions": "6",
+    "portions": 6,
     "tips": "Her har vi laget vår egen vri på Silje sin jordbærsalsa, og byttet ut koriander med basilikum. Men prøv gjerne med koriander også.",
     "chef": "Silje Sandberg",
     "tipsurl": "https://siljespiser.no/",
@@ -6409,19 +6409,19 @@
             "name": "norske jordbær"
           },
           {
-            "quantity": "1/2 stk",
+            "quantity": "0.5 stk",
             "name": "agurk"
           },
           {
-            "quantity": "1/2 stk",
+            "quantity": "0.5 stk",
             "name": "rødløk"
           },
           {
-            "quantity": "1 god håndfull",
+            "quantity": "1 håndfull",
             "name": "basilikum"
           },
           {
-            "quantity": "1/2 stk",
+            "quantity": "0.5 stk",
             "name": "lime"
           },
           {
@@ -6504,7 +6504,7 @@
     "description": "Herlig thaisuppe fra Trines matblogg kan lett lages på primus, skip kylling så har du en digg vegetarsuppe.",
     "longDescription": "Denne suppa har vært en av våre favoritter fra Trines matblogg i noen år. Men denne gangen prøvde vi å ta den med på tur. Og med ferske bønner fra hagen til <a href='https://www.instagram.com/brukshagen_pa_landet/'>Linda</a> blir denne suppa himmelsk også på primus.<br> Det viktigste ved å ta med mat på tur er prepping. Alt preppes på kjøkkenet hjemme, så les fremgangsmetode og pakk etter den sånn at det bare blir å slenge sammen på primusen i tur og orden. God tur!",
     "time": "45 minutter",
-    "portions": "3-4",
+    "portions": 4,
     "tips": "Om du ønsker å ta denne suppa ett hakk høyere på digg-skalaen, lag egen <a href='/oppskrift/red-curry-paste'>red curry paste.</a> Hvis dette blir for mye å be om, så utforsk ulike red curry-paster. Noen er faktisk mye bedre enn andre. Noen er også sterkere enn andre, smak deg frem. <br><br> Man må ikke ha kylling i denne om du ønsker en vegetarvariant. Den er like god uten! Bytt ut kyllingfond med grønnsaksfond.",
     "chef": "Trine Sandberg",
     "tipsurl": "https://trinesmatblogg.no/recipe/thaisuppe-med-kylling-og-red-curry/",
@@ -6517,7 +6517,7 @@
             "name": "kyllinglårfilet"
           },
           {
-            "quantity": "3",
+            "quantity": "3 stk",
             "name": "sjalottløk, tynne skiver"
           },
           {
@@ -6525,7 +6525,7 @@
             "name": "hvitløk, finhakket"
           },
           {
-            "quantity": "ca 6 ts",
+            "quantity": "6 ts",
             "name": "red curry paste"
           },
           {
@@ -6533,11 +6533,11 @@
             "name": "ingefær, revet"
           },
           {
-            "quantity": "1",
+            "quantity": "1 stk",
             "name": "rød paprika, i strimler"
           },
           {
-            "quantity": "1",
+            "quantity": "1 stk",
             "name": "gulrot, tynne staver"
           },
           {
@@ -6545,7 +6545,7 @@
             "name": "kokosmelk"
           },
           {
-            "quantity": "2 1/2 dl",
+            "quantity": "2.5 dl",
             "name": "kyllingkraft eller grønnsakskraft"
           },
           {
@@ -6557,7 +6557,7 @@
             "name": "fishsauce"
           },
           {
-            "quantity": "1 1/2 ts",
+            "quantity": "1.5 ts",
             "name": "soyasaus (mindre salt, thin)"
           },
           {
@@ -6586,7 +6586,7 @@
             "name": "Ei sleiv til å røre med"
           },
           {
-            "quantity": "2",
+            "quantity": "to",
             "name": "Boller til å mellomlagre stekte ingredienser"
           },
           {
@@ -6732,7 +6732,7 @@
     "description": "Tynne pannekaker, eller crêpes som det heter på godt fransk, egner seg både som hovedrett og dessert.",
     "longDescription": "Om sommeren har det blitt en tradisjon å stjele litt fra kjøkkenhagen til Cecilies bror Thormod og svigerinne <a href='https://www.instagram.com/brukshagen_pa_landet/'>Linda</a>. Denne retten er inspirert av deres bugnende drivhus med tomater og pallekrager med grønnsaker. Samtidig fikk vi ta med oss noen never rips. <br> Med nydelig vær i Oslo ble det en tur på øyene for å bade og lage digg mat på primus.",
     "time": "20 minutter",
-    "portions": "8-10 pannekake",
+    "portions": 10,
     "tips": "",
     "chef": "Pete og Cecilie",
     "tipsurl": "",
@@ -6761,7 +6761,7 @@
             "name": "salt"
           },
           {
-            "quantity": "ca 50 gr",
+            "quantity": "50 g",
             "name": "smør til steking"
           }
         ]
@@ -6908,7 +6908,7 @@
     "description": "Sjokoladesaus til bruk på iskrem, i iskrem og andre digge desserter.",
     "longDescription": "Smør, sukker, fløte og sjokolade. Altså de beste ingrediensene livet har å by på!",
     "time": "20 minutter",
-    "portions": "2-10",
+    "portions": 10,
     "tips": "",
     "chef": "godt.no",
     "tipsurl": "https://www.godt.no/oppskrift/5237/sjokoladesaus",
@@ -7001,7 +7001,7 @@
     "description": "Nå er det masse multer i fjellet. Lag noe som faktisk smaker godt av dem!",
     "longDescription": "Multer, eller Satans Bringebær som det også kalles (hilsen vår venn Jazz Erik), har blitt så populært at folk <a href='https://www.nrk.no/tromsogfinnmark/fratatt-spann-med-multer_-_-det-var-et-regelrett-ran-1.15596590'>sloss i fjellet om dem</a>. Vi har begge egentlig vært svært høylytte motstandere av multekrem til dessert på julaften. Men om man bruker nok sukker og kvitter seg med steinene - ja da kan det brukes til mye digg. For eksempel som saus på vaniljeis, munkedip, på <a href='/oppskrift/crepes'>pannekaker</a> eller i en annen dessert. Den kan også brukes som smaksetter i en <a href='/oppskrift/viltgryte'>viltgryte</a>.",
     "time": "15 minutter",
-    "portions": "mye",
+    "portions": 10,
     "tips": "Sverre Sætre har et par tråder med safran i sirupen, vi må be <a href='https://www.instagram.com/brukshagen_pa_landet/'>Linda</a> om å dyrke safran-blomst!",
     "chef": "Sverre Sætre",
     "tipsurl": "https://www.dn.no/smak/oppskrifter/frukt-og-bar/multer/oppskrifter/sverre-satre/multesirup/1-1-5413629",
@@ -7090,7 +7090,7 @@
     "description": "Rabarbrasirup er forfriskende i en sitronbrus med isbiter, eller som saus i desserter eller på is.",
     "longDescription": "",
     "time": "ca 1 time",
-    "portions": "10",
+    "portions": 10,
     "tips": "Ha i noen jordbær for å få rabarbrasirupen rødere.",
     "chef": "",
     "tipsurl": "",
@@ -7111,8 +7111,8 @@
             "name": "vann"
           },
           {
-            "quantity": "1 ss (smak til)",
-            "name": "sitron"
+            "quantity": "1 ss",
+            "name": "sitron (smak til)"
           }
         ]
       }
@@ -7203,7 +7203,7 @@
     "description": "Sorbet, rabarbra, jordbær og marshmallows. Blir ikke mer sommer enn dette.",
     "longDescription": "Vi var en tur i Oslomarka en dag i sommer hvor vi fant masse markjordbær og fikk lyst til å lage en dessert med dem istedenfor å spise de med en gang. Men her er det lov med vanlige jordbær.",
     "time": "2 timer",
-    "portions": "4",
+    "portions": 4,
     "tips": "Denne desserten er inspirert av en dessert vi fikk i København på restauranten Kin Kin Bao Bao.",
     "chef": "Pete og Cecilie",
     "tipsurl": "",
@@ -7349,7 +7349,7 @@
     "description": "Superenkel og rask majones. Smakstilsett med hva du vil, for eksempel chili.",
     "longDescription": "Da får du chilimajones. Smakstilsett med finhakket sylteagurk, kapers, finhakket persille og ansjos(eventuelt sjalottløk), så har du laget remulade. Altså, majones-grunnoppskriften kan smakstilsettes i det uendelige. Prøv deg gjerne fram med ulike oljer også, men husk! er oljen vond blir maten vond. Denne oppskriften lager chilimajones med sriracha.",
     "time": "10 minutter",
-    "portions": "4",
+    "portions": 4,
     "tips": "For å få til en bra emulsjon hver gang så er det viktig at ingrediensene har samme temperatur. Om du opplever at majonesen aldri blir tykk, så kan dette være grunnen. Tipset om å bruke stavmikser for å lage majones kommer fra superkokken Lise.",
     "chef": "Lise Finckenhagen",
     "tipsurl": "",
@@ -7366,7 +7366,7 @@
             "name": "dijonsennep"
           },
           {
-            "quantity": "1 lite fedd",
+            "quantity": "1 fedd",
             "name": "hvitløk"
           },
           {
@@ -7374,7 +7374,7 @@
             "name": "solsikkeolje"
           },
           {
-            "quantity": "0,5 stk",
+            "quantity": "0.5 stk",
             "name": "lime eller sitron"
           },
           {
@@ -7446,7 +7446,7 @@
     "description": "Betesalat med grilla chevre og honningglaserte nøtter.",
     "longDescription": "På høsten er betene i sesong, noe som betyr at de er sykt gode! Lag en enkel salat av den. Digg og raskt!",
     "time": "45 minutter",
-    "portions": "4",
+    "portions": 4,
     "tips": "Betesalat kan varieres med hva du liker. Men denne er inspirert av Det glade kjøkken!",
     "chef": "Rolf-Anders",
     "tipsurl": "https://detgladekjokken.no/oppskrift/rodbetsalat-grillet-chevre-honningglaserte-valnotter/",
@@ -7580,7 +7580,7 @@
     "description": "Eplepai med vaniljesaus slik mamma'n til Petter lager den.",
     "longDescription": "Denne oppskriften har Petter vokst opp med. Og i sine glansdager, altså studietida, imponerte han alle med denne supergode pai-oppskriften. Godt oppdratt kaller man det, møblert hjem osv. ",
     "time": "2-3 timer",
-    "portions": "6-8",
+    "portions": 6,
     "tips": "For å lage en god paideig er det viktig at den holdes kald. Et protip er å ha bakeutstyr i kjøleskap/fryser før det skal jobbes med deigen. Restene av vaniljesausen putter vi i ismaskinen og serverer hjemmelaget vaniljeis til eplepaien.",
     "chef": "Mamma Kari",
     "tipsurl": "",
@@ -7605,7 +7605,7 @@
             "name": "bakepulver"
           },
           {
-            "quantity": "2-3",
+            "quantity": "2-3 stk",
             "name": "epler"
           },
           {
@@ -7750,7 +7750,7 @@
     "description": "Viltgryte med rørte tyttebær og hemmelige ingredienser.",
     "longDescription": "På hytta i Uvdal er det masse bær å sanke. For eksempel einebær, multer og tyttebær. Bruk alt i denne gryta! Hvis du er usikker på type kjøtt så herm etter oss, vi brukte reinsdyrskanker. De kan kokes hele eller for å gjøre det kjappere, kutt kjøttet i terninger. Husk at beina bør være med i kokinga. Serveres med potetstappe eller ris.",
     "time": "2-3 timer",
-    "portions": "4",
+    "portions": 4,
     "tips": "Hvis du er lei av å høre oss si 'smak det til', burde du ikke lage denne gryta. Den er definisjonen på å smake til maten.",
     "chef": "Pete og Cecilie og Lise Finckenhagen",
     "tipsurl": "https://www.godt.no/oppskrift/502/viltgryte-med-sopp-og-roedvin",
@@ -7820,7 +7820,7 @@
         "title": "Rørte tyttebær",
         "ingredients": [
           {
-            "quantity": "ca 4 never",
+            "quantity": "4 never",
             "name": "tyttebær"
           },
           {
@@ -7828,7 +7828,7 @@
             "name": "sukker"
           },
           {
-            "quantity": "liten skvis",
+            "quantity": "1 skvis",
             "name": "sitron"
           }
         ]
@@ -7938,7 +7938,7 @@
     "description": "Hjemmelaget medisterkaker og medisterpølser. ",
     "longDescription": "En tradisjon før jul er å ha en medisterfest hvor vi lager medisterkaker og medisterpølser (og drikker juleøl). Kunsten er å vite hvor mye man skal lage. Vi beregner ca 300 gram medisterdeig per person. Utstyr er også en greie her, man trenger en kvern og ei pølsestapper på kjøkkenmaskinen.",
     "time": "4 timer",
-    "portions": "5",
+    "portions": 5,
     "tips": "Disse oppskriftene er en blanding av Eivind Hellstrøm og Ida Grand Jansen sine oppskrifter.",
     "chef": "Ida Gran Jansen og Hellstrøm",
     "tipsurl": "https://www.godt.no/oppskrift/2191/hellstroems-medisterpoelser-og-medisterkaker",
@@ -8165,7 +8165,7 @@
     "description": "Kokosmakroner er virkelig den enkleste og raskeste julebaksten man kan bake.",
     "longDescription": "",
     "time": "maks 1 time",
-    "portions": "1",
+    "portions": 30,
     "tips": "1 posjon er ca 30 stykk makroner. Dette spørs på hvilken størrelse du velger å forme dem med.",
     "chef": "Matprat",
     "tipsurl": "https://www.matprat.no/oppskrifter/tradisjon/kokosmakroner/",
@@ -8274,7 +8274,7 @@
     "description": "Sirup og brød, brød og sirkus, sirupsbrød? Ja takk!",
     "longDescription": "Denne oppskriften lager 2 brød. <br>Dette er en juletradisjon Pete har pådratt seg, noe vi kan takke hans mor (Kari) for. Veldig digg til julefrokosten med smør og brunost.",
     "time": "3 timer",
-    "portions": "2",
+    "portions": 2,
     "tips": "Pass på at deigen ikke blir for fast. Ikke la deg lure til å putte i mer mel fordi deigen er så klissete. Stå i det. Eller snakk om det.",
     "chef": "Kari's oppskriftsarkiv",
     "tipsurl": "",
@@ -8319,11 +8319,11 @@
             "name": "mørk sirup"
           },
           {
-            "quantity": "ca 8 dl",
+            "quantity": "8 dl",
             "name": "finmalt rugmel"
           },
           {
-            "quantity": "ca 7 dl",
+            "quantity": "7 dl",
             "name": "hvetemel"
           },
           {
@@ -8411,7 +8411,7 @@
     "description": "Sukkerbomber med friske bær og fruktsmak.",
     "longDescription": "En guilty pleasure vi begge har til felles er seigmenn(og kvinner), en ting vi ikke har tenkt på er at vi kan lage dem selv! Lag saus/sirup av din favoritt frukt,bær eller blomst, da har du en god start for å lage juleflesk.",
     "time": "30 minutter",
-    "portions": "ca 30",
+    "portions": 30,
     "tips": "Denne oppskriften viser bare juleflesk med bringebærsirup. Men du kan bytte ut bringbær med annen bær eller frukt. Vær kreativ! Bruk konditorfarge hvis du ønsker en sterkere farge.<br> Vi bruker frossen bringebær nå som den er ute av sesong.",
     "chef": "Rolf-Anders fra det glade kjøkken.",
     "tipsurl": "https://detgladekjokken.no/oppskrift/seigmenn-juleflesk/",
@@ -8561,7 +8561,7 @@
     "description": "En venn av en venn har gitt oss denne oppskriften. Garantert Norges beste pepperkaker!",
     "longDescription": "Denne oppskriften tar kanskje mer tid enn kjøpedeig, men OMG så gode! Ta deg tid, stress ned, hør på en podcast eller samarbeid med en venn så blir resultatet nydelig. Det er ikke lov å jukse med krydderne, krydderne er der for en grunn. Enjoy!",
     "time": "Hele da'n",
-    "portions": "60",
+    "portions": 60,
     "tips": "Vår venn Jazz Erik har fått lov til å dele en oppskrift med oss som vi bare måtte prøve. ",
     "chef": "Brønnleder Anders",
     "tipsurl": "",
@@ -8702,7 +8702,7 @@
     "description": "Nytt år og nye muligheter! Spis Mulligatawny-suppe slik som Grevinnen. ",
     "longDescription": "Supper er enkle å ta med på tur. Enten i fryst versjon, rester eller rett og slett lage alt ute i det fri.",
     "time": "1 time",
-    "portions": "4",
+    "portions": 4,
     "tips": "Kan serveres med ris eller røde linser",
     "chef": "Lise Finckenhagen",
     "tipsurl": "https://www.godt.no/oppskrift/8752/indisk-suppe-med-karrismak",
@@ -8876,7 +8876,7 @@
     "description": "Lag ditt eget karripulver! Mye bedre enn det du putter på fiskebollene.",
     "longDescription": "Erstatt hjemmelaget krydder med de suspekte blandingene man kjøper i butikken!",
     "time": "20 minutter",
-    "portions": "Mange",
+    "portions": 10,
     "tips": "Brukes i for eksempel <a href='/oppskrift/mulligatawny'>Mulligatawny</a>",
     "chef": "Denne fant vi på det o store internett",
     "tipsurl": "https://www.godt.no/oppskrift/5297/hjemmelaget-curry",
@@ -8897,7 +8897,7 @@
             "name": "hele kardemommekapsler"
           },
           {
-            "quantity": "0.25",
+            "quantity": "0.25 stk",
             "name": "kanelstang"
           },
           {
@@ -8977,7 +8977,7 @@
     "description": "Ovnsbakt skrei/torsk med lime, chili og koriander, en smaksbombe til hverdags!",
     "longDescription": "Dette er en av våre favoritt hverdagsmiddager, den går kjapt og når skrei er i sesong er det jo luksusmiddag. Skreien er i sesong fra januar til april. Det vil du ikke gå glipp av! Liker du ikke brokkoli? Prøv om igjen med denne oppskriften, gjerne med brokkolini (fås på butikker med litt ekstra utvalg)",
     "time": "45 minutter",
-    "portions": "4",
+    "portions": 4,
     "tips": "Kan anbefale sausene som er avbildet(soya- fiske- og oyster-saus), fås kjøpt på asiatiske butikker.",
     "chef": "Lise Finckenhagen",
     "tipsurl": "",
@@ -9018,7 +9018,7 @@
             "name": "vann"
           },
           {
-            "quantity": "1 god håndfull",
+            "quantity": "1 håndfull",
             "name": "frisk koriander"
           }
         ]
@@ -9027,8 +9027,8 @@
         "title": "Stekt brokkoli",
         "ingredients": [
           {
-            "quantity": "1 pakke/stk ",
-            "name": "brokkolini/brokkoli)"
+            "quantity": "1 pakke ",
+            "name": "brokkolini/stk brokkoli)"
           },
           {
             "quantity": "1 fedd",
@@ -9154,7 +9154,7 @@
     "description": "Lag ditt eget tacokrydder. Du vil aldri gå tilbake til first price!",
     "longDescription": "Ja, vi tørker hvitløk og løken sjæl! Prøv du også, skjær løk i tynne tynne skiver og ha de enten i ovn over natten på 55 grader varmluft, med litt åpen dør. Eller bruk tørkemaskin. Mort tørr løk til pulver og ha i et glass med lokk. Hvitløk skal det brukes lite av, så den vil du ha i evigheter.",
     "time": "5 minutter",
-    "portions": "ca 1 dl",
+    "portions": 10,
     "tips": "Kjøp krydder i poser i stedenfor i glass. Mye mer for penga og enklere å forholde seg til når man skal bruke spiseskjeer.",
     "chef": "Caroline Dafsgård Widnersson",
     "tipsurl": "",
@@ -9313,7 +9313,7 @@
     "description": "Korintkake uten korinter. Barndomsminner! sier Petter.",
     "longDescription": "Enkel og digg formkake som Petter fikk servert av farmor Margot i hans oppvekst. Server med sitronglasur. Denne oppskriften er for 2 formkaker.",
     "time": "2 timer",
-    "portions": "8",
+    "portions": 1,
     "tips": "Prøv gjerne med korinter om det gir gode vibber. <br> Orker du ikke to kaker i dag? Denne kan fint fryses.",
     "chef": "Farmora til Pete",
     "tipsurl": "",
@@ -9451,7 +9451,7 @@
     "description": "Prepp kebab hjemme og stek den på primusen!",
     "longDescription": "Lag byens beste kebab! Eventuelt skogens beste.. Uansett, det er kjempegodt! Vi pleier å lage <a href='/oppskrift/pannebrød'>hjemmelaget pannebrød,</a> men babben kan også serveres med kjøpte pitabrød for å gjøre det enkelt.",
     "time": "1 time",
-    "portions": "4",
+    "portions": 4,
     "tips": "Her har vi blandet flere oppkrifter, men har stalket Lise mest!",
     "chef": "Lise Finckenhagen ",
     "tipsurl": "https://www.godt.no/oppskrift/1857/hjemmelaget-kebab-shawarma-rullekebab",
@@ -9554,16 +9554,16 @@
         "title": "Utstyr",
         "ingredients": [
           {
-            "quantity": "Stormkjøkken med panne",
-            "name": ""
+            "quantity": "",
+            "name": "Stormkjøkken med panne"
           },
           {
-            "quantity": "Stekespade",
-            "name": ""
+            "quantity": "",
+            "name": "Stekespade"
           },
           {
-            "quantity": "Tallerkener og bestikk",
-            "name": ""
+            "quantity": "",
+            "name": "Tallerkener og bestikk"
           }
         ]
       }
@@ -9658,7 +9658,7 @@
     "description": "Masse digg smak i en kjapp og enkel kyllingsalat. Sterk, søt og syrlig!",
     "longDescription": "Larp Gai kommer fra Nordøst-Thailand og er en frisk og superrask middag på en varm sommerdag.  Denne kan fint tas med på tur og lages på primus med litt god prepping.",
     "time": "30 minutter",
-    "portions": "2",
+    "portions": 2,
     "tips": "",
     "chef": "Terje Ommundsen",
     "tipsurl": "",
@@ -9675,7 +9675,7 @@
             "name": "hvitløksfedd"
           },
           {
-            "quantity": "klunk",
+            "quantity": "1 klunk",
             "name": "olje til steking"
           },
           {
@@ -9724,7 +9724,7 @@
             "name": "sitrongresskjerne"
           },
           {
-            "quantity": "ca 150 g",
+            "quantity": "150 g",
             "name": "spisskål"
           },
           {
@@ -9820,7 +9820,7 @@
     "description": "Grill eller stek brød i panne. Ferskt brød er godt til de fleste anledninger!",
     "longDescription": "Godt tilbehør til grillmat, gyros eller <a href='/oppskrift/kebab'>kebab</a>. Hvis du synes denne oppskriften så skremmende ut, prøv ut en enklere versjon med <a href='/oppskrift/yoghurtbrød'>yoghurtbrød</a>",
     "time": "2 timer",
-    "portions": "6",
+    "portions": 6,
     "tips": "",
     "chef": "Lise Finckenhagen",
     "tipsurl": "https://www.godt.no/oppskrift/8008/flatbroed-flate-myke-broed",
@@ -9940,7 +9940,7 @@
     "description": "Grill soyamarinert biffkjøtt og rødløk på spyd. Servere med digg tilbehør.",
     "longDescription": "Her er det flere ting som kan preppes i god tid i forveien. For eksempel chilimajones og vinaigretten.",
     "time": "3 timer",
-    "portions": "4",
+    "portions": 4,
     "tips": "Husk å legg kjøttet i marinade i god tid i forveien. Da får smaken satt seg godt i kjøttet. Vi pleier å marinere dagen før, men det er ikke krise hvis du skal grille i dag. Start med marinaden og la kjøttet ligge i minst 30 minutter. Dette er en god blanding av folk vi stalker. Som for eksempel Lise Finckenhagen, Terje Ommundsen og Julies matblogg.",
     "chef": "Pete og Cecilie",
     "tipsurl": "",
@@ -10035,8 +10035,8 @@
             "name": "babyleaf-salat"
           },
           {
-            "quantity": "1 liten",
-            "name": "sjalottløk"
+            "quantity": "1 stk",
+            "name": "liten sjalottløk"
           },
           {
             "quantity": "2 ss",
@@ -10242,7 +10242,7 @@
     "description": "Fysen på kvelden? Noen ganger er en superkjapp og saftig eplekake løsningen!",
     "longDescription": "Når det er eplesesong blir det bakt en del med epler her i heimen, spesielt denne som går så raskt å lage. Favorittepletypen til denne kaken er Discovery.",
     "time": "45 minutter",
-    "portions": "8",
+    "portions": 8,
     "vintipsnavn": "Egge Gård Iseple",
     "vintipsUrl": "https://www.vinmonopolet.no/Land/Norge/Egge-G%C3%A5rd-Iseple/p/9624602",
     "tips": "Vi pleier å halvere denne siden vi er 2 personer, også har vi deigen i en liten støpejernsstekepanne(15cm).",
@@ -10381,7 +10381,7 @@
     "description": "Komboen gravet laks, fennikelsalat, sennepssaus og pepperrotkrem er fantastisk. Vår favoritt forrett!",
     "longDescription": "Denne forretten har blitt til ved å kombinere ting vi tenker fungerer sammen, og vipps så ble det en magisk forrett!",
     "time": "2-3 dager",
-    "portions": "6",
+    "portions": 6,
     "vintipsnavn": "Alde Eplesider",
     "vintipsUrl": "https://www.vinmonopolet.no/Land/Norge/Vestland/Alde-Eplesider-2022/p/5895501",
     "tips": "Server med <a href='https://meny.no/varer/bakeri/tort-brod/flatbrod/skjenning-7051290000020'>skjenning</a>, et typisk trøndersk flatbrød med en søtlig smak.",
@@ -10404,7 +10404,7 @@
             "name": "salt"
           },
           {
-            "quantity": "1 stor neve",
+            "quantity": "1 neve",
             "name": "frisk dill"
           },
           {
@@ -10457,7 +10457,7 @@
             "name": "solsikkeolje/rapsolje"
           },
           {
-            "quantity": "1 stor neve",
+            "quantity": "1 neve",
             "name": "frisk dill"
           }
         ]
@@ -10470,7 +10470,7 @@
             "name": "fennikel"
           },
           {
-            "quantity": "1 stk ",
+            "quantity": "1 stk",
             "name": "grønt eple"
           },
           {
@@ -10482,11 +10482,11 @@
             "name": "reddiker"
           },
           {
-            "quantity": "1/2 ts",
+            "quantity": "0.5 ts",
             "name": "sukker"
           },
           {
-            "quantity": "1/2 stk",
+            "quantity": "0.5 stk",
             "name": "sitron"
           },
           {
@@ -10499,7 +10499,7 @@
         "title": "Pepperrotkrem",
         "ingredients": [
           {
-            "quantity": "halv boks",
+            "quantity": "0.5 boks",
             "name": "seterrømme, viktig at det er en fet en. Lettrømme er ikke lov!"
           },
           {
@@ -10637,7 +10637,7 @@
     "description": "Spise jordbær om sommeren er obligatorisk. Marinér jordbæra i lime og server med søt ost!",
     "longDescription": "Dette er vår vri på \"jordbær med fløte og sukker\". Bytt ut fløte med søt ost - mascarpone! Fås på de fleste butikker i ostehylla. Ingenting snakker sommer mer enn denne desserten! God sommer!",
     "time": "45 minutter",
-    "portions": "4",
+    "portions": 4,
     "vintipsnavn": "Innocent Bystander Victoria Moscato",
     "vintipsUrl": "https://www.vinmonopolet.no/Land/Australia/Victoria/Innocent-Bystander-Victoria-Moscato-2021/p/117901",
     "tips": "Er du typen til å lage granskuddsirup? Bytt ut søtninga i mascarponen med sirupen! Begynn med ca 2 ss granskuddsirup, smak til - det skal smake søtt nok.",
@@ -10743,7 +10743,7 @@
     "description": "Denne har blitt årets sommertilbehør. Potetsalat går aldri av moten om sommer'n, men prøv denne grønne varianten!",
     "longDescription": "Denne har en digg urtesmak med syrlige toner. Det er forresten ikke lov å hoppe over ansjosen, ansjos avrunder den syrlige smaken og gir en umamismak. Smak til før og etter om du ikke tror på meg. Denne passer meget godt ved siden av en caprese!\r\n Eller hva med til denne <a href='/oppskrift/grillspyd'>grillmaten?</a>",
     "time": "30 minutter",
-    "portions": "4",
+    "portions": 4,
     "tips": "Kan serveres til grillmat, koldtbord, lunsj, turmat, park-mat osv. Fungerer veldig godt ved siden av en tomatsalat som caprese for eksempel.\r\nDenne oppskriften er hentet fra Aichas salatfantasier. Sjekk ut flere av hennes oppskrifter! ",
     "chef": "Aicha Bouhlou",
     "tipsurl": "https://aichasmat.no/",
@@ -10785,7 +10785,7 @@
             "name": "vårløk"
           },
           {
-            "quantity": "1/2 stk",
+            "quantity": "0.5 stk",
             "name": "grønn chili"
           },
           {
@@ -10797,11 +10797,11 @@
             "name": "rødvinseddik"
           },
           {
-            "quantity": "ca 1 dl",
+            "quantity": "1 dl",
             "name": "extra virgin olivenolje"
           },
           {
-            "quantity": "smak til ",
+            "quantity": "smak til",
             "name": "med salt og pepper"
           }
         ]
@@ -10873,7 +10873,7 @@
     "description": "Bak feta og bland med yoghurt og du har laget en himmelsk god dipp eller grilltilbehør!",
     "longDescription": "Denne er en veldig allsidig dipp som tilbehør til for eksempel en <a href='/oppskrift/grillspyd'>grillmiddag</a> eller som snacks på festbordet. ",
     "time": "40 minutter",
-    "portions": "6",
+    "portions": 6,
     "tips": "Denne er hentet fra en av våre favoritt kokebøker - Spis sammen av julies matblogg.",
     "chef": "Julie Ilona Balas",
     "tipsurl": "https://juliesmatblogg.no/",
@@ -10906,7 +10906,7 @@
             "name": "gresk yoghurt"
           },
           {
-            "quantity": "1/2 stk",
+            "quantity": "0.5 stk",
             "name": "sitron"
           }
         ]
@@ -10974,7 +10974,7 @@
     "description": "Synes du gjærdeig, elting og heving er stress? Lag yoghurtbrød, superkjapp brød til grillmaten, eller til å duppe i digge dipper.",
     "longDescription": "Ferskt brød til middag er fantastisk. Spesielt til grillmat med ulik tilbehør, for eksempel: <a href='/oppskrift/parmesankrem'>parmesankrem</a>, <a href='/oppskrift/fetadipp'>fetadipp</a>, <a href='/oppskrift/salsa-verde'>salsa verde</a>.\r\nDu kan enten grille brødene eller steke dem i en tørr panne.",
     "time": "20 minutter",
-    "portions": "4",
+    "portions": 4,
     "tips": "",
     "chef": "Jamie Oliver",
     "tipsurl": "",
@@ -11070,7 +11070,7 @@
     "description": "Skap sørlandsidyll med munker! Server de med ulik tilbehør som for eksempel sukker, syltetøy eller sirup.",
     "longDescription": "Finn frem munkejernet! I 2019 var vi i Risør for første gang og fikk kjøpt oss et par nystekte munker. Det var såpass godt at vi har gjort det til en tradisjon å lage munker på hyttetur om sommeren. Ta med munkejernet ut på tur og varm opp munkejernet over primus, skap sørlandsmagi!",
     "time": "2 timer",
-    "portions": "et tårn",
+    "portions": 10,
     "tips": "Det finnes mange ulike måter å lage denne røren på. Vi har landet på oppskriften fra kokkelæreboka. Men vi har planer om å teste flere ulike rører. Hva med revet sitronskall? Hva med Rørossmør? Mye skal utforskes med denne tradisjonen..",
     "chef": "Tom Victor Gausdal",
     "tipsurl": "https://www.norli.no/boker/hobby-og-fritid/mat-og-drikke/kokeboker/kokkelaere?gclid=Cj0KCQjwrfymBhCTARIsADXTablXF-eD3L2j-riMjvohR33haqAPmJL16pu4qXqFzLFO6v6PuBO38NoaAjthEALw_wcB",
@@ -11103,7 +11103,7 @@
             "name": "mel"
           },
           {
-            "quantity": "litt",
+            "quantity": "1 dryss",
             "name": "kardemomme"
           },
           {
@@ -11171,7 +11171,7 @@
     "description": "Lag din egen sriracha! Hva er det, spør du? Digg chilisaus! svarer vi. ",
     "longDescription": "Sriracha kan brukes til så mangt. Både som ekstra styrke på middagen(tacofredag) eller frokosten(på egg), eller som en <a href=\"/oppskrift/majones\">chilimajones</a>. \r\n",
     "time": "6 dager",
-    "portions": "et norgesglass",
+    "portions": 10,
     "tips": "Bytt ut chilitypen for litt variasjon. Om du er glad i superhot kan du la frøene bli.\r\nOm du ikke får tak i palmesukker, kan du bruke demerarasukker eller vanlig sukker.",
     "chef": "Caroline Dafsgård Widnersson",
     "tipsurl": "",
@@ -11280,7 +11280,7 @@
     "description": "En veldig rask og enkel grillmiddag med punch!",
     "longDescription": "Denne retten fikk vi servert på Ahaan. Vi digget den, og dro hjem og fant oppskriften i kokken Terje Ommundsens kokebok Thaimani. Årets biff-middag! Vi serverer den med <a href=\"/oppskrift/grillspyd\">perfekt sidesalat.</a>",
     "time": "40 minutter",
-    "portions": "4",
+    "portions": 4,
     "tips": "",
     "vintipsnavn": "I am the Ninja",
     "vintipsUrl": "https://www.vinmonopolet.no/Land/S%C3%B8r-Afrika/Coastal-Region/Swartland/Testalonga-I-am-The-Ninja/p/10603201",
@@ -11299,7 +11299,7 @@
             "name": "finsnittet rød chili"
           },
           {
-            "quantity": "en bunt",
+            "quantity": "1 bunt",
             "name": "frisk koriander"
           }
         ]
@@ -11402,7 +11402,7 @@
     "description": "En kjempegod sopprisotto med steinsopp, perfekt for høstens sanking!",
     "longDescription": "Denne sopprisottoen er velbalansert og har en nydelig smak! Vi lager den utenom sesong også med aromasopp. Kos deg!",
     "time": "1.5 time",
-    "portions": "4",
+    "portions": 4,
     "tips": "Denne lager vi hele året, og har ikke alltid tilgang til steinsopp så da lager vi den av aromasopp. ",
     "chef": "Eivind Hellstrøm",
     "tipsurl": "https://www.ark.no/produkt/boker/hobbyboker-og-fritid/hellstroms-gronne-hemmeligheter-9788248928287?",
@@ -11542,7 +11542,7 @@
     "description": "Denne paien har vært igjennom mange revisjoner. Nå er den perfeksjonert til fingerspissene og den er fantastisk god! ",
     "longDescription": "Dette er paien Petter imponerte undertegnede med i starten av vårt forhold. Det fungerte. Det går ikke en sommer uten denne paien på bordet. Om vi har tatt en tur i marka og plukket villbringebær bruker vi disse til geléen. Etter alle revisjonene er det lite snarveier igjen med denne paien, men det er lov å lage kjøpegelé og til nød kjøpe vaniljekrem, men da er det nød!",
     "time": "4 timer",
-    "portions": "8",
+    "portions": 8,
     "tips": "Det er også mulig å gjøre denne med jordbær. Bytt ut bringebær med jordbær. Du kan også jukse, men smaken er selvfølgelig aller best når du lage alt fra bunnen av. \r\n Det er noen kritiske punkter i denne oppskriften, så følg den nøye og pass på temperaturer. Sett av god tid.",
     "chef": "Pascal, Paul Hollywood, Sverre Sætre",
     "tipsurl": "",
@@ -11621,7 +11621,7 @@
             "name": "sukker"
           },
           {
-            "quantity": "skvis av",
+            "quantity": "1 skvis",
             "name": "sitron"
           },
           {
@@ -11740,7 +11740,7 @@
     "description": "Gulrotsuppe er en favoritt i hverdagen om høsten da vi får hjemmedyrka gulrøtter fra Heistadmoen. Topp med din favoritt sprø topping så har du hverdagsluksus på en mandag.",
     "longDescription": "På høsten er vi på slang hos familie på Heistadmoen for å ta ferske gulrøtter rett fra jorda! Ingenting smaker bedre enn hjemmedyrka grønnsaker. Denne suppa kan altså endre seg fra gang til gang, spørs på hva vi har i kjøleskapet. Men grunnoppskriften er ganske lik. Du må lage en suppe med riktig konsistens og du må toppe den med noe knasende! Det skal smake søtt, salt, sterkt og syrlig.",
     "time": "30 minutter",
-    "portions": "4",
+    "portions": 4,
     "tips": "Hvis du har fløte eller rømmerester i kjøleskapet kan du jevne suppa med det. Server med et godt brød eller <a href=\"/oppskrift/eltefrie-rundstykker\">eltefrie rundstykker</a>",
     "chef": "",
     "tipsurl": "",
@@ -11761,7 +11761,7 @@
             "name": "hvitløk"
           },
           {
-            "quantity": "ca 1 liter",
+            "quantity": "1 liter",
             "name": "kylling/grønnsakskraft"
           },
           {
@@ -11855,7 +11855,7 @@
     "description": "Hver dag er en tacodag, spesielt når det kan gjøres så enkelt og så godt! ",
     "longDescription": "Vår <a href='/oppskrift/taco-med-svinenakke'>favoritt-taco med svinenakke</a> og <a href='/oppskrift/tacokrydder'>hjemmelaget tacokrydder</a> er fantastisk, men det tar jo litt tid med dette kjøttet. Hva med å lage en rask vegetarvariant? Gjør deg klar til tacofest i en fei! Eller.. det går raskest om du kjøper tortillalefser(av mais)! Det er vel lov i hverdagens kjas og mas! Om du ikke har/finner alle ingredienser som skal til for å lage vårt tacokrydder er det mulig å sløyfe dem, det er garantert bedre enn tacoblandingen fra butikken.",
     "time": "1 time",
-    "portions": "4",
+    "portions": 4,
     "tips": "Om du ikke har tid eller lyst til å lage tortillalefser selv så kan vi anbefale å kjøpe tortillalefser av maismel. \r\n Drikke? Halvtørr sider fra for eksempel Mold er bra til litt sterke smaker! \r\n  ",
     "chef": "Lise Finckenhagen",
     "tipsurl": "https://www.instagram.com/lisefinckenhagen/?hl=nb",
@@ -11913,8 +11913,8 @@
         "title": "Chipotlemajones",
         "ingredients": [
           {
-            "quantity": "1 stor",
-            "name": "chipotle"
+            "quantity": "1 stk",
+            "name": "stor chipotle"
           },
           {
             "quantity": "1 fedd",
@@ -11934,19 +11934,19 @@
         "title": "Mangosalsa",
         "ingredients": [
           {
-            "quantity": "1",
+            "quantity": "1 stk",
             "name": "mango"
           },
           {
-            "quantity": "1 liten",
-            "name": "rødløk"
+            "quantity": "1 stk",
+            "name": "liten rødløk"
           },
           {
-            "quantity": "1 halv",
+            "quantity": "0.5 stk",
             "name": "chili"
           },
           {
-            "quantity": "1 halv",
+            "quantity": "0.5 stk",
             "name": "lime"
           }
         ]
@@ -11955,7 +11955,7 @@
         "title": "Tomatsalsa",
         "ingredients": [
           {
-            "quantity": "ca 150 g",
+            "quantity": "150 g",
             "name": "cherrytomater"
           },
           {
@@ -11963,19 +11963,19 @@
             "name": "hvitløk"
           },
           {
-            "quantity": "en halv",
+            "quantity": "0.5 stk",
             "name": "lime"
           },
           {
-            "quantity": "en halv",
+            "quantity": "0.5 stk",
             "name": "chili"
           },
           {
-            "quantity": "1 liten",
-            "name": "rødløk"
+            "quantity": "1 stk",
+            "name": "liten rødløk"
           },
           {
-            "quantity": "klunk",
+            "quantity": "1 klunk",
             "name": "olivenolje"
           },
           {
@@ -12121,7 +12121,7 @@
     "description": "Italia! Vi er inspirert! Enklere og renere blir ikke tomatsausen. Bruk til pizza, spaghetti, suppe osv.",
     "longDescription": "Denne er den enkleste tomatsausen vi kan, men det betyr ikke dårligere. Dette er faktisk den beste. Hva med en middag på 20 minutter? Kok linguine og bland i denne tomatsausen, topp med parmesan eller jukseburrata og basilikum. Prego!",
     "time": "15 minutter",
-    "portions": "4",
+    "portions": 4,
     "tips": "",
     "chef": "Hellstrøm",
     "tipsurl": "",
@@ -12146,7 +12146,7 @@
             "name": "vann etter ønske"
           },
           {
-            "quantity": "et par dryss",
+            "quantity": "2 dryss",
             "name": "salt og sukker"
           }
         ]
