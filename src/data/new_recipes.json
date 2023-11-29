@@ -12222,7 +12222,7 @@
     "description": "Vi har vært i Italia og vi trenger mer panini i livet..",
     "longDescription": "Denne er inspirert av turen vår til Firenze, hvor man kunne få tak i panini som street food på hvert hjørne. Vår favoritt var Ino ved Ponte Vecchio. Der fikk vi servert panini med pesto, burrata og mortadella. Vi har prøvd oss på en norsk versjon med pestosmør, jukseburrata og ribberull. Det funker.",
     "time": "1 døgn",
-    "portions": "4",
+    "portions": 4,
     "tips": "Prøv gjerne andre kjøttvarianter, men hva med vegetarvariant? Bytt ut kjøttpålegg med tomater! Takk for jukseburrataoppskrift Lise Finckenhagen, takk for pestosmør Hellstrøm og takk for den beste focaccia Julie",
     "chef": "Ino panini, Lise Finckenhagen, Hellstrøm og Julies matblogg",
     "tipsurl": "",
