@@ -1,10 +1,19 @@
 <template>
   <div class="fs-ingredients">
-    <h2 class="fs-ingredients__title">Ingredienser</h2>
-    <label for="portion">Portions :</label>
-    <input type="number" v-model="portion" />
-    <button @click="decreaseServing">-</button>
-    <button @click="increaseServing">+</button>
+    <div class="fs-ingredients__container">
+      <h2 class="fs-ingredients__title">Ingredienser</h2>
+
+      <label class="fs-ingredients__portions" for="portion">Posjoner:</label>
+      <div class="fs-ingredients__input-container">
+        <button class="fs-ingredients__button" @click="decreaseServing">
+          -
+        </button>
+        <input class="fs-ingredients__input" type="number" v-model="portion" />
+        <button class="fs-ingredients__button" @click="increaseServing">
+          +
+        </button>
+      </div>
+    </div>
     <div v-for="(group, index) in ingredients" :key="index">
       <div v-if="group.title">
         <h3 class="fs-ingredients__group-title">{{ group.title }}</h3>
@@ -138,7 +147,73 @@ export default {
     margin-bottom: 0.4rem;
     margin-top: 1rem;
   }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    @include bp("tablet-big-up") {
+      align-items: flex-start;
+    }
+  }
+  &__input-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  &__button {
+    font-size: 1rem;
+    background-color: var(--fs-pink-400);
+    color: white;
+    line-height: 1.25rem;
+    padding: 0.5rem;
+    text-align: center;
+    border: none;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
 
+    display: block;
+    text-decoration: none;
+    margin: 0.5rem;
+
+    &:focus,
+    &:active,
+    &:hover {
+      cursor: pointer;
+      outline: 2px solid var(--fs-pink-300);
+      background-color: var(--fs-pink-300);
+    }
+    /* Chrome, Safari, Edge, Opera */
+  }
+  &__input {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    padding: 0.5rem;
+    text-align: center;
+    border: 1px solid var(--fs-gray-300);
+    border-radius: 0.5rem;
+    width: 60px;
+    display: block;
+
+    &:focus,
+    &:active {
+      outline: 2px solid var(--fs-pink-500);
+    }
+    /* Chrome, Safari, Edge, Opera */
+  }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox */
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
   &__ol-list {
     display: flex;
     flex-direction: column;
