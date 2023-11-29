@@ -1,8 +1,8 @@
 <template>
   <div class="fs-ingredients">
     <h2 class="fs-ingredients__title">Ingredienser</h2>
-    <label for="serving">Portions :</label>
-    <input type="number" v-model="serving" />
+    <label for="portion">Portions :</label>
+    <input type="number" v-model="portion" />
     <button @click="decreaseServing">-</button>
     <button @click="increaseServing">+</button>
     <div v-for="(group, index) in ingredients" :key="index">
@@ -31,7 +31,7 @@
             <strong
               :id="'label-ingredient-' + index + '-' + ingredientIndex"
               class="fs-checkbox__text"
-              >{{ serving * getNumericValue(ingredient.quantity) }}</strong
+              >{{ calculateAdjustedQuantity(ingredient.quantity) }}</strong
             >
             <p
               :id="'label-ingredient-' + index + '-' + ingredientIndex"
@@ -55,44 +55,72 @@ export default {
       required: true,
     },
     portions: {
-      type: String,
+      type: Number,
       required: true,
     },
   },
   data() {
     return {
       portion: this.portions,
-
-      //ingredient: this.ingredients.map((ing) => ing.ingredients),
     };
-  },
-  computed: {
-    serving: {
-      get() {
-        return this.portion;
-      },
-      set(value) {
-        this.$emit("update:portion", value);
-      },
-    },
   },
   methods: {
     decreaseServing() {
-      this.serving = this.serving - 1;
+      this.portion = this.portion - 1;
     },
     increaseServing() {
-      this.serving = this.serving + 1;
+      this.portion = this.portion + 1;
     },
-    getNumericValue(quantity) {
-      // Use regular expression to extract numeric value, including decimals
-      const match = quantity.match(/\d+(\.\d+)?/);
+    calculateAdjustedQuantity(originalQuantity) {
+      // Adjust the quantity based on the selected portion
+
+      // You may want to format the quantity here if needed
+      // Extract the numeric value and unit from the original quantity
+      const match = originalQuantity.match(/([\d.-]+)\s*([^\d\s-]+)/);
 
       if (match) {
-        const numericValue = parseFloat(match[0]);
-        return isNaN(numericValue) ? 0 : numericValue;
-      }
+        // If there is a hyphen in the matched numeric value, it's a range
+        const isRange = match[1].includes("-");
 
-      return 0; // Default value if no numeric value is found
+        if (isRange) {
+          // Handle the case where the original quantity is a range
+          const rangeParts = match[1].split("-");
+          const unit = match[2];
+
+          // Adjust each part of the range based on the selected portion
+          const adjustedRange = rangeParts.map((part) => {
+            const numericValue = parseFloat(part);
+            const adjustedValue = (numericValue / this.portions) * this.portion;
+            const formattedValue =
+              adjustedValue % 1 === 0
+                ? adjustedValue.toFixed(0)
+                : adjustedValue.toFixed(1);
+
+            return formattedValue;
+          });
+
+          // You may want to format the quantity here if needed
+          return `${adjustedRange.join("-")} ${unit}`;
+        } else {
+          // Handle the case where the original quantity is a single value
+          const numericValue = parseFloat(match[1]);
+          const unit = match[2];
+
+          // Adjust the numeric value based on the selected portion
+          const adjustedValue = (numericValue / this.portions) * this.portion;
+
+          const formattedValue =
+            adjustedValue % 1 === 0
+              ? adjustedValue.toFixed(0)
+              : adjustedValue.toFixed(1);
+
+          // You may want to format the quantity here if needed
+          return formattedValue + " " + unit;
+        }
+      } else {
+        // If no numeric value and unit are found, return the original quantity
+        return originalQuantity;
+      }
     },
   },
 };
