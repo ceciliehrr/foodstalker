@@ -12211,388 +12211,197 @@
       "spaghetti"
     ]
   },
+  {
+    "id": "panini",
+    "imageurl": "https://foodstalker.b-cdn.net/2023/panini/DSC03265.jpg",
+    "alt": "panini",
+    "title": "Panini på norsk",
+    "date": "2023-11-29",
+    "category": "hverdag",
+    "description": "Vi har vært i Italia og vi trenger mer panini i livet..",
+    "longDescription": "Denne er inspirert av turen vår til Firenze, hvor man kunne få tak i panini som street food på hvert hjørne. Vår favoritt var Ino ved Ponte Vecchio. Der fikk vi servert panini med pesto, burrata og mortadella. Vi har prøvd oss på en norsk versjon med pestosmør, jukseburrata og ribberull. Det funker.",
+    "time": "1 døgn",
+    "portions": 4,
+    "tips": "Prøv gjerne andre kjøttvarianter, men hva med vegetarvariant? Bytt ut kjøttpålegg med tomater! Takk for jukseburrataoppskrift Lise Finckenhagen, takk for pestosmør Hellstrøm og takk for den beste focaccia Julie",
+    "chef": "Ino panini, Lise Finckenhagen, Hellstrøm og Julies matblogg",
+    "tipsurl": "",
+    "ingredients": [
+      {
+        "title": "Focaccia",
+        "ingredients": [
+          {
+            "quantity": "500 g",
+            "name": "hvetemel"
+          },
+          {
+            "quantity": "2 ts",
+            "name": "salt"
+          },
+          {
+            "quantity": "2 ts",
+            "name": "tørrgjær"
+          },
+          {
+            "quantity": "4.5 dl",
+            "name": "lunket vann"
+          },
+          {
+            "quantity": "1 ss",
+            "name": "honning"
+          },
+          {
+            "quantity": "2 ss",
+            "name": "olivenolje"
+          },
+          {
+            "quantity": "",
+            "name": "smør til formen"
+          },
+          {
+            "quantity": "",
+            "name": "flaksalt"
+          }
+        ]
+      },
+      {
+        "title": "Pestosmør",
+        "ingredients": [
+          {
+            "quantity": "3 fedd",
+            "name": "hvitløk"
+          },
+          {
+            "quantity": "1 bunt",
+            "name": "basilikum"
+          },
+          {
+            "quantity": "30 g",
+            "name": "parmesan"
+          },
+          {
+            "quantity": "1 dl",
+            "name": "olivenolje"
+          },
+          {
+            "quantity": "60 g",
+            "name": "romtemperert meierismør"
+          }
+        ]
+      },
+      {
+        "title": "Jukseburrata",
+        "ingredients": [
+          {
+            "quantity": "2 stk",
+            "name": "ferske mozzarella"
+          },
+          {
+            "quantity": "2 dl",
+            "name": "fløte"
+          },
+          {
+            "quantity": "1 ts",
+            "name": "sitronsaft"
+          },
+          {
+            "quantity": "1 klype",
+            "name": "salt"
+          }
+        ]
+      },
+      {
+        "title": "Panini",
+        "ingredients": [
+          {
+            "quantity": "2 skiver",
+            "name": "ribberull eller annet pålegg som passer. (tomat, mortadella osv)"
+          }
+        ]
+      }
+    ],
+    "steps": [
+      {
+        "title": "Focaccia",
+        "description": "Bland sammen hvetemel, salt og gjær i en bakebolle. Tilsett vann og honning og bland alt sammen med en slikkepott. Deigen blir veldig klissete."
+      },
+      {
+        "title": "",
+        "description": "Ha i 1 ss olivenolje og vend deigen i oljen. Dekk bollen med plastfolie. La deigen stå i kjøleskapet i minimum 12 timer. "
+      },
+      {
+        "title": "",
+        "description": "Finn fram en ildfast form på ca 20x30 cm. Ha spiseskje smør på en bit bakepapir og smør hele formen."
+      },
+      {
+        "title": "",
+        "description": "Drypp 1 ss olivenolje i formen. Bruk to gafler til å punktere deigen. Brett deigen slik at du får en rund ball. Ha deigen i den smurte formen og venn inn i oljen. Strekk deigen så utover i formen. Dekk med plasfolie og la den stå i romtemperatur for å heve i 3-4 timer."
+      },
+      {
+        "title": "",
+        "description": "Sett på ovnen på 220 grader. Drypp oliven olje over deigen. Ha over ca 4 dryss med flaksalt. Bruke fingrene til å lage hull i deigen. Stek foccacia i 20-30 minutter til den er gylden og sprø på toppen."
+      },
+      {
+        "title": "",
+        "description": "La focaccian avkjøles i formen i 10 minutter før du vender den ut av formen."
+      },
+      {
+        "title": "Pestosmør",
+        "description": "Skrell hvitløk. Bland alle ingredienser i en blender og kjør til du får en glatt konsistens."
+      },
+      {
+        "title": "Jukseburrata",
+        "description": "Hell ut vannet av mozarellaen og tørk den med et papir. Riv mozarellaen i en bolle."
+      },
+      {
+        "title": "",
+        "description": "Tilsett fløte, salt og sitron og bland dette godt sammen. La stå i kjøleskap i et par timer eller natten over."
+      },
+      {
+        "title": "Montering av panini på norsk",
+        "description": "Del focaccian i fire. Deretter del hver bit på langs. Smør pestosmør på topp og bunn. Ha ca 2 ss jukseburrata over en del, topp med pålegg. Legg sammen som en sandwich. Prego!"
+      }
+    ],
+    "images": [
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2023/panini/DSC03166.jpg",
+        "alt": "pesto i mikser"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2023/panini/DSC03168.jpg",
+        "alt": "ferdig pesto"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2023/panini/DSC03216.jpg",
+        "alt": "smører på panini"
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2023/panini/DSC03193.jpg",
+        "alt": "ferdig stekt focaccia"
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2023/panini/DSC03256.jpg",
+        "alt": "ferdig panini"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2023/panini/DSC03161.jpg",
+        "alt": "focaccia hever"
+      }
+    ],
+    "keywords": [
+      "focaccia",
+      "paninin",
+      "pesto",
+      "burrata",
+      "jukseburrata",
+      "italiensk"
+    ]
 
-  {
-    "id": "panini",
-    "imageurl": "https://foodstalker.b-cdn.net/2023/panini/DSC03265.jpg",
-    "alt": "panini",
-    "title": "Panini på norsk",
-    "date": "2023-11-29",
-    "category": "hverdag",
-    "description": "Vi har vært i Italia og vi trenger mer panini i livet..",
-    "longDescription": "Denne er inspirert av turen vår til Firenze, hvor man kunne få tak i panini som street food på hvert hjørne. Vår favoritt var Ino ved Ponte Vecchio. Der fikk vi servert panini med pesto, burrata og mortadella. Vi har prøvd oss på en norsk versjon med pestosmør, jukseburrata og ribberull. Det funker.",
-    "time": "1 døgn",
-    "portions": 4,
-    "tips": "Prøv gjerne andre kjøttvarianter, men hva med vegetarvariant? Bytt ut kjøttpålegg med tomater! Takk for jukseburrataoppskrift Lise Finckenhagen, takk for pestosmør Hellstrøm og takk for den beste focaccia Julie",
-    "chef": "Ino panini, Lise Finckenhagen, Hellstrøm og Julies matblogg",
-    "tipsurl": "",
-    "ingredients": [
-      {
-        "title": "Focaccia",
-        "ingredients": [
-          {
-            "quantity": "500 g",
-            "name": "hvetemel"
-          },
-          {
-            "quantity": "2 ts",
-            "name": "salt"
-          },
-          {
-            "quantity": "2 ts",
-            "name": "tørrgjær"
-          },
-          {
-            "quantity": "4.5 dl",
-            "name": "lunket vann"
-          },
-          {
-            "quantity": "1 ss",
-            "name": "honning"
-          },
-          {
-            "quantity": "2 ss",
-            "name": "olivenolje"
-          },
-          {
-            "quantity": "",
-            "name": "smør til formen"
-          },
-          {
-            "quantity": "",
-            "name": "flaksalt"
-          }
-        ]
-      },
-      {
-        "title": "Pestosmør",
-        "ingredients": [
-          {
-            "quantity": "3 fedd",
-            "name": "hvitløk"
-          },
-          {
-            "quantity": "1 bunt",
-            "name": "basilikum"
-          },
-          {
-            "quantity": "30 g",
-            "name": "parmesan"
-          },
-          {
-            "quantity": "1 dl",
-            "name": "olivenolje"
-          },
-          {
-            "quantity": "60 g",
-            "name": "romtemperert meierismør"
-          }
-        ]
-      },
-      {
-        "title": "Jukseburrata",
-        "ingredients": [
-          {
-            "quantity": "2 stk",
-            "name": "ferske mozzarella"
-          },
-          {
-            "quantity": "2 dl",
-            "name": "fløte"
-          },
-          {
-            "quantity": "1 ts",
-            "name": "sitronsaft"
-          },
-          {
-            "quantity": "1 klype",
-            "name": "salt"
-          }
-        ]
-      },
-      {
-        "title": "Panini",
-        "ingredients": [
-          {
-            "quantity": "2 skiver",
-            "name": "ribberull eller annet pålegg som passer. (tomat, mortadella osv)"
-          }
-        ]
-      }
-    ],
-    "steps": [
-      {
-        "title": "Focaccia",
-        "description": "Bland sammen hvetemel, salt og gjær i en bakebolle. Tilsett vann og honning og bland alt sammen med en slikkepott. Deigen blir veldig klissete."
-      },
-      {
-        "title": "",
-        "description": "Ha i 1 ss olivenolje og vend deigen i oljen. Dekk bollen med plastfolie. La deigen stå i kjøleskapet i minimum 12 timer. "
-      },
-      {
-        "title": "",
-        "description": "Finn fram en ildfast form på ca 20x30 cm. Ha spiseskje smør på en bit bakepapir og smør hele formen."
-      },
-      {
-        "title": "",
-        "description": "Drypp 1 ss olivenolje i formen. Bruk to gafler til å punktere deigen. Brett deigen slik at du får en rund ball. Ha deigen i den smurte formen og venn inn i oljen. Strekk deigen så utover i formen. Dekk med plasfolie og la den stå i romtemperatur for å heve i 3-4 timer."
-      },
-      {
-        "title": "",
-        "description": "Sett på ovnen på 220 grader. Drypp oliven olje over deigen. Ha over ca 4 dryss med flaksalt. Bruke fingrene til å lage hull i deigen. Stek foccacia i 20-30 minutter til den er gylden og sprø på toppen."
-      },
-      {
-        "title": "",
-        "description": "La focaccian avkjøles i formen i 10 minutter før du vender den ut av formen."
-      },
-      {
-        "title": "Pestosmør",
-        "description": "Skrell hvitløk. Bland alle ingredienser i en blender og kjør til du får en glatt konsistens."
-      },
-      {
-        "title": "Jukseburrata",
-        "description": "Hell ut vannet av mozarellaen og tørk den med et papir. Riv mozarellaen i en bolle."
-      },
-      {
-        "title": "",
-        "description": "Tilsett fløte, salt og sitron og bland dette godt sammen. La stå i kjøleskap i et par timer eller natten over."
-      },
-      {
-        "title": "Montering av panini på norsk",
-        "description": "Del focaccian i fire. Deretter del hver bit på langs. Smør pestosmør på topp og bunn. Ha ca 2 ss jukseburrata over en del, topp med pålegg. Legg sammen som en sandwich. Prego!"
-      }
-    ],
-    "images": [
-      {
-        "orientation": "landscape",
-        "url": "https://foodstalker.b-cdn.net/2023/panini/DSC03166.jpg",
-        "alt": "pesto i mikser"
-      },
-      {
-        "orientation": "portrait",
-        "url": "https://foodstalker.b-cdn.net/2023/panini/DSC03168.jpg",
-        "alt": "ferdig pesto"
-      },
-      {
-        "orientation": "portrait",
-        "url": "https://foodstalker.b-cdn.net/2023/panini/DSC03216.jpg",
-        "alt": "smører på panini"
-      },
-      {
-        "orientation": "landscape",
-        "url": "https://foodstalker.b-cdn.net/2023/panini/DSC03193.jpg",
-        "alt": "ferdig stekt focaccia"
-      },
-      {
-        "orientation": "landscape",
-        "url": "https://foodstalker.b-cdn.net/2023/panini/DSC03256.jpg",
-        "alt": "ferdig panini"
-      },
-      {
-        "orientation": "portrait",
-        "url": "https://foodstalker.b-cdn.net/2023/panini/DSC03161.jpg",
-        "alt": "focaccia hever"
-      }
-    ],
-    "keywords": [
-      "focaccia",
-      "paninin",
-      "pesto",
-      "burrata",
-      "jukseburrata",
-      "italiensk"
-    ]
-  },
-  {
-    "id": "panini",
-    "imageurl": "https://foodstalker.b-cdn.net/2023/panini/DSC03265.jpg",
-    "alt": "panini",
-    "title": "Panini på norsk",
-    "date": "2023-11-29",
-    "category": "hverdag",
-    "description": "Vi har vært i Italia og vi trenger mer panini i livet..",
-    "longDescription": "Denne er inspirert av turen vår til Firenze, hvor man kunne få tak i panini som street food på hvert hjørne. Vår favoritt var Ino ved Ponte Vecchio. Der fikk vi servert panini med pesto, burrata og mortadella. Vi har prøvd oss på en norsk versjon med pestosmør, jukseburrata og ribberull. Det funker.",
-    "time": "1 døgn",
-    "portions": 4,
-    "tips": "Prøv gjerne andre kjøttvarianter, men hva med vegetarvariant? Bytt ut kjøttpålegg med tomater! Takk for jukseburrataoppskrift Lise Finckenhagen, takk for pestosmør Hellstrøm og takk for den beste focaccia Julie",
-    "chef": "Ino panini, Lise Finckenhagen, Hellstrøm og Julies matblogg",
-    "tipsurl": "",
-    "ingredients": [
-      {
-        "title": "Focaccia",
-        "ingredients": [
-          {
-            "quantity": "500 g",
-            "name": "hvetemel"
-          },
-          {
-            "quantity": "2 ts",
-            "name": "salt"
-          },
-          {
-            "quantity": "2 ts",
-            "name": "tørrgjær"
-          },
-          {
-            "quantity": "4.5 dl",
-            "name": "lunket vann"
-          },
-          {
-            "quantity": "1 ss",
-            "name": "honning"
-          },
-          {
-            "quantity": "2 ss",
-            "name": "olivenolje"
-          },
-          {
-            "quantity": "",
-            "name": "smør til formen"
-          },
-          {
-            "quantity": "",
-            "name": "flaksalt"
-          }
-        ]
-      },
-      {
-        "title": "Pestosmør",
-        "ingredients": [
-          {
-            "quantity": "3 fedd",
-            "name": "hvitløk"
-          },
-          {
-            "quantity": "1 bunt",
-            "name": "basilikum"
-          },
-          {
-            "quantity": "30 g",
-            "name": "parmesan"
-          },
-          {
-            "quantity": "1 dl",
-            "name": "olivenolje"
-          },
-          {
-            "quantity": "60 g",
-            "name": "romtemperert meierismør"
-          }
-        ]
-      },
-      {
-        "title": "Jukseburrata",
-        "ingredients": [
-          {
-            "quantity": "2 stk",
-            "name": "ferske mozzarella"
-          },
-          {
-            "quantity": "2 dl",
-            "name": "fløte"
-          },
-          {
-            "quantity": "1 ts",
-            "name": "sitronsaft"
-          },
-          {
-            "quantity": "1 klype",
-            "name": "salt"
-          }
-        ]
-      },
-      {
-        "title": "Panini",
-        "ingredients": [
-          {
-            "quantity": "2 skiver",
-            "name": "ribberull eller annet pålegg som passer. (tomat, mortadella osv)"
-          }
-        ]
-      }
-    ],
-    "steps": [
-      {
-        "title": "Focaccia",
-        "description": "Bland sammen hvetemel, salt og gjær i en bakebolle. Tilsett vann og honning og bland alt sammen med en slikkepott. Deigen blir veldig klissete."
-      },
-      {
-        "title": "",
-        "description": "Ha i 1 ss olivenolje og vend deigen i oljen. Dekk bollen med plastfolie. La deigen stå i kjøleskapet i minimum 12 timer. "
-      },
-      {
-        "title": "",
-        "description": "Finn fram en ildfast form på ca 20x30 cm. Ha spiseskje smør på en bit bakepapir og smør hele formen."
-      },
-      {
-        "title": "",
-        "description": "Drypp 1 ss olivenolje i formen. Bruk to gafler til å punktere deigen. Brett deigen slik at du får en rund ball. Ha deigen i den smurte formen og venn inn i oljen. Strekk deigen så utover i formen. Dekk med plasfolie og la den stå i romtemperatur for å heve i 3-4 timer."
-      },
-      {
-        "title": "",
-        "description": "Sett på ovnen på 220 grader. Drypp oliven olje over deigen. Ha over ca 4 dryss med flaksalt. Bruke fingrene til å lage hull i deigen. Stek foccacia i 20-30 minutter til den er gylden og sprø på toppen."
-      },
-      {
-        "title": "",
-        "description": "La focaccian avkjøles i formen i 10 minutter før du vender den ut av formen."
-      },
-      {
-        "title": "Pestosmør",
-        "description": "Skrell hvitløk. Bland alle ingredienser i en blender og kjør til du får en glatt konsistens."
-      },
-      {
-        "title": "Jukseburrata",
-        "description": "Hell ut vannet av mozarellaen og tørk den med et papir. Riv mozarellaen i en bolle."
-      },
-      {
-        "title": "",
-        "description": "Tilsett fløte, salt og sitron og bland dette godt sammen. La stå i kjøleskap i et par timer eller natten over."
-      },
-      {
-        "title": "Montering av panini på norsk",
-        "description": "Del focaccian i fire. Deretter del hver bit på langs. Smør pestosmør på topp og bunn. Ha ca 2 ss jukseburrata over en del, topp med pålegg. Legg sammen som en sandwich. Prego!"
-      }
-    ],
-    "images": [
-      {
-        "orientation": "landscape",
-        "url": "https://foodstalker.b-cdn.net/2023/panini/DSC03166.jpg",
-        "alt": "pesto i mikser"
-      },
-      {
-        "orientation": "portrait",
-        "url": "https://foodstalker.b-cdn.net/2023/panini/DSC03168.jpg",
-        "alt": "ferdig pesto"
-      },
-      {
-        "orientation": "portrait",
-        "url": "https://foodstalker.b-cdn.net/2023/panini/DSC03216.jpg",
-        "alt": "smører på panini"
-      },
-      {
-        "orientation": "landscape",
-        "url": "https://foodstalker.b-cdn.net/2023/panini/DSC03193.jpg",
-        "alt": "ferdig stekt focaccia"
-      },
-      {
-        "orientation": "landscape",
-        "url": "https://foodstalker.b-cdn.net/2023/panini/DSC03256.jpg",
-        "alt": "ferdig panini"
-      },
-      {
-        "orientation": "portrait",
-        "url": "https://foodstalker.b-cdn.net/2023/panini/DSC03161.jpg",
-        "alt": "focaccia hever"
-      }
-    ],
-    "keywords": [
-      "focaccia",
-      "paninin",
-      "pesto",
-      "burrata",
-      "jukseburrata",
-      "italiensk"
-    ]
   },
   {
     "id": "multedrink",
