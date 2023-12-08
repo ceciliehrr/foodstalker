@@ -12401,5 +12401,87 @@
       "jukseburrata",
       "italiensk"
     ]
+
+  },
+  {
+    "id": "multedrink",
+    "imageurl": "https://foodstalker.b-cdn.net/2023/multedrink/DSC03022.jpg",
+    "alt": "multedrink",
+    "title": "Satans gin&bær",
+    "date": "2023-12-08",
+    "category": "tilbehør",
+    "description": "Hva bruker man multesirup til? Til å lage julebordsdrink av, vel!",
+    "longDescription": "I høst var fjellet fullt av multer, sankergenet vårt slo til og vi tok med oss mer enn vi hadde en tanke om å bruke. Man kan ikke kaste fjellets 'gull' og vi lagde derfor flere liter <a href='/oppskrift/multesirup'>multesirup</a>. Så hva skal vi bruke all sirupen til? Enkelt!",
+    "time": "5 minutter",
+    "portions": 1,
+    "tips": "Eggehviten brukes til å få et fint lag med hvitt skum på toppen av drinken, dette kan sløyfes. Få deg en god shaker, da blir alt så mye gøyere!",
+    "chef": "Foodstalker",
+    "tipsurl": "",
+    "ingredients": [
+      {
+        "title": "",
+        "ingredients": [
+          {
+            "quantity": "5 cl",
+            "name": "gin"
+          },
+          {
+            "quantity": "3 cl",
+            "name": "<a href='/oppskrift/multesirup'>multesirup</a>"
+          },
+          {
+            "quantity": "2.5 dl",
+            "name": "sitron"
+          },
+          {
+            "quantity": "1 stk",
+            "name": "eggehvite"
+          },
+          {
+            "quantity": "",
+            "name": "isbiter"
+          }
+        ]
+      }
+    ],
+    "steps": [
+      {
+        "title": "",
+        "description": "Mål opp alle ingredienser og ha det i en shaker. Shake en runde først, så ha i et par isbiter. Rist noen runder til. Hell oppi et kult glass. God julebord!"
+      }
+    ],
+    "images": [
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2023/multedrink/DSC03035.jpg",
+        "alt": "multedrink i glass"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2023/multedrink/DSC03012.jpg",
+        "alt": "ingredienser, gin, sirup, sitron og egg"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2023/multedrink/DSC03022.jpg",
+        "alt": "multedrink i glass"
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2023/multedrink/DSC03035.jpg",
+        "alt": "multedrink i glasset"
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2023/multedrink/DSC03009.jpg",
+        "alt": "ingredienser på et bord"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2023/multedrink/DSC03022.jpg",
+        "alt": "multedrinken"
+      }
+    ],
+    "keywords": ["multer", "drink", "cocktail", "multesirup", "jul"]
   }
 ]
