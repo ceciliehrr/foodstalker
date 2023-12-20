@@ -1,15 +1,9 @@
 <template>
   <div>
     <button class="open-modal-button" @click="openModal()">
-      👩🏼‍🍳 Matlagingsmodus
+      👩🏼‍🍳 Kokkemodus
     </button>
-    <swipe-modal
-      v-model="isModal"
-      contents-height="88vh"
-      border-top-radius="24px"
-      @close="closeModal()"
-      client:only="vue"
-    >
+    <swipe-modal v-model="isModal" @close="closeModal()" client:only="vue">
       <div class="tabs">
         <button
           v-for="(tab, index) in tabs"
@@ -34,24 +28,34 @@
               :key="ingredient.name"
             >
               <label
-                :for="'ingredient-' + index + '-' + ingredientIndex"
+                :for="'ingredient-cookingmode' + index + '-' + ingredientIndex"
                 class="fs-checkbox__container"
               >
                 <input
                   type="checkbox"
-                  :id="'ingredient-' + index + '-' + ingredientIndex"
+                  :id="'ingredient-cookingmode' + index + '-' + ingredientIndex"
                   :aria-labelledby="
                     'label-ingredient-' + index + '-' + ingredientIndex
                   "
                 />
                 <span class="fs-checkmark"></span>
                 <strong
-                  :id="'label-ingredient-' + index + '-' + ingredientIndex"
+                  :id="
+                    'label-ingredient-cookingmode' +
+                    index +
+                    '-' +
+                    ingredientIndex
+                  "
                   class="fs-checkbox__text"
                   v-html="ingredient.quantity"
                 ></strong>
                 <p
-                  :id="'label-ingredient-' + index + '-' + ingredientIndex"
+                  :id="
+                    'label-ingredient-cookingmode' +
+                    index +
+                    '-' +
+                    ingredientIndex
+                  "
                   class="fs-checkbox__text"
                   v-html="ingredient.name"
                 ></p>
@@ -66,16 +70,16 @@
           <ul class="fs-ingredients__ol-list">
             <li class="fs-checkbox__list">
               <label
-                :for="'ingredient-' + stepsIndex"
+                :for="'ingredient-cookingmode' + stepsIndex"
                 class="fs-checkbox__container"
               >
                 <input
                   type="checkbox"
-                  :id="'ingredient-' + stepsIndex"
+                  :id="'ingredient-cookingmode' + stepsIndex"
                   :aria-labelledby="'label-ingredient-' + stepsIndex" />
                 <span class="fs-checkmark"></span>
                 <p
-                  :id="'label-ingredient-' + stepsIndex"
+                  :id="'label-ingredient-cookingmode' + stepsIndex"
                   class="fs-checkbox__text"
                   v-html="step.description"
                 ></p
@@ -133,37 +137,38 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 /* Add your CSS styles here */
 
-.modal-contents {
-  height: 65vh !important;
+button {
+  text-decoration: none;
+  &:hover {
+    color: var(--fs-pink-500);
+  }
 }
-.modal-contents-chip-wrapper {
-  height: 50px !important;
-  position: sticky !important;
-  background-color: white;
-}
-.modal-contents-chip {
-  height: 10px !important;
-  background-color: var(--fs-pink-300) !important;
+
+.modal-style {
+  background-color: white !important;
+  color: var(--fs-black) !important;
 }
 
 .tabs {
   display: flex;
+  position: fixed;
+  width: 100%;
   margin-bottom: 20px;
   border-bottom: 1px solid var(--fs-gray-200);
-  position: sticky !important;
-  top: 50px;
   z-index: 4;
   background-color: white;
 }
 
 .tab-content {
-  padding: 28px;
+  margin-top: 40px;
+  padding: 1rem;
 
   h3 {
-    margin-top: 8px;
+    font-size: 16px;
+    margin-top: 18px;
     margin-bottom: 8px;
   }
   ul {
@@ -188,28 +193,14 @@ export default {
   border-radius: 8px;
   background-color: var(--fs-gray-100);
 }
-.modal-buttonwrapper {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 24px;
-}
-.close-button {
-  text-align: center;
-  width: 50px;
-  background: var(--fs-pink-300);
-  height: 8px;
-  border: none;
-  border-radius: 8px;
-  font-size: 24px;
-  cursor: pointer;
-}
 
 .open-modal-button {
   background-color: var(--fs-pink-100);
-  border: 1px solid var(--fs-black);
+  border: 1px solid var(--fs-pink-500);
   border-radius: 8px;
   padding: 10px 20px;
   color: var(--fs-black);
   cursor: pointer;
+  font-weight: 300;
 }
 </style>
