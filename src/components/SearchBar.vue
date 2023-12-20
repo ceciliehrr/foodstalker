@@ -29,20 +29,20 @@
       </div>
     </div>
     <div v-if="search.length">
-      <p class="fs-search-bar__searchtxt" v-if="sortedItems.length >= 1">
-        Du fant {{ sortedItems.length }} oppskrifter
+      <p class="fs-search-bar__searchtxt" v-if="recipeShowed.length >= 1">
+        Du fant {{ recipeShowed.length }} oppskrifter
       </p>
       <div class="fs-search-bar__searchtxt" v-else>
         <p>Oh no! <span style="font-size: 50px">🙈</span></p>
         <p>Be oss om å lage det!</p>
       </div>
       <Grid>
-        <div v-for="recipe in recipeShowed" :key="recipe.id">
+        <div v-for="recipe in recipeShowed" :key="recipe.item.id">
           <SmallCards
-            :title="recipe.title"
-            :description="recipe.description"
-            :image="recipe.imageurl"
-            :href="'/oppskrift/' + recipe.id"
+            :title="recipe.item.title"
+            :description="recipe.item.description"
+            :image="recipe.item.imageurl"
+            :href="'/oppskrift/' + recipe.item.id"
           />
         </div>
       </Grid>
@@ -54,6 +54,10 @@
 import getRecipes from "../data/new_recipes.json";
 import SmallCards from "./cards/SmallCards.vue";
 import Grid from "./Grid.vue";
+import Fuse from "fuse.js";
+
+import { Recipe } from "../data/recipeInterface";
+
 export default {
   components: {
     SmallCards,
@@ -65,10 +69,11 @@ export default {
   data() {
     return {
       search: "",
-      recipes: getRecipes,
+      recipes: getRecipes as Recipe[],
       showRecipes: 20,
     };
   },
+
   computed: {
     sortedByCategory() {
       if (this.category) {
@@ -78,6 +83,27 @@ export default {
       } else {
         return this.recipes;
       }
+    },
+    searchResult() {
+      const fuseOptions = {
+        isCaseSensitive: false,
+        // includeScore: false,
+        shouldSort: true,
+        // includeMatches: false,
+        // findAllMatches: false,
+        minMatchCharLength: 2,
+        // location: 0,
+        // threshold: 0.6,
+        // distance: 100,
+        // useExtendedSearch: false,
+        // ignoreLocation: false,
+        // ignoreFieldNorm: false,
+        // fieldNormWeight: 1,
+        keys: ["title", "category", "chef", "description", "keywords"],
+      };
+      const fuse = new Fuse(this.sortedByCategory, fuseOptions);
+      console.log(fuse.search(this.search));
+      return fuse.search(this.search);
     },
     filteredRecipes() {
       return this.sortedByCategory.filter((recipe) => {
@@ -108,7 +134,7 @@ export default {
         .sort((a, b) => a.title.localeCompare(b.title));
     },
     recipeShowed() {
-      return this.sortedItems.slice(0, this.showRecipes);
+      return this.searchResult.slice(0, this.showRecipes);
     },
   },
 };
