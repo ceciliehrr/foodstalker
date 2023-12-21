@@ -1,5 +1,6 @@
 ---
 import { Image } from "astro:assets";
+import sitron from "../assets/sitron2.jpg";
 ---
 
 <div class="fs-banner fade-in">
@@ -8,12 +9,7 @@ import { Image } from "astro:assets";
     <p>Vi stalker flinke kokker og deler våre favorittoppskrifter</p>
   </div>
   <div class="fs-banner__image">
-    <Image
-      src="https://foodstalker.b-cdn.net/sitron2.jpg"
-      alt=""
-      width={400}
-      height={200}
-    />
+    <Image src={sitron} aria-hidden="true" alt="forsidebilde" />
   </div>
 </div>
 <style lang="scss" scoped>

@@ -8,7 +8,12 @@
         <button class="fs-ingredients__button" @click="decreaseServing">
           -
         </button>
-        <input class="fs-ingredients__input" type="number" v-model="portion" />
+        <input
+          class="fs-ingredients__input"
+          id="portion"
+          type="number"
+          v-model="portion"
+        />
         <button class="fs-ingredients__button" @click="increaseServing">
           +
         </button>
@@ -28,12 +33,13 @@
           <label
             :for="'ingredient-' + index + '-' + ingredientIndex"
             class="fs-checkbox__container"
+            :id="'ingredient-label' + index + '-' + ingredientIndex"
           >
             <input
               type="checkbox"
               :id="'ingredient-' + index + '-' + ingredientIndex"
               :aria-labelledby="
-                'label-ingredient-' + index + '-' + ingredientIndex
+                'ingredient-label' + index + '-' + ingredientIndex
               "
             />
             <span class="fs-checkmark"></span>

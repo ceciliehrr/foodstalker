@@ -17,7 +17,9 @@
       </div>
 
       <div class="tab-content" v-show="activeTab === 'ingredients'">
-        <label class="fs-ingredients__portions" for="portion">Posjoner</label>
+        <label class="fs-ingredients__portions" for="portion-cookingmode"
+          >Posjoner</label
+        >
         <div class="fs-ingredients__input-container">
           <button class="fs-ingredients__button" @click="decreaseServing">
             -
@@ -26,6 +28,7 @@
             class="fs-ingredients__input"
             type="number"
             v-model="portion"
+            id="portion-cookingmode"
           />
           <button class="fs-ingredients__button" @click="increaseServing">
             +
@@ -45,12 +48,18 @@
               <label
                 :for="'ingredient-cookingmode' + index + '-' + ingredientIndex"
                 class="fs-checkbox__container"
+                :id="
+                  'ingredient-label-cookingmode' + index + '-' + ingredientIndex
+                "
               >
                 <input
                   type="checkbox"
                   :id="'ingredient-cookingmode' + index + '-' + ingredientIndex"
                   :aria-labelledby="
-                    'label-ingredient-' + index + '-' + ingredientIndex
+                    'ingredient-label-cookingmode' +
+                    index +
+                    '-' +
+                    ingredientIndex
                   "
                 />
                 <span class="fs-checkmark"></span>
@@ -87,11 +96,14 @@
               <label
                 :for="'ingredient-cookingmode' + stepsIndex"
                 class="fs-checkbox__container"
+                :id="'ingredient-label-cookingmode' + stepsIndex"
               >
                 <input
                   type="checkbox"
                   :id="'ingredient-cookingmode' + stepsIndex"
-                  :aria-labelledby="'label-ingredient-' + stepsIndex" />
+                  :aria-labelledby="
+                    'ingredient-label-cookingmode' + stepsIndex
+                  " />
                 <span class="fs-checkmark"></span>
                 <p
                   :id="'label-ingredient-cookingmode' + stepsIndex"
