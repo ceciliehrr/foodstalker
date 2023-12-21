@@ -1,238 +1,228 @@
 $font-size: (
-    'size-96': 6rem,
-    'size-60': 3.75rem,
-    'size-48': 3rem,
-    'size-34': 2.125rem,
-    'size-24': 1.5rem,
-    'size-20': 1.25rem,
-    'size-16': 1rem,
-    'size-14': 0.875rem,
-    'size-12': 0.75rem,
-    'size-10': 0.625rem,
-    ) !default;
+  "size-96": 6rem,
+  "size-60": 3.75rem,
+  "size-48": 3rem,
+  "size-34": 2.125rem,
+  "size-24": 1.5rem,
+  "size-20": 1.25rem,
+  "size-16": 1rem,
+  "size-14": 0.875rem,
+  "size-12": 0.75rem,
+  "size-10": 0.625rem,
+) !default;
 
 $font-weight: (
-    'light': 300,
-    'normal': 400,
-    'medium': 700,
-    'bold': 700,
-    ) !default;
+  "light": 300,
+  "normal": 400,
+  "medium": 700,
+  "bold": 700,
+) !default;
 
 $line-height: (
-    'body': 1.5rem,
-    'lh-82': 5.125rem,
-    'lh-60': 3.75rem,
-    'lh-54': 3.375rem,
-    'lh-44': 2.75rem,
-    'lh-42': 2.25rem,
-    'lh-40': 2.5rem,
-    'lh-36': 2.25rem,
-    'lh-34': 2.125rem,
-    'lh-32': 2rem,
-    'lh-28': 1.75rem,
-    'lh-24': 1.5rem,
-    'lh-22': 1.375rem,
-    'lh-20': 1.25rem,
-    ) !default;
+  "body": 1.5rem,
+  "lh-82": 5.125rem,
+  "lh-60": 3.75rem,
+  "lh-54": 3.375rem,
+  "lh-44": 2.75rem,
+  "lh-42": 2.25rem,
+  "lh-40": 2.5rem,
+  "lh-36": 2.25rem,
+  "lh-34": 2.125rem,
+  "lh-32": 2rem,
+  "lh-28": 1.75rem,
+  "lh-24": 1.5rem,
+  "lh-22": 1.375rem,
+  "lh-20": 1.25rem,
+) !default;
 
 $letter-spacing: (
-    'tighter': -0.4px,
-    'tight': -0.2px,
-    'normal': normal,
-    'wide': 0.5px,
-    'wider': 1.5px,
-    ) !default;
+  "tighter": -0.4px,
+  "tight": -0.2px,
+  "normal": normal,
+  "wide": 0.5px,
+  "wider": 1.5px,
+) !default;
 
 $fs-font-weight: (
-    'fs-font-light': ('weight': 'light',
-    ),
-    'fs-font-regular': ('weight': 'regular',
-    ),
-    'fs-font-medium': ('weight': 'medium',
-    ),
-    'fs-font-bold': ('weight': 'bold',
-    ),
+  "fs-font-light": (
+    "weight": "light",
+  ),
+  "fs-font-regular": (
+    "weight": "regular",
+  ),
+  "fs-font-medium": (
+    "weight": "medium",
+  ),
+  "fs-font-bold": (
+    "weight": "bold",
+  ),
 );
 
 $fs-preset: (
-    'fs-h1': ('size': 'size-96',
-        'weight': 'light',
-        'letter-spacing': 'tighter',
-        'line-height': 'lh-82',
-    ),
-    'fs-h2': ('size': 'size-60',
-        'weight': 'light',
-        'letter-spacing': 'tight',
-        'line-height': 'lh-60',
-    ),
-    'fs-h3': ('size': 'size-48',
-        'weight': 'normal',
-        'letter-spacing': 'normal',
-        'line-height': 'lh-54',
-    ),
-    'fs-h4': ('size': 'size-34',
-        'weight': 'normal',
-        'letter-spacing': 'normal',
-        'line-height': 'lh-34',
-    ),
-    'fs-h5': ('size': 'size-24',
-        'weight': 'normal',
-        'letter-spacing': 'normal',
-        'line-height': 'lh-24',
-    ),
-    'fs-h6': ('size': 'size-20',
-        'weight': 'medium',
-        'letter-spacing': 'normal',
-        'line-height': 'lh-24',
-    ),
-    'fs-body1': ('size': 'size-16',
-        'weight': 'light',
-        'letter-spacing': 'normal',
-        'line-height': 'lh-20',
-    ),
-    'fs-body2': ('size': 'size-14',
-        'weight': 'normal',
-        'letter-spacing': 'wide',
-        'line-height': 'lh-20',
-    ),
-    'fs-subtitle1': ('size': 'size-16',
-        'weight': 'medium',
-        'letter-spacing': 'wider',
-        'line-height': 'lh-20',
-    ),
-    'fs-subtitle2': ('size': 'size-14',
-        'weight': 'medium',
-        'letter-spacing': 'wide',
-        'line-height': 'lh-20',
-    ),
-    'fs-text-button': ('size': 'size-14',
-        'weight': 'medium',
-        'letter-spacing': 'wider',
-        'line-height': 'lh-20',
-    ),
-    'fs-overline': ('size': 'size-10',
-        'weight': 'medium',
-        'letter-spacing': 'wider',
-        'line-height': 'lh-20',
-    ),
-    'fs-caption': ('size': 'size-12',
-        'weight': 'normal',
-        'letter-spacing': 'wide',
-        'line-height': 'lh-20',
-    ),
-
+  "fs-h1": (
+    "size": "size-96",
+    "weight": "light",
+    "letter-spacing": "tighter",
+    "line-height": "lh-82",
+  ),
+  "fs-h2": (
+    "size": "size-60",
+    "weight": "light",
+    "letter-spacing": "tight",
+    "line-height": "lh-60",
+  ),
+  "fs-h3": (
+    "size": "size-48",
+    "weight": "normal",
+    "letter-spacing": "normal",
+    "line-height": "lh-54",
+  ),
+  "fs-h4": (
+    "size": "size-34",
+    "weight": "normal",
+    "letter-spacing": "normal",
+    "line-height": "lh-36",
+  ),
+  "fs-h5": (
+    "size": "size-24",
+    "weight": "normal",
+    "letter-spacing": "normal",
+    "line-height": "lh-24",
+  ),
+  "fs-h6": (
+    "size": "size-20",
+    "weight": "medium",
+    "letter-spacing": "normal",
+    "line-height": "lh-24",
+  ),
+  "fs-body1": (
+    "size": "size-16",
+    "weight": "light",
+    "letter-spacing": "normal",
+    "line-height": "lh-22",
+  ),
+  "fs-body2": (
+    "size": "size-14",
+    "weight": "normal",
+    "letter-spacing": "wide",
+    "line-height": "lh-22",
+  ),
+  "fs-subtitle1": (
+    "size": "size-16",
+    "weight": "medium",
+    "letter-spacing": "wider",
+    "line-height": "lh-20",
+  ),
+  "fs-subtitle2": (
+    "size": "size-14",
+    "weight": "medium",
+    "letter-spacing": "wide",
+    "line-height": "lh-20",
+  ),
+  "fs-text-button": (
+    "size": "size-14",
+    "weight": "medium",
+    "letter-spacing": "wider",
+    "line-height": "lh-20",
+  ),
+  "fs-overline": (
+    "size": "size-10",
+    "weight": "medium",
+    "letter-spacing": "wider",
+    "line-height": "lh-20",
+  ),
+  "fs-caption": (
+    "size": "size-12",
+    "weight": "normal",
+    "letter-spacing": "wide",
+    "line-height": "lh-20",
+  ),
 );
 
 .fs-h1 {
-    font-size: 6rem;
-    letter-spacing: -1.5px;
-    font-weight: light;
+  font-size: 6rem;
+  letter-spacing: -1.5px;
+  font-weight: light;
 }
-
-
 
 .fs-h2 {
-    font-size: 3.75rem;
-    letter-spacing: -0.5px;
-    font-weight: light;
+  font-size: 3.75rem;
+  letter-spacing: -0.5px;
+  font-weight: light;
 }
-
-
 
 .fs-h3 {
-    font-size: 3rem;
-    letter-spacing: 0px;
-    font-weight: normal;
+  font-size: 3rem;
+  letter-spacing: 0px;
+  font-weight: normal;
 }
-
-
 
 .fs-h4 {
-    font-size: 2.125rem;
-    letter-spacing: 0.25px;
-    font-weight: normal;
+  font-size: 2.125rem;
+  letter-spacing: 0.25px;
+  font-weight: normal;
 }
-
-
 
 .fs-h5 {
-    font-size: 1.5rem;
-    letter-spacing: 0px;
-    font-weight: normal;
+  font-size: 1.5rem;
+  letter-spacing: 0px;
+  font-weight: normal;
 }
-
-
 
 .fs-h6 {
-    font-size: 1.25rem;
-    letter-spacing: 0.15px;
-    font-weight: medium;
+  font-size: 1.25rem;
+  letter-spacing: 0.15px;
+  font-weight: medium;
 }
-
-
 
 .fs-body1 {
-    font-size: 1rem;
-    letter-spacing: 0.5px;
-    font-weight: normal;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  font-weight: normal;
 }
-
-
 
 .fs-body2 {
-    font-size: 0.875rem;
-    letter-spacing: 0.25px;
-    font-weight: normal;
+  font-size: 0.875rem;
+  letter-spacing: 0.25px;
+  font-weight: normal;
 }
-
-
 
 .fs-subtitle1 {
-    font-size: 1rem;
-    letter-spacing: 0.15px;
-    font-weight: medium;
+  font-size: 1rem;
+  letter-spacing: 0.15px;
+  font-weight: medium;
 }
-
-
 
 .fs-subtitle2 {
-    font-size: 0.875rem;
-    letter-spacing: 0.1px;
-    font-weight: medium;
+  font-size: 0.875rem;
+  letter-spacing: 0.1px;
+  font-weight: medium;
 }
-
-
 
 .fs-text-button {
-    font-size: 0.875rem;
-    letter-spacing: 1.25px;
-    font-weight: medium;
+  font-size: 0.875rem;
+  letter-spacing: 1.25px;
+  font-weight: medium;
 }
-
-
 
 .fs-overline {
-    font-size: 0.625rem;
-    letter-spacing: 1.5px;
-    font-weight: normal;
+  font-size: 0.625rem;
+  letter-spacing: 1.5px;
+  font-weight: normal;
 }
-
-
 
 .fs-caption {
-    font-size: 0.75rem;
-    letter-spacing: 0.4px;
-    font-weight: normal;
+  font-size: 0.75rem;
+  letter-spacing: 0.4px;
+  font-weight: normal;
 }
-
-
 
 /* 
  * Truncate text
  * requires inline-block or block
  */
 .fstruncate-text {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }

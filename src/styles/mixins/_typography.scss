@@ -1,5 +1,5 @@
-@use 'sass:map';
-@use '../variables';
+@use "sass:map";
+@use "../variables";
 
 /// Map deep get
 /// @author Kitty Giraudel
@@ -8,20 +8,28 @@
 /// @param {Arglist} $keys - Key chain
 /// @return {*} - Desired value
 @function map-deep-get($map, $keys...) {
-        @each $key in $keys {
-                $map: map-get($map, $key);
-        }
+  @each $key in $keys {
+    $map: map-get($map, $key);
+  }
 
-        @return $map;
+  @return $map;
 }
 
 @mixin get-text($name) {
-        font-size: map.get(variables.$font-size,
-                        map-deep-get(variables.$fs-preset, $name, 'size'));
-        font-weight: map.get(variables.$font-weight,
-                        map-deep-get(variables.$fs-preset, $name, 'weight'));
-        letter-spacing: map.get(variables.$letter-spacing,
-                        map-deep-get(variables.$fs-preset, $name, 'letter-spacing'));
-        line-height: map.get(variables.$letter-spacing,
-                        map-deep-get(variables.$fs-preset, $name, 'line-height'));
+  font-size: map.get(
+    variables.$font-size,
+    map-deep-get(variables.$fs-preset, $name, "size")
+  );
+  font-weight: map.get(
+    variables.$font-weight,
+    map-deep-get(variables.$fs-preset, $name, "weight")
+  );
+  letter-spacing: map.get(
+    variables.$letter-spacing,
+    map-deep-get(variables.$fs-preset, $name, "letter-spacing")
+  );
+  line-height: map.get(
+    variables.$line-height,
+    map-deep-get(variables.$fs-preset, $name, "line-height")
+  );
 }
