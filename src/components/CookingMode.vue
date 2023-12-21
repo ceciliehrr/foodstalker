@@ -17,7 +17,7 @@
       </div>
 
       <div class="tab-content" v-show="activeTab === 'ingredients'">
-        <label class="fs-ingredients__portions" for="portion">Posjoner:</label>
+        <label class="fs-ingredients__portions" for="portion">Posjoner</label>
         <div class="fs-ingredients__input-container">
           <button class="fs-ingredients__button" @click="decreaseServing">
             -
@@ -227,6 +227,8 @@ button {
 .modal-style {
   background-color: white !important;
   color: var(--fs-black) !important;
+  border-top-left-radius: 2.25rem !important;
+  border-top-right-radius: 2.25rem !important;
 }
 
 .tabs {
@@ -303,6 +305,7 @@ button {
     width: 100%;
   }
   &__button {
+    touch-action: none; // prevent zoom on double tap
     font-size: 1rem;
     background-color: var(--fs-pink-400);
     color: white;
@@ -343,15 +346,15 @@ button {
     }
     /* Chrome, Safari, Edge, Opera */
   }
-  input::-webkit-outer-spin-button,
-  input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-  }
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
-  /* Firefox */
-  input[type="number"] {
-    -moz-appearance: textfield;
-  }
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 </style>

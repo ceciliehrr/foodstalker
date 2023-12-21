@@ -164,6 +164,7 @@ export default {
     justify-content: center;
   }
   &__button {
+    touch-action: none; // prevent zoom on double tap
     font-size: 1rem;
     background-color: var(--fs-pink-400);
     color: white;
