@@ -12490,5 +12490,253 @@
       }
     ],
     "keywords": ["multer", "drink", "cocktail", "multesirup", "jul"]
+  },
+  {
+    "id": "roastbeef",
+    "imageurl": "https://foodstalker.b-cdn.net/2023/roastbeef/DSC03415-2.jpg",
+    "alt": "roastbeef på vannbakkels",
+    "title": "Vannbakkels med roastbeef",
+    "date": "2024-02-03",
+    "category": "helg",
+    "description": "Roastbeef er luksus til frokost! Hva med å gjøre den om til en festlig forrett?",
+    "longDescription": "Å kjøpe en boks finskåret fersk roastbeef fra Meny til helgefrokosten var luksus i Cecilie sin barndom. Og vi fikk det servert på loff med remulade, sylta agurk og sprøstekt løk. Hva med å lage alt selv ?  Alle ingrediensene kan lages i forkant av servering, så denne passer perfekt til en forrett så du kan fokusere på hovedretten.",
+    "time": "2 timer",
+    "portions": 20,
+    "tips": "Denne mååå ikke absolutt serveres på vannbakkels. Prøv gjerne på blinis, butterdeig eller spiralloff.",
+    "chef": "Cecilie&Pete",
+    "tipsurl": "",
+    "ingredients": [
+      {
+        "title": "Roastbeef",
+        "ingredients": [
+          {
+            "quantity": "800 g",
+            "name": "flatbiff av kalv"
+          },
+          {
+            "quantity": "1 ss",
+            "name": "hel pepper"
+          },
+          {
+            "quantity": "1 ss",
+            "name": "salt"
+          },
+          {
+            "quantity": "1 ss",
+            "name": "fennikelfrø"
+          },
+          {
+            "quantity": "",
+            "name": "olje og smør til steking"
+          }
+        ]
+      },
+      {
+        "title": "Remulade",
+        "ingredients": [
+          {
+            "quantity": "2 stk",
+            "name": "eggeplomme, romtemperert"
+          },
+          {
+            "quantity": "2 ts",
+            "name": "dijonsennep, romtemperert"
+          },
+          {
+            "quantity": "1 ss",
+            "name": "sitronsaft, romtemperert"
+          },
+          {
+            "quantity": "2 dl",
+            "name": "solsikkeolje, romtemperert"
+          },
+          {
+            "quantity": "2 ss",
+            "name": "finhakket kapers"
+          },
+          {
+            "quantity": "2 ss",
+            "name": "finhakket fersk bladpersille"
+          },
+          {
+            "quantity": "4 ss",
+            "name": "hakket sylteagurk"
+          },
+          {
+            "quantity": "2 stk",
+            "name": "finhakket sjalottløk"
+          },
+          {
+            "quantity": "0.5 ts",
+            "name": "salt"
+          },
+          {
+            "quantity": "0.25 ts",
+            "name": "pepper"
+          }
+        ]
+      },
+      {
+        "ingredients": [
+          {
+            "quantity": "10 stk",
+            "name": "sjalottløk"
+          },
+          {
+            "quantity": "4 dl",
+            "name": "solsikkeolje"
+          },
+          {
+            "quantity": "",
+            "name": "dryss salt"
+          },
+          {
+            "quantity": "",
+            "name": "hyssing godkjent for matlaging"
+          }
+        ],
+        "title": "Sprøstekt løk"
+      },
+      {
+        "title": "Vannbakkels",
+        "ingredients": [
+          {
+            "quantity": "2.5 dl",
+            "name": "vann"
+          },
+          {
+            "quantity": "100 g",
+            "name": "smør"
+          },
+          {
+            "quantity": "150 g",
+            "name": "hvetemel"
+          },
+          {
+            "quantity": "4 stk",
+            "name": "egg"
+          },
+          {
+            "quantity": "0.5 ts",
+            "name": "salt"
+          }
+        ]
+      }
+    ],
+    "steps": [
+      {
+        "title": "Roastbeef",
+        "description": "Surr hyssing rundt kjøttet slik at den holder den runde formen bedre, da blir det jevnere steking og finere skiver. "
+      },
+      {
+        "title": "",
+        "description": "Varm en stekepanne, rist pepper og fennikelfrøene raskt i pannen til du kjenner aromaene(lukta) komme frem. Mort deretter disse til krydder. Gni hele kjøttet inn med salt, pepper og fennikelfrøene."
+      },
+      {
+        "title": "",
+        "description": "Varm stekepannen på nytt, ha i olje og smør. Når smøret slutter å frese er pannen varm nok, ha i kjøttet og stek godt på alle sider så den får stekeskorpe. Legg kjøttet over i en ildfast form. Ha i steketermometeret inn til midten av kjøttet."
+      },
+      {
+        "title": "",
+        "description": "Sett stekeovn på 100 grader, og stek til mellom 55 og 60 grader. Da vil den være rosa og fin. Avkjøl kjøttet helt før du skjærer den i skiver, bruk gjerne en påleggskjæremaskin for å få fine tynne skiver."
+      },
+      {
+        "title": "Remulade",
+        "description": "Bruk den høye smale beholderen som pleier å følge med en stavmikser. Ha i eggeplomme, sennep, sitronsaft og olje. Det er viktig at alle disse 3 ingrediensene har samme temperatur. Sett stavmikseren i bunnen og kjør til alt er blandet og det begynner å emulere(bli tykkere), ca 10 sekunder. Så starter du å dra stavmikseren sakte, sakte oppover til overflaten, mens den kjører. WOW! Majones!"
+      },
+      {
+        "title": "",
+        "description": "Nå skal vi smake til majonesen slik at det blir remulade. Kutt alle ingredienser og tilsett i majonesen. Bland godt med en slikkepott og smak til med salt og pepper. Ha remuladen i en sprøytepose for at monteringa skal gå smooth."
+      },
+      {
+        "title": "Sprøstekt løk",
+        "description": "Skrell og kutt sjalottløk i jevne tynne skiver. Bruk gjerne en mandolin. Kok løken opp i kald olje til ca 140 grader. Rør av og til (aav og tiil). Når løken er gyllenbrun, noe som tar ca 15 minutter , siler du av og legger løken på kjøkkenpapir. Det er viktig at løken ikke er for brun, da har du brent dem og de vil smake bittert. Strø salt over. Avkjøl før du legger løken i en lufttett boks."
+      },
+      {
+        "title": "Vannbakkels",
+        "description": "Mål opp og gjør klart ingredienser, ha salt i melet."
+      },
+      {
+        "title": "",
+        "description": "Kok opp vannet i en tykkbunnet kjele. Ikke kok for lenge, da blir det raskt feil mengde vann. (fordamper)"
+      },
+      {
+        "title": "",
+        "description": "Smelt smøret i det kokende vannet, pass på så det ikke koker over i denne prosessen. Bruk en tresleiv for å røre med."
+      },
+      {
+        "title": "",
+        "description": "Hell i alt melet på en gang under omrøring med tresleiva."
+      },
+      {
+        "title": "",
+        "description": "La plata stå på middels varme og rør til det blir en stor klump. Fortsett å røre over varmen i et par minutter til deigklumpen har fått varme på alle sider."
+      },
+      {
+        "title": "",
+        "description": "Ha deigen over i en kjøkkenmaskin med K-krok. Rør inn ett og ett egg. Ikke tilsett det neste egget før det forrige er rørt helt inn."
+      },
+      {
+        "title": "",
+        "description": "Sett ovnen til 200 grader. Fyll vannbakkelsrøren i en sprøytepose. Legg sprøyteposen i et stort glass, så har du mer kontroll på den klissete deigen."
+      },
+      {
+        "title": "",
+        "description": "Finn fram et stekebrett med bakepapir. Sprøyt ut 7-8 boller på størrelse med små klementiner. Vannbakkelsen vil ese litt ut, så ha avstand mellom dem."
+      },
+      {
+        "title": "",
+        "description": "Stek vannbakkelsen midt i ovnen, i ca. 40 minutter. Avkjøl på rist."
+      },
+      {
+        "title": "Sylta rødløk",
+        "description": "<a href='/oppskrift/syltet-rødløk/'>Oppskriften på syltet rødløk.</a>"
+      },
+      {
+        "title": "Montering",
+        "description": "Kutt sylta rødløk i fine små terninger. Skjær toppene av vannbakkelsene med en brødkniv. Fyll vannbakkels med remulade så det dekker bunnen, ha på et par skiver roastbeef, topp med sylta rødløk og sprøstekt løk. Om du har noe frisk timian på lur, pynt med det. "
+      }
+    ],
+    "images": [
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2023/roastbeef/DSC03301-2.jpg",
+        "alt": "steker roastbeef i panne med smør"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2023/roastbeef/DSC03312-2.jpg",
+        "alt": "vannbakkels på stekebrett"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2023/roastbeef/DSC03308-2.jpg",
+        "alt": "finskåret roastbeef"
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2023/roastbeef/DSC03315-2.jpg",
+        "alt": "sprøstekt sjalottløk"
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2023/roastbeef/DSC03410-2.jpg",
+        "alt": "ferdig montert vannbakkels med roastbeef"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2023/roastbeef/DSC03404-2.jpg",
+        "alt": "ferdig montert vannbakkels med roastbeef portrett"
+      }
+    ],
+    "keywords": [
+      "roastbeef",
+      "forrett",
+      "remulade",
+      "sprøstekt løk",
+      "sylta rødløk",
+      "pålegg",
+      "selskap"
+    ]
   }
 ]

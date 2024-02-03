@@ -6,7 +6,7 @@ import { Image } from "astro:assets";
 <Layout title="Om oss">
   <div class="fs-about">
     <div class="fs-about__banner">
-      <h1 class="fs-about__title">Om oss</h1>
+      <h1 class="fs-about__title fs-h1">Om oss</h1>
       <Image
         class="fs-about__image fade-in"
         src="https://foodstalker.b-cdn.net/about/pete-cec-1.jpeg"
@@ -113,6 +113,9 @@ import { Image } from "astro:assets";
         }
         &__title {
           font-size: 4rem;
+          margin-top: 2rem;
+          margin-bottom: 2rem;
+          line-height: 3rem;
         }
         &__text {
           margin-top: 2rem;
