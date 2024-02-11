@@ -12738,5 +12738,165 @@
       "pålegg",
       "selskap"
     ]
+  },
+  {
+    "id": "sitronterte",
+    "imageurl": "https://foodstalker.b-cdn.net/2024/sitronpai/DSC08636.jpg",
+    "alt": "sitronterte",
+    "title": "Sitronterte med marengs",
+    "date": "2024-02-11",
+    "category": "søtt",
+    "description": "Dette er vår favorittkake. Når amalfisitroner er i sesong og kan kjøpes i butikken i januar og februar, må denne lages. ",
+    "longDescription": "",
+    "time": "1.5 time",
+    "portions": 10,
+    "tips": "Denne kan lages både i små terteformer eller en stor paiform. ",
+    "chef": "Lise Finckenhagen",
+    "tipsurl": "https://www.godt.no/oppskrifter/dessert/dessertpai/571/sitronpai-med-marengslokk",
+    "ingredients": [
+      {
+        "title": "Bunn",
+        "ingredients": [
+          {
+            "quantity": "120 g",
+            "name": "kaldt smør"
+          },
+          {
+            "quantity": "100 g",
+            "name": "melis"
+          },
+          {
+            "quantity": "1 stk",
+            "name": "egg"
+          },
+          {
+            "quantity": "250 g",
+            "name": "hvetemel"
+          },
+          {
+            "quantity": "1 boks",
+            "name": "tørkede erter"
+          }
+        ]
+      },
+      {
+        "title": "Sitronfyll",
+        "ingredients": [
+          {
+            "quantity": "3 stk",
+            "name": "sitroner, saften"
+          },
+          {
+            "quantity": "1 stk ",
+            "name": "revet sitronskall"
+          },
+          {
+            "quantity": "6 stk",
+            "name": "egg"
+          },
+          {
+            "quantity": "300 g",
+            "name": "sukker"
+          },
+          {
+            "quantity": "160 g",
+            "name": "creme fraiche"
+          }
+        ]
+      },
+      {
+        "ingredients": [
+          {
+            "quantity": "200 g",
+            "name": "sukker"
+          },
+          {
+            "quantity": "3 stk",
+            "name": "eggehvite"
+          }
+        ],
+        "title": "Italiensk marengs"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Bunn",
+        "description": "Kjør alle ingrediensene til mørdeigen i en hurtigmikser. Hell deigen/smulene over benken og samle deigen til en klump og pakk den inn i plasfolie. Det er viktig at ikke deigen blir varm, så derfor må du arbeide minst mulig med den, spesielt hvis du gjør det for hånd. Ha deigen i kjøleskapet minst 1 time."
+      },
+      {
+        "title": "",
+        "description": "Sett ovnen på 170 grader. Kjevle deigen og kle små terteformer eller en stor terteform (22-27cm i diameter). "
+      },
+      {
+        "title": "",
+        "description": "Prikk bunnen lett med en gaffel, dekk med bakepapir og fyll med tørkede erter eller noe lignende for at deigen skal holde seg på plass i formen ved forsteking. "
+      },
+      {
+        "title": "",
+        "description": "Ha paiformen på et stekebrett og stek i 15 minutter."
+      },
+      {
+        "title": "Sitronfyll",
+        "description": "Imens paideigen forstekes kan du lage fyllet. Mål opp og ha alle ingredienser i en bolle. Visp alt godt sammen. "
+      },
+      {
+        "title": "",
+        "description": "Når bunnen er ferdigstekt fjerner du erter og bakepapir. La stekebrettet med formen stå halvveis inn i ovnen når du heller over sitronfyllet. Sett ovnen ned til 120 grader og stek i ca 35 minutter. Sjekk om fyllet har satt seg ved å bevege litt på brettet. Avkjøl."
+      },
+      {
+        "title": "Italiensk marengs",
+        "description": "Pisk eggehvite og sukker i en stålbolle til det er godt blandet."
+      },
+      {
+        "title": "",
+        "description": "Marengsen skal nå lages over vannbad. Finn frem en kjele med vann og kok opp. Når vannet koker, sett bollen over kjelen uten å treffe vannet, og varm marengsen til 60 grader imens du pisker. Ha marengsen over i en kjøkkenmaskin, sett på full hastighet og pisk til marengsen blir stiv.\r\n"
+      },
+      {
+        "title": "Montering",
+        "description": "Ha marengsen over hele sitronterta med en slikkepott. Bruk en creme brulee-brenner for å gjøre marengsen gyllen. Om du ikke har en brenner kan du ha sitronterten under grillfunksjon i ovnen til marengsen er gyllen."
+      }
+    ],
+    "images": [
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2024/sitronpai/DSC08403.jpg",
+        "alt": "ingredienser"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2024/sitronpai/DSC09091.jpg",
+        "alt": "paideig i foodprossessor"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2024/sitronpai/DSC08578.jpg",
+        "alt": "små paiterter med sitronfyll"
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2024/sitronpai/DSC08476.jpg",
+        "alt": "stor sitronpai"
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2024/sitronpai/DSC08563.jpg",
+        "alt": "sitroner"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2024/sitronpai/DSC08529-2.jpg",
+        "alt": "sitronterte med marengs"
+      }
+    ],
+    "keywords": [
+      "italiensk marengs",
+      "sitron",
+      "pai",
+      "terte",
+      "dessert",
+      "marengs",
+      "amalfi",
+      "kake"
+    ]
   }
 ]
