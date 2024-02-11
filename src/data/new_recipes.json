@@ -3152,7 +3152,7 @@
       },
       {
         "title": "",
-        "description": "La ovnen stå på middels varme og rør til det blir en stor klump. Fortsett å røre over varmen i et par minutter til deigklumpen har fått varme på alle sider."
+        "description": "La plata stå på middels varme og rør til det blir en stor klump. Fortsett å røre over varmen i et par minutter til deigklumpen har fått varme på alle sider."
       },
       {
         "title": "",
@@ -3168,7 +3168,7 @@
       },
       {
         "title": "",
-        "description": "Stek vannbakkelsen midt i ovnen, i ca. 40 minutter. Avkjøl på rist."
+        "description": "Stek vannbakkelsen midt i ovnen, i ca. 40 minutter. Du må ikke åpne ovnsdøra før mot slutten av steketiden, ellers kan de falle sammen. Avkjøl på rist."
       },
       {
         "title": "Sitronkrem",
@@ -12654,11 +12654,11 @@
       },
       {
         "title": "Vannbakkels",
-        "description": "Mål opp og gjør klart ingredienser, ha salt i melet."
+        "description": "Mål opp ingredienser før du starter. Bland saltet i melet."
       },
       {
         "title": "",
-        "description": "Kok opp vannet i en tykkbunnet kjele. Ikke kok for lenge, da blir det raskt feil mengde vann. (fordamper)"
+        "description": "Kok opp vannet i en tykkbunnet kjele. Ikke kok for lenge, da blir det raskt feil mengde vann."
       },
       {
         "title": "",
@@ -12682,11 +12682,11 @@
       },
       {
         "title": "",
-        "description": "Finn fram et stekebrett med bakepapir. Sprøyt ut 7-8 boller på størrelse med små klementiner. Vannbakkelsen vil ese litt ut, så ha avstand mellom dem."
+        "description": "Finn fram et stekebrett med bakepapir. Sprøyt ut 7-8 boller på størrelse med en klementiner. Vannbakkelsen vil ese litt ut, så ha avstand mellom dem."
       },
       {
         "title": "",
-        "description": "Stek vannbakkelsen midt i ovnen, i ca. 40 minutter. Avkjøl på rist."
+        "description": "Stek vannbakkelsen midt i ovnen, i ca. 40 minutter. OBS! Du må ikke åpne ovnsdøra før mot slutten av steketiden, ellers kan de falle sammen. Avkjøl på rist."
       },
       {
         "title": "Sylta rødløk",
@@ -12746,6 +12746,8 @@
     "title": "Sitronterte med marengs",
     "date": "2024-02-11",
     "category": "søtt",
+    "vintipsnavn": "Weinrieder Eiswein 2015",
+    "vintipsUrl": "https://www.vinmonopolet.no/Land/%C3%98sterrike/Nieder%C3%B6sterreich/Weinviertel/Weinrieder-Welschriesling-Eiswein-2015/p/5877202",
     "description": "Dette er vår favorittkake. Når amalfisitroner er i sesong og kan kjøpes i butikken i januar og februar, må denne lages. ",
     "longDescription": "",
     "time": "1.5 time",
