@@ -188,6 +188,28 @@
     "tags": ["casual", "småmat", "lunsj", "drinks", "bar", "uteservering"]
   },
   {
+    "position": [59.907655277599275, 10.758188264417758],
+    "city": "Oslo",
+    "title": "Maaemo",
+    "description": "Maaemo er i en annen liga enn alt annet vi har vært på. Man betaler for en opplevelse. Ikke bare er det veldig god mat, men alt er planlagt til den minste detalj for at vi skulle få en god opplevelse. Fantastisk!",
+    "category": "Restaurant",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_6255.JPG",
+    "webPage": "https://maaemo.no/",
+    "dateVisited": "Januar, 2024",
+    "tags": ["middag", "gourmet", "fine dining", "michelin"]
+  },
+  {
+    "position": [59.92769528477186, 10.756847582098711],
+    "city": "Oslo",
+    "title": "Babbos Collective Øvrefoss",
+    "description": "Babbos var et perfekt sted å spise lunsj før vi trasket rundt på Løkka i vårsola som tittet frem i februar. Kjempehyggelig service og bra mat. Digg hjemmelaget juice av ulik smak. Pannekaker kan absolutt anbefales!",
+    "category": "Restaurant",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_6751.JPG",
+    "webPage": "https://www.babbocollectivefoss.com/",
+    "dateVisited": "Februar, 2024",
+    "tags": ["middag", "brunsj", "lunsj", "smart casual"]
+  },
+  {
     "position": [59.92019486916005, 10.74901057670226],
     "city": "Oslo",
     "title": "Hyde",
