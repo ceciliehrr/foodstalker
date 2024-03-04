@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import FoodMap from "../components/FoodMap.vue";
+import BucketList from "../components/BucketList.vue";
 ---
 
 <Layout
@@ -9,4 +10,5 @@ import FoodMap from "../components/FoodMap.vue";
   description="Foodstalkers map over restaurants they recommend"
 >
   <FoodMap client:load />
+  <BucketList />
 </Layout>
