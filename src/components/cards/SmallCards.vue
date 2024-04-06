@@ -58,7 +58,7 @@ export default {
     flex-direction: column;
   }
   &:focus-visible {
-    outline: 2px solid var(--fs-pink-500);
+    outline: 2px solid var(--fs-berries-500);
   }
   &:focus-visible .fs-small-cards__container {
     background-color: var(--fs-gray-100);
@@ -67,14 +67,14 @@ export default {
     display: flex;
     border-radius: 0.75rem;
     border: 2px solid var(--fs-gray-300);
-    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 15px -3px rgba(64, 89, 90, 0.1);
     padding: 1rem;
     background-color: white;
 
     &:hover {
       background-color: var(--fs-gray-100);
       color: var(--fs-black);
-      outline: 2px solid var(--fs-pink-500);
+      outline: 2px solid var(--fs-berries-500);
     }
 
     &:active {

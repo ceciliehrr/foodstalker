@@ -26,9 +26,11 @@ $line-height: (
   "lh-44": 2.75rem,
   "lh-42": 2.25rem,
   "lh-40": 2.5rem,
+  "lh-38": 2.375rem,
   "lh-36": 2.25rem,
   "lh-34": 2.125rem,
   "lh-32": 2rem,
+  "lh-30": 1.875rem,
   "lh-28": 1.75rem,
   "lh-24": 1.5rem,
   "lh-22": 1.375rem,
@@ -98,8 +100,8 @@ $fs-preset: (
   "fs-body1": (
     "size": "size-16",
     "weight": "light",
-    "letter-spacing": "normal",
-    "line-height": "lh-22",
+    "letter-spacing": "tight",
+    "line-height": "lh-24",
   ),
   "fs-body2": (
     "size": "size-14",
@@ -137,7 +139,52 @@ $fs-preset: (
     "letter-spacing": "wide",
     "line-height": "lh-20",
   ),
+  "fs-oppskrift-title": (
+    "size": "size-48",
+    "weight": "normal",
+    "letter-spacing": "tighter",
+    "line-height": "lh-54",
+  ),
+  "fs-oppskrift-title--mobile": (
+    "size": "size-34",
+    "weight": "normal",
+    "letter-spacing": "tighter",
+    "line-height": "lh-38",
+  ),
+  "fs-oppskrift-ingress": (
+    "size": "size-24",
+    "weight": "normal",
+    "letter-spacing": "tight",
+    "line-height": "lh-32",
+  ),
+  "fs-oppskrift-steps": (
+    "size": "size-16",
+    "weight": "light",
+    "letter-spacing": "tight",
+    "line-height": "lh-24",
+  ),
 );
+
+.fs-oppskrift-title {
+  font-size: 3rem;
+  letter-spacing: 0px;
+  font-weight: normal;
+}
+.fs-oppskrift-title--mobile {
+  font-size: 2.125rem;
+  letter-spacing: 0.25px;
+  font-weight: normal;
+}
+.fs-oppskrift-ingress {
+  font-size: 1.5rem;
+  letter-spacing: 0px;
+  font-weight: normal;
+}
+.fs-oppskrift-steps {
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: normal;
+}
 
 .fs-h1 {
   font-size: 6rem;

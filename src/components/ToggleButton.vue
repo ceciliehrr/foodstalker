@@ -146,9 +146,9 @@ export default {
       display: flex;
       width: var(--handle-diameter);
       height: var(--handle-diameter);
-      background-color: var(--fs-pink-100);
+      background-color: var(--fs-berries-100);
       border-radius: var(--handle-border-radius);
-      border: 1px solid var(--fs-pink-300);
+      border: 1px solid var(--fs-berries-300);
       transition: 0.4s;
     }
   }

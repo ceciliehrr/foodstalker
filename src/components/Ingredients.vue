@@ -172,7 +172,7 @@ export default {
   &__button {
     touch-action: none; // prevent zoom on double tap
     font-size: 1rem;
-    background-color: var(--fs-pink-400);
+    background-color: var(--fs-berries-400);
     color: white;
     line-height: 1.25rem;
     padding: 0.5rem;
@@ -190,8 +190,8 @@ export default {
     &:active,
     &:hover {
       cursor: pointer;
-      outline: 2px solid var(--fs-pink-300);
-      background-color: var(--fs-pink-300);
+      outline: 2px solid var(--fs-berries-300);
+      background-color: var(--fs-berries-300);
     }
     /* Chrome, Safari, Edge, Opera */
   }
@@ -207,7 +207,7 @@ export default {
 
     &:focus,
     &:active {
-      outline: 2px solid var(--fs-pink-500);
+      outline: 2px solid var(--fs-berries-500);
     }
     /* Chrome, Safari, Edge, Opera */
   }

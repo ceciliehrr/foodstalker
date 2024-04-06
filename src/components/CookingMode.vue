@@ -232,7 +232,7 @@ export default {
 button {
   text-decoration: none;
   &:hover {
-    color: var(--fs-pink-500);
+    color: var(--fs-berries-500);
   }
 }
 
@@ -279,15 +279,15 @@ button {
 .tab-button.active {
   text-decoration: underline;
   text-decoration-thickness: 3px;
-  text-decoration-color: var(--fs-pink-300);
+  text-decoration-color: var(--fs-berries-300);
   text-underline-offset: 11px;
   border-radius: 8px;
   background-color: var(--fs-gray-100);
 }
 
 .open-modal-button {
-  background-color: var(--fs-pink-100);
-  border: 1px solid var(--fs-pink-500);
+  background-color: var(--fs-berries-100);
+  border: 1px solid var(--fs-berries-500);
   border-radius: 8px;
   padding: 10px 20px;
   color: var(--fs-black);
@@ -319,7 +319,7 @@ button {
   &__button {
     touch-action: none; // prevent zoom on double tap
     font-size: 1rem;
-    background-color: var(--fs-pink-400);
+    background-color: var(--fs-berries-400);
     color: white;
     line-height: 1.25rem;
     padding: 0.5rem;
@@ -337,8 +337,8 @@ button {
     &:active,
     &:hover {
       cursor: pointer;
-      outline: 2px solid var(--fs-pink-300);
-      background-color: var(--fs-pink-300);
+      outline: 2px solid var(--fs-berries-300);
+      background-color: var(--fs-berries-300);
     }
     /* Chrome, Safari, Edge, Opera */
   }
@@ -354,7 +354,7 @@ button {
 
     &:focus,
     &:active {
-      outline: 2px solid var(--fs-pink-500);
+      outline: 2px solid var(--fs-berries-500);
     }
     /* Chrome, Safari, Edge, Opera */
   }

@@ -172,7 +172,7 @@ export default {
 }
 
 .nav-links a {
-  color: var(--fs-green-300);
+  color: var(--fs-brokkoli);
   font-size: 1rem;
   margin-left: 1rem;
   text-decoration: none;
@@ -192,7 +192,7 @@ export default {
   display: block;
   width: 25px;
   height: 3px;
-  background-color: var(--fs-green-300);
+  background-color: var(--fs-brokkoli);
   margin: 5px auto;
 }
 
@@ -217,7 +217,7 @@ export default {
 
   .mobile-menu a {
     display: block;
-    color: var(--fs-green-300);
+    color: var(--fs-brokkoli);
     font-size: 1rem;
     font-weight: 400;
     text-decoration: none;
@@ -226,7 +226,7 @@ export default {
   }
 
   .mobile-menu a:hover {
-    color: var(--fs-pink-500);
+    color: var(--fs-berries-500);
   }
 
   .close {
@@ -238,7 +238,7 @@ export default {
     height: 25px;
   }
   .close:hover {
-    color: var(--fs-pink-500);
+    color: var(--fs-berries-500);
   }
   .close:before,
   .close:after {
@@ -247,7 +247,7 @@ export default {
     content: " ";
     height: 25px;
     width: 2px;
-    background-color: var(--fs-green-300);
+    background-color: var(--fs-brokkoli);
   }
   .close:before {
     transform: rotate(45deg);
@@ -272,7 +272,7 @@ export default {
   background-color: transparent;
   border: none;
   cursor: pointer;
-  color: var(--fs-green-300);
+  color: var(--fs-brokkoli);
   text-decoration: none;
   font-weight: 300;
   padding: 0.5rem;

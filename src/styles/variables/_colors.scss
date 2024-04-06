@@ -1,24 +1,24 @@
 $colors: (
-    // grays
-    fs-transparent: transparent,
-    fs-white: #fff,
-    fs-black: #1f1209,
-    fs-gray-100: #f3f4f6,
-    fs-gray-200: #e5e7eb,
-    fs-gray-300: #cbd5e1,
-    fs-gray-400: #9ca3af,
-    fs-gray-500: #6b7280,
-    // Brand colors
-    fs-vanilla: #FDF8E8,
+  // grays
+  fs-transparent: transparent,
+  fs-white: #fff,
+  fs-black: #1f1209,
+  fs-gray-100: #f3f4f6,
+  fs-gray-200: #e5e7eb,
+  fs-gray-300: #cbd5e1,
+  fs-gray-400: #9ca3af,
+  fs-gray-500: #6b7280,
 
-    fs-green-100: #BED5AE,
-    fs-green-200: #D1E1C8,
-    fs-green-300: #4A5B68,
+  // Brand colors
+  fs-vanilla: #fdf8e8,
+  fs-lime: #bed5ae,
+  fs-lime-light: #d1e1c8,
 
-    fs-pink-100: #FBD3C4,
-    fs-pink-200: #cfaebf,
-    fs-pink-300: #CE8884,
-    fs-pink-400: #C06C7E,
-    fs-pink-500: #B04C6A,
+  fs-brokkoli: #40595a,
 
-    ) !default;
+  fs-berries-100: #fbd3c4,
+  fs-berries-200: #cfaebf,
+  fs-berries-300: #ce8884,
+  fs-berries-400: #c06c7e,
+  fs-berries-500: #b04c6a
+) !default;

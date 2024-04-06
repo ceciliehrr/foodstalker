@@ -119,7 +119,7 @@ export default {
 @use "../styles/variables/" as *;
 @use "../styles/mixins/breakpoints" as *;
 .fs-search-bar {
-  background-color: var(--fs-green-100);
+  background-color: var(--fs-lime);
   padding: 1rem;
   padding-bottom: 2rem;
   margin-top: 1rem;
@@ -161,7 +161,7 @@ export default {
 
     &:focus,
     &:active {
-      outline: 2px solid var(--fs-pink-500);
+      outline: 2px solid var(--fs-berries-500);
     }
   }
   &__searchtxt {

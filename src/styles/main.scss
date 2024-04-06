@@ -1,11 +1,11 @@
 @charset "utf-8";
 
-@use 'sass:map';
-@use 'index.scss';
+@use "sass:map";
+@use "index.scss";
 
-@use './variables';
-@use './mixins/breakpoints' as *;
-@use './mixins/typography';
+@use "./variables";
+@use "./mixins/breakpoints" as *;
+@use "./mixins/typography";
 @use "./mixins/" as *;
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@300;400&display=swap");
@@ -40,7 +40,7 @@ body {
   background-color: var(--fs-vanilla) !important;
   display: flex;
   flex-direction: column;
-  min-height: 100vh
+  min-height: 100vh;
 }
 
 .fs-header {
@@ -55,10 +55,9 @@ body {
   top: 0;
   position: fixed;
 
-  @include bp('tablet-up') {
+  @include bp("tablet-up") {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-
   }
 
   &__content {
@@ -73,7 +72,7 @@ body {
       margin-right: 32px;
     }
 
-    @include bp('tablet-up') {
+    @include bp("tablet-up") {
       justify-content: flex-start;
     }
   }
@@ -84,7 +83,7 @@ body {
     margin-bottom: -0.5rem;
     cursor: pointer;
 
-    @include bp('tablet-up') {
+    @include bp("tablet-up") {
       display: none;
     }
   }
@@ -92,27 +91,27 @@ body {
 
 a,
 button {
-  color: var(--fs-pink-500);
+  color: var(--fs-berries-500);
   text-decoration: underline;
   font-weight: 600;
 
   &:hover {
-    color: var(--fs-pink-300);
+    color: var(--fs-berries-300);
   }
 
   &:focus-visible {
-    outline: 2px solid var(--fs-pink-500);
+    outline: 2px solid var(--fs-berries-500);
     border-radius: 0.75rem;
     background-color: var(--fs-gray-100);
   }
 }
 
 .fs-link {
-  color: var(--fs-pink-500);
+  color: var(--fs-berries-500);
   text-decoration: underline;
   font-weight: 600;
 
   &:hover {
-    color: var(--fs-pink-300);
+    color: var(--fs-berries-300);
   }
 }

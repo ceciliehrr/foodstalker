@@ -279,10 +279,10 @@ input[type="radio"]:after {
   height: 15px;
   border-radius: 15px;
   position: relative;
-  background-color: var(--fs-pink-100);
+  background-color: var(--fs-berries-100);
   content: "";
   display: inline-block;
-  border: 1px solid var(--fs-pink-500);
+  border: 1px solid var(--fs-berries-500);
 }
 
 input[type="radio"]:checked:after {
@@ -290,10 +290,10 @@ input[type="radio"]:checked:after {
   height: 15px;
   border-radius: 15px;
   position: relative;
-  background-color: var(--fs-pink-500);
+  background-color: var(--fs-berries-500);
   content: "";
   display: inline-block;
-  border: 1px solid var(--fs-pink-500);
+  border: 1px solid var(--fs-berries-500);
 }
 .visible {
   display: block;

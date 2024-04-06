@@ -102,15 +102,15 @@ const title = post.title;
   .recipe {
     margin: 16px auto;
     h1 {
-      @include get-text("fs-h4");
+      @include get-text("fs-oppskrift-title--mobile");
       font-weight: 600;
       margin-bottom: 8px;
-      color: var(--fs-green-300);
+      color: var(--fs-brokkoli);
       width: 66.666667%;
       text-wrap: balance;
 
       @include bp("tablet-up") {
-        @include get-text("fs-h3");
+        @include get-text("fs-oppskrift-title");
         font-weight: 600;
       }
     }
