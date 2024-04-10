@@ -442,10 +442,7 @@
     "date": "2020-12-04",
     "category": "søtt",
     "description": "Dette er min favorittkake, og på 17.mai pleier jeg å ta litt av, takket være Lise Finckenhagen",
-    "longDescription": {
-      "text": "Mr. Lova Lova, Pavlova. Jeg lager denne med hjemmelaget link:bringebærsaus. Men du kan også blande syltetøy i kremen for å gjøre livet enklere.",
-      "href": ["/oppskrift/juleflesk"]
-    },
+    "longDescription": "Mr. Lova Lova, Pavlova. Jeg lager denne med hjemmelaget <a href='/oppskrift/juleflesk'>bringebærsaus</a>. Men du kan også blande syltetøy i kremen for å gjøre livet enklere.",
     "time": "2 timer 30 minutter",
     "portions": 6,
     "tips": "Pass på at bakebollen er ren og ikke har noe fett i seg, ellers vil marengsen aldri bli stiv. Jeg pleier å lage marengsen dagen før, slik at man kan bruke tida på champagnefrokosten den 17.mai.",
