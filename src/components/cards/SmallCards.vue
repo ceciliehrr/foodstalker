@@ -109,13 +109,7 @@ export default {
     margin-left: 1rem;
 
     & h2 {
-      font-size: clamp(1rem, 4vw, 1.25rem);
-      font-weight: 600;
-
-      @include bp("tablet-up") {
-        @include get-text("fs-h5");
-        font-weight: 600;
-      }
+      @include get-text("fs-h6");
     }
 
     & p {
