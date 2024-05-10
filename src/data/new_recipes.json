@@ -12899,5 +12899,211 @@
       "amalfi",
       "kake"
     ]
+  },
+  {
+    "id": "røska-lam",
+    "imageurl": "https://foodstalker.b-cdn.net/2024/lam/DSC03974-2.jpg",
+    "alt": "røska lam",
+    "title": "Røska lam",
+    "date": "2024-05-10",
+    "category": "helg",
+    "description": "Langtidsstekt lammelår eller lammebog som er så mørt at det kan røskes fra hverandre. Perfekt til både påske og helgekosen.",
+    "longDescription": "Vi pleier å tilbringe påsken på hytta i Uvdal og de siste årene har vi laget mange ulike lammeretter. Men nå skal vi endelig dele en av våre favoritter. Det må selvfølgelig ikke være påske for å servere denne. Marinaden og tilbehøret passer helt fint til grillmaten på sommeren også. Kos deg med smaker inspirert fra østen.",
+    "time": "24 timer",
+    "portions": 4,
+    "tips": "Denne oppskriften er basert på ulike oppskrifter vi har prøvd ut og modda etter vår smak. Risen er fra Hellstrøm sine hemmeligheter (kokebok). Denne kan også serveres med fersk <a href='/oppskrift/pannebrød'>pannebrød</a> eller <a href='/oppskrift/yoghurtbrød'>yoghurtbrød</a> .\r\n Mynte kan anbefales å kjøpe på asiatiske butikker, du får mye både i smak og mengde for pengene. ",
+    "chef": "Pete og Cecilie",
+    "tipsurl": "",
+    "ingredients": [
+      {
+        "title": "",
+        "ingredients": [
+          {
+            "quantity": "1.5 kg",
+            "name": "lammebog eller lammelår"
+          },
+          {
+            "quantity": "4 dl",
+            "name": "eplejuice eller norsk eplesider"
+          },
+          {
+            "quantity": "4 fedd",
+            "name": "hvitløk"
+          },
+          {
+            "quantity": "2 stk",
+            "name": "sjalottløk"
+          }
+        ]
+      },
+      {
+        "title": "Marinade",
+        "ingredients": [
+          {
+            "quantity": "4 ss",
+            "name": "søt sennep, eks. Bergbys"
+          },
+          {
+            "quantity": "1 ss",
+            "name": "paprikapulver"
+          },
+          {
+            "quantity": "1 ss",
+            "name": "spisskummen"
+          },
+          {
+            "quantity": "1 ss",
+            "name": "brunt sukker"
+          },
+          {
+            "quantity": "1 ts",
+            "name": "cayennepepper"
+          },
+          {
+            "quantity": "1 ts",
+            "name": "salt"
+          }
+        ]
+      },
+      {
+        "title": "Myntedressing",
+        "ingredients": [
+          {
+            "quantity": "2 dl",
+            "name": "tyrkisk yoghurt naturell"
+          },
+          {
+            "quantity": "10-15 blader",
+            "name": "frisk mynte"
+          },
+          {
+            "quantity": "1 ts",
+            "name": "honning"
+          },
+          {
+            "quantity": "1 ts",
+            "name": "dijon sennep"
+          },
+          {
+            "quantity": "1 ss",
+            "name": "majones"
+          },
+          {
+            "quantity": "smak til med",
+            "name": "salt og pepper"
+          }
+        ]
+      },
+      {
+        "title": "Ris",
+        "ingredients": [
+          {
+            "quantity": "200-300 g",
+            "name": "basmatiris"
+          },
+          {
+            "quantity": "100 g ",
+            "name": "tørket aprikos"
+          },
+          {
+            "quantity": "100 g",
+            "name": "pistasjnøtter"
+          },
+          {
+            "quantity": "1 liten bunt",
+            "name": "bladpersille"
+          },
+          {
+            "quantity": "1 bunt",
+            "name": "frisk mynte"
+          },
+          {
+            "quantity": "1 stk",
+            "name": "mango"
+          },
+          {
+            "quantity": "3 ss",
+            "name": "smør"
+          },
+          {
+            "quantity": "2 ss",
+            "name": "olivenolje"
+          }
+        ]
+      }
+    ],
+    "steps": [
+      {
+        "title": "Lam",
+        "description": "Dagen før du skal steke lammet må du marinere den. Tørk lammet med tørkepapir. Bland alle ingredienser til marinaden godt sammen i en skål, gni all marinade godt inn i lammet."
+      },
+      {
+        "title": "",
+        "description": "Legg lammet i en form og dekk med plastfolie. Hvis du har vakuumpakker er tiden inne for å bruke den nå. Ha lammet i kjøleskapet til neste dag, eller minst 4 timer i romtemperatur."
+      },
+      {
+        "title": "",
+        "description": "Ta lammet ut av kjøleskapet og sett det på benken for temperering en times tid før steking. Sett ovnen på 120 grader. Ha eplejuice i bunnen av formen sammen med uskrelt hele hvitløksfedd og skrelt sjalottløk. Dekk formen med aluminiumsfolie. Stek i 6-7 timer, til kjøttet kan rives lett av benet. Lammelår kan måtte stå lenger enn lammebogen. "
+      },
+      {
+        "title": "",
+        "description": "Når kjøttet er ferdig hell all væske med løken i en kjele. Sausen skal boble-koke til den er redusert til ca halvparten. Imens den koker kan du røske lammet fra hverandre med et par gafler. Når sausen er klar, ta ut løk og hell sausen over kjøttet."
+      },
+      {
+        "title": "Myntedressing",
+        "description": "Bland sammen yoghurt, finhakket mynte, honning, majones og sennep. Smak til med salt og pepper."
+      },
+      {
+        "title": "Ris",
+        "description": "Kok ris i lettsaltet vann etter anvisning. Hakk pistasjnøtter, tørket aprikos, urter og kutt mango i terninger. Spar litt finkutta urter til dryss over lammet. Når risen er klar rør umiddelbart inn smør og olje, bland inn nøtter, aprikos og urter. Rett før servering bland inn mango."
+      },
+      {
+        "title": "",
+        "description": "Server lammet med et dryss friske urter, ris og myntedressing. "
+      }
+    ],
+    "images": [
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2024/lam/DSC03899.jpg",
+        "alt": "lam med marinade"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2024/lam/DSC03911-2.jpg",
+        "alt": "myntedressing i skål"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2024/lam/DSC03920.jpg",
+        "alt": "røsker i lam"
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2024/lam/DSC03955.jpg",
+        "alt": "ris med mango"
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2024/lam/DSC03943.jpg",
+        "alt": "koker saus"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2024/lam/DSC03934-2.jpg",
+        "alt": "nøtter og urter"
+      }
+    ],
+    "keywords": [
+      "lam",
+      "påske",
+      "påskelam",
+      "ris",
+      "mango",
+      "myntedressing",
+      "dressing",
+      "kjøtt",
+      "selskap"
+    ]
   }
 ]
