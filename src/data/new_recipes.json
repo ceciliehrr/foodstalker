@@ -9813,7 +9813,7 @@
   },
   {
     "id": "pannebrød",
-    "imageurl": "https://foodstalker.b-cdn.net/2022/pannebrod/DSC04959-2.jpg",
+    "imageurl": "https://foodstalker.b-cdn.net/2022/pannebrod/DSC04342.jpg",
     "alt": "pannebrød",
     "title": "Pannebrød",
     "date": "2022-07-06",
@@ -9883,11 +9883,11 @@
       },
       {
         "title": "",
-        "description": "Varm grillen eller en stekepanne. Stek dem på ca 45 sekunder per side."
+        "description": "Varm grillen eller en stekepanne. Trykk bollene flate for hånd og strekk de utover til de er runde og flate, eller bruk en kjevle.  Stek dem på ca 45 sekunder per side. "
       },
       {
         "title": "",
-        "description": "Dekk de ferdig stekte brødene med en håndkle slik at de holder seg varme og myke."
+        "description": "Dekk de ferdig stekte brødene med et håndkle slik at de holder seg varme og myke."
       }
     ],
     "images": [
@@ -9908,8 +9908,8 @@
       },
       {
         "orientation": "landscape",
-        "url": "https://foodstalker.b-cdn.net/2022/pannebrod/DSC04906-2.jpg",
-        "alt": "grille brød"
+        "url": "https://foodstalker.b-cdn.net/2022/pannebrod/DSC04348.jpg",
+        "alt": "pannebrød ferdig"
       },
       {
         "orientation": "landscape",
@@ -9918,7 +9918,7 @@
       },
       {
         "orientation": "portrait",
-        "url": "https://foodstalker.b-cdn.net/2022/pannebrod/DSC04959-2.jpg",
+        "url": "https://foodstalker.b-cdn.net/2022/pannebrod/DSC04370.jpg",
         "alt": "pannebrød"
       }
     ],
