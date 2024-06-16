@@ -22,6 +22,18 @@
           person. Les mer om vårt verktøy for besøksstatistikk
           <a class="fs-link" href="https://plausible.io/">Plausible her!</a>
         </p>
+
+        <div class="fs-footer-social fs-footer-gdpr-text">
+          Vi er på instagram:
+          <a
+            target="_blank"
+            class="instagram"
+            href="https://www.instagram.com/foodstalker.no/"
+          >
+            <img
+              src="https://foodstalker.b-cdn.net/Instagram_Glyph_Gradient.png"
+          /></a>
+        </div>
       </div>
     </div>
   </footer>
@@ -88,5 +100,21 @@ export default {
   color: #717171;
   margin-top: 1.5rem;
   line-height: 1.4;
+}
+.fs-footer-social {
+  display: flex;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.mail {
+  font-size: 1.5rem;
+}
+
+.instagram img {
+  height: 1.5rem;
+  width: auto;
 }
 </style>
