@@ -12284,6 +12284,10 @@
             "name": "parmesan"
           },
           {
+            "quantity": "2 ss",
+            "name": "rista pinjekjerner"
+          },
+          {
             "quantity": "1 dl",
             "name": "olivenolje"
           },
@@ -12351,7 +12355,7 @@
       },
       {
         "title": "Pestosmør",
-        "description": "Skrell hvitløk. Bland alle ingredienser i en blender og kjør til du får en glatt konsistens."
+        "description": "Skrell hvitløk. Rist pinjekjerner raskt i tørr panne. Bland alle ingredienser i en blender og kjør til du får en glatt konsistens."
       },
       {
         "title": "Jukseburrata",
