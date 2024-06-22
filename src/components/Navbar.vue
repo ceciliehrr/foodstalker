@@ -25,6 +25,9 @@
             <a href="/oppskrift/turmat"><span>&#128293;</span> Turmat</a>
           </li>
           <li>
+            <a href="/oppskrift/drikke"><span>🍹</span> Drikke</a>
+          </li>
+          <li>
             <div class="dropdown" @click="toggleDropdown">
               <button class="dropbtn">
                 &#128526; Bonus <i class="arrow down arrow--margin-left"></i>
@@ -73,6 +76,9 @@
         </li>
         <li>
           <a href="/oppskrift/turmat"><span>&#128293;</span> Turmat</a>
+        </li>
+        <li>
+          <a href="/oppskrift/drikke"><span>🍹</span> Drikke</a>
         </li>
         <li>
           <div class="dropdown dropdown__mobile" @click="toggleDropdown">
