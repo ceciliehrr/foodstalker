@@ -10641,7 +10641,7 @@
     "portions": 4,
     "vintipsnavn": "Innocent Bystander Victoria Moscato",
     "vintipsUrl": "https://www.vinmonopolet.no/Land/Australia/Victoria/Innocent-Bystander-Victoria-Moscato-2021/p/117901",
-    "tips": "Er du typen til å lage granskuddsirup? Bytt ut søtninga i mascarponen med sirupen! Begynn med ca 2 ss granskuddsirup, smak til - det skal smake søtt nok.",
+    "tips": "Er du typen til å lage granskuddsirup? Bytt ut søtninga i mascarponen med <a href='/oppskrift/granskuddsirup'>granskuddsirup</a>! Begynn med ca 2 ss granskuddsirup, smak til - det skal smake søtt nok.",
     "chef": "Pete",
     "tipsurl": "",
     "ingredients": [
@@ -10666,7 +10666,7 @@
           },
           {
             "quantity": "smak til",
-            "name": "melis, eller granskuddsirup"
+            "name": "melis, eller <a href='/oppskrift/granskuddsirup'>granskuddsirup</a>"
           },
           {
             "quantity": "",
@@ -11338,7 +11338,7 @@
     "steps": [
       {
         "title": "Chilisaus",
-        "description": "Rist risen i en tørr stekepanne til de er gyldne, gjør det samme med chilien. Avkjøl."
+        "description": "Rist risen i en tørr stekepanne til de er gyldne, gjør det samme med chilipulver. Avkjøl."
       },
       {
         "title": "",
@@ -12222,9 +12222,9 @@
     "alt": "panini",
     "title": "Panini på norsk",
     "date": "2023-11-29",
-    "category": "hverdag",
+    "category": "turmat",
     "description": "Vi har vært i Italia og vi trenger mer panini i livet..",
-    "longDescription": "Denne er inspirert av turen vår til Firenze, hvor man kunne få tak i panini som street food på hvert hjørne. Vår favoritt var Ino ved Ponte Vecchio. Der fikk vi servert panini med pesto, burrata og mortadella. Vi har prøvd oss på en norsk versjon med pestosmør, jukseburrata og ribberull. Det funker.",
+    "longDescription": "Ingenting slår en hjemmelaget panini på tur. Denne er inspirert av turen vår til Firenze, hvor man kunne få tak i panini som street food på hvert hjørne. Vår favoritt var Ino ved Ponte Vecchio. Der fikk vi servert panini med pesto, burrata og mortadella. Vi har prøvd oss på en norsk versjon med pestosmør, jukseburrata og ribberull. Det funker.",
     "time": "1 døgn",
     "portions": 4,
     "tips": "Prøv gjerne andre kjøttvarianter, men hva med vegetarvariant? Bytt ut kjøttpålegg med tomater! Takk for jukseburrataoppskrift Lise Finckenhagen, takk for pestosmør Hellstrøm og takk for den beste focaccia Julie",
@@ -12410,7 +12410,9 @@
       "pesto",
       "burrata",
       "jukseburrata",
-      "italiensk"
+      "italiensk",
+      "brød",
+      "turmat"
     ]
   },
   {
@@ -12419,8 +12421,8 @@
     "alt": "multedrink",
     "title": "Satans gin&bær",
     "date": "2023-12-08",
-    "category": "tilbehør",
-    "description": "Hva bruker man multesirup til? Til å lage julebordsdrink av, vel!",
+    "category": "drikke",
+    "description": "Hva bruker man multesirup til? Til å lage julebordsdrink av, vel.. Skål for satans bringebær!",
     "longDescription": "I høst var fjellet fullt av multer, sankergenet vårt slo til og vi tok med oss mer enn vi hadde en tanke om å bruke. Man kan ikke kaste fjellets 'gull' og vi lagde derfor flere liter <a href='/oppskrift/multesirup'>multesirup</a>. Så hva skal vi bruke all sirupen til? Enkelt!",
     "time": "5 minutter",
     "portions": 1,
@@ -12457,7 +12459,7 @@
     "steps": [
       {
         "title": "",
-        "description": "Mål opp alle ingredienser og ha det i en shaker. Shake en runde først, så ha i et par isbiter. Rist noen runder til. Hell oppi et kult glass. God julebord!"
+        "description": "Mål opp alle ingredienser og ha det i en shaker. Shake en runde uten is først, så ha i et par isbiter. Rist noen runder til. Hell oppi et kult glass. God julebord!"
       }
     ],
     "images": [
@@ -13107,7 +13109,365 @@
       "myntedressing",
       "dressing",
       "kjøtt",
-      "selskap"
+      "selskap",
+      "høst",
+      "vinter"
     ]
+  },
+  {
+    "id": "granskuddsirup",
+    "imageurl": "https://foodstalker.b-cdn.net/2024/granskudden/DSC04676.jpg",
+    "alt": "granskuddsirup på flaske",
+    "title": "Granskuddsirup",
+    "date": "2024-06-22",
+    "category": "søtt",
+    "description": "Mai og juni er tiden for å gjenopplive sankergenet. Granskuddene har en fantastisk god sødmesmak som kommer veldig godt frem i en sirup.",
+    "longDescription": "Granskudd er som skogens små grønne vitaminpiller, sprengfulle av C-vitamin og en frisk smak av skog og villmark med en ettersmak av sødme. De dukker opp på grantrærne om våren, lysende lysegrønne og myke, klare til å plukkes av naturens skattejegere. De små skuddene er et hemmelig våpen mot vinterens forkjølelser og en kilde til kulinariske eksperimenter for den vågale.\r\n\r\nOg hva gjør man med disse små grønne juvelene? Jo, man lager granskudd sirup, selvfølgelig! Det er som å tappe essensen av skogen og helle den på flaske. Denne herlige sirupen er en perfekt blanding av søtt med et hint av eventyr og barndommens trolske skoger. Den kan dryppes på pannekaker, vafler, <a href='/oppskrift/jordbær-og-mascarpone/'>mascarponekrem</a>, røres i te, eller – i <a href='/oppskrift/innigranskudden'>Innigranskudden</a>. \r\n\r\nGranskudd sirup er naturens egen smågodtbutikk, rett fra skogen og inn på kjøkkenet ditt!",
+    "time": "1.5 time",
+    "portions": 10,
+    "tips": "Ble sirupen ikke tykk nok? Kok den 10-15 minutter ekstra. Ble den for tykk? Ha i noen spiseskjeer med vann imens du varmer den opp igjen. ",
+    "chef": "Trines matblogg",
+    "tipsurl": "https://trinesmatblogg.no/recipe/granskuddsirup/",
+    "ingredients": [
+      {
+        "title": "Granskuddsirup",
+        "ingredients": [
+          {
+            "quantity": "10 dl",
+            "name": "granskudd"
+          },
+          {
+            "quantity": "14 dl",
+            "name": "vann (ca)"
+          },
+          {
+            "quantity": "5 dl",
+            "name": "sukker (ca)"
+          }
+        ]
+      }
+    ],
+    "steps": [
+      {
+        "title": "Første del",
+        "description": "Ha de nyplukkede granskuddene i en bolle med iskaldt vann, la stå litt for å rense for støv, spindelvev og eventuelt småkryp. Sil av.\r\nHa granskuddene i en kjele og fyll opp med vann slik at det akkurat dekker granskuddene. Kok opp og la det småkoke uten lokk i ca. 30 minutter. Sil av granskudd med en finmasket sil eller klede. Kast granskuddene. Nå har du en lysegul væske.\r\n "
+      },
+      {
+        "title": "Andre del",
+        "description": "Forholdet mellom væsken og sukker skal være 3 til 2. Ha væsken over i et desilitermål. Mål deretter opp sukker tilsvarende 2/3 av væskemengden. Et eksempel: har du 1 liter væske skal du ha 6,6 dl sukker.\r\n"
+      },
+      {
+        "title": "",
+        "description": "Hell væske og sukker i en rengjort kjele, og la det koke inn uten lokk til væsken blir rødlig og får en tynn sirupkonsistens. Fjern det hvite skummet som danner seg under koking med en spiseskje. Tiden det vil ta før det er ferdig avhenger av hvor mye varme og hvor mye væske du har. Men det vil ta ca 45-60 minutter med en liter væske. Følg med så ikke all væske fordamper."
+      },
+      {
+        "title": "",
+        "description": "Hell sirupen på rengjorte varme flasker og sett på lokk. Avkjøl på benken. Sirupen vil bli enda litt tykkere ved avkjøling. "
+      }
+    ],
+    "images": [
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2024/granskudden/DSC04640.jpg",
+        "alt": "granskuddvæske i desilitermål"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2024/granskudden/DSC04573.jpg",
+        "alt": "gran med granskudd"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2024/granskudden/DSC04597.jpg",
+        "alt": "bolle med granskudd"
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2024/granskudden/DSC04621.jpg",
+        "alt": "siler ferdig kokt granskudd i en sil"
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2024/granskudden/DSC04979.jpg",
+        "alt": "granskuddsirup i en glassflaske"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2024/granskudden/DSC04675.jpg",
+        "alt": "granskuddsirup i en glassflaske2"
+      }
+    ],
+    "keywords": [
+      "granskudd",
+      "sirup",
+      "søtt",
+      "drink",
+      "drikke",
+      "dessert",
+      "vår"
+    ]
+  },
+  {
+    "id": "innigranskudden",
+    "imageurl": "https://foodstalker.b-cdn.net/2024/granskudden/DSC05004.jpg",
+    "alt": "granskuddcocktail i glass",
+    "title": "Innigranskudden",
+    "date": "2024-06-22",
+    "category": "drikke",
+    "description": "Innigranskudden så god cocktail skal du lete lenge etter. Skål til granskuddets vidunderlige verden!",
+    "longDescription": "Innigranskudden er som en reise gjennom en nordisk skog, hvor hver slurk gir deg en smak av grantrærnes dype grønne skudd blandet med subtile toner av sitrus og sødme. Perfekt for en kveld med venner eller en stille stund på hytta i skogen hvor du vil la tankene vandre.\r\n",
+    "time": "5 minutter",
+    "portions": 1,
+    "tips": "",
+    "chef": "Foodstalker",
+    "tipsurl": "https://www.foodstalker.no/",
+    "ingredients": [
+      {
+        "title": "Innigranskudden",
+        "ingredients": [
+          {
+            "quantity": "4 cl",
+            "name": "gin"
+          },
+          {
+            "quantity": "3 cl",
+            "name": "<a href='/oppskrift/granskuddsirup'>granskuddsirup</a>"
+          },
+          {
+            "quantity": "2.5 cl",
+            "name": "sitron"
+          },
+          {
+            "quantity": "1 stk",
+            "name": "eggehvite"
+          },
+          {
+            "quantity": "",
+            "name": "isbiter"
+          }
+        ]
+      }
+    ],
+    "steps": [
+      {
+        "title": "Innigranskudden",
+        "description": "Mål opp alle ingredienser og ha det i en shaker. Shake en runde uten is først. Ha i et par isbiter og rist noen runder til. Ha oppi et pent glass."
+      }
+    ],
+    "images": [
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2024/granskudden/DSC04601.jpg",
+        "alt": "granskudd"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2024/granskudden/DSC04970.jpg",
+        "alt": "granskuddsirup"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2024/granskudden/DSC05004.jpg",
+        "alt": "innigranskudden i et glass"
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2024/granskudden/DSC05025.jpg",
+        "alt": "innigranskudden i et glass med skog i bakgrunn"
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2024/granskudden/DSC04587.jpg",
+        "alt": "granskudd i boks"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2024/granskudden/DSC05004.jpg",
+        "alt": "innigranskudden i et glass på en stein"
+      }
+    ],
+    "keywords": [
+      "granskudd",
+      "sirup",
+      "drink",
+      "cocktail",
+      "drikke",
+      "granskuddsirup",
+      "vår"
+    ]
+  },
+  {
+    "id": "rabarbramimosa",
+    "imageurl": "https://foodstalker.b-cdn.net/2024/rabarbramimosa/DSC05065.jpg",
+    "alt": "rabarbramimosa i et høyt vinglass",
+    "title": "Rabarbramimosa",
+    "date": "2024-06-22",
+    "category": "drikke",
+    "description": "Abrakadabra! Har du rabarbrasirup er denne drinken superenkel og imponerende på en gang. Skål til sommerens søte gleder!",
+    "longDescription": "Klar for en sprudlende smaksopplevelse? La meg presentere Rabarbramimosa, drinken som gir sommeren en boblende klem. Denne forfriskende cocktailen kombinerer søtligheten fra rabarbrasirup, sitrus fra sitronbrus, og de elegante boblene fra crémanten. Perfekt for en solskinnsdag på terrassen eller som en livlig velkomstdrink på hagefesten.",
+    "time": "5 minutter",
+    "portions": 1,
+    "tips": "Denne kan selvfølgelig lages alkoholfri, bytt ut cremanten med mer sitronbrus. ",
+    "chef": "Foodstalker",
+    "tipsurl": "https://www.foodstalker.no/",
+    "ingredients": [
+      {
+        "title": "Rabarbramimosa",
+        "ingredients": [
+          {
+            "quantity": "4-5 cl",
+            "name": "<a href='/oppskrift/rabarbrasirup'>rabarbrasirup</a>"
+          },
+          {
+            "quantity": "1.5-2 dl",
+            "name": "sitronbrus uten sukker"
+          },
+          {
+            "quantity": "1.5-2 dl",
+            "name": "cremant"
+          },
+          {
+            "quantity": "1 skvis",
+            "name": "sitron"
+          },
+          {
+            "quantity": "",
+            "name": "isbiter"
+          }
+        ]
+      }
+    ],
+    "steps": [
+      {
+        "title": "Rabarbramimosa",
+        "description": "Målene er sånn ca, basert på hva slags glass du velger. Vi har et rødvinsglass som fint får plass til full pott. Start med å ha 4-5 isbiter i glasset.\r\nHa i sirup, topp med like deler sitronbrus og cremant. Ha over en skvis sitron. Rør drinken med en skje, eller noe i den duren for å blande sirupen godt med alle ingrediensene.\r\n Pynt gjerne med en rabarbrastilk, det er moro!"
+      }
+    ],
+    "images": [
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2024/rabarbramimosa/DSC05072.jpg",
+        "alt": "rabarbramimosa i et vinglass"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2024/rabarbramimosa/DSC05087.jpg",
+        "alt": "rabarbramimosa i et vinglass ute"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2021/rabarbrasirup/IMG_3555.jpg",
+        "alt": "rabarbra på kok i kjele"
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2021/rabarbrasirup/IMG_3527.jpg",
+        "alt": "rabarbrastilk"
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2021/rabarbrasirup/IMG_3611.jpg",
+        "alt": "rabarbrasirup"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2024/rabarbramimosa/DSC05065.jpg",
+        "alt": "rabarbradrink i glasset"
+      }
+    ],
+    "keywords": [
+      "rabarbra",
+      "rabarbrasirup",
+      "cocktail",
+      "rabarbracocktail",
+      "drink",
+      "rabarbradrink",
+      "sommer"
+    ]
+  },
+  {
+    "id": "bringebaer-sour",
+    "imageurl": "https://foodstalker.b-cdn.net/2024/bringebear-sour/DSC03057.jpg",
+    "alt": "bringebærdrink i glass",
+    "title": "Bringebær sour",
+    "date": "2024-06-22",
+    "category": "drikke",
+    "description": "Bringebær sour er en liten flørt i glassform, med en herlig balanse mellom søtt og syrlig, og et skumlag som gir en luksuriøs munnfølelse. Skål for årets sommerflørt!",
+    "longDescription": "Når villebringebærene vokser i marka tar vi oss en gåtur og plukker. Vi lager sirup, desserter, kaker og drinker. Villbringebær smaker eventyrlysten barndom og skal vi være rampete blander vi litt gin i den og voilà - bringebær sour.\r\n",
+    "time": "5 minutter",
+    "portions": 1,
+    "tips": "",
+    "chef": "Skrollet på TikTok",
+    "tipsurl": "",
+    "ingredients": [
+      {
+        "title": "Bringebær sour",
+        "ingredients": [
+          {
+            "quantity": "4 cl",
+            "name": "gin eller bourbon"
+          },
+          {
+            "quantity": "2 cl",
+            "name": "sitron"
+          },
+          {
+            "quantity": "1 ss",
+            "name": "honning"
+          },
+          {
+            "quantity": "1 stk",
+            "name": "eggehvite"
+          },
+          {
+            "quantity": "1 håndfull",
+            "name": "bringebær"
+          },
+          {
+            "quantity": "",
+            "name": "isbiter"
+          }
+        ]
+      }
+    ],
+    "steps": [
+      {
+        "title": "Bringebær sour",
+        "description": "Mål opp alle ingredienser. Mos bringebær lett med en morter eller gaffel i ei bolle. Ha ingrediensene i en shaker. Shake en runde uten is først. Så ha i et par isbiter og rist noen runder til. Sil væsken i en finmasket liten sil oppi et pent glass. Pynt med bringebær."
+      }
+    ],
+    "images": [
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2024/bringebear-sour/DSC03078.jpg",
+        "alt": "bringebærdrink med friske bringebør "
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2024/bringebear-sour/DSC03056.jpg",
+        "alt": "bringebær sour i et glass"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2024/bringebear-sour/DSC03077.jpg",
+        "alt": "bringebær"
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2024/bringebear-sour/DSC03088.jpg",
+        "alt": "ingredienser på et bord"
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2024/bringebear-sour/DSC03045.jpg",
+        "alt": "bringebærdrinken i glass"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2024/bringebear-sour/DSC03057.jpg",
+        "alt": "drink i glass"
+      }
+    ],
+    "keywords": ["drink", "bringebær", "cocktail", "sommer", "gin"]
   }
 ]
