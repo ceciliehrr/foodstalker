@@ -12224,7 +12224,7 @@
     "date": "2023-11-29",
     "category": "turmat",
     "description": "Vi har vært i Italia og vi trenger mer panini i livet..",
-    "longDescription": "Ingenting slår en hjemmelaget panini på tur. Denne er inspirert av turen vår til Firenze, hvor man kunne få tak i panini som street food på hvert hjørne. Vår favoritt var Ino ved Ponte Vecchio. Der fikk vi servert panini med pesto, burrata og mortadella. Vi har prøvd oss på en norsk versjon med pestosmør, jukseburrata og ribberull. Det funker.",
+    "longDescription": "Ingenting slår en hjemmelaget panini på tur. Denne er inspirert av turen vår til Firenze, hvor man kunne få tak i panini som street food på hvert hjørne. Vår favoritt var Ino ved Ponte Vecchio. Der fikk vi servert panini med pesto, burrata og mortadella. Vi har prøvd oss på en norsk versjon med pestosmør, jukseburrata og ribberull. Det funker. Men dette kan varieres i det uendelige. Hva med en vegetarvariant med tomater, mozzarella, basilikum og en god olivenolje? Eller med spekeskinke, brie og honning?",
     "time": "1 døgn",
     "portions": 4,
     "tips": "Prøv gjerne andre kjøttvarianter, men hva med vegetarvariant? Bytt ut kjøttpålegg med tomater! Takk for jukseburrataoppskrift Lise Finckenhagen, takk for pestosmør Hellstrøm og takk for den beste focaccia Julie",
@@ -13469,5 +13469,154 @@
       }
     ],
     "keywords": ["drink", "bringebær", "cocktail", "sommer", "gin"]
+  },
+  {
+    "id": "sommerkaal-med-parmesansaus",
+    "imageurl": "https://foodstalker.b-cdn.net/2024/nykaal-med-parmesansaus/DSC05207.jpg",
+    "alt": "grilla sommerkål med topping på en tallerke ",
+    "title": "Sommerkål med parmesansaus",
+    "date": "2024-06-23",
+    "category": "hverdag",
+    "description": "Er det noen andre som har barndomsminner av sommerkål og smør? Grilla sommerkål er årets sommerhit!",
+    "longDescription": "Vi var på restauranten Kagges i Gamla stan i Stockholm i 2022. Et måltid vi husker spesielt godt var grilla sommerkål med digg syrlig saus. Maten og drikkepakka var såpass god på Kagges at Cecilie måtte gå seg et par runder i Gamla stan for å kvitte seg med rusen! Dessverre er Kagges stengt nå.",
+    "time": "45 minutter",
+    "portions": 4,
+    "tips": "Hvis du har plate på grillen kan du bruke denne til å riste mandler, steke bacon og kål. På hytta vokser det masse forglemmegei i mai/juni. Disse er spiselige og fine til pynt, ødelegger ikke noe smak.",
+    "chef": "Kagges (stengt)",
+    "tipsurl": "",
+    "ingredients": [
+      {
+        "title": "Sommerkål med topping",
+        "ingredients": [
+          {
+            "quantity": "1 stk",
+            "name": "sommerkål / nykål"
+          },
+          {
+            "quantity": "2 håndfuller",
+            "name": "mandler"
+          },
+          {
+            "quantity": "150 g",
+            "name": "meierismør"
+          },
+          {
+            "quantity": "1 håndfull",
+            "name": "finkuttet bladpersille"
+          },
+          {
+            "quantity": "1 pakke",
+            "name": "bacon (kan sløyfes for vegetarversjon)"
+          },
+          {
+            "quantity": "ca 100 g",
+            "name": "parmesan til topping"
+          },
+          {
+            "quantity": "",
+            "name": "plukk noen spiselige blomster til pynt, som forglemmegei"
+          }
+        ]
+      },
+      {
+        "ingredients": [
+          {
+            "quantity": "100 g",
+            "name": "meierismør"
+          },
+          {
+            "quantity": "100 gr",
+            "name": "parmesan"
+          },
+          {
+            "quantity": "3 dl",
+            "name": "creme fraiche"
+          },
+          {
+            "quantity": "1 dryss",
+            "name": "cajennepepper"
+          },
+          {
+            "quantity": "smak til med",
+            "name": "salt"
+          }
+        ],
+        "title": "Parmesansaus"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Grilla sommerkål",
+        "description": "Kutt kål i fire båter. Sett på grillen og legg kålen på indirekte varme på grillen imens du prepper de andre tingene. Ha ned lokket i mens kålen varmer seg opp."
+      },
+      {
+        "title": "",
+        "description": "Om du ikke har grillplate(se tips), rist mandlene i panne til aromaene slipper, eller i ovn på 200 grader i 8 minutter. Finkutt mandler og ha i en liten bolle."
+      },
+      {
+        "title": "",
+        "description": "Ha en liten kasserolle på grillen med smør. Kok smøret til det får en brun farge. Ta av grillen med en gang smøret blir brunt. Pass på så det ikke brenner seg. "
+      },
+      {
+        "title": "",
+        "description": "Stek bacon i panne eller på grillplate til det blir ordentlig sprøtt, men ikke brent. Ha bacon over på papir så det får avkjølt og rent av seg. Kutt bacon i biter. Ha i en liten bolle."
+      },
+      {
+        "title": "",
+        "description": "Da er det klart for kålen. Om du har grillplate grill kålen i baconfettet med snittsiden ned. Eller smør snittsiden på kålen med litt smør. Legg på lokk og la det grilles på høy varme, så følg med så den ikke blir brent før den er gjennomstekt."
+      },
+      {
+        "title": "",
+        "description": "Kålen er ferdig når den detter litt fra hverandre men holder formen. Litt som torsken, når den flaker seg."
+      },
+      {
+        "title": "Parmesansaus",
+        "description": "Smelt smøret i en liten kjele. Når smøret er smeltet , visp inn creme fraiche og raspet parmesan. Sausen er ferdig når osten er smeltet. Smak til med cayennepepper og salt."
+      },
+      {
+        "title": "Montering",
+        "description": "Finkutt litt bladpersille. Ha parmesansaus i bunnen av tallerken. Legg på kålen. Ha ca tre spiseskjeer brunet smør over kålen. Dryss over bacon, mandler, revet parmesan og bladpersille.  "
+      }
+    ],
+    "images": [
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2024/nykaal-med-parmesansaus/DSC05099.jpg",
+        "alt": "sommerkål på grillen i sola"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2024/nykaal-med-parmesansaus/DSC05138.jpg",
+        "alt": "sommerkål på grillen "
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2024/nykaal-med-parmesansaus/DSC05168.jpg",
+        "alt": "brunet smør over sommerkål"
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2024/nykaal-med-parmesansaus/DSC05127.jpg",
+        "alt": "ferdig kuttet ingredienser i skåler"
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2024/nykaal-med-parmesansaus/DSC05222.jpg",
+        "alt": "ferdig sommerkål med parmesansaus"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2024/nykaal-med-parmesansaus/DSC05108.jpg",
+        "alt": "finkuttet rista mandler"
+      }
+    ],
+    "keywords": [
+      "sommerkål",
+      "sommer",
+      "parmesansaus",
+      "vegetar",
+      "percetar",
+      "parmesan"
+    ]
   }
 ]
