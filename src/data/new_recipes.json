@@ -12124,7 +12124,7 @@
     "date": "2023-11-28",
     "category": "hverdag",
     "description": "Italia! Vi er inspirert! Enklere og renere blir ikke tomatsausen. Bruk til pizza, spaghetti, suppe osv.",
-    "longDescription": "Denne er den enkleste tomatsausen vi kan, men det betyr ikke dårligere. Dette er faktisk den beste. Hva med en middag på 20 minutter? Kok linguine og bland i denne tomatsausen, topp med parmesan eller jukseburrata og basilikum. Prego!",
+    "longDescription": "Denne er den enkleste tomatsausen vi kan, men det betyr ikke dårligere. Dette er faktisk den beste. Hva med en middag på 20 minutter? Kok linguine (eller lag <a href='/oppskrift/pasta'>hjemmelaget pasta</a>) og bland i denne tomatsausen, topp med parmesan eller jukseburrata og basilikum. Prego!",
     "time": "15 minutter",
     "portions": 4,
     "tips": "",
@@ -13618,5 +13618,236 @@
       "percetar",
       "parmesan"
     ]
+  },
+  {
+    "id": "pasta-med-blaamuggost",
+    "imageurl": "https://foodstalker.b-cdn.net/2024/pasta-og-pistasj/DSC06052.jpg",
+    "alt": "pasta med blåmuggost på tallerken",
+    "title": "Pasta med blåmuggost",
+    "date": "2024-07-28",
+    "category": "helg",
+    "description": "Vi var i Venezia i 2023, hva får man i Italia? Fantastiske pastaretter! Vi har kopiert en av dem.",
+    "longDescription": "Denne fikk Cecilie servert på en gaterestaurant i Venezia. Den var fantastisk god til å være så enkel. Hurra for italiensk mat! Det er selvfølgelig fordi italienerne ikke serverer dårlig pasta. Please lag pastaen selv, prøv, det er bra. Denne kan selvfølgelig lages som vegetar ved å sløyfe bacon. Stek heller pepper i olivenolje.",
+    "time": "20 minutter",
+    "portions": 4,
+    "tips": "Vi bruker selbu blå til \"hverdags\", men er ikke vonde å be når vi ser en Kraftkar i butikken.",
+    "chef": "Venezia",
+    "tipsurl": "",
+    "ingredients": [
+      {
+        "title": "Pasta",
+        "ingredients": [
+          {
+            "quantity": "",
+            "name": "følg <a href='/oppskrift/pasta'>denne pastaoppskriften her</a>"
+          }
+        ]
+      },
+      {
+        "title": "Saus",
+        "ingredients": [
+          {
+            "quantity": "1 pakke",
+            "name": "bacon (kan sløyfes for vegetarversjon)"
+          },
+          {
+            "quantity": "ca 0.5 ts",
+            "name": "grovkvernet pepper"
+          },
+          {
+            "quantity": "1.5 dl",
+            "name": "kremfløte"
+          },
+          {
+            "quantity": "150 g ",
+            "name": "blåmuggost"
+          },
+          {
+            "quantity": "1 ss",
+            "name": "hakket bladpersille"
+          }
+        ]
+      },
+      {
+        "title": "Topping",
+        "ingredients": [
+          {
+            "quantity": "1 neve",
+            "name": "pistasjnøtter"
+          },
+          {
+            "quantity": "50 g",
+            "name": "parmesan"
+          }
+        ]
+      }
+    ],
+    "steps": [
+      {
+        "title": "Steg for steg ",
+        "description": "Kok opp en stor kjele med saltet vann til pastaen. Ta frem alle ingredienser."
+      },
+      {
+        "title": "",
+        "description": "Rist pistasjnøttene i en tørr panne til de begynner å lukte godt. Pass på så de ikke brenner seg. Grovhakk nøttene og ha de i en skål. Grovhakk også bladpersille."
+      },
+      {
+        "title": "",
+        "description": "Tørk vekk pistasjrester fra pannen og stek bacon sprøtt på middels høy varme. Ha bacon over på kjøkkenpapir så de får rent av seg fettet. "
+      },
+      {
+        "title": "",
+        "description": "Kvern pepper i baconfettet, la det steke litt på den samme varmen. Tilsett fløte og blåmuggost og kok til osten smelter. Rør rundt så det ikke brenner seg."
+      },
+      {
+        "title": "",
+        "description": "Hakk det sprø baconet som har fått tørket fra seg fett og tilsett i fløtesausen. Tilsett hakket bladpersille. Skru ned varmen. Og la stå på svak varme imens du koker pasta."
+      },
+      {
+        "title": "",
+        "description": "Kok pasta al dente, er den fersk må den kokes kortere enn om den er tørket. Sjekk pastaen underveis ved å smake. Når pastaen er ferdig overføres den i fløtesausen sammen med to spiseskjeer av pastavannet. Dette gjøres fordi fløtesausen skal få riktig konsistens. Bland godt."
+      },
+      {
+        "title": "",
+        "description": "Ha pasta med digg saus på fire tallerkner. Dryss over pistasjnøtter og riv så mye parmesan som folk vi ha over pastaen. Buon appetito!"
+      }
+    ],
+    "images": [
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2024/pasta-og-pistasj/DSC05970.jpg",
+        "alt": "ingredisenser"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2024/pasta-og-pistasj/DSC06024.jpg",
+        "alt": "pasta og saus i panne"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2024/pasta-og-pistasj/DSC06000.jpg",
+        "alt": "kutter ingredienser "
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2024/pasta-og-pistasj/DSC06006.jpg",
+        "alt": "pasta og saus i panne"
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2024/pasta-og-pistasj/DSC06049.jpg",
+        "alt": "fløte og ost i panne"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2024/pasta-og-pistasj/DSC06055.jpg",
+        "alt": "ferdig pastarett på tallerken"
+      }
+    ],
+    "keywords": [
+      "pasta",
+      "italiensk",
+      "blåmuggost",
+      "fløtesaus",
+      "pistasjnøtter",
+      "vegetar"
+    ]
+  },
+  {
+    "id": "pasta",
+    "imageurl": "https://foodstalker.b-cdn.net/2024/pasta-og-pistasj/DSC05984.jpg",
+    "alt": "pasta",
+    "title": "Pasta",
+    "date": "2024-07-28",
+    "category": "hverdag",
+    "description": "Dette er vår go-to pastaoppskrift. Å lage sin egen pasta blir 100% bedre enn et kjøp i butikk, lover.",
+    "longDescription": "Prego! Buon appetito!",
+    "time": "2 timer",
+    "portions": 4,
+    "tips": "Denne kan du lage i en foodprosessor.",
+    "chef": "Silje spiser og Ida Gran-Jansen",
+    "tipsurl": "",
+    "ingredients": [
+      {
+        "title": "Pasta",
+        "ingredients": [
+          {
+            "quantity": "300 g",
+            "name": "tipo 00 mel"
+          },
+          {
+            "quantity": "2 hele",
+            "name": "egg"
+          },
+          {
+            "quantity": "3 stk",
+            "name": "eggeplommer"
+          },
+          {
+            "quantity": "1 ts",
+            "name": "salt"
+          },
+          {
+            "quantity": "Utstyr:",
+            "name": "pastamaskin"
+          }
+        ]
+      }
+    ],
+    "steps": [
+      {
+        "title": "Pasta",
+        "description": "Mål opp eggene. Eggene må være totalt på 185 gram, hvis ikke de er det har du i vann til du får 185 gram."
+      },
+      {
+        "title": "",
+        "description": "Ha melet i en haug på benken. Lag en grop i midten, slik at det ser ut som en vulkan.\r\nTilsett egg og salt i gropa. Bruk en gaffel og bland egget med melet forsiktig, slik at litt og litt av melet blir blandet i eggene."
+      },
+      {
+        "title": "",
+        "description": "Etterhvert blir det til en deig, så da begynner du å kna deigen med hendene. Kna til det har blitt en smidig og fin pastadeig. Pakk deigen inn i plastikk og legg den i kjøleskapet minimum 30 minutter før du skal rulle den ut.\r\n"
+      },
+      {
+        "title": "",
+        "description": "Ta frem mel og pastamaskin. Nå skal deigen igjennom pastamaskinen for å få en god konsistens, dette heter laminering. Dryss mel på bordet, bruk nok mel i denne prosessen slik at deigen ikke setter seg fast. Press pastadeigen flat med hendene så du får den igjennom pastamaskinen på den tykkeste innstillingen. Brett deigen en eller to ganger, slik at du får den igjennom maskinen en gang til. Gjenta dette i flere omganger på samme innstilling til du har en god pastakonsistens, dette kan være 5-6 omganger. Husket du mel underveis?\r\n\r\n"
+      },
+      {
+        "title": "",
+        "description": "Nå har du gjennomført lamineringen. Nå skal du ha den igjennom pastamaskinen for å få ønsket tykkelse. Da setter du innstillingen på tynnere og tynnere for hver gang du ruller pastaen igjennom maskinen. Når du har ønsket tykkelse kan du lage pastaen slik du vil, om det er ravioli, linguine, tagliatelle, spaghetti, farfalle osv.\r\n"
+      }
+    ],
+    "images": [
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2024/pasta-og-pistasj/DSC05992-2.jpg",
+        "alt": "pasta på bordet"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2024/pasta-og-pistasj/DSC05984.jpg",
+        "alt": "pasta igjennom maskinen"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2024/pasta-og-pistasj/DSC05971.jpg",
+        "alt": "brette pasta i maskin"
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2024/pasta-og-pistasj/DSC05960.jpg",
+        "alt": "mel og egg"
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2024/pasta-og-pistasj/DSC06049.jpg",
+        "alt": "pastarett"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2024/pasta-og-pistasj/DSC05945.jpg",
+        "alt": "egg"
+      }
+    ],
+    "keywords": ["pasta", "grunnoppskrift", "italiensk", "egg", "mel"]
   }
 ]
