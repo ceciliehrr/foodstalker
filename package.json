@@ -22,7 +22,7 @@
   "dependencies": {
     "@netlify/plugin-csp-nonce": "^1.2.10",
     "@takuma-ru/vue-swipe-modal": "^5.0.5",
-    "express": "^4.19.2",
+    "express": "^4.21.0",
     "fs-extra": "^11.2.0",
     "sass": "^1.77.8",
     "sharp": "^0.32.6",
