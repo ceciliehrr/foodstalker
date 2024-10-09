@@ -11,20 +11,20 @@
     "proxy": "mkcert -install && mkcert localhost && local-ssl-proxy --source 3010 --target 3000 --cert localhost.pem --key localhost-key.pem"
   },
   "devDependencies": {
-    "@astrojs/vue": "^4.5.0",
+    "@astrojs/vue": "^4.5.2",
     "@vue-leaflet/vue-leaflet": "^0.10.1",
-    "astro": "^4.15.1",
+    "astro": "^4.15.12",
     "leaflet": "^1.9.4",
     "prettier": "^2.7.1",
     "prettier-plugin-astro": "^0.14.1",
-    "vue": "^3.4.29"
+    "vue": "^3.5.11"
   },
   "dependencies": {
     "@netlify/plugin-csp-nonce": "^1.2.10",
     "@takuma-ru/vue-swipe-modal": "^5.0.5",
-    "express": "^4.19.2",
+    "express": "^4.21.1",
     "fs-extra": "^11.2.0",
-    "sass": "^1.77.8",
+    "sass": "^1.79.4",
     "sharp": "^0.32.6",
     "vite": "^5.4.2"
   }
