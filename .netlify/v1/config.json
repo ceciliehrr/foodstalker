@@ -1,0 +1,1 @@
+{"images":{"remote_images":["https?://https://foodstalker\\.b-cdn\\.net/.*","https://foodstalker\\.b-cdn\\.net(:[0-9]+)?(\\/[^?#]*)?([?][^#]*)?"]},"headers":[{"for":"/_astro/*","values":{"Cache-Control":"public, max-age=31536000, immutable"}}]}

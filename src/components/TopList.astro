@@ -2,6 +2,9 @@
 import { ContentCollectionTypeMismatchError } from "astro/dist/core/errors/errors-data";
 import Divider from "./Divider.astro";
 import SmallCards from "./cards/SmallCards.vue";
+
+export const prerender = false
+
 const { recipes } = Astro.props;
 
 const data = await fetch(
