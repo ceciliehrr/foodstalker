@@ -3,67 +3,62 @@ import { ContentCollectionTypeMismatchError } from "astro/dist/core/errors/error
 import Divider from "./Divider.astro";
 import SmallCards from "./cards/SmallCards.vue";
 
+export const prerender = false; // Disable pre-rendering to enable SSR
 
-// Disable pre-rendering to enable SSR
-export const prerender = false;
+// Fetching data server-side
+const response = await fetch(
+  `https://plausible.io/api/v1/stats/breakdown?site_id=foodstalker.no&period=30d&property=event:page&limit=10`,
+  {
+    method: "GET",
+    headers: {
+      Authorization: `Bearer ${import.meta.env.VITE_PLAUSIBLE_API_KEY}`,
+    },
+  }
+);
 
-export async function get({ props }) {
-  const { recipes } = props; // Ensure you access the recipes from props
+// Parse the response data
+const pages = await response.json();
 
-  // Fetch data from the Plausible API
-  const response = await fetch(
-    `https://plausible.io/api/v1/stats/breakdown?site_id=foodstalker.no&period=30d&property=event:page&limit=10`,
-    {
-      method: "GET",
-      headers: {
-        Authorization: `Bearer ${import.meta.env.VITE_PLAUSIBLE_API_KEY}`,
-      },
+const recipeIdRegex = /^\/oppskrift\/([^/]+)/;
+
+// Extract recipe IDs and visitors
+const recipesData = pages.results
+  .filter((page) => page.page.startsWith("/oppskrift/"))
+  .map((page) => {
+    const match = page.page.match(recipeIdRegex);
+    if (match) {
+      const id = match[1]; // Extract the recipe ID from the URL
+      return {
+        id,
+        visitors: parseInt(page.visitors),
+      };
     }
-  );
+    return null;
+  })
+  .filter((page) => page !== null);
 
-  // Parse the response data
-  const pages = await response.json();
+// Sort recipes by visitors in descending order
+recipesData.sort((a, b) => b.visitors - a.visitors);
 
-  const recipeIdRegex = /^\/oppskrift\/([^/]+)/;
+// Take the top 5 recipes
+const topFiveRecipes = recipesData.slice(0, 5);
 
-  // Extract recipe IDs and visitors
-  const recipesData = pages.results
-    .filter((page) => page.page.startsWith("/oppskrift/"))
-    .map((page) => {
-      const match = page.page.match(recipeIdRegex);
-      if (match) {
-        const id = match[1]; // Extract the recipe ID from the URL
-        return {
-          id,
-          visitors: parseInt(page.visitors),
-        };
-      }
-      return null;
-    })
-    .filter((page) => page !== null);
+// Extract recipe IDs
+const recipeIds = topFiveRecipes.map((recipe) => recipe.id);
 
-  // Sort recipes by visitors in descending order
-  recipesData.sort((a, b) => b.visitors - a.visitors);
+// Assume `recipes` is being passed as part of props or globally available
+const { recipes } = Astro.props;
 
-  // Take the top 5 recipes
-  const topFiveRecipes = recipesData.slice(0, 5);
+// Filter recipes based on the top 5 IDs
+const sortedRecipes = recipeIds.map((id) =>
+  recipes.find((recipe) => recipe.id === id)
+);
 
-  // Extract recipe IDs
-  const recipeIds = topFiveRecipes.map((recipe) => recipe.id);
-
-  // Filter recipes based on the top 5 IDs
-  const sortedRecipes = recipeIds.map((id) =>
-    recipes.find((recipe) => recipe.id === id)
-  );
-
-  // Return the sorted recipes so they can be accessed in the component
-  return {
-    body: JSON.stringify({ sortedRecipes }),
-  };
+// Handle no data found
+if (sortedRecipes.length === 0) {
+  Astro.response.status = 404;
+  Astro.response.statusText = 'No recipes found';
 }
-
-const { sortedRecipes } = Astro.props;
-
 ---
 
 {
