@@ -36,6 +36,6 @@ export default defineConfig({
     },
   },
 
-  output: "hybrid",
-  adapter: netlify(),
+  //output: "hybrid",
+  //adapter: netlify(),
 });
