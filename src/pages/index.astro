@@ -11,6 +11,8 @@ import IntroBanner from "../components/IntroBanner.astro";
 import getRecipes from "../data/new_recipes.json";
 import TopList from "../components/TopList.astro";
 
+export const prerender = false; // Disable pre-rendering to enable SSR
+
 const recipes = getRecipes;
 const sortedRecipes = recipes
   .slice(0)
