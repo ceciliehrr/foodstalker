@@ -7,7 +7,6 @@ import netlify from "@astrojs/netlify";
 // https://astro.build/config
 export default defineConfig({
   integrations: [vue()],
-
   image: {
     domains: ["https://foodstalker.b-cdn.net"],
     remotePatterns: [
@@ -36,6 +35,8 @@ export default defineConfig({
     },
   },
 
-  //output: "hybrid",
-  //adapter: netlify(),
+  output: "hybrid",
+  adapter: netlify({
+    imageCDN: false,
+  }),
 });
