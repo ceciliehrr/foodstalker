@@ -1,16 +1,15 @@
 ---
 import SmallCards from "./cards/SmallCards.vue";
-
 import { getTopList } from '../api/api.js';
 
-export const prerender = false; // Disable pre-rendering to enable SSR
+//export const prerender = false; // Disable pre-rendering to enable SSR
 
 const apiKey = import.meta.env.VITE_PLAUSIBLE_API_KEY;
 const { recipes } = Astro.props; // Recipes should be passed as props or fetched separately
 
 // Use the getTopList function to fetch data
 const sortedRecipes = await getTopList(apiKey, recipes);
-console.log(sortedRecipes);
+
 // Handle 404 if no recipes found
 if (sortedRecipes.length === 0) {
   Astro.response.status = 404;
