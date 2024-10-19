@@ -2,6 +2,9 @@
 import SmallCards from "./cards/SmallCards.vue";
 import { getTopList } from '../api/api.js';
 
+
+export const prerender = false
+
 const apiKey = import.meta.env.VITE_PLAUSIBLE_API_KEY;
 const { recipes } = Astro.props; // Recipes should be passed as props or fetched separately
 
