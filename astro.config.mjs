@@ -2,9 +2,12 @@ import { defineConfig } from "astro/config";
 
 import vue from "@astrojs/vue";
 
+import netlify from "@astrojs/netlify";
+
 // https://astro.build/config
 export default defineConfig({
   integrations: [vue()],
+
   image: {
     domains: ["https://foodstalker.b-cdn.net"],
     remotePatterns: [
@@ -14,6 +17,7 @@ export default defineConfig({
       },
     ],
   },
+
   vite: {
     resolve: {
       alias: {
@@ -31,4 +35,7 @@ export default defineConfig({
       }
     },
   },
+
+  output: "hybrid",
+  adapter: netlify(),
 });

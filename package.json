@@ -13,13 +13,14 @@
   "devDependencies": {
     "@astrojs/vue": "^4.5.2",
     "@vue-leaflet/vue-leaflet": "^0.10.1",
-    "astro": "^4.15.12",
+    "astro": "^4.16.6",
     "leaflet": "^1.9.4",
     "prettier": "^2.7.1",
     "prettier-plugin-astro": "^0.14.1",
     "vue": "^3.5.11"
   },
   "dependencies": {
+    "@astrojs/netlify": "^5.5.4",
     "@netlify/plugin-csp-nonce": "^1.2.10",
     "@takuma-ru/vue-swipe-modal": "^5.0.5",
     "express": "^4.21.1",
