@@ -1,10 +1,13 @@
 <template>
   <header class="navbar">
     <div class="navbar-container">
-      <a href="/" class="logo">
+      <a href="/" class="logo" aria-label="Til startsiden">
         <img
           src="https://foodstalker.b-cdn.net/logo/lime-96x96.png"
           alt="Logo"
+          height="40"
+          width="40"
+          aria-hidden="true"
         />
       </a>
       <nav class="nav-links">

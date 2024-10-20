@@ -9,7 +9,15 @@ import sitron from "../assets/sitron2.jpg";
     <p>Vi stalker flinke kokker og deler våre favorittoppskrifter</p>
   </div>
   <div class="fs-banner__image">
-    <Image src={sitron} aria-hidden="true" alt="forsidebilde" />
+    <Image
+      src={sitron}
+      aria-hidden="true"
+      alt="forsidebilde"
+      width={800}
+      height={300}
+      quality={100}
+      decoding="async"
+    />
   </div>
 </div>
 <style lang="scss" scoped>
