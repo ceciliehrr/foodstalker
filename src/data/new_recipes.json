@@ -1791,7 +1791,7 @@
         "alt": "En hånd som river parmesan over pastaen."
       }
     ],
-    "keywords": ["pasta", "rask"]
+    "keywords": ["pasta", "rask", "salsiccia", "kjøttboller", "tomat", "italiensk", "salciccia"]
   },
   {
     "id": "entrecôte-med-soppsaus",
@@ -2757,7 +2757,11 @@
       "kjøtt",
       "selskap",
       "fest",
-      "langtidskokt"
+      "langtidskokt",
+      "biff",
+      "høst",
+      "gryte",
+      "boef burgund"
     ]
   },
   {

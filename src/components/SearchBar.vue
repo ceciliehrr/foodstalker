@@ -29,9 +29,11 @@
       </div>
     </div>
     <div v-if="search.length">
-      <p class="fs-search-bar__searchtxt" v-if="sortedItems.length >= 1">
+      <p class="fs-search-bar__searchtxt" v-if="sortedItems.length >= 2">
         Du fant {{ sortedItems.length }} oppskrifter
       </p>
+      <p class="fs-search-bar__searchtxt" v-else-if="sortedItems.length === 1">
+        Du fant {{ sortedItems.length }} oppskrift</p>
       <div class="fs-search-bar__searchtxt" v-else>
         <p>Oh no! <span style="font-size: 50px">🙈</span></p>
         <p>Be oss om å lage det!</p>
