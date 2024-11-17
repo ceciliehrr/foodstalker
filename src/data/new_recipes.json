@@ -1688,7 +1688,7 @@
     "date": "2020-12-13",
     "category": "hverdag",
     "description": "Rask one pot pasta med kjøttboller og tomater som smaker luksus på en helt vanlig tirsdag.",
-    "longDescription": "Den rare ingrediensen her er rå salciccia-pølse som fås på for eksempel meny. Den er med på å lage god krydret smak på sausen. Så ikke skipp pølsa! Men det er lov å prøve med andre typer rå krydrede pølser.",
+    "longDescription": "Den rare ingrediensen her er rå salsiccia-pølse som fås på for eksempel meny. Den er med på å lage god krydret smak på sausen. Så ikke skipp pølsa! Men det er lov å prøve med andre typer rå krydrede pølser.",
     "time": "30 minutter",
     "portions": 4,
     "tips": "Digg med brød til. Pass på å få god stekeskorpe på kjøttbollene. Vi bruker fullkorns pennepasta.",
@@ -1740,19 +1740,19 @@
     "steps": [
       {
         "title": "",
-        "description": "Klem pølsefarsen ut av skinnet og rull små kjøttboller. Rens og skjær sjampinjongen i skiver."
+        "description": "Ta frem og mål opp alle ingredienser. Vask tomatene. Klem pølsefarsen ut av skinnet og rull små kjøttboller. Rens og skjær sjampinjongen i skiver."
       },
       {
         "title": "",
-        "description": "Stek «kjøttbollene» og sopp. Bruk en stor nok gryte, varm opp gryta, tilsett olje og stek «kjøttbollene» gylne. Tilsett sopp og fres videre til soppen får litt farge."
+        "description": "Bruk en stor nok gryte som alle ingredienser får plass i. Varm opp gryta, tilsett olje. Når oljen ryker er gryta varm nok. Stek «kjøttbollene» gylne. Tilsett sopp og fres videre til soppen får gyldenbrun farge."
       },
       {
         "title": "",
-        "description": "Tilsett pasta, kraft, tomater og krydder. Ha i pasta, kraft, tomater, en god klype salt og noen runder kvernet pepper. Gi det hele et oppkok og kok videre til pastaen er ferdigkokt og sausen har redusert og tyknet. Rør av og til slik at det ikke fester seg i bunnen."
+        "description": "Tilsett pasta, kraft og tomater. Gi det hele et oppkok og kok videre til pastaen er ferdigkokt og sausen har redusert og tyknet. Rør av og til slik at det ikke fester seg i bunnen."
       },
       {
         "title": "",
-        "description": "Smak til med salt, pepper og basilikum. Smak til med salt og pepper, vær forsiktig med pepper på grunn av krydderet i pølsefarsen. Rør til slutt inn basilikum."
+        "description": "Smak til med salt og pepper, vær forsiktig med pepper på grunn av krydderet i pølsefarsen. Rør til slutt inn basilikum."
       },
       {
         "title": "",
