@@ -1,14 +1,9 @@
 <template>
- <header :class="['navbar', { hidden: isHidden }]">
+   <header :class="['navbar', { hidden: isHidden && !showMobileMenu }]">
     <div class="navbar-container">
       <a href="/" class="logo" aria-label="Til startsiden">
-        <img
-          src="https://foodstalker.b-cdn.net/logo/lime-96x96.png"
-          alt="Logo"
-          height="40"
-          width="40"
-          aria-hidden="true"
-        />
+        <img src="https://foodstalker.b-cdn.net/logo/lime-96x96.png" alt="Logo" height="40" width="40"
+          aria-hidden="true" />
       </a>
       <nav class="nav-links">
         <ul>
@@ -49,12 +44,7 @@
           </li>
         </ul>
       </nav>
-      <button
-        role="button"
-        aria-label="menu-button"
-        class="hamburger-btn"
-        @click="toggleMobileMenu"
-      >
+      <button role="button" aria-label="menu-button" class="hamburger-btn" @click="toggleMobileMenu">
         <div class="hamburger" v-if="!showMobileMenu">
           <span class="bar"></span>
           <span class="bar"></span>
@@ -92,15 +82,10 @@
               <!-- Add your dropdown content here -->
               <ul>
                 <li>
-                  <a href="/om-oss"
-                    ><i class="arrow right arrow--margin-right"></i>Om oss</a
-                  >
+                  <a href="/om-oss"><i class="arrow right arrow--margin-right"></i>Om oss</a>
                 </li>
                 <li>
-                  <a href="/kart"
-                    ><i class="arrow right arrow--margin-right"></i
-                    >Restaurantkart</a
-                  >
+                  <a href="/kart"><i class="arrow right arrow--margin-right"></i>Restaurantkart</a>
                 </li>
               </ul>
               <!-- Add more dropdown items if needed -->
@@ -121,15 +106,15 @@ export default {
       isDropdownOpen: false,
       isHidden: false,
       lastScrollPosition: 0,
-      isInteracting: false, // Ny variabel for brukerinteraksjon
+      isInteracting: false,
     };
   },
   methods: {
     toggleMobileMenu() {
       this.showMobileMenu = !this.showMobileMenu;
       this.closeIcon = this.showMobileMenu ? "close" : "hamburger";
-      this.isInteracting = true; // Marker at bruker interagerer
-      setTimeout(() => (this.isInteracting = false), 300); // Tilbakestill etter kort tid
+      this.isInteracting = true;
+      setTimeout(() => (this.isInteracting = false), 300);
     },
     toggleDropdown() {
       this.isDropdownOpen = !this.isDropdownOpen;
@@ -144,9 +129,20 @@ export default {
       }
     },
     handleScroll() {
-      if (this.isInteracting) return; // Ignorer scroll hvis bruker interagerer
+      if (this.isInteracting) return;
+
       const currentScrollPosition = window.scrollY;
-      this.isHidden = currentScrollPosition > this.lastScrollPosition;
+      const navbarHeight = 100; // Høyden på navbaren (kan justeres)
+
+      // Hvis mobilmenyen er åpen, skal navbaren ikke skjules
+      if (this.showMobileMenu) {
+        this.isHidden = false;
+      } else if (currentScrollPosition <= navbarHeight) {
+        this.isHidden = false; // Vis navbaren når man er på toppen av siden (eller nesten)
+      } else {
+        this.isHidden = currentScrollPosition > this.lastScrollPosition;
+      }
+
       this.lastScrollPosition = currentScrollPosition;
     },
   },
