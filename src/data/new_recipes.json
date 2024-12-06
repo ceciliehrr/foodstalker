@@ -8742,8 +8742,8 @@
     "date": "2021-12-22",
     "category": "søtt",
     "description": "En venn av en venn har gitt oss denne oppskriften. Garantert Norges beste pepperkaker!",
-    "longDescription": "Denne oppskriften tar kanskje mer tid enn kjøpedeig, men OMG så gode! Ta deg tid, stress ned, hør på en podcast eller samarbeid med en venn så blir resultatet nydelig. Det er ikke lov å jukse med krydderne, krydderne er der for en grunn. Enjoy!",
-    "time": "Hele da'n",
+    "longDescription": "Denne oppskriften tar kanskje mer tid enn kjøpedeig, men OMG så gode! Ta deg tid, stress ned, hør på dine julefavorittlåter eller samarbeid med en venn så blir resultatet nydelig. Det er ikke lov å jukse med krydderne, krydderne er der for en grunn. Enjoy!",
+    "time": "Hele da'n og ei natt",
     "portions": 60,
     "tips": "Vår venn Jazz Erik har fått lov til å dele en oppskrift med oss som vi bare måtte prøve. ",
     "chef": "Brønnleder Anders",
@@ -8803,14 +8803,18 @@
           {
             "quantity": "100 g",
             "name": "mandler"
+          },
+          {
+            "quantity": "",
+            "name": "plastfolie og bakepapir"
           }
         ]
       }
     ],
     "steps": [
       {
-        "title": "",
-        "description": "Start med prepping. Rens kardemommefrø, de svarte frøene i kapslene er de du skal bruke, kast skallet. Sett på stekepanne på medium varme og rist de hele tørre krydderne til du lukter aromaene. Altså ikke stek dem/brenn dem, bare lett rista krydder for å få frem de gode smakene. Mort eller kvern de hele krydderne til en fin krydderblanding. Skrell og riv ingefær. "
+        "title": "Del 1",
+        "description": "Start med prepping. Rens kardemommefrø, de svarte frøene i kapslene er de du skal bruke, kast skallet. Sett på stekepanne på medium varme og rist de hele tørre krydderne til det begynner å ryke og du lukter aromaene. Pass på så du ikke brenn dem, de skal bare bli lett rista for å få frem de gode smakene. Mort eller kvern krydderne til en fin krydderblanding. Skrell og riv ingefær. "
       },
       {
         "title": "",
@@ -8822,15 +8826,15 @@
       },
       {
         "title": "",
-        "description": "Sil det våte over det tørre og bland sammen med k-krok til det har blitt en fin og klissete pepperkakedeig."
+        "description": "Sil det våte over det tørre og bland sammen med k-krok til det har blitt en fin og klissete pepperkakedeig, sånn ca 5 minutter."
       },
       {
         "title": "",
-        "description": "La deigen avkjøles på benken slik at den er enklere å håndtere. Ha deigen over plasfolie for å pakke den godt sammen som en julegave og legg i kjøleskap over natta."
+        "description": "Ha deigen over på plasfolie, la den ligge litt for avkjøling slik at den setter seg. Så kan du pakke den godt sammen i plasten som en julegave og legg i kjøleskap over natta."
       },
       {
-        "title": "",
-        "description": "Legg deigen på benken i noen minutter før du begynner å jobbe med den. Del opp i passende arbeidsstørrelser og kjevle ut på melet bord. Bruk former som du pleier til pepperkaker."
+        "title": "Del 2",
+        "description": "Legg deigen på benken i noen minutter før du begynner å jobbe med den. Del opp i passende arbeidsstørrelser og kjevle ut på melet bord. Bruk former som du pleier til pepperkaker. Om ting går juletregt og deigen begynner å bli for varm og litt klissete, legg den tilbake i kjøleskapet."
       },
       {
         "title": "",
