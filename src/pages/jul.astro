@@ -1,0 +1,94 @@
+---
+import getRecipes from "../data/new_recipes.json";
+
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/cards/Card.astro";
+
+// emojis
+import juletreEmoji from "../assets/juletre.svg";
+import Grid from "../components/Grid.vue";
+import Divider from "../components/Divider.astro";
+
+// Hent oppskrifter med "jul" i nøkkelord
+const recipes = getRecipes;
+const julRecipes = recipes.filter((recipe) => recipe.keywords.includes("jul"));
+
+export async function getStaticPaths() {
+  // Bare én sti for "jul"
+  return [
+    {
+      params: { keyword: "jul" },
+      props: {},
+    },
+  ];
+}
+
+function capitalizeFirstLetter(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
+---
+
+<Layout title="Jul">
+  <div class="fs-category__emoji">
+    <img src={juletreEmoji.src} alt="Juletre emoji" aria-hidden="true" />
+  </div>
+
+  <Divider text={capitalizeFirstLetter("God jul")} />
+
+  <Grid>
+    {
+      julRecipes.map((data) => (
+        <Card
+          href={"/oppskrift/" + data.id}
+          title={data.title}
+          emoji={data.category}
+          image={data.imageurl}
+          description={data.description}
+          date={data.date}
+        />
+      ))
+    }
+  </Grid>
+</Layout>
+
+<style lang="scss" scoped>
+  @use "sass:map";
+  @use "../styles/variables/" as *;
+  @use "../styles/mixins/breakpoints" as *;
+
+  .fs-category__emoji {
+    display: grid;
+    justify-content: center;
+
+    color: var(--fs-black);
+    animation: sway 3s cubic-bezier(0.4, 0, 0.2, 1) infinite; /* Myk bevegelse */
+
+    /* Jevnere keyframes for swaying */
+    @keyframes sway {
+      0% {
+        transform: rotate(0deg);
+      }
+      25% {
+        transform: rotate(7deg);
+      }
+      50% {
+        transform: rotate(0deg);
+      }
+      75% {
+        transform: rotate(-7deg);
+      }
+      100% {
+        transform: rotate(0deg);
+      }
+    }
+    & img {
+      width: 4rem;
+      @include bp("tablet-up") {
+        width: 8rem;
+      }
+      @include bp("tablet-big-up") {
+        width: 12rem;
+      }
+    }
+  }
+</style>

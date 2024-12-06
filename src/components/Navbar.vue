@@ -1,5 +1,5 @@
 <template>
-  <header class="navbar">
+ <header :class="['navbar', { hidden: isHidden }]">
     <div class="navbar-container">
       <a href="/" class="logo" aria-label="Til startsiden">
         <img
@@ -119,12 +119,17 @@ export default {
       showMobileMenu: false,
       closeIcon: "×",
       isDropdownOpen: false,
+      isHidden: false,
+      lastScrollPosition: 0,
+      isInteracting: false, // Ny variabel for brukerinteraksjon
     };
   },
   methods: {
     toggleMobileMenu() {
       this.showMobileMenu = !this.showMobileMenu;
       this.closeIcon = this.showMobileMenu ? "close" : "hamburger";
+      this.isInteracting = true; // Marker at bruker interagerer
+      setTimeout(() => (this.isInteracting = false), 300); // Tilbakestill etter kort tid
     },
     toggleDropdown() {
       this.isDropdownOpen = !this.isDropdownOpen;
@@ -138,12 +143,20 @@ export default {
         this.isDropdownOpen = false;
       }
     },
+    handleScroll() {
+      if (this.isInteracting) return; // Ignorer scroll hvis bruker interagerer
+      const currentScrollPosition = window.scrollY;
+      this.isHidden = currentScrollPosition > this.lastScrollPosition;
+      this.lastScrollPosition = currentScrollPosition;
+    },
   },
   mounted() {
     document.addEventListener("click", this.closeDropdownOnClickOutside);
+    window.addEventListener("scroll", this.handleScroll);
   },
   beforeDestroy() {
     document.removeEventListener("click", this.closeDropdownOnClickOutside);
+    window.removeEventListener("scroll", this.handleScroll);
   },
 };
 </script>
@@ -154,8 +167,17 @@ export default {
 @use "../styles/mixins/breakpoints" as *;
 
 .navbar {
-  background-color: var(--color-vanilla);
-  padding: 1rem;
+  background-color: var(--fs-vanilla);
+  padding: 1rem 1rem 0rem 1rem;
+  position: sticky;
+  top: 0; /* Fester navbar til toppen */
+  z-index: 1000; 
+  transform: translateY(0);
+  transition: transform 0.3s ease-in-out; 
+}
+
+.navbar.hidden {
+  transform: translateY(-100%); 
 }
 .navbar-container {
   display: flex;

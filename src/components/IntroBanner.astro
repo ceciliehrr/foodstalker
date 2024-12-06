@@ -5,7 +5,10 @@ import sitron from "../assets/sitron2.jpg";
 
 <div class="fs-banner fade-in">
   <div class="fs-banner__text">
-    <h1 class="bannerTitle">F O O D S T A L K E R</h1>
+    <h1 class="bannerTitle">
+      F O O D S T <a href="/jul" class="fs-banner__christmastreeLink">🎄</a> L K
+      E R
+    </h1>
     <p>Vi stalker flinke kokker og deler våre favorittoppskrifter</p>
   </div>
   <div class="fs-banner__image">
@@ -50,6 +53,29 @@ import sitron from "../assets/sitron2.jpg";
       }
       & p {
         max-width: 20rem;
+      }
+    }
+    &__christmastreeLink {
+      text-decoration: none !important;
+      display: inline-block;
+      color: var(--fs-black);
+      animation: sway 1s ease-in-out infinite;
+    }
+    @keyframes sway {
+      0% {
+        transform: rotate(0deg);
+      }
+      20% {
+        transform: rotate(5deg);
+      }
+      50% {
+        transform: rotate(0deg);
+      }
+      80% {
+        transform: rotate(-5deg);
+      }
+      100% {
+        transform: rotate(0deg);
       }
     }
     &__image {
