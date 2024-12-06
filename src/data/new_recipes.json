@@ -8594,7 +8594,7 @@
     "longDescription": "En guilty pleasure vi begge har til felles er seigmenn(og kvinner), en ting vi ikke har tenkt på er at vi kan lage dem selv! Lag saus/sirup av din favoritt frukt,bær eller blomst, da har du en god start for å lage juleflesk.",
     "time": "30 minutter",
     "portions": 30,
-    "tips": "Denne oppskriften viser bare juleflesk med bringebærsirup. Men du kan bytte ut bringbær med annen bær eller frukt. Vær kreativ! Bruk konditorfarge hvis du ønsker en sterkere farge.<br> Vi bruker frossen bringebær nå som den er ute av sesong.",
+    "tips": "Denne oppskriften viser bare juleflesk med bringebærsirup. Men du kan bytte ut bringbær med annen bær eller frukt. Eller om du har noe siruper til overs. For eksempel multe-, kirsebær- eller jorbærsirup. Vær kreativ! Bruk konditorfarge hvis du ønsker en sterkere farge.<br> Vi bruker frossen bringebær nå som den er ute av sesong.",
     "chef": "Rolf-Anders fra det glade kjøkken.",
     "tipsurl": "https://detgladekjokken.no/oppskrift/seigmenn-juleflesk/",
     "ingredients": [
@@ -8640,7 +8640,7 @@
           },
           {
             "quantity": "3-4 ss",
-            "name": "finkornet sukker (mort litt sukker) til pynt"
+            "name": "finkornet sukker (eventuelt morte litt sukker) til pynt"
           }
         ]
       }
@@ -8684,7 +8684,7 @@
       },
       {
         "title": "",
-        "description": "Ha juleflesken ut av formen og skjær i terninger. Nå er juleflesken sticky, den setter seg fast overalt, men hold ut og vær tålmodig. Det blir digg til slutt."
+        "description": "Ha juleflesken ut av formen og skjær den i terninger med en god kniv. Nå er juleflesken sticky, den setter seg fast overalt, men hold ut og vær tålmodig. Vårt tips er å varme kniven i varmt vann før du skjærer i flesket. Pust ut, ro ned, det blir bra og digg til slutt."
       },
       {
         "title": "",
@@ -8730,6 +8730,7 @@
       "bringebærcoulis",
       "godteri",
       "julebakst",
+      "sirup",
       "søtt"
     ]
   },
