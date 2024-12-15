@@ -14515,18 +14515,15 @@
       {
         "title": "Ostetoast",
         "description": "Skjær nok skiver ost til å dekke to brødskiver."
-      }
-      ,
+      },
       {
         "title": "",
         "description": "Varm panna du skal steke toasten i. Ha i smør, husk å fylle på med smør om det blir tørt i panna."
-      }
-      ,
+      },
       {
         "title": "",
         "description": "Imens panna blir varm bygg toasten med osten. Når smøret har slutta og frese i panna legg på toppskiva og press dem den med en stekespade."
-      }
-      ,
+      },
       {
         "title": "",
         "description": "Fyll på med smør om det blir tørt i panna. Snu toasten ofte, den er ferdig når den er gylden, crispy og osten er smeltet."
@@ -14573,6 +14570,102 @@
       "bålpanne",
       "primus",
       "vinter"
+    ]
+  },
+  {
+    "id": "marsipan",
+    "imageurl": "https://foodstalker.b-cdn.net/2024/marsipan/mainimage.jpg",
+    "alt": "marsipan på fat",
+    "title": "Marsipan",
+    "date": "2024-12-15",
+    "category": "søtt",
+    "description": "Marsipan er en av våre X slag til jul. Pynt dem med smelta sjokolade, glitter og stæsj.",
+    "longDescription": "Vi har pyntet til jul for anledningen og deler en oppskrift på søt marsipan laget av mandler og melis – perfekt som julegodteri eller i en konfekt. Denne oppskriften er moderert etter Cecilie´s ganer og allergier. Men den kan også lages grovere ved større prosent mandler.",
+    "time": "2 timer",
+    "portions": 1,
+    "tips": "Øk mengden mandler om du vil ha mer mandelsmak. Pynting stoppes bare av din egen kreativitet, hva med å dyppe eller drysse over smeltet sjokolade? I årets versjon for bildenes skyld kjøpte vi kakaoglitter på Cacas.",
+    "chef": "Pete",
+    "tipsurl": "",
+    "ingredients": [
+      {
+        "title": "1 porsjon gir ca. 500g marsipan",
+        "ingredients": [
+          {
+            "quantity": "250 g",
+            "name": "mandler"
+          },
+          {
+            "quantity": "250 g",
+            "name": "melis"
+          },
+          {
+            "quantity": "1 ss",
+            "name": "eggehvite"
+          }
+        ]
+      }
+    ],
+    "steps": [
+      {
+        "title": "",
+        "description": "Skåld mandler ved å legge dem i kokende vann i 3-4 minutter, og klem dem ut av skallet og legg dem på et stekebrett med bakepapir. Tørk mandlene i 1 time på 50 grader i stekeovnen."
+      },
+      {
+        "title": "",
+        "description": "Mal mandlene to ganger i kvern eller foodprosessor, slik at de er finmalt. Mal dem deretter igjen sammen med melis."
+      },
+      {
+        "title": "",
+        "description": "Bland inn eggehvite for å få ønsket konsistens. Er den for tørr vil den bli vanskelig å forme, da kan du ta mer eggehvite. Er den for våt ha i mer melis. "
+      },
+      {
+        "title": "",
+        "description": "Ha marsipanen på benken og kna den raskt sammen til en pølse, pakk i plastikk og sett i kjøleskap om den ikke skal brukes med en gang. "
+      },
+      {
+        "title": "",
+        "description": "Vi skjærer marsipanbiter på ca 10 gram og ruller dem til små søte kuler. Enjoy!"
+      }
+    ],
+    "images": [
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2024/marsipan/DSC07072.jpg",
+        "alt": "skolling av mandler"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2024/marsipan/DSC07094.jpg",
+        "alt": "marsipanpølse på et bord"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2024/marsipan/DSC07223.jpg",
+        "alt": "marsipan i kuler med sjokoladedryss"
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2024/marsipan/DSC07083.jpg",
+        "alt": "mandler uten skinn"
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2024/marsipan/DSC07272.jpg",
+        "alt": "marsipankuler i skål"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2024/marsipan/mainimage.jpg",
+        "alt": "marsipankuler med glitter i skål"
+      }
+    ],
+    "keywords": [
+      "marsipan",
+      "jul",
+      "julegodteri",
+      "godteri",
+      "mandler",
+      "søtt"
     ]
   }
 ]
