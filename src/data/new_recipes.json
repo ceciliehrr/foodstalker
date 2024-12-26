@@ -12786,6 +12786,10 @@
           {
             "quantity": "",
             "name": "olje og smør til steking"
+          },
+          {
+            "quantity": "",
+            "name": "hyssing godkjent for matlaging"
           }
         ]
       },
@@ -12847,10 +12851,6 @@
           {
             "quantity": "",
             "name": "dryss salt"
-          },
-          {
-            "quantity": "",
-            "name": "hyssing godkjent for matlaging"
           }
         ],
         "title": "Sprøstekt løk"
@@ -14678,7 +14678,7 @@
     "description": "Brente mandler er en av våre X slag til jul. De er også en fin spiselig gave til alle kjente og kjære i desember.",
     "longDescription": "For å lage brente mandler trenger du en dose tålmodighet, som undertegnede nå innser gjelder mange av julebakst-oppskriftene våre. Men dette bør ikke stoppe deg! Brente mandler er digg. Du må også regne med støl rørearm dagen derpå, for her gjelder det å røre - mye.",
     "time": "45 minutter",
-    "portions": "1",
+    "portions": 1,
     "tips": "1 porsjon er et norgesglass, om du ønsker å lage mer bør dette gjøres i to omganger. Vi har fulgt Trines oppskrift på brente mandler 2.0 i flere år på rad. Og er meget fornøyd med den. ",
     "chef": "Trines matblogg",
     "tipsurl": "https://trinesmatblogg.no/recipe/brente-mandler-2-0/",
@@ -14728,7 +14728,7 @@
       },
       {
         "title": "",
-        "description": "Ha mandlene over på det bakepapirkledde stekebrettet og fordel mandlene utover før det stivner. Avkjøl og knus, oppbevar i et tett glass eller boks. Holdbar i hele desember."
+        "description": "Ha mandlene over på et bakepapirkledd stekebrett og fordel mandlene utover før det stivner. Avkjøl og knus, oppbevar i et tett glass eller boks. Holdbar i hele desember."
       }
     ],
     "images": [
@@ -14766,8 +14766,7 @@
     "keywords": [
       "mandler",
       "jul",
-      "gave",
-      ""
+      "gave"
     ]
   }
 ]
