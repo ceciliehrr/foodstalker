@@ -14667,5 +14667,107 @@
       "mandler",
       "søtt"
     ]
+  },
+  {
+    "id": "brentemandler",
+    "imageurl": "https://foodstalker.b-cdn.net/2024/brente-mandler/main.jpg",
+    "alt": "brente mandler i en skål ",
+    "title": "Brente mandler",
+    "date": "2024-12-26",
+    "category": "søtt",
+    "description": "Brente mandler er en av våre X slag til jul. De er også en fin spiselig gave til alle kjente og kjære i desember.",
+    "longDescription": "For å lage brente mandler trenger du en dose tålmodighet, som undertegnede nå innser gjelder mange av julebakst-oppskriftene våre. Men dette bør ikke stoppe deg! Brente mandler er digg. Du må også regne med støl rørearm dagen derpå, for her gjelder det å røre - mye.",
+    "time": "45 minutter",
+    "portions": "1",
+    "tips": "1 porsjon er et norgesglass, om du ønsker å lage mer bør dette gjøres i to omganger. Vi har fulgt Trines oppskrift på brente mandler 2.0 i flere år på rad. Og er meget fornøyd med den. ",
+    "chef": "Trines matblogg",
+    "tipsurl": "https://trinesmatblogg.no/recipe/brente-mandler-2-0/",
+    "ingredients": [
+      {
+        "title": "",
+        "ingredients": [
+          {
+            "quantity": "400 g",
+            "name": "mandler"
+          },
+          {
+            "quantity": "0.5 dl",
+            "name": "vann"
+          },
+          {
+            "quantity": "150 g",
+            "name": "sukker"
+          },
+          {
+            "quantity": "1 ts",
+            "name": "vaniljesukker"
+          },
+          {
+            "quantity": "1 ss",
+            "name": "smør"
+          }
+        ]
+      }
+    ],
+    "steps": [
+      {
+        "title": "Preppe mandler",
+        "description": "Sett på ovnen på 200 grader. Kle et stekebrett med bakepapir og fordel mandlene utover brettet. Sett mandlene midt i ovnen og stek i ca 8 minutter. Til du lukter rista mandler, pass på så du ikke brenner dem. Dette er litt avhengig av ovnen."
+      },
+      {
+        "title": "Brente mandler",
+        "description": "Kok opp vann, sukker og vaniljesukker i en stekepanne. La sukkerlaken koke i 2-3 minutter, ha deretter i mandlene. Ha varmen på middels."
+      },
+      {
+        "title": "",
+        "description": "Nå skal du røre rundt helt til sukkeret begynner å krystallisere seg(se bildene nederst i oppskriften). Ikke bli skremt, det er ikke noe galt, nå skal du fortsette å røre helt til sukkeret blir karamellisert og legger seg rundt mandlene. Dette tar tid, ikke bli fristet til å sette opp varmen for mye, da kan det fort brenne seg."
+      },
+      {
+        "title": "",
+        "description": "Når karamellen er blank ha i en spiseskje med smør, fortsett å rør til smøret har smelta. Smøret gjør at mandlene ikke bare blir en klump. "
+      },
+      {
+        "title": "",
+        "description": "Ha mandlene over på det bakepapirkledde stekebrettet og fordel mandlene utover før det stivner. Avkjøl og knus, oppbevar i et tett glass eller boks. Holdbar i hele desember."
+      }
+    ],
+    "images": [
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2024/brente-mandler/DSC07294.jpg",
+        "alt": "mandler på et stekebrett"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2024/brente-mandler/DSC07334.jpg",
+        "alt": "krystallisert mandler i panne"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2024/brente-mandler/DSC07305.jpg",
+        "alt": "mandler oppi kokende sukkerlake"
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2024/brente-mandler/DSC07405.jpg",
+        "alt": "brente mandler og smør i stekepanne"
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2024/brente-mandler/DSC07423.jpg",
+        "alt": "brente mandler på stekebrett"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2024/brente-mandler/DSC07514.jpg",
+        "alt": "brente mandler i en skål"
+      }
+    ],
+    "keywords": [
+      "mandler",
+      "jul",
+      "gave",
+      ""
+    ]
   }
 ]
