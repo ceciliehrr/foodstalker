@@ -14768,5 +14768,106 @@
       "jul",
       "gave"
     ]
+  },
+  {
+    "id": "saltkaramellsaus",
+    "imageurl": "https://foodstalker.b-cdn.net/2024/saltkaramell/main.jpg",
+    "alt": "salt karamellsaus i glass",
+    "title": "Salt karamellsaus",
+    "date": "2024-12-26",
+    "category": "søtt",
+    "description": "Salt karamellsaus er hva man kan kalle farlig godt! Vi pleier å servere denne ved siden av karamellpuddingen og kransekaka.",
+    "longDescription": "Pappa'n til Petter digger karamell, så nå har det blitt en tradisjon at vi tar med et glass salt karamellsaus i jula. Ja, for denne godsaken bør deles! Den kan brukes som tilbehør til veldig mye, det er også lov å mævle. (Vestlendinger: Google it!)",
+    "time": "30 minutter",
+    "portions": 1,
+    "tips": "En porsjon er et glass som på bildet. Denne har vi hentet fra Ida Gran Jansen som har flere gode juleoppskrifter.",
+    "chef": "Ida Gran Jansen",
+    "tipsurl": "https://idagranjansen.com/oppskrifter/salt-karamell",
+    "ingredients": [
+      {
+        "title": "",
+        "ingredients": [
+          {
+            "quantity": "150 g",
+            "name": "sukker"
+          },
+          {
+            "quantity": "3 ss",
+            "name": "vann"
+          },
+          {
+            "quantity": "50 g",
+            "name": "smør i terninger"
+          },
+          {
+            "quantity": "1.5 dl",
+            "name": "kremfløte"
+          },
+          {
+            "quantity": "1 ts",
+            "name": "salt"
+          }
+        ]
+      }
+    ],
+    "steps": [
+      {
+        "title": "",
+        "description": "Mål opp ingredienser slik at du har alt klart. Bland sukker og vann i en tykkbunnet kjele, sett den på plata med medium til høy varme. Vi bruker 7 på vår komfyr."
+      },
+      {
+        "title": "",
+        "description": "Det må ikke røres!! Da krystalliserer sukkeret seg. Så bare la den stå til den er gylden, pass på så det ikke blir brent. Se bildet under(den med smør) hvor gylden den bør være."
+      },
+      {
+        "title": "",
+        "description": "Ta kjelen av plata og rør i smør, ja, nå kan du røre."
+      },
+      {
+        "title": "",
+        "description": "Sett kjelen tilbake på plata med litt lavere varme. Og rør inn fløte, litt etter litt. Når all fløte er i skal det småkokes i ca 3-4 minutter. Husk at jo lenger koketid jo tykkere blir sausen, men riktig konsistens vil du ikke se før den er avkjølt da den stivner etter litt tid."
+      },
+      {
+        "title": "",
+        "description": "Smak til med salt! Start med en halv teskje, smak og ha i ei halv teskje til hvis du synes det ble lite."
+      }
+    ],
+    "images": [
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2024/saltkaramell/DSC07684.jpg",
+        "alt": "karamell med smør i kjele"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2024/saltkaramell/DSC07704.jpg",
+        "alt": "fløte helles i karamellen"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2024/saltkaramell/DSC07682.jpg",
+        "alt": "gylden karamell i kjele"
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2024/saltkaramell/DSC07694.jpg",
+        "alt": "kokende karamell i saus"
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2024/saltkaramell/DSC07756.jpg",
+        "alt": "ferdig karamellsaus i krukke"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2024/saltkaramell/DSC07712.jpg",
+        "alt": "ferdig karamellsaus i kjele"
+      }
+    ],
+    "keywords": [
+      "karamell",
+      "jul",
+      "dessert"
+    ]
   }
 ]
