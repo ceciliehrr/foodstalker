@@ -14869,5 +14869,391 @@
       "jul",
       "dessert"
     ]
+  },
+  {
+    "id": "ribbe",
+    "imageurl": "https://foodstalker.b-cdn.net/2024/ribbe/main-2.jpg",
+    "alt": "ribbe",
+    "title": "Juleribbe",
+    "date": "2024-12-31",
+    "category": "helg",
+    "description": "Hva spiser vi på julaften? Ribbe! De senere årene har vi tatt ansvaret for julemiddagen med liv og lyst. Nå deler vi ribbeplanen.",
+    "longDescription": "I desember stikker vi innom Annis pølsemakeri i Oslobukta. Da kjøper vi fryst ribbe av frittgående gris og kjøtt til <a href='/oppskrift/medisterfest'>medisterdeigen</a>. Dyr som har hatt det bra er av god kvalitet og er gøy å lage julemiddagen med, det blir fantastisk resultat. De aller viktigste momentene for et godt resultat hver gang er at ribba må saltes og pepres godt i god tid før den skal stekes, helst to døgn før. I denne perioden må ribba stå utildekt i kjøleskapet på rist, så den får luft rundt hele ribba. Steketiden avhenger som regel av tykkelsen på ribba, denne oppskriften har en beregnet steketid på 8-9 timer, og middag klokka 17.30. Lykke til!",
+    "time": "hele da'n",
+    "portions": 10,
+    "tips": "Denne oppskriften er beregnet for 10 personer. Beregn ca 4-500 gram ribbe per person, 150 gram medisterkaker per person og 150 gram medisterpølser per person.</br></br> Ribba skal saltes med salt tilsvarende 1,75% av ribbas egenvekt, og pepper er saltmengde delt på seks. Eksempel:  En ribbe på 4145g*0,0175=72.5, 75.5/6=125 – altså 72.5 gram salt og 12.5 gram pepper. </br></br> Vi pleier å lage sausjevning en dag eller to på forhånd, som kan være lurt i en stressende sluttfase.",
+    "chef": "Ribbeoppskrift.no",
+    "tipsurl": "https://www.ribbeoppskrift.no/",
+    "ingredients": [
+      {
+        "title": "Ribbe",
+        "ingredients": [
+          {
+            "quantity": "4 kg",
+            "name": "ribbe fra en glad gris"
+          },
+          {
+            "quantity": "70 g",
+            "name": "salt"
+          },
+          {
+            "quantity": "11.6 g",
+            "name": "pepper"
+          },
+          {
+            "quantity": "1 flaske",
+            "name": "mørkt juleøl"
+          },
+          {
+            "quantity": "3 stk",
+            "name": "gulrot"
+          },
+          {
+            "quantity": "2 stk",
+            "name": "gul løk"
+          },
+          {
+            "quantity": "1 hel",
+            "name": "hvitløk"
+          },
+          {
+            "quantity": "5 stk",
+            "name": "stjerneanis"
+          },
+          {
+            "quantity": "3 stk",
+            "name": "laurbærblad"
+          }
+        ]
+      },
+      {
+        "title": "Surkål",
+        "ingredients": [
+          {
+            "quantity": "1 stk",
+            "name": "hodekål"
+          },
+          {
+            "quantity": "2 stk",
+            "name": "grønne epler"
+          },
+          {
+            "quantity": "6 dl",
+            "name": "eplejuice (for eksempel fra Bagstevold gård)"
+          },
+          {
+            "quantity": "3 ss",
+            "name": "eddik 7%"
+          },
+          {
+            "quantity": "2 ss",
+            "name": "karve"
+          },
+          {
+            "quantity": "3 ss",
+            "name": "sukker"
+          },
+          {
+            "quantity": "1.5 ts",
+            "name": "salt"
+          },
+          {
+            "quantity": "0.5 ts",
+            "name": "grovkvernet pepper"
+          }
+        ]
+      },
+      {
+        "title": "Ovnstekte poteter",
+        "ingredients": [
+          {
+            "quantity": "1.5 kg",
+            "name": "morenepoteter eller småpoteter"
+          },
+          {
+            "quantity": "dryss",
+            "name": "grovt salt"
+          },
+          {
+            "quantity": "dryss",
+            "name": "olivenolje"
+          }
+        ]
+      },
+      {
+        "title": "Saus",
+        "ingredients": [
+          {
+            "quantity": "100 g",
+            "name": "smør"
+          },
+          {
+            "quantity": "100 g",
+            "name": "hvetemel"
+          },
+          {
+            "quantity": "",
+            "name": "stekesjy fra ribba"
+          },
+          {
+            "quantity": "",
+            "name": "grov sennep"
+          },
+          {
+            "quantity": "",
+            "name": "dijon sennep"
+          },
+          {
+            "quantity": "",
+            "name": "honning"
+          },
+          {
+            "quantity": "",
+            "name": "portvinsgelè"
+          },
+          {
+            "quantity": "",
+            "name": "worchestersaus"
+          }
+        ]
+      },
+      {
+        "title": "Rørte tyttebær",
+        "ingredients": [
+          {
+            "quantity": "5 dl",
+            "name": "tyttebær fra tyttebærturen i høst"
+          },
+          {
+            "quantity": "1-3 dl",
+            "name": "sukker"
+          },
+          {
+            "quantity": "1 skvis",
+            "name": "sitron"
+          }
+        ]
+      },
+      {
+        "title": "Epler og svisker",
+        "ingredients": [
+          {
+            "quantity": "6 stk",
+            "name": "epler (røde og grønne)"
+          },
+          {
+            "quantity": "300 g",
+            "name": "svisker"
+          },
+          {
+            "quantity": "4 ss",
+            "name": "smør"
+          },
+          {
+            "quantity": "4 ss",
+            "name": "stekefett fra medisterkaker/pølser"
+          },
+          {
+            "quantity": "1 ss",
+            "name": "honning"
+          },
+          {
+            "quantity": "2 ss",
+            "name": "sitron"
+          },
+          {
+            "quantity": "4 klyper",
+            "name": "salt"
+          },
+          {
+            "quantity": "2 klyper",
+            "name": "pepper"
+          },
+          {
+            "quantity": "neve frisk",
+            "name": "rosmarin"
+          }
+        ]
+      },
+      {
+        "title": "Andre",
+        "ingredients": [
+          {
+            "quantity": "",
+            "name": "<a href='/oppskrift/medisterfest'>medisterkaker</a>, <a href='/oppskrift/medisterfest'>medisterpølser</a>, <a href='/oppskrift/syltet-rødløk'>sylta rødløk</a>"
+          },
+          {
+            "quantity": "utstyr",
+            "name": "stekeform som er ca like stor som ribba, steketermometer"
+          }
+        ]
+      }
+    ],
+    "steps": [
+      {
+        "title": "Ribba -  5 dager til middag (19.desember)",
+        "description": "Om ribba er fryst skal den ut av frysen, og legges i kjøleskap for sakte tining."
+      },
+      {
+        "title": "Ribba - 3 dager til middag (21.desember)",
+        "description": "Fjern hinne på undersiden av ribba, bruk kjøkkenpapir for å få godt grep.\r\nSalte 1,75% av ribbas egenvekt, pepper er saltmengden delt på 6. Så med 4 kilo ribbe skal du salte 70 gram og 11.6 gram pepper. Gni ribba godt i alle kriker og kroker, slik at hele ribba blir dekt med salt og pepper.\r\n"
+      },
+      {
+        "title": "",
+        "description": "Ferdig krydret ribbe legges utildekt på rist i kjøleskap, så den får luft rundt hele ribba frem til morgenen den skal lages, minimum 2 døgn i kjøleskapet."
+      },
+      {
+        "title": "Ribba - 07:00 (24.desember)",
+        "description": "Ta ribba ut av kjøleskapet, og la den stå til temperering på kjøkkenbenken i ca 1 time."
+      },
+      {
+        "title": "Ribba - 08:00",
+        "description": "Sett ovnen på 160 grader, over og undervarme. Kok opp 5 liter vann. Skyll ribba med kokende vann og tørk godt av ribba. Grovkutt grønnsakene og del hvitløken i to."
+      },
+      {
+        "title": "",
+        "description": "Bruk en stekeform som er ca like stor som ribba, den må ikke være for stor.\r\nLegg grovt kuttede grønnsaker, krydder og øl i stekeformen. Hell i vann til det står ca to cm væske i bunnen av stekeformen. Legg ribba oppå, og pass på så den ikke har et søkk i midten. Fettet skal kunne renne av, legg noe under om nødvendig.\r\n"
+      },
+      {
+        "title": " Ribba - 08:30",
+        "description": "Sett et steketermometer i det tykkeste stykket med kjøtt. Ha ribba midt i ovnen på 160 grader."
+      },
+      {
+        "title": "",
+        "description": "Etter 30 minutter setter du ned temperaturen til 90 grader.\r\n"
+      },
+      {
+        "title": "",
+        "description": "Nå skal ribba stå på lav varme helt til middagstider. Den skal nå rundt 80 grader kjernetemperatur stille og rolig i løpet av dagen. Når den har nådd 80 grader, kan du starte på de neste prosessene. Om den når 80 grader tidligere enn planlagt, er det bare å la den stå i ovnen. Dette avhenger av tykkelsen på ribba, så tenk gjennom tidsbruk ut fra størrelsen på ribba, og når du ønsker at ribba skal være klar på bordet.\r\nTidene etter dette punktet er veiledende, og må avpasses temperatur og ønsket spisetid."
+      },
+      {
+        "title": "Surkål",
+        "description": "Surkålen kan helt fint lages dagen før, og varmes opp før middag."
+      },
+      {
+        "title": "",
+        "description": "Skjær kålen i fine strimler. Ikke ta med kjernen. Skrell epler og skjær i tynne skiver, ikke ta med kjernen."
+      },
+      {
+        "title": "",
+        "description": "Legg kål, epler, karve, salt og pepper lagvis i en passende kjele. Hell på eplejuice og eddik. Kok opp og la det småkoke i 45 minutter med lokk."
+      },
+      {
+        "title": "",
+        "description": "Juster smaken med sukker,salt, pepper og eddik til du får den smaken du er ute etter. La småputre i ca 1 time uten lokk. For å toppe det hele kan du røre inn litt ribbesjy før servering."
+      },
+      {
+        "title": "Rørte tyttebær",
+        "description": "Ha tyttebær i en bolle. Tyttebær har veldig ulik syresmak, så her må man bare smake til. Smak på bærene, og rør sammen med litt sukker av gangen, til du har en fin balanse. Knus noen av bærene, men ikke alle for å få en fin tekstur. Avslutt med en liten skvis sitron, som balanserer syren med litt fruktighet."
+      },
+      {
+        "title": "Ribba - 16:30",
+        "description": "Hvis kjernetemp er 80 grader skal det poppes svor. Bruk varmluft, og sett på 250 grader eller mer, men ikke grillelement. FØLG MED! Hele ribba skal være poppet, det er på dette tidspunktet du får igjen for å legge ribba jevnt og uten søkk i midten."
+      },
+      {
+        "title": "Ribba - 17:00",
+        "description": "Hvis svoren er sprø, ta ribba ut av ovnen og sett til hvile. Ribba bør hvile på benken, utildekt, i minst 20 minutter før du skjærer i den. På denne tiden kan du varme medister, lage saus, og ferdigstille alle andre prosesser. Husk at kraften fra ribba skal siles og brukes i sausen.(se nedover)"
+      },
+      {
+        "title": "Ovnstekte poteter",
+        "description": "Potetene kan settes i ovnen under ribba imens ribba poppes. Eller 45-60 minutter før servering."
+      },
+      {
+        "title": "",
+        "description": "Vask potetene. Legg de på et stekebrett, og dryss over olivenolje og grovt salt. Stek i ovnen under ribba til de er gylne og sprø. Ribba blir sikkert ferdig først, så la potetene stå i ovnen med medisterkaker på 180 grader i ca 20 minutter til."
+      },
+      {
+        "title": "Medisterpølser",
+        "description": "Varm medisterpølser i stekepanna."
+      },
+      {
+        "title": "Epler og svisker",
+        "description": "Epler og svisker kan lages imens ribba hviler."
+      },
+      {
+        "title": "",
+        "description": "Kutt eplene i tynne båter. Stek epler og svisker i smør og stekefett fra medisterpølser til de er gylne. Rør inn honning, sitron, en kvist rosmarin, salt og pepper. Ved servering kan rosmarinen fjernes."
+      },
+      {
+        "title": "Saus - brun jevning",
+        "description": "Dette steget trenger tålmodighet og kan fint gjøres et par dager før, og oppbevares i kjøleskapet."
+      },
+      {
+        "title": "",
+        "description": "Brun smøret over middels høy varme i en liten kjele, rør inn melet med en spiralvisp til det ikke er klumper. Sett jevningen på middels varme og kok til den får ønsket farge, vi liker den mørk brun noe som vil ta nesten en halv time. Pass på at den ikke får for høy varme, da vil den brenne seg. Den skal sakte men sikkert få en dyp brunfarge."
+      },
+      {
+        "title": "Saus - kraft",
+        "description": "Når ribba er ute av ovnen, og står på hvil. Sil av stekesjyen, press grønnsakene for all den gode smaken og la den stå et par minutter. Ved å hvile litt, vil fettet legge seg på toppen, og du kan enkelt ta av en del med en øse."
+      },
+      {
+        "title": "",
+        "description": "Om du har hatt den brune jevningen i kjøleskapet smelt den over middels varme. Når den er smeltet, spe med stekesjyen og rør godt med en spiralvisp mellom hver gang du har i en øse. Pass på så det ikke blir klumper."
+      },
+      {
+        "title": "",
+        "description": "Når du får ønsket konsistens sett sausen på kok. Ønsket konsistens er litt tykk, men fortsatt rennende. Kok sausen til den ikke lenger har melsmak, og får en myk og god konsistens."
+      },
+      {
+        "title": "",
+        "description": "Når dette er gjort, er det på tide å smake til, start med å smake på sausen sånn den er. Målet fra dette tidspunktet er å heve smaken, kjenn etter om den mangler noe og velg en smak av gangen. Start eksempelvis med sødme, ta en teskje med portvinsgelé, bland inn og smak igjen. Den skal få smak av geleen, men skal ikke få for mye. Smaker du den ikke, må du ha i mer."
+      },
+      {
+        "title": "",
+        "description": "Ta så de andre smakene, ta litt av gangen og smak mellom hver gang. Husk at det kan ta bittelitt tid før ingrediensene er godt inkorporert i sausen, så ikke vær for snar."
+      },
+      {
+        "title": "",
+        "description": "Når du er fornøyd med smaken, er den ferdig. Da bør resten også være ferdig, og maten kan serveres."
+      },
+      {
+        "title": "Servering",
+        "description": "Skjær ribbe i porsjonsstykker. Server med medisterkaker, medisterpølser, surkål, ovnsbakte poteter, epler og svisker, rørte tyttebær, sylta rødløk, sylta agurk og saus. God jul!"
+      }
+    ],
+    "images": [
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2024/ribbe/DSC07913.jpg",
+        "alt": "ovnstekte poteter"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2024/ribbe/DSC07897.jpg",
+        "alt": "siler ribbesjy"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2024/ribbe/DSC07933.jpg",
+        "alt": "surkål"
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2024/ribbe/DSC07907.jpg",
+        "alt": "epler og svisker i panne"
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2024/ribbe/DSC07923.jpg",
+        "alt": "skjærer ribbe"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2024/ribbe/main.jpg",
+        "alt": "julemåltid på et fat"
+      }
+    ],
+    "keywords": [
+      "jul",
+      "juleribbe",
+      "julemiddag",
+      "svin",
+      "gris",
+      "epler og svisker",
+      "saus",
+      "surkål",
+      "ovnstekte poteter",
+      "rørte tyttebær"
+    ]
   }
 ]
