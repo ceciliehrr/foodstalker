@@ -15255,5 +15255,284 @@
       "ovnstekte poteter",
       "rørte tyttebær"
     ]
+  },
+  {
+    "id": "porchetta",
+    "imageurl": "https://foodstalker.b-cdn.net/2024/porchetta/main.jpg",
+    "alt": "porchetta",
+    "title": "Porchetta",
+    "date": "2025-01-03",
+    "category": "helg",
+    "description": "En av våre favoritter til nyttårsmiddagen er porchetta med colcannon, grønne bønner og sylta rødkål.",
+    "longDescription": "Denne har blitt til i løpet av noen år med testing av porchetta. Nå har vi funnet vår favorittkombo med smaker. Stikk innom din favorittslakter og be om en benfri tynnribbe fra en gris som har hatt det bra. Rull porchettaen 1-2 dager i forveien, slik at smakene får satt seg skikkelig. Og la stå og steke i 8-9 timer, dette spørs på tykkelsen på rullen. Godt nytt år!",
+    "time": "2 dager",
+    "portions": 6,
+    "tips": "Vi anbefaler å krydre i god tid før dagen den skal stekes. Denne oppskriften er en blanding av ulike oppskrifter fra Lise Finckenhagen, Reneé Fagerhøi og egne ideer.",
+    "chef": "Pete",
+    "tipsurl": "",
+    "ingredients": [
+      {
+        "title": "Porchetta",
+        "ingredients": [
+          {
+            "quantity": "3 kg",
+            "name": "tynnribbe av god kvalitet, med svor, uten ben"
+          },
+          {
+            "quantity": "",
+            "name": "olivenolje og salt"
+          }
+        ]
+      },
+      {
+        "title": "Kryddermiks",
+        "ingredients": [
+          {
+            "quantity": "1 ss",
+            "name": "hel sort pepper"
+          },
+          {
+            "quantity": "1 ss",
+            "name": "fennikelfrø"
+          },
+          {
+            "quantity": "2 ss",
+            "name": "flaksalt"
+          },
+          {
+            "quantity": "1 stk",
+            "name": "økologisk sitron, skallet"
+          },
+          {
+            "quantity": "0.5 ts",
+            "name": "tørket chili, knust"
+          },
+          {
+            "quantity": "3-4 ss",
+            "name": "frisk rosmarin"
+          },
+          {
+            "quantity": "2 ss",
+            "name": "friske salvieblader"
+          },
+          {
+            "quantity": "2 ss",
+            "name": "frisk timian"
+          },
+          {
+            "quantity": "4 fedd",
+            "name": "hvitløk"
+          }
+        ]
+      },
+      {
+        "title": "Colcannon",
+        "ingredients": [
+          {
+            "quantity": "1 kg",
+            "name": "mandelpotet"
+          },
+          {
+            "quantity": "3 dl",
+            "name": "kremfløte"
+          },
+          {
+            "quantity": "300 g",
+            "name": "smør"
+          },
+          {
+            "quantity": "1 stk",
+            "name": "purreløk"
+          },
+          {
+            "quantity": "2 fedd",
+            "name": "hvitløk"
+          },
+          {
+            "quantity": "3 ts",
+            "name": "salt"
+          },
+          {
+            "quantity": "",
+            "name": "grovkornet svart pepper"
+          }
+        ]
+      },
+      {
+        "title": "Bønner og bacon",
+        "ingredients": [
+          {
+            "quantity": "600 g",
+            "name": "aspargesbønner"
+          },
+          {
+            "quantity": "1 pakke",
+            "name": "bacon"
+          },
+          {
+            "quantity": "1 stk",
+            "name": "chili"
+          },
+          {
+            "quantity": "1 ts",
+            "name": "honning, men smak til"
+          },
+          {
+            "quantity": "",
+            "name": "salt og pepper"
+          }
+        ]
+      },
+      {
+        "title": "Sylta rødkål",
+        "ingredients": [
+          {
+            "quantity": "1 stk",
+            "name": "rødkål"
+          },
+          {
+            "quantity": "2 dl",
+            "name": "vann"
+          },
+          {
+            "quantity": "2 dl",
+            "name": "sukker"
+          },
+          {
+            "quantity": "2 dl",
+            "name": "eplesidereddik, eller annen type eddik"
+          }
+        ]
+      },
+      {
+        "title": "Utstyr",
+        "ingredients": [
+          {
+            "quantity": "tråd/hyssing som kan brukes i mat",
+            "name": ""
+          }
+        ]
+      }
+    ],
+    "steps": [
+      {
+        "title": "Kryddermiks",
+        "description": "Sett på en tørr panne på middels høy varme. Rist pepper og fennikelfrø til du kjenner aromaene lukte godt. Knus deretter pepper og fennikel sammen med flaksaltet i en morter, ha alt i en liten bolle. Bland inn revet sitronskall fra en hel sitron, tørket knust chili, hakkede urter og finhakket hvitløk."
+      },
+      {
+        "title": "Porchetta",
+        "description": "Snitt svoren med en kniv, skjær ca 1cm brede striper mot rulleretning (lange striper). Snitt godt ned i fettet uten å treffe kjøttet."
+      },
+      {
+        "title": "",
+        "description": "Legg ribba med svoren ned, finn midten på kjøttstykket og skjær et snitt halvveis ned i kjøttet. Skjær ut mot begge kanter slik at du kan brette kjøttet ut til begge sider. (se bildet nederst på siden). Ikke skjær igjennom, alt skal henge sammen."
+      },
+      {
+        "title": "",
+        "description": "Nå som kjøttet ligger som en åpen bok gnir du kjøttet inn med halvparten av kryddermiksen. Legg kjøttet tilbake som om du lukker boken og gni resten av kryddermiksen godt inn i kjøttet. (svoren skal ikke krydres enda)."
+      },
+      {
+        "title": "",
+        "description": "Ta frem hyssing og saks. Rull ribba stramt sammen og bind rullen opp med hyssing. Bruk flere tråder med et par cm avstand, slik at du får bundet rullen godt sammen. "
+      },
+      {
+        "title": "",
+        "description": "Pakk ribberullen godt inn i plast, eller vakuumpakk den hvis du har sånt utstyr. La ligge i kjøleskap et par dager."
+      },
+      {
+        "title": "",
+        "description": "Ta ut ribberullen og la stå på benken for å romtemperes, ca 30 minutter. Gni hele rullen godt inn med olivenolje og salt. Sett ovnen på 160 grader. Ha ribberullen på en liten rist i en form som passe akkurat størrelsen på rullen. Ha i et par cm vann i formen. Sett ribberullen midt i ovnen i 30 minutter. Sett deretter ned varmen til 90 grader."
+      },
+      {
+        "title": "",
+        "description": "La rullen stå slik i 8-9 timer. Imens kan du preppe tilbehør. Den siste halvtimen setter du på varmluft på 250 grader. Følg med! Nå skal svoren poppes. Når svoren ser poppa og sprø ut på toppen kan du ta den ut og la hvile i minst 20 minutter før du tar av hyssing og skjærer den i skiver."
+      },
+      {
+        "title": "Sylta rødkål",
+        "description": "Dette kan fint gjøres dagen før. Skyll og kutt kål i strimler. Ha det i en bolle."
+      },
+      {
+        "title": "",
+        "description": "Kok opp vann, sukker og eddik i en kasserolle. Kok til sukkeret er løst opp. Hell blandingen over den kutta rødkålen. Avkjøl."
+      },
+      {
+        "title": "Colcannon",
+        "description": "Skrell poteter. Kok opp usaltet vann og kok potetene i 30-40 minutter."
+      },
+      {
+        "title": "",
+        "description": "Skyll purre og kutt i tynne strimler. Finhakk hvitløk."
+      },
+      {
+        "title": "",
+        "description": "Smelt smøret i en stekepanne og surr purreløk og hvitløk i ca 10 minutter til det blir mykt."
+      },
+      {
+        "title": "",
+        "description": "Når potetene er ferdige heller du av kokevannet og damp dem tørre i kjelen. Varm kremfløten og hell det over de varme potetene. Mos potetene grovt og vend inn purresmøret. Ikke bruk stavmikser her, ellers blir det lim. Denne potetmosen skal være rustikk og grov."
+      },
+      {
+        "title": "",
+        "description": "Smak til med salt og pepper og vend inn finhakket timian rett før servering."
+      },
+      {
+        "title": "Bønner og bacon",
+        "description": "Dette tilbehøret bør gjøres rett før servering. Rens og skyll chili og grønne bønner. Sett lettsaltet vann på kok og ha i de grønne bønnene. Kok i 2-3 minutter. Legg de grønne bønnene i isbad slik at kokeprosessen stopper og de holder den fine grønne fargen."
+      },
+      {
+        "title": "",
+        "description": "Kutt bacon i småbiter og stek til de er sprø. "
+      },
+      {
+        "title": "",
+        "description": "Tilsett de grønne bønnene, honning og chili og bland godt sammen. Stek og bland til honningen har smeltet. Smak til med salt og pepper. Om du ønsker søtere smak tar du i mer honning."
+      }
+    ],
+    "images": [
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2024/porchetta/DSC07566.jpg",
+        "alt": "skjære i ribba"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2024/porchetta/DSC07587.jpg",
+        "alt": "rulle ribbe"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2024/porchetta/DSC07624.jpg",
+        "alt": "rulla porchetta"
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2024/porchetta/DSC07568.jpg",
+        "alt": "snitte ribbe"
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2024/porchetta/DSC08260.jpg",
+        "alt": "porchetta, sylta rødkål og colcannon"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2024/porchetta/DSC08242.jpg",
+        "alt": "skjærer porchetta i skiver"
+      }
+    ],
+    "keywords": [
+      "porchetta",
+      "ribberull",
+      "ribbe",
+      "potetmos",
+      "colcannon",
+      "sylta rødkål",
+      "grønne bønner",
+      "jul",
+      "nyttår",
+      "nyttårsmiddag",
+      "fest",
+      "festmiddag"
+    ]
   }
 ]
