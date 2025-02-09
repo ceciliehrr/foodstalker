@@ -5,19 +5,21 @@ import Layout from "../layouts/Layout.astro";
 import Card from "../components/cards/Card.astro";
 
 // emojis
-import juletreEmoji from "../assets/juletre.svg";
+import lemonEmoji from "../assets/lemon.svg";
 import Grid from "../components/Grid.vue";
 import Divider from "../components/Divider.astro";
 
-// Hent oppskrifter med "jul" i nøkkelord
+// Hent oppskrifter med "sitron" i nøkkelord
 const recipes = getRecipes;
-const julRecipes = recipes.filter((recipe) => recipe.keywords.includes("jul"));
+const lemonRecipes = recipes.filter((recipe) =>
+  recipe.keywords.includes("sitron")
+);
 
 export async function getStaticPaths() {
-  // Bare én sti for "jul"
+  // Bare én sti for "sitron"
   return [
     {
-      params: { keyword: "jul" },
+      params: { keyword: "sitron" },
       props: {},
     },
   ];
@@ -28,16 +30,16 @@ function capitalizeFirstLetter(string) {
 }
 ---
 
-<Layout title="Jul">
+<Layout title="Sitron">
   <div class="fs-category__emoji">
-    <img src={juletreEmoji.src} alt="Juletre emoji" aria-hidden="true" />
+    <img src={lemonEmoji.src} alt="Sitron emoji" aria-hidden="true" />
   </div>
 
-  <Divider text={capitalizeFirstLetter("God jul")} />
+  <Divider text={capitalizeFirstLetter("God sitronsesong")} />
 
   <Grid>
     {
-      julRecipes.map((data) => (
+      lemonRecipes.map((data) => (
         <Card
           href={"/oppskrift/" + data.id}
           title={data.title}
