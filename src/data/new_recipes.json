@@ -15539,5 +15539,119 @@
       "fest",
       "festmiddag"
     ]
+  },
+  {
+    "id": "limoncello",
+    "imageurl": "https://foodstalker.b-cdn.net/2025/limoncello/DSC08796.jpg",
+    "alt": "limoncello på glass",
+    "title": "Limoncello",
+    "date": "2025-03-08",
+    "category": "drikke",
+    "description": "Hva med å lage din egen sitronlikør med amalfisitroner i vinter og dermed ha velkomstdrinken klar til 17.mai? Du kommer ikke til å angre.",
+    "longDescription": "Amalfisitronen er i sesong i januar og februar. Vi finner dem på Meny, som regel. Hjemmelaget limoncello smaker så mye bedre og friskere hjemmelaget enn kjøpt på polet, så her er det bare å produsere! Vår plan er å bruke den til limoncello spritz til 17. mai. Denne oppskriften blir til 1.5 liter limoncello.",
+    "time": "14 dager",
+    "portions": 1,
+    "tips": "Eksperimenter med ulik sprit for litt ulike styrker og smaker. For eksempel gin eller vodka. Bruk sitronsafta til å koke det inn med sukker, så du får lemonade. Eller lag sitronkrem eller sitronterte.",
+    "chef": "gladkokken",
+    "tipsurl": "https://gladkokken.no/oppskrifter/limoncello-hjemmelaget-sitronlikor-av-verdens-beste-sitroner",
+    "ingredients": [
+      {
+        "title": "Limoncello",
+        "ingredients": [
+          {
+            "quantity": "5 stk",
+            "name": "sitroner (helst amalfi)"
+          },
+          {
+            "quantity": "7 dl",
+            "name": "sprit"
+          },
+          {
+            "quantity": "7 dl",
+            "name": "vann"
+          },
+          {
+            "quantity": "300 g",
+            "name": "sukker"
+          }
+        ]
+      },
+      {
+        "title": "Utstyr",
+        "ingredients": [
+          {
+            "quantity": "",
+            "name": "sil, skallskreller (god potetskreller), glassflasker"
+          }
+        ]
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prepp",
+        "description": "Ta frem en bolle med vann og en grønnsaksskrubb. Skyll og skrubb sitronene rene og tørk de godt med papir eller rent håndkle.\r\n"
+      },
+      {
+        "title": "",
+        "description": "Skjær av det ytterste laget av skallet til sitronene med en egnet skreller, har du ingenting annet for hånd bruk en ostehøvel. Husk det hvite i skallet skal ikke med, det smaker bittert."
+      },
+      {
+        "title": "",
+        "description": "Legg skallet i et norgesglass eller noe annet med lokk. Hell over spriten og sett på lokket. Sett glasset i et mørkt skap og la stå i 7 dager. Snu og vend på glasset hver dag.\r\n"
+      },
+      {
+        "title": "Limoncello",
+        "description": "Kok opp vann og sukker. Kok til sukkeret er løst opp. Avkjøl."
+      },
+      {
+        "title": "",
+        "description": "Ta frem en sil og en bolle. Sil spriten i bolla. Tilsett den avkjølte sukkerlaken. Her kan man smake seg frem til hvor mye sukkerlake man ønsker. Men denne oppskriften skal være good. Rør godt."
+      },
+      {
+        "title": "",
+        "description": "Ha Limoncello i flasker og oppbevar i kjøleskap i ca 7 dager før servering."
+      }
+    ],
+    "images": [
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2025/limoncello/DSC08742.jpg",
+        "alt": "sitronskall blir lagt i glass"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2025/limoncello/DSC08749.jpg",
+        "alt": "sprit blir helt over sitronskall i glass"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2025/limoncello/DSC08820.jpg",
+        "alt": "sprit og sitron på glass"
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2025/limoncello/DSC08830.jpg",
+        "alt": "sprit og sitronskall blir silt oppi ei bolle"
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2025/limoncello/DSC08787.jpg",
+        "alt": "sprit og sitronskall på glass med sitroner i bakgrunnen"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2025/limoncello/DSC08831.jpg",
+        "alt": "sprit og sitron blir silt"
+      }
+    ],
+    "keywords": [
+      "sitron",
+      "amalfi",
+      "sprit",
+      "drink",
+      "limoncello",
+      "italia",
+      "italiensk"
+    ]
   }
 ]
