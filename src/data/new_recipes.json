@@ -268,7 +268,8 @@
       "tilbehør",
       "rundstykker",
       "grove",
-      "eltefrie"
+      "eltefrie",
+      "easter"
     ]
   },
   {
@@ -2201,7 +2202,8 @@
       "fest",
       "selskap",
       "poteter",
-      "kyllingkraft"
+      "kyllingkraft",
+      "easter"
     ]
   },
   {
@@ -4835,7 +4837,8 @@
       "saus",
       "rødvin",
       "tilbehør",
-      "lam"
+      "lam",
+      "easter"
     ]
   },
   {
@@ -5956,7 +5959,8 @@
       "myntedressing",
       "cider",
       "humlepung",
-      "pulled chicken"
+      "pulled chicken",
+      "easter"
     ]
   },
   {
@@ -9860,7 +9864,8 @@
       "lam",
       "kjøtt",
       "brød",
-      "turmat"
+      "turmat",
+      "easter"
     ]
   },
   {
@@ -10846,7 +10851,8 @@
       "pescetar",
       "pepperrot",
       "jul",
-      "nyttår"
+      "nyttår",
+      "easter"
     ]
   },
   {
@@ -12999,7 +13005,8 @@
       "sylta rødløk",
       "pålegg",
       "selskap",
-      "jul"
+      "jul",
+      "easter"
     ]
   },
   {
@@ -13015,7 +13022,7 @@
     "longDescription": "Cecilie´s favorittdessert og kake!",
     "time": "1.5 time",
     "portions": 10,
-    "tips": "Denne kan lages både i små terteformer eller en stor paiform. ",
+    "tips": "Denne kan lages både i små terteformer eller en stor paiform.",
     "chef": "Lise Finckenhagen",
     "tipsurl": "https://www.godt.no/oppskrifter/dessert/dessertpai/571/sitronpai-med-marengslokk",
     "ingredients": [
@@ -13369,7 +13376,8 @@
       "kjøtt",
       "selskap",
       "høst",
-      "vinter"
+      "vinter",
+      "easter"
     ]
   },
   {
@@ -14670,7 +14678,8 @@
       "julegodteri",
       "godteri",
       "mandler",
-      "søtt"
+      "søtt",
+      "easter"
     ]
   },
   {
@@ -15537,7 +15546,8 @@
       "nyttår",
       "nyttårsmiddag",
       "fest",
-      "festmiddag"
+      "festmiddag",
+      "easter"
     ]
   },
   {
@@ -15652,6 +15662,110 @@
       "limoncello",
       "italia",
       "italiensk"
+    ]
+  },
+  {
+    "id": "potetlomper",
+    "imageurl": "https://foodstalker.b-cdn.net/2025/potetlomper/main.jpg",
+    "alt": "potetlomper",
+    "title": "Potetlomper",
+    "date": "2025-04-12",
+    "category": "turmat",
+    "description": "Grillpølsesesongen er i gang. Hva med å lage egne lomper? Det er veldig enkelt og imponerende med hjemmelaget lomper, også smaker det fantastisk!",
+    "longDescription": "Hvis vi har kokte poteter til overs lager vi lomper av dem, kanskje det er noen andre rester etter middag du kan ha i dem? Eller bruk de til grillpølsene. ",
+    "time": "40 min",
+    "portions": 12,
+    "tips": "",
+    "chef": "matprat",
+    "tipsurl": "https://www.matprat.no/oppskrifter/tradisjon/potetlomper/",
+    "ingredients": [
+      {
+        "title": "",
+        "ingredients": [
+          {
+            "quantity": "1 kg",
+            "name": "melen potet , for eks. mandelpotet"
+          },
+          {
+            "quantity": "1 ts",
+            "name": "salt"
+          },
+          {
+            "quantity": "1.5 dl",
+            "name": "hvetemel"
+          },
+          {
+            "quantity": "1 dl",
+            "name": "siktet rugmel"
+          }
+        ]
+      }
+    ],
+    "steps": [
+      {
+        "title": "",
+        "description": "Kok potetene med skallet på, skrell de etterpå."
+      },
+      {
+        "title": "",
+        "description": "Mos potetene med en stapper eller for hånd i en stor bolle, ikke bruk mikser. Bland inn salt."
+      },
+      {
+        "title": "",
+        "description": "Ha i hvetemel og rugmel. Ikke bruk mer mel enn nødvendig. Lompene blir harde med for mye mel."
+      },
+      {
+        "title": "",
+        "description": "Del opp i 12-14 emner, og kjevle dem ut til runde lomper, ca. 20 cm i diameter."
+      },
+      {
+        "title": "",
+        "description": "Stek lompene i tørr stekepanne eller på takke til de er lyse, men med brune flekker. Vi pleier å steke til det begynner å ryke, deretter snu. "
+      },
+      {
+        "title": "",
+        "description": "Legg lompene oppå hverandre og dekk med et håndkle slik at de holder seg myke."
+      }
+    ],
+    "images": [
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2025/potetlomper/DSC08370.jpg",
+        "alt": "ingredienser"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2025/potetlomper/DSC08411.jpg",
+        "alt": "kjevle potetlompe"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2025/potetlomper/DSC08408.jpg",
+        "alt": "steke potetlompe"
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2025/potetlomper/DSC08417-2.jpg",
+        "alt": "ferdige potetlomper"
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2025/potetlomper/DSC08414.jpg",
+        "alt": "kjevle runde potetlomper"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2025/potetlomper/DSC08456.jpg",
+        "alt": "ferdige potetlomper på et bord"
+      }
+    ],
+    "keywords": [
+      "lomper",
+      "grill",
+      "bål",
+      "easter",
+      "påske",
+      "pølse"
     ]
   }
 ]
