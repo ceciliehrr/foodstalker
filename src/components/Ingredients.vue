@@ -8,12 +8,7 @@
         <button class="fs-ingredients__button" @click="decreaseServing">
           -
         </button>
-        <input
-          class="fs-ingredients__input"
-          id="portion"
-          type="number"
-          v-model="portion"
-        />
+        <input class="fs-ingredients__input" id="portion" type="number" v-model="portion" />
         <button class="fs-ingredients__button" @click="increaseServing">
           +
         </button>
@@ -24,35 +19,18 @@
         <h3 class="fs-ingredients__group-title">{{ group.title }}</h3>
       </div>
       <ul class="fs-ingredients__ol-list" tabindex="0">
-        <li
-          tabindex="0"
-          class="fs-checkbox__list"
-          v-for="(ingredient, ingredientIndex) in group.ingredients"
-          :key="ingredient.name"
-        >
-          <label
-            :for="'ingredient-' + index + '-' + ingredientIndex"
-            class="fs-checkbox__container"
-            :id="'ingredient-label' + index + '-' + ingredientIndex"
-          >
-            <input
-              type="checkbox"
-              :id="'ingredient-' + index + '-' + ingredientIndex"
-              :aria-labelledby="
-                'ingredient-label' + index + '-' + ingredientIndex
-              "
-            />
+        <li tabindex="0" class="fs-checkbox__list" v-for="(ingredient, ingredientIndex) in group.ingredients"
+          :key="ingredient.name">
+          <label :for="'ingredient-' + index + '-' + ingredientIndex" class="fs-checkbox__container"
+            :id="'ingredient-label' + index + '-' + ingredientIndex">
+            <input type="checkbox" :id="'ingredient-' + index + '-' + ingredientIndex" :aria-labelledby="'ingredient-label' + index + '-' + ingredientIndex
+              " />
             <span class="fs-checkmark"></span>
-            <strong
-              :id="'label-ingredient-' + index + '-' + ingredientIndex"
-              class="fs-checkbox__text"
-              >{{ calculateAdjustedQuantity(ingredient.quantity) }}</strong
-            >
-            <p
-              :id="'label-ingredient-' + index + '-' + ingredientIndex"
-              class="fs-checkbox__text"
-              v-html="ingredient.name"
-            ></p>
+            <p :id="'label-ingredient-' + index + '-' + ingredientIndex" class="fs-checkbox__text">
+              <span class="fs-checkbox__quantity">
+                {{ calculateAdjustedQuantity(ingredient.quantity) }}
+              </span>&nbsp;<span v-html="ingredient.name"></span>
+            </p>
           </label>
         </li>
       </ul>
@@ -80,6 +58,10 @@ export default {
     };
   },
   methods: {
+    calculateCombinedIngredient(quantity: string, name: string) {
+      const adjusted = this.calculateAdjustedQuantity(quantity);
+      return `${adjusted}\u00A0${name}`;
+    },
     decreaseServing() {
       this.portion = this.portion - 1;
     },
@@ -227,6 +209,14 @@ export default {
     margin-bottom: 0.5rem;
     margin-left: 0.5rem;
   }
+}
+
+.fs-checkbox__text {
+  white-space: normal;
+  word-break: break-word;
+}
+.fs-checkbox__quantity {
+  font-weight: 600; // eller 700, avhengig av hva som er definert i fontsystemet ditt
 }
 /**Checkbox*/
 </style>

@@ -15802,7 +15802,7 @@
         "ingredients": [
           {
             "quantity": "500 g",
-            "name": "små poteter (f.eks amandine)"
+            "name": "små poteter, for eksempel amandine"
           },
           {
             "quantity": "4 ss",
@@ -15842,7 +15842,7 @@
           },
           {
             "quantity": "1 ss",
-            "name": "finhakket ansjonsfilet i olivenolje"
+            "name": "finhakket ansjonsfilet"
           }
         ]
       },
@@ -15867,7 +15867,7 @@
     "steps": [
       {
         "title": "Potetsalat",
-        "description": "Kok potetene, avkjøl og skrell dem. Før du deler dem i passende biter."
+        "description": "Kok potetene, avkjøl og skrell dem, før du deler dem i passende biter."
       },
       {
         "title": "",
