@@ -5,21 +5,21 @@ import Layout from "../layouts/Layout.astro";
 import Card from "../components/cards/Card.astro";
 
 // emojis
-import easterEmoji from "../assets/chick.png";
+import mayEmoji from "../assets/tema/17-mai.png";
 import Grid from "../components/Grid.vue";
 import Divider from "../components/Divider.astro";
 
-// Hent oppskrifter med "easter" i nøkkelord
+// Hent oppskrifter med "17.mai" i nøkkelord
 const recipes = getRecipes;
-const easterRecipes = recipes.filter((recipe) =>
-  recipe.keywords.includes("easter")
+const mayRecipes = recipes.filter((recipe) =>
+  recipe.keywords.includes("17.mai")
 );
 
 export async function getStaticPaths() {
-  // Bare én sti for "easter"
+  // Bare én sti for "17.mai"
   return [
     {
-      params: { keyword: "easter" },
+      params: { keyword: "17.mai" },
       props: {},
     },
   ];
@@ -32,14 +32,14 @@ function capitalizeFirstLetter(string) {
 
 <Layout title="Sitron">
   <div class="fs-category__emoji">
-    <img src={easterEmoji.src} alt="Sitron emoji" aria-hidden="true" />
+    <img src={mayEmoji.src} alt="Sitron emoji" aria-hidden="true" />
   </div>
 
-  <Divider text={capitalizeFirstLetter("God påske")} />
+  <Divider text={capitalizeFirstLetter("Gratulerer med dagen")} />
 
   <Grid>
     {
-      easterRecipes.map((data) => (
+      mayRecipes.map((data) => (
         <Card
           href={"/oppskrift/" + data.id}
           title={data.title}

@@ -5693,7 +5693,8 @@
       "potetsalat",
       "agurksalat",
       "sommer",
-      "pescetar"
+      "pescetar",
+      "17.mai"
     ]
   },
   {
@@ -6102,7 +6103,8 @@
       "cremant",
       "sommer",
       "pescetar",
-      "sitron"
+      "sitron",
+      "17.mai"
     ]
   },
   {
@@ -6426,7 +6428,8 @@
       "mozzarella",
       "mozzarellasalat",
       "plommer",
-      "sommer"
+      "sommer",
+      "17.mai"
     ]
   },
   {
@@ -6535,7 +6538,8 @@
       "mozzarella",
       "basilikum",
       "sommer",
-      "vegetar"
+      "vegetar",
+      "17.mai"
     ]
   },
   {
@@ -10449,7 +10453,8 @@
       "brød",
       "grilling",
       "salat",
-      "vinaigrette"
+      "vinaigrette",
+      "17.mai"
     ]
   },
   {
@@ -10852,7 +10857,8 @@
       "pepperrot",
       "jul",
       "nyttår",
-      "easter"
+      "easter",
+      "17.mai"
     ]
   },
   {
@@ -11194,7 +11200,10 @@
       "fetaost",
       "yoghurt",
       "tilbehør",
-      "dipp"
+      "dipp",
+      "sommer",
+      "grillmat",
+      "17.mai"
     ]
   },
   {
@@ -12668,7 +12677,8 @@
       "jukseburrata",
       "italiensk",
       "brød",
-      "turmat"
+      "turmat",
+      "17.mai"
     ]
   },
   {
@@ -13006,7 +13016,8 @@
       "pålegg",
       "selskap",
       "jul",
-      "easter"
+      "easter",
+      "17.mai" 
     ]
   },
   {
@@ -13648,7 +13659,8 @@
       "rabarbracocktail",
       "drink",
       "rabarbradrink",
-      "sommer"
+      "sommer",
+      "17.mai"
     ]
   },
   {
@@ -15762,10 +15774,159 @@
     "keywords": [
       "lomper",
       "grill",
+      "grillmat",
       "bål",
       "easter",
       "påske",
-      "pølse"
+      "pølse",
+      "17.mai"
+    ]
+  },
+  {
+    "id": "potetsalat",
+    "imageurl": "https://foodstalker.b-cdn.net/2023/potetsalat/DSC09668.jpg",
+    "alt": "potetsalat i skål",
+    "title": "Potetsalat",
+    "date": "2025-05-11",
+    "category": "tilbehør",
+    "description": "En digg potetsalat som passer perfekt til grillmat, spekemat eller som en frisk rett på koldtbordet. I år blir den med på 17.mai-frokosten!",
+    "longDescription": "Denne er enkel å lage, men er rik på smak. Med møre poteter, en kremet dressing og friske urter, passer den like godt til sommerens grillkvelder som til julebord eller 17. mai-frokost. Topp med sylta finhakket rødløk for en syrlig og fargerik kontrast. Du kan gjerne lage den dagen før; den blir bare bedre av å trekke litt i kjøleskapet.",
+    "time": "45 minutter",
+    "portions": 4,
+    "tips": "",
+    "chef": "Hellstrøm",
+    "tipsurl": "",
+    "ingredients": [
+      {
+        "title": "Potetsalat",
+        "ingredients": [
+          {
+            "quantity": "500 g",
+            "name": "små poteter (f.eks amandine)"
+          },
+          {
+            "quantity": "4 ss",
+            "name": "majones"
+          },
+          {
+            "quantity": "2 ss",
+            "name": "mascarpone"
+          },
+          {
+            "quantity": "1 ss",
+            "name": "dijon sennep"
+          },
+          {
+            "quantity": "1 ss",
+            "name": "finhakket sjalottløk"
+          },
+          {
+            "quantity": "1 ss",
+            "name": "finsnittet gressløk"
+          },
+          {
+            "quantity": "2 ss",
+            "name": "finhakket kruspersille"
+          },
+          {
+            "quantity": "1 ss",
+            "name": "finhakket estragon"
+          },
+          {
+            "quantity": "2 ss",
+            "name": "hakket kapers"
+          },
+          {
+            "quantity": "2 ss",
+            "name": "hakket sylta agurk"
+          },
+          {
+            "quantity": "1 ss",
+            "name": "finhakket ansjonsfilet i olivenolje"
+          }
+        ]
+      },
+      {
+        "title": "Sylta rødløk",
+        "ingredients": [
+          {
+            "quantity": "1 stk",
+            "name": "finhakket rødløk"
+          },
+          {
+            "quantity": "0.5 dl",
+            "name": "hvitvinseddik"
+          },
+          {
+            "quantity": "1 ss",
+            "name": "sukker"
+          }
+        ]
+      }
+    ],
+    "steps": [
+      {
+        "title": "Potetsalat",
+        "description": "Kok potetene, avkjøl og skrell dem. Før du deler dem i passende biter."
+      },
+      {
+        "title": "",
+        "description": "Bland majones, dijonsennep, mascarpone i en bolle. Bland i finhakkede urter, sjalottløk, kapers, ansjosfilet og sylta agurk. Smak til med salt og pepper."
+      },
+      {
+        "title": "",
+        "description": "Vend potetene i dressingen."
+      },
+      {
+        "title": "Sylta rødløk",
+        "description": "Finhakk rødløk. Mål opp sukker og eddik i en bolle, bland i den finhakkede rødløken. La stå i ca 15 minutter. Sil av laken. "
+      },
+      {
+        "title": "",
+        "description": "Ha potetsalaten i en fin serveringsbolle, dryss over den syltete rødløken. Og pynt med litt hakkede urter du har til overs for litt farge."
+      }
+    ],
+    "images": [
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2023/potetsalat/DSC09657.jpg",
+        "alt": "hakkede ingredienser på en skjærefjøl"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2023/potetsalat/DSC09666.jpg",
+        "alt": "hakkede poteter"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2023/potetsalat/DSC09663.jpg",
+        "alt": "sylta rødløk"
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2023/potetsalat/DSC09935.jpg",
+        "alt": "ingredienser på et bord"
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2023/potetsalat/DSC09886.jpg",
+        "alt": "potetsalat på et dekket bord"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2023/potetsalat/DSC09888.jpg",
+        "alt": "potetsalat i en bolle"
+      }
+    ],
+    "keywords": [
+      "potetsalat",
+      "potet",
+      "salat",
+      "17.mai",
+      "sommer",
+      "grill",
+      "grillmat",
+      "tur"
     ]
   }
 ]
