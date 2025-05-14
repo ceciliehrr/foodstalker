@@ -1,0 +1,288 @@
+---
+import Layout from "src/layouts/Layout.astro";
+import glass17mai from "../assets/tema/glass17.png";
+import flagg17mai from "../assets/tema/flagg.png";
+import deviledEggs from "../assets/tema/deviledeggs.png";
+const dishes = [
+  {
+    title: "Roastbeef",
+    description: "Roastbeef med remulade og sprøstekt løk.",
+    image: "https://foodstalker.b-cdn.net/2023/roastbeef/DSC03404-2.jpg",
+    href: "/oppskrift/roastbeef",
+  },
+  {
+    title: "Fetadip og spekemat",
+    description: "Bakt feta med gresk yoghurt, urter og olivenolje.",
+    image: "https://foodstalker.b-cdn.net/2023/fetadip/DSC00223.jpg",
+    href: "/oppskrift/fetadipp",
+  },
+  {
+    title: "Gravet laks",
+    description: "Akevittgravet laks med sennepsaus og fennikelsalat.",
+    image: "https://foodstalker.b-cdn.net/2023/gravet-laks/DSC08361.jpg",
+    href: "/oppskrift/gravet-laks",
+  },
+  {
+    title: "Skalldyrsalat",
+    description: "Kremet skalldyrsalat med reker, krepsehaler og isbergsalat.",
+    image: "https://foodstalker.b-cdn.net/2021/skalldyrsalat/IMG_2262.jpg",
+    href: "/oppskrift/skalldyrsalat",
+  },
+  {
+    title: "Focaccia",
+    description: "Nybakt focaccia",
+    image: "https://foodstalker.b-cdn.net/2023/panini/DSC03196.jpg",
+    href: "/oppskrift/panini",
+  },
+  {
+    title: "Potetsalat",
+    description: "Digg potetsalat",
+    image: "https://foodstalker.b-cdn.net/2023/potetsalat/DSC09668.jpg",
+    href: "/oppskrift/potetsalat",
+  },
+  {
+    title: "Pavlova",
+    description: "Mr. lova lova pavlova",
+    image: "https://foodstalker.b-cdn.net/2020/pavlova-sm/pavlova-8.jpg",
+    href: "/oppskrift/pavlova",
+  },
+  {
+    title: "Limoncello spritz",
+    description: "Spritz up your life med limoncello og bobler.",
+    image: "https://foodstalker.b-cdn.net/2025/limoncello/DSC08780.jpg",
+    href: "/oppskrift/limoncello",
+  },
+  {
+    title: "Deviled eggs",
+    description: "Rosa egg med kremet fyll.",
+    image: deviledEggs.src,
+  },
+  {
+    title: "Pai med ost og bacon",
+    description: "Oppskrift fra middelalder'n, pimpa opp av oss",
+    image: "https://foodstalker.b-cdn.net/IMG_6440.jpg",
+  },
+];
+---
+
+<Layout
+  title="17. mai frokostmeny"
+  siteName="Foodstalker"
+  description="Foodstalker inviterer til 17. mai frokost, her er menyen"
+  image="https://foodstalker.b-cdn.net/17-mai-menybilde.png"
+  hideFoodstalkerLayout={true}
+>
+  <div class="border-wrapper">
+    <div class="content">
+      <div class="header">
+        <img
+          class="image-left"
+          src={glass17mai.src}
+          alt="Illustrasjon venstre"
+        />
+        <div class="title-wrapper">
+          <h2 class="henny-penny-regular">17. mai-frokost</h2>
+          <h1 class="henny-penny-regular">Meny</h1>
+        </div>
+        <img
+          class="image-right"
+          src={flagg17mai.src}
+          alt="Illustrasjon høyre"
+        />
+      </div>
+
+      <div class="grid">
+        {
+          dishes.map((dish) => (
+            <div class="dish">
+              <img src={dish.image} alt={dish.title} />
+
+              <h3 class="atma-regular">{dish.title}</h3>
+              <p>{dish.description}</p>
+
+              {dish.href ? (
+                <a href={dish.href} class="recipe-button">
+                  Se oppskrift
+                </a>
+              ) : (
+                <span class="recipe-button disabled">Kommer snart</span>
+              )}
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+
+  <style scoped>
+    @import url("https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Kirang+Haerang&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+    :root {
+      --border-size: 1rem;
+      --square-size: 1rem;
+    }
+
+    .header {
+      text-align: center;
+      color: #113856;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap; /* Sikrer god responsivitet */
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    .title-wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .image-left {
+      width: 30px;
+      transform: rotate(-10deg);
+    }
+    .image-right {
+      transform: rotate(20deg);
+      width: 40px;
+    }
+
+    .border-wrapper {
+      background-image: repeating-conic-gradient(
+        #a43b32 0deg 90deg,
+        white 90deg 180deg,
+        #113856 180deg 270deg,
+        white 270deg 360deg
+      );
+      background-size: var(--square-size) var(--square-size);
+      padding: var(--border-size);
+
+      overflow: auto;
+      max-width: 100%;
+    }
+
+    .content {
+      background: white;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      max-height: calc(100vh - 4rem); /* 2rem top + bottom padding */
+      overflow-y: auto;
+
+      font-family: "Roboto Mono", monospace;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+      color: #113856;
+    }
+
+    h2 {
+      margin-top: 1rem;
+      text-transform: uppercase;
+      color: #a43b32;
+    }
+
+    h1 {
+      font-size: 5.5rem;
+      margin-top: 1.25rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /*  kolonner per rad */
+      gap: 2.5rem;
+    }
+
+    .dish {
+      display: flex;
+      flex-direction: column; /* Vertikal justering */
+      justify-content: flex-start; /* Juster til toppen */
+      align-items: center; /* Horisontalt sentrert */
+      text-align: center;
+    }
+
+    .dish img {
+      width: 50%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #ccc;
+    }
+
+    .dish h3 {
+      margin-top: 0.5rem;
+      margin-bottom: 0.25rem;
+      font-size: 2rem;
+    }
+
+    .dish p {
+      margin: 0;
+      font-size: 0.95rem;
+      color: #415667;
+      min-height: 40px; /* Sikre at beskrivelsen har en minimumshøyde */
+    }
+
+    /* Responsiv design for små skjermer */
+    @media (max-width: 600px) {
+      .border-wrapper {
+        padding: 1rem; /* Redusere padding på mobil */
+      }
+
+      .grid {
+        grid-template-columns: repeat(1, 1fr);
+      }
+
+      .image-left {
+        width: 30px;
+        transform: rotate(-10deg);
+      }
+      .image-right {
+        transform: rotate(20deg);
+        width: 30px;
+      }
+      h1 {
+        margin-bottom: 0.4rem;
+      }
+    }
+    /* Responsiv design for nettbrett */
+    @media (min-width: 600px) and (max-width: 900px) {
+      .grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    .roboto-mono-regular {
+      font-family: "Roboto Mono", monospace;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+    }
+    .atma-regular {
+      font-family: "Atma", sans-serif;
+      font-weight: 600;
+      font-style: normal;
+    }
+    .henny-penny-regular {
+      font-family: "Kirang Haerang", system-ui;
+      font-weight: 400;
+      font-style: normal;
+    }
+    .recipe-button {
+      margin-top: 1rem;
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      color: #a43b32;
+      font-weight: bold;
+      font-size: 16px;
+      text-decoration: none;
+      border: 2px solid #113856; /* Rød kant */
+      border-radius: 0.5rem;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .recipe-button:hover {
+      background-color: #a43b32; /* Bytt til rød på hover */
+      border: 2px solid #113856;
+      color: #fff;
+    }
+  </style>
+</Layout>

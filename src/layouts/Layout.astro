@@ -7,18 +7,20 @@ export interface Props {
   siteName?: string;
   description?: string;
   image?: string;
+  hideFoodstalkerLayout?: boolean;
 }
 
 const {
-  title,
+  title = "Foodstalker",
   siteName = "Foodstalker",
   description = "Foodstalker en matblogg laget av to matstalkere som blir inspirert av flinke kokker og deler sine favorittoppskrifter",
   image = "https://foodstalker.b-cdn.net/2021/juleflesk/DSC00495-2.jpg",
+  hideFoodstalkerLayout = false,
 } = Astro.props as Props;
 ---
 
 <!doctype html>
-<html lang="en" class="html">
+<html lang="no" class="html">
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -27,24 +29,32 @@ const {
     />
     <meta property="og:type" content="website" />
     <meta property="og:title" content={title} />
-    <meta property="og:site_name" content={title} />
+    <meta property="og:site_name" content={siteName} />
     <meta property="og:description" content={description} />
     <meta name="description" content={description} />
     <meta property="og:image" content={image} />
-    <meta property="og:url" content="foodstalker.no" />
+    <meta
+      property="og:url"
+      content={new URL(Astro.url.pathname, Astro.site).href}
+    />
     <link rel="icon" href="/logo-pink35x35.png" />
     <script
       defer
       data-domain="foodstalker.no"
       src="https://plausible.io/js/script.js"></script>
+
     <title>Foodstalker - {title}</title>
   </head>
 
-  <body class="fs-body">
-    <Navbar client:load />
-    <main class="fs-container fs-container--tablet-big">
+  <body class={hideFoodstalkerLayout ? "" : "fs-body"}>
+    {!hideFoodstalkerLayout && <Navbar client:load />}
+    <main
+      class={hideFoodstalkerLayout
+        ? ""
+        : "fs-container fs-container--tablet-big"}
+    >
       <slot />
     </main>
-    <Footer client:load />
+    {!hideFoodstalkerLayout && <Footer client:load />}
   </body>
 </html>
