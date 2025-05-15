@@ -12778,9 +12778,9 @@
     "category": "helg",
     "description": "Roastbeef er luksus til frokost! Hva med å gjøre den om til en festlig forrett?",
     "longDescription": "Å kjøpe en boks finskåret fersk roastbeef fra Meny til helgefrokosten var luksus i Cecilie sin barndom. Og vi fikk det servert på loff med remulade, sylta agurk og sprøstekt løk. Hva med å lage alt selv ?  Alle ingrediensene kan lages i forkant av servering, så denne passer perfekt til en forrett så du kan fokusere på hovedretten.",
-    "time": "2 timer",
+    "time": "2 timer pluss avkjøling",
     "portions": 20,
-    "tips": "Denne mååå ikke absolutt serveres på vannbakkels. Prøv gjerne på blinis, butterdeig eller spiralloff.",
+    "tips": "Denne mååå ikke absolutt serveres på vannbakkels. Prøv gjerne på blinis, butterdeig eller spiralloff. Nå har vi skaffet oss en ny gadget, sous vide. Roastbeef er en fin måte å bruke den dingsen på. Spør oss om tips!",
     "chef": "Cecilie&Pete",
     "tipsurl": "",
     "ingredients": [
@@ -12847,6 +12847,10 @@
           {
             "quantity": "2 stk",
             "name": "finhakket sjalottløk"
+          },
+          {
+            "quantity": "0.5 stk",
+            "name": "sitron"
           },
           {
             "quantity": "0.5 ts",
@@ -12916,7 +12920,7 @@
       },
       {
         "title": "",
-        "description": "Sett stekeovn på 100 grader, og stek til mellom 55 og 60 grader. Da vil den være rosa og fin. Avkjøl kjøttet helt før du skjærer den i skiver, bruk gjerne en påleggskjæremaskin for å få fine tynne skiver."
+        "description": "Sett stekeovn på 100 grader, og stek til mellom 55 og 60 grader. Da vil den være rosa og fin. Avkjøl kjøttet helt før du skjærer den i skiver, om den ikke er helt avkjølt vil den bli vanskeligere å skjære. Vi pleier å la den ligge vakuumert i kjøleskapet minimum et døgn før vi skjærer i den. Bruk gjerne en pålegg/brød-skjæremaskin for å få fine tynne skiver."
       },
       {
         "title": "Remulade",
@@ -12924,7 +12928,7 @@
       },
       {
         "title": "",
-        "description": "Nå skal vi smake til majonesen slik at det blir remulade. Kutt alle ingredienser og tilsett i majonesen. Bland godt med en slikkepott og smak til med salt og pepper. Ha remuladen i en sprøytepose for at anretninga skal gå smooth."
+        "description": "Nå skal vi smake til majonesen slik at det blir remulade. Kutt alle ingredienser og tilsett i majonesen. Bland godt med en slikkepott og smak til med salt, pepper og sitron. Ha remuladen i en sprøytepose for at anretninga skal gå smooth."
       },
       {
         "title": "Sprøstekt løk",
