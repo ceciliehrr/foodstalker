@@ -8,11 +8,20 @@
 @use "./mixins/typography";
 @use "./mixins/" as *;
 
+/* Register your custom font family and tell the browser where to find it. */
+@font-face {
+  font-family: "CommitMono";
+  src: url("/fonts/CommitMonoV143/CommitMonoVariableFont.woff2") format("woff2");
+
+  font-style: normal;
+  font-display: swap;
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@300;400&display=swap");
 //@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400;500;600;700&display=swap');
 
 html {
-  font-family: monospace, system-ui, sans-serif;
+  font-family: "CommitMono", system-ui, sans-serif;
 }
 
 body {
@@ -93,7 +102,7 @@ a,
 button {
   color: var(--fs-berries-500);
   text-decoration: underline;
-  font-weight: 600;
+  font-weight: 700;
 
   &:hover {
     color: var(--fs-berries-300);
