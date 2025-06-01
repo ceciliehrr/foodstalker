@@ -1,0 +1,101 @@
+{
+    "id": "oestberg-skudd",
+    "imageurl": "https://foodstalker.b-cdn.net/2025/oestbergskudd/DSC09014.jpg",
+    "alt": "østberg-skudd i glass",
+    "title": "Østberg-skudd",
+    "date": "2025-06-01",
+    "category": "drikke",
+    "description": "Gin, lime og granskuddsirup i slush-form gir deg en skogstur i munnen. Frisk, frekk og akkurat passe farlig.",
+    "longDescription": "Østberg-skudd ble utviklet som en mellomrett til en middag i anledning et 40-årslag på Østberg gård – et sted hvor grantrær, gode avlinger og latter vokser fritt. Hva passer da bedre enn en liten smak av skogen med et hint av midtlivskrise og gin?\r\n\r\n I stedet for en tradisjonell palate cleanser, serveres dette skuddet iskaldt og i slush-form. Denne typen mellomrett fikk vi servert på Palace Grill, om vi husker rett var det lime og mynte med vodka, men de som har vært på Palace Grill vet at hukommelsen svinner i takt med sola en dag i mars.\r\n\r\nVi har utviklet en slush med granskuddsirup, gin og lime. Den kan se uskyldig ut med sitt litt barnslige utseende, men den biter fra seg som en bitter gammel grevling.\r\n\r\nDrinken er like deler skogsbad og after-ski, og fungerer perfekt som et pust i bakken før neste rett. Pass på at du bare tar ett skudd – med mindre du liker å miste følelsen i både gane og retningssans.",
+    "time": "rask",
+    "portions": 1,
+    "tips": "",
+    "chef": "Palace Grill",
+    "tipsurl": "",
+    "ingredients": [
+      {
+        "title": "1 liter Østberg-skudd",
+        "ingredients": [
+          {
+            "quantity": "2 dl",
+            "name": "gin, nøytral med litt einerpreg"
+          },
+          {
+            "quantity": "2 dl",
+            "name": "ferskpresset lime "
+          },
+          {
+            "quantity": "2 dl",
+            "name": "<a href='/oppskrift/granskuddsirup'>granskuddsirup</a>"
+          },
+          {
+            "quantity": "4 dl",
+            "name": "kaldt vann"
+          },
+          {
+            "quantity": "1 klype",
+            "name": "salt"
+          }
+        ]
+      }
+    ],
+    "steps": [
+      {
+        "title": "",
+        "description": "Ha alle ingredienser i et litermål og bland godt. Smak! Det skal være friskt og gransmak, ikke for søtt eller surt."
+      },
+      {
+        "title": "",
+        "description": "Kjør blandingen i en ismaskin til den har myk sorbet/slush-konsistens – vanligvis 45-60 min, avhengig av maskinen."
+      },
+      {
+        "title": "",
+        "description": "Server direkte eller overfør til boks og oppbevar i fryser – husk at den da blir hardere og bør tempereres noen minutter før servering."
+      },
+      {
+        "title": "Uten ismaskin",
+        "description": "Bruk en stor flat plastboks (minimum 1 liter). Hell blandingen i, og sett i fryser 24–48 timer før servering. Rør gjennom med gaffel første 3–4 timer, deretter hver 6.–8. time.\r\nDekk med lokk eller plastfolie."
+      }
+    ],
+    "images": [
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2025/oestbergskudd/DSC09050.jpg",
+        "alt": "granskuddslush i glass på bord"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2025/oestbergskudd/DSC09028.jpg",
+        "alt": "østberg skudd i glass"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2025/oestbergskudd/DSC08888.jpg",
+        "alt": "granskuddsirup i glass"
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2024/granskudden/DSC04601.jpg",
+        "alt": "granskudd"
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2025/oestbergskudd/DSC08884.jpg",
+        "alt": "ingredienser"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2025/oestbergskudd/DSC08878.jpg",
+        "alt": "granskuddsirup i måleglass"
+      }
+    ],
+    "keywords": [
+      "sommer",
+      "vår",
+      "granskudd",
+      "cocktail",
+      "slush",
+      "is",
+      "gin"
+    ]
+  }

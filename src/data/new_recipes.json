@@ -136,7 +136,8 @@
       "salat",
       "sunn",
       "svin",
-      "gris"
+      "gris",
+      "sommer"
     ]
   },
   {
@@ -4699,7 +4700,8 @@
       "parmesan",
       "grillmat",
       "tilbehør",
-      "grilltilbehør"
+      "grilltilbehør",
+      "sommer"
     ]
   },
   {
@@ -5694,7 +5696,8 @@
       "agurksalat",
       "sommer",
       "pescetar",
-      "17.mai"
+      "17.mai",
+      "sommer"
     ]
   },
   {
@@ -7360,7 +7363,8 @@
       "rabarbra",
       "søtt",
       "sirup",
-      "tilbehør"
+      "tilbehør",
+      "sommer"
     ]
   },
   {
@@ -10151,7 +10155,8 @@
       "pannebrød",
       "grillbrød",
       "grill",
-      "kebab"
+      "kebab",
+      "sommer"
     ]
   },
   {
@@ -11525,7 +11530,7 @@
     "title": "Crying tiger entrecôte",
     "date": "2023-09-14",
     "category": "helg",
-    "description": "En veldig rask og enkel grillmiddag med punch!",
+    "description": "En veldig rask og enkel grillmiddag med pønsj!",
     "longDescription": "Denne retten fikk vi servert på Ahaan. Vi digget den, og dro hjem og fant oppskriften i kokken Terje Ommundsens kokebok Thaimani. Årets biff-middag! Vi serverer den med <a href=\"/oppskrift/grillspyd\">perfekt sidesalat.</a>",
     "time": "40 minutter",
     "portions": 4,
@@ -11990,7 +11995,8 @@
       "mørdeig",
       "vaniljekrem",
       "gelé",
-      "gele"
+      "gele",
+      "sommer"
     ]
   },
   {
@@ -13021,7 +13027,7 @@
       "selskap",
       "jul",
       "easter",
-      "17.mai" 
+      "17.mai"
     ]
   },
   {
@@ -13485,7 +13491,8 @@
       "drink",
       "drikke",
       "dessert",
-      "vår"
+      "vår",
+      "sommer"
     ]
   },
   {
@@ -14223,7 +14230,8 @@
     "keywords": [
       "ramsløk",
       "vår",
-      "vegetar"
+      "vegetar",
+      "sommer"
     ]
   },
   {
@@ -15783,7 +15791,8 @@
       "easter",
       "påske",
       "pølse",
-      "17.mai"
+      "17.mai",
+      "sommer"
     ]
   },
   {
@@ -15931,6 +15940,130 @@
       "grill",
       "grillmat",
       "tur"
+    ]
+  },
+  {
+    "id": "limoncello-sour",
+    "imageurl": "https://foodstalker.b-cdn.net/2025/limoncellosour/DSC08969.jpg",
+    "alt": "limoncello sour i glass",
+    "title": "Limoncello sour",
+    "date": "2025-06-01",
+    "category": "drikke",
+    "description": "Hjemmelaget limoncello + fancy sitronsirup (Oleo Saccharum) = en syrlig, solgul drink som smaker som ferie på glass.",
+    "longDescription": "Når livet gir deg sitroner, lager du ikke bare limonade – du lager limoncello og Himkoks oppskrift på Oleo Saccharum(sukkerlake med sterk sitronsmak). Denne friske og syrlige godbiten er som en italiensk sommer på glass, med akkurat passe mye solskinn, sukker og sæss. Hjemmelaget limoncello og sirup gir drinken et løft som får butikkversjoner til å smake som gamle sokker. Skål for denne skummende og friske drinken som er farlig lett å like!\r\n\r\n",
+    "time": "noen dager, så veldig kjapt",
+    "portions": 1,
+    "tips": "Denne drinken er en pimpa versjon av fredagsdrinken til instragram-kontoen Plate it up. Oleo Saccharum kan også lages av for eksempel appelsin eller lime.",
+    "chef": "Plate it up og Himkok",
+    "tipsurl": "https://www.instagram.com/plateit.up/",
+    "ingredients": [
+      {
+        "title": "Oloi Saccharum Sitron",
+        "ingredients": [
+          {
+            "quantity": "1000 g",
+            "name": "sukker"
+          },
+          {
+            "quantity": "600 ml",
+            "name": "kokt vann"
+          },
+          {
+            "quantity": "3 stk",
+            "name": "sitroner, skallet"
+          }
+        ]
+      },
+      {
+        "title": "Et glass limoncello sour",
+        "ingredients": [
+          {
+            "quantity": "6 cl",
+            "name": "<a href='/oppskrift/limoncello'>limoncello</a>"
+          },
+          {
+            "quantity": "4 cl",
+            "name": "ren sitronsaft"
+          },
+          {
+            "quantity": "1 cl",
+            "name": "Oloi Saccharum Sitron, eller sukkerlake"
+          },
+          {
+            "quantity": "1-2 dråper",
+            "name": "<a href='https://www.vinmonopolet.no/Land/Trinidad-og-Tobago/Angostura-Aromatic-Bitters/p/19604'>Angostura bitters</a>"
+          },
+          {
+            "quantity": "1 stk",
+            "name": "eggehvite (skum)"
+          },
+          {
+            "quantity": "",
+            "name": "isbiter"
+          }
+        ]
+      }
+    ],
+    "steps": [
+      {
+        "title": "Oloi Saccharum",
+        "description": "Vei opp ett kilo sukker. Ha i en boks med lokk. Skrell skallet av tre sitroner, pass på at du ikke tar med det hvite i skallet, det er bittert. Ha sitronskallet i sukkeret - sørg for at sukkeret dekker skallet. La stå i romtemperatur i to døgn."
+      },
+      {
+        "title": "",
+        "description": "Etter to døgn. Kok opp vann, avkjøl litt. Tilsett varmt vann i sukkeret og rør til sukkeret er helt oppløst. Sil av og ha sirupen i sterile glass.\r\n\r\nHoldbar i ca 14 dager."
+      },
+      {
+        "title": "Et glass Limoncello sour",
+        "description": "Mål opp alle ingredienser og ha det i en shaker. Dryshake - shake en runde uten is først."
+      },
+      {
+        "title": "",
+        "description": "Shake på is - ha i et par isbiter og rist noen runder til."
+      },
+      {
+        "title": "",
+        "description": "Dobbeltsil - hell med silen som følger med en shaker, hell over i enda en sil og over i et pent glass."
+      }
+    ],
+    "images": [
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2025/limoncellosour/DSC08975.jpg",
+        "alt": "limoncello sour i glass"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2025/limoncellosour/DSC08963.jpg",
+        "alt": "Oloi Saccharum i flaske"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2025/limoncellosour/DSC08991.jpg",
+        "alt": "limoncello sour i glass på et bord"
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2025/limoncellosour/DSC08890.jpg",
+        "alt": "Oloi Saccharum helles i en drinkmikser"
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2025/limoncellosour/DSC08929.jpg",
+        "alt": "Petter mikser"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2025/limoncellosour/DSC08917.jpg",
+        "alt": "miksebolle"
+      }
+    ],
+    "keywords": [
+      "sommer",
+      "sitron",
+      "cocktail",
+      "drink",
+      "sukkerlake"
     ]
   }
 ]

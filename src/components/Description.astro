@@ -1,15 +1,15 @@
 ---
 import Divider from "./Divider.astro";
+
 export interface Props {
-  longdescription?: string;
+  longDescription?: string;
   description?: string;
   time?: string;
   portions?: number;
 }
 
-const { description, longdescription, time, portions } = Astro.props;
-
-// funksjon i stedenfor med set:html={rawHTMLString}
+const { description, longDescription, time, portions } = Astro.props;
+const paragraphs = longDescription?.split(/\r?\n\r?\n/).filter(Boolean) ?? [];
 ---
 
 <div class="fs-description">
@@ -18,9 +18,12 @@ const { description, longdescription, time, portions } = Astro.props;
     <span>⏳ {time}</span>
   </div>
   <Divider grey />
-  <p class="fs-description__ingress" set:html={description} />
 
-  <p class="fs-description__text" set:html={longdescription} />
+  {description && <p class="fs-description__ingress" set:html={description} />}
+
+  <div class="fs-description__text">
+    {paragraphs.map((para) => <p>{para.trim()}</p>)}
+  </div>
 </div>
 
 <style lang="scss" scoped>
@@ -34,7 +37,8 @@ const { description, longdescription, time, portions } = Astro.props;
       @include get-text("fs-oppskrift-ingress");
       margin-bottom: 1rem;
     }
-    &__text {
+    &__text p {
+      margin-bottom: 1rem;
     }
     &__emojis {
       display: flex;

@@ -37,6 +37,7 @@
                     <a href="/om-oss">Om oss</a>
                   </li>
                   <li><a href="/kart">Restaurantkart</a></li>
+                    <li><a href="/themenu">Menyer</a></li>
                 </ul>
                 <!-- Add more dropdown items if needed -->
               </div>
@@ -86,6 +87,9 @@
                 </li>
                 <li>
                   <a href="/kart"><i class="arrow right arrow--margin-right"></i>Restaurantkart</a>
+                </li>
+                <li>
+                  <a href="/themenu"><i class="arrow right arrow--margin-right"></i>Menyer</a>
                 </li>
               </ul>
               <!-- Add more dropdown items if needed -->
