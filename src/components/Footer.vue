@@ -21,8 +21,8 @@
 
         <div class="fs-footer-social fs-footer-gdpr-text">
           Vi er på instagram:
-          <a target="_blank" class="instagram" href="https://www.instagram.com/foodstalker.no/">
-            <img src="https://foodstalker.b-cdn.net/Instagram_Glyph_Gradient.png" alt="instagram logo"
+          <a target="_blank" class="instagram" href="https://www.instagram.com/foodstalker.no/" aria-label="link til">
+            <img src="https://foodstalker.b-cdn.net/Instagram_Glyph_Gradient.png" alt="instagram"
               aria-hidden="true" height="24" width="24" /></a>
         </div>
       </div>
