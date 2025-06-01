@@ -22,7 +22,7 @@ const paragraphs = longDescription?.split(/\r?\n\r?\n/).filter(Boolean) ?? [];
   {description && <p class="fs-description__ingress" set:html={description} />}
 
   <div class="fs-description__text">
-    {paragraphs.map((para) => <p>{para.trim()}</p>)}
+    {paragraphs.map((para) => <p set:html={para.trim()} />)}
   </div>
 </div>
 
