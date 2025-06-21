@@ -99,8 +99,8 @@ $fs-preset: (
   ),
   "fs-body1": (
     "size": "size-16",
-    "weight": "light",
-    "letter-spacing": "tight",
+    "weight": "normal",
+    "letter-spacing": "normal",
     "line-height": "lh-24",
   ),
   "fs-body2": (
@@ -112,7 +112,7 @@ $fs-preset: (
   "fs-subtitle1": (
     "size": "size-16",
     "weight": "medium",
-    "letter-spacing": "wider",
+    "letter-spacing": "wide",
     "line-height": "lh-20",
   ),
   "fs-subtitle2": (
@@ -159,6 +159,12 @@ $fs-preset: (
   ),
   "fs-oppskrift-steps": (
     "size": "size-16",
+    "weight": "normal",
+    "letter-spacing": "normal",
+    "line-height": "lh-24",
+  ),
+  "fs-card-date": (
+    "size": "size-16",
     "weight": "light",
     "letter-spacing": "tight",
     "line-height": "lh-24",
@@ -183,6 +189,11 @@ $fs-preset: (
 .fs-oppskrift-steps {
   font-size: 1rem;
   font-weight: 300;
+  letter-spacing: normal;
+}
+.fs-card-date {
+  font-size: 1rem;
+  font-weight: 100;
   letter-spacing: normal;
 }
 

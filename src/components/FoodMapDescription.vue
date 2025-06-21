@@ -94,11 +94,11 @@ export default {
 
     & h2 {
       @include get-text("fs-h6");
-      font-weight: 600;
+      font-weight: 700;
 
       @include bp("tablet-up") {
         @include get-text("fs-h5");
-        font-weight: 600;
+        font-weight: 700;
       }
     }
 
