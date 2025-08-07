@@ -5,21 +5,21 @@ import Layout from "../layouts/Layout.astro";
 import Card from "../components/cards/Card.astro";
 
 // emojis
-import summerEmoji from "../assets/tema/summer.svg";
+import tadaEmoji from "../assets/tema/party-popper-noto.svg";
 import Grid from "../components/Grid.vue";
 import Divider from "../components/Divider.astro";
 
 // Hent oppskrifter med "sommer" i nøkkelord
 const recipes = getRecipes;
-const summerRecipes = recipes.filter((recipe) =>
-  recipe.keywords.includes("sommer")
+const seniorRecipes = recipes.filter((recipe) =>
+  recipe.keywords.includes("senior")
 );
 
 export async function getStaticPaths() {
   // Bare én sti for "sommer"
   return [
     {
-      params: { keyword: "sommer" },
+      params: { keyword: "senior" },
       props: {},
     },
   ];
@@ -30,16 +30,28 @@ function capitalizeFirstLetter(string) {
 }
 ---
 
-<Layout title="Sommer">
+<Layout
+  title="Senior Oppskrifter"
+  description="Oppdag deilige og enkle oppskrifter for seniorer. Perfekte for alle som ønsker å lage sunne og smakfulle måltider."
+>
   <div class="fs-category__emoji">
-    <img src={summerEmoji.src} alt="sommer emoji" aria-hidden="true" />
+    <img src={tadaEmoji.src} alt="senior emoji" aria-hidden="true" />
   </div>
 
-  <Divider text={capitalizeFirstLetter("God sommer")} />
+  <Divider text={capitalizeFirstLetter("Gratulerer med 40 år, Petter")} />
 
+  <p>
+    Velkommen til oppskrifter for eldre – for deg som vet at mat smaker best når
+    man har levd lenge nok til å ha smakt det meste. Her finner du retter som er
+    snille med tennene, gode for sjelen, passe krydret og litt gamle i stilen
+    (men aldri på dato). Vi har samlet våre beste oppskrifter som tar hensyn til
+    både fordøyelsen og nostalgien. Velbekomme!
+  </p>
+
+  <Divider />
   <Grid>
     {
-      summerRecipes.map((data) => (
+      seniorRecipes.map((data) => (
         <Card
           href={"/oppskrift/" + data.id}
           title={data.title}
