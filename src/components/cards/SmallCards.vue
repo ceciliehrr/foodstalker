@@ -64,6 +64,7 @@ export default {
     background-color: var(--fs-gray-100);
   }
   &__container {
+    position: relative;
     display: flex;
     border-radius: 0.75rem;
     border: 2px solid var(--fs-gray-300);

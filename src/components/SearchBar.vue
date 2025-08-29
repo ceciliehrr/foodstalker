@@ -1,7 +1,28 @@
 <template>
   <div class="fs-search-bar">
     <h2>Søk i oppskrifter</h2>
-    <div class="fs-search-bar__container">
+
+    <!-- Search mode toggle -->
+    <div class="fs-search-bar__mode-toggle">
+      <button
+        @click="setSearchMode('quick')"
+        :class="['fs-search-bar__mode-btn', { active: searchMode === 'quick' }]"
+      >
+        🔍 Normalt søk
+      </button>
+      <button
+        @click="setSearchMode('ingredient')"
+        :class="[
+          'fs-search-bar__mode-btn',
+          { active: searchMode === 'ingredient' },
+        ]"
+      >
+        🥬 Hva har du i kjøleskapet?
+      </button>
+    </div>
+
+    <!-- Quick Search Mode -->
+    <div v-if="searchMode === 'quick'" class="fs-search-bar__container">
       <label for="search" class="sr-only">Søk</label>
       <div class="fs-search-bar__search-bar">
         <div class="fs-search-bar__icon">
@@ -68,30 +89,66 @@
             {{ category.name }} ({{ category.count }})
           </button>
         </div>
-
-        <!-- <div class="fs-search-bar__time-filter">
-          <label class="fs-search-bar__filter-label">Tilberedningstid:</label>
-          <div class="fs-search-bar__time-buttons">
-            <button
-              v-for="timeOption in timeOptions"
-              :key="timeOption.value"
-              @click="selectedTime = timeOption.value"
-              :class="[
-                'fs-search-bar__time-button',
-                {
-                  'fs-search-bar__time-button--active':
-                    selectedTime === timeOption.value,
-                },
-              ]"
-            >
-              {{ timeOption.label }}
-            </button>
-          </div>
-        </div> -->
       </div>
     </div>
 
-    <div v-if="search.length">
+    <!-- Ingredient Search Mode -->
+    <div
+      v-if="searchMode === 'ingredient'"
+      class="fs-search-bar__ingredient-finder"
+    >
+      <div class="fs-search-bar__ingredient-header">
+        <h3>🥬 Hva har du i kjøleskapet? 🐔</h3>
+        <p>Legg til ingredienser du har, så finner vi oppskrifter for deg</p>
+      </div>
+
+      <!-- Ingredient input -->
+      <div class="fs-search-bar__ingredient-input">
+        <input
+          v-model="ingredientInput"
+          @keydown="handleIngredientInput"
+          type="text"
+          placeholder="Skriv ingrediens og trykk Enter..."
+          class="fs-search-bar__ingredient-text-input"
+        />
+      </div>
+
+      <!-- Selected ingredients as tabs -->
+      <div
+        v-if="selectedIngredients.length > 0"
+        class="fs-search-bar__ingredient-tabs"
+      >
+        <h4>Ingredienser du har:</h4>
+        <div class="fs-search-bar__ingredient-tab-list">
+          <div
+            v-for="ingredient in selectedIngredients"
+            :key="ingredient"
+            class="fs-search-bar__ingredient-tab"
+          >
+            {{ ingredient }}
+            <button
+              @click="removeIngredient(ingredient)"
+              class="fs-search-bar__remove-tab-btn"
+            >
+              ×
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- No recipes found message for ingredients -->
+      <div
+        v-if="selectedIngredients.length > 0 && sortedItems.length === 0"
+        class="fs-search-bar__no-ingredient-results"
+      >
+        <p>
+          Beklager, vi har ikke laget nok oppskrifter. (vært for lite på hytta)
+        </p>
+        <span style="font-size: 50px">🏡</span>
+      </div>
+    </div>
+
+    <div v-if="search.length || selectedIngredients.length > 0">
       <p class="fs-search-bar__searchtxt" v-if="sortedItems.length >= 2">
         Du fant {{ sortedItems.length }} oppskrifter
       </p>
@@ -141,11 +198,22 @@ export default {
       showRecipes: 20,
       showSuggestions: false,
       selectedCategory: "",
-      selectedTime: "",
       searchSuggestions: [] as string[],
       searchTimeout: null as any,
       searchIndex: null as RecipeSearchIndex | null,
+      // Search mode and ingredient finder
+      searchMode: "quick" as "quick" | "ingredient",
+      selectedIngredients: [] as string[],
+      allIngredients: [] as string[],
+      ingredientInput: "",
     };
+  },
+
+  // Constants for ingredient matching
+  constants: {
+    // Simple binary scoring - either it matches or it doesn't
+    INGREDIENT_MATCH: 100,
+    NO_MATCH: 0,
   },
 
   mounted() {
@@ -163,9 +231,7 @@ export default {
 
       // If there's a search, use the search results for counting
       if (this.search.trim() && this.searchIndex) {
-        const searchResults = this.searchIndex.search(this.search, {
-          time: this.selectedTime || undefined,
-        });
+        const searchResults = this.searchIndex.search(this.search, {});
         recipesToCount = searchResults.map((result) => result.recipe);
       }
 
@@ -179,15 +245,6 @@ export default {
         name,
         count,
       }));
-    },
-
-    timeOptions() {
-      return [
-        { value: "", label: "Alle tider" },
-        { value: "quick", label: "⚡ Rask (<30 min)" },
-        { value: "medium", label: "⏱️ Medium (30-60 min)" },
-        { value: "long", label: "🕐 Lang (>60 min)" },
-      ];
     },
 
     sortedByCategory() {
@@ -210,61 +267,288 @@ export default {
         );
       }
 
-      // Then apply search filter if there's search text
-      if (this.search.trim() && this.searchIndex) {
-        // If we have a category filter, search within those results
-        if (this.selectedCategory) {
-          const searchResults = this.searchIndex.search(this.search, {
-            category: this.selectedCategory,
-            time: this.selectedTime || undefined,
-          });
+      // Then apply ingredient filter if ingredients are selected
+      if (this.selectedIngredients.length > 0) {
+        recipes = this.filterRecipesByIngredients(recipes, false); // Use 'some' for this case
 
-          return searchResults.map((result) => ({
-            ...result.recipe,
-            searchScore: result.score,
-          }));
-        } else {
-          // No category filter, search all recipes
-          const searchResults = this.searchIndex.search(this.search, {
-            time: this.selectedTime || undefined,
-          });
+        // Add ingredient match count and score for ranking
+        recipes = recipes.map((recipe) => {
+          let matchCount = 0;
+          let totalScore = 0;
 
-          return searchResults.map((result) => ({
-            ...result.recipe,
-            searchScore: result.score,
-          }));
-        }
+          if (recipe.ingredients) {
+            // Track which selected ingredients have been matched
+            const matchedIngredients = new Set();
+
+            recipe.ingredients.forEach((group: any) => {
+              if (group.ingredients) {
+                group.ingredients.forEach((ingredient: any) => {
+                  if (ingredient.name) {
+                    this.selectedIngredients.forEach((selectedIngredient) => {
+                      // Skip if this ingredient has already been matched
+                      if (matchedIngredients.has(selectedIngredient)) {
+                        return;
+                      }
+
+                      // Use simple word boundary matching
+                      if (
+                        this.ingredientsMatch(
+                          ingredient.name,
+                          selectedIngredient
+                        )
+                      ) {
+                        matchCount++;
+                        matchedIngredients.add(selectedIngredient);
+                      }
+                    });
+                  }
+                });
+              }
+            });
+          }
+
+          // Simple percentage: how many ingredients matched out of total selected
+          const matchPercentage = Math.round(
+            (matchCount / this.selectedIngredients.length) * 100
+          );
+
+          return {
+            ...recipe,
+            ingredientMatchCount: matchCount,
+            ingredientMatchScore: totalScore, // Use the calculated total score
+            ingredientMatchPercentage: matchPercentage,
+          };
+        });
+
+        // Sort by ingredient match score (highest first), then by count
+        recipes = this.sortRecipesByIngredientMatch(recipes);
       }
 
-      // If no search text, return category-filtered recipes
+      // Then apply search filter if there's search text
+      if (this.search.trim() && this.searchIndex) {
+        // Get search results
+        const searchResults = this.searchIndex.search(this.search, {
+          category: this.selectedCategory || undefined,
+        });
+
+        // Convert to recipe objects and apply ingredient filtering
+        let filteredSearchResults = searchResults.map((result) => ({
+          ...result.recipe,
+          searchScore: result.score,
+        }));
+
+        // Apply ingredient filter to search results if ingredients are selected
+        if (this.selectedIngredients.length > 0) {
+          filteredSearchResults = this.filterRecipesByIngredients(
+            filteredSearchResults,
+            true
+          ); // Use 'every' for this case
+
+          // Process ingredient matching and scoring
+          filteredSearchResults = filteredSearchResults.map((recipe) =>
+            this.processIngredientMatching(recipe)
+          );
+
+          // Sort by ingredient match score (highest first), then by count
+          filteredSearchResults = this.sortRecipesByIngredientMatch(
+            filteredSearchResults
+          );
+        }
+
+        return filteredSearchResults;
+      }
+
+      // If no search text, apply ingredient filtering to all recipes
+      if (this.selectedIngredients.length > 0) {
+        let filteredRecipes = this.filterRecipesByIngredients(recipes, true); // Use 'every' for this case
+
+        // Process ingredient matching and scoring
+        filteredRecipes = filteredRecipes.map((recipe) =>
+          this.processIngredientMatching(recipe)
+        );
+
+        // Sort by ingredient match score (highest first), then by count
+        filteredRecipes = this.sortRecipesByIngredientMatch(filteredRecipes);
+
+        return filteredRecipes;
+      }
+
+      // If no search text and no ingredients, return all recipes
       return recipes;
     },
 
     sortedItems() {
       return this.filteredRecipes.sort((a, b) => {
-        // Sort by search relevance first, then alphabetically
-        const scoreA = (a as any).searchScore || 0;
-        const scoreB = (b as any).searchScore || 0;
+        // Sort by ingredient match score first (if ingredients are selected)
+        if (this.selectedIngredients.length > 0) {
+          const scoreA = (a as any).ingredientMatchScore || 0;
+          const scoreB = (b as any).ingredientMatchScore || 0;
+          if (scoreB !== scoreA) {
+            return scoreB - scoreA;
+          }
 
-        if (scoreB !== scoreA) {
-          return scoreB - scoreA;
+          // If scores are equal, sort by match count
+          const matchCountA = (a as any).ingredientMatchCount || 0;
+          const matchCountB = (b as any).ingredientMatchCount || 0;
+          if (matchCountB !== matchCountA) {
+            return matchCountB - matchCountA;
+          }
         }
 
+        // Then sort by search relevance
+        const searchScoreA = (a as any).searchScore || 0;
+        const searchScoreB = (b as any).searchScore || 0;
+
+        if (searchScoreB !== searchScoreA) {
+          return searchScoreB - searchScoreA;
+        }
+
+        // Finally sort alphabetically
         return a.title.localeCompare(b.title);
       });
     },
 
     recipeShowed() {
+      // For ingredient search, show max 10 recipes
+      if (this.selectedIngredients.length > 0) {
+        return this.sortedItems.slice(0, 10);
+      }
+      // For regular search, show the normal amount
       return this.sortedItems.slice(0, this.showRecipes);
     },
   },
 
   methods: {
+    // Helper method to check if ingredients match and return score
+    ingredientsMatch(
+      ingredientName: string,
+      selectedName: string
+    ): { matches: boolean; score: number } {
+      const ingredientLower = ingredientName.toLowerCase();
+      const selectedLower = selectedName.toLowerCase();
+
+      if (ingredientLower === selectedLower) {
+        // Exact match gets highest score
+        return { matches: true, score: 100 };
+      } else if (
+        ingredientLower.startsWith(selectedLower + " ") ||
+        ingredientLower.endsWith(" " + selectedLower) ||
+        ingredientLower.includes(" " + selectedLower + " ")
+      ) {
+        // Word boundary match (e.g., "kylling" matches "kyllingfilet", "kyllingbryst")
+        // but NOT "kyllingkraft" or "kyllingfond"
+        return { matches: true, score: 75 };
+      } else if (ingredientLower.includes(selectedLower)) {
+        // Contains match (lowest score) - only for very close matches
+        // This catches cases like "kylling" in "kyllingfilet" but not "kyllingkraft"
+        const remainingText = ingredientLower.replace(selectedLower, "");
+        if (remainingText.length <= 8) {
+          // Only if the remaining text is short
+          return { matches: true, score: 25 };
+        }
+        return { matches: false, score: 0 };
+      } else {
+        // No match
+        return { matches: false, score: 0 };
+      }
+    },
+
+    // Helper method to process ingredient matching for a recipe
+    processIngredientMatching(recipe: any): any {
+      if (!this.selectedIngredients.length || !recipe.ingredients) {
+        return recipe;
+      }
+
+      let matchCount = 0;
+      let totalScore = 0;
+      const matchedIngredients = new Set();
+
+      // Process each ingredient group
+      recipe.ingredients.forEach((group: any) => {
+        if (group.ingredients) {
+          group.ingredients.forEach((ingredient: any) => {
+            if (ingredient.name) {
+              this.selectedIngredients.forEach((selectedIngredient) => {
+                // Skip if already matched
+                if (matchedIngredients.has(selectedIngredient)) {
+                  return;
+                }
+
+                // Use ingredient matching with scoring
+                const matchResult = this.ingredientsMatch(
+                  ingredient.name,
+                  selectedIngredient
+                );
+                if (matchResult.matches) {
+                  matchCount++;
+                  matchedIngredients.add(selectedIngredient);
+                  totalScore += matchResult.score;
+                }
+              });
+            }
+          });
+        }
+      });
+
+      // Simple percentage: how many ingredients matched out of total selected
+      const matchPercentage = Math.round(
+        (matchCount / this.selectedIngredients.length) * 100
+      );
+
+      return {
+        ...recipe,
+        ingredientMatchCount: matchCount,
+        ingredientMatchScore: totalScore, // Use the calculated total score
+        ingredientMatchPercentage: matchPercentage,
+      };
+    },
+
+    // Reusable method to filter recipes by ingredients
+    filterRecipesByIngredients(
+      recipes: any[],
+      requireAll: boolean = true
+    ): any[] {
+      if (this.selectedIngredients.length === 0) {
+        return recipes;
+      }
+
+      const filterMethod = requireAll ? "every" : "some";
+
+      return recipes.filter((recipe) => {
+        if (!recipe.ingredients) return false;
+
+        // Check if recipe contains the required ingredients
+        return this.selectedIngredients[filterMethod]((selectedIngredient) => {
+          return recipe.ingredients.some((group: any) => {
+            if (!group.ingredients) return false;
+            return group.ingredients.some((ingredient: any) => {
+              if (!ingredient.name) return false;
+              // Smart match - ingredient name must contain the selected ingredient
+              // This allows "kylling" to match "kyllingfilet", "kyllingbryst", etc.
+              // But "kyllingfilet" won't match "kylling"
+              return ingredient.name
+                .toLowerCase()
+                .includes(selectedIngredient.toLowerCase());
+            });
+          });
+        });
+      });
+    },
+
+    // Reusable method to sort recipes by ingredient match
+    sortRecipesByIngredientMatch(recipes: any[]): any[] {
+      return recipes.sort((a: any, b: any) => {
+        if (b.ingredientMatchScore !== a.ingredientMatchScore) {
+          return b.ingredientMatchScore - a.ingredientMatchScore;
+        }
+        return b.ingredientMatchCount - a.ingredientMatchCount;
+      });
+    },
+
     onSearchInput() {
       // Clear filters when starting a new search
-      if (this.selectedCategory || this.selectedTime) {
+      if (this.selectedCategory) {
         this.selectedCategory = "";
-        this.selectedTime = "";
       }
 
       // Debounce search suggestions
@@ -304,6 +588,66 @@ export default {
         this.selectedCategory = ""; // Deselect if already selected
       } else {
         this.selectedCategory = categoryName;
+      }
+    },
+
+    // Search mode management
+    setSearchMode(mode: "quick" | "ingredient") {
+      this.searchMode = mode;
+      // Clear search when switching modes
+      this.search = "";
+      this.selectedIngredients = [];
+      this.ingredientInput = "";
+      this.showSuggestions = false;
+      this.selectedCategory = "";
+
+      // Initialize ingredients if switching to ingredient mode
+      if (mode === "ingredient" && this.allIngredients.length === 0) {
+        this.extractAllIngredients();
+      }
+    },
+
+    extractAllIngredients() {
+      const ingredients = new Set<string>();
+
+      this.recipes.forEach((recipe) => {
+        if (recipe.ingredients) {
+          recipe.ingredients.forEach((group: any) => {
+            if (group.ingredients) {
+              group.ingredients.forEach((ingredient: any) => {
+                if (ingredient.name && ingredient.name.trim()) {
+                  ingredients.add(ingredient.name.trim());
+                }
+              });
+            }
+          });
+        }
+      });
+
+      this.allIngredients = Array.from(ingredients).sort();
+    },
+
+    handleIngredientInput(event: KeyboardEvent) {
+      if (event.key === "Enter") {
+        event.preventDefault();
+        this.addIngredientFromInput();
+      }
+    },
+
+    addIngredientFromInput() {
+      if (this.ingredientInput.trim()) {
+        const ingredient = this.ingredientInput.trim();
+        if (!this.selectedIngredients.includes(ingredient)) {
+          this.selectedIngredients.push(ingredient);
+        }
+        this.ingredientInput = ""; // Reset input
+      }
+    },
+
+    removeIngredient(ingredient: string) {
+      const index = this.selectedIngredients.indexOf(ingredient);
+      if (index > -1) {
+        this.selectedIngredients.splice(index, 1);
       }
     },
   },
@@ -359,6 +703,11 @@ export default {
     border-radius: 0.5rem;
     width: 100%;
     display: block;
+
+    @media (max-width: 767px) {
+      font-size: 0.9rem;
+      padding: 0.75rem 0.5rem 0.75rem 2.5rem;
+    }
 
     &:focus,
     &:active {
@@ -443,6 +792,10 @@ export default {
     flex-wrap: wrap;
     gap: 0.5rem;
     margin-bottom: 1rem;
+
+    @media (max-width: 767px) {
+      gap: 0.375rem;
+    }
   }
 
   &__filter-tab {
@@ -456,6 +809,11 @@ export default {
     cursor: pointer;
     transition: all 0.2s ease;
     white-space: nowrap;
+
+    @media (max-width: 767px) {
+      padding: 0.375rem 0.75rem;
+      font-size: 0.8rem;
+    }
 
     &:hover {
       background-color: var(--fs-berries-400);
@@ -541,6 +899,237 @@ export default {
     width: 1.25rem;
     height: 1.25rem;
     color: var(--fs-gray-500);
+  }
+
+  // Search mode toggle
+  &__mode-toggle {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1.5rem 0;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+
+  &__mode-btn {
+    padding: 0.75rem 1.5rem;
+    border: 2px solid var(--fs-gray-300);
+    border-radius: 2rem;
+    background: white;
+    color: var(--fs-gray-700);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
+    min-height: 3rem;
+
+    @media (max-width: 767px) {
+      font-size: 0.9rem;
+      padding: 0.75rem 1rem;
+    }
+
+    &:hover {
+      border-color: var(--fs-lime);
+      color: var(--fs-brokkoli);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    &.active {
+      background: var(--fs-berries-100);
+      border-color: var(--fs-berries-500);
+      color: var(--fs-gray-700);
+    }
+  }
+
+  // Advanced search section
+  &__advanced-section {
+    text-align: center;
+    margin: 1.5rem 0;
+  }
+
+  &__advanced-btn {
+    background: var(--fs-berries-500);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    &:hover {
+      background: var(--fs-berries-600);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    &.active {
+      background: var(--fs-berries-600);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  // Ingredient finder styles
+  &__ingredient-finder {
+    background: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin: 2rem 0;
+    border: 2px solid var(--fs-berries-200);
+
+    @media (max-width: 767px) {
+      padding: 1.5rem;
+      margin: 1rem 0;
+    }
+  }
+
+  &__ingredient-header {
+    text-align: center;
+    margin-bottom: 2rem;
+
+    h3 {
+      font-size: 1.5rem;
+      color: #2d3748;
+      margin: 0 0 0.5rem 0;
+      font-weight: 600;
+
+      @media (max-width: 767px) {
+        font-size: 1.25rem;
+      }
+    }
+
+    p {
+      color: #718096;
+      margin: 0;
+      font-size: 1rem;
+
+      @media (max-width: 767px) {
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+  &__ingredient-input {
+    margin-bottom: 2rem;
+
+    label {
+      display: block;
+      color: #2d3748;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+  }
+
+  &__ingredient-text-input {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 0.75rem;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+    background: white;
+
+    @media (max-width: 767px) {
+      padding: 0.875rem;
+      font-size: 0.9rem;
+    }
+
+    &:focus {
+      outline: none;
+      border-color: var(--fs-berries-500);
+      box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+    }
+
+    &::placeholder {
+      color: #a0aec0;
+      font-style: italic;
+    }
+  }
+
+  &__ingredient-tabs {
+    margin-bottom: 2rem;
+
+    h4 {
+      color: #2d3748;
+      margin: 0 0 1rem 0;
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+  }
+
+  &__ingredient-tab-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+
+    @media (max-width: 767px) {
+      gap: 0.5rem;
+    }
+  }
+
+  &__ingredient-tab {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.25rem;
+    background: var(--fs-berries-500);
+    color: white;
+    border-radius: 2rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+
+    @media (max-width: 767px) {
+      padding: 0.625rem 1rem;
+      font-size: 0.8rem;
+    }
+  }
+
+  &__remove-tab-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.2);
+      transform: scale(1.1);
+    }
+  }
+
+  &__no-ingredient-results {
+    text-align: center;
+    margin: 2rem 0;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 1rem;
+    border: 2px dashed var(--fs-gray-300);
+
+    p {
+      font-size: 1.1rem;
+      color: var(--fs-gray-700);
+      margin: 0 0 1rem 0;
+      font-style: italic;
+    }
   }
 }
 </style>
