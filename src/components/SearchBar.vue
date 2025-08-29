@@ -705,7 +705,7 @@ export default {
     display: block;
 
     @media (max-width: 767px) {
-      font-size: 0.9rem;
+      font-size: 1rem; // Keep at 16px to prevent zoom
       padding: 0.75rem 0.5rem 0.75rem 2.5rem;
     }
 
@@ -1041,7 +1041,7 @@ export default {
 
     @media (max-width: 767px) {
       padding: 0.875rem;
-      font-size: 0.9rem;
+      font-size: 1rem; // Keep at 16px to prevent zoom
     }
 
     &:focus {
