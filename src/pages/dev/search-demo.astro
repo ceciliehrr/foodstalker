@@ -1,0 +1,297 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import SearchBar from "../../components/SearchBar.vue";
+---
+
+<Layout title="Søkefunksjonalitet Demo" hideFoodstalkerLayout={false}>
+  <div class="search-demo">
+    <h1>🔍 Forbedret Søkefunksjonalitet</h1>
+
+    <div class="demo-section">
+      <h2>Hva er nytt?</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <h3>🎯 Fuzzy Search</h3>
+          <p>
+            Søker som tolererer skrivefeil og delvise ord. Prøv å søke etter
+            "kyllin" i stedet for "kylling".
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <h3>📊 Relevans-scoring</h3>
+          <p>
+            Resultater rangeres etter hvor relevant de er for søket ditt. Tittel
+            og kategorier får høyest vekt.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <h3>🥘 Ingrediens-søk</h3>
+          <p>
+            Søk direkte etter ingredienser som "laks", "tomat", eller "kylling"
+            for å finne retter som bruker dem.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <h3>💡 Søkeforslag</h3>
+          <p>
+            Få forslag til hva du kan søke etter mens du skriver. Klikk på
+            forslagene for å velge dem.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <h3>🔍 Filtrering</h3>
+          <p>
+            Filtrer resultater etter kategori (hverdag, helg, søtt, etc.) og
+            tilberedningstid.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <h3>⚡ Raskere søk</h3>
+          <p>
+            Bruker en søkeindeks for raskere resultater, selv med mange
+            oppskrifter.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="demo-section">
+      <h2>Test søkefunksjonaliteten</h2>
+      <SearchBar client:load />
+    </div>
+
+    <div class="demo-section">
+      <h2>Eksempler på søk</h2>
+      <div class="search-examples">
+        <div class="example-group">
+          <h3>🥘 Ingredienser</h3>
+          <ul>
+            <li><strong>laks</strong> - finn alle oppskrifter med laks</li>
+            <li>
+              <strong>kylling</strong> - oppskrifter med kylling som hovedingrediens
+            </li>
+            <li><strong>tomat</strong> - retter som bruker tomater</li>
+            <li>
+              <strong>bringebær</strong> - søte retter og drikker med bringebær
+            </li>
+          </ul>
+        </div>
+
+        <div class="example-group">
+          <h3>🍽️ Retter</h3>
+          <ul>
+            <li><strong>pasta</strong> - alle pastaoppskrifter</li>
+            <li><strong>suppe</strong> - varme supper for kaldere dager</li>
+            <li><strong>kake</strong> - søte kaker og desserter</li>
+            <li><strong>grill</strong> - retter perfekte for grilling</li>
+          </ul>
+        </div>
+
+        <div class="example-group">
+          <h3>👨‍🍳 Kokker</h3>
+          <ul>
+            <li>
+              <strong>Lise Finckenhagen</strong> - oppskrifter fra denne kokken
+            </li>
+            <li><strong>Pete</strong> - retter fra Pete</li>
+          </ul>
+        </div>
+
+        <div class="example-group">
+          <h3>🌍 Kjøkken</h3>
+          <ul>
+            <li><strong>thai</strong> - thailandske retter</li>
+            <li><strong>italiensk</strong> - italienske retter</li>
+            <li>
+              <strong>meksikansk</strong> - tacos, nachos og andre meksikanske retter
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="demo-section">
+      <h2>Tekniske detaljer</h2>
+      <div class="tech-details">
+        <h3>Søkeindeks</h3>
+        <p>Vi bruker en avansert søkeindeks som:</p>
+        <ul>
+          <li>Indekserer alle oppskrifter ved oppstart</li>
+          <li>
+            Vekter forskjellige felter (tittel > kategorier > ingredienser >
+            beskrivelse)
+          </li>
+          <li>Støtter fuzzy search med Levenshtein-avstand</li>
+          <li>Normaliserer norske tegn (æøå → aeoeaa)</li>
+        </ul>
+
+        <h3>Relevans-scoring</h3>
+        <p>Hver oppskrift får en poengsum basert på:</p>
+        <ul>
+          <li><strong>Tittel-match:</strong> 10 poeng</li>
+          <li><strong>Kategori-match:</strong> 8 poeng</li>
+          <li><strong>Kokk-match:</strong> 7 poeng</li>
+          <li><strong>Ingrediens-match:</strong> 6 poeng</li>
+          <li><strong>Beskrivelse-match:</strong> 5 poeng</li>
+          <li><strong>Fuzzy-match:</strong> 1-2 poeng</li>
+        </ul>
+
+        <h3>Filtrering</h3>
+        <p>Du kan filtrere resultater etter:</p>
+        <ul>
+          <li>
+            <strong>Kategori:</strong> hverdag, helg, søtt, tilbehør, turmat, drikke
+          </li>
+          <li>
+            <strong>Tid:</strong> rask (&lt;30 min), medium (30-60 min), lang (&gt;60
+            min)
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<style lang="scss" scoped>
+  .search-demo {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+
+    h1 {
+      text-align: center;
+      color: var(--fs-berries-500);
+      margin-bottom: 2rem;
+      font-size: 2.5rem;
+    }
+
+    .demo-section {
+      margin-bottom: 3rem;
+
+      h2 {
+        color: var(--fs-berries-500);
+        border-bottom: 2px solid var(--fs-lime);
+        padding-bottom: 0.5rem;
+        margin-bottom: 1.5rem;
+      }
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+
+      .feature-card {
+        background: white;
+        padding: 1.5rem;
+        border-radius: 0.5rem;
+        border: 1px solid var(--fs-gray-200);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+        h3 {
+          color: var(--fs-berries-500);
+          margin-bottom: 0.5rem;
+        }
+
+        p {
+          color: var(--fs-gray-700);
+          line-height: 1.6;
+        }
+      }
+    }
+
+    .search-examples {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+
+      .example-group {
+        background: white;
+        padding: 1.5rem;
+        border-radius: 0.5rem;
+        border: 1px solid var(--fs-gray-200);
+
+        h3 {
+          color: var(--fs-berries-500);
+          margin-bottom: 1rem;
+          border-bottom: 1px solid var(--fs-lime);
+          padding-bottom: 0.5rem;
+        }
+
+        ul {
+          list-style: none;
+          padding: 0;
+
+          li {
+            margin-bottom: 0.75rem;
+            padding: 0.5rem;
+            background: var(--fs-gray-50);
+            border-radius: 0.25rem;
+            border-left: 3px solid var(--fs-lime);
+
+            strong {
+              color: var(--fs-berries-500);
+            }
+          }
+        }
+      }
+    }
+
+    .tech-details {
+      background: white;
+      padding: 2rem;
+      border-radius: 0.5rem;
+      border: 1px solid var(--fs-gray-200);
+
+      h3 {
+        color: var(--fs-berries-500);
+        margin: 1.5rem 0 1rem 0;
+
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+
+      ul {
+        margin-bottom: 1.5rem;
+
+        li {
+          margin-bottom: 0.5rem;
+          padding-left: 1rem;
+          position: relative;
+
+          &:before {
+            content: "•";
+            color: var(--fs-lime);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .search-demo {
+      padding: 1rem;
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      .features-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .search-examples {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+</style>
