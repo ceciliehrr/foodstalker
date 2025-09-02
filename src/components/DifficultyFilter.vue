@@ -43,6 +43,7 @@ import {
 interface Props {
   recipes: Recipe[];
   modelValue?: string[];
+  precomputed?: Array<{ recipe: Recipe; difficulty: { level: string } }>;
 }
 
 interface Emits {
@@ -58,6 +59,13 @@ const emit = defineEmits<Emits>();
 const selectedDifficulties = ref<string[]>(props.modelValue);
 
 const getRecipeCount = (level: string): number => {
+  // Use precomputed difficulties when provided for performance
+  if (props.precomputed && Array.isArray(props.precomputed)) {
+    return props.precomputed.filter(
+      ({ difficulty }) => difficulty.level === level
+    ).length;
+  }
+  // Fallback to on-the-fly calculation
   return props.recipes.filter((recipe) => {
     const difficulty = calculateDifficulty(recipe);
     return difficulty.level === level;

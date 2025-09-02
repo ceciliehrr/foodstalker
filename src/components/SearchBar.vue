@@ -67,11 +67,8 @@
         </div>
       </div>
 
-      <!-- Filter tabs - only show when there are search results -->
-      <div
-        v-if="search.length && filteredRecipes.length > 0"
-        class="fs-search-bar__filters"
-      >
+      <!-- Filter tabs - show when there are recipes to filter -->
+      <div v-if="filteredRecipes.length > 0" class="fs-search-bar__filters">
         <p>Filtrer søk</p>
         <div class="fs-search-bar__filter-tabs">
           <button
@@ -292,10 +289,16 @@ export default {
 
                       // Use simple word boundary matching
                       if (
-                        this.ingredientsMatch(
-                          ingredient.name,
-                          selectedIngredient
-                        )
+                        (() => {
+                          const result = this.ingredientsMatch(
+                            ingredient.name,
+                            selectedIngredient
+                          );
+                          if (result.matches) {
+                            totalScore += result.score;
+                          }
+                          return result.matches;
+                        })()
                       ) {
                         matchCount++;
                         matchedIngredients.add(selectedIngredient);
@@ -523,12 +526,11 @@ export default {
             if (!group.ingredients) return false;
             return group.ingredients.some((ingredient: any) => {
               if (!ingredient.name) return false;
-              // Smart match - ingredient name must contain the selected ingredient
-              // This allows "kylling" to match "kyllingfilet", "kyllingbryst", etc.
-              // But "kyllingfilet" won't match "kylling"
-              return ingredient.name
-                .toLowerCase()
-                .includes(selectedIngredient.toLowerCase());
+              const matchResult = this.ingredientsMatch(
+                ingredient.name,
+                selectedIngredient
+              );
+              return matchResult.matches;
             });
           });
         });

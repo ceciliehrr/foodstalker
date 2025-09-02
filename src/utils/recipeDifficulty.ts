@@ -1,3 +1,9 @@
+import {
+  analyzeCookingTechniques,
+  getTechniqueDifficultyScore,
+  getTechniqueSummary,
+} from "./cookingTechniques";
+
 export interface RecipeDifficulty {
   score: number;
   level: "easy" | "medium" | "hard";
@@ -5,6 +11,16 @@ export interface RecipeDifficulty {
     ingredientsScore: number;
     stepsScore: number;
     timeScore: number;
+    techniqueScore: number;
+  };
+  techniques?: {
+    found: string[];
+    summary: string;
+    breakdown: {
+      basic: number;
+      intermediate: number;
+      advanced: number;
+    };
   };
 }
 
@@ -112,24 +128,42 @@ function countIngredients(
 }
 
 /**
- * Get technique difficulty score (placeholder for future implementation)
- * This will be used when recipes are tagged with technique difficulty
+ * Get technique difficulty score from cooking techniques analysis
  */
-function getTechniqueScore(technique: string): number {
-  switch (technique) {
-    case "easy":
-      return 20;
-    case "medium":
-      return 50;
-    case "hard":
-      return 80;
+function getTechniqueScore(techniqueAnalysis: any): number {
+  if (!techniqueAnalysis || techniqueAnalysis.techniqueCount === 0) return 20; // Default to easy if no techniques found
+
+  // Base score from max difficulty
+  let baseScore = 0;
+  switch (techniqueAnalysis.maxDifficulty) {
+    case 1:
+      baseScore = 20;
+      break;
+    case 2:
+      baseScore = 50;
+      break;
+    case 3:
+      baseScore = 80;
+      break;
     default:
-      return 50; // Default to medium
+      baseScore = 20;
   }
+
+  // Bonus for multiple advanced techniques
+  if (techniqueAnalysis.breakdown.advanced > 0) {
+    baseScore += Math.min(techniqueAnalysis.breakdown.advanced * 5, 20);
+  }
+
+  // Bonus for high technique count (complexity)
+  if (techniqueAnalysis.techniqueCount > 5) {
+    baseScore += Math.min((techniqueAnalysis.techniqueCount - 5) * 2, 10);
+  }
+
+  return Math.min(baseScore, 100);
 }
 
 /**
- * Calculate difficulty score based on time, portions, and steps
+ * Calculate difficulty score based on time, portions, steps, and cooking techniques
  * Returns a score from 0-100 where higher = more difficult
  */
 export function calculateDifficulty(recipe: Recipe): RecipeDifficulty {
@@ -142,8 +176,13 @@ export function calculateDifficulty(recipe: Recipe): RecipeDifficulty {
   // Parse time to minutes
   const timeInMinutes = parseTimeToMinutes(recipe.time || "");
 
-  // TODO: Add technique difficulty when recipes are tagged
-  // const techniqueScore = getTechniqueScore(recipe.technique || 'medium');
+  // Analyze cooking techniques
+  const techniqueAnalysis = recipe.steps
+    ? analyzeCookingTechniques(recipe.steps)
+    : null;
+  const techniqueScore = techniqueAnalysis
+    ? getTechniqueDifficultyScore(techniqueAnalysis)
+    : 20;
 
   // Calculate individual scores (0-100 each)
   let ingredientsScore = 0;
@@ -168,14 +207,12 @@ export function calculateDifficulty(recipe: Recipe): RecipeDifficulty {
   else timeScore = 100;
 
   // Calculate weighted total score
-  // Ingredients: 50%, Steps: 30%, Time: 20%
-  // TODO: When technique is added, adjust weights to:
-  // - Ingredients: 45%
-  // - Steps: 25%
-  // - Time: 20%
-  // - Technique: 10%
+  // Techniques: 35%, Ingredients: 30%, Steps: 20%, Time: 15%
   const totalScore = Math.round(
-    ingredientsScore * 0.5 + stepsScore * 0.3 + timeScore * 0.2
+    techniqueScore * 0.35 +
+      ingredientsScore * 0.3 +
+      stepsScore * 0.2 +
+      timeScore * 0.15
   );
 
   // Determine difficulty level
@@ -191,7 +228,15 @@ export function calculateDifficulty(recipe: Recipe): RecipeDifficulty {
       ingredientsScore,
       stepsScore,
       timeScore,
+      techniqueScore,
     },
+    techniques: techniqueAnalysis
+      ? {
+          found: techniqueAnalysis.techniques.map((t) => t.name),
+          summary: getTechniqueSummary(techniqueAnalysis),
+          breakdown: techniqueAnalysis.breakdown,
+        }
+      : undefined,
   };
 }
 
@@ -273,7 +318,7 @@ export const difficultyLevels: DifficultyLevel[] = [
   },
   {
     value: "medium",
-    label: " Middels",
+    label: "Middels",
     icon: "🔪🔪",
     color: getDifficultyColor("medium"),
   },

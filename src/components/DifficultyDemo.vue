@@ -10,7 +10,9 @@
       <aside class="filters-sidebar">
         <DifficultyFilter
           :recipes="recipes"
-          v-model:modelValue="selectedDifficulties"
+          :precomputed="recipesWithDifficulty"
+          :modelValue="selectedDifficulties"
+          @update:modelValue="selectedDifficulties = $event"
         />
 
         <div class="filter-info">
@@ -90,9 +92,9 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed } from "vue";
+import { ref, computed, watchEffect } from "vue";
 import DifficultyFilter from "./DifficultyFilter.vue";
-import Card from "./cards/Card.astro";
+import Card from "./cards/Card.vue";
 import NextLevelSuggestions from "./NextLevelSuggestions.vue";
 
 import { calculateDifficulty, type Recipe } from "../utils/recipeDifficulty";
@@ -105,15 +107,24 @@ const props = defineProps<Props>();
 
 const selectedDifficulties = ref<string[]>([]);
 
+// Pre-calculate difficulties for all recipes to avoid recalculating on every filter
+const recipesWithDifficulty = computed(() => {
+  return props.recipes.map((recipe) => ({
+    recipe,
+    difficulty: calculateDifficulty(recipe),
+  }));
+});
+
 const filteredRecipes = computed(() => {
   if (selectedDifficulties.value.length === 0) {
     return props.recipes;
   }
 
-  return props.recipes.filter((recipe) => {
-    const difficulty = calculateDifficulty(recipe);
-    return selectedDifficulties.value.includes(difficulty.level);
-  });
+  return recipesWithDifficulty.value
+    .filter(({ difficulty }) =>
+      selectedDifficulties.value.includes(difficulty.level)
+    )
+    .map(({ recipe }) => recipe);
 });
 
 const clearFilters = () => {
