@@ -33,11 +33,18 @@ defineProps<Props>();
 
 .badge-icon {
   font-size: 0.8rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .badge-text {
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
 }
 
 /* Responsive adjustments */
@@ -49,10 +56,12 @@ defineProps<Props>();
 
   .badge-icon {
     font-size: 0.75rem;
+    line-height: 1;
   }
 
   .badge-text {
     font-size: 0.65rem;
+    line-height: 1;
   }
 }
 </style>
