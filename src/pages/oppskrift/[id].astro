@@ -10,6 +10,7 @@ import Divider from "../../components/Divider.astro";
 import Tips from "../../components/Tips.astro";
 import VinTips from "src/components/VinTips.astro";
 import CookingMode from "src/components/CookingMode.vue";
+import DifficultyBadge from "../../components/DifficultyBadge.vue";
 
 export async function getStaticPaths() {
   const recipes = getRecipes;
@@ -64,6 +65,7 @@ const title = post.title;
           longDescription={post.longDescription}
           time={post.time}
           portions={post.portions}
+          recipe={post}
         />
         <Divider grey />
       </div>

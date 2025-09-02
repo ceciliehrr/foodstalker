@@ -3,7 +3,6 @@ import getRecipes from "../data/new_recipes.json";
 
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/cards/Card.astro";
-
 // emojis
 import tadaEmoji from "../assets/tema/party-popper-noto.svg";
 import Grid from "../components/Grid.vue";
@@ -59,6 +58,7 @@ function capitalizeFirstLetter(string) {
           image={data.imageurl}
           description={data.description}
           date={data.date}
+          recipe={data}
         />
       ))
     }
