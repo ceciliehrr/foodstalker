@@ -1,21 +1,25 @@
 ---
 import Divider from "./Divider.astro";
+import DifficultyBadge from "./DifficultyBadge.vue";
+import Badge from "./Badge.vue";
 
 export interface Props {
   longDescription?: string;
   description?: string;
   time?: string;
   portions?: number;
+  recipe?: any;
 }
 
-const { description, longDescription, time, portions } = Astro.props;
+const { description, longDescription, time, portions, recipe } = Astro.props;
 const paragraphs = longDescription?.split(/\r?\n\r?\n/).filter(Boolean) ?? [];
 ---
 
 <div class="fs-description">
-  <div class="fs-description__emojis">
-    <span>👯 {portions} posjoner</span>
-    <span>⏳ {time}</span>
+  <div class="fs-description__meta">
+    <Badge icon="🍽️" text={`${portions} posjoner`} client:load />
+    <Badge icon="⏱️" text={time} client:load />
+    {recipe && <DifficultyBadge recipe={recipe} client:load />}
   </div>
   <Divider grey />
 
@@ -40,14 +44,16 @@ const paragraphs = longDescription?.split(/\r?\n\r?\n/).filter(Boolean) ?? [];
     &__text p {
       margin-bottom: 1rem;
     }
-    &__emojis {
+    &__meta {
       display: flex;
       gap: 1rem;
-      flex-direction: column;
-      color: var(--fs-gray-500);
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 1.5rem;
+      flex-wrap: wrap;
 
       @include bp("tablet-up") {
-        flex-direction: row;
+        gap: 1.5rem;
       }
     }
   }

@@ -1,5 +1,7 @@
 ---
 import { Image } from "astro:assets";
+import DifficultyBadge from "../DifficultyBadge.vue";
+
 export interface Props {
   title: string;
   emoji: string;
@@ -7,8 +9,9 @@ export interface Props {
   image: string;
   description: string;
   date: string;
+  recipe: any;
 }
-const { href, title, emoji, image, description, date } = Astro.props;
+const { href, title, emoji, image, description, date, recipe } = Astro.props;
 var months = [
   "Januar",
   "Februar",
@@ -30,6 +33,7 @@ function convertDate(date_str) {
   );
 }
 const convertedDate = convertDate(date);
+
 function emoji_category(cat) {
   switch (cat) {
     case "hverdag":
@@ -64,11 +68,6 @@ function emoji_category(cat) {
     />
   </div>
   <div class="fs-card__content">
-    <div class="fs-card__mobile-emoji">
-      <div class="fs-card__mobile-emoji-circle">
-        <span>{emoji_category(emoji)}</span>
-      </div>
-    </div>
     <div class="fs-card__text">
       <h2>
         {title}
@@ -76,13 +75,11 @@ function emoji_category(cat) {
       <p>
         {description}
       </p>
-      <p class="fs-card__text-date-mobile">
-        {convertedDate}
-      </p>
     </div>
-    <div class="fs-card__laptop-emoji">
-      <p class="fs-card__laptop-emoji-date">{convertedDate}</p>
-      <div class="fs-card__laptop-emoji-circle">
+    <div class="fs-card__footer">
+      <DifficultyBadge recipe={recipe} client:load />
+
+      <div class="fs-card__footer-circle">
         <span>{emoji_category(emoji)}</span>
       </div>
     </div>
@@ -146,56 +143,33 @@ function emoji_category(cat) {
       flex: 1 1 0%;
       padding: 1rem;
     }
-    &__mobile-emoji {
-      position: relative;
 
-      &-circle {
-        display: grid;
-        background-color: var(--fs-lime);
-        place-items: center;
-        box-shadow: var(--fs-black, 0 0 #0000), var(--fs-brokkoli, 0 0 #0000),
-          var(--fs-brokkoli);
-        border-radius: 9999px;
-        width: 2.5rem;
-        height: 2.5rem;
-        top: -2.5rem;
-        right: 0.5rem;
-        position: absolute;
-      }
-      @include bp("tablet-up") {
-        display: none;
-      }
-    }
+    &__footer {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-top: 0.75rem;
+      justify-content: flex-end;
 
-    &__laptop-emoji {
-      display: none;
-      @include bp("tablet-up") {
+      &-time {
         display: flex;
-        height: 2.5rem;
-        position: relative;
+        align-items: center;
+        gap: 0.25rem;
+        color: var(--fs-gray-500);
+        font-size: 0.875rem;
+        font-weight: 500;
       }
-      &-date {
-        @include get-text("fs-body1");
-        display: none;
-        @include bp("tablet-up") {
-          display: flex;
-          margin-top: 0.75rem;
-          color: var(--fs-gray-500);
-        }
-      }
+
       &-circle {
         display: grid;
-        position: absolute;
         background-color: var(--fs-lime);
-        right: 0px;
-        bottom: 0px;
-        width: 2.5rem;
-        height: 2.5rem;
         place-items: center;
         box-shadow: var(--fs-brokkoli, 0 0 #0000), var(--fs-brokkoli, 0 0 #0000),
           var(--fs-brokkoli);
         border-radius: 9999px;
-        z-index: 0;
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 1rem;
       }
     }
     &__text {
@@ -210,14 +184,6 @@ function emoji_category(cat) {
       & p {
         @include get-text("fs-body1");
         margin-bottom: 0.75rem;
-      }
-      &-date-mobile {
-        margin-top: 0.75rem;
-        color: var(--fs-gray-500);
-
-        @include bp("tablet-up") {
-          display: none;
-        }
       }
     }
   }

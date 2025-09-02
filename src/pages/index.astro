@@ -10,7 +10,6 @@ import IntroBanner from "../components/IntroBanner.astro";
 
 import getRecipes from "../data/new_recipes.json";
 import TopList from "../components/TopList.astro";
-
 const recipes = getRecipes;
 const sortedRecipes = recipes
   .slice(0)
@@ -34,6 +33,7 @@ const sortedRecipes = recipes
           image={data.imageurl}
           description={data.description}
           date={data.date}
+          recipe={data}
         />
       ))
     }
