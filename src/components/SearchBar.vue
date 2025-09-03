@@ -104,6 +104,12 @@
         />
       </div>
 
+      <!-- Toro message -->
+      <div v-if="showToroMessage" class="fs-search-bar__toro-message">
+        <p>Vi driver ikke med Toro</p>
+        <span style="font-size: 50px">🚫</span>
+      </div>
+
       <!-- Selected ingredients as badges -->
       <div
         v-if="selectedIngredients.length > 0"
@@ -246,6 +252,7 @@ export default {
       selectedIngredients: [] as string[],
       allIngredients: [] as string[],
       ingredientInput: "",
+      showToroMessage: false,
     };
   },
 
@@ -668,6 +675,7 @@ export default {
       this.showSuggestions = false;
       this.selectedDifficulties = [];
       this.selectedCategories = [];
+      this.showToroMessage = false;
 
       // Initialize ingredients if switching to ingredient mode
       if (mode === "ingredient" && this.allIngredients.length === 0) {
@@ -704,7 +712,18 @@ export default {
 
     addIngredientFromInput() {
       if (this.ingredientInput.trim()) {
-        const ingredient = this.ingredientInput.trim();
+        const ingredient = this.ingredientInput.trim().toLowerCase();
+
+        // Check for "toro" ingredient (case-insensitive)
+        if (ingredient === "toro") {
+          this.showToroMessage = true;
+          this.ingredientInput = ""; // Reset input
+          return; // Don't add toro to ingredients
+        }
+
+        // Reset toro message if other ingredient is added
+        this.showToroMessage = false;
+
         if (!this.selectedIngredients.includes(ingredient)) {
           this.selectedIngredients.push(ingredient);
         }
@@ -1267,6 +1286,22 @@ export default {
       color: var(--fs-gray-700);
       margin: 0 0 1rem 0;
       font-style: italic;
+    }
+  }
+
+  &__toro-message {
+    text-align: center;
+    margin: 1rem 0;
+    padding: 1.5rem;
+    background: rgba(255, 193, 7, 0.1);
+    border-radius: 1rem;
+    border: 2px solid #ffc107;
+
+    p {
+      font-size: 1.2rem;
+      color: #856404;
+      margin: 0 0 0.5rem 0;
+      font-weight: 600;
     }
   }
 
