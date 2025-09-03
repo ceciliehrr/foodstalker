@@ -139,10 +139,6 @@ export default {
 
     // When footer exists, use new layout
     &--with-footer {
-      .fs-small-cards__image img {
-        height: 90%;
-      }
-
       .fs-small-cards__content {
         flex-direction: column;
         margin-left: 1rem;
@@ -165,7 +161,7 @@ export default {
     & img {
       object-fit: cover;
       width: 5rem;
-      height: 5rem; // Default height when no footer
+      height: 6rem; // Default height when no footer
       border-radius: 0.5rem;
     }
   }

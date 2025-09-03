@@ -19,7 +19,6 @@
       @close="closeFilters"
       client:only="vue"
       class="modal-style"
-      snap-point="90dvh"
     >
       <div class="filter-bottomsheet__content">
         <!-- Header -->

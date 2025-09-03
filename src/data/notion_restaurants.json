@@ -1,0 +1,871 @@
+[
+  {
+    "position": [
+      59.907657562789446,
+      10.772765099423395
+    ],
+    "city": "Oslo",
+    "title": "The Foodstalkers",
+    "description": "Hjemmelaget er alltid best. Mest kjent for taco!",
+    "category": "Home",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_8334.jpg",
+    "webPage": "https://www.foodstalker.no"
+  },
+  {
+    "position": [
+      59.91532463794866,
+      10.719338497578114
+    ],
+    "city": "Oslo",
+    "title": "Ahaan",
+    "description": "Ahaan ligger i det nyrestaurerte bygget Sommerro på Solli. Vi startet kvelden med en fordrink på Ekspedisjonshallen. Ahaan er et sted med god stemning fra første stund, hyggelig og trygg servitør. \n Vi gikk for en 5 retters meny og en flaske hvitvin, en tørr Riesling anbefalt av servitøren. Den passet perfekt til thaimat med mye smak. \n Første rett var en reke i limeblad med peanøtter og saus. Digg start! \n Andre servering med fritert blekksprut, en nydelige saus. Samt fritert squash med sesamsaus.\n Tredje rett var grillet entrecôte med chili og fritert sticky rice, så enkelt med så godt. Så til en fantastisk red curry med ris. \n Dessert med kokosis, mango parfait, rista kokos og mangosaus, servert med en appelsin-spritz anbefalt av servitør. Digg kombo, frisk og treffende avslutning, kanskje vår dessertfavoritt all time. \n\n Alt i alt var Ahaan en svært god opplevelse. Dog bærer den litt preg av sin plassering, da den var full av folk som synes Solli er ytterkanten av hvor langt øst de bevevger seg i byen. ",
+    "category": "Restaurant",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_9440.jpg",
+    "webPage": "https://ahaan.no/",
+    "dateVisited": "Juli, 2023",
+    "tags": [
+      "thai",
+      "smart casual"
+    ]
+  },
+  {
+    "position": [
+      59.90996165998961,
+      10.765261801334278
+    ],
+    "city": "Oslo",
+    "title": "Corral's",
+    "description": "Dette er en foodtruck som ligger rett utenfor baren Rampen(Som har masse digg norsk sider, og takterasse om sommeren). \n Vi bestilte tre taco med alt, medium sterk. Og kjøpte en Kvestad cider 1808 på Rampen. Denne dagen var en fin sommerkveld og vi kunne sitte ute på bordene utenfor foodtrucken. Ellers kan man ta med taco'n inn på Rampen. \n Fantastisk taco, nesten like god som den vi lager selv. Lefsene, 100% mais, var helt fantastisk. Var litt sprø i kanten, så var et godt element. Ble servert med feta/yoghurt, frisk korriander og syltet rødløk. Nydelig balansert chilistyrke. \n  Kjøttet var storfe, kokt til det falt fra hverandre. \n \n Digg taco kan være grisete, heldigvis fikk vi hansker! Service!",
+    "category": "Casual",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_0040.jpg",
+    "webPage": "https://www.instagram.com/corralstacos/",
+    "dateVisited": "Juli, 2023",
+    "tags": [
+      "taco",
+      "casual",
+      "foodtruck",
+      "mexicansk",
+      "uteservering"
+    ]
+  },
+  {
+    "position": [
+      59.91900883627447,
+      10.709979482699854
+    ],
+    "city": "Oslo",
+    "title": "Kolonihagen",
+    "description": "Helt nydelig mat og spennende sammensettinger. Bra kvalitet på alle ledd, og god drikke. Fantastiske og morsomme smaker, med ukjente og spennende ingredienser. \n Vi gikk for 5 retters med vinpakke. Starter med surdeigsbrød fra Kolonialen(kan kjøpes på Rema1000) og smør fra en gård i Hedmark. Retten som utmerket seg mest var rødbete, pepperrot, emulsjon med meldestokk og feta fra Rygge. Denne fikk vi en Cremant d'Alsasse til. Veldig frisk og fin til retten. \n For å forklare morsomme retter: en liten overraskelse på slutten med daim med steinsopp og sukkerspinn med mjødurt. \n \n En restaurant vi absolutt kan anbefale!",
+    "category": "Restaurant",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_6154.jpg",
+    "webPage": "https://kolonihagenfrogner.no/",
+    "dateVisited": "April, 2023",
+    "tags": [
+      "smart casual",
+      "nordisk",
+      "bakgård",
+      "økologisk"
+    ]
+  },
+  {
+    "position": [
+      59.931796135557235,
+      10.735588601796954
+    ],
+    "city": "Oslo",
+    "title": "Ansjosen",
+    "description": "Trivelig bitteliten italiensk nabolagsrestaurant på Adamstuen. Vi gikk for 4 retters og anbefalinger av vin fra servitør. Petter gikk for bruschetta til forrett, Cecilie tok ceviche. Lett og digg start! \n Andre rett fikk vi Tagliata, som var norsk marmorert entrecôte i skiver med ruccula, sitron, pinjekjerner og 24 måneder lagret parmesan. \n Neste rett var pasta. Nydelig Vi gikk for to ulike panna cottas til dessert. \n \n Alt i alt en veldig hyggelig kveld med god mat og drikke. ",
+    "category": "Restaurant",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_6575.jpg",
+    "webPage": "https://www.ansjosen.no/",
+    "dateVisited": "Mai, 2023",
+    "tags": [
+      "smart casual",
+      "italiensk"
+    ]
+  },
+  {
+    "position": [
+      59.917055172083394,
+      10.750494125400019
+    ],
+    "city": "Oslo",
+    "title": "Arakataka",
+    "description": "Dette besøket gjorde Cecilie uten Pete, overraskende nok. Arakataka er en restaurant som har vært på ønskelisten lenge. Hele bordet gikk for 4 retters med vinpakke. \n Første rett var en tartar av Angus ku og frisk salat. \n Andre rett var en helt fantastisk god tomatrett. \n Hovedretten var kylling fra Holte gård med bruna smør og soppemulsjon. \n Dessert var bringebær, mjødurt og hvit sjokolade. \n \n Alle retter hadde rene og gode smaker, her får man mye godt for pengene. Vinneren var nok tomaten fra Bergsmyrene gård. Vinpakken var helt ok, ikke noe veldig nytt og spennende. Men god stemning ble det!",
+    "category": "Restaurant",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_2111.jpg",
+    "webPage": "https://www.arakataka.no/",
+    "dateVisited": "September, 2023",
+    "tags": [
+      "smart casual",
+      "nordisk"
+    ]
+  },
+  {
+    "position": [
+      59.92396981498511,
+      10.726197709689455
+    ],
+    "city": "Oslo",
+    "title": "Fyr bistro Park",
+    "description": "Park er Fyr bistronomi og bar sin uteservering om sommeren. Cecilie dro hit med noen kollegaer for afterwork. Hun bestilte en Humlepung Rosè og moules frites. Fantastisk god smak på blåskjellkraften, og perfekte pomme frites med chilimayo. En veldig fin plass på en strålende sommerdag.",
+    "category": "Restaurant",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_7771.jpg",
+    "webPage": "https://www.fyrbistronomi.no/park",
+    "dateVisited": "Mai, 2023",
+    "tags": [
+      "smart casual",
+      "nordisk",
+      "brunsj",
+      "lunsj",
+      "uteservering"
+    ]
+  },
+  {
+    "position": [
+      59.92383574072056,
+      10.739717926413814
+    ],
+    "city": "Oslo",
+    "title": "Smalhans",
+    "description": "En spontan tur innom for en brunsj en vinterdag. Spennende brunsjmeny, med moderniserte lunsjklassikere. De serverer også Dagens Husmann for 220 kroner hver dag. Veldig god mat for prisen, anbefales!",
+    "category": "Restaurant",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/20220320_131956.jpg",
+    "webPage": "https://www.smalhans.no/",
+    "dateVisited": "Mars, 2022",
+    "tags": [
+      "smart casual",
+      "nordisk",
+      "brunsj",
+      "lunsj",
+      "hverdagsmat",
+      "casual"
+    ]
+  },
+  {
+    "position": [
+      59.923585357539224,
+      10.758657584084034
+    ],
+    "city": "Oslo",
+    "title": "Skaal matbar",
+    "description": "Mat eller drikke? Dette er en matbar. Vi fikk dessverre ikke plass på uteserveringen denne fine vårdagen, men det var like trivelig inne. Cecilie hadde lyst på toast, og toast fikk hun! Med spennende majones med svart hvitløk. Dette er stedet kjendisene fra løkka henger, men det er ikke så rart. Veldig god mat, drikke, og gøy betjening. ",
+    "category": "Restaurant",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/20220418_141858.jpg",
+    "webPage": "https://www.skaalmatbar.no/",
+    "dateVisited": "April, 2022",
+    "tags": [
+      "smart casual",
+      "nordisk",
+      "brunsj",
+      "lunsj",
+      "uteservering",
+      "casual"
+    ]
+  },
+  {
+    "position": [
+      59.908430181046754,
+      10.7592202094783
+    ],
+    "city": "Oslo",
+    "title": "Code restaurant",
+    "description": "Jeg og Petter har som tradisjon å dra på julebord-date. Dette året ble det Code. Code restaurant har fått kallenavnet And på tralle, dette for nettopp deres servering av and på tralle. Men denne kvelden gikk vi for 3 retters med vinpakke. \n Petter bestilte tidenes beste vegetariske forrett; Grillet gresskar med gresskarpurè og parmesanskum. \n Til hovedrett ble det and selvfølgelig. Og til dessert petit four med en kjempe god dessertvin(er), ja servitøren hadde ønsket at vi skulle få to dessertviner. Dette er en raus restaurant med god service og god mat.",
+    "category": "Restaurant",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_2344.jpg",
+    "webPage": "https://www.coderestaurant.no/",
+    "dateVisited": "Desember, 2022",
+    "tags": [
+      "fine dining",
+      "nordisk",
+      "brunsj",
+      "lunsj"
+    ]
+  },
+  {
+    "position": [
+      59.906558425514774,
+      10.76009152641268
+    ],
+    "city": "Oslo",
+    "title": "The Conservatory",
+    "description": "Etter en 3 retters på Code på drekkedagsnatta bestemte vi oss for å stikke på bar. Vi hadde hørt ryktene om en litt hemmelig bar som man måtte ringe på for å komme inn. Så med en vinpakke innabords ringte vi på en dør i Bjørvika. Selv uten reservasjon fant de plass til oss, og vi ble hilst velkommen av samtlige bartendere og fikk meny. Dette er dyre drinker, men opplevelsen er verdt det. Plutselig dukker det opp en vanvittig flink saksofonist, som viste seg å være Bendik Giske. Fantastisk intimkonsert! Angret aldri på den drinken for 250 kroner, kan sies at man fikk en skje med rømme og løyrom til drinken.",
+    "category": "Drinks",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_2398.jpg",
+    "webPage": "https://theconservatory.no/",
+    "dateVisited": "Desember, 2022",
+    "tags": [
+      "bar",
+      "drink"
+    ]
+  },
+  {
+    "position": [
+      58.96956842492558,
+      5.735700010074111
+    ],
+    "city": "Stavanger",
+    "title": "Söl",
+    "description": "Sommerferien 2023 var vi på en roadtrip fra vestlandet til sørlandet. Vi var 24 timer i Stavanger og fikk med oss en super restaurantopplevelse. Vi gikk for 5 retters med vinpakke. Svært gode smaker og elementer vi ikke umiddelbart klarer å forstå hvordan vi skal gjenskape. Varmrøkt Sirdal ørret med eple, rødbet og dillolje har gitt inspirasjon til bruk av vår dillolje, samt en bestilling til Linda på løpstikke for å lage emulsjon, som var servert til den første forretten - blomkål fra Brimse. Alt i alt en nydelig middag, med svært god vinpakke, utelukkende av naturvin, sett bort fra sake-desserten.",
+    "category": "Restaurant",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_0993.jpg",
+    "webPage": "https://www.restaurantsoel.com/",
+    "dateVisited": "August, 2022",
+    "tags": [
+      "smart casual",
+      "nordisk",
+      "brunsj",
+      "lunsj"
+    ]
+  },
+  {
+    "position": [
+      59.91152831101675,
+      10.736598061361807
+    ],
+    "city": "Oslo",
+    "title": "Aquarie",
+    "description": "Cecilie ville på fiskerestaurant på bursdagen sin. Og dette var en innertier av en fiskerestaurant. Vi gikk for 6 retters med vinpakke. Første rett var råreke, ikke Cecilies favoritt, Petter digget det. Men så toppet den ene retten den andre. Vi endte til og med opp med en tåre i øyekroken av rå kveite med sylta sopp og svart hvitløk. Anbefales!",
+    "category": "Restaurant",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/20220212_200135.jpg",
+    "webPage": "https://www.aquarie.no/",
+    "dateVisited": "Februar, 2022",
+    "tags": [
+      "fine dining",
+      "nordisk",
+      "sjømat"
+    ]
+  },
+  {
+    "position": [
+      59.90606960691944,
+      10.775032682237052
+    ],
+    "city": "Oslo",
+    "title": "ZZ pizza",
+    "description": "Byens beste pizza, og vår nabolagsrestaurant! Anbefaler alle pizzaene(vi har aldri hatt plass til pizzadesserten, men den ser gøy ut). Kan også anbefale sider som blir laget på bakrommet, bokstavelig talt. ",
+    "category": "Casual",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/20220423_174041.jpg",
+    "webPage": "https://www.zz.pizza/",
+    "dateVisited": "August, 2023",
+    "tags": [
+      "casual",
+      "pizza",
+      "take away"
+    ]
+  },
+  {
+    "position": [
+      59.90675801851711,
+      10.768224053978646
+    ],
+    "city": "Oslo",
+    "title": "Preik",
+    "description": "Preik er vår nabolagsbar. Fantastisk uteplass på solfylte dager, og serverer Cecilies favoritt mimosa! Her kan du også få noe å spise om du er sulten. ",
+    "category": "Drinks",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_9997.jpg",
+    "webPage": "https://preikoslo.no/",
+    "dateVisited": "August, 2023",
+    "tags": [
+      "casual",
+      "småmat",
+      "lunsj",
+      "drinks",
+      "bar"
+    ]
+  },
+  {
+    "position": [
+      59.9020440825497,
+      10.741393126412374
+    ],
+    "city": "Oslo",
+    "title": "Vippa",
+    "description": "Vippa ute på Vippetangen representerer sommer i Oslo perfekt. Avslappet stemning med en fantastisk uteservering rett ved fjorden. Her kan man sitte og bare ta en drink, eller spise mat fra ulike boder. Maten varierer veldig på kvalitet, men noen gullkorn innimellom,  vår favoritt er fish and chips!",
+    "category": "Casual",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/20220727_162544.jpg",
+    "webPage": "https://www.vippa.no/",
+    "dateVisited": "Juli, 2023",
+    "tags": [
+      "casual",
+      "småmat",
+      "lunsj",
+      "drinks",
+      "bar",
+      "uteservering"
+    ]
+  },
+  {
+    "position": [
+      59.907655277599275,
+      10.758188264417758
+    ],
+    "city": "Oslo",
+    "title": "Maaemo",
+    "description": "Maaemo er i en annen liga enn alt annet vi har vært på. Man betaler for en opplevelse. Ikke bare er det veldig god mat, men alt er planlagt til den minste detalj for at vi skulle få en god opplevelse. Fantastisk!",
+    "category": "Restaurant",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_6255.JPG",
+    "webPage": "https://maaemo.no/",
+    "dateVisited": "Januar, 2024",
+    "tags": [
+      "middag",
+      "gourmet",
+      "fine dining",
+      "michelin"
+    ]
+  },
+  {
+    "position": [
+      59.92769528477186,
+      10.756847582098711
+    ],
+    "city": "Oslo",
+    "title": "Babbos Collective Øvrefoss",
+    "description": "Babbos var et perfekt sted å spise lunsj før vi trasket rundt på Løkka i vårsola som tittet frem i februar. Kjempehyggelig service og bra mat. Digg hjemmelaget juice av ulik smak. Pannekaker kan absolutt anbefales!",
+    "category": "Restaurant",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_6751.JPG",
+    "webPage": "https://www.babbocollectivefoss.com/",
+    "dateVisited": "Februar, 2024",
+    "tags": [
+      "middag",
+      "brunsj",
+      "lunsj",
+      "smart casual"
+    ]
+  },
+  {
+    "position": [
+      59.92019486916005,
+      10.74901057670226
+    ],
+    "city": "Oslo",
+    "title": "Hyde",
+    "description": "Dette var Cecilies julegave til Petter. Sikkert fordi hun hadde lyst til å dra på en Michelin-restaurant for første gang. Men uansett, det var en veldig bra matopplevelse. Flere høydepunkter og vi har tatt med inspirasjon til å bruke kardemomme i smørsaus. Takk, Hyde! Vinpakken var også veldig bra til hver rett.",
+    "category": "Restaurant",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_3667.jpg",
+    "webPage": "http://restauranthyde.no/",
+    "dateVisited": "Januar, 2023",
+    "tags": [
+      "fine dining",
+      "michelin",
+      "nordisk"
+    ]
+  },
+  {
+    "position": [
+      59.9194028249312,
+      10.758136446021355
+    ],
+    "city": "Oslo",
+    "title": "Le Benjamin bar og bistro",
+    "description": "Le Benjamin er et sted vi har dratt tilbake til flere ganger. En kjempehyggelig fransk bistro med god mat og drikke. Og ikke minst veldig hyggelig og trygge ansatte.",
+    "category": "Restaurant",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/20200808_170147.jpg",
+    "webPage": "https://lebenjamin.no/",
+    "dateVisited": "Februar, 2023",
+    "tags": [
+      "smart casual",
+      "fransk"
+    ]
+  },
+  {
+    "position": [
+      59.917032287247096,
+      10.76256371291869
+    ],
+    "city": "Oslo",
+    "title": "Vintage kitchen",
+    "description": "Vintage kitchen er en skjult perle på Grønland/Tøyen. Vi har bare spist lunsj og drukket vin her, men vi har veldig lyst til å komme tilbake for middag. Til lunsj kan man for eksempel få veldig bra danske smørbrød. Og vinkartet er også veldig bra! Det var her vi smakte Nigard sider fra Sideriet for første gang. Smak av høst!",
+    "category": "Restaurant",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/20210619_133451.jpg",
+    "webPage": "https://www.vintagekitchen.no/",
+    "dateVisited": "Mai, 2022",
+    "tags": [
+      "smart casual",
+      "dansk",
+      "vinbar",
+      "lunsj",
+      "brunsj"
+    ]
+  },
+  {
+    "position": [
+      60.39335348695182,
+      5.323185782724735
+    ],
+    "city": "Bergen",
+    "title": "Allmuen",
+    "description": "Bergen har mange restauranter å by på. Dette er en hyggelig plass å dra på med venner. Vi gikk for Åpen mat og vinpakke. Åpen mat betyr flere småretter som varieres basert på dagens råvarer. En ting vi har tatt med oss med denne matopplevelsen er krabbeklør med lime og dillmajones. Digg!",
+    "category": "Restaurant",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/20220722_191239.jpg",
+    "webPage": "https://www.allmuenbistro.no/",
+    "dateVisited": "Juli, 2022",
+    "tags": [
+      "smart casual",
+      "nordisk",
+      "vinbar",
+      "lunsj",
+      "brunsj"
+    ]
+  },
+  {
+    "position": [
+      60.38850151398352,
+      5.32736576443456
+    ],
+    "city": "Bergen",
+    "title": "Hoggorm pizza",
+    "description": "Dette er virkelig en pizza man ikke glemmer. I et bittelite lokale serveres spennende smaker på pizza. Anbefales!",
+    "category": "Casual",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/DSC_0212.jpg",
+    "webPage": "https://www.hoggormpizza.no/",
+    "dateVisited": "August, 2018",
+    "tags": [
+      "casual",
+      "pizza"
+    ]
+  },
+  {
+    "position": [
+      59.88471351296411,
+      10.722380646021357
+    ],
+    "city": "Oslo",
+    "title": "Gressholmen kro",
+    "description": "Er du som oss som digger en dag på svaberg om sommeren, duppe i havet og lese en bok? Hva med å avslutte dagen med loff, reker og en kald pils mens håret tørker i sola? Gressholmen kro serverer akkurat det du har lyst på etter en sånn sommerdag, en liten perle i Oslofjorden om sommeren. Hit kan du ta båten ut med ruterbilletten! ",
+    "category": "Casual",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_8719.jpg",
+    "webPage": "https://www.gressholmenkro.no/",
+    "dateVisited": "Juli, 2023",
+    "tags": [
+      "casual",
+      "reker",
+      "uteservering",
+      "lunsj",
+      "brunsj",
+      "middag"
+    ]
+  },
+  {
+    "position": [
+      59.91443183578802,
+      10.751583544175565
+    ],
+    "city": "Oslo",
+    "title": "Himkok",
+    "description": "Er du gira på velbalanserte og digge drinker? Himkok er stedet. Ikke drikk for mange...",
+    "category": "Drinks",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/20210806_191100.jpg",
+    "webPage": "https://www.himkok.no/",
+    "dateVisited": "Oktober, 2022",
+    "tags": [
+      "drinker",
+      "bar"
+    ]
+  },
+  {
+    "position": [
+      59.92113467053003,
+      10.749552707383163
+    ],
+    "city": "Oslo",
+    "title": "Chez Colin",
+    "description": "Denne restauranten ligger i en gate med mye spennende konsepter i mat og drikkeverden. Chez Colin er en hyggelig liten uhøytidelig fransk restaurant. Vi valgte hver vår 3 retters med vinpakke. Forretten var virkelig en høydare, en av de beste fiskesuppene vi har smakt! Petter gikk for kjøtt, Cecilie fisk til hovedrett. Rause og gode posjoner. Burde kanskje stoppet der, men Cecilie ville ha sin favoritt dessert, nemlig sitronterte med marengs. Fantastisk! Chez Colin anbefales, men Le Benjamin er fortsatt vår favoritt franske bistro.",
+    "category": "Restaurant",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/20210806_181200.jpg",
+    "webPage": "https://www.chezcolin.no/",
+    "dateVisited": "August, 2022",
+    "tags": [
+      "smart casual",
+      "fransk"
+    ]
+  },
+  {
+    "position": [
+      59.92347340197965,
+      10.77166527142706
+    ],
+    "city": "Oslo",
+    "title": "Szechuan Chengdu",
+    "description": "Dette er en veldig populær kinesisk restaurant, ofte full og mye liv. Dette fordi det er fantastisk autentisk god kinesisk mat. Men bestill fra den røde menyen, pliiis! Eller be servitøren om anbefalinger. Her er det lov å dele! Lokalet er typisk kinesisk, litt brun pub-preg, men med innslag av kinesisk krimskrams. Lave skuldre og forventningene til maten lavere, dermed blir man ekstra overrasket over kjærligheten som ligger i denne maten. Kos deg! ",
+    "category": "Restaurant",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/20220628_201459.jpg",
+    "webPage": "https://szechuanrestaurant.no/en/home/",
+    "dateVisited": "Juni, 2022",
+    "tags": [
+      "casual",
+      "kinesisk",
+      "kina"
+    ]
+  },
+  {
+    "position": [
+      59.91265361651851,
+      10.726617271417858
+    ],
+    "city": "Oslo",
+    "title": "Via Village Food Court",
+    "description": "Via Village er mathallen vi pleier å dra innom før en kinodate på Vika kino. Og når vi har lyst på krabbedumplingsene til Golden Chimp! Via Village er en mathall med mange ulike matboder, så her varierer kvaliteten også. Men mye bra å velge mellom. Spesielt Golden Chimp og empanadas fra De Mi Tierra.",
+    "category": "Casual",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_0064.jpg",
+    "webPage": "https://viavillage.no/",
+    "dateVisited": "August, 2023",
+    "tags": [
+      "casual",
+      "streetfood",
+      "boder"
+    ]
+  },
+  {
+    "position": [
+      59.920158411082625,
+      10.743656007383162
+    ],
+    "city": "Oslo",
+    "title": "Rett i gapet",
+    "description": "Vi skulle ut å spise etter kinodate. Men etter å ha sett Triangle of sadness var det vanskelig å ha lyst på noe. En ting vi visste var at vi trengte litt bobler. Det ble en spontan tur til Rett i Gapet. Det var en hyggelig overraskelse med flere gode anbefalinger på både vin og bobler. I tillegg hadde de smårettet. Hyggelig liten vinbar! Anbefales!",
+    "category": "Drinks",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_4267.jpg",
+    "webPage": "http://www.rettigapet.no/",
+    "dateVisited": "Februar, 2023",
+    "tags": [
+      "casual",
+      "drinks",
+      "vinbar",
+      "lunsj",
+      "brunsj"
+    ]
+  },
+  {
+    "position": [
+      59.91448418429321,
+      10.767386082453433
+    ],
+    "city": "Oslo",
+    "title": "Golden Chimp",
+    "description": "I høstferien har flere restauranter i Oslo tilbud på 3,4,5-retters. Golden chimp hadde vi hørt mye om, og et steinkast fra oss på Grønland. I tillegg til høstferietilbudet gikk for for vinpakke med flere saker. Veldig spennende! Noe traff veldig bra, andre ikke helt vår favoritt. Men dumplings, det kan de absolutt. Vår favoritt og overraskende var dumplingsuppe. Suppe inni dumpling, digg! Det var travelt denne kvelden, vi var nok ikke alene om å slå til på et så bra tilbud så servicen var litt treg til tider. Men absolutt hyggelige folk som jobber her. Anbefales for vennegjengen! ",
+    "category": "Restaurant",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_7771.jpg",
+    "webPage": "https://www.thegoldenchimp.no/",
+    "dateVisited": "Oktober, 2022",
+    "tags": [
+      "casual",
+      "dumplings",
+      "asiatisk"
+    ]
+  },
+  {
+    "position": [
+      59.91323769943694,
+      10.745193296219075
+    ],
+    "city": "Oslo",
+    "title": "Cousins",
+    "description": "Cecilie har hatt sin arbeidsplass på Glassmagasinet i noen år, og naturlig nok har vi dratt innom denne koselige 'kantina'. Veldig god lunsj og hyggelige ansatte! Anbefales for en lunsj eller brunsj etter shoppingturen!",
+    "category": "Casual",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_7777.jpg",
+    "webPage": "https://cousins.no/",
+    "dateVisited": "Mai, 2023",
+    "tags": [
+      "casual",
+      "lunsj",
+      "brunsj"
+    ]
+  },
+  {
+    "position": [
+      59.90631435111539,
+      10.759572701372313
+    ],
+    "city": "Oslo",
+    "title": "Mike's corner",
+    "description": "Cecilie er Karpe-fan, så hjørnet til Mike er hennes favoritt-hjørne. En ordentlig amerikansk chicken parm er digg dagen derpå. Mike's har også en veldig fin uteservering, digg å ta seg en utepils.",
+    "category": "Casual",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_6726.JPG",
+    "webPage": "https://oslobukta.no/oppdag/mike-s-corner/",
+    "dateVisited": "Mai, 2023",
+    "tags": [
+      "casual",
+      "lunsj",
+      "brunsj",
+      "dagen derpå",
+      "søndag",
+      "take away",
+      "amerikansk"
+    ]
+  },
+  {
+    "position": [
+      43.76835046770531,
+      11.25477450520732
+    ],
+    "city": "Firenze",
+    "title": "Ino",
+    "description": "Dette var det første vi spiste i Italia! Vi trengte en rask lunsj før vi skulle bli kjent med Firenze. Vi bestilte en panino med pesto, burrata og mortadella. Fantastiske råvarer og fersk panino-brød! Anbefalses!",
+    "category": "Casual",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_3141.JPG",
+    "webPage": "https://www.inofirenze.com/",
+    "dateVisited": "Oktober, 2023",
+    "tags": [
+      "casual",
+      "lunsj",
+      "brunsj",
+      "dagen derpå",
+      "søndag",
+      "italiensk"
+    ]
+  },
+  {
+    "position": [
+      43.76751382205651,
+      11.259690184657929
+    ],
+    "city": "Firenze",
+    "title": "Ristorante del Fagioli",
+    "description": "Firenze er kjent for sin Florentine steak, og denne restauranten er virkelig stedet for å teste ut biffen. Vi bestilte en biff på 1.3 kg og en tomatsalat. Det enkle er virkelig det beste. Fantastisk god biff, og veldig hyggelig betjening. De har ikke nettside, og vi var innom for å reservere da de var åpne til lunsj, det var lurt for her var det fullt og folk sto i kø utenfor. ",
+    "category": "Restaurant",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_3565.JPG",
+    "webPage": "",
+    "dateVisited": "Oktober, 2023",
+    "tags": [
+      "smart casual",
+      "middag",
+      "brunsj",
+      "florentine steak",
+      "biff",
+      "italiensk"
+    ]
+  },
+  {
+    "position": [
+      43.77611457722778,
+      11.255470781292036
+    ],
+    "city": "Firenze",
+    "title": "La Ménagère",
+    "description": "Bar og restaurant der det selges gaver, blomster, veldig gode cocktailer og kafémat.",
+    "category": "Drinks",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_3306.JPG",
+    "webPage": "https://www.lamenagere.it/",
+    "dateVisited": "Oktober, 2023",
+    "tags": [
+      "casual",
+      "lunsj",
+      "brunsj",
+      "drinks",
+      "italiensk"
+    ]
+  },
+  {
+    "position": [
+      43.77182110453394,
+      11.268015569667767
+    ],
+    "city": "Firenze",
+    "title": "Nugolo",
+    "description": "Anbefaling fra Michelinguiden og det var en veldig god anbefaling. Vi gikk for 5 retters med vinpakke. Fantastisk god mat med høstlige-ingredienser, hasselnøtt gikk igjen som tema.",
+    "category": "Restaurant",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_3805.JPG",
+    "webPage": "https://ilnugolo.com/",
+    "dateVisited": "Oktober, 2023",
+    "tags": [
+      "restaurant",
+      "fine dining",
+      "lunsj",
+      "brunsj",
+      "italiensk"
+    ]
+  },
+  {
+    "position": [
+      43.776077959478954,
+      11.258091194179999
+    ],
+    "city": "Firenze",
+    "title": "Gelateria Carabè Firenze",
+    "description": "En tommelfingerregel i Italia for å kjøpe god gelato er å unngå stedene som har is i store hauger, dette er bare salgstriks og er ikke god hjemmelaget is - gå helst for de som har isen under lokk. Dette stedet derimot var en ekte gelaleria med veldig spennende smaker. Vi prøvde oss på noe så spesielt som pecorino og bjørnebær(more), det var faktisk digg.",
+    "category": "Søtt",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_4066.JPG",
+    "webPage": "http://www.ilparcocarabe.it",
+    "dateVisited": "Oktober, 2023",
+    "tags": [
+      "gelato",
+      "is",
+      "søtt",
+      "italiensk"
+    ]
+  },
+  {
+    "position": [
+      43.771524002607514,
+      11.26116656551377
+    ],
+    "city": "Firenze",
+    "title": "RivaReno Gelato Firenze",
+    "description": "En tommelfingerregel i Italia for å kjøpe god gelato er å unngå stedene som har is i store hauger, dette er bare salgstriks og er ikke god hjemmelaget is - gå helst for de som har isen under lokk. Dette stedet derimot var en ekte gelaleria med veldig rene gode smaker. Vi gikk for pistasj og sjokolade, og det var veldig godt.",
+    "category": "Søtt",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_3236.JPG",
+    "webPage": "",
+    "dateVisited": "Oktober, 2023",
+    "tags": [
+      "gelato",
+      "is",
+      "søtt",
+      "italiensk"
+    ]
+  },
+  {
+    "position": [
+      43.77646408594275,
+      11.25283589576255
+    ],
+    "city": "Firenze",
+    "title": "Mercato Centrale Firenze",
+    "description": "Mercato Centrale er en stor mathall med mange ulike boder. Her kan du få alt fra pizza, pasta, gelato, sjømat, kjøtt, ost, vin, you name it. Vi gikk for et glass rødvin og en arancini som er en fritert ball med ost (kan være andre stuffinger enn ost også). ",
+    "category": "Casual",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_3768.JPG",
+    "webPage": "https://www.mercatocentrale.it/",
+    "dateVisited": "Oktober, 2023",
+    "tags": [
+      "street food",
+      "marked",
+      "italiensk"
+    ]
+  },
+  {
+    "position": [
+      43.77646408594275,
+      11.25283589576255
+    ],
+    "city": "Firenze",
+    "title": "Arà: è Sicilia",
+    "description": "Cannoli var noe vi ville smake på fra de som kan det. Det ble ikke bare en cannoli i løpet av Italiaturen...",
+    "category": "Søtt",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_4095.JPG",
+    "webPage": "",
+    "dateVisited": "Oktober, 2023",
+    "tags": [
+      "street food",
+      "sweet",
+      "italiensk",
+      "søtt"
+    ]
+  },
+  {
+    "position": [
+      43.77218830513954,
+      11.255859166066136
+    ],
+    "city": "Firenze",
+    "title": "Enoteca Alessi",
+    "description": "Vi skulle finne oss et sted og ta et glass rødvin før vi skulle videre mot middag. Alessi er en vinbar med småmat, vinsmaking og alkoholbutikk i samme lokale. Veldig god småmat og vin.",
+    "category": "Drinks",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_3488.JPG",
+    "webPage": "https://www.enotecaalessi.it/",
+    "dateVisited": "Oktober, 2023",
+    "tags": [
+      "wine",
+      "drinks",
+      "italiensk",
+      "småmat"
+    ]
+  },
+  {
+    "position": [
+      45.4408587540265,
+      12.328505562504352
+    ],
+    "city": "Venezia",
+    "title": "La Zucca",
+    "description": "Dette var første sted vi spiste i Venezia, vi hadde veldig flaks da vi fikk plass her. Dette var virkelig det beste stedet vi spiste på vår Italiatur. Vi delte en burrata med caponata di verdure, som en kaldrett med middelhavsgrønnsaker. Til hovedrett spiste undertegnede tagliatelle med gorgonzola og pistasjnøtter, og Petter spiste tagliatelle med ragu. Fantastisk!",
+    "category": "Restaurant",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_4174.JPG",
+    "webPage": "https://www.lazucca.it/",
+    "dateVisited": "Oktober, 2023",
+    "tags": [
+      "wine",
+      "restaurant",
+      "italiensk",
+      "lunsj",
+      "brunsj"
+    ]
+  },
+  {
+    "position": [
+      45.4389466908249,
+      12.334300459442723
+    ],
+    "city": "Venezia",
+    "title": "Alla Fonda",
+    "description": "Noe som er populært å spise som lunsj/mellomrett i Venezia er cichetti, snitter kaller vi det på godt norsk. Men selvfølgelig hakket mer spennende enn karbonade med løk. Cichetti serveres med typisk italiensk topping som ulike skinker, burrata, oliven etc. Alla Fonda var et veldig bra valg for å teste ut dette, men det fantes mange bra muligheter i samme område om det skulle være fullt her.",
+    "category": "Casual",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_4317.JPG",
+    "webPage": "",
+    "dateVisited": "Oktober, 2023",
+    "tags": [
+      "casual",
+      "lunsj",
+      "italiensk",
+      "brunsj"
+    ]
+  },
+  {
+    "position": [
+      45.437252507521,
+      12.331216163916192
+    ],
+    "city": "Venezia",
+    "title": "Pasticceria Rizzardini",
+    "description": "Midt i smørøyet i Venezia finnes dette lille konditoriet. Her kan du få deg en shot cappuccino og noe søtt, (og ei lita Moscato). For de som liker kaffe - de har en fantastisk god tiramisu her! Men alt smaker digg og hjemmelaget.",
+    "category": "Søtt",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_4329.JPG",
+    "webPage": "",
+    "dateVisited": "Oktober, 2023",
+    "tags": [
+      "casual",
+      "søtt",
+      "konditori",
+      "bakeri"
+    ]
+  },
+  {
+    "position": [
+      45.43916986906944,
+      12.333440428072263
+    ],
+    "city": "Venezia",
+    "title": "Cantina do Spade",
+    "description": "Om du vil teste typiske sjømatretter fra Venezia er dette plassen. Vi hadde flaks denne gangen også og fikk bord på et populært sted. Vi var tre til bords og spiste Bigoli in salsa, Spaghetti alla vongole og Frittolin. Og selvfølgelig god vin som alltid i Italia. ",
+    "category": "Restaurant",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_4473.JPG",
+    "webPage": "https://cantinadospade.com/",
+    "dateVisited": "Oktober, 2023",
+    "tags": [
+      "smart casual",
+      "restaurant",
+      "middag",
+      "italiensk",
+      "sjømat",
+      "brunsj"
+    ]
+  },
+  {
+    "position": [
+      45.4388046605278,
+      12.335446571134405
+    ],
+    "city": "Venezia",
+    "title": "Osteria Bancogiro",
+    "description": "Vårt aller siste måltid i Italia ble på denne nydelige uterestauranten rett ved Canal Grande. Vi gikk for å dele noen antipasti, og hver vår primi og dolce. Det var absolutt god mat, men kanskje litt dyrt i forhold til kvalitet. Men veldig innafor god mat og vin, vi har blitt bortskjemte på denne Italiaturen. Absolutt verdt et besøket når vi vet at flere restauranter i Venezia er en turistfelle! ",
+    "category": "Restaurant",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_4574.jpg",
+    "webPage": "https://www.osteriabancogiro.it/",
+    "dateVisited": "Oktober, 2023",
+    "tags": [
+      "smart casual",
+      "restaurant",
+      "middag",
+      "italiensk"
+    ]
+  }
+]
