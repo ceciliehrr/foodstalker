@@ -10,24 +10,24 @@
     </div>
 
     <hr />
-
-    <!-- Loop through cities and create radio buttons -->
+    <h3>Vis oppskrifter fra:</h3>
     <div class="map-cities">
-      <label v-for="city in uniqueCities" :key="city">
-        <input
-          type="radio"
-          v-model="selectedCity"
-          :value="city"
-          @change="setTown(toLowerCase(selectedCity))"
-        />
-        {{ city }}
-      </label>
+      <select
+        v-model="selectedCity"
+        @change="setTown(selectedCity.toLowerCase())"
+        class="city-select"
+      >
+        <option v-for="city in uniqueCities" :key="city" :value="city">
+          {{ city }}
+        </option>
+      </select>
     </div>
   </div>
-  <!--Toggle map/list-->
+
   <p>{{ toggleName }}</p>
-  <ToggleButton @setIsActive="toggleTheMap"></ToggleButton>
-  <!--The map-->
+  <ToggleButton @setIsActive="toggleTheMap" />
+
+  <!-- Map View -->
   <div :class="{ hidden: isActive }">
     <div class="foodstalker-map">
       <l-map
@@ -40,43 +40,43 @@
           :url="layers.CartoDB_Voyager.url"
           :attribution="layers.CartoDB_Voyager.attribution"
           :options="layers.CartoDB_Voyager.options"
-          :marker="layers.CartoDB_Voyager.marker"
           layer-type="base"
           name="OpenStreetMap"
-        ></l-tile-layer>
+        />
         <l-marker
           v-for="marker in markers"
           :key="marker.id"
-          :lat-lng.sync="marker.position"
+          :lat-lng="marker.position"
           @click="onMarkerClick(marker)"
         >
           <l-icon
             :icon-size="iconSize"
             :icon-anchor="iconAnchor"
-            :icon-url="categorizedMarkers(marker.category)"
+            :icon-url="getMarkerIcon(marker.category)"
           />
         </l-marker>
       </l-map>
     </div>
     <FoodMapDescription
       id="foodmap-card"
-      :title="title"
-      :imageUrl="imageUrl"
-      :description="description"
-      :webPage="webPage"
-      :dateVisited="dateVisited"
-    ></FoodMapDescription>
+      :title="selectedMarker.title"
+      :imageUrl="selectedMarker.imageUrl"
+      :description="selectedMarker.description"
+      :webPage="selectedMarker.webPage"
+      :dateVisited="selectedMarker.dateVisited"
+    />
   </div>
-  <!--The list-->
+
+  <!-- List View -->
   <div :class="{ hidden: !isActive }">
-    <div v-for="restaurant in filteredMarkers">
+    <div v-for="restaurant in filteredMarkers" :key="restaurant.id">
       <FoodMapDescription
         :title="restaurant.title"
         :description="restaurant.description"
         :imageUrl="restaurant.imageUrl"
         :webPage="restaurant.webPage"
         :dateVisited="restaurant.dateVisited"
-      ></FoodMapDescription>
+      />
     </div>
   </div>
 </template>
@@ -84,10 +84,10 @@
 <script>
 import "leaflet/dist/leaflet.css";
 import { LMap, LTileLayer, LMarker, LIcon } from "@vue-leaflet/vue-leaflet";
-import FoodMapDescription from "../components/FoodMapDescription.vue";
-import foodmapMarkers from "../data/food_map.json";
+import FoodMapDescription from "./FoodMapDescription.vue";
+import dataService from "../services/dataService.js";
 import ToggleButton from "./ToggleButton.vue";
-import SmallCards from "./cards/SmallCards.vue";
+
 export default {
   components: {
     LMap,
@@ -96,12 +96,10 @@ export default {
     LIcon,
     FoodMapDescription,
     ToggleButton,
-    SmallCards,
   },
   data() {
     const cities = {
       oslo: [59.907657562789446, 10.772765099423395],
-      //stockholm: [59.3293, 18.0686],
       stavanger: [58.96956842492558, 5.735700010074111],
       bergen: [60.3913, 5.3221],
       firenze: [43.7696, 11.2558],
@@ -115,12 +113,10 @@ export default {
       LogoMarker: "https://foodstalker.b-cdn.net/logoMarker.svg",
       SweetIcon: "https://foodstalker.b-cdn.net/SweetIcon.svg",
     };
-    // Default zoom
-    const defaultZoom = 13;
 
     return {
       center: cities.oslo,
-      zoom: defaultZoom,
+      zoom: 13,
       layers: {
         CartoDB_Voyager: {
           url: "https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png",
@@ -131,68 +127,63 @@ export default {
           },
         },
       },
-      markers: foodmapMarkers,
-      drinkIconUrl: icons.DrinksIcon,
-      restaurantIconUrl: icons.RestaurantIcon,
-      casualIconUrl: icons.CasualIcon,
-      sweetIconUrl: icons.SweetIcon,
-      logoMarkerUrl: icons.LogoMarker,
+      markers: [],
+      icons,
       iconSize: [50, 52],
       iconAnchor: [16, 37],
-      title: "The Foodstalkers",
-      imageUrl: "https://foodstalker.b-cdn.net/restauranter/IMG_8334.jpg",
-      description: "Hjemmelaget er alltid best. Mest kjent for taco!",
-      webPage: "https://www.foodstalker.no",
-      dateVisited: "2023-01-01",
-      selectedCity: "Oslo", // Initial city
-      defaultCity: "Oslo", // Default city when no city is selected
+      selectedMarker: {
+        title: "The Foodstalkers",
+        imageUrl: "https://foodstalker.b-cdn.net/restauranter/IMG_8334.jpg",
+        description: "Hjemmelaget er alltid best. Mest kjent for taco!",
+        webPage: "https://www.foodstalker.no",
+        dateVisited: "2023-01-01",
+      },
+      selectedCity: "Oslo",
       cities,
       isActive: false,
-      hidden: "hidden",
-      visible: "visible",
     };
   },
   methods: {
-    toLowerCase(str) {
-      return str.toLowerCase();
-    },
-
     toggleTheMap(isActive) {
       this.isActive = isActive;
       if (!isActive) {
-        this.setTown(this.toLowerCase(this.selectedCity));
+        this.setTown(this.selectedCity.toLowerCase());
       }
     },
+
     setTown(city) {
       if (this.cities[city]) {
         this.center = this.cities[city];
         this.$nextTick(() => {
-          this.zoom = this.defaultZoom;
+          this.zoom = 13;
         });
       }
     },
+
     onMarkerClick(marker) {
-      this.title = marker.title;
-      this.imageUrl = marker.imageUrl;
-      this.description = marker.description;
-      this.webPage = marker.webPage;
-      this.dateVisited = marker.dateVisited;
+      this.selectedMarker = {
+        title: marker.title,
+        imageUrl: marker.imageUrl,
+        description: marker.description,
+        webPage: marker.webPage,
+        dateVisited: marker.dateVisited,
+      };
       this.center = marker.position;
       this.scrollToDescription();
     },
-    categorizedMarkers(category) {
-      const categoryIcons = {
-        Restaurant: this.restaurantIconUrl,
-        Casual: this.casualIconUrl,
-        Drinks: this.drinkIconUrl,
-        Søtt: this.sweetIconUrl,
-      };
-      return categoryIcons[category] || this.logoMarkerUrl;
-    },
-    scrollToDescription() {
-      // Find the target element by its id
-      const targetElement = document.getElementById("foodmap-card");
 
+    getMarkerIcon(category) {
+      const categoryIcons = {
+        Restaurant: this.icons.RestaurantIcon,
+        Casual: this.icons.CasualIcon,
+        Drinks: this.icons.DrinksIcon,
+        Søtt: this.icons.SweetIcon,
+      };
+      return categoryIcons[category] || this.icons.LogoMarker;
+    },
+
+    scrollToDescription() {
+      const targetElement = document.getElementById("foodmap-card");
       if (targetElement) {
         targetElement.scrollIntoView({
           behavior: "smooth",
@@ -201,12 +192,29 @@ export default {
         });
       }
     },
+
+    loadRestaurants() {
+      try {
+        this.markers = dataService.getRestaurants();
+        const dataInfo = dataService.getDataSourceInfo();
+        console.log(
+          `Loaded ${this.markers.length} restaurants from ${dataInfo.source} (${dataInfo.lastUpdated})`
+        );
+      } catch (error) {
+        console.error("Failed to load restaurants:", error);
+        // Fallback to empty array or show error message
+        this.markers = [];
+      }
+    },
+  },
+  mounted() {
+    this.loadRestaurants();
   },
   computed: {
     uniqueCities() {
       // Extract unique cities from markerdata with capitalized first letters
       const cities = new Set();
-      for (const marker of foodmapMarkers) {
+      for (const marker of this.markers) {
         const cityName =
           marker.city.charAt(0).toUpperCase() +
           marker.city.slice(1).toLowerCase();
@@ -234,71 +242,101 @@ export default {
 @use "../styles/mixins/" as *;
 
 .map-header {
-  margin-bottom: 1rem;
+  margin-bottom: map.get($spacing, "size-16");
+
+  h1 {
+    @include get-text("fs-h3");
+    margin-bottom: map.get($spacing, "size-8");
+  }
+
   h2 {
-    margin-bottom: 0.5rem;
+    @include get-text("fs-h4");
+    margin-bottom: map.get($spacing, "size-8");
+    color: var(--fs-berries-500);
+  }
+
+  h3 {
+    @include get-text("fs-h6");
+    margin-top: map.get($spacing, "size-12");
+    font-weight: 500;
+    margin-bottom: map.get($spacing, "size-8");
   }
 }
+
 .map-emojis {
-  margin-bottom: 1rem;
-}
-.map-cities {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
-  label {
-    margin-bottom: 1rem;
+  margin-bottom: map.get($spacing, "size-16");
+
+  p {
+    @include get-text("fs-body2");
+    margin-bottom: map.get($spacing, "size-4");
+    color: var(--fs-gray-600);
   }
 }
+
+.map-cities {
+  margin-bottom: map.get($spacing, "size-16");
+  margin-top: map.get($spacing, "size-16");
+}
+
+.city-select {
+  @include get-text("fs-body1");
+  width: 100%;
+  max-width: 200px;
+  padding: map.get($spacing, "size-8") map.get($spacing, "size-12");
+  border: 2px solid var(--fs-gray-300);
+  border-radius: 0.5rem;
+  background-color: var(--fs-white);
+  color: var(--fs-black);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23b04c6a' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6,9 12,15 18,9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right map.get($spacing, "size-8") center;
+  background-size: 16px;
+  padding-right: map.get($spacing, "size-32");
+
+  &:hover {
+    border-color: var(--fs-berries-400);
+  }
+
+  &:focus {
+    outline: none;
+    border-color: var(--fs-berries-500);
+    box-shadow: 0 0 0 3px rgba(176, 76, 106, 0.1);
+  }
+
+  option {
+    padding: map.get($spacing, "size-8");
+    color: var(--fs-black);
+  }
+}
+
 .foodstalker-map {
   height: 450px;
   width: 100%;
+  border-radius: 0.75rem;
+  border: 2px solid var(--fs-gray-300);
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: white;
 
   @include bp("tablet-big-up") {
     height: 550px;
   }
 }
+
 .leaflet-container {
+  width: 100% !important;
+  height: 100% !important;
   border-radius: 0.75rem;
-  border: 2px solid var(--fs-gray-300);
-  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
-  padding: 1rem;
-  background-color: white;
 }
 
-label:hover {
-  cursor: pointer;
-}
-input[type="radio"] {
-  appearance: none;
-}
-
-input[type="radio"]:after {
-  width: 15px;
-  height: 15px;
-  border-radius: 15px;
-  position: relative;
-  background-color: var(--fs-berries-100);
-  content: "";
-  display: inline-block;
-  border: 1px solid var(--fs-berries-500);
-}
-
-input[type="radio"]:checked:after {
-  width: 15px;
-  height: 15px;
-  border-radius: 15px;
-  position: relative;
-  background-color: var(--fs-berries-500);
-  content: "";
-  display: inline-block;
-  border: 1px solid var(--fs-berries-500);
-}
-.visible {
-  display: block;
-}
 .hidden {
   display: none;
+}
+
+.visible {
+  display: block;
 }
 </style>

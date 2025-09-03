@@ -18,6 +18,9 @@ src/components/colors.vue
 .env.local
 .env.production
 
+# build-time generated data
+src/data/notion_restaurants.json
+
 # macOS-specific files
 .DS_Store
 
