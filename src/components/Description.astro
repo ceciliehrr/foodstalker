@@ -17,9 +17,9 @@ const paragraphs = longDescription?.split(/\r?\n\r?\n/).filter(Boolean) ?? [];
 
 <div class="fs-description">
   <div class="fs-description__meta">
-    <Badge icon="🍽️" text={`${portions} posjoner`} client:load />
-    <Badge icon="⏱️" text={time} client:load />
     {recipe && <DifficultyBadge recipe={recipe} client:load />}
+    <Badge type="info" icon="🍽️" text={`${portions} posjoner`} client:load />
+    <Badge type="info" icon="⏱️" text={time} client:load />
   </div>
   <Divider grey />
 

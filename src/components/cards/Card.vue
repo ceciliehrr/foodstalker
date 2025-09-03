@@ -29,6 +29,7 @@
 
 <script setup lang="ts">
 import DifficultyBadge from "../DifficultyBadge.vue";
+import { getCategoryEmoji } from "../../utils/categoryEmojis";
 
 interface Props {
   title: string;
@@ -43,22 +44,7 @@ interface Props {
 defineProps<Props>();
 
 function emojiCategory(cat: string): string {
-  switch (cat) {
-    case "hverdag":
-      return "🥦";
-    case "helg":
-      return "🌮";
-    case "søtt":
-      return "";
-    case "tilbehør":
-      return "";
-    case "turmat":
-      return "";
-    case "drikke":
-      return "🍹";
-    default:
-      return "🍜";
-  }
+  return getCategoryEmoji(cat);
 }
 </script>
 
@@ -148,14 +134,14 @@ function emojiCategory(cat: string): string {
 
     &-circle {
       display: grid;
-      background-color: var(--fs-lime);
       place-items: center;
-      box-shadow: var(--fs-brokkoli, 0 0 #0000), var(--fs-brokkoli, 0 0 #0000),
-        var(--fs-brokkoli);
+      background: var(--fs-gray-100);
+      border: 1px solid var(--fs-gray-300);
       border-radius: 9999px;
       width: 2.5rem;
       height: 2.5rem;
       font-size: 1rem;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
     }
   }
 

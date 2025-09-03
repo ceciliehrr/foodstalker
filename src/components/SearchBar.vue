@@ -49,42 +49,36 @@
           @input="onSearchInput"
           @focus="showSuggestions = true"
           @blur="onSearchBlur"
+          @keydown="handleInputKeydown"
         />
+        <button
+          v-if="search.length > 0"
+          @click="clearSearch"
+          class="fs-search-bar__clear-btn"
+          type="button"
+          aria-label="Clear search"
+        >
+          ×
+        </button>
 
-        <!-- Search suggestions dropdown -->
+        <!-- Simple custom dropdown -->
         <div
           v-if="showSuggestions && searchSuggestions.length > 0"
           class="fs-search-bar__suggestions"
         >
           <div
-            v-for="suggestion in searchSuggestions"
+            v-for="(suggestion, index) in searchSuggestions"
             :key="suggestion"
             class="fs-search-bar__suggestion-item"
+            :class="{
+              'fs-search-bar__suggestion-item--active':
+                selectedSuggestionIndex === index,
+            }"
+            :tabindex="selectedSuggestionIndex === index ? 0 : -1"
             @click="selectSuggestion(suggestion)"
           >
             {{ suggestion }}
           </div>
-        </div>
-      </div>
-
-      <!-- Filter tabs - show when there are recipes to filter -->
-      <div v-if="filteredRecipes.length > 0" class="fs-search-bar__filters">
-        <p>Filtrer søk</p>
-        <div class="fs-search-bar__filter-tabs">
-          <button
-            v-for="category in availableCategories"
-            :key="category.name"
-            @click="toggleCategoryFilter(category.name)"
-            :class="[
-              'fs-search-bar__filter-tab',
-              {
-                'fs-search-bar__filter-tab--active':
-                  selectedCategory === category.name,
-              },
-            ]"
-          >
-            {{ category.name }} ({{ category.count }})
-          </button>
         </div>
       </div>
     </div>
@@ -110,26 +104,21 @@
         />
       </div>
 
-      <!-- Selected ingredients as tabs -->
+      <!-- Selected ingredients as badges -->
       <div
         v-if="selectedIngredients.length > 0"
         class="fs-search-bar__ingredient-tabs"
       >
         <h4>Ingredienser du har:</h4>
         <div class="fs-search-bar__ingredient-tab-list">
-          <div
+          <Badge
             v-for="ingredient in selectedIngredients"
             :key="ingredient"
-            class="fs-search-bar__ingredient-tab"
-          >
-            {{ ingredient }}
-            <button
-              @click="removeIngredient(ingredient)"
-              class="fs-search-bar__remove-tab-btn"
-            >
-              ×
-            </button>
-          </div>
+            type="ingredient"
+            :text="ingredient"
+            closable
+            @close="removeIngredient(ingredient)"
+          />
         </div>
       </div>
 
@@ -145,31 +134,72 @@
       </div>
     </div>
 
-    <div v-if="search.length || selectedIngredients.length > 0">
-      <p class="fs-search-bar__searchtxt" v-if="sortedItems.length >= 2">
-        Du fant {{ sortedItems.length }} oppskrifter
-      </p>
-      <p class="fs-search-bar__searchtxt" v-else-if="sortedItems.length === 1">
-        Du fant {{ sortedItems.length }} oppskrift
-      </p>
-      <div class="fs-search-bar__searchtxt" v-else>
-        <p>
-          Ingen oppskrifter funnet for "{{ search }}"
-          <span style="font-size: 50px">🙈</span>
-        </p>
-        <p>Be oss om å lage det!</p>
-      </div>
+    <div
+      v-if="
+        search.length ||
+        selectedIngredients.length > 0 ||
+        selectedDifficulties.length > 0 ||
+        selectedCategories.length > 0
+      "
+      class="fs-search-bar__results-container"
+    >
+      <!-- Original FilterBox for laptop and up -->
+      <FilterBox
+        class="fs-search-bar__filter-desktop"
+        :recipes="recipes"
+        :search-results="currentSearchResults"
+        v-model:selected-difficulties="selectedDifficulties"
+        v-model:selected-categories="selectedCategories"
+        @update:selected-difficulties="updateSelectedDifficulties"
+        @update:selected-categories="updateSelectedCategories"
+      />
 
-      <Grid v-if="sortedItems.length > 0">
-        <div v-for="recipe in recipeShowed" :key="recipe.id">
-          <SmallCards
-            :title="recipe.title"
-            :description="recipe.description"
-            :image="recipe.imageurl"
-            :href="'/oppskrift/' + recipe.id"
-          />
+      <!-- Bottom Sheet for mobile and tablet -->
+      <FilterBoxBottomSheet
+        class="fs-search-bar__filter-mobile"
+        :recipes="recipes"
+        :search-results="currentSearchResults"
+        v-model:selected-difficulties="selectedDifficulties"
+        v-model:selected-categories="selectedCategories"
+        :total-results="totalResults"
+        @apply="handleApply"
+      />
+
+      <!-- Search Results -->
+      <div class="fs-search-bar__results">
+        <p class="fs-search-bar__searchtxt" v-if="sortedItems.length >= 2">
+          Du fant {{ sortedItems.length }} oppskrifter
+        </p>
+        <p
+          class="fs-search-bar__searchtxt"
+          v-else-if="sortedItems.length === 1"
+        >
+          Du fant {{ sortedItems.length }} oppskrift
+        </p>
+        <div class="fs-search-bar__searchtxt" v-else>
+          <p>
+            <span v-if="search"
+              >Ingen oppskrifter funnet for "{{ search }}"</span
+            >
+            <span v-else>Ingen oppskrifter funnet med de valgte filtrene</span>
+            <span style="font-size: 50px">🙈</span>
+          </p>
+          <p>Be oss om å lage det!</p>
         </div>
-      </Grid>
+
+        <Grid v-if="sortedItems.length > 0" :single-column="true">
+          <div v-for="recipe in recipeShowed" :key="recipe.id">
+            <SmallCards
+              :title="recipe.title"
+              :description="recipe.description"
+              :image="recipe.imageurl"
+              :href="'/oppskrift/' + recipe.id"
+              :difficulty="calculateDifficulty(recipe)"
+              :category="recipe.category"
+            />
+          </div>
+        </Grid>
+      </div>
     </div>
   </div>
 </template>
@@ -178,12 +208,23 @@
 import getRecipes from "../data/new_recipes.json";
 import SmallCards from "./cards/SmallCards.vue";
 import Grid from "./Grid.vue";
+import FilterBox from "./FilterBox.vue";
+import FilterBoxBottomSheet from "./FilterBoxBottomSheet.vue";
+import Badge from "./Badge.vue";
 import { RecipeSearchIndex } from "../utils/searchIndex";
+import {
+  calculateDifficulty,
+  getDifficultyIcon,
+  getDifficultyDisplayName,
+} from "../utils/recipeDifficulty";
 
 export default {
   components: {
     SmallCards,
     Grid,
+    FilterBox,
+    FilterBoxBottomSheet,
+    Badge,
   },
   props: {
     category: String,
@@ -194,8 +235,10 @@ export default {
       recipes: getRecipes,
       showRecipes: 20,
       showSuggestions: false,
-      selectedCategory: "",
+      selectedDifficulties: [] as string[],
+      selectedCategories: [] as string[],
       searchSuggestions: [] as string[],
+      selectedSuggestionIndex: -1,
       searchTimeout: null as any,
       searchIndex: null as RecipeSearchIndex | null,
       // Search mode and ingredient finder
@@ -219,29 +262,13 @@ export default {
   },
 
   computed: {
-    availableCategories() {
-      // Show categories based on current search results, not all recipes
-      const categories = new Map<string, number>();
-
-      // Get the recipes that would be shown (either search results or all recipes)
-      let recipesToCount = this.recipes;
-
-      // If there's a search, use the search results for counting
+    // Get current search results for FilterBox
+    currentSearchResults() {
       if (this.search.trim() && this.searchIndex) {
         const searchResults = this.searchIndex.search(this.search, {});
-        recipesToCount = searchResults.map((result) => result.recipe);
+        return searchResults.map((result) => result.recipe);
       }
-
-      // Count recipes in each category from the current results
-      recipesToCount.forEach((recipe) => {
-        const count = categories.get(recipe.category) || 0;
-        categories.set(recipe.category, count + 1);
-      });
-
-      return Array.from(categories.entries()).map(([name, count]) => ({
-        name,
-        count,
-      }));
+      return [];
     },
 
     sortedByCategory() {
@@ -257,11 +284,19 @@ export default {
     filteredRecipes() {
       let recipes = this.recipes;
 
-      // First apply category filter if selected
-      if (this.selectedCategory) {
-        recipes = recipes.filter(
-          (recipe) => recipe.category === this.selectedCategory
-        );
+      // First apply difficulty filter if selected
+      if (this.selectedDifficulties.length > 0) {
+        recipes = recipes.filter((recipe) => {
+          const difficulty = calculateDifficulty(recipe);
+          return this.selectedDifficulties.includes(difficulty.level);
+        });
+      }
+
+      // Then apply category filter if selected
+      if (this.selectedCategories.length > 0) {
+        recipes = recipes.filter((recipe) => {
+          return this.selectedCategories.includes(recipe.category);
+        });
       }
 
       // Then apply ingredient filter if ingredients are selected
@@ -330,15 +365,28 @@ export default {
       // Then apply search filter if there's search text
       if (this.search.trim() && this.searchIndex) {
         // Get search results
-        const searchResults = this.searchIndex.search(this.search, {
-          category: this.selectedCategory || undefined,
-        });
+        const searchResults = this.searchIndex.search(this.search, {});
 
-        // Convert to recipe objects and apply ingredient filtering
+        // Convert to recipe objects and apply filtering
         let filteredSearchResults = searchResults.map((result) => ({
           ...result.recipe,
           searchScore: result.score,
         }));
+
+        // Apply difficulty filter to search results if difficulties are selected
+        if (this.selectedDifficulties.length > 0) {
+          filteredSearchResults = filteredSearchResults.filter((recipe) => {
+            const difficulty = calculateDifficulty(recipe);
+            return this.selectedDifficulties.includes(difficulty.level);
+          });
+        }
+
+        // Apply category filter to search results if categories are selected
+        if (this.selectedCategories.length > 0) {
+          filteredSearchResults = filteredSearchResults.filter((recipe) => {
+            return this.selectedCategories.includes(recipe.category);
+          });
+        }
 
         // Apply ingredient filter to search results if ingredients are selected
         if (this.selectedIngredients.length > 0) {
@@ -418,6 +466,16 @@ export default {
       }
       // For regular search, show the normal amount
       return this.sortedItems.slice(0, this.showRecipes);
+    },
+
+    // Total results count for FilterBox components
+    totalResults() {
+      return this.sortedItems.length;
+    },
+
+    // Search results for FilterBox components
+    searchResults() {
+      return this.currentSearchResults;
     },
   },
 
@@ -549,8 +607,11 @@ export default {
 
     onSearchInput() {
       // Clear filters when starting a new search
-      if (this.selectedCategory) {
-        this.selectedCategory = "";
+      if (this.selectedDifficulties.length > 0) {
+        this.selectedDifficulties = [];
+      }
+      if (this.selectedCategories.length > 0) {
+        this.selectedCategories = [];
       }
 
       // Debounce search suggestions
@@ -573,24 +634,28 @@ export default {
     generateSearchSuggestions() {
       if (!this.searchIndex || !this.search.trim() || this.search.length < 2) {
         this.searchSuggestions = [];
+        this.selectedSuggestionIndex = -1;
         return;
       }
 
       // Use the search index for suggestions
       this.searchSuggestions = this.searchIndex.getSuggestions(this.search, 8);
+      this.selectedSuggestionIndex = -1;
     },
 
     selectSuggestion(suggestion: string) {
       this.search = suggestion;
       this.showSuggestions = false;
+      this.selectedSuggestionIndex = -1;
     },
 
-    toggleCategoryFilter(categoryName: string) {
-      if (this.selectedCategory === categoryName) {
-        this.selectedCategory = ""; // Deselect if already selected
-      } else {
-        this.selectedCategory = categoryName;
-      }
+    // Methods for FilterBox component
+    updateSelectedDifficulties(difficulties: string[]) {
+      this.selectedDifficulties = difficulties;
+    },
+
+    updateSelectedCategories(categories: string[]) {
+      this.selectedCategories = categories;
     },
 
     // Search mode management
@@ -601,7 +666,8 @@ export default {
       this.selectedIngredients = [];
       this.ingredientInput = "";
       this.showSuggestions = false;
-      this.selectedCategory = "";
+      this.selectedDifficulties = [];
+      this.selectedCategories = [];
 
       // Initialize ingredients if switching to ingredient mode
       if (mode === "ingredient" && this.allIngredients.length === 0) {
@@ -652,6 +718,70 @@ export default {
         this.selectedIngredients.splice(index, 1);
       }
     },
+
+    // Handle apply from FilterBox components
+    handleApply() {
+      // This method is called when user applies filters from modal components
+      // The filtering is already handled by the computed properties
+      // This is just a placeholder for any additional logic needed
+    },
+
+    // Simple keyboard navigation
+    handleInputKeydown(event: KeyboardEvent) {
+      if (!this.showSuggestions || this.searchSuggestions.length === 0) {
+        return;
+      }
+
+      switch (event.key) {
+        case "ArrowDown":
+          event.preventDefault();
+          this.selectedSuggestionIndex = Math.min(
+            this.selectedSuggestionIndex + 1,
+            this.searchSuggestions.length - 1
+          );
+          break;
+        case "ArrowUp":
+          event.preventDefault();
+          this.selectedSuggestionIndex = Math.max(
+            this.selectedSuggestionIndex - 1,
+            -1
+          );
+          break;
+        case "Enter":
+          if (this.selectedSuggestionIndex >= 0) {
+            event.preventDefault();
+            this.selectSuggestion(
+              this.searchSuggestions[this.selectedSuggestionIndex]
+            );
+          }
+          break;
+        case "Escape":
+          this.showSuggestions = false;
+          this.selectedSuggestionIndex = -1;
+          break;
+      }
+    },
+
+    // Clear search input and reset state
+    clearSearch() {
+      this.search = "";
+      this.showSuggestions = false;
+      this.searchSuggestions = [];
+      this.selectedSuggestionIndex = -1;
+      // Clear filters when clearing search
+      this.selectedDifficulties = [];
+      this.selectedCategories = [];
+    },
+
+    // Calculate difficulty for a recipe (for SmallCards component)
+    calculateDifficulty(recipe: any) {
+      const difficulty = calculateDifficulty(recipe);
+      return {
+        level: difficulty.level,
+        icon: getDifficultyIcon(difficulty.level),
+        label: getDifficultyDisplayName(difficulty.level),
+      };
+    },
   },
 };
 </script>
@@ -700,15 +830,16 @@ export default {
   &__input {
     font-size: 1rem;
     line-height: 1.25rem;
-    padding: 0.5rem 0.5rem 0.5rem 2.5rem;
+    padding: 0.5rem 2.5rem 0.5rem 2.5rem;
     border: 1px solid var(--fs-gray-300);
     border-radius: 0.5rem;
     width: 100%;
     display: block;
+    height: 50px;
 
     @media (max-width: 767px) {
       font-size: 1rem; // Keep at 16px to prevent zoom
-      padding: 0.75rem 0.5rem 0.75rem 2.5rem;
+      padding: 0.75rem 2.5rem 0.75rem 2.5rem;
     }
 
     &:focus,
@@ -717,12 +848,48 @@ export default {
     }
   }
 
+  &__clear-btn {
+    position: absolute;
+    right: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: var(--fs-gray-500);
+    font-size: 1.25rem;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0.25rem;
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+
+    &:hover {
+      color: var(--fs-gray-700);
+      background: var(--fs-gray-100);
+    }
+
+    &:focus {
+      outline: 2px solid var(--fs-berries-500);
+      outline-offset: 2px;
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--fs-berries-500);
+      outline-offset: 2px;
+    }
+  }
+
   &__suggestions {
     position: absolute;
     top: 100%;
     left: 0;
     right: 0;
-    background: white;
+    background: var(--fs-white);
     border: 1px solid var(--fs-gray-300);
     border-top: none;
     border-radius: 0 0 0.5rem 0.5rem;
@@ -736,9 +903,13 @@ export default {
     padding: 0.75rem 1rem;
     cursor: pointer;
     border-bottom: 1px solid var(--fs-gray-100);
+    color: var(--fs-black);
+    font-size: 0.875rem;
+    transition: background-color 0.2s ease;
 
-    &:hover {
-      background-color: var(--fs-gray-100);
+    &:hover,
+    &--active {
+      background-color: var(--fs-berries-50);
     }
 
     &:last-child {
@@ -947,6 +1118,10 @@ export default {
       border-color: var(--fs-berries-500);
       color: var(--fs-gray-700);
     }
+
+    &:focus-visible {
+      outline: 2px solid var(--fs-berries-500);
+    }
   }
 
   // Advanced search section
@@ -1079,45 +1254,6 @@ export default {
     }
   }
 
-  &__ingredient-tab {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.75rem 1.25rem;
-    background: var(--fs-berries-500);
-    color: white;
-    border-radius: 2rem;
-    font-size: 0.875rem;
-    font-weight: 500;
-    box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
-
-    @media (max-width: 767px) {
-      padding: 0.625rem 1rem;
-      font-size: 0.8rem;
-    }
-  }
-
-  &__remove-tab-btn {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 1.2rem;
-    cursor: pointer;
-    padding: 0;
-    width: 20px;
-    height: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    transition: all 0.2s ease;
-
-    &:hover {
-      background: rgba(255, 255, 255, 0.2);
-      transform: scale(1.1);
-    }
-  }
-
   &__no-ingredient-results {
     text-align: center;
     margin: 2rem 0;
@@ -1131,6 +1267,40 @@ export default {
       color: var(--fs-gray-700);
       margin: 0 0 1rem 0;
       font-style: italic;
+    }
+  }
+
+  // Results container layout
+  &__results-container {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
+
+  &__results {
+    flex: 1;
+    min-width: 0; // Prevent flex item from overflowing
+  }
+
+  // Responsive FilterBox components
+  &__filter-desktop {
+    display: block;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__filter-mobile {
+    display: none;
+
+    @media (max-width: 768px) {
+      display: block;
     }
   }
 }

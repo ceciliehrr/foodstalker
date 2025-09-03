@@ -3,7 +3,12 @@
     <button class="open-modal-button" @click="openModal()">
       👩🏼‍🍳 Kokkemodus
     </button>
-    <swipe-modal v-model="isModal" @close="closeModal()" client:only="vue">
+    <swipe-modal
+      v-model="isModal"
+      @close="closeModal()"
+      client:only="vue"
+      snap-point="90dvh"
+    >
       <div class="tabs">
         <button
           v-for="(tab, index) in tabs"

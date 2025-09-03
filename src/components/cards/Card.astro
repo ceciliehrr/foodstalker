@@ -1,6 +1,7 @@
 ---
 import { Image } from "astro:assets";
 import DifficultyBadge from "../DifficultyBadge.vue";
+import { getCategoryEmoji } from "../../utils/categoryEmojis";
 
 export interface Props {
   title: string;
@@ -33,25 +34,6 @@ function convertDate(date_str) {
   );
 }
 const convertedDate = convertDate(date);
-
-function emoji_category(cat) {
-  switch (cat) {
-    case "hverdag":
-      return "🥦";
-    case "helg":
-      return "🌮";
-    case "søtt":
-      return "🍩";
-    case "tilbehør":
-      return "🌽";
-    case "turmat":
-      return "🔥";
-    case "drikke":
-      return "🍹";
-    default:
-      return "🍜";
-  }
-}
 ---
 
 <a id={title} href={href} class="fs-card">
@@ -80,7 +62,7 @@ function emoji_category(cat) {
       <DifficultyBadge recipe={recipe} client:load />
 
       <div class="fs-card__footer-circle">
-        <span>{emoji_category(emoji)}</span>
+        <span>{getCategoryEmoji(emoji)}</span>
       </div>
     </div>
   </div>
@@ -162,14 +144,14 @@ function emoji_category(cat) {
 
       &-circle {
         display: grid;
-        background-color: var(--fs-lime);
         place-items: center;
-        box-shadow: var(--fs-brokkoli, 0 0 #0000), var(--fs-brokkoli, 0 0 #0000),
-          var(--fs-brokkoli);
+        background: var(--fs-gray-100);
+        border: 1px solid var(--fs-gray-300);
         border-radius: 9999px;
         width: 2.5rem;
         height: 2.5rem;
         font-size: 1rem;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
       }
     }
     &__text {

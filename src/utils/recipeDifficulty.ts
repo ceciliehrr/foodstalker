@@ -260,21 +260,21 @@ export function getDifficultyDisplayName(level: string): string {
 }
 
 /**
- * Get difficulty level color for UI
+ * Get difficulty level color for UI with opacity
  */
 export function getDifficultyColor(level: string): string {
   switch (level) {
     case "beginner":
     case "easy":
-      return "var(--fs-lime)"; // Your lime green color
+      return "rgba(190, 213, 174, 0.7)"; // fs-lime with 70% opacity
     case "intermediate":
     case "medium":
-      return "var(--fs-berries-300)"; // Your berries orange color
+      return "rgba(251, 211, 196, 0.7)"; // fs-berries-100 with 70% opacity
     case "advanced":
     case "hard":
-      return "var(--fs-berries-500)"; // Your berries red color
+      return "rgba(207, 174, 191, 0.7)"; // fs-berries-200 with 70% opacity
     default:
-      return "var(--fs-gray-400)"; // Your gray color
+      return "rgba(156, 163, 175, 0.7)"; // fs-gray-400 with 70% opacity
   }
 }
 
