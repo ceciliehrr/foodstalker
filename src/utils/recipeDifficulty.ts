@@ -40,7 +40,7 @@ export interface Recipe {
   category?: string;
   description?: string;
   longDescription?: string;
-  time?: string;
+  time?: string | number;
   portions?: number | string;
   tips?: string;
   chef?: string;
@@ -62,9 +62,24 @@ export interface Recipe {
 /**
  * Parse time string to minutes
  * Handles various Norwegian time formats like "30 min", "2 timer", "1 døgn", etc.
+ * Also handles numeric time values (already in minutes)
  */
-function parseTimeToMinutes(time: string): number {
+function parseTimeToMinutes(time: string | number): number {
   if (!time) return 0;
+
+  // If it's already a number, return it (assuming it's in minutes)
+  if (typeof time === "number") {
+    return Math.round(time);
+  }
+
+  // If it's not a string, try to convert it
+  if (typeof time !== "string") {
+    const num = parseFloat(time.toString());
+    if (!isNaN(num)) {
+      return Math.round(num);
+    }
+    return 0;
+  }
 
   const timeStr = time.toLowerCase().trim();
 

@@ -34,7 +34,7 @@
           <div class="suggestion-meta">
             <span class="meta-item">
               <span class="meta-icon">⏱️</span>
-              {{ suggestion.time }}
+              {{ formatTime(suggestion.time) }}
             </span>
             <span class="meta-item">
               <span class="meta-icon">👥</span>
@@ -73,6 +73,29 @@ const suggestions = computed(() =>
 const goToRecipe = (recipeId: string) => {
   // Navigate to recipe page
   window.location.href = `/oppskrift/${recipeId}`;
+};
+
+// Format time for display
+const formatTime = (time: string | number | undefined): string => {
+  if (!time) return "Ukjent tid";
+
+  // If it's already a number (minutes), format it
+  if (typeof time === "number") {
+    if (time < 60) {
+      return `${time} min`;
+    } else {
+      const hours = Math.floor(time / 60);
+      const minutes = time % 60;
+      if (minutes === 0) {
+        return `${hours} ${hours === 1 ? "time" : "timer"}`;
+      } else {
+        return `${hours} ${hours === 1 ? "time" : "timer"} ${minutes} min`;
+      }
+    }
+  }
+
+  // If it's a string, return as is (for backward compatibility)
+  return time;
 };
 </script>
 

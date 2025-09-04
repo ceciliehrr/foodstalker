@@ -6,20 +6,43 @@ import Badge from "./Badge.vue";
 export interface Props {
   longDescription?: string;
   description?: string;
-  time?: string;
+  time?: string | number;
   portions?: number;
   recipe?: any;
 }
 
 const { description, longDescription, time, portions, recipe } = Astro.props;
 const paragraphs = longDescription?.split(/\r?\n\r?\n/).filter(Boolean) ?? [];
+
+// Format time for display
+function formatTime(time: string | number | undefined): string {
+  if (!time) return "Ukjent tid";
+
+  // If it's already a number (minutes), format it
+  if (typeof time === "number") {
+    if (time < 60) {
+      return `${time} min`;
+    } else {
+      const hours = Math.floor(time / 60);
+      const minutes = time % 60;
+      if (minutes === 0) {
+        return `${hours} ${hours === 1 ? "time" : "timer"}`;
+      } else {
+        return `${hours} ${hours === 1 ? "time" : "timer"} ${minutes} min`;
+      }
+    }
+  }
+
+  // If it's a string, return as is (for backward compatibility)
+  return time;
+}
 ---
 
 <div class="fs-description">
   <div class="fs-description__meta">
     {recipe && <DifficultyBadge recipe={recipe} client:load />}
     <Badge type="info" icon="🍽️" text={`${portions} posjoner`} client:load />
-    <Badge type="info" icon="⏱️" text={time} client:load />
+    <Badge type="info" icon="⏱️" text={formatTime(time)} client:load />
   </div>
   <Divider grey />
 

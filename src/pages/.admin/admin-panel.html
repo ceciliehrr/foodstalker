@@ -1,319 +1,1030 @@
 <!DOCTYPE html>
 <html lang="nb">
   <head>
-    <title>Legg til oppskrift</title>
+    <title>Legg til oppskrift - Foodstalker Admin</title>
     <meta charset="UTF-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, minimum-scale=1"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <style>
-      .fs-container {
-        margin-left: auto;
-        margin-right: auto;
-        padding-left: 32px;
-        padding-right: 32px;
-        max-width: 48rem;
+      :root {
+        --fs-transparent: transparent;
+        --fs-white: #fff;
+        --fs-black: #1f1209;
+        --fs-gray-100: #f3f4f6;
+        --fs-gray-200: #e5e7eb;
+        --fs-gray-300: #cbd5e1;
+        --fs-gray-400: #9ca3af;
+        --fs-gray-500: #6b7280;
+        --fs-gray-600: #4b5563;
+        --fs-gray-700: #374151;
+        --fs-gray-800: #1f2937;
+        --fs-gray-900: #111827;
+        --fs-vanilla: #fdf8e8;
+        --fs-lime: #bed5ae;
+        --fs-lime-light: #d1e1c8;
+        --fs-brokkoli: #40595a;
+        --fs-berries-50: #fef7f4;
+        --fs-berries-100: #fbd3c4;
+        --fs-berries-200: #cfaebf;
+        --fs-berries-300: #ce8884;
+        --fs-berries-400: #c06c7e;
+        --fs-berries-500: #b04c6a;
+        --fs-berries-600: #9e3d5a;
       }
-      label {
-        font-size: 18px;
-        font-weight: 500;
-      }
-      input[type="text"],
-      select {
-        width: 100%;
-        padding: 12px 20px;
-        margin: 0 0 32px 0;
-        display: inline-block;
-        border: 1px solid #ccc;
-        border-radius: 4px;
+
+      * {
         box-sizing: border-box;
       }
 
-      input[type="submit"] {
+      html {
+        font-family: "Fira Code", monospace, system-ui, sans-serif;
+      }
+
+      body {
+        margin: 0;
+        color: var(--fs-black);
+        background-color: var(--fs-vanilla);
+        line-height: 1.6;
+        font-size: 1rem;
+        font-weight: 400;
+      }
+
+      .fs-container {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
         width: 100%;
-        background-color: #ce8884;
-        color: white;
-        padding: 14px 20px;
-        margin: 8px 0;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
+        max-width: 48rem;
       }
-      input[type="button"],
-      input[type="submit"],
-      input[type="reset"] {
-        background-color: #ce8884;
-        border: none;
-        color: white;
-        padding: 16px 32px;
-        text-decoration: none;
-        margin: 4px 2px;
-        cursor: pointer;
+
+      @media (min-width: 768px) {
+        .fs-container {
+          padding-left: 2rem;
+          padding-right: 2rem;
+        }
       }
-      button {
-        background-color: #ce8884;
-        border: none;
-        color: white;
-        padding: 16px 32px;
-        text-decoration: none;
-        margin: 4px 2px;
-        cursor: pointer;
+
+      .fs-header {
+        background-color: var(--fs-vanilla);
+        border-bottom: 2px solid var(--fs-black);
+        padding: 1.5rem 0;
+        margin-bottom: 2rem;
       }
+
+      .fs-header h1 {
+        font-family: "Roboto", sans-serif;
+        font-size: 2.125rem;
+        font-weight: 400;
+        letter-spacing: 0.25px;
+        margin: 0;
+        color: var(--fs-black);
+      }
+
+      .fs-form-section {
+        background-color: var(--fs-white);
+        border: 2px solid var(--fs-gray-200);
+        border-radius: 0.5rem;
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      }
+
+      .fs-form-section h2 {
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin: 0 0 1.5rem 0;
+        color: var(--fs-black);
+        border-bottom: 1px solid var(--fs-gray-200);
+        padding-bottom: 0.5rem;
+      }
+
+      .fs-form-group {
+        margin-bottom: 1.5rem;
+      }
+
+      .fs-form-group:last-child {
+        margin-bottom: 0;
+      }
+
+      label {
+        display: block;
+        font-size: 1rem;
+        font-weight: 500;
+        color: var(--fs-black);
+        margin-bottom: 0.5rem;
+      }
+
+      input[type="text"],
+      input[type="number"],
+      input[type="date"],
+      select,
       textarea {
         width: 100%;
-        height: 150px;
-        padding: 12px 20px;
-        box-sizing: border-box;
-        border: 2px solid #ccc;
-        border-radius: 4px;
-        resize: none;
+        padding: 0.75rem 1rem;
+        border: 2px solid var(--fs-gray-300);
+        border-radius: 0.5rem;
+        font-size: 1rem;
+        font-family: inherit;
+        background-color: var(--fs-white);
+        color: var(--fs-black);
+        transition: border-color 0.2s ease, box-shadow 0.2s ease;
       }
-      select {
-        width: 100%;
-        padding: 16px 20px;
+
+      input[type="text"]:focus,
+      input[type="number"]:focus,
+      input[type="date"]:focus,
+      select:focus,
+      textarea:focus {
+        outline: none;
+        border-color: var(--fs-berries-500);
+        box-shadow: 0 0 0 3px rgba(176, 76, 106, 0.1);
+      }
+
+      input[type="text"]:invalid,
+      input[type="number"]:invalid {
+        border-color: var(--fs-berries-500);
+      }
+
+      textarea {
+        min-height: 120px;
+        resize: vertical;
+      }
+
+      .fs-button {
+        background-color: var(--fs-berries-500);
+        color: var(--fs-white);
         border: none;
-        border-radius: 4px;
+        padding: 0.75rem 1.5rem;
+        border-radius: 0.5rem;
+        font-size: 1rem;
+        font-weight: 500;
+        cursor: pointer;
+        transition: background-color 0.2s ease, transform 0.1s ease;
+        text-decoration: none;
+        display: inline-block;
+        margin-right: 0.5rem;
+        margin-bottom: 0.5rem;
       }
-      #steps-container,
-      #ingredients-container,
-      #images-container,
-      #keywords-container,
-      #tid-container,
-      #description-container,
-      #main-container {
-        background-color: #fbd3c4;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        padding: 16px;
-        margin-bottom: 16px;
+
+      .fs-button:hover {
+        background-color: var(--fs-berries-600);
+        transform: translateY(-1px);
+      }
+
+      .fs-button:active {
+        transform: translateY(0);
+      }
+
+      .fs-button--secondary {
+        background-color: var(--fs-gray-500);
+      }
+
+      .fs-button--secondary:hover {
+        background-color: var(--fs-gray-600);
+      }
+
+      .fs-button--full {
+        width: 100%;
+        margin-right: 0;
+      }
+
+      .fs-button--danger {
+        background-color: var(--fs-berries-600);
+        color: var(--fs-white);
+      }
+
+      .fs-button--danger:hover {
+        background-color: #a01e3c;
+      }
+
+      .fs-ingredient-group {
+        background-color: var(--fs-gray-100);
+        border: 1px solid var(--fs-gray-200);
+        border-radius: 0.5rem;
+        padding: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      .fs-ingredient-field {
+        display: flex;
+        gap: 0.5rem;
+        align-items: end;
+        margin-bottom: 1rem;
+        padding: 0.5rem;
+        background-color: var(--fs-white);
+        border: 1px solid var(--fs-gray-200);
+        border-radius: 0.375rem;
+        width: 100%;
+        box-sizing: border-box;
+        flex-wrap: nowrap;
+      }
+
+      .fs-ingredient-field .fs-form-group {
+        margin-bottom: 0;
+      }
+
+      .fs-ingredient-field .fs-form-group label {
+        font-size: 0.875rem;
+        font-weight: 500;
+        margin-bottom: 0.25rem;
+        display: block;
+      }
+
+      .fs-ingredient-field .fs-form-group input,
+      .fs-ingredient-field .fs-form-group select {
+        width: 100%;
+        padding: 0.5rem 0.75rem;
+        font-size: 0.875rem;
+        box-sizing: border-box;
+      }
+
+      .fs-ingredient-field .fs-form-group:first-child {
+        flex: 0 0 80px;
+      }
+
+      .fs-ingredient-field .fs-form-group:nth-child(2) {
+        flex: 0 0 70px;
+      }
+
+      .fs-ingredient-field .fs-form-group.ingredient-name-field {
+        flex: 1;
+        min-width: 0;
+      }
+
+      .fs-ingredient-field .fs-form-group.ingredient-name-field input {
+        width: 100%;
+        min-width: 0;
+      }
+
+      .fs-ingredient-field .fs-form-group:last-child {
+        flex: 0 0 35px;
+      }
+
+      @media (max-width: 768px) {
+        .fs-ingredient-field {
+          flex-direction: column;
+          gap: 0.75rem;
+        }
+
+        .fs-ingredient-field .fs-form-group:first-child,
+        .fs-ingredient-field .fs-form-group:nth-child(2),
+        .fs-ingredient-field .fs-form-group.ingredient-name-field,
+        .fs-ingredient-field .fs-form-group:last-child {
+          flex: none;
+        }
+
+        .fs-ingredient-field .fs-form-group:last-child {
+          display: flex;
+          justify-content: center;
+        }
+      }
+
+      .fs-step-field {
+        background-color: var(--fs-gray-100);
+        border: 1px solid var(--fs-gray-200);
+        border-radius: 0.5rem;
+        padding: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      .fs-image-field {
+        background-color: var(--fs-gray-100);
+        border: 1px solid var(--fs-gray-200);
+        border-radius: 0.5rem;
+        padding: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      .fs-keyword-field {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      .fs-message {
+        padding: 1rem;
+        border-radius: 0.5rem;
+        margin-bottom: 1.5rem;
+        border: 2px solid;
+      }
+
+      .fs-message--success {
+        background-color: #d4edda;
+        color: #155724;
+        border-color: #c3e6cb;
+      }
+
+      .fs-message--error {
+        background-color: #f8d7da;
+        color: #721c24;
+        border-color: #f5c6cb;
+      }
+
+      .fs-modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+        display: none;
+      }
+
+      .fs-modal__content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: var(--fs-white);
+        padding: 2rem;
+        border-radius: 0.5rem;
+        max-width: 80%;
+        max-height: 80%;
+        overflow-y: auto;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      }
+
+      .fs-modal h2 {
+        margin-top: 0;
+        color: var(--fs-black);
+      }
+
+      .fs-form-actions {
+        display: flex;
+        gap: 1rem;
+        justify-content: flex-end;
+        margin-top: 2rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid var(--fs-gray-200);
+      }
+
+      @media (max-width: 768px) {
+        .fs-form-actions {
+          flex-direction: column;
+        }
+
+        .fs-button {
+          width: 100%;
+          margin-right: 0;
+        }
+      }
+
+      .fs-help-text {
+        font-size: 0.875rem;
+        color: var(--fs-gray-500);
+        margin-top: 0.25rem;
+      }
+
+      .fs-required {
+        color: var(--fs-berries-500);
       }
     </style>
   </head>
   <body>
     <div class="fs-container">
-      <h1>Legg til oppskrift</h1>
+      <div class="fs-header">
+        <h1>Legg til oppskrift</h1>
+      </div>
+
+      <div id="message-container">
+        <div
+          id="success-message"
+          class="fs-message fs-message--success"
+          style="display: none"
+        >
+          ✅ Oppskrift lagt til vellykket!
+        </div>
+        <div
+          id="error-message"
+          class="fs-message fs-message--error"
+          style="display: none"
+        ></div>
+      </div>
+
       <form action="/add-recipe" method="POST">
-        <div id="main-container">
-          <label for="id">ID:</label>
-          <input type="text" id="id" name="id" required /><br />
+        <!-- Basic Information -->
+        <div class="fs-form-section">
+          <h2>Grunnleggende informasjon</h2>
 
-          <label for="imageurl">Hovedbilde URL (portrett):</label>
-          <input type="text" id="imageurl" name="imageurl" /><br />
-
-          <label for="alt">Image Alt Text:</label>
-          <input type="text" id="alt" name="alt" /><br />
-
-          <label for="title">Tittel på oppskrift:</label>
-          <input type="text" id="title" name="title" /><br />
-
-          <label for="date">Dato:</label>
-          <input type="date" id="date" name="date" /><br />
-
-          <label for="category">Kategori:</label>
-          <select name="category" id="category">
-            <option value="hverdag">hverdag</option>
-            <option value="helg">helg</option>
-            <option value="søtt">søtt</option>
-            <option value="tilbehør">tilbehør</option>
-            <option value="turmat">turmat</option>
-            <option value="drikke">drikke</option>
-          </select>
-        </div>
-        <br />
-
-        <div id="description-container">
-          <label for="description">Kort beskrivelse:</label>
-          <textarea id="description" name="description"></textarea><br />
-
-          <label for="longDescription">Lang beskrivelse:</label>
-          <textarea id="longDescription" name="longDescription"></textarea
-          ><br />
-        </div>
-
-        <div id="tid-container">
-          <label for="time">Tid:</label>
-          <input type="text" id="time" name="time" /><br />
-
-          <label for="portions">Porsjoner - skriv i tall</label>
-          <input type="number" id="portions" name="portions" /><br />
-
-          <label for="tips">Tips:</label>
-          <textarea id="tips" name="tips"></textarea><br />
-
-          <label for="chef">Stalket?:</label>
-          <input type="text" id="chef" name="chef" /><br />
-
-          <label for="tipsurl">Tips URL:</label>
-          <input type="text" id="tipsurl" name="tipsurl" /><br />
-        </div>
-        <h2>Ingredients:</h2>
-        <div id="ingredients-container">
-          <div class="ingredient-group">
-            <label>Tittel:</label>
+          <div class="fs-form-group">
+            <label for="id">ID <span class="fs-required">*</span></label>
             <input
               type="text"
-              class="group-title"
-              name="ingredients[0][title]"
-              placeholder="Ingredient Group Title"
+              id="id"
+              name="id"
+              required
+              placeholder="oppskrift-navn"
             />
-            <div class="ingredient-field">
-              <label>Antall:</label>
-              <input
-                type="text"
-                name="ingredients[0][ingredients][0][quantity]"
-                placeholder="Ingredient Quantity"
-              />
-              <label>Navn:</label>
-              <input
-                type="text"
-                name="ingredients[0][ingredients][0][name]"
-                placeholder="Ingredient Name"
-              />
-              <br />
+            <div class="fs-help-text">
+              Unikt navn for oppskriften (bruk bindestrek mellom ord)
             </div>
-            <button type="button" onclick="addIngredientField(this)">
-              Ny ingrediens
+          </div>
+
+          <div class="fs-form-group">
+            <label for="title"
+              >Tittel på oppskrift <span class="fs-required">*</span></label
+            >
+            <input
+              type="text"
+              id="title"
+              name="title"
+              required
+              placeholder="F.eks. Nakkekoteletter med nektarin"
+            />
+          </div>
+
+          <div class="fs-form-group">
+            <label for="category"
+              >Kategori <span class="fs-required">*</span></label
+            >
+            <select name="category" id="category" required>
+              <option value="">Velg kategori</option>
+              <option value="hverdag">Hverdag</option>
+              <option value="helg">Helg</option>
+              <option value="søtt">Søtt</option>
+              <option value="tilbehør">Tilbehør</option>
+              <option value="turmat">Turmat</option>
+              <option value="drikke">Drikke</option>
+            </select>
+          </div>
+
+          <div class="fs-form-group">
+            <label for="date">Dato</label>
+            <input type="date" id="date" name="date" />
+          </div>
+        </div>
+
+        <!-- Description -->
+        <div class="fs-form-section">
+          <h2>Beskrivelse</h2>
+
+          <div class="fs-form-group">
+            <label for="description">Kort beskrivelse</label>
+            <textarea
+              id="description"
+              name="description"
+              placeholder="En kort beskrivelse av oppskriften..."
+            ></textarea>
+          </div>
+
+          <div class="fs-form-group">
+            <label for="longDescription">Lang beskrivelse</label>
+            <textarea
+              id="longDescription"
+              name="longDescription"
+              placeholder="En mer detaljert beskrivelse..."
+            ></textarea>
+          </div>
+        </div>
+
+        <!-- Time and Portions -->
+        <div class="fs-form-section">
+          <h2>Tid og porsjoner</h2>
+
+          <div class="fs-form-group">
+            <label for="time"
+              >Tid (i minutter) <span class="fs-required">*</span></label
+            >
+            <input
+              type="number"
+              id="time"
+              name="time"
+              min="1"
+              max="1440"
+              placeholder="30"
+              required
+            />
+            <div class="fs-help-text">Total tid for oppskriften i minutter</div>
+          </div>
+
+          <div class="fs-form-group">
+            <label for="portions"
+              >Porsjoner <span class="fs-required">*</span></label
+            >
+            <input
+              type="number"
+              id="portions"
+              name="portions"
+              min="1"
+              max="50"
+              placeholder="4"
+              required
+            />
+            <div class="fs-help-text">Antall porsjoner oppskriften gir</div>
+          </div>
+        </div>
+
+        <!-- Additional Information -->
+        <div class="fs-form-section">
+          <h2>Tilleggsinformasjon</h2>
+
+          <div class="fs-form-group">
+            <label for="tips">Tips</label>
+            <textarea
+              id="tips"
+              name="tips"
+              placeholder="Tips og triks for oppskriften..."
+            ></textarea>
+          </div>
+
+          <div class="fs-form-group">
+            <label for="chef">Stalket av</label>
+            <input
+              type="text"
+              id="chef"
+              name="chef"
+              placeholder="Navn på person som laget oppskriften"
+            />
+          </div>
+
+          <div class="fs-form-group">
+            <label for="tipsurl">Tips URL</label>
+            <input
+              type="text"
+              id="tipsurl"
+              name="tipsurl"
+              placeholder="https://..."
+            />
+          </div>
+
+          <div class="fs-form-group">
+            <label for="imageurl">Hovedbilde URL</label>
+            <input
+              type="text"
+              id="imageurl"
+              name="imageurl"
+              placeholder="https://..."
+            />
+            <div class="fs-help-text">
+              URL til hovedbildet (anbefalt portrettformat)
+            </div>
+          </div>
+
+          <div class="fs-form-group">
+            <label for="alt">Bilde Alt Text</label>
+            <input
+              type="text"
+              id="alt"
+              name="alt"
+              placeholder="Beskrivelse av bildet for tilgjengelighet"
+            />
+          </div>
+        </div>
+        <!-- Ingredients -->
+        <div class="fs-form-section">
+          <h2>Ingredienser</h2>
+
+          <div id="ingredients-container">
+            <div class="fs-ingredient-group">
+              <div class="fs-form-group">
+                <label>Gruppetittel (valgfri)</label>
+                <input
+                  type="text"
+                  class="group-title"
+                  name="ingredients[0][title]"
+                  placeholder="F.eks. Saus, Tilbehør, etc."
+                />
+              </div>
+
+              <div class="fs-ingredient-field">
+                <div class="fs-form-group">
+                  <label>Antall</label>
+                  <input
+                    type="number"
+                    name="ingredients[0][ingredients][0][amount]"
+                    placeholder="1"
+                    step="0.25"
+                    min="0"
+                  />
+                </div>
+
+                <div class="fs-form-group">
+                  <label for="unit0">Enhet</label>
+                  <select
+                    id="unit0"
+                    name="ingredients[0][ingredients][0][unit]"
+                  >
+                    <option value="stk">stk</option>
+                    <option value="g">g</option>
+                    <option value="kg">kg</option>
+                    <option value="ss">ss</option>
+                    <option value="ts">ts</option>
+                    <option value="dl">dl</option>
+                    <option value="l">l</option>
+                    <option value="fedd">fedd</option>
+                    <option value="biter">biter</option>
+                    <option value="klype">klype</option>
+                    <option value="dash">dash</option>
+                    <option value="">ingen enhet</option>
+                  </select>
+                </div>
+
+                <div class="fs-form-group ingredient-name-field">
+                  <label>Ingrediens <span class="fs-required">*</span></label>
+                  <input
+                    type="text"
+                    name="ingredients[0][ingredients][0][name]"
+                    placeholder="F.eks. kjøttdeig, løk, tomat"
+                    required
+                  />
+                </div>
+                <div class="fs-form-group">
+                  <button
+                    type="button"
+                    class="fs-button fs-button--danger"
+                    onclick="removeIngredientField(this)"
+                    style="padding: 0.5rem; font-size: 0.875rem"
+                  >
+                    ✕
+                  </button>
+                </div>
+              </div>
+
+              <button
+                type="button"
+                class="fs-button fs-button--secondary"
+                onclick="addIngredientField(this)"
+              >
+                + Legg til ingrediens
+              </button>
+            </div>
+          </div>
+
+          <button
+            type="button"
+            class="fs-button fs-button--secondary"
+            onclick="addIngredientGroup()"
+          >
+            + Ny ingrediensgruppe
+          </button>
+        </div>
+
+        <!-- Steps -->
+        <div class="fs-form-section">
+          <h2>Fremgangsmåte</h2>
+
+          <div id="steps-container">
+            <div class="fs-step-field">
+              <div class="fs-form-group">
+                <label for="step-title1">Steg 1 - Tittel (valgfri)</label>
+                <input
+                  type="text"
+                  id="step-title1"
+                  name="steps[0][title]"
+                  placeholder="F.eks. Forberedelser, Kjøttet, Sausen"
+                />
+              </div>
+
+              <div class="fs-form-group">
+                <label for="step-description1"
+                  >Steg 1 - Beskrivelse
+                  <span class="fs-required">*</span></label
+                >
+                <textarea
+                  id="step-description1"
+                  name="steps[0][description]"
+                  rows="4"
+                  placeholder="Beskriv hva som skal gjøres i dette steget..."
+                  required
+                ></textarea>
+              </div>
+            </div>
+          </div>
+
+          <button
+            type="button"
+            class="fs-button fs-button--secondary"
+            onclick="addStepField()"
+          >
+            + Legg til steg
+          </button>
+        </div>
+
+        <!-- Images -->
+        <div class="fs-form-section">
+          <h2>Bilder</h2>
+          <div class="fs-help-text" style="margin-bottom: 1.5rem">
+            Legg til bilder som viser fremgangsmåten eller det ferdige
+            resultatet
+          </div>
+
+          <div id="images-container">
+            <div class="fs-image-field">
+              <h3>Bilde 1</h3>
+              <div class="fs-form-group">
+                <label for="imageurl1">Orientering</label>
+                <select id="imageurl1" name="images[0][orientation]">
+                  <option value="landscape">Landscape</option>
+                  <option value="portrait">Portrait</option>
+                </select>
+              </div>
+              <div class="fs-form-group">
+                <label for="imageurl1">Bilde URL</label>
+                <input
+                  type="text"
+                  id="imageurl1"
+                  name="images[0][url]"
+                  placeholder="https://..."
+                />
+              </div>
+              <div class="fs-form-group">
+                <label for="imagealt1">Alt tekst</label>
+                <input
+                  type="text"
+                  id="imagealt1"
+                  name="images[0][alt]"
+                  placeholder="Beskrivelse av bildet"
+                />
+              </div>
+            </div>
+
+            <div class="fs-image-field">
+              <h3>Bilde 2</h3>
+              <div class="fs-form-group">
+                <label for="imageurl2">Orientering</label>
+                <select id="imageurl2" name="images[1][orientation]">
+                  <option value="portrait">Portrait</option>
+                  <option value="landscape">Landscape</option>
+                </select>
+              </div>
+              <div class="fs-form-group">
+                <label for="imageurl2">Bilde URL</label>
+                <input
+                  type="text"
+                  id="imageurl2"
+                  name="images[1][url]"
+                  placeholder="https://..."
+                />
+              </div>
+              <div class="fs-form-group">
+                <label for="imagealt2">Alt tekst</label>
+                <input
+                  type="text"
+                  id="imagealt2"
+                  name="images[1][alt]"
+                  placeholder="Beskrivelse av bildet"
+                />
+              </div>
+            </div>
+
+            <div class="fs-image-field">
+              <h3>Bilde 3</h3>
+              <div class="fs-form-group">
+                <label for="imageurl3">Orientering</label>
+                <select id="imageurl3" name="images[2][orientation]">
+                  <option value="landscape">Landscape</option>
+                  <option value="portrait">Portrait</option>
+                </select>
+              </div>
+              <div class="fs-form-group">
+                <label for="imageurl3">Bilde URL</label>
+                <input
+                  type="text"
+                  id="imageurl3"
+                  name="images[2][url]"
+                  placeholder="https://..."
+                />
+              </div>
+              <div class="fs-form-group">
+                <label for="imagealt3">Alt tekst</label>
+                <input
+                  type="text"
+                  id="imagealt3"
+                  name="images[2][alt]"
+                  placeholder="Beskrivelse av bildet"
+                />
+              </div>
+            </div>
+
+            <div class="fs-image-field">
+              <h3>Bilde 4</h3>
+              <div class="fs-form-group">
+                <label for="imageurl4">Orientering</label>
+                <select id="imageurl4" name="images[3][orientation]">
+                  <option value="portrait">Portrait</option>
+                  <option value="landscape">Landscape</option>
+                </select>
+              </div>
+              <div class="fs-form-group">
+                <label for="imageurl4">Bilde URL</label>
+                <input
+                  type="text"
+                  id="imageurl4"
+                  name="images[3][url]"
+                  placeholder="https://..."
+                />
+              </div>
+              <div class="fs-form-group">
+                <label for="imagealt4">Alt tekst</label>
+                <input
+                  type="text"
+                  id="imagealt4"
+                  name="images[3][alt]"
+                  placeholder="Beskrivelse av bildet"
+                />
+              </div>
+            </div>
+
+            <div class="fs-image-field">
+              <h3>Bilde 5</h3>
+              <div class="fs-form-group">
+                <label for="imageurl5">Orientering</label>
+                <select id="imageurl5" name="images[4][orientation]">
+                  <option value="landscape">Landscape</option>
+                  <option value="portrait">Portrait</option>
+                </select>
+              </div>
+              <div class="fs-form-group">
+                <label for="imageurl5">Bilde URL</label>
+                <input
+                  type="text"
+                  id="imageurl5"
+                  name="images[4][url]"
+                  placeholder="https://..."
+                />
+              </div>
+              <div class="fs-form-group">
+                <label for="imagealt5">Alt tekst</label>
+                <input
+                  type="text"
+                  id="imagealt5"
+                  name="images[4][alt]"
+                  placeholder="Beskrivelse av bildet"
+                />
+              </div>
+            </div>
+
+            <div class="fs-image-field">
+              <h3>Bilde 6</h3>
+              <div class="fs-form-group">
+                <label for="imageurl6">Orientering</label>
+                <select id="imageurl6" name="images[5][orientation]">
+                  <option value="portrait">Portrait</option>
+                  <option value="landscape">Landscape</option>
+                </select>
+              </div>
+              <div class="fs-form-group">
+                <label for="imageurl6">Bilde URL</label>
+                <input
+                  type="text"
+                  id="imageurl6"
+                  name="images[5][url]"
+                  placeholder="https://..."
+                />
+              </div>
+              <div class="fs-form-group">
+                <label for="imagealt6">Alt tekst</label>
+                <input
+                  type="text"
+                  id="imagealt6"
+                  name="images[5][alt]"
+                  placeholder="Beskrivelse av bildet"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Keywords -->
+        <div class="fs-form-section">
+          <h2>Nøkkelord</h2>
+          <div class="fs-help-text" style="margin-bottom: 1.5rem">
+            Legg til nøkkelord som hjelper med å finne oppskriften
+          </div>
+
+          <div id="keywords-container">
+            <div class="fs-keyword-field">
+              <div class="fs-form-group" style="flex: 1">
+                <label for="keyword1">Nøkkelord 1</label>
+                <input
+                  type="text"
+                  id="keyword1"
+                  name="keywords[]"
+                  list="keyword-suggestions"
+                  placeholder="F.eks. kjøtt, rask, enkel"
+                />
+              </div>
+            </div>
+          </div>
+
+          <button
+            type="button"
+            class="fs-button fs-button--secondary"
+            onclick="addKeywordField()"
+          >
+            + Legg til nøkkelord
+          </button>
+
+          <datalist id="keyword-suggestions">
+            <option value="kjøtt"></option>
+            <option value="fisk"></option>
+            <option value="kylling"></option>
+            <option value="vegetar"></option>
+            <option value="vegan"></option>
+            <option value="sunn"></option>
+            <option value="rask"></option>
+            <option value="enkel"></option>
+            <option value="middag"></option>
+            <option value="frokost"></option>
+            <option value="lunsj"></option>
+            <option value="dessert"></option>
+            <option value="bakst"></option>
+            <option value="suppe"></option>
+            <option value="salat"></option>
+            <option value="pasta"></option>
+            <option value="pizza"></option>
+            <option value="kake"></option>
+            <option value="brød"></option>
+            <option value="saus"></option>
+            <option value="drikke"></option>
+            <option value="sommer"></option>
+            <option value="vinter"></option>
+            <option value="jul"></option>
+            <option value="påske"></option>
+            <option value="barn"></option>
+            <option value="senior"></option>
+            <option value="tur"></option>
+            <option value="helg"></option>
+            <option value="hverdag"></option>
+          </datalist>
+        </div>
+
+        <!-- Form Actions -->
+        <div class="fs-form-actions">
+          <button
+            type="button"
+            class="fs-button fs-button--secondary"
+            onclick="previewRecipe()"
+          >
+            👁️ Forhåndsvisning
+          </button>
+          <button
+            type="submit"
+            class="fs-button"
+            onclick="return validateForm()"
+          >
+            💾 Lagre oppskrift
+          </button>
+        </div>
+      </form>
+
+      <!-- Preview Modal -->
+      <div id="preview-modal" class="fs-modal">
+        <div class="fs-modal__content">
+          <h2>Forhåndsvisning av oppskrift</h2>
+          <div id="preview-content"></div>
+          <div class="fs-form-actions">
+            <button
+              onclick="closePreview()"
+              class="fs-button fs-button--secondary"
+            >
+              Lukk
             </button>
           </div>
         </div>
-        <button type="button" onclick="addIngredientGroup()">Ny gruppe</button>
-
-        <!-- Add more ingredient fields as needed -->
-
-        <h2>Steps:</h2>
-        <div id="steps-container">
-          <div class="step-field">
-            <label for="step-title1">Step 1 Title:</label>
-            <input type="text" id="step-title1" name="steps[0][title]" />
-            <br />
-            <label for="step-description1">Step 1 Description:</label>
-            <textarea
-              id="step-description1"
-              name="steps[0][description]"
-              rows="4"
-              cols="50"
-            ></textarea>
-            <br />
-          </div>
-        </div>
-        <button type="button" onclick="addStepField()">Add Step</button>
-
-        <!-- Add more step fields as needed -->
-
-        <h2>Images:</h2>
-
-        <div id="images-container">
-          <div class="image-field">
-            <h2>Image 1</h2>
-            <label for="imageurl1">Orientation:</label>
-            <input
-              type="text"
-              id="imageurl1"
-              name="images[0][orientation]"
-              value="landscape"
-            /><br />
-            <label for="imageurl1">Image 1 URL:</label>
-            <input type="text" id="imageurl1" name="images[0][url]" /><br />
-            <label for="imagealt1">Image 1 Alt Text:</label>
-            <input type="text" id="imagealt1" name="images[0][alt]" /><br />
-          </div>
-          <div class="image-field">
-            <h2>Image 2</h2>
-            <label for="imageurl1">Orientation:</label>
-            <input
-              type="text"
-              id="imageurl1"
-              name="images[1][orientation]"
-              value="portrait"
-            /><br />
-            <label for="imageurl1">Image 1 URL:</label>
-            <input type="text" id="imageurl1" name="images[1][url]" /><br />
-            <label for="imagealt1">Image 1 Alt Text:</label>
-            <input type="text" id="imagealt1" name="images[1][alt]" /><br />
-          </div>
-
-          <div class="image-field">
-            <h2>Image 3</h2>
-            <label for="imageurl1">Orientation:</label>
-            <input
-              type="text"
-              id="imageurl1"
-              name="images[2][orientation]"
-              value="portrait"
-            /><br />
-            <label for="imageurl1">Image 1 URL:</label>
-            <input type="text" id="imageurl1" name="images[2][url]" /><br />
-            <label for="imagealt1">Image 1 Alt Text:</label>
-            <input type="text" id="imagealt1" name="images[2][alt]" /><br />
-          </div>
-
-          <div class="image-field">
-            <h2>Image 4</h2>
-            <label for="imageurl1">Orientation:</label>
-            <input
-              type="text"
-              id="imageurl1"
-              name="images[3][orientation]"
-              value="landscape"
-            /><br />
-            <label for="imageurl1">Image 1 URL:</label>
-            <input type="text" id="imageurl1" name="images[3][url]" /><br />
-            <label for="imagealt1">Image 1 Alt Text:</label>
-            <input type="text" id="imagealt1" name="images[3][alt]" /><br />
-          </div>
-
-          <div class="image-field">
-            <h2>Image 5</h2>
-            <label for="imageurl1">Orientation:</label>
-            <input
-              type="text"
-              id="imageurl1"
-              name="images[4][orientation]"
-              value="landscape"
-            /><br />
-            <label for="imageurl1">Image 1 URL:</label>
-            <input type="text" id="imageurl1" name="images[4][url]" /><br />
-            <label for="imagealt1">Image 1 Alt Text:</label>
-            <input type="text" id="imagealt1" name="images[4][alt]" /><br />
-          </div>
-
-          <div class="image-field">
-            <h2>Image 6</h2>
-            <label for="imageurl1">Orientation:</label>
-            <input
-              type="text"
-              id="imageurl1"
-              name="images[5][orientation]"
-              value="portrait"
-            /><br />
-            <label for="imageurl1">Image 1 URL:</label>
-            <input type="text" id="imageurl1" name="images[5][url]" /><br />
-            <label for="imagealt1">Image 1 Alt Text:</label>
-            <input type="text" id="imagealt1" name="images[5][alt]" /><br />
-          </div>
-        </div>
-        <!-- Add more image fields as needed -->
-
-        <h2>Keywords:</h2>
-        <div id="keywords-container">
-          <div class="keyword-field">
-            <label for="keyword1">Keyword 1:</label>
-            <input type="text" id="keyword1" name="keywords[]" /><br />
-          </div>
-        </div>
-        <button type="button" onclick="addKeywordField()">Add Keyword</button>
-
-        <!-- Add more keyword fields as needed -->
-
-        <br />
-        <input type="submit" value="Add Recipe" />
-      </form>
+      </div>
     </div>
   </body>
 </html>
 
 <script>
+  // Handle success/error messages from URL parameters
+  window.addEventListener("DOMContentLoaded", function () {
+    const urlParams = new URLSearchParams(window.location.search);
+    const success = urlParams.get("success");
+    const error = urlParams.get("error");
+
+    if (success === "true") {
+      document.getElementById("success-message").style.display = "block";
+      // Clear the URL parameters
+      window.history.replaceState({}, document.title, window.location.pathname);
+    }
+
+    if (error) {
+      const errorMessage = document.getElementById("error-message");
+      errorMessage.textContent = decodeURIComponent(error);
+      errorMessage.style.display = "block";
+      // Clear the URL parameters
+      window.history.replaceState({}, document.title, window.location.pathname);
+    }
+  });
+
   // Steps fields
   let stepCounter = 2;
 
@@ -323,16 +1034,19 @@
     const stepField = document.createElement("div");
     stepField.classList.add("step-field");
     stepField.innerHTML = `
-        <label for="step-title${stepCounter}">Step ${stepCounter} Title:</label>
-        <input type="text" id="step-title${stepCounter}" name="steps[${
+        <div class="fs-form-group">
+          <label for="step-title${stepCounter}">Steg ${stepCounter} - Tittel (valgfri)</label>
+          <input type="text" id="step-title${stepCounter}" name="steps[${
       stepCounter - 1
-    }][title]" >
-        <br>
-        <label for="step-description${stepCounter}">Step ${stepCounter} Description:</label>
-        <textarea id="step-description${stepCounter}" name="steps[${
+    }][title]" placeholder="F.eks. Forberedelser, Kjøttet, Sausen">
+        </div>
+        
+        <div class="fs-form-group">
+          <label for="step-description${stepCounter}">Steg ${stepCounter} - Beskrivelse <span class="fs-required">*</span></label>
+          <textarea id="step-description${stepCounter}" name="steps[${
       stepCounter - 1
-    }][description]" rows="4" cols="50" ></textarea>
-        <br>
+    }][description]" rows="4" placeholder="Beskriv hva som skal gjøres i dette steget..." required></textarea>
+        </div>
       `;
 
     container.appendChild(stepField);
@@ -346,18 +1060,44 @@
     const container = document.getElementById("ingredients-container");
 
     const ingredientGroup = document.createElement("div");
-    ingredientGroup.classList.add("ingredient-group");
+    ingredientGroup.classList.add("fs-ingredient-group");
     ingredientGroup.innerHTML = `
-    <label>Tittel:</label>
-    <input type="text" class="group-title" name="ingredients[${ingredientGroupCounter}][title]" placeholder="Ingredient Group Title">
-    <div class="ingredient-field">
-      <label>Antall:</label>
-      <input type="text" name="ingredients[${ingredientGroupCounter}][ingredients][0][quantity]" placeholder="Ingredient Quantity">
-      <label>Navn:</label>
-      <input type="text" name="ingredients[${ingredientGroupCounter}][ingredients][0][name]" placeholder="Ingredient Name">
-      <br />
+    <div class="fs-form-group">
+      <label>Gruppetittel (valgfri)</label>
+      <input type="text" class="group-title" name="ingredients[${ingredientGroupCounter}][title]" placeholder="F.eks. Saus, Tilbehør, etc.">
     </div>
-    <button type="button" onclick="addIngredientField(this)">Legg til ingrediens</button>
+    
+    <div class="fs-ingredient-field">
+      <div class="fs-form-group">
+        <label>Antall</label>
+        <input type="number" name="ingredients[${ingredientGroupCounter}][ingredients][0][amount]" placeholder="1" step="0.25" min="0">
+      </div>
+      
+      <div class="fs-form-group">
+        <label>Enhet</label>
+        <select name="ingredients[${ingredientGroupCounter}][ingredients][0][unit]">
+          <option value="stk">stk</option>
+          <option value="g">g</option>
+          <option value="kg">kg</option>
+          <option value="ss">ss</option>
+          <option value="ts">ts</option>
+          <option value="dl">dl</option>
+          <option value="l">l</option>
+          <option value="fedd">fedd</option>
+          <option value="biter">biter</option>
+          <option value="klype">klype</option>
+          <option value="dash">dash</option>
+          <option value="">ingen enhet</option>
+        </select>
+      </div>
+      
+      <div class="fs-form-group ingredient-name-field">
+        <label>Ingrediens <span class="fs-required">*</span></label>
+        <input type="text" name="ingredients[${ingredientGroupCounter}][ingredients][0][name]" placeholder="F.eks. kjøttdeig, løk, tomat" required>
+      </div>
+    </div>
+    
+    <button type="button" class="fs-button fs-button--secondary" onclick="addIngredientField(this)">+ Legg til ingrediens</button>
   `;
 
     container.appendChild(ingredientGroup);
@@ -366,47 +1106,69 @@
 
   function addIngredientField(button) {
     const ingredientGroup = button.parentNode;
-    const ingredientField = ingredientGroup.querySelector(".ingredient-field");
+    const existingFields = ingredientGroup.querySelectorAll(
+      ".fs-ingredient-field"
+    );
 
-    const ingredientCount =
-      ingredientField.querySelectorAll("input").length / 2;
+    const ingredientCount = existingFields.length;
     const groupIndex = ingredientGroupCounter - 1;
 
     const newIngredientField = document.createElement("div");
-    newIngredientField.classList.add("ingredient-field");
+    newIngredientField.classList.add("fs-ingredient-field");
     newIngredientField.innerHTML = `
-    <label>Antall:</label>
-    <input type="text" name="ingredients[${groupIndex}][ingredients][${ingredientCount}][quantity]" placeholder="Ingredient Quantity">
-    <label>Navn:</label>
-    <input type="text" name="ingredients[${groupIndex}][ingredients][${ingredientCount}][name]" placeholder="Ingredient Name">
-    <br />
+    <div class="fs-form-group">
+      <label>Antall</label>
+      <input type="number" name="ingredients[${groupIndex}][ingredients][${ingredientCount}][amount]" placeholder="1" step="0.25" min="0">
+    </div>
+    
+    <div class="fs-form-group">
+      <label>Enhet</label>
+      <select name="ingredients[${groupIndex}][ingredients][${ingredientCount}][unit]">
+        <option value="stk">stk</option>
+        <option value="g">g</option>
+        <option value="kg">kg</option>
+        <option value="ss">ss</option>
+        <option value="ts">ts</option>
+        <option value="dl">dl</option>
+        <option value="l">l</option>
+        <option value="fedd">fedd</option>
+        <option value="biter">biter</option>
+        <option value="klype">klype</option>
+        <option value="dash">dash</option>
+        <option value="">ingen enhet</option>
+      </select>
+    </div>
+    
+    <div class="fs-form-group ingredient-name-field">
+      <label>Ingrediens <span class="fs-required">*</span></label>
+      <input type="text" name="ingredients[${groupIndex}][ingredients][${ingredientCount}][name]" placeholder="F.eks. kjøttdeig, løk, tomat" required>
+    </div>
+    
+    <div class="fs-form-group">
+      <button type="button" class="fs-button fs-button--danger" onclick="removeIngredientField(this)" style="padding: 0.5rem; font-size: 0.875rem;">✕</button>
+    </div>
   `;
 
-    ingredientField.appendChild(newIngredientField);
+    // Insert the new field before the "add ingredient" button
+    button.parentNode.insertBefore(newIngredientField, button);
   }
 
-  // Images fields
-  let imageCounter = 2;
+  function removeIngredientField(button) {
+    const ingredientField = button.closest(".fs-ingredient-field");
+    const ingredientGroup = ingredientField.closest(".fs-ingredient-group");
+    const allFields = ingredientGroup.querySelectorAll(".fs-ingredient-field");
 
-  function addImageField() {
-    const container = document.getElementById("images-container");
-
-    const imageField = document.createElement("div");
-    imageField.classList.add("image-field");
-    imageField.innerHTML = `
-      <label for="imageurl${imageCounter}">Image ${imageCounter} URL:</label>
-      <input type="text" id="imageurl${imageCounter}" name="images[${
-      imageCounter - 1
-    }][url]"><br>
-      <label for="imagealt${imageCounter}">Image ${imageCounter} Alt Text:</label>
-      <input type="text" id="imagealt${imageCounter}" name="images[${
-      imageCounter - 1
-    }][alt]"><br>
-    `;
-
-    container.appendChild(imageField);
-    imageCounter++;
+    // Don't remove if it's the only ingredient field in the group
+    if (allFields.length > 1) {
+      ingredientField.remove();
+    } else {
+      alert(
+        "Du kan ikke fjerne den siste ingrediensen i en gruppe. Slett heller hele gruppen."
+      );
+    }
   }
+
+  // Images are now standardized to 6 fixed fields
 
   // Keywords fields
   let keywordCounter = 2;
@@ -417,11 +1179,172 @@
     const keywordField = document.createElement("div");
     keywordField.classList.add("keyword-field");
     keywordField.innerHTML = `
-    <label for="keyword${keywordCounter}">Keyword ${keywordCounter}:</label>
-    <input type="text" id="keyword${keywordCounter}" name="keywords[]" ><br>
+    <div class="fs-form-group" style="flex: 1;">
+      <label for="keyword${keywordCounter}">Nøkkelord ${keywordCounter}</label>
+      <input type="text" id="keyword${keywordCounter}" name="keywords[]" list="keyword-suggestions" placeholder="F.eks. kjøtt, rask, enkel">
+    </div>
   `;
 
     container.appendChild(keywordField);
     keywordCounter++;
+  }
+
+  // Form validation
+  function validateForm() {
+    const errors = [];
+
+    // Check required fields
+    const requiredFields = ["id", "title", "time", "portions"];
+    requiredFields.forEach((field) => {
+      const element = document.getElementById(field);
+      if (!element.value.trim()) {
+        errors.push(`${field} er påkrevd`);
+      }
+    });
+
+    // Validate time
+    const time = parseInt(document.getElementById("time").value);
+    if (isNaN(time) || time < 1 || time > 1440) {
+      errors.push("Tid må være mellom 1 og 1440 minutter");
+    }
+
+    // Validate portions
+    const portions = parseInt(document.getElementById("portions").value);
+    if (isNaN(portions) || portions < 1 || portions > 50) {
+      errors.push("Porsjoner må være mellom 1 og 50");
+    }
+
+    // Validate ingredients
+    const ingredientGroups = document.querySelectorAll(".fs-ingredient-group");
+    let hasValidIngredients = false;
+
+    ingredientGroups.forEach((group, groupIndex) => {
+      const ingredients = group.querySelectorAll(".fs-ingredient-field");
+      ingredients.forEach((ingredient, ingredientIndex) => {
+        const nameInput = ingredient.querySelector('input[name*="[name]"]');
+        const amountInput = ingredient.querySelector('input[name*="[amount]"]');
+
+        if (nameInput && nameInput.value.trim()) {
+          hasValidIngredients = true;
+          if (amountInput && !amountInput.value && amountInput.value !== "0") {
+            errors.push(`Ingrediens "${nameInput.value}" mangler mengde`);
+          }
+        }
+      });
+    });
+
+    if (!hasValidIngredients) {
+      errors.push("Du må legge til minst én ingrediens");
+    }
+
+    // Validate steps
+    const steps = document.querySelectorAll(".fs-step-field");
+    let hasValidSteps = false;
+
+    steps.forEach((step, index) => {
+      const description = step.querySelector('textarea[name*="[description]"]');
+      if (description && description.value.trim()) {
+        hasValidSteps = true;
+      }
+    });
+
+    if (!hasValidSteps) {
+      errors.push("Du må legge til minst ett steg");
+    }
+
+    // Show errors if any
+    if (errors.length > 0) {
+      const errorMessage = document.getElementById("error-message");
+      errorMessage.innerHTML =
+        "<strong>Feil i skjemaet:</strong><br>" + errors.join("<br>");
+      errorMessage.style.display = "block";
+
+      // Hide success message if shown
+      document.getElementById("success-message").style.display = "none";
+
+      // Scroll to top
+      window.scrollTo(0, 0);
+
+      return false;
+    }
+
+    return true;
+  }
+
+  // Preview functionality
+  function previewRecipe() {
+    const formData = new FormData(document.querySelector("form"));
+    const recipe = {};
+
+    // Collect form data
+    for (let [key, value] of formData.entries()) {
+      if (key.includes("[") && key.includes("]")) {
+        // Handle nested data like ingredients[0][ingredients][0][name]
+        const parts = key.split(/[\[\]]/).filter((p) => p);
+        let current = recipe;
+        for (let i = 0; i < parts.length - 1; i++) {
+          if (!current[parts[i]]) {
+            current[parts[i]] = isNaN(parts[i + 1]) ? {} : [];
+          }
+          current = current[parts[i]];
+        }
+        current[parts[parts.length - 1]] = value;
+      } else {
+        recipe[key] = value;
+      }
+    }
+
+    // Build preview HTML
+    let previewHTML = `
+      <h3>${recipe.title || "Untitled Recipe"}</h3>
+      <p><strong>ID:</strong> ${recipe.id || "Not set"}</p>
+      <p><strong>Category:</strong> ${recipe.category || "Not set"}</p>
+      <p><strong>Time:</strong> ${recipe.time || "Not set"} minutes</p>
+      <p><strong>Portions:</strong> ${recipe.portions || "Not set"}</p>
+      <p><strong>Description:</strong> ${
+        recipe.description || "No description"
+      }</p>
+    `;
+
+    // Add ingredients
+    if (recipe.ingredients && recipe.ingredients.length > 0) {
+      previewHTML += "<h4>Ingredients:</h4><ul>";
+      recipe.ingredients.forEach((group) => {
+        if (group.ingredients) {
+          group.ingredients.forEach((ingredient) => {
+            if (ingredient.name) {
+              previewHTML += `<li>${ingredient.quantity || ""} ${
+                ingredient.name
+              }</li>`;
+            }
+          });
+        }
+      });
+      previewHTML += "</ul>";
+    }
+
+    // Add steps
+    if (recipe.steps && recipe.steps.length > 0) {
+      previewHTML += "<h4>Steps:</h4><ol>";
+      recipe.steps.forEach((step) => {
+        if (step.description) {
+          previewHTML += `<li>${step.description}</li>`;
+        }
+      });
+      previewHTML += "</ol>";
+    }
+
+    // Add keywords
+    if (recipe.keywords && recipe.keywords.length > 0) {
+      previewHTML +=
+        "<h4>Keywords:</h4><p>" + recipe.keywords.join(", ") + "</p>";
+    }
+
+    document.getElementById("preview-content").innerHTML = previewHTML;
+    document.getElementById("preview-modal").style.display = "block";
+  }
+
+  function closePreview() {
+    document.getElementById("preview-modal").style.display = "none";
   }
 </script>

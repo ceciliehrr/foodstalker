@@ -24,7 +24,7 @@ export interface Recipe {
   steps?: Array<{
     description: string;
   }>;
-  time?: string;
+  time?: string | number;
 }
 
 export class RecipeSearchIndex {
@@ -256,8 +256,22 @@ export class RecipeSearchIndex {
     });
   }
 
-  private parseTimeToMinutes(timeStr: string): number {
+  private parseTimeToMinutes(timeStr: string | number): number {
     if (!timeStr) return 0;
+
+    // If it's already a number, return it (assuming it's in minutes)
+    if (typeof timeStr === "number") {
+      return Math.round(timeStr);
+    }
+
+    // If it's not a string, try to convert it
+    if (typeof timeStr !== "string") {
+      const num = parseFloat(timeStr.toString());
+      if (!isNaN(num)) {
+        return Math.round(num);
+      }
+      return 0;
+    }
 
     const hours = timeStr.match(/(\d+)\s*timer?/);
     const minutes = timeStr.match(/(\d+)\s*min/);
