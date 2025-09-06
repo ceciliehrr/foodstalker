@@ -8,7 +8,12 @@
         <button class="fs-ingredients__button" @click="decreaseServing">
           -
         </button>
-        <input class="fs-ingredients__input" id="portion" type="number" v-model="portion" />
+        <input
+          class="fs-ingredients__input"
+          id="portion"
+          type="number"
+          v-model="portion"
+        />
         <button class="fs-ingredients__button" @click="increaseServing">
           +
         </button>
@@ -19,17 +24,32 @@
         <h3 class="fs-ingredients__group-title">{{ group.title }}</h3>
       </div>
       <ul class="fs-ingredients__ol-list" tabindex="0">
-        <li tabindex="0" class="fs-checkbox__list" v-for="(ingredient, ingredientIndex) in group.ingredients"
-          :key="ingredient.name">
-          <label :for="'ingredient-' + index + '-' + ingredientIndex" class="fs-checkbox__container"
-            :id="'ingredient-label' + index + '-' + ingredientIndex">
-            <input type="checkbox" :id="'ingredient-' + index + '-' + ingredientIndex" :aria-labelledby="'ingredient-label' + index + '-' + ingredientIndex
-              " />
+        <li
+          tabindex="0"
+          class="fs-checkbox__list"
+          v-for="(ingredient, ingredientIndex) in group.ingredients"
+          :key="ingredient.name"
+        >
+          <label
+            :for="'ingredient-' + index + '-' + ingredientIndex"
+            class="fs-checkbox__container"
+            :id="'ingredient-label' + index + '-' + ingredientIndex"
+          >
+            <input
+              type="checkbox"
+              :id="'ingredient-' + index + '-' + ingredientIndex"
+              :aria-labelledby="
+                'ingredient-label' + index + '-' + ingredientIndex
+              "
+            />
             <span class="fs-checkmark"></span>
-            <p :id="'label-ingredient-' + index + '-' + ingredientIndex" class="fs-checkbox__text">
+            <p
+              :id="'label-ingredient-' + index + '-' + ingredientIndex"
+              class="fs-checkbox__text"
+            >
               <span class="fs-checkbox__quantity">
-                {{ calculateAdjustedQuantity(ingredient.quantity) }}
-              </span>&nbsp;<span v-html="ingredient.name"></span>
+                {{ calculateAdjustedQuantity(ingredient.quantity) }} </span
+              >&nbsp;<span v-html="ingredient.name"></span>
             </p>
           </label>
         </li>
@@ -71,22 +91,45 @@ export default {
     calculateAdjustedQuantity(originalQuantity) {
       // Adjust the quantity based on the selected portion
 
+      // Handle empty or invalid quantities
+      if (!originalQuantity || originalQuantity.trim() === "") {
+        return "";
+      }
+
       // You may want to format the quantity here if needed
       // Extract the numeric value and unit from the original quantity
-      const match = originalQuantity.match(/([\d.-]+)\s*([^\d\s-]+)/);
+      // Updated regex to handle ranges with spaces around hyphen
+      const match = originalQuantity.match(/([\d.\s-]+)\s*([^\d\s-]+)/);
 
       if (match) {
-        // If there is a hyphen in the matched numeric value, it's a range
-        const isRange = match[1].includes("-");
+        // Clean up the numeric part by removing extra spaces
+        const numericPart = match[1].trim();
+        const unit = match[2];
+
+        // Check if it's a range (contains hyphen and has spaces around it)
+        const isRange =
+          numericPart.includes("-") ||
+          numericPart.includes(" -") ||
+          numericPart.includes("- ");
 
         if (isRange) {
           // Handle the case where the original quantity is a range
-          const rangeParts = match[1].split("-");
+          // Split on hyphen and clean up spaces
+          const rangeParts = numericPart
+            .split(/-|\s-\s|\s-/)
+            .map((part) => part.trim())
+            .filter((part) => part);
           const unit = match[2];
 
           // Adjust each part of the range based on the selected portion
           const adjustedRange = rangeParts.map((part) => {
             const numericValue = parseFloat(part);
+
+            // Validate that we have a valid number
+            if (isNaN(numericValue)) {
+              return part; // Return original if not a valid number
+            }
+
             const adjustedValue = (numericValue / this.portions) * this.portion;
             const formattedValue =
               adjustedValue % 1 === 0
@@ -100,7 +143,13 @@ export default {
           return `${adjustedRange.join("-")} ${unit}`;
         } else {
           // Handle the case where the original quantity is a single value
-          const numericValue = parseFloat(match[1]);
+          const numericValue = parseFloat(numericPart);
+
+          // Validate that we have a valid number
+          if (isNaN(numericValue)) {
+            return originalQuantity; // Return original if not a valid number
+          }
+
           const unit = match[2];
 
           // Adjust the numeric value based on the selected portion
