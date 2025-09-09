@@ -2,12 +2,16 @@
   "name": "@example/basics",
   "version": "0.0.1",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "astro dev",
+    "dev:with-data": "node scripts/dev-with-data.js",
     "host": "astro dev --host",
     "start": "astro dev",
-    "build": "astro build",
+    "prebuild": "node scripts/fetch-notion-data.js",
+    "build": "npm run prebuild && astro build",
     "preview": "astro preview",
+    "fetch-data": "node scripts/fetch-notion-data.js",
     "proxy": "mkcert -install && mkcert localhost && local-ssl-proxy --source 3010 --target 3000 --cert localhost.pem --key localhost-key.pem"
   },
   "devDependencies": {
@@ -22,7 +26,9 @@
   "dependencies": {
     "@astrojs/netlify": "^6.5.9",
     "@netlify/plugin-csp-nonce": "^1.5.2",
+    "@notionhq/client": "^2.3.0",
     "@takuma-ru/vue-swipe-modal": "^5.0.5",
+    "dotenv": "^17.2.2",
     "express": "^4.21.2",
     "fs-extra": "^11.3.1",
     "sass": "^1.91.0",

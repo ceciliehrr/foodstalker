@@ -1,33 +1,161 @@
 <template>
-  <div class="map-header">
-    <h1>Foodstalker</h1>
-    <h2>i {{ selectedCity }}</h2>
-    <div class="map-emojis">
-      <p>🍴 = Restaurant</p>
-      <p>🍟 = Casual/Lunsj/Brunch</p>
-      <p>🥂 = Drinks</p>
-      <p>🍦 = Sweets</p>
-    </div>
-
-    <hr />
-
-    <!-- Loop through cities and create radio buttons -->
-    <div class="map-cities">
-      <label v-for="city in uniqueCities" :key="city">
-        <input
-          type="radio"
-          v-model="selectedCity"
-          :value="city"
-          @change="setTown(toLowerCase(selectedCity))"
-        />
-        {{ city }}
-      </label>
+  <!-- Hero Section -->
+  <div class="restaurant-hero">
+    <div class="hero-content">
+      <h1 class="hero-title">Hvor bør du spise?</h1>
+      <p class="hero-subtitle">
+        Foodstalkers anbefalte spisesteder i {{ selectedCity }}
+      </p>
     </div>
   </div>
-  <!--Toggle map/list-->
-  <p>{{ toggleName }}</p>
-  <ToggleButton @setIsActive="toggleTheMap"></ToggleButton>
-  <!--The map-->
+
+  <!-- Filters and Controls -->
+  <div class="restaurant-controls">
+    <div class="controls-row">
+      <!-- City Filter -->
+      <div class="filter-group">
+        <label class="filter-label">By</label>
+        <select
+          v-model="selectedCity"
+          @change="setTown(selectedCity.toLowerCase())"
+          class="filter-select"
+        >
+          <option v-for="city in uniqueCities" :key="city" :value="city">
+            {{ city }}
+          </option>
+        </select>
+      </div>
+
+      <!-- Category Filter -->
+      <div class="filter-group">
+        <label class="filter-label">Kategori</label>
+        <select v-model="selectedCategory" class="filter-select">
+          <option value="">Alle kategorier</option>
+          <option value="Restaurant">🍴 Restaurant</option>
+          <option value="Casual">🍟 Casual/Lunsj</option>
+          <option value="Drinks">🥂 Drinks</option>
+          <option value="Søtt">🍦 Dessert</option>
+        </select>
+      </div>
+
+      <!-- Search -->
+      <div class="filter-group search-group">
+        <label class="filter-label">Søk</label>
+        <div class="search-input-container">
+          <input
+            v-model="searchQuery"
+            type="text"
+            placeholder="Søk etter restaurant..."
+            class="search-input"
+          />
+          <button
+            v-if="searchQuery"
+            @click="clearSearch"
+            class="search-clear-btn"
+            type="button"
+            aria-label="Tøm søk"
+          >
+            ✕
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Filter Button Row -->
+    <div class="filter-button-row">
+      <button @click="toggleFilterVisibility" class="filter-trigger-btn">
+        <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor">
+          <path
+            d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-.293.707L12 11.414V15a1 1 0 01-.293.707l-2 2A1 1 0 018 17v-5.586L3.293 6.707A1 1 0 013 6V4z"
+          />
+        </svg>
+        <span>Filtrer</span>
+        <span v-if="selectedTags.length > 0" class="filter-badge">{{
+          selectedTags.length
+        }}</span>
+      </button>
+    </div>
+
+    <!-- Filter Panel -->
+    <div v-if="showFilterPanel" class="filter-panel">
+      <div class="filter-box">
+        <h3 class="filter-box__title">Filtrer restauranter</h3>
+
+        <!-- Tags Filter -->
+        <div v-if="availableTags.length > 0" class="filter-box__section">
+          <div class="filter-box__checkboxes">
+            <label
+              v-for="tag in visibleTags"
+              :key="tag"
+              class="filter-box__checkbox"
+            >
+              <input
+                type="checkbox"
+                :value="tag"
+                :checked="selectedTags.includes(tag)"
+                @change="toggleTag(tag)"
+                class="filter-box__checkbox-input"
+              />
+              <span class="filter-box__checkbox-label">
+                {{ tag }}
+              </span>
+            </label>
+          </div>
+
+          <!-- Show More/Less Button -->
+          <div v-if="hasMoreTags" class="filter-box__show-more">
+            <button
+              @click="toggleShowAllTags"
+              class="filter-box__show-more-btn"
+            >
+              {{
+                showAllTags ? "Vis færre" : `Vis alle (${availableTags.length})`
+              }}
+            </button>
+          </div>
+        </div>
+
+        <!-- Clear All Button -->
+        <div v-if="selectedTags.length > 0" class="filter-box__actions">
+          <button @click="clearAllTags" class="filter-box__clear-btn">
+            Fjern alle filtre
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- View Toggle -->
+    <div class="view-controls">
+      <div class="view-toggle">
+        <button
+          :class="['view-btn', { active: !isActive }]"
+          @click="toggleTheMap(false)"
+        >
+          <span class="view-icon">🗺️</span>
+          Kart
+        </button>
+        <button
+          :class="['view-btn', { active: isActive }]"
+          @click="toggleTheMap(true)"
+        >
+          <span class="view-icon">📋</span>
+          Liste
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Results Count -->
+  <div class="results-info">
+    <p class="results-count">
+      {{ filteredMarkers.length }} restaurant{{
+        filteredMarkers.length !== 1 ? "er" : ""
+      }}
+      funnet
+    </p>
+  </div>
+
+  <!-- Map View -->
   <div :class="{ hidden: isActive }">
     <div class="foodstalker-map">
       <l-map
@@ -40,43 +168,91 @@
           :url="layers.CartoDB_Voyager.url"
           :attribution="layers.CartoDB_Voyager.attribution"
           :options="layers.CartoDB_Voyager.options"
-          :marker="layers.CartoDB_Voyager.marker"
           layer-type="base"
           name="OpenStreetMap"
-        ></l-tile-layer>
+        />
         <l-marker
-          v-for="marker in markers"
+          v-for="marker in filteredMarkers"
           :key="marker.id"
-          :lat-lng.sync="marker.position"
+          :lat-lng="marker.position"
           @click="onMarkerClick(marker)"
         >
           <l-icon
             :icon-size="iconSize"
             :icon-anchor="iconAnchor"
-            :icon-url="categorizedMarkers(marker.category)"
+            :icon-url="getMarkerIcon(marker.category)"
           />
         </l-marker>
       </l-map>
     </div>
     <FoodMapDescription
       id="foodmap-card"
-      :title="title"
-      :imageUrl="imageUrl"
-      :description="description"
-      :webPage="webPage"
-      :dateVisited="dateVisited"
-    ></FoodMapDescription>
+      :title="selectedMarker.title"
+      :imageUrl="selectedMarker.imageUrl"
+      :description="selectedMarker.description"
+      :webPage="selectedMarker.webPage"
+      :dateVisited="selectedMarker.dateVisited"
+    />
   </div>
-  <!--The list-->
-  <div :class="{ hidden: !isActive }">
-    <div v-for="restaurant in filteredMarkers">
-      <FoodMapDescription
-        :title="restaurant.title"
-        :description="restaurant.description"
-        :imageUrl="restaurant.imageUrl"
-        :webPage="restaurant.webPage"
-        :dateVisited="restaurant.dateVisited"
-      ></FoodMapDescription>
+
+  <!-- List View -->
+  <div :class="['restaurant-list', { hidden: !isActive }]">
+    <div v-if="filteredMarkers.length === 0" class="no-results">
+      <div class="no-results-content">
+        <h3>Ingen restauranter funnet</h3>
+        <p>Prøv å endre søkekriteriene dine</p>
+      </div>
+    </div>
+    <div v-else class="restaurant-grid">
+      <div
+        v-for="restaurant in filteredMarkers"
+        :key="restaurant.id"
+        class="restaurant-card"
+      >
+        <div class="restaurant-card__image">
+          <img :src="restaurant.imageUrl" :alt="restaurant.title" />
+          <div class="restaurant-card__category">
+            <span class="category-badge">{{
+              getCategoryEmoji(restaurant.category)
+            }}</span>
+          </div>
+        </div>
+        <div class="restaurant-card__content">
+          <h3 class="restaurant-card__title">{{ restaurant.title }}</h3>
+          <div class="restaurant-card__description">
+            <p
+              :class="[
+                'description-text',
+                { expanded: expandedCards[restaurant.id] },
+              ]"
+            >
+              {{ restaurant.description }}
+            </p>
+            <button
+              v-if="shouldShowReadMore(restaurant.description)"
+              @click="toggleDescription(restaurant.id)"
+              class="read-more-btn"
+            >
+              {{ expandedCards[restaurant.id] ? "Les mindre" : "Les mer..." }}
+            </button>
+          </div>
+          <div class="restaurant-card__meta">
+            <span class="restaurant-card__date" v-if="restaurant.dateVisited">
+              {{ formatDate(restaurant.dateVisited) }}
+            </span>
+            <a
+              v-if="restaurant.webPage"
+              :href="restaurant.webPage"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="restaurant-card__link"
+              @click.stop
+            >
+              Besøk nettside
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -84,10 +260,10 @@
 <script>
 import "leaflet/dist/leaflet.css";
 import { LMap, LTileLayer, LMarker, LIcon } from "@vue-leaflet/vue-leaflet";
-import FoodMapDescription from "../components/FoodMapDescription.vue";
-import foodmapMarkers from "../data/food_map.json";
+import FoodMapDescription from "./FoodMapDescription.vue";
+import dataService from "../services/dataService.js";
 import ToggleButton from "./ToggleButton.vue";
-import SmallCards from "./cards/SmallCards.vue";
+
 export default {
   components: {
     LMap,
@@ -96,12 +272,10 @@ export default {
     LIcon,
     FoodMapDescription,
     ToggleButton,
-    SmallCards,
   },
   data() {
     const cities = {
       oslo: [59.907657562789446, 10.772765099423395],
-      //stockholm: [59.3293, 18.0686],
       stavanger: [58.96956842492558, 5.735700010074111],
       bergen: [60.3913, 5.3221],
       firenze: [43.7696, 11.2558],
@@ -115,12 +289,10 @@ export default {
       LogoMarker: "https://foodstalker.b-cdn.net/logoMarker.svg",
       SweetIcon: "https://foodstalker.b-cdn.net/SweetIcon.svg",
     };
-    // Default zoom
-    const defaultZoom = 13;
 
     return {
       center: cities.oslo,
-      zoom: defaultZoom,
+      zoom: 13,
       layers: {
         CartoDB_Voyager: {
           url: "https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png",
@@ -131,82 +303,178 @@ export default {
           },
         },
       },
-      markers: foodmapMarkers,
-      drinkIconUrl: icons.DrinksIcon,
-      restaurantIconUrl: icons.RestaurantIcon,
-      casualIconUrl: icons.CasualIcon,
-      sweetIconUrl: icons.SweetIcon,
-      logoMarkerUrl: icons.LogoMarker,
+      markers: [],
+      icons,
       iconSize: [50, 52],
       iconAnchor: [16, 37],
-      title: "The Foodstalkers",
-      imageUrl: "https://foodstalker.b-cdn.net/restauranter/IMG_8334.jpg",
-      description: "Hjemmelaget er alltid best. Mest kjent for taco!",
-      webPage: "https://www.foodstalker.no",
-      dateVisited: "2023-01-01",
-      selectedCity: "Oslo", // Initial city
-      defaultCity: "Oslo", // Default city when no city is selected
+      selectedMarker: {
+        title: "The Foodstalkers",
+        imageUrl: "https://foodstalker.b-cdn.net/restauranter/IMG_8334.jpg",
+        description: "Hjemmelaget er alltid best. Mest kjent for taco!",
+        webPage: "https://www.foodstalker.no",
+        dateVisited: "2023-01-01",
+      },
+      selectedCity: "Oslo",
+      selectedCategory: "",
+      searchQuery: "",
+      selectedTags: [],
       cities,
       isActive: false,
-      hidden: "hidden",
-      visible: "visible",
+      expandedCards: {},
+      showFilterPanel: false,
+      showAllTags: false,
+      maxVisibleTags: 6,
     };
   },
   methods: {
-    toLowerCase(str) {
-      return str.toLowerCase();
-    },
-
     toggleTheMap(isActive) {
       this.isActive = isActive;
       if (!isActive) {
-        this.setTown(this.toLowerCase(this.selectedCity));
+        this.setTown(this.selectedCity.toLowerCase());
       }
     },
+
     setTown(city) {
       if (this.cities[city]) {
         this.center = this.cities[city];
         this.$nextTick(() => {
-          this.zoom = this.defaultZoom;
+          this.zoom = 13;
         });
       }
     },
+
     onMarkerClick(marker) {
-      this.title = marker.title;
-      this.imageUrl = marker.imageUrl;
-      this.description = marker.description;
-      this.webPage = marker.webPage;
-      this.dateVisited = marker.dateVisited;
+      this.selectedMarker = {
+        title: marker.title,
+        imageUrl: marker.imageUrl,
+        description: marker.description,
+        webPage: marker.webPage,
+        dateVisited: marker.dateVisited,
+      };
       this.center = marker.position;
       this.scrollToDescription();
     },
-    categorizedMarkers(category) {
-      const categoryIcons = {
-        Restaurant: this.restaurantIconUrl,
-        Casual: this.casualIconUrl,
-        Drinks: this.drinkIconUrl,
-        Søtt: this.sweetIconUrl,
-      };
-      return categoryIcons[category] || this.logoMarkerUrl;
-    },
-    scrollToDescription() {
-      // Find the target element by its id
-      const targetElement = document.getElementById("foodmap-card");
 
-      if (targetElement) {
-        targetElement.scrollIntoView({
-          behavior: "smooth",
-          block: "start",
-          inline: "nearest",
-        });
+    getMarkerIcon(category) {
+      const categoryIcons = {
+        Restaurant: this.icons.RestaurantIcon,
+        Casual: this.icons.CasualIcon,
+        Drinks: this.icons.DrinksIcon,
+        Søtt: this.icons.SweetIcon,
+      };
+      return categoryIcons[category] || this.icons.LogoMarker;
+    },
+
+    scrollToDescription() {
+      if (typeof document !== "undefined") {
+        const targetElement = document.getElementById("foodmap-card");
+        if (targetElement) {
+          targetElement.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+            inline: "nearest",
+          });
+        }
       }
     },
+
+    onRestaurantClick(restaurant) {
+      this.selectedMarker = {
+        title: restaurant.title,
+        imageUrl: restaurant.imageUrl,
+        description: restaurant.description,
+        webPage: restaurant.webPage,
+        dateVisited: restaurant.dateVisited,
+      };
+      this.scrollToDescription();
+    },
+
+    getCategoryEmoji(category) {
+      const categoryEmojis = {
+        Restaurant: "🍴",
+        Casual: "🍟",
+        Drinks: "🥂",
+        Søtt: "🍦",
+      };
+      return categoryEmojis[category] || "🍽️";
+    },
+
+    formatDate(dateString) {
+      if (!dateString) return "";
+      const date = new Date(dateString);
+      return date.toLocaleDateString("nb-NO", {
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+      });
+    },
+
+    shouldShowReadMore(description) {
+      if (!description) return false;
+      // Show "Read more" if description is longer than 150 characters
+      const shouldShow = description.length > 150;
+      console.log(
+        "Should show read more for description:",
+        description.substring(0, 50) + "...",
+        "Length:",
+        description.length,
+        "Should show:",
+        shouldShow
+      );
+      return shouldShow;
+    },
+
+    toggleDescription(restaurantId) {
+      console.log("Toggling description for:", restaurantId);
+      console.log("Current state:", this.expandedCards[restaurantId]);
+      this.expandedCards = {
+        ...this.expandedCards,
+        [restaurantId]: !this.expandedCards[restaurantId],
+      };
+      console.log("New state:", this.expandedCards[restaurantId]);
+    },
+
+    loadRestaurants() {
+      this.markers = dataService.getRestaurants();
+      const dataInfo = dataService.getDataSourceInfo();
+      console.log(
+        `Loaded ${this.markers.length} restaurants from ${dataInfo.source} (${dataInfo.lastUpdated})`
+      );
+    },
+
+    clearSearch() {
+      this.searchQuery = "";
+    },
+
+    toggleTag(tag) {
+      const index = this.selectedTags.indexOf(tag);
+      if (index > -1) {
+        this.selectedTags.splice(index, 1);
+      } else {
+        this.selectedTags.push(tag);
+      }
+    },
+
+    clearAllTags() {
+      this.selectedTags = [];
+    },
+
+    toggleFilterVisibility() {
+      this.showFilterPanel = !this.showFilterPanel;
+    },
+
+    toggleShowAllTags() {
+      this.showAllTags = !this.showAllTags;
+    },
+  },
+  mounted() {
+    this.loadRestaurants();
   },
   computed: {
     uniqueCities() {
       // Extract unique cities from markerdata with capitalized first letters
       const cities = new Set();
-      for (const marker of foodmapMarkers) {
+      for (const marker of this.markers) {
         const cityName =
           marker.city.charAt(0).toUpperCase() +
           marker.city.slice(1).toLowerCase();
@@ -215,13 +483,72 @@ export default {
       return Array.from(cities);
     },
     filteredMarkers() {
-      const filtered = this.markers.filter(
-        (marker) => marker.city === this.selectedCity
-      );
-      return filtered.sort((a, b) => a.city.localeCompare(b.city));
+      let filtered = this.markers.filter((marker) => {
+        const cityMatch =
+          marker.city.toLowerCase() === this.selectedCity.toLowerCase();
+        const categoryMatch =
+          !this.selectedCategory || marker.category === this.selectedCategory;
+        const searchMatch =
+          !this.searchQuery ||
+          marker.title.toLowerCase().includes(this.searchQuery.toLowerCase()) ||
+          marker.description
+            .toLowerCase()
+            .includes(this.searchQuery.toLowerCase());
+
+        const tagMatch =
+          this.selectedTags.length === 0 ||
+          (marker.tags &&
+            marker.tags.some((tag) => this.selectedTags.includes(tag)));
+
+        console.log(
+          "Marker:",
+          marker.title,
+          "City match:",
+          cityMatch,
+          "Category match:",
+          categoryMatch,
+          "Search match:",
+          searchMatch,
+          "Tag match:",
+          tagMatch
+        );
+        return cityMatch && categoryMatch && searchMatch && tagMatch;
+      });
+
+      console.log("Filtered results:", filtered.length);
+      return filtered.sort((a, b) => a.title.localeCompare(b.title));
     },
     toggleName() {
       return this.isActive ? "Vis som kart" : "Vis som liste";
+    },
+
+    availableTags() {
+      const tags = new Set();
+
+      // Get all unique tags from all markers
+      this.markers.forEach((marker) => {
+        if (marker.tags && marker.tags.length > 0) {
+          marker.tags.forEach((tag) => {
+            tags.add(tag);
+          });
+        }
+      });
+
+      const result = Array.from(tags).sort();
+      console.log("Available tags:", result);
+      console.log("Total markers:", this.markers.length);
+      return result;
+    },
+
+    visibleTags() {
+      if (this.showAllTags) {
+        return this.availableTags;
+      }
+      return this.availableTags.slice(0, this.maxVisibleTags);
+    },
+
+    hasMoreTags() {
+      return this.availableTags.length > this.maxVisibleTags;
     },
   },
 };
@@ -233,72 +560,644 @@ export default {
 @use "../styles/mixins/breakpoints" as *;
 @use "../styles/mixins/" as *;
 
-.map-header {
-  margin-bottom: 1rem;
-  h2 {
-    margin-bottom: 0.5rem;
+// Hero Section
+.restaurant-hero {
+  background: var(--fs-berries-100);
+  color: var(--fs-berries-500);
+  padding: map.get($spacing, "size-24") 0;
+  margin-bottom: map.get($spacing, "size-16");
+  border-radius: 1rem;
+
+  .hero-content {
+    text-align: center;
+    padding: 0 map.get($spacing, "size-16");
+  }
+
+  .hero-title {
+    @include get-text("fs-h4");
+    margin-bottom: map.get($spacing, "size-8");
+    font-weight: 700;
+    line-height: 1.2;
+
+    @include bp("mobile-down") {
+      @include get-text("fs-h5");
+      margin-bottom: map.get($spacing, "size-6");
+      line-height: 1.3;
+    }
+  }
+
+  .hero-subtitle {
+    @include get-text("fs-h5");
+    opacity: 0.9;
+    font-weight: 400;
+    line-height: 1.4;
+
+    @include bp("mobile-down") {
+      @include get-text("fs-body1");
+      opacity: 0.95;
+      line-height: 1.5;
+    }
+  }
+
+  @include bp("mobile-down") {
+    padding: map.get($spacing, "size-16") 0;
+    margin-bottom: map.get($spacing, "size-12");
+    border-radius: 0.75rem;
   }
 }
-.map-emojis {
-  margin-bottom: 1rem;
-}
-.map-cities {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
-  label {
+
+// Controls Section
+.restaurant-controls {
+  background: var(--fs-white);
+  border: 2px solid var(--fs-gray-200);
+  border-radius: 1rem;
+  padding: map.get($spacing, "size-16");
+  margin-bottom: map.get($spacing, "size-16");
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+
+  .controls-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: map.get($spacing, "size-12");
+    margin-bottom: map.get($spacing, "size-12");
+
+    @include bp("tablet-up") {
+      flex-wrap: nowrap;
+    }
+  }
+
+  .filter-group {
+    flex: 1;
+    min-width: 200px;
+
+    &.search-group {
+      flex: 2;
+    }
+  }
+
+  .filter-button-row {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: map.get($spacing, "size-8");
+    margin-bottom: map.get($spacing, "size-8");
+  }
+
+  .filter-trigger-btn {
+    display: flex;
+    align-items: center;
+    gap: map.get($spacing, "size-4");
+    padding: map.get($spacing, "size-8") map.get($spacing, "size-12");
+    background: white;
+    border: 2px solid var(--fs-berries-300);
+    border-radius: 0.5rem;
+    color: var(--fs-berries-600);
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    @include get-text("fs-body2");
+
+    &:hover {
+      background: var(--fs-berries-50);
+      border-color: var(--fs-berries-400);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    &:focus {
+      outline: 2px solid var(--fs-berries-500);
+      outline-offset: 2px;
+    }
+  }
+
+  .filter-badge {
+    position: absolute;
+    top: -0.5rem;
+    right: -0.5rem;
+    background: var(--fs-berries-500);
+    color: white;
+    border-radius: 50%;
+    width: 1.25rem;
+    height: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+
+  // Filter Panel
+  .filter-panel {
+    margin-bottom: map.get($spacing, "size-16");
+    animation: slideDown 0.3s ease-out;
+  }
+
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  // Filter Box Styles (matching FilterBox.vue)
+  .filter-box {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--fs-gray-200);
+    min-width: 280px;
+    max-width: 320px;
+  }
+
+  .filter-box__title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0 0 1.5rem 0;
+    color: var(--fs-gray-800);
+    border-bottom: 2px solid var(--fs-berries-200);
+    padding-bottom: 0.5rem;
+  }
+
+  .filter-box__section {
+    margin-bottom: 1.5rem;
+  }
+
+  .filter-box__section:last-of-type {
     margin-bottom: 1rem;
   }
+
+  .filter-box__section-title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin: 0 0 0.75rem 0;
+    color: var(--fs-gray-700);
+  }
+
+  .filter-box__checkboxes {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .filter-box__checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    border: 2px solid var(--fs-gray-200);
+    border-radius: 0.75rem;
+    background: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--fs-gray-700);
+
+    &:hover {
+      border-color: var(--fs-berries-300);
+      background-color: var(--fs-berries-50);
+      transform: translateY(-1px);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .filter-box__checkbox-input {
+    width: 1.25rem;
+    height: 1.25rem;
+    accent-color: var(--fs-berries-500);
+    cursor: pointer;
+    flex-shrink: 0;
+  }
+
+  .filter-box__checkbox-input:checked + .filter-box__checkbox-label {
+    color: var(--fs-berries-600);
+    font-weight: 600;
+  }
+
+  .filter-box__checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    flex: 1;
+  }
+
+  .filter-box__actions {
+    border-top: 1px solid var(--fs-gray-200);
+    padding-top: 1rem;
+    margin-top: 1rem;
+  }
+
+  .filter-box__clear-btn {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 2px solid var(--fs-gray-300);
+    border-radius: 0.75rem;
+    background: white;
+    color: var(--fs-gray-600);
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    &:hover {
+      border-color: var(--fs-berries-400);
+      background-color: var(--fs-berries-50);
+      color: var(--fs-berries-600);
+      transform: translateY(-1px);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .filter-box__show-more {
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  .filter-box__show-more-btn {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--fs-gray-300);
+    border-radius: 0.5rem;
+    background: var(--fs-gray-50);
+    color: var(--fs-gray-600);
+    font-size: 0.8rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    &:hover {
+      border-color: var(--fs-berries-400);
+      background-color: var(--fs-berries-50);
+      color: var(--fs-berries-600);
+    }
+  }
+
+  // Mobile responsive design
+  @include bp("mobile-down") {
+    .filter-box {
+      min-width: auto;
+      max-width: none;
+      margin-bottom: 1rem;
+      padding: 1rem;
+    }
+
+    .filter-box__checkbox {
+      padding: 0.625rem 0.875rem;
+      font-size: 0.8rem;
+    }
+  }
+
+  .filter-label {
+    @include get-text("fs-body2");
+    font-weight: 600;
+    color: var(--fs-gray-700);
+    margin-bottom: map.get($spacing, "size-4");
+    display: block;
+  }
+
+  .filter-select,
+  .search-input {
+    @include get-text("fs-body1");
+    width: 100%;
+    padding: map.get($spacing, "size-8") map.get($spacing, "size-12");
+    border: 2px solid var(--fs-gray-300);
+    border-radius: 0.5rem;
+    background-color: var(--fs-white);
+    color: var(--fs-black);
+    transition: all 0.2s ease;
+
+    &:hover {
+      border-color: var(--fs-berries-400);
+    }
+
+    &:focus {
+      outline: none;
+      border-color: var(--fs-berries-500);
+      box-shadow: 0 0 0 3px rgba(176, 76, 106, 0.1);
+    }
+  }
+
+  .search-input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .search-input {
+    padding-right: map.get($spacing, "size-32");
+  }
+
+  .search-clear-btn {
+    position: absolute;
+    right: map.get($spacing, "size-8");
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: var(--fs-gray-500);
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: map.get($spacing, "size-4");
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+
+    &:hover {
+      background-color: var(--fs-gray-100);
+      color: var(--fs-gray-700);
+    }
+
+    &:focus {
+      outline: 2px solid var(--fs-berries-500);
+      outline-offset: 2px;
+    }
+  }
+
+  .filter-select {
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23b04c6a' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6,9 12,15 18,9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right map.get($spacing, "size-8") center;
+    background-size: 16px;
+    padding-right: map.get($spacing, "size-32");
+  }
+
+  .view-controls {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .view-toggle {
+    display: flex;
+    background: var(--fs-gray-100);
+    border-radius: 0.5rem;
+    padding: 4px;
+  }
+
+  .view-btn {
+    @include get-text("fs-body2");
+    display: flex;
+    align-items: center;
+    gap: map.get($spacing, "size-4");
+    padding: map.get($spacing, "size-8") map.get($spacing, "size-12");
+    border: none;
+    background: transparent;
+    color: var(--fs-gray-600);
+    border-radius: 0.375rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-weight: 500;
+
+    &:hover {
+      background: var(--fs-white);
+      color: var(--fs-gray-800);
+    }
+
+    &.active {
+      background: var(--fs-white);
+      color: var(--fs-berries-500);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .view-icon {
+      font-size: 1.2em;
+    }
+  }
 }
+
+// Results Info
+.results-info {
+  margin-bottom: map.get($spacing, "size-16");
+
+  .results-count {
+    @include get-text("fs-body1");
+    color: var(--fs-gray-600);
+    font-weight: 500;
+  }
+}
+
+// Map View
 .foodstalker-map {
   height: 450px;
   width: 100%;
+  border-radius: 1rem;
+  border: 2px solid var(--fs-gray-300);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: white;
+  margin-bottom: map.get($spacing, "size-16");
 
   @include bp("tablet-big-up") {
     height: 550px;
   }
 }
+
 .leaflet-container {
-  border-radius: 0.75rem;
-  border: 2px solid var(--fs-gray-300);
-  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
-  padding: 1rem;
-  background-color: white;
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 1rem;
 }
 
-label:hover {
-  cursor: pointer;
-}
-input[type="radio"] {
-  appearance: none;
-}
-
-input[type="radio"]:after {
-  width: 15px;
-  height: 15px;
-  border-radius: 15px;
-  position: relative;
-  background-color: var(--fs-berries-100);
-  content: "";
-  display: inline-block;
-  border: 1px solid var(--fs-berries-500);
+// Restaurant List View
+.restaurant-list {
+  &.hidden {
+    display: none;
+  }
 }
 
-input[type="radio"]:checked:after {
-  width: 15px;
-  height: 15px;
-  border-radius: 15px;
-  position: relative;
-  background-color: var(--fs-berries-500);
-  content: "";
-  display: inline-block;
-  border: 1px solid var(--fs-berries-500);
+.no-results {
+  text-align: center;
+  padding: map.get($spacing, "size-24") map.get($spacing, "size-16");
+  background: var(--fs-gray-100);
+  border-radius: 1rem;
+  border: 2px dashed var(--fs-gray-300);
+
+  .no-results-content {
+    h3 {
+      @include get-text("fs-h4");
+      color: var(--fs-gray-600);
+      margin-bottom: map.get($spacing, "size-8");
+    }
+
+    p {
+      @include get-text("fs-body1");
+      color: var(--fs-gray-500);
+    }
+  }
 }
-.visible {
-  display: block;
+
+.restaurant-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: map.get($spacing, "size-16");
+
+  @include bp("tablet-up") {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include bp("desktop-up") {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
+
+.restaurant-card {
+  background: var(--fs-white);
+  border: 2px solid var(--fs-gray-200);
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    border-color: var(--fs-berries-200);
+  }
+
+  &__image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    &:hover img {
+      transform: scale(1.05);
+    }
+  }
+
+  &__category {
+    position: absolute;
+    top: map.get($spacing, "size-8");
+    right: map.get($spacing, "size-8");
+
+    .category-badge {
+      background: var(--fs-white);
+      border: 2px solid var(--fs-gray-200);
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2em;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  &__content {
+    padding: map.get($spacing, "size-16");
+  }
+
+  &__title {
+    @include get-text("fs-h5");
+    font-weight: 600;
+    color: var(--fs-black);
+    margin-bottom: map.get($spacing, "size-8");
+    line-height: 1.3;
+  }
+
+  &__description {
+    margin-bottom: map.get($spacing, "size-12");
+
+    .description-text {
+      @include get-text("fs-body2");
+      color: var(--fs-gray-600);
+      line-height: 1.5;
+      margin-bottom: map.get($spacing, "size-8");
+      white-space: pre-line;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      transition: all 0.3s ease;
+
+      &.expanded {
+        display: block;
+        -webkit-line-clamp: unset;
+        line-clamp: unset;
+        -webkit-box-orient: unset;
+        overflow: visible;
+      }
+    }
+
+    .read-more-btn {
+      @include get-text("fs-body2");
+      background: none;
+      border: none;
+      color: var(--fs-berries-500);
+      cursor: pointer;
+      font-weight: 600;
+      padding: map.get($spacing, "size-4") 0;
+      transition: color 0.2s ease;
+
+      &:hover {
+        color: var(--fs-berries-600);
+      }
+
+      &:focus {
+        outline: 2px solid var(--fs-berries-500);
+        outline-offset: 2px;
+        border-radius: 2px;
+      }
+    }
+  }
+
+  &__meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: map.get($spacing, "size-8");
+  }
+
+  &__date {
+    @include get-text("fs-body2");
+    color: var(--fs-gray-500);
+    font-weight: 500;
+  }
+
+  &__link {
+    @include get-text("fs-body2");
+    color: var(--fs-berries-500);
+    text-decoration: none;
+    font-weight: 600;
+    padding: map.get($spacing, "size-4") map.get($spacing, "size-8");
+    border: 2px solid var(--fs-berries-500);
+    border-radius: 0.375rem;
+    transition: all 0.2s ease;
+
+    &:hover {
+      background: var(--fs-berries-500);
+      color: var(--fs-white);
+    }
+  }
+}
+
 .hidden {
   display: none;
+}
+
+.visible {
+  display: block;
 }
 </style>

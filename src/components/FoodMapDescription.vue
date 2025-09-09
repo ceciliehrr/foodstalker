@@ -10,17 +10,19 @@
         <p v-if="dateVisited" class="fs-small-cards__date">
           Besøkt: {{ dateVisited }}
         </p>
+
+        <p
+          class="fs-small-cards__description"
+          v-html="formatDescription(description)"
+        ></p>
         <a
           v-if="webPage"
           :href="webPage"
           target="_blank"
           rel="noopener noreferrer"
-          >Sjekk ut deres nettside</a
+          class="fs-small-cards__link"
+          >Besøk nettside</a
         >
-        <p
-          class="fs-small-cards__description"
-          v-html="formatDescription(description)"
-        ></p>
       </div>
     </div>
   </div>
@@ -106,6 +108,24 @@ export default {
       font-weight: 400;
       //margin-top: 0.5rem;
       max-width: 500px;
+    }
+  }
+
+  &__link {
+    @include get-text("fs-body2");
+    color: var(--fs-berries-500);
+    text-decoration: none;
+    font-weight: 600;
+    padding: map.get($spacing, "size-4") map.get($spacing, "size-8");
+    border: 2px solid var(--fs-berries-500);
+    border-radius: 0.375rem;
+    transition: all 0.2s ease;
+    display: inline-block;
+    margin-top: 0.5rem;
+
+    &:hover {
+      background: var(--fs-berries-500);
+      color: var(--fs-white);
     }
   }
 }
