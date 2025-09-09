@@ -1,17 +1,13 @@
 // Static data service for build-time generated data
 import foodmapMarkers from "../data/food_map.json";
-
-// Try to import build-time generated data, fallback to original
-let notionRestaurants = null;
-try {
-  notionRestaurants = await import("../data/notion_restaurants.json");
-} catch (error) {
-  console.log("No build-time data found, using fallback");
-}
+import notionRestaurants from "../data/notion_restaurants.json";
 
 class DataService {
   constructor() {
-    this.restaurants = notionRestaurants?.default || foodmapMarkers;
+    // Use Notion data directly since it's available at build time
+    this.restaurants = notionRestaurants;
+    this.notionDataLoaded = true;
+    console.log("DataService: Using Notion data directly");
   }
 
   /**
@@ -71,10 +67,47 @@ class DataService {
    */
   getDataSourceInfo() {
     return {
-      source: notionRestaurants ? "notion" : "fallback",
+      source: this.notionDataLoaded ? "notion" : "fallback",
       count: this.restaurants.length,
-      lastUpdated: notionRestaurants ? "build-time" : "original",
+      lastUpdated: this.notionDataLoaded ? "build-time" : "original",
     };
+  }
+
+  /**
+   * Process image URL from Notion data
+   * Handles both direct URLs and Notion file objects
+   * @param {string|Object} imageData - Image URL or Notion file object
+   * @returns {string} Processed image URL
+   */
+  processImageUrl(imageData) {
+    if (!imageData) return null;
+
+    // If it's already a string URL, return it
+    if (typeof imageData === "string") {
+      return imageData;
+    }
+
+    // If it's a Notion file object, extract the URL
+    if (imageData.type === "external") {
+      return imageData.external.url;
+    }
+
+    if (imageData.type === "file") {
+      return imageData.file.url;
+    }
+
+    return null;
+  }
+
+  /**
+   * Get restaurants with processed image URLs
+   * @returns {Array} Array of restaurant objects with processed images
+   */
+  getRestaurantsWithProcessedImages() {
+    return this.restaurants.map((restaurant) => ({
+      ...restaurant,
+      imageUrl: this.processImageUrl(restaurant.imageUrl),
+    }));
   }
 }
 

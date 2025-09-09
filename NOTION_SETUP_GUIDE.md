@@ -40,7 +40,7 @@ This guide will help you set up the Notion API integration for your Foodstalker 
 | `Tags`         | Multi-select | Tags                   | thai, smart casual                        |
 | `Latitude`     | Number       | GPS latitude           | 59.91532463794866                         |
 | `Longitude`    | Number       | GPS longitude          | 10.719338497578114                        |
-| `Published`    | Checkbox     | Whether to show on map | ✅                                        |
+| `Published`    | Checkbox     | Whether to show on map | ✅ \*\*\*\*                               |
 
 ### Select Options Setup
 
@@ -99,17 +99,17 @@ This guide will help you set up the Notion API integration for your Foodstalker 
 3. Search for **"Foodstalker API"** (your integration name)
 4. Select it and click **"Invite"**
 
-## ⚙️ Step 5: Environment Variables
+## ⚙️ Step 5: Environment **Variables**
 
 Create a `.env` file in your project root:
 
 ```bash
-# Notion API Configuration
+**# Notion API Configuration
 NOTION_TOKEN=secret_your_integration_token_here
 NOTION_DATABASE_ID=your_32_character_database_id_here
 
 # Optional: Enable/disable Notion API (fallback to JSON)
-USE_NOTION_API=true
+USE_NOTION_API=true**
 ```
 
 ## 📊 Step 6: Import Your Data

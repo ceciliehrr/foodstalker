@@ -5,6 +5,10 @@ import { Client } from "@notionhq/client";
 import fs from "fs-extra";
 import path from "path";
 import { fileURLToPath } from "url";
+import dotenv from "dotenv";
+
+// Load environment variables from .env file
+dotenv.config();
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -62,12 +66,19 @@ class NotionDataFetcher {
     return notionResults.map((page) => {
       const properties = page.properties;
 
+      // Get coordinates - try text first, then number, and convert to numbers
+      const latText = this.getTextValue(properties["Latitude"]);
+      const lngText = this.getTextValue(properties["Longitude"]);
+      const latNumber = this.getNumberValue(properties["Latitude"]);
+      const lngNumber = this.getNumberValue(properties["Longitude"]);
+
+      // Convert to numbers, handling both text and number inputs
+      const lat = latText ? parseFloat(latText) : latNumber;
+      const lng = lngText ? parseFloat(lngText) : lngNumber;
+
       return {
         id: page.id,
-        position: [
-          this.getNumberValue(properties["Latitude"]),
-          this.getNumberValue(properties["Longitude"]),
-        ],
+        position: [lat, lng],
         city: this.getSelectValue(properties["City"]),
         title: this.getTitleValue(properties["Title"]),
         description: this.getRichTextValue(properties["Description"]),
@@ -105,6 +116,10 @@ class NotionDataFetcher {
     return property?.number || 0;
   }
 
+  getTextValue(property) {
+    return property?.rich_text?.map((text) => text.plain_text).join("") || "";
+  }
+
   getDateValue(property) {
     if (property?.date?.start) {
       const date = new Date(property.date.start);
@@ -122,7 +137,9 @@ class NotionDataFetcher {
   async saveData(restaurants, outputPath) {
     try {
       await fs.ensureDir(path.dirname(outputPath));
-      await fs.writeJson(outputPath, restaurants, { spaces: 2 });
+      // Use writeFile with JSON.stringify to preserve number precision
+      const jsonString = JSON.stringify(restaurants, null, 2);
+      await fs.writeFile(outputPath, jsonString, "utf8");
       console.log(
         `💾 Saved ${restaurants.length} restaurants to ${outputPath}`
       );
