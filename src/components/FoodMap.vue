@@ -2,7 +2,7 @@
   <!-- Hero Section -->
   <div class="restaurant-hero">
     <div class="hero-content">
-      <h1 class="hero-title">Hvor bør du spise?</h1>
+      <h1 class="hero-title">Hvor vil du spise?</h1>
       <p class="hero-subtitle">
         Foodstalkers anbefalte spisesteder i {{ selectedCity }}
       </p>
@@ -352,7 +352,6 @@ export default {
         dateVisited: marker.dateVisited,
       };
       this.center = marker.position;
-      this.scrollToDescription();
     },
 
     getMarkerIcon(category) {
