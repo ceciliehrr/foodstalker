@@ -15,11 +15,7 @@
       <!-- City Filter -->
       <div class="filter-group">
         <label class="filter-label">By</label>
-        <select
-          v-model="selectedCity"
-          @change="setTown(selectedCity.toLowerCase())"
-          class="filter-select"
-        >
+        <select v-model="selectedCity" class="filter-select">
           <option v-for="city in uniqueCities" :key="city" :value="city">
             {{ city }}
           </option>
@@ -277,12 +273,30 @@ export default {
     ToggleButton,
   },
   data() {
-    const cities = {
+    // Base cities with known coordinates
+    const baseCities = {
       oslo: [59.907657562789446, 10.772765099423395],
       stavanger: [58.96956842492558, 5.735700010074111],
       bergen: [60.3913, 5.3221],
       firenze: [43.7696, 11.2558],
       venezia: [45.4408, 12.3155],
+      göteborg: [57.7072326, 11.9670171],
+      gothenburg: [57.7072326, 11.9670171],
+      stockholm: [59.3293, 18.0686],
+      københavn: [55.6761, 12.5683],
+      copenhagen: [55.6761, 12.5683],
+      amsterdam: [52.3676, 4.9041],
+      paris: [48.8566, 2.3522],
+      london: [51.5074, -0.1278],
+      berlin: [52.52, 13.405],
+      madrid: [40.4168, -3.7038],
+      roma: [41.9028, 12.4964],
+      rome: [41.9028, 12.4964],
+      milano: [45.4642, 9.19],
+      milan: [45.4642, 9.19],
+      barcelona: [41.3851, 2.1734],
+      lisboa: [38.7223, -9.1393],
+      lisbon: [38.7223, -9.1393],
     };
 
     const icons = {
@@ -294,7 +308,7 @@ export default {
     };
 
     return {
-      center: cities.oslo,
+      center: baseCities.oslo,
       zoom: 13,
       layers: {
         CartoDB_Voyager: {
@@ -321,7 +335,8 @@ export default {
       selectedCategory: "",
       searchQuery: "",
       selectedTags: [],
-      cities,
+      cities: { ...baseCities }, // Dynamic cities object
+      baseCities, // Keep reference to base cities
       isActive: true,
       expandedCards: {},
       showFilterPanel: false,
@@ -345,11 +360,28 @@ export default {
     },
 
     setTown(city) {
-      if (this.cities[city]) {
-        this.center = this.cities[city];
+      const cityKey = city.toLowerCase();
+
+      // Check both the exact city name and the lowercase key
+      let coordinates = this.cities[city] || this.cities[cityKey];
+
+      if (coordinates) {
+        this.center = coordinates;
         this.$nextTick(() => {
           this.zoom = 13;
         });
+      } else {
+        // Try to get coordinates for this city if we don't have them
+        const newCoordinates = this.getCityCoordinates(city);
+        if (newCoordinates) {
+          // Store under both the original name and lowercase key for flexibility
+          this.cities[city] = newCoordinates;
+          this.cities[cityKey] = newCoordinates;
+          this.center = newCoordinates;
+          this.$nextTick(() => {
+            this.zoom = 13;
+          });
+        }
       }
     },
 
@@ -367,6 +399,65 @@ export default {
 
     clearSelectedMarker() {
       this.selectedMarker = null;
+    },
+
+    getCityCoordinates(cityName) {
+      // For now, use a hardcoded list of common cities
+      // This avoids CORS issues and provides reliable coordinates
+      const cityMap = {
+        göteborg: [57.7072326, 11.9670171],
+        gothenburg: [57.7072326, 11.9670171],
+        stockholm: [59.3293, 18.0686],
+        københavn: [55.6761, 12.5683],
+        copenhagen: [55.6761, 12.5683],
+        amsterdam: [52.3676, 4.9041],
+        paris: [48.8566, 2.3522],
+        london: [51.5074, -0.1278],
+        berlin: [52.52, 13.405],
+        madrid: [40.4168, -3.7038],
+        roma: [41.9028, 12.4964],
+        rome: [41.9028, 12.4964],
+        milano: [45.4642, 9.19],
+        milan: [45.4642, 9.19],
+        barcelona: [41.3851, 2.1734],
+        lisboa: [38.7223, -9.1393],
+        lisbon: [38.7223, -9.1393],
+        wien: [48.2082, 16.3738],
+        vienna: [48.2082, 16.3738],
+        prag: [50.0755, 14.4378],
+        prague: [50.0755, 14.4378],
+        budapest: [47.4979, 19.0402],
+        warszawa: [52.2297, 21.0122],
+        warsaw: [52.2297, 21.0122],
+        moskva: [55.7558, 37.6176],
+        moscow: [55.7558, 37.6176],
+        istanbul: [41.0082, 28.9784],
+        athens: [37.9838, 23.7275],
+        athen: [37.9838, 23.7275],
+      };
+
+      return cityMap[cityName.toLowerCase()] || null;
+    },
+
+    updateCitiesFromData() {
+      const uniqueCities = this.uniqueCities;
+
+      for (const city of uniqueCities) {
+        const cityKey = city.toLowerCase();
+
+        // Skip if we already have coordinates for this city
+        if (this.cities[cityKey]) {
+          continue;
+        }
+
+        const coordinates = this.getCityCoordinates(city);
+
+        if (coordinates) {
+          // Add to cities object under both original name and lowercase key
+          this.cities[city] = coordinates;
+          this.cities[cityKey] = coordinates;
+        }
+      }
     },
 
     getMarkerIcon(category) {
@@ -427,33 +518,19 @@ export default {
       if (!description) return false;
       // Show "Read more" if description is longer than 150 characters
       const shouldShow = description.length > 150;
-      console.log(
-        "Should show read more for description:",
-        description.substring(0, 50) + "...",
-        "Length:",
-        description.length,
-        "Should show:",
-        shouldShow
-      );
       return shouldShow;
     },
 
     toggleDescription(restaurantId) {
-      console.log("Toggling description for:", restaurantId);
-      console.log("Current state:", this.expandedCards[restaurantId]);
       this.expandedCards = {
         ...this.expandedCards,
         [restaurantId]: !this.expandedCards[restaurantId],
       };
-      console.log("New state:", this.expandedCards[restaurantId]);
     },
 
     loadRestaurants() {
       this.markers = dataService.getRestaurants();
       const dataInfo = dataService.getDataSourceInfo();
-      console.log(
-        `Loaded ${this.markers.length} restaurants from ${dataInfo.source} (${dataInfo.lastUpdated})`
-      );
     },
 
     clearSearch() {
@@ -483,6 +560,15 @@ export default {
   },
   mounted() {
     this.loadRestaurants();
+    // Update cities with coordinates for any new cities found in the data
+    this.updateCitiesFromData();
+  },
+  watch: {
+    selectedCity(newCity) {
+      if (newCity) {
+        this.setTown(newCity.toLowerCase());
+      }
+    },
   },
   computed: {
     uniqueCities() {
@@ -514,22 +600,9 @@ export default {
           (marker.tags &&
             marker.tags.some((tag) => this.selectedTags.includes(tag)));
 
-        console.log(
-          "Marker:",
-          marker.title,
-          "City match:",
-          cityMatch,
-          "Category match:",
-          categoryMatch,
-          "Search match:",
-          searchMatch,
-          "Tag match:",
-          tagMatch
-        );
         return cityMatch && categoryMatch && searchMatch && tagMatch;
       });
 
-      console.log("Filtered results:", filtered.length);
       return filtered.sort((a, b) => a.title.localeCompare(b.title));
     },
     toggleName() {
@@ -549,8 +622,6 @@ export default {
       });
 
       const result = Array.from(tags).sort();
-      console.log("Available tags:", result);
-      console.log("Total markers:", this.markers.length);
       return result;
     },
 

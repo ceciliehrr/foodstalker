@@ -487,7 +487,7 @@
     ],
     "city": "Oslo",
     "title": "Bakkekroen",
-    "description": "Den gamle kro-følelsen er det sjelden vi opplever, særlig i kombinasjon med skikkelig god mat, men dette har de fått til på Bakkekroen. Menyen er klassisk, utførelsen på maten helt strålende! Frittert ",
+    "description": "Den gamle kro-følelsen er det sjelden vi opplever, særlig i kombinasjon med skikkelig god mat, men dette har de fått til på Bakkekroen. Menyen er klassisk, utførelsen på maten helt strålende! Frittert hylleblomst og is til dessert. Lett å la seg sjarmere!",
     "category": "Restaurant",
     "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_0193.JPG",
     "webPage": "https://bakkekroen.no/meny",
@@ -948,6 +948,59 @@
     ]
   },
   {
+    "id": "26bf0385-0f5a-8069-a14c-f11fb43a3815",
+    "position": [
+      57.7042707,
+      11.9621732
+    ],
+    "city": "Göteborg",
+    "title": "Champagnebaren",
+    "description": "Lei shopping og trasking i Gøteborgs gater? Stopp og hvil her. Med både mat og bobler!",
+    "category": "Drinks",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/exported_986843FD-EC64-4F8F-992C-00402A089CE9.JPG",
+    "webPage": "http://www.champagnebaren.se/",
+    "dateVisited": "",
+    "tags": [
+      "bar",
+      "bakgård"
+    ]
+  },
+  {
+    "id": "26bf0385-0f5a-8088-8dd6-f23c422194f0",
+    "position": [
+      57.7079274,
+      11.97444
+    ],
+    "city": "Göteborg",
+    "title": "Restaurang VRÅ",
+    "description": "Denne restauranten fant vi litt raskt, så vi forventet litt turistfelle. Men her var det absolutt verdt besøket. Veldig stilig restaurert bygning med japanske retter. Rask og enkel service, stor plass til grupper.",
+    "category": "Restaurant",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_6647.JPG",
+    "webPage": "http://www.restaurangvra.se/",
+    "dateVisited": "",
+    "tags": [
+      "smart casual",
+      "grupper"
+    ]
+  },
+  {
+    "id": "26bf0385-0f5a-8080-b2aa-c5273e0a5671",
+    "position": [
+      57.6978714,
+      11.9820043
+    ],
+    "city": "Göteborg",
+    "title": "Project",
+    "description": "Tror vi har funnet oss en ny favoritt påskeferiesyssel, ta toget til Gøteborg for å spise bra mat. Vi var ikke de eneste med denne tradisjonen, møtte på tidligere kollega på denne restauranten, verden er liten. Men er man glad i god mat, øker sjansene for å møte andre matglade folk! Dette var en michelin-stjerne restaurant, og innfridde forventningene. Kunstverk av noen retter, spennende nordiske råvarer blandet med japanske smaker. Digg",
+    "category": "Restaurant",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_6778.jpg",
+    "webPage": "https://projectgbg.com",
+    "dateVisited": "",
+    "tags": [
+      "fine dining"
+    ]
+  },
+  {
     "id": "26bf0385-0f5a-8026-b867-c0b0588d83cb",
     "position": [
       59.9192408,
@@ -982,6 +1035,40 @@
     "tags": [
       "smart casual",
       "bakgård"
+    ]
+  },
+  {
+    "id": "26bf0385-0f5a-8069-a2d6-e73f590e701d",
+    "position": [
+      57.6992007,
+      11.9653615
+    ],
+    "city": "Göteborg",
+    "title": "Victorian Steampunk Lab",
+    "description": "Etter vinpakke på Koka stakk vi spontant innom denne baren. Her var det gøye drinker, holdt på å si barnevennlig fordi det var barnslig moro drinker, men det er å dra den litt vel langt.",
+    "category": "Drinks",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/20220402_203050.jpg",
+    "webPage": "https://steampunkbar.se",
+    "dateVisited": "",
+    "tags": [
+      "bar"
+    ]
+  },
+  {
+    "id": "26bf0385-0f5a-8047-97b4-eaed1838bc79",
+    "position": [
+      57.6992007,
+      11.9653615
+    ],
+    "city": "Göteborg",
+    "title": "Koka",
+    "description": "Dette er bra greier! Vi gikk for første gang for en helt kjøttfri set-meny, og kjøtt savner man ikke! Dette var digg, bra folk på jobb og god vin. ",
+    "category": "Restaurant",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/20220402_173928.jpg",
+    "webPage": "http://www.restaurangkoka.se",
+    "dateVisited": "",
+    "tags": [
+      "fine dining"
     ]
   },
   {
