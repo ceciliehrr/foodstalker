@@ -32,7 +32,7 @@
         <select v-model="selectedCategory" class="filter-select">
           <option value="">Alle kategorier</option>
           <option value="Restaurant">🍴 Restaurant</option>
-          <option value="Casual">🍟 Casual/Lunsj</option>
+          <option value="Casual">🍟 Casual</option>
           <option value="Drinks">🥂 Drinks</option>
           <option value="Søtt">🍦 Dessert</option>
         </select>
@@ -128,18 +128,18 @@
     <div class="view-controls">
       <div class="view-toggle">
         <button
-          :class="['view-btn', { active: !isActive }]"
-          @click="toggleTheMap(false)"
-        >
-          <span class="view-icon">🗺️</span>
-          Kart
-        </button>
-        <button
           :class="['view-btn', { active: isActive }]"
           @click="toggleTheMap(true)"
         >
           <span class="view-icon">📋</span>
           Liste
+        </button>
+        <button
+          :class="['view-btn', { active: !isActive }]"
+          @click="toggleTheMap(false)"
+        >
+          <span class="view-icon">🗺️</span>
+          Kart
         </button>
       </div>
     </div>
@@ -163,6 +163,7 @@
         v-model:zoom="zoom"
         :center="center"
         :use-global-leaflet="false"
+        :key="`map-${isActive}`"
       >
         <l-tile-layer
           :url="layers.CartoDB_Voyager.url"
@@ -186,12 +187,14 @@
       </l-map>
     </div>
     <FoodMapDescription
+      v-if="selectedMarker"
       id="foodmap-card"
       :title="selectedMarker.title"
       :imageUrl="selectedMarker.imageUrl"
       :description="selectedMarker.description"
       :webPage="selectedMarker.webPage"
       :dateVisited="selectedMarker.dateVisited"
+      @close="clearSelectedMarker"
     />
   </div>
 
@@ -319,11 +322,12 @@ export default {
       searchQuery: "",
       selectedTags: [],
       cities,
-      isActive: false,
+      isActive: true,
       expandedCards: {},
       showFilterPanel: false,
       showAllTags: false,
       maxVisibleTags: 6,
+      selectedMarker: null,
     };
   },
   methods: {
@@ -331,6 +335,12 @@ export default {
       this.isActive = isActive;
       if (!isActive) {
         this.setTown(this.selectedCity.toLowerCase());
+        // Force map to resize when switching to map view
+        this.$nextTick(() => {
+          if (this.$refs.map && this.$refs.map.leafletObject) {
+            this.$refs.map.leafletObject.invalidateSize();
+          }
+        });
       }
     },
 
@@ -350,8 +360,13 @@ export default {
         description: marker.description,
         webPage: marker.webPage,
         dateVisited: marker.dateVisited,
+        category: marker.category,
       };
       this.center = marker.position;
+    },
+
+    clearSelectedMarker() {
+      this.selectedMarker = null;
     },
 
     getMarkerIcon(category) {
@@ -1059,6 +1074,9 @@ export default {
   overflow: hidden;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 
   &:hover {
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
@@ -1104,6 +1122,9 @@ export default {
 
   &__content {
     padding: map.get($spacing, "size-16");
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
   }
 
   &__title {
@@ -1116,6 +1137,7 @@ export default {
 
   &__description {
     margin-bottom: map.get($spacing, "size-12");
+    flex-grow: 1;
 
     .description-text {
       @include get-text("fs-body2");
@@ -1167,6 +1189,7 @@ export default {
     align-items: center;
     flex-wrap: wrap;
     gap: map.get($spacing, "size-8");
+    margin-top: auto;
   }
 
   &__date {

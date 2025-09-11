@@ -1,6 +1,13 @@
 <template>
   <div class="fs-small-cards">
     <div class="fs-small-cards__container">
+      <button
+        class="fs-small-cards__close"
+        @click="$emit('close')"
+        aria-label="Lukk"
+      >
+        ×
+      </button>
       <div class="fs-small-cards__image">
         <img :src="imageUrl" alt="" />
       </div>
@@ -73,6 +80,31 @@ export default {
     padding: 1rem;
     background-color: white;
     width: 100%;
+    position: relative;
+  }
+
+  &__close {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background: rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: var(--fs-gray-600);
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.2s ease;
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.2);
+      color: var(--fs-gray-800);
+    }
   }
   &__image {
     flex-shrink: 0;

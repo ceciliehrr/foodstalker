@@ -1,9 +1,14 @@
 <template>
-   <header :class="['navbar', { hidden: isHidden && !showMobileMenu }]">
+  <header :class="['navbar', { hidden: isHidden && !showMobileMenu }]">
     <div class="navbar-container">
       <a href="/" class="logo" aria-label="Til startsiden">
-        <img src="https://foodstalker.b-cdn.net/logo/lime-96x96.png" alt="Logo" height="40" width="40"
-          aria-hidden="true" />
+        <img
+          src="https://foodstalker.b-cdn.net/logo/lime-96x96.png"
+          alt="Logo"
+          height="40"
+          width="40"
+          aria-hidden="true"
+        />
       </a>
       <nav class="nav-links">
         <ul>
@@ -36,8 +41,8 @@
                   <li>
                     <a href="/om-oss">Om oss</a>
                   </li>
-                  <li><a href="/kart">Restaurantkart</a></li>
-                    <li><a href="/themenu">Menyer</a></li>
+                  <li><a href="/spise-hvor">Hvor vil du spise?</a></li>
+                  <li><a href="/themenu">Menyer</a></li>
                 </ul>
                 <!-- Add more dropdown items if needed -->
               </div>
@@ -45,7 +50,12 @@
           </li>
         </ul>
       </nav>
-      <button role="button" aria-label="menu-button" class="hamburger-btn" @click="toggleMobileMenu">
+      <button
+        role="button"
+        aria-label="menu-button"
+        class="hamburger-btn"
+        @click="toggleMobileMenu"
+      >
         <div class="hamburger" v-if="!showMobileMenu">
           <span class="bar"></span>
           <span class="bar"></span>
@@ -83,13 +93,20 @@
               <!-- Add your dropdown content here -->
               <ul>
                 <li>
-                  <a href="/om-oss"><i class="arrow right arrow--margin-right"></i>Om oss</a>
+                  <a href="/om-oss"
+                    ><i class="arrow right arrow--margin-right"></i>Om oss</a
+                  >
                 </li>
                 <li>
-                  <a href="/kart"><i class="arrow right arrow--margin-right"></i>Restaurantkart</a>
+                  <a href="/spise-hvor"
+                    ><i class="arrow right arrow--margin-right"></i>Hvor vil du
+                    spise?</a
+                  >
                 </li>
                 <li>
-                  <a href="/themenu"><i class="arrow right arrow--margin-right"></i>Menyer</a>
+                  <a href="/themenu"
+                    ><i class="arrow right arrow--margin-right"></i>Menyer</a
+                  >
                 </li>
               </ul>
               <!-- Add more dropdown items if needed -->
@@ -171,13 +188,13 @@ export default {
   padding: 1rem 1rem 0rem 1rem;
   position: sticky;
   top: 0; /* Fester navbar til toppen */
-  z-index: 1000; 
+  z-index: 1000;
   transform: translateY(0);
-  transition: transform 0.3s ease-in-out; 
+  transition: transform 0.3s ease-in-out;
 }
 
 .navbar.hidden {
-  transform: translateY(-100%); 
+  transform: translateY(-100%);
 }
 .navbar-container {
   display: flex;

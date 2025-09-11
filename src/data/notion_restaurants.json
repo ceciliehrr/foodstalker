@@ -13,7 +13,8 @@
     "webPage": "https://www.arakataka.no/",
     "dateVisited": "",
     "tags": [
-      "smart casual"
+      "smart casual",
+      "grupper"
     ]
   },
   {
@@ -272,7 +273,7 @@
     ],
     "city": "Oslo",
     "title": "Golden Chimp",
-    "description": "Golden Chimp lå før på Tøyen, og gov oss vårt første møte med suppe i dumpling - et spennende bekjentskap med mye annet godt. Vi var der i en høstferie, og nøt godt av ferietilbudet, men maten stod ikke tilbake for det. Vi hadde en super kveld, og koste oss med spennende smaker. Kongekrabbe pumplings kommer vi stadig tilbake til, der vi kommer over de. Nå har de flyttet til nye lokaler, og vi gleder oss til å prøve!!",
+    "description": "Golden Chimp lå før på Tøyen, og gav oss vårt første møte med suppe i dumpling - et spennende bekjentskap med mye annet godt. Vi var der i en høstferie, og nøt godt av ferietilbudet, men maten stod ikke tilbake for det. Vi hadde en super kveld, og koste oss med spennende smaker. Kongekrabbe pumplings kommer vi stadig tilbake til, der vi kommer over de. Nå har de flyttet til nye lokaler, og vi gleder oss til å prøve!!",
     "category": "Restaurant",
     "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_0471_jpg.jpg",
     "webPage": "https://www.thegoldenchimp.no/",
@@ -299,6 +300,43 @@
     ]
   },
   {
+    "id": "26bf0385-0f5a-801e-bf7f-db408abe6667",
+    "position": [
+      59.9143617,
+      10.7178776
+    ],
+    "city": "Oslo",
+    "title": "Palace Grill",
+    "description": "En helaften - en ekte helaften. Sett av kvelden, og formiddagen etter. Rundhåndet vinsjenk og en meny med helt fantastiske smaker! Service, stemning og et lokale du aldri har sett maken til setter rammen for en fantastisk helaften. Kom presis, her vil du ikke gå glipp av et sekund av opplevelsen. En bordsetting om dagen, satt meny og garantert god stemning. Om du orker er det en deilig brun bar på andre siden av gangen, og utested i bakgården.",
+    "category": "Restaurant",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_6261.JPG",
+    "webPage": "http://palacegrill.no/",
+    "dateVisited": "",
+    "tags": [
+      "fine dining",
+      "bar",
+      "bakgård"
+    ]
+  },
+  {
+    "id": "26bf0385-0f5a-80bb-a1bf-cf17426ceeac",
+    "position": [
+      59.9072283,
+      10.753399
+    ],
+    "city": "Oslo",
+    "title": "Madonna",
+    "description": "Madonna er passende nok rett ved Munch-museet, men vi vil absolutt ikke kategoriser restauranten som en turistfelle. Fantastisk mat og service, nyt uteservering og sola ved utløpet av Akerselva. Passer til venner, kollegaer og dates!",
+    "category": "Restaurant",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_6145.JPG",
+    "webPage": "https://www.madonnaoslo.no/",
+    "dateVisited": "",
+    "tags": [
+      "smart casual",
+      "uteservering"
+    ]
+  },
+  {
     "id": "269f0385-0f5a-81bf-a3d4-cbce4850404c",
     "position": [
       59.92383574072056,
@@ -313,6 +351,25 @@
     "dateVisited": "",
     "tags": [
       "casual"
+    ]
+  },
+  {
+    "id": "26bf0385-0f5a-80d4-bd6c-f54f91a1cfcd",
+    "position": [
+      59.9183779,
+      10.7217424
+    ],
+    "city": "Oslo",
+    "title": "Bar Babylon",
+    "description": "Stikk innom for afterwork, møt vennegjengen eller gå på date i den hyggelige bakgården om sommeren. De serverer digg småmat ved siden av pilsen. Siden maten kommer fra kjøkkenet til Happolati skjønner man hvordan barmat kan være så digg.",
+    "category": "Casual",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_6146.JPG",
+    "webPage": "https://www.barbabylon.no/",
+    "dateVisited": "",
+    "tags": [
+      "casual",
+      "bakgård",
+      "bar"
     ]
   },
   {
@@ -365,7 +422,8 @@
     "dateVisited": "",
     "tags": [
       "smart casual",
-      "uteservering"
+      "uteservering",
+      "grupper"
     ]
   },
   {
@@ -417,7 +475,25 @@
     "webPage": "https://szechuanrestaurant.no/en/home/",
     "dateVisited": "",
     "tags": [
-      "casual"
+      "casual",
+      "grupper"
+    ]
+  },
+  {
+    "id": "26bf0385-0f5a-80c9-acf2-c61ae285ec95",
+    "position": [
+      59.9378652,
+      10.6810748
+    ],
+    "city": "Oslo",
+    "title": "Bakkekroen",
+    "description": "Den gamle kro-følelsen er det sjelden vi opplever, særlig i kombinasjon med skikkelig god mat, men dette har de fått til på Bakkekroen. Menyen er klassisk, utførelsen på maten helt strålende! Frittert ",
+    "category": "Restaurant",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_0193.JPG",
+    "webPage": "https://bakkekroen.no/meny",
+    "dateVisited": "",
+    "tags": [
+      "smart casual"
     ]
   },
   {
@@ -435,7 +511,8 @@
     "dateVisited": "",
     "tags": [
       "casual",
-      "uteservering"
+      "uteservering",
+      "grupper"
     ]
   },
   {
@@ -454,7 +531,8 @@
     "tags": [
       "casual",
       "uteservering",
-      "bar"
+      "bar",
+      "grupper"
     ]
   },
   {
@@ -546,6 +624,80 @@
     ]
   },
   {
+    "id": "26bf0385-0f5a-8098-b739-d57b6cda9ecd",
+    "position": [
+      59.9271139,
+      10.7731411
+    ],
+    "city": "Oslo",
+    "title": "Bob the Bagle",
+    "description": "Oslo’s beste bagel (i 2025 ihvertfall) ",
+    "category": "Casual",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/exported_68EF9B3F-C987-4A0C-8881-ABC833D9E322.JPG",
+    "webPage": "https://bobthebagel.com/",
+    "dateVisited": "",
+    "tags": [
+      "casual",
+      "foodtruck",
+      "street food"
+    ]
+  },
+  {
+    "id": "26bf0385-0f5a-8082-8154-cc3db6d00db2",
+    "position": [
+      59.919043,
+      10.7631686
+    ],
+    "city": "Oslo",
+    "title": "The Little Pickle",
+    "description": "Fantastisk god mat! Anbefales! Det som sto ut som noe de er veldig gode på er selvfølgelig sylting, her fikk vi smaker vi ikke har smakt før. Og en annen ting, brødet.. OMG! så godt! På dagtid selger de bakevarer, løp og kjøp brød!",
+    "category": "Restaurant",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_5589.JPG",
+    "webPage": "http://thelittlepickle.no/",
+    "dateVisited": "",
+    "tags": [
+      "fine dining",
+      "bakeri"
+    ]
+  },
+  {
+    "id": "26bf0385-0f5a-80c2-bda2-dd2349415cc5",
+    "position": [
+      59.9190383,
+      10.7567131
+    ],
+    "city": "Oslo",
+    "title": "Territoriet",
+    "description": "Veldig gode på vin, hyggelige folk. Og hundevennlig. Veldig ofte fullt. Men vi var her en februardag (bursdag til Cecc)",
+    "category": "Drinks",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_5571.JPG",
+    "webPage": "https://www.territoriet.no/",
+    "dateVisited": "",
+    "tags": [
+      "vinbar",
+      "bar",
+      "smart casual"
+    ]
+  },
+  {
+    "id": "26bf0385-0f5a-801c-9a0f-e5af4cfe8ee5",
+    "position": [
+      59.9265412,
+      10.7285784
+    ],
+    "city": "Oslo",
+    "title": "St. Lars",
+    "description": "Beste biffen i by’n! Ikke mer og si enn det? Dra dit",
+    "category": "Restaurant",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_6550.JPG",
+    "webPage": "https://stlars.no/",
+    "dateVisited": "",
+    "tags": [
+      "smart casual",
+      "uteservering"
+    ]
+  },
+  {
     "id": "269f0385-0f5a-81d6-8dea-ebf98a1e8f59",
     "position": [
       59.92769528477186,
@@ -599,6 +751,24 @@
     ]
   },
   {
+    "id": "26bf0385-0f5a-8019-aac5-ce5e33e6e650",
+    "position": [
+      59.9190259,
+      10.7539606
+    ],
+    "city": "Oslo",
+    "title": "Way Down South",
+    "description": "Ekte BBQ, southern style! Her er det ikke snakk om å spise pent og ikke søle - bruk henda og la det renne. Digge smaker, enorme posjoner og ekte southern hospitality. Om du knekker en sharing-plate her, trenger du ikke spise på et par dager.",
+    "category": "Restaurant",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/exported_DD917FC8-F5E0-451C-BF10-30359B0C5B08.JPG",
+    "webPage": "http://waydownsouth.no/",
+    "dateVisited": "",
+    "tags": [
+      "casual",
+      "grupper"
+    ]
+  },
+  {
     "id": "269f0385-0f5a-81e0-a9e5-f5fa73ece17c",
     "position": [
       59.908430181046754,
@@ -612,7 +782,63 @@
     "webPage": "https://www.coderestaurant.no/",
     "dateVisited": "",
     "tags": [
-      "fine dining"
+      "fine dining",
+      "grupper"
+    ]
+  },
+  {
+    "id": "26bf0385-0f5a-8085-8b90-e2503c6405c7",
+    "position": [
+      59.9069613,
+      10.7807763
+    ],
+    "city": "Oslo",
+    "title": "Smia galleri",
+    "description": "Den mest sjarmerende bakgården øst for elva? Rolig stemning, god mat og godt i glasset. Virkelig en plass å ta en rolig ettermiddag, kose seg med god mat og et glass vin.",
+    "category": "Restaurant",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_2537.JPG",
+    "webPage": "http://www.smiagalleri.no/",
+    "dateVisited": "",
+    "tags": [
+      "smart casual",
+      "bakgård",
+      "uteservering"
+    ]
+  },
+  {
+    "id": "26bf0385-0f5a-80b7-86df-eced1c823058",
+    "position": [
+      59.9237077,
+      10.756887
+    ],
+    "city": "Oslo",
+    "title": "Hos Peder",
+    "description": "Små deleretter og god vin har blitt en favoritt. Og en av de beste(begynner å bli flere av dem) i Oslo på dette vi si er Hos Peder. Hyggelig service, bra mat, digg om sommern med åpne vinduer og liten uteservering. ",
+    "category": "Restaurant",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/exported_FAB74D6F-0FEB-4505-870A-F3CA9DC42A12.JPG",
+    "webPage": "https://www.hospeder.no/",
+    "dateVisited": "",
+    "tags": [
+      "smart casual",
+      "vinbar"
+    ]
+  },
+  {
+    "id": "26bf0385-0f5a-8055-9447-f60414525bf4",
+    "position": [
+      59.9222327,
+      10.7588308
+    ],
+    "city": "Oslo",
+    "title": "200",
+    "description": "Her var vi med vennegjengen før en konsert, rask og hyggelig service, bra mat og laid back stemning. Passer bra for venner og/eller kollegaer.",
+    "category": "Casual",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/exported_8D89DCD3-B184-41D8-BE76-D9D3C806532B.JPG",
+    "webPage": "https://www.200oslo.com/",
+    "dateVisited": "",
+    "tags": [
+      "grupper",
+      "casual"
     ]
   },
   {
@@ -630,7 +856,8 @@
     "dateVisited": "",
     "tags": [
       "casual",
-      "boder"
+      "boder",
+      "grupper"
     ]
   },
   {
@@ -665,7 +892,8 @@
     "webPage": "https://www.zz.pizza/",
     "dateVisited": "",
     "tags": [
-      "casual"
+      "casual",
+      "grupper"
     ]
   },
   {
@@ -717,6 +945,25 @@
     "dateVisited": "",
     "tags": [
       "casual"
+    ]
+  },
+  {
+    "id": "26bf0385-0f5a-8026-b867-c0b0588d83cb",
+    "position": [
+      59.9192408,
+      10.7549355
+    ],
+    "city": "Oslo",
+    "title": "Jimmy´s",
+    "description": "Dette er enda en hyggelig plass for deleretter, men også middag helt for deg selv. Dette har blitt vår go-too-sted for å planlegge ting som kan være litt kjedelig, for eksempel ferier, høytider, store middagsselskaper eller andre planleggingsting. Prosjektledelse + bobler = sant?  Digg mat og hyggelig service! Bra for ut med kollegaer, venner eller date!",
+    "category": "Restaurant",
+    "imageUrl": "https://foodstalker.b-cdn.net/restauranter/IMG_7222.JPG",
+    "webPage": "https://www.jimmysoslo.no/",
+    "dateVisited": "",
+    "tags": [
+      "smart casual",
+      "uteservering",
+      "vinbar"
     ]
   },
   {
