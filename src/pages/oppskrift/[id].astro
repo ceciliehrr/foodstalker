@@ -11,6 +11,7 @@ import Tips from "../../components/Tips.astro";
 import VinTips from "src/components/VinTips.astro";
 import CookingMode from "src/components/CookingMode.vue";
 import DifficultyBadge from "../../components/DifficultyBadge.vue";
+import LeftoversRecommendations from "../../components/LeftoversRecommendations.vue";
 
 export async function getStaticPaths() {
   const recipes = getRecipes;
@@ -93,7 +94,9 @@ const title = post.title;
         }
       </div>
     </div>
+
     <ImageGallery images={images} />
+    <LeftoversRecommendations currentRecipe={post} client:load />
   </div>
 </Layout>
 <style lang="scss" scoped>

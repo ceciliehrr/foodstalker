@@ -1,28 +1,9 @@
 <template>
   <div class="fs-search-bar">
-    <h2>Søk i oppskrifter</h2>
+    <h2 class="">Søk i oppskrifter</h2>
 
-    <!-- Search mode toggle -->
-    <div class="fs-search-bar__mode-toggle">
-      <button
-        @click="setSearchMode('quick')"
-        :class="['fs-search-bar__mode-btn', { active: searchMode === 'quick' }]"
-      >
-        🔍 Normalt søk
-      </button>
-      <button
-        @click="setSearchMode('ingredient')"
-        :class="[
-          'fs-search-bar__mode-btn',
-          { active: searchMode === 'ingredient' },
-        ]"
-      >
-        🥬 Hva har du i kjøleskapet?
-      </button>
-    </div>
-
-    <!-- Quick Search Mode -->
-    <div v-if="searchMode === 'quick'" class="fs-search-bar__container">
+    <!-- Search input - always visible -->
+    <div class="fs-search-bar__container">
       <label for="search" class="sr-only">Søk</label>
       <div class="fs-search-bar__search-bar">
         <div class="fs-search-bar__icon">
@@ -81,6 +62,27 @@
           </div>
         </div>
       </div>
+    </div>
+
+    <!-- Henrik easter egg button -->
+    <div v-if="showHenrikEasterEgg" class="fs-search-bar__henrik-button">
+      <button @click="openHenrikModal" class="fs-btn fs-btn--primary">
+        👨‍🍳👩‍🍳 Bestill 2 kokker
+      </button>
+    </div>
+
+    <!-- Expandable ingredient search link -->
+    <div class="fs-search-bar__expand-link">
+      <button
+        @click="toggleIngredientSearch"
+        :class="[
+          'fs-btn',
+          searchMode === 'ingredient' ? 'fs-btn--secondary' : 'fs-btn--ghost',
+        ]"
+      >
+        <span v-if="searchMode === 'quick'">🥬 Hva har du i kjøleskapet?</span>
+        <span v-else>✕ Lukk ingredienssøk</span>
+      </button>
     </div>
 
     <!-- Ingredient Search Mode -->
@@ -207,6 +209,32 @@
         </Grid>
       </div>
     </div>
+
+    <!-- Henrik easter egg modal -->
+    <div
+      v-if="showHenrikModal"
+      class="henrik-modal-overlay"
+      @click="closeHenrikModal"
+    >
+      <div class="henrik-modal" @click.stop>
+        <div class="henrik-modal__header">
+          <h3>To kokker kommer om:</h3>
+          <button
+            @click="closeHenrikModal"
+            class="henrik-modal__close"
+            aria-label="Lukk modal"
+          >
+            ×
+          </button>
+        </div>
+        <div class="henrik-modal__content">
+          <div class="henrik-timer">
+            <span class="henrik-timer__time">{{ formatHenrikTime() }}</span>
+            <span class="henrik-timer__label">minutter</span>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -253,6 +281,11 @@ export default {
       allIngredients: [] as string[],
       ingredientInput: "",
       showToroMessage: false,
+      // Henrik easter egg
+      showHenrikEasterEgg: false,
+      showHenrikModal: false,
+      henrikTimer: null as any,
+      henrikTimeRemaining: 0,
     };
   },
 
@@ -266,6 +299,11 @@ export default {
   mounted() {
     // Initialize search index
     this.searchIndex = new RecipeSearchIndex(this.recipes);
+  },
+
+  beforeDestroy() {
+    // Clean up timer when component is destroyed
+    this.stopHenrikTimer();
   },
 
   computed: {
@@ -621,6 +659,13 @@ export default {
         this.selectedCategories = [];
       }
 
+      // Check for Henrik easter egg
+      if (this.search.toLowerCase().trim() === "henrik") {
+        this.showHenrikEasterEgg = true;
+      } else {
+        this.showHenrikEasterEgg = false;
+      }
+
       // Debounce search suggestions
       if (this.searchTimeout) {
         clearTimeout(this.searchTimeout);
@@ -680,6 +725,15 @@ export default {
       // Initialize ingredients if switching to ingredient mode
       if (mode === "ingredient" && this.allIngredients.length === 0) {
         this.extractAllIngredients();
+      }
+    },
+
+    // Toggle ingredient search expand/collapse
+    toggleIngredientSearch() {
+      if (this.searchMode === "quick") {
+        this.setSearchMode("ingredient");
+      } else {
+        this.setSearchMode("quick");
       }
     },
 
@@ -790,6 +844,8 @@ export default {
       // Clear filters when clearing search
       this.selectedDifficulties = [];
       this.selectedCategories = [];
+      // Hide Henrik easter egg when clearing search
+      this.showHenrikEasterEgg = false;
     },
 
     // Calculate difficulty for a recipe (for SmallCards component)
@@ -800,6 +856,43 @@ export default {
         icon: getDifficultyIcon(difficulty.level),
         label: getDifficultyDisplayName(difficulty.level),
       };
+    },
+
+    // Henrik easter egg methods
+    openHenrikModal() {
+      this.showHenrikModal = true;
+      this.startHenrikTimer();
+    },
+
+    closeHenrikModal() {
+      this.showHenrikModal = false;
+      this.stopHenrikTimer();
+    },
+
+    startHenrikTimer() {
+      // Set timer to 3.14 minutes (188.4 seconds)
+      this.henrikTimeRemaining = Math.floor(3.14 * 60);
+
+      this.henrikTimer = setInterval(() => {
+        this.henrikTimeRemaining--;
+        if (this.henrikTimeRemaining <= 0) {
+          this.stopHenrikTimer();
+        }
+      }, 1000);
+    },
+
+    stopHenrikTimer() {
+      if (this.henrikTimer) {
+        clearInterval(this.henrikTimer);
+        this.henrikTimer = null;
+        this.henrikTimeRemaining = 0;
+      }
+    },
+
+    formatHenrikTime() {
+      const minutes = Math.floor(this.henrikTimeRemaining / 60);
+      const seconds = this.henrikTimeRemaining % 60;
+      return `${minutes}:${seconds.toString().padStart(2, "0")}`;
     },
   },
 };
@@ -813,7 +906,6 @@ export default {
 .fs-search-bar {
   background-color: var(--fs-lime);
   padding: 1rem;
-  padding-bottom: 2rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
   border-radius: 0.5rem;
@@ -824,10 +916,10 @@ export default {
   }
 
   & h2 {
-    margin: 0.75rem;
+    margin: 0.5rem;
     font-size: 16px;
     text-align: center;
-    font-weight: 400;
+    font-weight: 500;
   }
 
   &__container {
@@ -855,10 +947,12 @@ export default {
     width: 100%;
     display: block;
     height: 50px;
+    text-align: center;
+    padding-left: 3rem; // Add space for centered icon
 
     @media (max-width: 767px) {
       font-size: 1rem; // Keep at 16px to prevent zoom
-      padding: 0.75rem 2.5rem 0.75rem 2.5rem;
+      padding: 0.75rem 2.5rem 0.75rem 3rem;
     }
 
     &:focus,
@@ -1091,6 +1185,12 @@ export default {
     width: 1.25rem;
     height: 1.25rem;
     color: var(--fs-gray-500);
+  }
+
+  // Expandable ingredient search link
+  &__expand-link {
+    text-align: center;
+    margin: 1rem 0;
   }
 
   // Search mode toggle
@@ -1336,6 +1436,125 @@ export default {
 
     @media (max-width: 768px) {
       display: block;
+    }
+  }
+
+  // Henrik easter egg styles
+  &__henrik-button {
+    margin: 1rem 0;
+    text-align: center;
+  }
+}
+
+// Henrik modal styles
+.henrik-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 1rem;
+
+  @media (max-width: 768px) {
+    padding: 0.5rem;
+  }
+}
+
+.henrik-modal {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+
+  @media (max-width: 768px) {
+    max-width: 320px;
+    border-radius: 0.75rem;
+  }
+}
+
+.henrik-modal__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 1.5rem 1rem;
+  border-bottom: 1px solid var(--fs-gray-200);
+
+  @media (max-width: 768px) {
+    padding: 1rem 1rem 0.75rem;
+  }
+
+  h3 {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--fs-brokkoli);
+
+    @media (max-width: 768px) {
+      font-size: 1.125rem;
+    }
+  }
+}
+
+.henrik-modal__close {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--fs-gray-500);
+  cursor: pointer;
+  padding: 0.25rem;
+  line-height: 1;
+  border-radius: 0.25rem;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: var(--fs-gray-700);
+  }
+
+  @media (max-width: 768px) {
+    font-size: 1.25rem;
+  }
+}
+
+.henrik-modal__content {
+  padding: 2rem 1.5rem;
+
+  @media (max-width: 768px) {
+    padding: 1.5rem 1rem;
+  }
+}
+
+.henrik-timer {
+  text-align: center;
+
+  &__time {
+    display: block;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--fs-brokkoli);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+
+    @media (max-width: 768px) {
+      font-size: 2.5rem;
+    }
+  }
+
+  &__label {
+    font-size: 1rem;
+    color: var(--fs-gray-600);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+
+    @media (max-width: 768px) {
+      font-size: 0.875rem;
     }
   }
 }

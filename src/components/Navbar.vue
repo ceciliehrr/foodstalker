@@ -31,7 +31,10 @@
             <a href="/oppskrift/drikke"><span>🍹</span> Drikke</a>
           </li>
           <li>
-            <div class="dropdown" @click="toggleDropdown">
+            <a href="/spise-hvor"><span>🍝</span> Hvor vil du spise?</a>
+          </li>
+          <li>
+            <div class="dropdown" ref="dropdown" @click.stop="toggleDropdown">
               <button class="dropbtn">
                 &#128526; Bonus <i class="arrow down arrow--margin-left"></i>
               </button>
@@ -41,7 +44,6 @@
                   <li>
                     <a href="/om-oss">Om oss</a>
                   </li>
-                  <li><a href="/spise-hvor">Hvor vil du spise?</a></li>
                   <li><a href="/themenu">Menyer</a></li>
                 </ul>
                 <!-- Add more dropdown items if needed -->
@@ -54,7 +56,7 @@
         role="button"
         aria-label="menu-button"
         class="hamburger-btn"
-        @click="toggleMobileMenu"
+        @click.stop="toggleMobileMenu"
       >
         <div class="hamburger" v-if="!showMobileMenu">
           <span class="bar"></span>
@@ -85,7 +87,14 @@
           <a href="/oppskrift/drikke"><span>🍹</span> Drikke</a>
         </li>
         <li>
-          <div class="dropdown dropdown__mobile" @click="toggleDropdown">
+          <a href="/spise-hvor"><span>🍝</span> Hvor vil du spise?</a>
+        </li>
+        <li>
+          <div
+            class="dropdown dropdown__mobile"
+            ref="dropdownMobile"
+            @click.stop="toggleDropdown"
+          >
             <button class="dropbtn">
               &#128526; Bonus <i class="arrow down arrow--margin-left"></i>
             </button>
@@ -97,12 +106,7 @@
                     ><i class="arrow right arrow--margin-right"></i>Om oss</a
                   >
                 </li>
-                <li>
-                  <a href="/spise-hvor"
-                    ><i class="arrow right arrow--margin-right"></i>Hvor vil du
-                    spise?</a
-                  >
-                </li>
+
                 <li>
                   <a href="/themenu"
                     ><i class="arrow right arrow--margin-right"></i>Menyer</a
@@ -136,17 +140,76 @@ export default {
       this.closeIcon = this.showMobileMenu ? "close" : "hamburger";
       this.isInteracting = true;
       setTimeout(() => (this.isInteracting = false), 300);
+
+      // Close dropdown when mobile menu closes
+      if (!this.showMobileMenu) {
+        this.isDropdownOpen = false;
+      }
     },
     toggleDropdown() {
       this.isDropdownOpen = !this.isDropdownOpen;
     },
     closeDropdownOnClickOutside(event) {
-      if (
-        this.isDropdownOpen &&
-        !this.$el.contains(event.target) &&
-        !document.querySelector(".dropdown").contains(event.target)
-      ) {
-        this.isDropdownOpen = false;
+      // Don't close if clicking on the hamburger button
+      const hamburgerBtn = this.$el.querySelector(".hamburger-btn");
+      if (hamburgerBtn && hamburgerBtn.contains(event.target)) {
+        return;
+      }
+
+      // If dropdown is open, handle the click
+      if (this.isDropdownOpen) {
+        // Check if click is outside the dropdown specifically (both desktop and mobile)
+        const desktopDropdown = this.$refs.dropdown;
+        const mobileDropdown = this.$refs.dropdownMobile;
+
+        const clickedInsideDesktop =
+          desktopDropdown && desktopDropdown.contains(event.target);
+        const clickedInsideMobile =
+          mobileDropdown && mobileDropdown.contains(event.target);
+
+        // Close if click is outside both dropdowns
+        if (!clickedInsideDesktop && !clickedInsideMobile) {
+          this.isDropdownOpen = false;
+        }
+      } else if (this.showMobileMenu) {
+        // If mobile menu is open but dropdown is closed, close mobile menu
+        this.showMobileMenu = false;
+        this.closeIcon = "hamburger";
+      }
+    },
+    closeDropdownOnMobileMenuClick(event) {
+      // Close dropdown when clicking anywhere in mobile menu (except the dropdown itself)
+      if (this.isDropdownOpen) {
+        const mobileDropdown = this.$refs.dropdownMobile;
+        if (mobileDropdown && !mobileDropdown.contains(event.target)) {
+          this.isDropdownOpen = false;
+        }
+      }
+    },
+    closeDropdownOnTouch(event) {
+      // Handle touch events specifically for mobile
+      if (this.isDropdownOpen) {
+        const mobileDropdown = this.$refs.dropdownMobile;
+        if (mobileDropdown && !mobileDropdown.contains(event.target)) {
+          this.isDropdownOpen = false;
+        }
+      }
+    },
+    addMobileMenuClickListeners() {
+      // Add direct event listeners to mobile menu links
+      const mobileMenu = this.$el.querySelector(".mobile-menu");
+      if (mobileMenu) {
+        const menuLinks = mobileMenu.querySelectorAll("a");
+        menuLinks.forEach((link) => {
+          link.addEventListener("click", (event) => {
+            if (this.isDropdownOpen) {
+              const mobileDropdown = this.$refs.dropdownMobile;
+              if (mobileDropdown && !mobileDropdown.contains(event.target)) {
+                this.isDropdownOpen = false;
+              }
+            }
+          });
+        });
       }
     },
     handleScroll() {
@@ -168,11 +231,21 @@ export default {
     },
   },
   mounted() {
+    // Add multiple event listeners for better compatibility with Astro
     document.addEventListener("click", this.closeDropdownOnClickOutside);
+    document.addEventListener("touchstart", this.closeDropdownOnTouch);
+    document.addEventListener("touchend", this.closeDropdownOnTouch);
     window.addEventListener("scroll", this.handleScroll);
+
+    // Add direct event listeners to mobile menu items after component is mounted
+    this.$nextTick(() => {
+      this.addMobileMenuClickListeners();
+    });
   },
   beforeDestroy() {
     document.removeEventListener("click", this.closeDropdownOnClickOutside);
+    document.removeEventListener("touchstart", this.closeDropdownOnTouch);
+    document.removeEventListener("touchend", this.closeDropdownOnTouch);
     window.removeEventListener("scroll", this.handleScroll);
   },
 };
@@ -198,14 +271,10 @@ export default {
 }
 .navbar-container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid var(--fs-black);
+  border-bottom: 1px solid var(--fs-black);
   padding-bottom: 1rem;
-
-  @include bp("tablet-up") {
-    justify-content: flex-start;
-  }
+  position: relative;
 }
 
 .logo img {
@@ -217,6 +286,7 @@ export default {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-left: 2rem;
 }
 
 .nav-links a {
@@ -234,6 +304,10 @@ export default {
   background-color: transparent;
   border: none;
   padding: 0.5rem;
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .bar {
@@ -248,7 +322,7 @@ export default {
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1113px) {
   .nav-links {
     display: none;
   }
@@ -280,8 +354,9 @@ export default {
   .close {
     display: block;
     position: absolute;
-    right: 24px;
-    top: 24px;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%, -50%);
     width: 25px;
     height: 25px;
   }

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <button class="open-modal-button" @click="openModal()">
+    <button class="fs-btn fs-btn--kokkemodus" @click="openModal()">
       👩🏼‍🍳 Kokkemodus
     </button>
     <swipe-modal
@@ -290,6 +290,7 @@ button {
 .tab-content {
   margin-top: 40px;
   padding: 1rem;
+  padding-bottom: 8rem; // Extra bottom padding for better scrolling
 
   h3 {
     font-size: 16px;
@@ -319,15 +320,27 @@ button {
   background-color: var(--fs-gray-100);
 }
 
-.open-modal-button {
+// Kokkemodus button - custom style to match original
+.fs-btn--kokkemodus {
   background-color: var(--fs-berries-100);
   border: 1px solid var(--fs-berries-500);
   border-radius: 8px;
   padding: 10px 20px;
   color: var(--fs-black);
   cursor: pointer;
-  font-weight: 300;
+  font-weight: 400;
+
+  &:hover {
+    background-color: var(--fs-berries-200);
+    border-color: var(--fs-berries-600);
+  }
+
+  &:active {
+    background-color: var(--fs-berries-300);
+    border-color: var(--fs-berries-700);
+  }
 }
+
 .fs-ingredients {
   &__container {
     display: flex;

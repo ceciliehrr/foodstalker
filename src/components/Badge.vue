@@ -54,7 +54,7 @@ const handleClose = () => {
   display: flex;
   align-items: center;
   gap: 0.25rem;
-  padding: 0.25rem 0.5rem;
+  padding: 0.25rem 0.75rem;
   border: 1px solid var(--fs-berries-200);
   border-radius: 1rem;
   font-size: 0.75rem;

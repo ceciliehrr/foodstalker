@@ -12,7 +12,9 @@
         <div class="fs-small-cards__text">
           <h2>{{ title }}</h2>
           <p class="fs-small-cards__description">{{ description }}</p>
-          <p class="fs-small-cards__description-mobile">{{ truncatedText }}</p>
+          <p class="fs-small-cards__description-mobile">
+            {{ disableTruncation ? description : truncatedText }}
+          </p>
         </div>
 
         <!-- Footer with badges -->
@@ -76,6 +78,11 @@ export default {
       type: String,
       required: false,
       default: null,
+    },
+    disableTruncation: {
+      type: Boolean,
+      required: false,
+      default: false,
     },
   },
   computed: {

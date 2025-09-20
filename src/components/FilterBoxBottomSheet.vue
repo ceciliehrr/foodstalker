@@ -97,11 +97,8 @@
         <!-- Footer with Apply Button -->
         <div class="filter-bottomsheet__footer">
           <div class="filter-bottomsheet__footer-content">
-            <button
-              @click="clearAllFilters"
-              class="filter-bottomsheet__clear-btn"
-            >
-              Fjern alle filtre
+            <button @click="clearAllFilters" class="fs-btn fs-btn--secondary">
+              Fjern filter
             </button>
             <button @click="applyFilters" class="filter-bottomsheet__apply-btn">
               Se resultater ({{ totalResults }})
@@ -445,27 +442,6 @@ const applyFilters = () => {
 .filter-bottomsheet__footer-content {
   display: flex;
   gap: 0.75rem;
-}
-
-.filter-bottomsheet__clear-btn {
-  flex: 1;
-  padding: 0.875rem 1rem;
-  border: 2px solid var(--fs-gray-300);
-  border-radius: 0.75rem;
-  background: white;
-  color: var(--fs-black);
-  font-weight: 500;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  font-size: 0.875rem;
-}
-
-.filter-bottomsheet__clear-btn:hover {
-  border-color: var(--fs-berries-400);
-  background: var(--fs-berries-50);
-  color: var(--fs-berries-600);
-  transform: translateY(-1px);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .filter-bottomsheet__apply-btn {
