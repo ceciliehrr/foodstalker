@@ -31,6 +31,9 @@
             <a href="/oppskrift/drikke"><span>🍹</span> Drikke</a>
           </li>
           <li>
+            <a href="/spise-hvor"><span>🍽️</span>Hvor vil du spise?</a>
+          </li>
+          <li>
             <div class="dropdown" @click="toggleDropdown">
               <button class="dropbtn">
                 &#128526; Bonus <i class="arrow down arrow--margin-left"></i>
@@ -41,7 +44,6 @@
                   <li>
                     <a href="/om-oss">Om oss</a>
                   </li>
-                  <li><a href="/spise-hvor">Hvor vil du spise?</a></li>
                   <li><a href="/themenu">Menyer</a></li>
                 </ul>
                 <!-- Add more dropdown items if needed -->
@@ -85,6 +87,9 @@
           <a href="/oppskrift/drikke"><span>🍹</span> Drikke</a>
         </li>
         <li>
+          <a href="/spise-hvor"><span>🍽️</span> Hvor vil du spise?</a>
+        </li>
+        <li>
           <div class="dropdown dropdown__mobile" @click="toggleDropdown">
             <button class="dropbtn">
               &#128526; Bonus <i class="arrow down arrow--margin-left"></i>
@@ -97,12 +102,7 @@
                     ><i class="arrow right arrow--margin-right"></i>Om oss</a
                   >
                 </li>
-                <li>
-                  <a href="/spise-hvor"
-                    ><i class="arrow right arrow--margin-right"></i>Hvor vil du
-                    spise?</a
-                  >
-                </li>
+
                 <li>
                   <a href="/themenu"
                     ><i class="arrow right arrow--margin-right"></i>Menyer</a
@@ -200,12 +200,8 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid var(--fs-black);
+  border-bottom: 1px solid var(--fs-black);
   padding-bottom: 1rem;
-
-  @include bp("tablet-up") {
-    justify-content: flex-start;
-  }
 }
 
 .logo img {
@@ -229,11 +225,12 @@ export default {
 }
 
 .hamburger-btn {
-  display: none;
+  display: block;
   cursor: pointer;
   background-color: transparent;
   border: none;
   padding: 0.5rem;
+  margin-left: auto;
 }
 
 .bar {
@@ -248,13 +245,9 @@ export default {
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1113px) {
   .nav-links {
     display: none;
-  }
-
-  .hamburger-btn {
-    display: block;
   }
 
   .mobile-menu {

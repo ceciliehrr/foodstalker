@@ -1,28 +1,9 @@
 <template>
   <div class="fs-search-bar">
-    <h2>Søk i oppskrifter</h2>
+    <h2 class="">Søk i oppskrifter</h2>
 
-    <!-- Search mode toggle -->
-    <div class="fs-search-bar__mode-toggle">
-      <button
-        @click="setSearchMode('quick')"
-        :class="['fs-search-bar__mode-btn', { active: searchMode === 'quick' }]"
-      >
-        🔍 Normalt søk
-      </button>
-      <button
-        @click="setSearchMode('ingredient')"
-        :class="[
-          'fs-search-bar__mode-btn',
-          { active: searchMode === 'ingredient' },
-        ]"
-      >
-        🥬 Hva har du i kjøleskapet?
-      </button>
-    </div>
-
-    <!-- Quick Search Mode -->
-    <div v-if="searchMode === 'quick'" class="fs-search-bar__container">
+    <!-- Search input - always visible -->
+    <div class="fs-search-bar__container">
       <label for="search" class="sr-only">Søk</label>
       <div class="fs-search-bar__search-bar">
         <div class="fs-search-bar__icon">
@@ -81,6 +62,20 @@
           </div>
         </div>
       </div>
+    </div>
+
+    <!-- Expandable ingredient search link -->
+    <div class="fs-search-bar__expand-link">
+      <button
+        @click="toggleIngredientSearch"
+        :class="[
+          'fs-btn',
+          searchMode === 'ingredient' ? 'fs-btn--secondary' : 'fs-btn--ghost',
+        ]"
+      >
+        <span v-if="searchMode === 'quick'">🥬 Hva har du i kjøleskapet?</span>
+        <span v-else>✕ Lukk ingredienssøk</span>
+      </button>
     </div>
 
     <!-- Ingredient Search Mode -->
@@ -683,6 +678,15 @@ export default {
       }
     },
 
+    // Toggle ingredient search expand/collapse
+    toggleIngredientSearch() {
+      if (this.searchMode === "quick") {
+        this.setSearchMode("ingredient");
+      } else {
+        this.setSearchMode("quick");
+      }
+    },
+
     extractAllIngredients() {
       const ingredients = new Set<string>();
 
@@ -827,7 +831,7 @@ export default {
     margin: 0.75rem;
     font-size: 16px;
     text-align: center;
-    font-weight: 400;
+    font-weight: 500;
   }
 
   &__container {
@@ -855,10 +859,12 @@ export default {
     width: 100%;
     display: block;
     height: 50px;
+    text-align: center;
+    padding-left: 3rem; // Add space for centered icon
 
     @media (max-width: 767px) {
       font-size: 1rem; // Keep at 16px to prevent zoom
-      padding: 0.75rem 2.5rem 0.75rem 2.5rem;
+      padding: 0.75rem 2.5rem 0.75rem 3rem;
     }
 
     &:focus,
@@ -1091,6 +1097,12 @@ export default {
     width: 1.25rem;
     height: 1.25rem;
     color: var(--fs-gray-500);
+  }
+
+  // Expandable ingredient search link
+  &__expand-link {
+    text-align: center;
+    margin: 1rem 0;
   }
 
   // Search mode toggle

@@ -768,7 +768,7 @@
   },
   {
     "id": "høyrygg-med-anis",
-    "imageurl": "https://foodstalker.b-cdn.net/2020/høyrygg-anis/høyrygganis-5.jpg",
+    "imageurl": "https://foodstalker.b-cdn.net/2020/h%C3%B8yrygg-anis/DSC00659.jpg",
     "alt": "høyrygg med saus over ris, et dryss bladpersille over.",
     "title": "Høyrygg med anis",
     "date": "2020-12-06",
@@ -782,7 +782,7 @@
     "tipsurl": "https://www.godt.no/oppskrift/7450/moer-og-saftig-helgemiddag",
     "ingredients": [
       {
-        "title": "",
+        "title": "Høyrygg med anis",
         "ingredients": [
           {
             "quantity": "1.4 kg",
@@ -829,8 +829,49 @@
             "name": "koriander, frisk"
           },
           {
+            "quantity": "nok",
+            "name": "ris"
+          },
+          {
+            "quantity": "2 poser",
+            "name": "babyleaf salat"
+          },
+          {
             "quantity": "",
             "name": "olje, til steking"
+          }
+        ]
+      },
+      {
+        "title": "Agurksalat",
+        "ingredients": [
+          {
+            "quantity": "1 stk",
+            "name": "agurk"
+          },
+          {
+            "quantity": "1 stk",
+            "name": "sjalottløk"
+          },
+          {
+            "quantity": "1 dl",
+            "name": "sukker"
+          },
+          {
+            "quantity": "2 dl",
+            "name": "vann"
+          },
+          {
+            "quantity": "2 dl",
+            "name": "riseddik (eller hvit 7% eddik)"
+          },
+          {
+            "quantity": "1 stk",
+            "name": "chili"
+          },
+          {
+            "quantity": "1 ss",
+            "name": "finhakket ingefær"
           }
         ]
       }
@@ -862,14 +903,22 @@
       },
       {
         "title": "",
-        "description": "Rør inn hakket koriander i gryta og server med ris og eventuelt en salat om du vil."
+        "description": "Rør inn hakket koriander i gryta og server med ris og agurksalat."
+      },
+      {
+        "title": "Agurksalat",
+        "description": "Kok opp sukker, vann, eddik, hakket chili og ingefær i en kjele. Avkjøl når sukkeret er oppløst."
+      },
+      {
+        "title": "",
+        "description": "Del agurken i to, del akurkdelene på langs. Ta en skje og skrap ut kjernen av agurken. Dette er for å fjerne mest mulig vann, så laken holder på sin gode smak og agurken på sin sprø konsistens. Hakk sjalottløken og legg i bolle sammen med agurken. Ha laken over agurk og sjalottløken."
       }
     ],
     "images": [
       {
         "orientation": "landscape",
-        "url": "https://foodstalker.b-cdn.net/2020/høyrygg-anis/høyrygganis-6.jpg",
-        "alt": "høyrygg med saus over ris, et dryss bladpersille over."
+        "url": "https://foodstalker.b-cdn.net/2020/h%C3%B8yrygg-anis/h%C3%B8yrygganis-6.jpg",
+        "alt": "høyrygg med saus over ris, et dryss bladpersille over"
       },
       {
         "orientation": "portrait",
@@ -878,12 +927,12 @@
       },
       {
         "orientation": "portrait",
-        "url": "https://foodstalker.b-cdn.net/2020/høyrygg-anis/høyrygganis-5.jpg",
+        "url": "https://foodstalker.b-cdn.net/2020/h%C3%B8yrygg-anis/DSC00654.jpg",
         "alt": "høyrygg med saus over ris, et dryss bladpersille over."
       },
       {
         "orientation": "landscape",
-        "url": "https://foodstalker.b-cdn.net/2020/høyrygg-anis/høyrygganis-8.jpg",
+        "url": "https://foodstalker.b-cdn.net/2020/h%C3%B8yrygg-anis/DSC00668.jpg",
         "alt": "høyrygg med saus over ris, et dryss bladpersille over."
       },
       {

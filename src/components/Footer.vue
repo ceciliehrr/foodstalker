@@ -2,8 +2,14 @@
   <footer class="fs-footer">
     <div class="fs-footer-content">
       <div class="fs-footer-divider">
-        <img class="fs-footer-logo" src="https://foodstalker.b-cdn.net/logo/logo-pink96x96.png" aria-hidden="true"
-          alt="circle logo with lime" height="24" width="24" />
+        <img
+          class="fs-footer-logo"
+          src="https://foodstalker.b-cdn.net/logo/logo-pink96x96.png"
+          aria-hidden="true"
+          alt="circle logo with lime"
+          height="24"
+          width="24"
+        />
         <p class="fs-footer-made-with-text">
           Made with <span>💖</span> from Pete&Cecilie
         </p>
@@ -21,9 +27,19 @@
 
         <div class="fs-footer-social fs-footer-gdpr-text">
           Vi er på instagram:
-          <a target="_blank" class="instagram" href="https://www.instagram.com/foodstalker.no/" aria-label="link til">
-            <img src="https://foodstalker.b-cdn.net/Instagram_Glyph_Gradient.png" alt="instagram"
-              aria-hidden="true" height="24" width="24" /></a>
+          <a
+            target="_blank"
+            class="instagram"
+            href="https://www.instagram.com/foodstalker.no/"
+            aria-label="link til"
+          >
+            <img
+              src="https://foodstalker.b-cdn.net/Instagram_Glyph_Gradient.png"
+              alt="instagram"
+              aria-hidden="true"
+              height="24"
+              width="24"
+          /></a>
         </div>
       </div>
     </div>
@@ -61,7 +77,7 @@ export default {
 }
 
 .fs-footer-divider {
-  border-top: 2px solid #000;
+  border-top: 1px solid var(--fs-black);
   margin-top: 1rem;
   padding: 2rem;
   display: grid;

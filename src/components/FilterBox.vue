@@ -52,8 +52,11 @@
 
     <!-- Clear All Button -->
     <div v-if="hasActiveFilters" class="filter-box__actions">
-      <button @click="clearAllFilters" class="filter-box__clear-btn">
-        Fjern alle filtre
+      <button
+        @click="clearAllFilters"
+        class="fs-btn fs-btn--secondary fs-btn--full"
+      >
+        Fjern filter
       </button>
     </div>
   </div>
@@ -249,27 +252,6 @@ const clearAllFilters = () => {
   border-top: 1px solid var(--fs-gray-200);
   padding-top: 1rem;
   margin-top: 1rem;
-}
-
-.filter-box__clear-btn {
-  width: 100%;
-  padding: 0.75rem 1rem;
-  border: 2px solid var(--fs-gray-300);
-  border-radius: 0.75rem;
-  background: white;
-  color: var(--fs-gray-600);
-  font-size: 0.875rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-.filter-box__clear-btn:hover {
-  border-color: var(--fs-berries-400);
-  background-color: var(--fs-berries-50);
-  color: var(--fs-berries-600);
-  transform: translateY(-1px);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Responsive design */

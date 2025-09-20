@@ -60,7 +60,14 @@
     <!-- Filter Button Row -->
     <div class="filter-button-row">
       <button @click="toggleFilterVisibility" class="filter-trigger-btn">
-        <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor">
+        <svg
+          width="18"
+          height="18"
+          viewBox="0 0 20 20"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
           <path
             d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-.293.707L12 11.414V15a1 1 0 01-.293.707l-2 2A1 1 0 018 17v-5.586L3.293 6.707A1 1 0 013 6V4z"
           />

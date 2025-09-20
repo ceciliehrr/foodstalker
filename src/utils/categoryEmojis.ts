@@ -5,7 +5,7 @@ export const categoryEmojis: Record<string, string> = {
   hverdag: "🥦", // Everyday meals (broccoli)
   helg: "🌮", // Weekend/special occasions (taco)
   søtt: "🍩", // Sweet/desserts (donut)
-  tilbehør: "🥗", // Side dishes
+  tilbehør: "🌽", // Side dishes
   drikke: "🍹", // Drinks (tropical drink)
   turmat: "🔥", // Travel/hiking food (flames)
   vegetar: "🥬", // Vegetarian
