@@ -262,12 +262,12 @@
 
       .fs-ingredient-field .fs-form-group.ingredient-name-field {
         flex: 1;
-        min-width: 0;
+        min-width: 200px;
       }
 
       .fs-ingredient-field .fs-form-group.ingredient-name-field input {
         width: 100%;
-        min-width: 0;
+        min-width: 180px;
       }
 
       .fs-ingredient-field .fs-form-group:last-child {
@@ -643,6 +643,19 @@
                     placeholder="F.eks. kjøttdeig, løk, tomat"
                     required
                   />
+                </div>
+
+                <div class="fs-form-group ingredient-details-field">
+                  <label>Detaljer (valgfri)</label>
+                  <input
+                    type="text"
+                    name="ingredients[0][ingredients][0][details]"
+                    placeholder="F.eks. grov, fersk, røkt"
+                  />
+                  <div class="fs-help-text">
+                    Beskrivelse av ingrediensen (f.eks. "grov" for dijon,
+                    "fersk" for basilikum)
+                  </div>
                 </div>
                 <div class="fs-form-group">
                   <button
@@ -1095,6 +1108,14 @@
         <label>Ingrediens <span class="fs-required">*</span></label>
         <input type="text" name="ingredients[${ingredientGroupCounter}][ingredients][0][name]" placeholder="F.eks. kjøttdeig, løk, tomat" required>
       </div>
+      
+      <div class="fs-form-group ingredient-details-field">
+        <label>Detaljer (valgfri)</label>
+        <input type="text" name="ingredients[${ingredientGroupCounter}][ingredients][0][details]" placeholder="F.eks. grov, fersk, røkt">
+        <div class="fs-help-text">
+          Beskrivelse av ingrediensen (f.eks. "grov" for dijon, "fersk" for basilikum)
+        </div>
+      </div>
     </div>
     
     <button type="button" class="fs-button fs-button--secondary" onclick="addIngredientField(this)">+ Legg til ingrediens</button>
@@ -1142,6 +1163,14 @@
     <div class="fs-form-group ingredient-name-field">
       <label>Ingrediens <span class="fs-required">*</span></label>
       <input type="text" name="ingredients[${groupIndex}][ingredients][${ingredientCount}][name]" placeholder="F.eks. kjøttdeig, løk, tomat" required>
+    </div>
+    
+    <div class="fs-form-group ingredient-details-field">
+      <label>Detaljer (valgfri)</label>
+      <input type="text" name="ingredients[${groupIndex}][ingredients][${ingredientCount}][details]" placeholder="F.eks. grov, fersk, røkt">
+      <div class="fs-help-text">
+        Beskrivelse av ingrediensen (f.eks. "grov" for dijon, "fersk" for basilikum)
+      </div>
     </div>
     
     <div class="fs-form-group">

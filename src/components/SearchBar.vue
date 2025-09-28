@@ -310,6 +310,11 @@ export default {
     // Get current search results for FilterBox
     currentSearchResults() {
       if (this.search.trim() && this.searchIndex) {
+        // Only search if query is long enough to be meaningful
+        if (this.search.trim().length < 2) {
+          return [];
+        }
+
         const searchResults = this.searchIndex.search(this.search, {});
         return searchResults.map((result) => result.recipe);
       }

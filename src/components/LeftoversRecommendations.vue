@@ -122,6 +122,7 @@ export default {
         "ris",
         "vann",
         "finsnittet",
+        "hvitløk",
       ];
 
       const normalized = ingredientName.toLowerCase().trim();
@@ -160,7 +161,7 @@ export default {
           /^(fersk|tørr|hel|hakket|fin|grov|flytende|røkt|kald|varm|stor|liten)\s+/i,
           ""
         )
-        .replace(/,\s*(.*)$/, "") // Remove everything after comma
+        .replace(/,\s*(.*)$/, "") // Remove everything after comma (legacy support)
         .trim();
     },
     getMatchingIngredients(recipe: any) {
@@ -181,7 +182,11 @@ export default {
                 this.currentRecipeIngredients.includes(normalizedName) &&
                 this.isLeftoverIngredient(normalizedName)
               ) {
-                matchingIngredients.push(ingredient.name);
+                // Use the new structure if available, fallback to old structure
+                const displayName = ingredient.details
+                  ? `${ingredient.name} (${ingredient.details})`
+                  : ingredient.name;
+                matchingIngredients.push(displayName);
               }
             }
           });

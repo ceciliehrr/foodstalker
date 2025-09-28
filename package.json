@@ -15,16 +15,16 @@
     "proxy": "mkcert -install && mkcert localhost && local-ssl-proxy --source 3010 --target 3000 --cert localhost.pem --key localhost-key.pem"
   },
   "devDependencies": {
-    "@astrojs/vue": "^5.1.0",
+    "@astrojs/vue": "^5.1.1",
     "@vue-leaflet/vue-leaflet": "^0.10.1",
-    "astro": "^5.13.5",
+    "astro": "^5.14.1",
     "leaflet": "^1.9.4",
     "prettier": "^2.7.1",
     "prettier-plugin-astro": "^0.14.1",
     "vue": "^3.5.20"
   },
   "dependencies": {
-    "@astrojs/netlify": "^6.5.9",
+    "@astrojs/netlify": "^6.5.11",
     "@netlify/plugin-csp-nonce": "^1.5.2",
     "@notionhq/client": "^2.3.0",
     "@takuma-ru/vue-swipe-modal": "^5.0.5",
