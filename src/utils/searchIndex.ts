@@ -139,6 +139,7 @@ export class RecipeSearchIndex {
         return replacements[match];
       })
       .replace(/[^a-z0-9\s]/g, " ")
+      .replace(/\s+/g, " ") // Normalize multiple spaces to single space
       .trim();
   }
 
@@ -156,11 +157,27 @@ export class RecipeSearchIndex {
       .filter((term) => term.length > 1);
     const results = new Map<
       string,
-      { recipe: Recipe; score: number; matchedTerms: string[] }
+      {
+        recipe: Recipe;
+        score: number;
+        matchedTerms: string[];
+        fieldMatches: string[];
+      }
     >();
 
+    // Track which fields each term matches for better scoring
+    const fieldWeights = {
+      title: 10,
+      category: 8,
+      keywords: 6,
+      ingredients: 6,
+      description: 5,
+      longDescription: 4,
+      steps: 3,
+    };
+
     searchTerms.forEach((term) => {
-      // Find exact matches
+      // Find exact matches with field-specific scoring
       if (this.index[term]) {
         Object.entries(this.index[term]).forEach(([recipeId, indexData]) => {
           const recipe = this.recipes.find((r) => r.id === recipeId);
@@ -184,21 +201,37 @@ export class RecipeSearchIndex {
               recipe,
               score: 0,
               matchedTerms: [],
+              fieldMatches: [],
             });
           }
 
           const result = results.get(recipeId)!;
-          result.score += indexData.score;
+
+          // Calculate field-weighted score
+          let fieldScore = 0;
+          indexData.fields.forEach((field) => {
+            fieldScore += fieldWeights[field as keyof typeof fieldWeights] || 1;
+          });
+
+          result.score += fieldScore;
           if (!result.matchedTerms.includes(term)) {
             result.matchedTerms.push(term);
           }
+          // Track which fields matched
+          indexData.fields.forEach((field) => {
+            if (!result.fieldMatches.includes(field)) {
+              result.fieldMatches.push(field);
+            }
+          });
         });
       }
 
-      // Find fuzzy matches for longer terms
-      if (term.length > 2) {
+      // More restrictive fuzzy matching - only for longer terms and higher similarity
+      if (term.length > 3) {
         Object.keys(this.index).forEach((indexTerm) => {
-          if (this.calculateSimilarity(term, indexTerm) > 0.7) {
+          const similarity = this.calculateSimilarity(term, indexTerm);
+          // Increased threshold for fuzzy matching to reduce noise
+          if (similarity > 0.8) {
             Object.entries(this.index[indexTerm]).forEach(
               ([recipeId, indexData]) => {
                 const recipe = this.recipes.find((r) => r.id === recipeId);
@@ -225,14 +258,30 @@ export class RecipeSearchIndex {
                     recipe,
                     score: 0,
                     matchedTerms: [],
+                    fieldMatches: [],
                   });
                 }
 
                 const result = results.get(recipeId)!;
-                result.score += Math.floor(indexData.score * 0.5); // Lower score for fuzzy matches
+
+                // Calculate field-weighted score for fuzzy matches (much lower)
+                let fieldScore = 0;
+                indexData.fields.forEach((field) => {
+                  fieldScore +=
+                    (fieldWeights[field as keyof typeof fieldWeights] || 1) *
+                    0.3;
+                });
+
+                result.score += Math.floor(fieldScore * similarity);
                 if (!result.matchedTerms.includes(term)) {
                   result.matchedTerms.push(term);
                 }
+                // Track which fields matched
+                indexData.fields.forEach((field) => {
+                  if (!result.fieldMatches.includes(field)) {
+                    result.fieldMatches.push(field);
+                  }
+                });
               }
             );
           }
@@ -240,20 +289,49 @@ export class RecipeSearchIndex {
       }
     });
 
-    // Bonus for recipes that match multiple search terms
+    // Enhanced scoring with field-specific bonuses
     results.forEach((result) => {
+      // Bonus for recipes that match multiple search terms
       if (result.matchedTerms.length > 1) {
-        result.score += result.matchedTerms.length * 2;
+        result.score += result.matchedTerms.length * 3;
+      }
+
+      // Bonus for title matches (most important)
+      if (result.fieldMatches.includes("title")) {
+        result.score += 15;
+      }
+
+      // Bonus for category matches
+      if (result.fieldMatches.includes("category")) {
+        result.score += 10;
+      }
+
+      // Bonus for keyword matches
+      if (result.fieldMatches.includes("keywords")) {
+        result.score += 8;
+      }
+
+      // Penalty for only step matches (less relevant)
+      if (
+        result.fieldMatches.length === 1 &&
+        result.fieldMatches.includes("steps")
+      ) {
+        result.score *= 0.5;
       }
     });
 
-    // Convert to array and sort by score
-    return Array.from(results.values()).sort((a, b) => {
-      if (b.score !== a.score) {
-        return b.score - a.score;
-      }
-      return a.recipe.title.localeCompare(b.recipe.title);
-    });
+    // Filter out very low scoring results and limit results
+    const filteredResults = Array.from(results.values())
+      .filter((result) => result.score > 5) // Minimum relevance threshold
+      .sort((a, b) => {
+        if (b.score !== a.score) {
+          return b.score - a.score;
+        }
+        return a.recipe.title.localeCompare(b.recipe.title);
+      })
+      .slice(0, 20); // Limit to top 20 results
+
+    return filteredResults;
   }
 
   private parseTimeToMinutes(timeStr: string | number): number {

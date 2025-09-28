@@ -1,7 +1,13 @@
-const express = require("express");
-const fs = require("fs");
+import express from "express";
+import fs from "fs";
+import { fileURLToPath } from "url";
+import { dirname, join } from "path";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3001;
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -10,7 +16,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/admin-panel.html");
+  res.sendFile(join(__dirname, "admin-panel.html"));
 });
 
 app.post("/add-recipe", (req, res) => {
@@ -21,18 +27,14 @@ app.post("/add-recipe", (req, res) => {
     const validatedRecipe = validateAndTransformRecipe(newRecipe);
 
     // Read the existing recipes from the file
-    const existingRecipes = JSON.parse(
-      fs.readFileSync("../../data/new_recipes.json")
-    );
+    const recipesPath = join(__dirname, "../../data/new_recipes.json");
+    const existingRecipes = JSON.parse(fs.readFileSync(recipesPath, "utf8"));
 
     // Add the new recipe to the existing recipes
     existingRecipes.push(validatedRecipe);
 
     // Write the updated recipes back to the file
-    fs.writeFileSync(
-      "../../data/new_recipes.json",
-      JSON.stringify(existingRecipes, null, 2)
-    );
+    fs.writeFileSync(recipesPath, JSON.stringify(existingRecipes, null, 2));
 
     res.redirect("/?success=true");
   } catch (error) {

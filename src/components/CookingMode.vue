@@ -86,7 +86,7 @@
                     ingredientIndex
                   "
                   class="fs-checkbox__text"
-                  v-html="ingredient.name"
+                  v-html="getIngredientDisplayName(ingredient)"
                 ></p>
               </label>
             </li>
@@ -184,7 +184,39 @@ export default {
         return "";
       }
 
-      // You may want to format the quantity here if needed
+      // Handle fractions first (like "1/2 dl", "1/4 stk")
+      const fractionMatch = originalQuantity.match(/(\d+\/\d+)\s*([^\d\s\/]+)/);
+      if (fractionMatch) {
+        const fraction = fractionMatch[1];
+        const unit = fractionMatch[2];
+
+        // Convert fraction to decimal for calculation
+        const [numerator, denominator] = fraction.split("/").map(Number);
+        const decimalValue = numerator / denominator;
+
+        // Adjust the numeric value based on the selected portion
+        const adjustedValue = (decimalValue / this.portions) * this.portion;
+
+        // Convert back to fraction if possible, otherwise use decimal
+        if (adjustedValue === 0.5) {
+          return `1/2 ${unit}`;
+        } else if (adjustedValue === 0.25) {
+          return `1/4 ${unit}`;
+        } else if (adjustedValue === 0.75) {
+          return `3/4 ${unit}`;
+        } else if (adjustedValue === 0.33) {
+          return `1/3 ${unit}`;
+        } else if (adjustedValue === 0.67) {
+          return `2/3 ${unit}`;
+        } else {
+          const formattedValue =
+            adjustedValue % 1 === 0
+              ? adjustedValue.toFixed(0)
+              : adjustedValue.toFixed(1);
+          return `${formattedValue} ${unit}`;
+        }
+      }
+
       // Extract the numeric value and unit from the original quantity
       // Updated regex to handle ranges with spaces around hyphen
       const match = originalQuantity.match(/([\d.\s-]+)\s*([^\d\s-]+)/);
@@ -255,6 +287,12 @@ export default {
         // If no numeric value and unit are found, return the original quantity
         return originalQuantity;
       }
+    },
+    getIngredientDisplayName(ingredient) {
+      if (ingredient.details) {
+        return `${ingredient.name} (${ingredient.details})`;
+      }
+      return ingredient.name;
     },
   },
 };
