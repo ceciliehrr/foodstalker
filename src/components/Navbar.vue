@@ -42,6 +42,9 @@
                 <!-- Add your dropdown content here -->
                 <ul>
                   <li>
+                    <a href="/smaksgraf">🌐 Smaksgraf</a>
+                  </li>
+                  <li>
                     <a href="/om-oss">Om oss</a>
                   </li>
                   <li><a href="/themenu">Menyer</a></li>
@@ -101,6 +104,12 @@
             <div class="dropdown-content" :class="{ open: isDropdownOpen }">
               <!-- Add your dropdown content here -->
               <ul>
+                <li>
+                  <a href="/smaksgraf"
+                    ><i class="arrow right arrow--margin-right"></i>🌐
+                    Smaksgraf</a
+                  >
+                </li>
                 <li>
                   <a href="/om-oss"
                     ><i class="arrow right arrow--margin-right"></i>Om oss</a

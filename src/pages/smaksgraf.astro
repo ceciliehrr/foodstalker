@@ -1,0 +1,46 @@
+---
+import Layout from "../layouts/Layout.astro";
+import IngredientNetwork from "../components/IngredientNetwork.vue";
+import Divider from "../components/Divider.astro";
+---
+
+<Layout title="Smaksgraf - Ingrediensnettverk">
+  <div class="fs-banner fade-in">
+    <div class="fs-banner__text">
+      <h1 class="bannerTitle">🌐 S M A K S G R A F</h1>
+      <p>Utforsk hvordan ingredienser henger sammen</p>
+    </div>
+  </div>
+  <Divider text="Ingrediensnettverk" />
+  <IngredientNetwork client:only="vue" />
+</Layout>
+
+<style lang="scss">
+  @use "sass:map";
+  @use "../styles/variables/" as *;
+  @use "../styles/mixins/breakpoints" as *;
+  @use "../styles/mixins/" as *;
+
+  .fs-banner {
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    margin-bottom: 1rem;
+
+    &__text {
+      display: grid;
+      place-content: center;
+      text-align: center;
+
+      & h1 {
+        @include get-text("fs-h5");
+        @include bp("tablet-up") {
+          @include get-text("fs-h4");
+        }
+      }
+      & p {
+        max-width: 30rem;
+      }
+    }
+  }
+</style>

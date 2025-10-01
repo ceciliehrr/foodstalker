@@ -12,6 +12,7 @@
     "build": "npm run prebuild && astro build",
     "preview": "astro preview",
     "fetch-data": "node scripts/fetch-notion-data.js",
+    "build-network": "node scripts/build-ingredient-network.js",
     "proxy": "mkcert -install && mkcert localhost && local-ssl-proxy --source 3010 --target 3000 --cert localhost.pem --key localhost-key.pem"
   },
   "devDependencies": {
@@ -33,6 +34,7 @@
     "fs-extra": "^11.3.1",
     "sass": "^1.91.0",
     "sharp": "^0.34.3",
+    "vis-network": "^10.0.2",
     "vite": "^6.2.6"
   }
 }

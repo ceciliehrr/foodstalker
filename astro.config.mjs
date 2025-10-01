@@ -6,7 +6,7 @@ import vue from "@astrojs/vue";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://foodstalker.no',
+  site: "https://foodstalker.no",
   integrations: [vue()],
   image: {
     domains: ["https://foodstalker.b-cdn.net"],
@@ -29,10 +29,10 @@ export default defineConfig({
     },
     css: {
       preprocessorOptions: {
-          scss: {
-          api: 'modern'
-          }
-      }
+        scss: {
+          api: "modern",
+        },
+      },
     },
   },
 

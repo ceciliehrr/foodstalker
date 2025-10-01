@@ -1,0 +1,9733 @@
+{
+  "nodes": [
+    {
+      "id": "hvitløk",
+      "label": "hvitløk",
+      "value": 35,
+      "title": "hvitløk (35 oppskrifter)"
+    },
+    {
+      "id": "dijonsennep",
+      "label": "dijonsennep",
+      "value": 8,
+      "title": "dijonsennep (8 oppskrifter)"
+    },
+    {
+      "id": "honning",
+      "label": "honning",
+      "value": 16,
+      "title": "honning (16 oppskrifter)"
+    },
+    {
+      "id": "mozzarella",
+      "label": "mozzarella",
+      "value": 5,
+      "title": "mozzarella (5 oppskrifter)"
+    },
+    {
+      "id": "sitron",
+      "label": "sitron",
+      "value": 23,
+      "title": "sitron (23 oppskrifter)"
+    },
+    {
+      "id": "olivenolje",
+      "label": "olivenolje",
+      "value": 19,
+      "title": "olivenolje (19 oppskrifter)"
+    },
+    {
+      "id": "sesamfrø",
+      "label": "sesamfrø",
+      "value": 4,
+      "title": "sesamfrø (4 oppskrifter)"
+    },
+    {
+      "id": "lime",
+      "label": "lime",
+      "value": 14,
+      "title": "lime (14 oppskrifter)"
+    },
+    {
+      "id": "mango",
+      "label": "mango",
+      "value": 6,
+      "title": "mango (6 oppskrifter)"
+    },
+    {
+      "id": "agurk",
+      "label": "agurk",
+      "value": 7,
+      "title": "agurk (7 oppskrifter)"
+    },
+    {
+      "id": "chili",
+      "label": "chili",
+      "value": 13,
+      "title": "chili (13 oppskrifter)"
+    },
+    {
+      "id": "eggehvite",
+      "label": "eggehvite",
+      "value": 8,
+      "title": "eggehvite (8 oppskrifter)"
+    },
+    {
+      "id": "maisenna",
+      "label": "maisenna",
+      "value": 4,
+      "title": "maisenna (4 oppskrifter)"
+    },
+    {
+      "id": "hvitvinseddik",
+      "label": "hvitvinseddik",
+      "value": 8,
+      "title": "hvitvinseddik (8 oppskrifter)"
+    },
+    {
+      "id": "fløte",
+      "label": "fløte",
+      "value": 7,
+      "title": "fløte (7 oppskrifter)"
+    },
+    {
+      "id": "løk",
+      "label": "løk",
+      "value": 5,
+      "title": "løk (5 oppskrifter)"
+    },
+    {
+      "id": "korianderfrø",
+      "label": "korianderfrø",
+      "value": 4,
+      "title": "korianderfrø (4 oppskrifter)"
+    },
+    {
+      "id": "paprikapulver",
+      "label": "paprikapulver",
+      "value": 5,
+      "title": "paprikapulver (5 oppskrifter)"
+    },
+    {
+      "id": "chilipulver",
+      "label": "chilipulver",
+      "value": 4,
+      "title": "chilipulver (4 oppskrifter)"
+    },
+    {
+      "id": "koriander",
+      "label": "koriander",
+      "value": 13,
+      "title": "koriander (13 oppskrifter)"
+    },
+    {
+      "id": "ingefær",
+      "label": "ingefær",
+      "value": 8,
+      "title": "ingefær (8 oppskrifter)"
+    },
+    {
+      "id": "stjerneanis",
+      "label": "stjerneanis",
+      "value": 5,
+      "title": "stjerneanis (5 oppskrifter)"
+    },
+    {
+      "id": "brunt sukker",
+      "label": "brunt sukker",
+      "value": 5,
+      "title": "brunt sukker (5 oppskrifter)"
+    },
+    {
+      "id": "soyasaus",
+      "label": "soyasaus",
+      "value": 6,
+      "title": "soyasaus (6 oppskrifter)"
+    },
+    {
+      "id": "tomatpuré",
+      "label": "tomatpuré",
+      "value": 5,
+      "title": "tomatpuré (5 oppskrifter)"
+    },
+    {
+      "id": "sjalottløk",
+      "label": "sjalottløk",
+      "value": 12,
+      "title": "sjalottløk (12 oppskrifter)"
+    },
+    {
+      "id": "laurbærblad",
+      "label": "laurbærblad",
+      "value": 5,
+      "title": "laurbærblad (5 oppskrifter)"
+    },
+    {
+      "id": "gulrot",
+      "label": "gulrot",
+      "value": 7,
+      "title": "gulrot (7 oppskrifter)"
+    },
+    {
+      "id": "potet",
+      "label": "potet",
+      "value": 4,
+      "title": "potet (4 oppskrifter)"
+    },
+    {
+      "id": "rødløk",
+      "label": "rødløk",
+      "value": 9,
+      "title": "rødløk (9 oppskrifter)"
+    },
+    {
+      "id": "rødvinseddik",
+      "label": "rødvinseddik",
+      "value": 5,
+      "title": "rødvinseddik (5 oppskrifter)"
+    },
+    {
+      "id": "fiskesaus",
+      "label": "fiskesaus",
+      "value": 6,
+      "title": "fiskesaus (6 oppskrifter)"
+    },
+    {
+      "id": "vårløk",
+      "label": "vårløk",
+      "value": 7,
+      "title": "vårløk (7 oppskrifter)"
+    },
+    {
+      "id": "eggnudler",
+      "label": "eggnudler",
+      "value": 4,
+      "title": "eggnudler (4 oppskrifter)"
+    },
+    {
+      "id": "cherrytomat",
+      "label": "cherrytomat",
+      "value": 8,
+      "title": "cherrytomat (8 oppskrifter)"
+    },
+    {
+      "id": "basilikum",
+      "label": "basilikum",
+      "value": 7,
+      "title": "basilikum (7 oppskrifter)"
+    },
+    {
+      "id": "parmesan",
+      "label": "parmesan",
+      "value": 12,
+      "title": "parmesan (12 oppskrifter)"
+    },
+    {
+      "id": "gul løk",
+      "label": "gul løk",
+      "value": 10,
+      "title": "gul løk (10 oppskrifter)"
+    },
+    {
+      "id": "dijon sennep",
+      "label": "dijon sennep",
+      "value": 7,
+      "title": "dijon sennep (7 oppskrifter)"
+    },
+    {
+      "id": "melk",
+      "label": "melk",
+      "value": 7,
+      "title": "melk (7 oppskrifter)"
+    },
+    {
+      "id": "eggeplommer",
+      "label": "eggeplommer",
+      "value": 4,
+      "title": "eggeplommer (4 oppskrifter)"
+    },
+    {
+      "id": "laubærblad",
+      "label": "laubærblad",
+      "value": 4,
+      "title": "laubærblad (4 oppskrifter)"
+    },
+    {
+      "id": "sellerirot",
+      "label": "sellerirot",
+      "value": 5,
+      "title": "sellerirot (5 oppskrifter)"
+    },
+    {
+      "id": "gulrøtter",
+      "label": "gulrøtter",
+      "value": 4,
+      "title": "gulrøtter (4 oppskrifter)"
+    },
+    {
+      "id": "gjær",
+      "label": "gjær",
+      "value": 6,
+      "title": "gjær (6 oppskrifter)"
+    },
+    {
+      "id": "egg",
+      "label": "egg",
+      "value": 14,
+      "title": "egg (14 oppskrifter)"
+    },
+    {
+      "id": "fennikel",
+      "label": "fennikel",
+      "value": 4,
+      "title": "fennikel (4 oppskrifter)"
+    },
+    {
+      "id": "solsikkeolje",
+      "label": "solsikkeolje",
+      "value": 5,
+      "title": "solsikkeolje (5 oppskrifter)"
+    },
+    {
+      "id": "timian",
+      "label": "timian",
+      "value": 4,
+      "title": "timian (4 oppskrifter)"
+    },
+    {
+      "id": "finhakket sjalottløk",
+      "label": "finhakket sjalottløk",
+      "value": 4,
+      "title": "finhakket sjalottløk (4 oppskrifter)"
+    },
+    {
+      "id": "sitronsaft",
+      "label": "sitronsaft",
+      "value": 4,
+      "title": "sitronsaft (4 oppskrifter)"
+    },
+    {
+      "id": "bladpersille",
+      "label": "bladpersille",
+      "value": 5,
+      "title": "bladpersille (5 oppskrifter)"
+    },
+    {
+      "id": "creme fraiche",
+      "label": "creme fraiche",
+      "value": 4,
+      "title": "creme fraiche (4 oppskrifter)"
+    },
+    {
+      "id": "kremfløte",
+      "label": "kremfløte",
+      "value": 6,
+      "title": "kremfløte (6 oppskrifter)"
+    },
+    {
+      "id": "melis",
+      "label": "melis",
+      "value": 7,
+      "title": "melis (7 oppskrifter)"
+    },
+    {
+      "id": "bakepulver",
+      "label": "bakepulver",
+      "value": 4,
+      "title": "bakepulver (4 oppskrifter)"
+    },
+    {
+      "id": "nellik",
+      "label": "nellik",
+      "value": 4,
+      "title": "nellik (4 oppskrifter)"
+    },
+    {
+      "id": "mandler",
+      "label": "mandler",
+      "value": 4,
+      "title": "mandler (4 oppskrifter)"
+    },
+    {
+      "id": "isbiter",
+      "label": "isbiter",
+      "value": 5,
+      "title": "isbiter (5 oppskrifter)"
+    }
+  ],
+  "edges": [
+    {
+      "from": "dijonsennep",
+      "to": "hvitløk",
+      "value": 3,
+      "title": "3 oppskrifter"
+    },
+    {
+      "from": "honning",
+      "to": "hvitløk",
+      "value": 8,
+      "title": "8 oppskrifter"
+    },
+    {
+      "from": "hvitløk",
+      "to": "mozzarella",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "hvitløk",
+      "to": "sitron",
+      "value": 6,
+      "title": "6 oppskrifter"
+    },
+    {
+      "from": "hvitløk",
+      "to": "olivenolje",
+      "value": 12,
+      "title": "12 oppskrifter"
+    },
+    {
+      "from": "dijonsennep",
+      "to": "honning",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "dijonsennep",
+      "to": "mozzarella",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "dijonsennep",
+      "to": "sitron",
+      "value": 4,
+      "title": "4 oppskrifter"
+    },
+    {
+      "from": "dijonsennep",
+      "to": "olivenolje",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "honning",
+      "to": "mozzarella",
+      "value": 3,
+      "title": "3 oppskrifter"
+    },
+    {
+      "from": "honning",
+      "to": "sitron",
+      "value": 6,
+      "title": "6 oppskrifter"
+    },
+    {
+      "from": "honning",
+      "to": "olivenolje",
+      "value": 8,
+      "title": "8 oppskrifter"
+    },
+    {
+      "from": "mozzarella",
+      "to": "sitron",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "mozzarella",
+      "to": "olivenolje",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "olivenolje",
+      "to": "sitron",
+      "value": 7,
+      "title": "7 oppskrifter"
+    },
+    {
+      "from": "lime",
+      "to": "mango",
+      "value": 5,
+      "title": "5 oppskrifter"
+    },
+    {
+      "from": "agurk",
+      "to": "lime",
+      "value": 4,
+      "title": "4 oppskrifter"
+    },
+    {
+      "from": "chili",
+      "to": "lime",
+      "value": 8,
+      "title": "8 oppskrifter"
+    },
+    {
+      "from": "agurk",
+      "to": "mango",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "chili",
+      "to": "mango",
+      "value": 5,
+      "title": "5 oppskrifter"
+    },
+    {
+      "from": "agurk",
+      "to": "chili",
+      "value": 4,
+      "title": "4 oppskrifter"
+    },
+    {
+      "from": "eggehvite",
+      "to": "maisenna",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "eggehvite",
+      "to": "hvitvinseddik",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "eggehvite",
+      "to": "fløte",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "hvitvinseddik",
+      "to": "maisenna",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "fløte",
+      "to": "maisenna",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "fløte",
+      "to": "hvitvinseddik",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "hvitløk",
+      "to": "løk",
+      "value": 4,
+      "title": "4 oppskrifter"
+    },
+    {
+      "from": "korianderfrø",
+      "to": "løk",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "løk",
+      "to": "paprikapulver",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "chilipulver",
+      "to": "løk",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "løk",
+      "to": "olivenolje",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "lime",
+      "to": "løk",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "koriander",
+      "to": "løk",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "hvitløk",
+      "to": "korianderfrø",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "hvitløk",
+      "to": "paprikapulver",
+      "value": 3,
+      "title": "3 oppskrifter"
+    },
+    {
+      "from": "chilipulver",
+      "to": "hvitløk",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "hvitløk",
+      "to": "lime",
+      "value": 6,
+      "title": "6 oppskrifter"
+    },
+    {
+      "from": "hvitløk",
+      "to": "koriander",
+      "value": 8,
+      "title": "8 oppskrifter"
+    },
+    {
+      "from": "korianderfrø",
+      "to": "paprikapulver",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "chilipulver",
+      "to": "korianderfrø",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "korianderfrø",
+      "to": "olivenolje",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "korianderfrø",
+      "to": "lime",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "koriander",
+      "to": "korianderfrø",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "chilipulver",
+      "to": "paprikapulver",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "olivenolje",
+      "to": "paprikapulver",
+      "value": 3,
+      "title": "3 oppskrifter"
+    },
+    {
+      "from": "lime",
+      "to": "paprikapulver",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "koriander",
+      "to": "paprikapulver",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "chilipulver",
+      "to": "olivenolje",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "chilipulver",
+      "to": "lime",
+      "value": 3,
+      "title": "3 oppskrifter"
+    },
+    {
+      "from": "chilipulver",
+      "to": "koriander",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "lime",
+      "to": "olivenolje",
+      "value": 4,
+      "title": "4 oppskrifter"
+    },
+    {
+      "from": "koriander",
+      "to": "olivenolje",
+      "value": 3,
+      "title": "3 oppskrifter"
+    },
+    {
+      "from": "koriander",
+      "to": "lime",
+      "value": 9,
+      "title": "9 oppskrifter"
+    },
+    {
+      "from": "ingefær",
+      "to": "løk",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "løk",
+      "to": "stjerneanis",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "brunt sukker",
+      "to": "løk",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "løk",
+      "to": "soyasaus",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "løk",
+      "to": "tomatpuré",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "agurk",
+      "to": "løk",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "løk",
+      "to": "sjalottløk",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "chili",
+      "to": "løk",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "hvitløk",
+      "to": "ingefær",
+      "value": 6,
+      "title": "6 oppskrifter"
+    },
+    {
+      "from": "ingefær",
+      "to": "stjerneanis",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "brunt sukker",
+      "to": "ingefær",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "ingefær",
+      "to": "soyasaus",
+      "value": 3,
+      "title": "3 oppskrifter"
+    },
+    {
+      "from": "ingefær",
+      "to": "tomatpuré",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "ingefær",
+      "to": "koriander",
+      "value": 3,
+      "title": "3 oppskrifter"
+    },
+    {
+      "from": "agurk",
+      "to": "ingefær",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "ingefær",
+      "to": "sjalottløk",
+      "value": 5,
+      "title": "5 oppskrifter"
+    },
+    {
+      "from": "chili",
+      "to": "ingefær",
+      "value": 4,
+      "title": "4 oppskrifter"
+    },
+    {
+      "from": "hvitløk",
+      "to": "stjerneanis",
+      "value": 3,
+      "title": "3 oppskrifter"
+    },
+    {
+      "from": "brunt sukker",
+      "to": "hvitløk",
+      "value": 3,
+      "title": "3 oppskrifter"
+    },
+    {
+      "from": "hvitløk",
+      "to": "soyasaus",
+      "value": 4,
+      "title": "4 oppskrifter"
+    },
+    {
+      "from": "hvitløk",
+      "to": "tomatpuré",
+      "value": 5,
+      "title": "5 oppskrifter"
+    },
+    {
+      "from": "agurk",
+      "to": "hvitløk",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "hvitløk",
+      "to": "sjalottløk",
+      "value": 7,
+      "title": "7 oppskrifter"
+    },
+    {
+      "from": "chili",
+      "to": "hvitløk",
+      "value": 9,
+      "title": "9 oppskrifter"
+    },
+    {
+      "from": "brunt sukker",
+      "to": "stjerneanis",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "soyasaus",
+      "to": "stjerneanis",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "stjerneanis",
+      "to": "tomatpuré",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "koriander",
+      "to": "stjerneanis",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "agurk",
+      "to": "stjerneanis",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "sjalottløk",
+      "to": "stjerneanis",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "chili",
+      "to": "stjerneanis",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "brunt sukker",
+      "to": "soyasaus",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "brunt sukker",
+      "to": "tomatpuré",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "brunt sukker",
+      "to": "koriander",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "agurk",
+      "to": "brunt sukker",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "brunt sukker",
+      "to": "sjalottløk",
+      "value": 4,
+      "title": "4 oppskrifter"
+    },
+    {
+      "from": "brunt sukker",
+      "to": "chili",
+      "value": 3,
+      "title": "3 oppskrifter"
+    },
+    {
+      "from": "soyasaus",
+      "to": "tomatpuré",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "koriander",
+      "to": "soyasaus",
+      "value": 5,
+      "title": "5 oppskrifter"
+    },
+    {
+      "from": "agurk",
+      "to": "soyasaus",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "sjalottløk",
+      "to": "soyasaus",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "chili",
+      "to": "soyasaus",
+      "value": 5,
+      "title": "5 oppskrifter"
+    },
+    {
+      "from": "koriander",
+      "to": "tomatpuré",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "agurk",
+      "to": "tomatpuré",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "sjalottløk",
+      "to": "tomatpuré",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "chili",
+      "to": "tomatpuré",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "agurk",
+      "to": "koriander",
+      "value": 3,
+      "title": "3 oppskrifter"
+    },
+    {
+      "from": "koriander",
+      "to": "sjalottløk",
+      "value": 4,
+      "title": "4 oppskrifter"
+    },
+    {
+      "from": "chili",
+      "to": "koriander",
+      "value": 8,
+      "title": "8 oppskrifter"
+    },
+    {
+      "from": "agurk",
+      "to": "sjalottløk",
+      "value": 3,
+      "title": "3 oppskrifter"
+    },
+    {
+      "from": "chili",
+      "to": "sjalottløk",
+      "value": 4,
+      "title": "4 oppskrifter"
+    },
+    {
+      "from": "gulrot",
+      "to": "laurbærblad",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "laurbærblad",
+      "to": "potet",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "gulrot",
+      "to": "potet",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "rødløk",
+      "to": "rødvinseddik",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "fiskesaus",
+      "to": "hvitløk",
+      "value": 3,
+      "title": "3 oppskrifter"
+    },
+    {
+      "from": "hvitløk",
+      "to": "vårløk",
+      "value": 3,
+      "title": "3 oppskrifter"
+    },
+    {
+      "from": "eggnudler",
+      "to": "hvitløk",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "fiskesaus",
+      "to": "soyasaus",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "soyasaus",
+      "to": "vårløk",
+      "value": 3,
+      "title": "3 oppskrifter"
+    },
+    {
+      "from": "eggnudler",
+      "to": "soyasaus",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "fiskesaus",
+      "to": "vårløk",
+      "value": 3,
+      "title": "3 oppskrifter"
+    },
+    {
+      "from": "fiskesaus",
+      "to": "koriander",
+      "value": 4,
+      "title": "4 oppskrifter"
+    },
+    {
+      "from": "eggnudler",
+      "to": "fiskesaus",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "koriander",
+      "to": "vårløk",
+      "value": 4,
+      "title": "4 oppskrifter"
+    },
+    {
+      "from": "eggnudler",
+      "to": "vårløk",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "eggnudler",
+      "to": "koriander",
+      "value": 3,
+      "title": "3 oppskrifter"
+    },
+    {
+      "from": "cherrytomat",
+      "to": "mango",
+      "value": 3,
+      "title": "3 oppskrifter"
+    },
+    {
+      "from": "koriander",
+      "to": "mango",
+      "value": 4,
+      "title": "4 oppskrifter"
+    },
+    {
+      "from": "eggnudler",
+      "to": "mango",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "mango",
+      "to": "soyasaus",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "honning",
+      "to": "mango",
+      "value": 3,
+      "title": "3 oppskrifter"
+    },
+    {
+      "from": "agurk",
+      "to": "cherrytomat",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "cherrytomat",
+      "to": "chili",
+      "value": 3,
+      "title": "3 oppskrifter"
+    },
+    {
+      "from": "cherrytomat",
+      "to": "koriander",
+      "value": 4,
+      "title": "4 oppskrifter"
+    },
+    {
+      "from": "cherrytomat",
+      "to": "eggnudler",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "cherrytomat",
+      "to": "soyasaus",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "cherrytomat",
+      "to": "honning",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "cherrytomat",
+      "to": "lime",
+      "value": 4,
+      "title": "4 oppskrifter"
+    },
+    {
+      "from": "agurk",
+      "to": "eggnudler",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "agurk",
+      "to": "honning",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "chili",
+      "to": "eggnudler",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "chili",
+      "to": "honning",
+      "value": 4,
+      "title": "4 oppskrifter"
+    },
+    {
+      "from": "honning",
+      "to": "koriander",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "eggnudler",
+      "to": "honning",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "eggnudler",
+      "to": "lime",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "honning",
+      "to": "soyasaus",
+      "value": 3,
+      "title": "3 oppskrifter"
+    },
+    {
+      "from": "lime",
+      "to": "soyasaus",
+      "value": 4,
+      "title": "4 oppskrifter"
+    },
+    {
+      "from": "honning",
+      "to": "lime",
+      "value": 3,
+      "title": "3 oppskrifter"
+    },
+    {
+      "from": "basilikum",
+      "to": "cherrytomat",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "cherrytomat",
+      "to": "olivenolje",
+      "value": 4,
+      "title": "4 oppskrifter"
+    },
+    {
+      "from": "cherrytomat",
+      "to": "parmesan",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "basilikum",
+      "to": "olivenolje",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "basilikum",
+      "to": "parmesan",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "olivenolje",
+      "to": "parmesan",
+      "value": 5,
+      "title": "5 oppskrifter"
+    },
+    {
+      "from": "gul løk",
+      "to": "hvitløk",
+      "value": 8,
+      "title": "8 oppskrifter"
+    },
+    {
+      "from": "fløte",
+      "to": "gul løk",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "gul løk",
+      "to": "parmesan",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "gul løk",
+      "to": "hvitvinseddik",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "gul løk",
+      "to": "honning",
+      "value": 3,
+      "title": "3 oppskrifter"
+    },
+    {
+      "from": "dijon sennep",
+      "to": "gul løk",
+      "value": 3,
+      "title": "3 oppskrifter"
+    },
+    {
+      "from": "fløte",
+      "to": "hvitløk",
+      "value": 3,
+      "title": "3 oppskrifter"
+    },
+    {
+      "from": "hvitløk",
+      "to": "parmesan",
+      "value": 6,
+      "title": "6 oppskrifter"
+    },
+    {
+      "from": "hvitløk",
+      "to": "hvitvinseddik",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "dijon sennep",
+      "to": "hvitløk",
+      "value": 5,
+      "title": "5 oppskrifter"
+    },
+    {
+      "from": "fløte",
+      "to": "parmesan",
+      "value": 3,
+      "title": "3 oppskrifter"
+    },
+    {
+      "from": "fløte",
+      "to": "honning",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "dijon sennep",
+      "to": "fløte",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "hvitvinseddik",
+      "to": "parmesan",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "honning",
+      "to": "parmesan",
+      "value": 3,
+      "title": "3 oppskrifter"
+    },
+    {
+      "from": "dijon sennep",
+      "to": "parmesan",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "honning",
+      "to": "hvitvinseddik",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "dijon sennep",
+      "to": "hvitvinseddik",
+      "value": 3,
+      "title": "3 oppskrifter"
+    },
+    {
+      "from": "dijon sennep",
+      "to": "honning",
+      "value": 5,
+      "title": "5 oppskrifter"
+    },
+    {
+      "from": "rødvinseddik",
+      "to": "stjerneanis",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "hvitløk",
+      "to": "rødvinseddik",
+      "value": 3,
+      "title": "3 oppskrifter"
+    },
+    {
+      "from": "fløte",
+      "to": "melk",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "eggeplommer",
+      "to": "melk",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "eggeplommer",
+      "to": "fløte",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "gul løk",
+      "to": "paprikapulver",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "gul løk",
+      "to": "tomatpuré",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "gul løk",
+      "to": "laubærblad",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "gul løk",
+      "to": "potet",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "gul løk",
+      "to": "sellerirot",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "gul løk",
+      "to": "gulrot",
+      "value": 3,
+      "title": "3 oppskrifter"
+    },
+    {
+      "from": "hvitløk",
+      "to": "laubærblad",
+      "value": 4,
+      "title": "4 oppskrifter"
+    },
+    {
+      "from": "hvitløk",
+      "to": "potet",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "hvitløk",
+      "to": "sellerirot",
+      "value": 4,
+      "title": "4 oppskrifter"
+    },
+    {
+      "from": "gulrot",
+      "to": "hvitløk",
+      "value": 6,
+      "title": "6 oppskrifter"
+    },
+    {
+      "from": "paprikapulver",
+      "to": "tomatpuré",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "laubærblad",
+      "to": "paprikapulver",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "paprikapulver",
+      "to": "potet",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "paprikapulver",
+      "to": "sellerirot",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "gulrot",
+      "to": "paprikapulver",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "laubærblad",
+      "to": "tomatpuré",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "potet",
+      "to": "tomatpuré",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "sellerirot",
+      "to": "tomatpuré",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "gulrot",
+      "to": "tomatpuré",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "laubærblad",
+      "to": "potet",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "laubærblad",
+      "to": "sellerirot",
+      "value": 4,
+      "title": "4 oppskrifter"
+    },
+    {
+      "from": "gulrot",
+      "to": "laubærblad",
+      "value": 3,
+      "title": "3 oppskrifter"
+    },
+    {
+      "from": "potet",
+      "to": "sellerirot",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "gulrot",
+      "to": "sellerirot",
+      "value": 3,
+      "title": "3 oppskrifter"
+    },
+    {
+      "from": "lime",
+      "to": "vårløk",
+      "value": 3,
+      "title": "3 oppskrifter"
+    },
+    {
+      "from": "sesamfrø",
+      "to": "vårløk",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "ingefær",
+      "to": "vårløk",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "honning",
+      "to": "vårløk",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "mango",
+      "to": "vårløk",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "chili",
+      "to": "vårløk",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "lime",
+      "to": "sesamfrø",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "ingefær",
+      "to": "lime",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "ingefær",
+      "to": "sesamfrø",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "sesamfrø",
+      "to": "soyasaus",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "honning",
+      "to": "sesamfrø",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "mango",
+      "to": "sesamfrø",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "chili",
+      "to": "sesamfrø",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "koriander",
+      "to": "sesamfrø",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "honning",
+      "to": "ingefær",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "ingefær",
+      "to": "mango",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "laurbærblad",
+      "to": "tomatpuré",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "gulrøtter",
+      "to": "tomatpuré",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "fløte",
+      "to": "tomatpuré",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "parmesan",
+      "to": "tomatpuré",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "hvitløk",
+      "to": "laurbærblad",
+      "value": 4,
+      "title": "4 oppskrifter"
+    },
+    {
+      "from": "gulrøtter",
+      "to": "hvitløk",
+      "value": 3,
+      "title": "3 oppskrifter"
+    },
+    {
+      "from": "gulrøtter",
+      "to": "laurbærblad",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "fløte",
+      "to": "laurbærblad",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "laurbærblad",
+      "to": "parmesan",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "gulrøtter",
+      "to": "potet",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "fløte",
+      "to": "gulrøtter",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "gulrøtter",
+      "to": "parmesan",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "fløte",
+      "to": "potet",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "parmesan",
+      "to": "potet",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "gjær",
+      "to": "olivenolje",
+      "value": 3,
+      "title": "3 oppskrifter"
+    },
+    {
+      "from": "gul løk",
+      "to": "rødvinseddik",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "basilikum",
+      "to": "gul løk",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "basilikum",
+      "to": "hvitløk",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "basilikum",
+      "to": "rødvinseddik",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "egg",
+      "to": "maisenna",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "gulrøtter",
+      "to": "vårløk",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "gulrøtter",
+      "to": "sellerirot",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "fennikel",
+      "to": "gulrøtter",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "gulrøtter",
+      "to": "laubærblad",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "gulrøtter",
+      "to": "solsikkeolje",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "fennikel",
+      "to": "hvitløk",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "hvitløk",
+      "to": "solsikkeolje",
+      "value": 4,
+      "title": "4 oppskrifter"
+    },
+    {
+      "from": "sellerirot",
+      "to": "vårløk",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "fennikel",
+      "to": "vårløk",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "laubærblad",
+      "to": "vårløk",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "solsikkeolje",
+      "to": "vårløk",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "fennikel",
+      "to": "sellerirot",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "sellerirot",
+      "to": "solsikkeolje",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "fennikel",
+      "to": "laubærblad",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "fennikel",
+      "to": "solsikkeolje",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "laubærblad",
+      "to": "solsikkeolje",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "ingefær",
+      "to": "korianderfrø",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "gulrot",
+      "to": "løk",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "gulrot",
+      "to": "timian",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "løk",
+      "to": "sellerirot",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "løk",
+      "to": "timian",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "laubærblad",
+      "to": "løk",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "hvitløk",
+      "to": "timian",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "sellerirot",
+      "to": "timian",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "laubærblad",
+      "to": "timian",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "fiskesaus",
+      "to": "lime",
+      "value": 3,
+      "title": "3 oppskrifter"
+    },
+    {
+      "from": "fiskesaus",
+      "to": "sjalottløk",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "lime",
+      "to": "sjalottløk",
+      "value": 3,
+      "title": "3 oppskrifter"
+    },
+    {
+      "from": "eggnudler",
+      "to": "sjalottløk",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "sjalottløk",
+      "to": "vårløk",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "gulrøtter",
+      "to": "hvitvinseddik",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "finhakket sjalottløk",
+      "to": "gulrøtter",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "gulrøtter",
+      "to": "sitronsaft",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "finhakket sjalottløk",
+      "to": "hvitvinseddik",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "hvitvinseddik",
+      "to": "sitronsaft",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "finhakket sjalottløk",
+      "to": "sitronsaft",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "bladpersille",
+      "to": "hvitløk",
+      "value": 3,
+      "title": "3 oppskrifter"
+    },
+    {
+      "from": "chili",
+      "to": "olivenolje",
+      "value": 4,
+      "title": "4 oppskrifter"
+    },
+    {
+      "from": "bladpersille",
+      "to": "chili",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "chili",
+      "to": "sitron",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "bladpersille",
+      "to": "olivenolje",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "bladpersille",
+      "to": "sitron",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "hvitløk",
+      "to": "mango",
+      "value": 3,
+      "title": "3 oppskrifter"
+    },
+    {
+      "from": "hvitløk",
+      "to": "rødløk",
+      "value": 5,
+      "title": "5 oppskrifter"
+    },
+    {
+      "from": "cherrytomat",
+      "to": "hvitløk",
+      "value": 3,
+      "title": "3 oppskrifter"
+    },
+    {
+      "from": "mango",
+      "to": "rødløk",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "mango",
+      "to": "olivenolje",
+      "value": 3,
+      "title": "3 oppskrifter"
+    },
+    {
+      "from": "chili",
+      "to": "rødløk",
+      "value": 4,
+      "title": "4 oppskrifter"
+    },
+    {
+      "from": "lime",
+      "to": "rødløk",
+      "value": 4,
+      "title": "4 oppskrifter"
+    },
+    {
+      "from": "cherrytomat",
+      "to": "rødløk",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "olivenolje",
+      "to": "rødløk",
+      "value": 3,
+      "title": "3 oppskrifter"
+    },
+    {
+      "from": "koriander",
+      "to": "rødløk",
+      "value": 3,
+      "title": "3 oppskrifter"
+    },
+    {
+      "from": "sjalottløk",
+      "to": "solsikkeolje",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "solsikkeolje",
+      "to": "timian",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "laurbærblad",
+      "to": "solsikkeolje",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "rødvinseddik",
+      "to": "solsikkeolje",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "maisenna",
+      "to": "solsikkeolje",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "sjalottløk",
+      "to": "timian",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "laurbærblad",
+      "to": "sjalottløk",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "rødvinseddik",
+      "to": "sjalottløk",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "maisenna",
+      "to": "sjalottløk",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "hvitløk",
+      "to": "maisenna",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "laurbærblad",
+      "to": "timian",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "rødvinseddik",
+      "to": "timian",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "maisenna",
+      "to": "timian",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "laurbærblad",
+      "to": "rødvinseddik",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "laurbærblad",
+      "to": "maisenna",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "maisenna",
+      "to": "rødvinseddik",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "solsikkeolje",
+      "to": "tomatpuré",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "løk",
+      "to": "solsikkeolje",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "gulrot",
+      "to": "solsikkeolje",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "fennikel",
+      "to": "tomatpuré",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "fennikel",
+      "to": "løk",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "fennikel",
+      "to": "gulrot",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "paprikapulver",
+      "to": "timian",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "paprikapulver",
+      "to": "vårløk",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "olivenolje",
+      "to": "timian",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "gul løk",
+      "to": "timian",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "timian",
+      "to": "vårløk",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "gul løk",
+      "to": "olivenolje",
+      "value": 4,
+      "title": "4 oppskrifter"
+    },
+    {
+      "from": "olivenolje",
+      "to": "vårløk",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "gul løk",
+      "to": "vårløk",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "honning",
+      "to": "melk",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "egg",
+      "to": "melk",
+      "value": 4,
+      "title": "4 oppskrifter"
+    },
+    {
+      "from": "gjær",
+      "to": "melk",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "melk",
+      "to": "sesamfrø",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "egg",
+      "to": "honning",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "gjær",
+      "to": "honning",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "egg",
+      "to": "gjær",
+      "value": 3,
+      "title": "3 oppskrifter"
+    },
+    {
+      "from": "egg",
+      "to": "sesamfrø",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "gjær",
+      "to": "sesamfrø",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "brunt sukker",
+      "to": "dijon sennep",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "dijon sennep",
+      "to": "potet",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "dijon sennep",
+      "to": "fennikel",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "creme fraiche",
+      "to": "dijon sennep",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "dijon sennep",
+      "to": "dijonsennep",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "chili",
+      "to": "dijon sennep",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "dijon sennep",
+      "to": "sjalottløk",
+      "value": 3,
+      "title": "3 oppskrifter"
+    },
+    {
+      "from": "agurk",
+      "to": "dijon sennep",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "brunt sukker",
+      "to": "potet",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "brunt sukker",
+      "to": "fennikel",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "brunt sukker",
+      "to": "creme fraiche",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "brunt sukker",
+      "to": "dijonsennep",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "brunt sukker",
+      "to": "hvitvinseddik",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "fennikel",
+      "to": "potet",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "creme fraiche",
+      "to": "potet",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "dijonsennep",
+      "to": "potet",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "hvitvinseddik",
+      "to": "potet",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "chili",
+      "to": "potet",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "potet",
+      "to": "sjalottløk",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "agurk",
+      "to": "potet",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "creme fraiche",
+      "to": "fennikel",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "dijonsennep",
+      "to": "fennikel",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "fennikel",
+      "to": "hvitvinseddik",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "chili",
+      "to": "fennikel",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "fennikel",
+      "to": "sjalottløk",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "agurk",
+      "to": "fennikel",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "creme fraiche",
+      "to": "dijonsennep",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "creme fraiche",
+      "to": "hvitvinseddik",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "chili",
+      "to": "creme fraiche",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "creme fraiche",
+      "to": "sjalottløk",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "agurk",
+      "to": "creme fraiche",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "dijonsennep",
+      "to": "hvitvinseddik",
+      "value": 3,
+      "title": "3 oppskrifter"
+    },
+    {
+      "from": "chili",
+      "to": "dijonsennep",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "dijonsennep",
+      "to": "sjalottløk",
+      "value": 3,
+      "title": "3 oppskrifter"
+    },
+    {
+      "from": "agurk",
+      "to": "dijonsennep",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "chili",
+      "to": "hvitvinseddik",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "hvitvinseddik",
+      "to": "sjalottløk",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "agurk",
+      "to": "hvitvinseddik",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "hvitløk",
+      "to": "sitronsaft",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "ingefær",
+      "to": "sitron",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "dijonsennep",
+      "to": "ingefær",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "ingefær",
+      "to": "rødløk",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "ingefær",
+      "to": "sitronsaft",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "koriander",
+      "to": "sitron",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "dijonsennep",
+      "to": "koriander",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "koriander",
+      "to": "sitronsaft",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "sitron",
+      "to": "sjalottløk",
+      "value": 3,
+      "title": "3 oppskrifter"
+    },
+    {
+      "from": "rødløk",
+      "to": "sjalottløk",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "sitronsaft",
+      "to": "sjalottløk",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "chili",
+      "to": "sitronsaft",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "brunt sukker",
+      "to": "sitron",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "rødløk",
+      "to": "sitron",
+      "value": 3,
+      "title": "3 oppskrifter"
+    },
+    {
+      "from": "sitron",
+      "to": "sitronsaft",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "brunt sukker",
+      "to": "rødløk",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "brunt sukker",
+      "to": "sitronsaft",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "dijonsennep",
+      "to": "rødløk",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "dijonsennep",
+      "to": "sitronsaft",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "rødløk",
+      "to": "sitronsaft",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "agurk",
+      "to": "rødløk",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "agurk",
+      "to": "kremfløte",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "agurk",
+      "to": "sitron",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "kremfløte",
+      "to": "rødløk",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "hvitløk",
+      "to": "kremfløte",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "kremfløte",
+      "to": "sitron",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "egg",
+      "to": "hvitløk",
+      "value": 3,
+      "title": "3 oppskrifter"
+    },
+    {
+      "from": "egg",
+      "to": "parmesan",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "hvitvinseddik",
+      "to": "mozzarella",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "basilikum",
+      "to": "mozzarella",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "agurk",
+      "to": "basilikum",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "basilikum",
+      "to": "rødløk",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "basilikum",
+      "to": "lime",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "gulrot",
+      "to": "sjalottløk",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "gulrot",
+      "to": "ingefær",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "eggnudler",
+      "to": "ingefær",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "eggnudler",
+      "to": "gulrot",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "cherrytomat",
+      "to": "egg",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "basilikum",
+      "to": "egg",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "egg",
+      "to": "mozzarella",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "cherrytomat",
+      "to": "melk",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "basilikum",
+      "to": "melk",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "melk",
+      "to": "mozzarella",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "cherrytomat",
+      "to": "mozzarella",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "brunt sukker",
+      "to": "kremfløte",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "dijonsennep",
+      "to": "solsikkeolje",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "bakepulver",
+      "to": "melis",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "melis",
+      "to": "melk",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "fløte",
+      "to": "melis",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "eggeplommer",
+      "to": "melis",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "bakepulver",
+      "to": "melk",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "bakepulver",
+      "to": "fløte",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "bakepulver",
+      "to": "eggeplommer",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "sellerirot",
+      "to": "sjalottløk",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "fløte",
+      "to": "sellerirot",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "sellerirot",
+      "to": "sitron",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "fløte",
+      "to": "sjalottløk",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "fløte",
+      "to": "timian",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "fløte",
+      "to": "sitron",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "sitron",
+      "to": "timian",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "ingefær",
+      "to": "nellik",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "bladpersille",
+      "to": "ingefær",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "ingefær",
+      "to": "melk",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "ingefær",
+      "to": "laurbærblad",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "egg",
+      "to": "ingefær",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "bladpersille",
+      "to": "nellik",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "melk",
+      "to": "nellik",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "hvitløk",
+      "to": "nellik",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "laurbærblad",
+      "to": "nellik",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "nellik",
+      "to": "sjalottløk",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "egg",
+      "to": "nellik",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "bladpersille",
+      "to": "melk",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "bladpersille",
+      "to": "laurbærblad",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "bladpersille",
+      "to": "sjalottløk",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "bladpersille",
+      "to": "egg",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "hvitløk",
+      "to": "melk",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "laurbærblad",
+      "to": "melk",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "melk",
+      "to": "sjalottløk",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "egg",
+      "to": "laurbærblad",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "egg",
+      "to": "sjalottløk",
+      "value": 3,
+      "title": "3 oppskrifter"
+    },
+    {
+      "from": "melk",
+      "to": "stjerneanis",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "gjær",
+      "to": "stjerneanis",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "gjær",
+      "to": "nellik",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "nellik",
+      "to": "stjerneanis",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "ingefær",
+      "to": "melis",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "ingefær",
+      "to": "mandler",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "korianderfrø",
+      "to": "nellik",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "korianderfrø",
+      "to": "melis",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "korianderfrø",
+      "to": "mandler",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "melis",
+      "to": "nellik",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "mandler",
+      "to": "nellik",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "mandler",
+      "to": "melis",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "chili",
+      "to": "gul løk",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "gul løk",
+      "to": "gulrøtter",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "gul løk",
+      "to": "lime",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "gul løk",
+      "to": "koriander",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "chili",
+      "to": "gulrøtter",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "gulrøtter",
+      "to": "lime",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "gulrøtter",
+      "to": "koriander",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "korianderfrø",
+      "to": "stjerneanis",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "chili",
+      "to": "fiskesaus",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "hvitløk",
+      "to": "sesamfrø",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "fiskesaus",
+      "to": "sesamfrø",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "bakepulver",
+      "to": "egg",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "egg",
+      "to": "melis",
+      "value": 3,
+      "title": "3 oppskrifter"
+    },
+    {
+      "from": "egg",
+      "to": "sitron",
+      "value": 5,
+      "title": "5 oppskrifter"
+    },
+    {
+      "from": "bakepulver",
+      "to": "sitron",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "melk",
+      "to": "sitron",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "melis",
+      "to": "sitron",
+      "value": 3,
+      "title": "3 oppskrifter"
+    },
+    {
+      "from": "gul løk",
+      "to": "sitron",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "gul løk",
+      "to": "nellik",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "nellik",
+      "to": "sitron",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "dijon sennep",
+      "to": "sitron",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "nellik",
+      "to": "olivenolje",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "honning",
+      "to": "nellik",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "dijon sennep",
+      "to": "nellik",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "dijon sennep",
+      "to": "olivenolje",
+      "value": 4,
+      "title": "4 oppskrifter"
+    },
+    {
+      "from": "chilipulver",
+      "to": "fiskesaus",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "cherrytomat",
+      "to": "chilipulver",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "agurk",
+      "to": "chilipulver",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "chilipulver",
+      "to": "sjalottløk",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "cherrytomat",
+      "to": "fiskesaus",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "agurk",
+      "to": "fiskesaus",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "cherrytomat",
+      "to": "sjalottløk",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "honning",
+      "to": "rødløk",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "rødløk",
+      "to": "soyasaus",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "egg",
+      "to": "rødløk",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "dijon sennep",
+      "to": "rødløk",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "chilipulver",
+      "to": "rødløk",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "gjær",
+      "to": "rødløk",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "parmesan",
+      "to": "rødløk",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "chilipulver",
+      "to": "honning",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "honning",
+      "to": "sjalottløk",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "egg",
+      "to": "soyasaus",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "dijon sennep",
+      "to": "soyasaus",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "chilipulver",
+      "to": "soyasaus",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "gjær",
+      "to": "soyasaus",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "olivenolje",
+      "to": "soyasaus",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "parmesan",
+      "to": "soyasaus",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "dijon sennep",
+      "to": "ingefær",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "chilipulver",
+      "to": "ingefær",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "gjær",
+      "to": "ingefær",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "ingefær",
+      "to": "olivenolje",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "ingefær",
+      "to": "parmesan",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "gjær",
+      "to": "hvitløk",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "dijon sennep",
+      "to": "egg",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "egg",
+      "to": "lime",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "chili",
+      "to": "egg",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "chilipulver",
+      "to": "egg",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "egg",
+      "to": "olivenolje",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "dijon sennep",
+      "to": "lime",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "chilipulver",
+      "to": "dijon sennep",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "dijon sennep",
+      "to": "gjær",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "gjær",
+      "to": "lime",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "lime",
+      "to": "parmesan",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "chili",
+      "to": "chilipulver",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "chili",
+      "to": "gjær",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "chili",
+      "to": "parmesan",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "chilipulver",
+      "to": "gjær",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "chilipulver",
+      "to": "parmesan",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "gjær",
+      "to": "sjalottløk",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "olivenolje",
+      "to": "sjalottløk",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "parmesan",
+      "to": "sjalottløk",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "gjær",
+      "to": "parmesan",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "creme fraiche",
+      "to": "egg",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "bakepulver",
+      "to": "creme fraiche",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "dijonsennep",
+      "to": "egg",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "egg",
+      "to": "hvitvinseddik",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "egg",
+      "to": "fennikel",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "hvitvinseddik",
+      "to": "rødløk",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "hvitvinseddik",
+      "to": "sitron",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "fennikel",
+      "to": "rødløk",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "fennikel",
+      "to": "sitron",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "lime",
+      "to": "melis",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "basilikum",
+      "to": "bladpersille",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "bladpersille",
+      "to": "vårløk",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "bladpersille",
+      "to": "dijonsennep",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "bladpersille",
+      "to": "rødvinseddik",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "basilikum",
+      "to": "vårløk",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "basilikum",
+      "to": "dijonsennep",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "dijonsennep",
+      "to": "vårløk",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "rødvinseddik",
+      "to": "vårløk",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "dijonsennep",
+      "to": "rødvinseddik",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "finhakket sjalottløk",
+      "to": "olivenolje",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "finhakket sjalottløk",
+      "to": "parmesan",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "finhakket sjalottløk",
+      "to": "sitron",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "parmesan",
+      "to": "sitron",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "kremfløte",
+      "to": "melis",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "maisenna",
+      "to": "melis",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "egg",
+      "to": "kremfløte",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "egg",
+      "to": "eggeplommer",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "eggeplommer",
+      "to": "kremfløte",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "kremfløte",
+      "to": "maisenna",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "eggeplommer",
+      "to": "maisenna",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "eggeplommer",
+      "to": "sitron",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "maisenna",
+      "to": "sitron",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "gul løk",
+      "to": "mango",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "mango",
+      "to": "tomatpuré",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "gul løk",
+      "to": "rødløk",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "rødløk",
+      "to": "tomatpuré",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "lime",
+      "to": "tomatpuré",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "cherrytomat",
+      "to": "gul løk",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "cherrytomat",
+      "to": "tomatpuré",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "olivenolje",
+      "to": "tomatpuré",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "basilikum",
+      "to": "honning",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "honning",
+      "to": "sitronsaft",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "fløte",
+      "to": "olivenolje",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "olivenolje",
+      "to": "sitronsaft",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "basilikum",
+      "to": "fløte",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "basilikum",
+      "to": "sitronsaft",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "parmesan",
+      "to": "sitronsaft",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "fløte",
+      "to": "sitronsaft",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "eggehvite",
+      "to": "sitron",
+      "value": 5,
+      "title": "5 oppskrifter"
+    },
+    {
+      "from": "isbiter",
+      "to": "sitron",
+      "value": 5,
+      "title": "5 oppskrifter"
+    },
+    {
+      "from": "eggehvite",
+      "to": "isbiter",
+      "value": 4,
+      "title": "4 oppskrifter"
+    },
+    {
+      "from": "dijonsennep",
+      "to": "finhakket sjalottløk",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "sitronsaft",
+      "to": "solsikkeolje",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "egg",
+      "to": "sitronsaft",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "finhakket sjalottløk",
+      "to": "solsikkeolje",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "sitron",
+      "to": "solsikkeolje",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "egg",
+      "to": "solsikkeolje",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "finhakket sjalottløk",
+      "to": "sjalottløk",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "egg",
+      "to": "finhakket sjalottløk",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "creme fraiche",
+      "to": "melis",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "eggehvite",
+      "to": "melis",
+      "value": 2,
+      "title": "2 oppskrifter"
+    },
+    {
+      "from": "egg",
+      "to": "eggehvite",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "creme fraiche",
+      "to": "sitron",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "creme fraiche",
+      "to": "eggehvite",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "paprikapulver",
+      "to": "sjalottløk",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "mango",
+      "to": "sjalottløk",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "brunt sukker",
+      "to": "paprikapulver",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "honning",
+      "to": "paprikapulver",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "dijon sennep",
+      "to": "paprikapulver",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "bladpersille",
+      "to": "paprikapulver",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "mango",
+      "to": "paprikapulver",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "brunt sukker",
+      "to": "honning",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "bladpersille",
+      "to": "brunt sukker",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "brunt sukker",
+      "to": "mango",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "brunt sukker",
+      "to": "olivenolje",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "bladpersille",
+      "to": "honning",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "bladpersille",
+      "to": "dijon sennep",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "dijon sennep",
+      "to": "mango",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "bladpersille",
+      "to": "mango",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "eggehvite",
+      "to": "honning",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "honning",
+      "to": "isbiter",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "mandler",
+      "to": "parmesan",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "creme fraiche",
+      "to": "mandler",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "creme fraiche",
+      "to": "parmesan",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "bladpersille",
+      "to": "kremfløte",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "kremfløte",
+      "to": "parmesan",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "bladpersille",
+      "to": "parmesan",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "eggehvite",
+      "to": "mandler",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "gulrot",
+      "to": "stjerneanis",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "gulrot",
+      "to": "olivenolje",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "dijon sennep",
+      "to": "gulrot",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "gulrot",
+      "to": "honning",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "gulrot",
+      "to": "sitron",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "gul løk",
+      "to": "stjerneanis",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "gul løk",
+      "to": "laurbærblad",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "laurbærblad",
+      "to": "stjerneanis",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "olivenolje",
+      "to": "stjerneanis",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "dijon sennep",
+      "to": "stjerneanis",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "honning",
+      "to": "stjerneanis",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "sitron",
+      "to": "stjerneanis",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "laurbærblad",
+      "to": "olivenolje",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "dijon sennep",
+      "to": "laurbærblad",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "honning",
+      "to": "laurbærblad",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "laurbærblad",
+      "to": "sitron",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "chili",
+      "to": "kremfløte",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "honning",
+      "to": "kremfløte",
+      "value": 1,
+      "title": "1 oppskrifter"
+    },
+    {
+      "from": "dijon sennep",
+      "to": "finhakket sjalottløk",
+      "value": 1,
+      "title": "1 oppskrifter"
+    }
+  ],
+  "metadata": {
+    "totalRecipes": 107,
+    "totalIngredients": 505,
+    "networkIngredients": 59,
+    "networkEdges": 633,
+    "generatedAt": "2025-10-01T20:46:01.723Z"
+  },
+  "mostConnected": [
+    {
+      "ingredient": "hvitløk",
+      "connections": 50,
+      "occurrences": 35
+    },
+    {
+      "ingredient": "sjalottløk",
+      "connections": 44,
+      "occurrences": 12
+    },
+    {
+      "ingredient": "honning",
+      "connections": 39,
+      "occurrences": 16
+    },
+    {
+      "ingredient": "sitron",
+      "connections": 38,
+      "occurrences": 23
+    },
+    {
+      "ingredient": "olivenolje",
+      "connections": 36,
+      "occurrences": 19
+    },
+    {
+      "ingredient": "chili",
+      "connections": 36,
+      "occurrences": 13
+    },
+    {
+      "ingredient": "egg",
+      "connections": 35,
+      "occurrences": 14
+    },
+    {
+      "ingredient": "ingefær",
+      "connections": 34,
+      "occurrences": 8
+    },
+    {
+      "ingredient": "dijon sennep",
+      "connections": 31,
+      "occurrences": 7
+    },
+    {
+      "ingredient": "lime",
+      "connections": 29,
+      "occurrences": 14
+    },
+    {
+      "ingredient": "parmesan",
+      "connections": 29,
+      "occurrences": 12
+    },
+    {
+      "ingredient": "koriander",
+      "connections": 28,
+      "occurrences": 13
+    },
+    {
+      "ingredient": "rødløk",
+      "connections": 28,
+      "occurrences": 9
+    },
+    {
+      "ingredient": "gul løk",
+      "connections": 28,
+      "occurrences": 10
+    },
+    {
+      "ingredient": "agurk",
+      "connections": 27,
+      "occurrences": 7
+    },
+    {
+      "ingredient": "tomatpuré",
+      "connections": 27,
+      "occurrences": 5
+    },
+    {
+      "ingredient": "dijonsennep",
+      "connections": 25,
+      "occurrences": 8
+    },
+    {
+      "ingredient": "brunt sukker",
+      "connections": 25,
+      "occurrences": 5
+    },
+    {
+      "ingredient": "soyasaus",
+      "connections": 25,
+      "occurrences": 6
+    },
+    {
+      "ingredient": "vårløk",
+      "connections": 25,
+      "occurrences": 7
+    }
+  ],
+  "creativePairings": [
+    {
+      "ingredient1": "sjalottløk",
+      "ingredient2": "gul løk",
+      "commonNeighbors": [
+        "hvitløk",
+        "stjerneanis",
+        "tomatpuré",
+        "koriander",
+        "chili"
+      ],
+      "score": 25
+    },
+    {
+      "ingredient1": "honning",
+      "ingredient2": "tomatpuré",
+      "commonNeighbors": [
+        "hvitløk",
+        "olivenolje",
+        "mango",
+        "cherrytomat",
+        "agurk"
+      ],
+      "score": 20
+    },
+    {
+      "ingredient1": "olivenolje",
+      "ingredient2": "agurk",
+      "commonNeighbors": [
+        "hvitløk",
+        "dijonsennep",
+        "honning",
+        "sitron",
+        "løk"
+      ],
+      "score": 20
+    },
+    {
+      "ingredient1": "dijon sennep",
+      "ingredient2": "tomatpuré",
+      "commonNeighbors": [
+        "gul løk",
+        "hvitløk",
+        "fløte",
+        "parmesan",
+        "brunt sukker"
+      ],
+      "score": 20
+    },
+    {
+      "ingredient1": "sitron",
+      "ingredient2": "tomatpuré",
+      "commonNeighbors": [
+        "hvitløk",
+        "olivenolje",
+        "chili",
+        "ingefær",
+        "koriander"
+      ],
+      "score": 18
+    },
+    {
+      "ingredient1": "egg",
+      "ingredient2": "agurk",
+      "commonNeighbors": [
+        "honning",
+        "hvitløk",
+        "cherrytomat",
+        "basilikum",
+        "ingefær"
+      ],
+      "score": 18
+    },
+    {
+      "ingredient1": "dijon sennep",
+      "ingredient2": "koriander",
+      "commonNeighbors": [
+        "gul løk",
+        "hvitløk",
+        "honning",
+        "brunt sukker",
+        "dijonsennep"
+      ],
+      "score": 18
+    },
+    {
+      "ingredient1": "parmesan",
+      "ingredient2": "agurk",
+      "commonNeighbors": [
+        "cherrytomat",
+        "basilikum",
+        "hvitløk",
+        "hvitvinseddik",
+        "honning"
+      ],
+      "score": 18
+    },
+    {
+      "ingredient1": "egg",
+      "ingredient2": "brunt sukker",
+      "commonNeighbors": [
+        "honning",
+        "hvitløk",
+        "ingefær",
+        "bladpersille",
+        "sjalottløk"
+      ],
+      "score": 17
+    },
+    {
+      "ingredient1": "ingefær",
+      "ingredient2": "gul løk",
+      "commonNeighbors": [
+        "hvitløk",
+        "stjerneanis",
+        "tomatpuré",
+        "koriander",
+        "chili"
+      ],
+      "score": 17
+    },
+    {
+      "ingredient1": "parmesan",
+      "ingredient2": "dijonsennep",
+      "commonNeighbors": [
+        "basilikum",
+        "olivenolje",
+        "hvitløk",
+        "hvitvinseddik",
+        "honning"
+      ],
+      "score": 17
+    },
+    {
+      "ingredient1": "parmesan",
+      "ingredient2": "brunt sukker",
+      "commonNeighbors": [
+        "olivenolje",
+        "hvitløk",
+        "hvitvinseddik",
+        "honning",
+        "dijon sennep"
+      ],
+      "score": 17
+    },
+    {
+      "ingredient1": "parmesan",
+      "ingredient2": "koriander",
+      "commonNeighbors": [
+        "cherrytomat",
+        "olivenolje",
+        "gul løk",
+        "hvitløk",
+        "honning"
+      ],
+      "score": 16
+    },
+    {
+      "ingredient1": "tomatpuré",
+      "ingredient2": "vårløk",
+      "commonNeighbors": [
+        "ingefær",
+        "hvitløk",
+        "soyasaus",
+        "koriander",
+        "sjalottløk"
+      ],
+      "score": 16
+    },
+    {
+      "ingredient1": "egg",
+      "ingredient2": "koriander",
+      "commonNeighbors": [
+        "honning",
+        "sesamfrø",
+        "hvitløk",
+        "cherrytomat",
+        "ingefær"
+      ],
+      "score": 15
+    },
+    {
+      "ingredient1": "lime",
+      "ingredient2": "brunt sukker",
+      "commonNeighbors": [
+        "mango",
+        "agurk",
+        "chili",
+        "løk",
+        "hvitløk"
+      ],
+      "score": 15
+    },
+    {
+      "ingredient1": "rødløk",
+      "ingredient2": "vårløk",
+      "commonNeighbors": [
+        "rødvinseddik",
+        "hvitløk",
+        "mango",
+        "chili",
+        "lime"
+      ],
+      "score": 15
+    },
+    {
+      "ingredient1": "gul løk",
+      "ingredient2": "agurk",
+      "commonNeighbors": [
+        "hvitløk",
+        "hvitvinseddik",
+        "honning",
+        "dijon sennep",
+        "tomatpuré"
+      ],
+      "score": 15
+    },
+    {
+      "ingredient1": "sitron",
+      "ingredient2": "lime",
+      "commonNeighbors": [
+        "hvitløk",
+        "honning",
+        "olivenolje",
+        "chili",
+        "ingefær"
+      ],
+      "score": 14
+    },
+    {
+      "ingredient1": "sitron",
+      "ingredient2": "soyasaus",
+      "commonNeighbors": [
+        "hvitløk",
+        "honning",
+        "olivenolje",
+        "chili",
+        "ingefær"
+      ],
+      "score": 14
+    },
+    {
+      "ingredient1": "sitron",
+      "ingredient2": "vårløk",
+      "commonNeighbors": [
+        "hvitløk",
+        "dijonsennep",
+        "honning",
+        "olivenolje",
+        "chili"
+      ],
+      "score": 14
+    },
+    {
+      "ingredient1": "egg",
+      "ingredient2": "gul løk",
+      "commonNeighbors": [
+        "honning",
+        "hvitløk",
+        "parmesan",
+        "cherrytomat",
+        "basilikum"
+      ],
+      "score": 14
+    },
+    {
+      "ingredient1": "egg",
+      "ingredient2": "vårløk",
+      "commonNeighbors": [
+        "honning",
+        "sesamfrø",
+        "hvitløk",
+        "basilikum",
+        "ingefær"
+      ],
+      "score": 14
+    },
+    {
+      "ingredient1": "dijon sennep",
+      "ingredient2": "vårløk",
+      "commonNeighbors": [
+        "gul løk",
+        "hvitløk",
+        "honning",
+        "fennikel",
+        "dijonsennep"
+      ],
+      "score": 14
+    },
+    {
+      "ingredient1": "gul løk",
+      "ingredient2": "brunt sukker",
+      "commonNeighbors": [
+        "hvitløk",
+        "hvitvinseddik",
+        "honning",
+        "dijon sennep",
+        "paprikapulver"
+      ],
+      "score": 14
+    },
+    {
+      "ingredient1": "gul løk",
+      "ingredient2": "soyasaus",
+      "commonNeighbors": [
+        "hvitløk",
+        "parmesan",
+        "honning",
+        "dijon sennep",
+        "tomatpuré"
+      ],
+      "score": 14
+    },
+    {
+      "ingredient1": "agurk",
+      "ingredient2": "vårløk",
+      "commonNeighbors": [
+        "lime",
+        "mango",
+        "chili",
+        "ingefær",
+        "hvitløk"
+      ],
+      "score": 14
+    },
+    {
+      "ingredient1": "egg",
+      "ingredient2": "tomatpuré",
+      "commonNeighbors": [
+        "hvitløk",
+        "parmesan",
+        "cherrytomat",
+        "ingefær",
+        "laurbærblad"
+      ],
+      "score": 13
+    },
+    {
+      "ingredient1": "lime",
+      "ingredient2": "dijonsennep",
+      "commonNeighbors": [
+        "agurk",
+        "chili",
+        "hvitløk",
+        "olivenolje",
+        "koriander"
+      ],
+      "score": 13
+    },
+    {
+      "ingredient1": "gul løk",
+      "ingredient2": "dijonsennep",
+      "commonNeighbors": [
+        "hvitløk",
+        "hvitvinseddik",
+        "honning",
+        "dijon sennep",
+        "potet"
+      ],
+      "score": 13
+    }
+  ],
+  "ingredientRecipes": {
+    "nakkekoteletter": [
+      {
+        "id": "nakkekoteletter-med-nektarin",
+        "title": "Nakkekoteletter med nektarin"
+      },
+      {
+        "id": "nakkekotelett-med-plommer",
+        "title": "Nakkekotelett med plommer"
+      }
+    ],
+    "hvitløk": [
+      {
+        "id": "nakkekoteletter-med-nektarin",
+        "title": "Nakkekoteletter med nektarin"
+      },
+      {
+        "id": "nachos",
+        "title": "Nachos"
+      },
+      {
+        "id": "høyrygg-med-anis",
+        "title": "Høyrygg med anis"
+      },
+      {
+        "id": "nudler-med-kyllingkjøttdeig",
+        "title": "Nudler med kyllingkjøttdeig"
+      },
+      {
+        "id": "entrecôte-med-soppsaus",
+        "title": "Entrecôte med soppsaus"
+      },
+      {
+        "id": "and-med-bringebær",
+        "title": "And med bringebær"
+      },
+      {
+        "id": "gulasjsuppe",
+        "title": "Gulasjsuppe"
+      },
+      {
+        "id": "bouf-bourgogne",
+        "title": "Boeuf Bourgogne"
+      },
+      {
+        "id": "tomatsaus",
+        "title": "Tomatsaus til alt!"
+      },
+      {
+        "id": "grønnsakskraft",
+        "title": "Grønnsakskraft"
+      },
+      {
+        "id": "red-curry-paste",
+        "title": "Red curry paste"
+      },
+      {
+        "id": "kyllingkraft",
+        "title": "Kyllingkraft"
+      },
+      {
+        "id": "sitronpasta-med-scampi",
+        "title": "Sitronpasta med scampi"
+      },
+      {
+        "id": "taco-med-svinenakke",
+        "title": "Taco med svinenakke"
+      },
+      {
+        "id": "parmesankrem",
+        "title": "Parmesankrem"
+      },
+      {
+        "id": "rødvinssaus",
+        "title": "Rødvinssaus"
+      },
+      {
+        "id": "skalldyrkraft",
+        "title": "Skalldyrkraft"
+      },
+      {
+        "id": "pulled-chicken",
+        "title": "Røska høne"
+      },
+      {
+        "id": "skalldyrsalat",
+        "title": "Rønnaug's skalldyrsalat"
+      },
+      {
+        "id": "kjøttboller",
+        "title": "Kjøttboller"
+      },
+      {
+        "id": "thaisuppe",
+        "title": "Thaisuppe på tur"
+      },
+      {
+        "id": "majones",
+        "title": "Majones"
+      },
+      {
+        "id": "medisterfest",
+        "title": "Medisterfest!"
+      },
+      {
+        "id": "mulligatawny",
+        "title": "Mulligatawny-suppe"
+      },
+      {
+        "id": "chili-skrei",
+        "title": "Ovnsbakt skrei"
+      },
+      {
+        "id": "kebab",
+        "title": "Kebab i skogen"
+      },
+      {
+        "id": "grillspyd",
+        "title": "Grillspyd med tilbehør"
+      },
+      {
+        "id": "sriracha",
+        "title": "Sriracha"
+      },
+      {
+        "id": "gulrotsuppe",
+        "title": "Gulrotsuppe"
+      },
+      {
+        "id": "vegetartaco",
+        "title": "Vegetartaco"
+      },
+      {
+        "id": "enkel-tomatsaus",
+        "title": "Enkel tomatsaus"
+      },
+      {
+        "id": "panini",
+        "title": "Panini på norsk"
+      },
+      {
+        "id": "røska-lam",
+        "title": "Røska lam"
+      },
+      {
+        "id": "ribbe",
+        "title": "Juleribbe"
+      },
+      {
+        "id": "porchetta",
+        "title": "Porchetta"
+      }
+    ],
+    "dijonsennep": [
+      {
+        "id": "nakkekoteletter-med-nektarin",
+        "title": "Nakkekoteletter med nektarin"
+      },
+      {
+        "id": "grilla-ørret",
+        "title": "Grilla ørret"
+      },
+      {
+        "id": "pulled-chicken",
+        "title": "Røska høne"
+      },
+      {
+        "id": "grilla-svinefilet",
+        "title": "Grilla svinefilet"
+      },
+      {
+        "id": "majones",
+        "title": "Majones"
+      },
+      {
+        "id": "gravet-laks",
+        "title": "Gravet laks med fennikelsalat"
+      },
+      {
+        "id": "salsa-verde",
+        "title": "Poteter med salsa verde"
+      },
+      {
+        "id": "roastbeef",
+        "title": "Vannbakkels med roastbeef"
+      }
+    ],
+    "honning": [
+      {
+        "id": "nakkekoteletter-med-nektarin",
+        "title": "Nakkekoteletter med nektarin"
+      },
+      {
+        "id": "laks-og-mangosalat",
+        "title": "Laks og mangosalat"
+      },
+      {
+        "id": "entrecôte-med-soppsaus",
+        "title": "Entrecôte med soppsaus"
+      },
+      {
+        "id": "dampet-torsk",
+        "title": "Dampet torsk med mangosalsa"
+      },
+      {
+        "id": "hamburgerbrød",
+        "title": "Hamburgerbrød"
+      },
+      {
+        "id": "grilla-svinefilet",
+        "title": "Grilla svinefilet"
+      },
+      {
+        "id": "betesalat",
+        "title": "Betesalat"
+      },
+      {
+        "id": "kebab",
+        "title": "Kebab i skogen"
+      },
+      {
+        "id": "grillspyd",
+        "title": "Grillspyd med tilbehør"
+      },
+      {
+        "id": "fetadipp",
+        "title": "Fetadipp"
+      },
+      {
+        "id": "panini",
+        "title": "Panini på norsk"
+      },
+      {
+        "id": "røska-lam",
+        "title": "Røska lam"
+      },
+      {
+        "id": "bringebaer-sour",
+        "title": "Bringebær sour"
+      },
+      {
+        "id": "toast",
+        "title": "Toast"
+      },
+      {
+        "id": "ribbe",
+        "title": "Juleribbe"
+      },
+      {
+        "id": "porchetta",
+        "title": "Porchetta"
+      }
+    ],
+    "nektarin": [
+      {
+        "id": "nakkekoteletter-med-nektarin",
+        "title": "Nakkekoteletter med nektarin"
+      }
+    ],
+    "mozzarella": [
+      {
+        "id": "nakkekoteletter-med-nektarin",
+        "title": "Nakkekoteletter med nektarin"
+      },
+      {
+        "id": "grilla-svinefilet",
+        "title": "Grilla svinefilet"
+      },
+      {
+        "id": "jordbær-og-mozzarella",
+        "title": "Jordbær og mozzarella"
+      },
+      {
+        "id": "crepes",
+        "title": "Crêpes med alt"
+      },
+      {
+        "id": "toast",
+        "title": "Toast"
+      }
+    ],
+    "ruccola": [
+      {
+        "id": "nakkekoteletter-med-nektarin",
+        "title": "Nakkekoteletter med nektarin"
+      },
+      {
+        "id": "grilla-svinefilet",
+        "title": "Grilla svinefilet"
+      }
+    ],
+    "sitron": [
+      {
+        "id": "nakkekoteletter-med-nektarin",
+        "title": "Nakkekoteletter med nektarin"
+      },
+      {
+        "id": "sitronpasta-med-scampi",
+        "title": "Sitronpasta med scampi"
+      },
+      {
+        "id": "pulled-chicken",
+        "title": "Røska høne"
+      },
+      {
+        "id": "skalldyrsalat",
+        "title": "Rønnaug's skalldyrsalat"
+      },
+      {
+        "id": "rabarbrasirup",
+        "title": "Rabarbrasirup"
+      },
+      {
+        "id": "betesalat",
+        "title": "Betesalat"
+      },
+      {
+        "id": "viltgryte",
+        "title": "Viltgryte med tyttebær"
+      },
+      {
+        "id": "juleflesk",
+        "title": "Juleflesk"
+      },
+      {
+        "id": "formkake",
+        "title": "Farmors formkake"
+      },
+      {
+        "id": "kebab",
+        "title": "Kebab i skogen"
+      },
+      {
+        "id": "gravet-laks",
+        "title": "Gravet laks med fennikelsalat"
+      },
+      {
+        "id": "fetadipp",
+        "title": "Fetadipp"
+      },
+      {
+        "id": "sopprisotto",
+        "title": "Sopprisotto"
+      },
+      {
+        "id": "bringebærpai",
+        "title": "Bringebærpai"
+      },
+      {
+        "id": "multedrink",
+        "title": "Satans gin&bær"
+      },
+      {
+        "id": "roastbeef",
+        "title": "Vannbakkels med roastbeef"
+      },
+      {
+        "id": "sitronterte",
+        "title": "Sitronterte med marengs"
+      },
+      {
+        "id": "innigranskudden",
+        "title": "Innigranskudden"
+      },
+      {
+        "id": "rabarbramimosa",
+        "title": "Rabarbramimosa"
+      },
+      {
+        "id": "bringebaer-sour",
+        "title": "Bringebær sour"
+      },
+      {
+        "id": "ribbe",
+        "title": "Juleribbe"
+      },
+      {
+        "id": "limoncello",
+        "title": "Limoncello"
+      },
+      {
+        "id": "limoncello-sour",
+        "title": "Limoncello sour"
+      }
+    ],
+    "olivenolje": [
+      {
+        "id": "nakkekoteletter-med-nektarin",
+        "title": "Nakkekoteletter med nektarin"
+      },
+      {
+        "id": "nachos",
+        "title": "Nachos"
+      },
+      {
+        "id": "one-pot-pasta-med-salciccia",
+        "title": "One pot pasta"
+      },
+      {
+        "id": "pizza",
+        "title": "Vi snakker lørdagspizza"
+      },
+      {
+        "id": "sitronpasta-med-scampi",
+        "title": "Sitronpasta med scampi"
+      },
+      {
+        "id": "taco-med-svinenakke",
+        "title": "Taco med svinenakke"
+      },
+      {
+        "id": "parmesankrem",
+        "title": "Parmesankrem"
+      },
+      {
+        "id": "cajun-kylling",
+        "title": "Cajun kylling"
+      },
+      {
+        "id": "betesalat",
+        "title": "Betesalat"
+      },
+      {
+        "id": "kebab",
+        "title": "Kebab i skogen"
+      },
+      {
+        "id": "pannebrød",
+        "title": "Pannebrød"
+      },
+      {
+        "id": "grillspyd",
+        "title": "Grillspyd med tilbehør"
+      },
+      {
+        "id": "fetadipp",
+        "title": "Fetadipp"
+      },
+      {
+        "id": "sopprisotto",
+        "title": "Sopprisotto"
+      },
+      {
+        "id": "vegetartaco",
+        "title": "Vegetartaco"
+      },
+      {
+        "id": "enkel-tomatsaus",
+        "title": "Enkel tomatsaus"
+      },
+      {
+        "id": "panini",
+        "title": "Panini på norsk"
+      },
+      {
+        "id": "røska-lam",
+        "title": "Røska lam"
+      },
+      {
+        "id": "ribbe",
+        "title": "Juleribbe"
+      }
+    ],
+    "persille": [
+      {
+        "id": "nakkekoteletter-med-nektarin",
+        "title": "Nakkekoteletter med nektarin"
+      },
+      {
+        "id": "knokesuppe",
+        "title": "Knokesuppe"
+      }
+    ],
+    "fullkornshvetemel": [
+      {
+        "id": "eltefrie-rundstykker",
+        "title": "Eltefrie rundstykker"
+      }
+    ],
+    "tørrgjær": [
+      {
+        "id": "eltefrie-rundstykker",
+        "title": "Eltefrie rundstykker"
+      },
+      {
+        "id": "panini",
+        "title": "Panini på norsk"
+      }
+    ],
+    "solsikkekjerner": [
+      {
+        "id": "eltefrie-rundstykker",
+        "title": "Eltefrie rundstykker"
+      }
+    ],
+    "sesamfrø": [
+      {
+        "id": "eltefrie-rundstykker",
+        "title": "Eltefrie rundstykker"
+      },
+      {
+        "id": "dampet-torsk",
+        "title": "Dampet torsk med mangosalsa"
+      },
+      {
+        "id": "hamburgerbrød",
+        "title": "Hamburgerbrød"
+      },
+      {
+        "id": "chili-skrei",
+        "title": "Ovnsbakt skrei"
+      }
+    ],
+    "linfrø": [
+      {
+        "id": "eltefrie-rundstykker",
+        "title": "Eltefrie rundstykker"
+      }
+    ],
+    "kyllingfilet": [
+      {
+        "id": "kylling-satay-med-mangosalat",
+        "title": "Kylling satay med mangosalat"
+      }
+    ],
+    "rød curry": [
+      {
+        "id": "kylling-satay-med-mangosalat",
+        "title": "Kylling satay med mangosalat"
+      }
+    ],
+    "eller finhakket ingefær": [
+      {
+        "id": "kylling-satay-med-mangosalat",
+        "title": "Kylling satay med mangosalat"
+      }
+    ],
+    "sesamolje": [
+      {
+        "id": "kylling-satay-med-mangosalat",
+        "title": "Kylling satay med mangosalat"
+      },
+      {
+        "id": "nudler-med-kyllingkjøttdeig",
+        "title": "Nudler med kyllingkjøttdeig"
+      },
+      {
+        "id": "dampet-torsk",
+        "title": "Dampet torsk med mangosalsa"
+      }
+    ],
+    "finhakket fersk thaibasilikum": [
+      {
+        "id": "kylling-satay-med-mangosalat",
+        "title": "Kylling satay med mangosalat"
+      }
+    ],
+    "finhakket fersk koriander": [
+      {
+        "id": "kylling-satay-med-mangosalat",
+        "title": "Kylling satay med mangosalat"
+      }
+    ],
+    "kokosmelk": [
+      {
+        "id": "kylling-satay-med-mangosalat",
+        "title": "Kylling satay med mangosalat"
+      },
+      {
+        "id": "thaisuppe",
+        "title": "Thaisuppe på tur"
+      },
+      {
+        "id": "mulligatawny",
+        "title": "Mulligatawny-suppe"
+      }
+    ],
+    "soyasaus med mindre saltinnhold": [
+      {
+        "id": "kylling-satay-med-mangosalat",
+        "title": "Kylling satay med mangosalat"
+      }
+    ],
+    "fish sauce": [
+      {
+        "id": "kylling-satay-med-mangosalat",
+        "title": "Kylling satay med mangosalat"
+      }
+    ],
+    "peanøttsmør": [
+      {
+        "id": "kylling-satay-med-mangosalat",
+        "title": "Kylling satay med mangosalat"
+      }
+    ],
+    "lime": [
+      {
+        "id": "kylling-satay-med-mangosalat",
+        "title": "Kylling satay med mangosalat"
+      },
+      {
+        "id": "nachos",
+        "title": "Nachos"
+      },
+      {
+        "id": "laks-og-mangosalat",
+        "title": "Laks og mangosalat"
+      },
+      {
+        "id": "dampet-torsk",
+        "title": "Dampet torsk med mangosalsa"
+      },
+      {
+        "id": "kyllingbryst-med-thaicurry",
+        "title": "Kyllingbryst med thaicurry"
+      },
+      {
+        "id": "taco-med-svinenakke",
+        "title": "Taco med svinenakke"
+      },
+      {
+        "id": "jordbærsalsa",
+        "title": "Jordbærsalsa"
+      },
+      {
+        "id": "limesorbet",
+        "title": "Limesorbet med rabarbrasirup"
+      },
+      {
+        "id": "mulligatawny",
+        "title": "Mulligatawny-suppe"
+      },
+      {
+        "id": "chili-skrei",
+        "title": "Ovnsbakt skrei"
+      },
+      {
+        "id": "larpgai",
+        "title": "Larp Gai - kyllingsalat"
+      },
+      {
+        "id": "grillspyd",
+        "title": "Grillspyd med tilbehør"
+      },
+      {
+        "id": "jordbær-og-mascarpone",
+        "title": "Jordbær med mascarponekrem"
+      },
+      {
+        "id": "vegetartaco",
+        "title": "Vegetartaco"
+      }
+    ],
+    "ris": [
+      {
+        "id": "kylling-satay-med-mangosalat",
+        "title": "Kylling satay med mangosalat"
+      },
+      {
+        "id": "høyrygg-med-anis",
+        "title": "Høyrygg med anis"
+      }
+    ],
+    "mango": [
+      {
+        "id": "kylling-satay-med-mangosalat",
+        "title": "Kylling satay med mangosalat"
+      },
+      {
+        "id": "laks-og-mangosalat",
+        "title": "Laks og mangosalat"
+      },
+      {
+        "id": "dampet-torsk",
+        "title": "Dampet torsk med mangosalsa"
+      },
+      {
+        "id": "taco-med-svinenakke",
+        "title": "Taco med svinenakke"
+      },
+      {
+        "id": "vegetartaco",
+        "title": "Vegetartaco"
+      },
+      {
+        "id": "røska-lam",
+        "title": "Røska lam"
+      }
+    ],
+    "agurk": [
+      {
+        "id": "kylling-satay-med-mangosalat",
+        "title": "Kylling satay med mangosalat"
+      },
+      {
+        "id": "høyrygg-med-anis",
+        "title": "Høyrygg med anis"
+      },
+      {
+        "id": "laks-og-mangosalat",
+        "title": "Laks og mangosalat"
+      },
+      {
+        "id": "grilla-ørret",
+        "title": "Grilla ørret"
+      },
+      {
+        "id": "skalldyrsalat",
+        "title": "Rønnaug's skalldyrsalat"
+      },
+      {
+        "id": "jordbærsalsa",
+        "title": "Jordbærsalsa"
+      },
+      {
+        "id": "larpgai",
+        "title": "Larp Gai - kyllingsalat"
+      }
+    ],
+    "chili": [
+      {
+        "id": "kylling-satay-med-mangosalat",
+        "title": "Kylling satay med mangosalat"
+      },
+      {
+        "id": "høyrygg-med-anis",
+        "title": "Høyrygg med anis"
+      },
+      {
+        "id": "laks-og-mangosalat",
+        "title": "Laks og mangosalat"
+      },
+      {
+        "id": "dampet-torsk",
+        "title": "Dampet torsk med mangosalsa"
+      },
+      {
+        "id": "sitronpasta-med-scampi",
+        "title": "Sitronpasta med scampi"
+      },
+      {
+        "id": "taco-med-svinenakke",
+        "title": "Taco med svinenakke"
+      },
+      {
+        "id": "grilla-ørret",
+        "title": "Grilla ørret"
+      },
+      {
+        "id": "pulled-chicken",
+        "title": "Røska høne"
+      },
+      {
+        "id": "mulligatawny",
+        "title": "Mulligatawny-suppe"
+      },
+      {
+        "id": "chili-skrei",
+        "title": "Ovnsbakt skrei"
+      },
+      {
+        "id": "grillspyd",
+        "title": "Grillspyd med tilbehør"
+      },
+      {
+        "id": "vegetartaco",
+        "title": "Vegetartaco"
+      },
+      {
+        "id": "porchetta",
+        "title": "Porchetta"
+      }
+    ],
+    "akasiehonning": [
+      {
+        "id": "kylling-satay-med-mangosalat",
+        "title": "Kylling satay med mangosalat"
+      }
+    ],
+    "eggehvite": [
+      {
+        "id": "pavlova",
+        "title": "Pavlova"
+      },
+      {
+        "id": "kokosmakroner",
+        "title": "Kokosmakroner"
+      },
+      {
+        "id": "multedrink",
+        "title": "Satans gin&bær"
+      },
+      {
+        "id": "sitronterte",
+        "title": "Sitronterte med marengs"
+      },
+      {
+        "id": "innigranskudden",
+        "title": "Innigranskudden"
+      },
+      {
+        "id": "bringebaer-sour",
+        "title": "Bringebær sour"
+      },
+      {
+        "id": "marsipan",
+        "title": "Marsipan"
+      },
+      {
+        "id": "limoncello-sour",
+        "title": "Limoncello sour"
+      }
+    ],
+    "maisenna": [
+      {
+        "id": "pavlova",
+        "title": "Pavlova"
+      },
+      {
+        "id": "vannbakkels-med-sitronkrem",
+        "title": "Vannbakkels med sitronkrem"
+      },
+      {
+        "id": "rødvinssaus",
+        "title": "Rødvinssaus"
+      },
+      {
+        "id": "bringebærpai",
+        "title": "Bringebærpai"
+      }
+    ],
+    "hvitvinseddik": [
+      {
+        "id": "pavlova",
+        "title": "Pavlova"
+      },
+      {
+        "id": "entrecôte-med-soppsaus",
+        "title": "Entrecôte med soppsaus"
+      },
+      {
+        "id": "skrei-med-smørsaus",
+        "title": "Skrei med smørsaus"
+      },
+      {
+        "id": "grilla-ørret",
+        "title": "Grilla ørret"
+      },
+      {
+        "id": "grilla-svinefilet",
+        "title": "Grilla svinefilet"
+      },
+      {
+        "id": "gravet-laks",
+        "title": "Gravet laks med fennikelsalat"
+      },
+      {
+        "id": "rodbet-med-lama",
+        "title": "Rødbet og lama"
+      },
+      {
+        "id": "potetsalat",
+        "title": "Potetsalat"
+      }
+    ],
+    "fløte": [
+      {
+        "id": "pavlova",
+        "title": "Pavlova"
+      },
+      {
+        "id": "entrecôte-med-soppsaus",
+        "title": "Entrecôte med soppsaus"
+      },
+      {
+        "id": "pepperkakeis",
+        "title": "Pepperkakeis med klementinsaus"
+      },
+      {
+        "id": "bouf-bourgogne",
+        "title": "Boeuf Bourgogne"
+      },
+      {
+        "id": "eplepai",
+        "title": "Kari's eplepai"
+      },
+      {
+        "id": "viltgryte",
+        "title": "Viltgryte med tyttebær"
+      },
+      {
+        "id": "panini",
+        "title": "Panini på norsk"
+      }
+    ],
+    "rørte bringebær": [
+      {
+        "id": "pavlova",
+        "title": "Pavlova"
+      }
+    ],
+    "friske bær": [
+      {
+        "id": "pavlova",
+        "title": "Pavlova"
+      }
+    ],
+    "spiselige blomster": [
+      {
+        "id": "pavlova",
+        "title": "Pavlova"
+      }
+    ],
+    "melisdryss": [
+      {
+        "id": "pavlova",
+        "title": "Pavlova"
+      }
+    ],
+    "sitronmelisse": [
+      {
+        "id": "pavlova",
+        "title": "Pavlova"
+      }
+    ],
+    "<a href='/oppskrift/juleflesk'>bringebærsirup</a>": [
+      {
+        "id": "pavlova",
+        "title": "Pavlova"
+      }
+    ],
+    "løk": [
+      {
+        "id": "nachos",
+        "title": "Nachos"
+      },
+      {
+        "id": "høyrygg-med-anis",
+        "title": "Høyrygg med anis"
+      },
+      {
+        "id": "kyllingkraft",
+        "title": "Kyllingkraft"
+      },
+      {
+        "id": "skalldyrkraft",
+        "title": "Skalldyrkraft"
+      },
+      {
+        "id": "karamellisert-løk",
+        "title": "Karamellisert løk"
+      }
+    ],
+    "chorizopølse": [
+      {
+        "id": "nachos",
+        "title": "Nachos"
+      }
+    ],
+    "karbonadedeig": [
+      {
+        "id": "nachos",
+        "title": "Nachos"
+      },
+      {
+        "id": "gulasjsuppe",
+        "title": "Gulasjsuppe"
+      }
+    ],
+    "korianderfrø": [
+      {
+        "id": "nachos",
+        "title": "Nachos"
+      },
+      {
+        "id": "red-curry-paste",
+        "title": "Red curry paste"
+      },
+      {
+        "id": "pepperkaker",
+        "title": "Pepperkaker 2.0"
+      },
+      {
+        "id": "karripulver",
+        "title": "Karripulver"
+      }
+    ],
+    "fennikelfrø": [
+      {
+        "id": "nachos",
+        "title": "Nachos"
+      },
+      {
+        "id": "roastbeef",
+        "title": "Vannbakkels med roastbeef"
+      },
+      {
+        "id": "porchetta",
+        "title": "Porchetta"
+      }
+    ],
+    "spisskummen": [
+      {
+        "id": "nachos",
+        "title": "Nachos"
+      },
+      {
+        "id": "red-curry-paste",
+        "title": "Red curry paste"
+      },
+      {
+        "id": "røska-lam",
+        "title": "Røska lam"
+      }
+    ],
+    "paprikapulver": [
+      {
+        "id": "nachos",
+        "title": "Nachos"
+      },
+      {
+        "id": "gulasjsuppe",
+        "title": "Gulasjsuppe"
+      },
+      {
+        "id": "cajun-kylling",
+        "title": "Cajun kylling"
+      },
+      {
+        "id": "tacokrydder",
+        "title": "Tacokrydder"
+      },
+      {
+        "id": "røska-lam",
+        "title": "Røska lam"
+      }
+    ],
+    "chilipulver": [
+      {
+        "id": "nachos",
+        "title": "Nachos"
+      },
+      {
+        "id": "larpgai",
+        "title": "Larp Gai - kyllingsalat"
+      },
+      {
+        "id": "grillspyd",
+        "title": "Grillspyd med tilbehør"
+      },
+      {
+        "id": "crying-tiger",
+        "title": "Crying tiger entrecôte"
+      }
+    ],
+    "hermetiske tomat": [
+      {
+        "id": "nachos",
+        "title": "Nachos"
+      },
+      {
+        "id": "mulligatawny",
+        "title": "Mulligatawny-suppe"
+      }
+    ],
+    "nachochips": [
+      {
+        "id": "nachos",
+        "title": "Nachos"
+      }
+    ],
+    "ost": [
+      {
+        "id": "nachos",
+        "title": "Nachos"
+      },
+      {
+        "id": "pizza",
+        "title": "Vi snakker lørdagspizza"
+      }
+    ],
+    "plommetomat": [
+      {
+        "id": "nachos",
+        "title": "Nachos"
+      }
+    ],
+    "grønn chili": [
+      {
+        "id": "nachos",
+        "title": "Nachos"
+      },
+      {
+        "id": "salsa-verde",
+        "title": "Poteter med salsa verde"
+      }
+    ],
+    "koriander": [
+      {
+        "id": "nachos",
+        "title": "Nachos"
+      },
+      {
+        "id": "høyrygg-med-anis",
+        "title": "Høyrygg med anis"
+      },
+      {
+        "id": "nudler-med-kyllingkjøttdeig",
+        "title": "Nudler med kyllingkjøttdeig"
+      },
+      {
+        "id": "laks-og-mangosalat",
+        "title": "Laks og mangosalat"
+      },
+      {
+        "id": "dampet-torsk",
+        "title": "Dampet torsk med mangosalsa"
+      },
+      {
+        "id": "kyllingbryst-med-thaicurry",
+        "title": "Kyllingbryst med thaicurry"
+      },
+      {
+        "id": "taco-med-svinenakke",
+        "title": "Taco med svinenakke"
+      },
+      {
+        "id": "pulled-chicken",
+        "title": "Røska høne"
+      },
+      {
+        "id": "mulligatawny",
+        "title": "Mulligatawny-suppe"
+      },
+      {
+        "id": "chili-skrei",
+        "title": "Ovnsbakt skrei"
+      },
+      {
+        "id": "tacokrydder",
+        "title": "Tacokrydder"
+      },
+      {
+        "id": "larpgai",
+        "title": "Larp Gai - kyllingsalat"
+      },
+      {
+        "id": "vegetartaco",
+        "title": "Vegetartaco"
+      }
+    ],
+    "grønn paprika": [
+      {
+        "id": "nachos",
+        "title": "Nachos"
+      },
+      {
+        "id": "gulasjsuppe",
+        "title": "Gulasjsuppe"
+      }
+    ],
+    "rømme": [
+      {
+        "id": "nachos",
+        "title": "Nachos"
+      }
+    ],
+    "høyrygg": [
+      {
+        "id": "høyrygg-med-anis",
+        "title": "Høyrygg med anis"
+      },
+      {
+        "id": "bouf-bourgogne",
+        "title": "Boeuf Bourgogne"
+      }
+    ],
+    "ingefær": [
+      {
+        "id": "høyrygg-med-anis",
+        "title": "Høyrygg med anis"
+      },
+      {
+        "id": "dampet-torsk",
+        "title": "Dampet torsk med mangosalsa"
+      },
+      {
+        "id": "red-curry-paste",
+        "title": "Red curry paste"
+      },
+      {
+        "id": "pulled-chicken",
+        "title": "Røska høne"
+      },
+      {
+        "id": "thaisuppe",
+        "title": "Thaisuppe på tur"
+      },
+      {
+        "id": "medisterfest",
+        "title": "Medisterfest!"
+      },
+      {
+        "id": "pepperkaker",
+        "title": "Pepperkaker 2.0"
+      },
+      {
+        "id": "grillspyd",
+        "title": "Grillspyd med tilbehør"
+      }
+    ],
+    "sort pepper": [
+      {
+        "id": "høyrygg-med-anis",
+        "title": "Høyrygg med anis"
+      },
+      {
+        "id": "porchetta",
+        "title": "Porchetta"
+      }
+    ],
+    "stjerneanis": [
+      {
+        "id": "høyrygg-med-anis",
+        "title": "Høyrygg med anis"
+      },
+      {
+        "id": "and-med-bringebær",
+        "title": "And med bringebær"
+      },
+      {
+        "id": "vørterbrød",
+        "title": "Vørterbrød"
+      },
+      {
+        "id": "karripulver",
+        "title": "Karripulver"
+      },
+      {
+        "id": "ribbe",
+        "title": "Juleribbe"
+      }
+    ],
+    "brunt sukker": [
+      {
+        "id": "høyrygg-med-anis",
+        "title": "Høyrygg med anis"
+      },
+      {
+        "id": "grilla-ørret",
+        "title": "Grilla ørret"
+      },
+      {
+        "id": "pulled-chicken",
+        "title": "Røska høne"
+      },
+      {
+        "id": "sjokoladesaus",
+        "title": "Sjokoladesaus"
+      },
+      {
+        "id": "røska-lam",
+        "title": "Røska lam"
+      }
+    ],
+    "soyasaus": [
+      {
+        "id": "høyrygg-med-anis",
+        "title": "Høyrygg med anis"
+      },
+      {
+        "id": "nudler-med-kyllingkjøttdeig",
+        "title": "Nudler med kyllingkjøttdeig"
+      },
+      {
+        "id": "laks-og-mangosalat",
+        "title": "Laks og mangosalat"
+      },
+      {
+        "id": "dampet-torsk",
+        "title": "Dampet torsk med mangosalsa"
+      },
+      {
+        "id": "chili-skrei",
+        "title": "Ovnsbakt skrei"
+      },
+      {
+        "id": "grillspyd",
+        "title": "Grillspyd med tilbehør"
+      }
+    ],
+    "tomatpuré": [
+      {
+        "id": "høyrygg-med-anis",
+        "title": "Høyrygg med anis"
+      },
+      {
+        "id": "gulasjsuppe",
+        "title": "Gulasjsuppe"
+      },
+      {
+        "id": "bouf-bourgogne",
+        "title": "Boeuf Bourgogne"
+      },
+      {
+        "id": "skalldyrkraft",
+        "title": "Skalldyrkraft"
+      },
+      {
+        "id": "vegetartaco",
+        "title": "Vegetartaco"
+      }
+    ],
+    "oksekraft": [
+      {
+        "id": "høyrygg-med-anis",
+        "title": "Høyrygg med anis"
+      },
+      {
+        "id": "one-pot-pasta-med-salciccia",
+        "title": "One pot pasta"
+      },
+      {
+        "id": "rødvinssaus",
+        "title": "Rødvinssaus"
+      }
+    ],
+    "babyleaf salat": [
+      {
+        "id": "høyrygg-med-anis",
+        "title": "Høyrygg med anis"
+      }
+    ],
+    "sjalottløk": [
+      {
+        "id": "høyrygg-med-anis",
+        "title": "Høyrygg med anis"
+      },
+      {
+        "id": "kyllingbryst-med-thaicurry",
+        "title": "Kyllingbryst med thaicurry"
+      },
+      {
+        "id": "rødvinssaus",
+        "title": "Rødvinssaus"
+      },
+      {
+        "id": "grilla-ørret",
+        "title": "Grilla ørret"
+      },
+      {
+        "id": "pulled-chicken",
+        "title": "Røska høne"
+      },
+      {
+        "id": "thaisuppe",
+        "title": "Thaisuppe på tur"
+      },
+      {
+        "id": "viltgryte",
+        "title": "Viltgryte med tyttebær"
+      },
+      {
+        "id": "medisterfest",
+        "title": "Medisterfest!"
+      },
+      {
+        "id": "larpgai",
+        "title": "Larp Gai - kyllingsalat"
+      },
+      {
+        "id": "grillspyd",
+        "title": "Grillspyd med tilbehør"
+      },
+      {
+        "id": "roastbeef",
+        "title": "Vannbakkels med roastbeef"
+      },
+      {
+        "id": "røska-lam",
+        "title": "Røska lam"
+      }
+    ],
+    "riseddik": [
+      {
+        "id": "høyrygg-med-anis",
+        "title": "Høyrygg med anis"
+      },
+      {
+        "id": "grillspyd",
+        "title": "Grillspyd med tilbehør"
+      }
+    ],
+    "finhakket ingefær": [
+      {
+        "id": "høyrygg-med-anis",
+        "title": "Høyrygg med anis"
+      }
+    ],
+    "saltet svineknoke": [
+      {
+        "id": "knokesuppe",
+        "title": "Knokesuppe"
+      }
+    ],
+    "svart pepper": [
+      {
+        "id": "knokesuppe",
+        "title": "Knokesuppe"
+      }
+    ],
+    "laurbærblad": [
+      {
+        "id": "knokesuppe",
+        "title": "Knokesuppe"
+      },
+      {
+        "id": "bouf-bourgogne",
+        "title": "Boeuf Bourgogne"
+      },
+      {
+        "id": "rødvinssaus",
+        "title": "Rødvinssaus"
+      },
+      {
+        "id": "medisterfest",
+        "title": "Medisterfest!"
+      },
+      {
+        "id": "ribbe",
+        "title": "Juleribbe"
+      }
+    ],
+    "gulrot": [
+      {
+        "id": "knokesuppe",
+        "title": "Knokesuppe"
+      },
+      {
+        "id": "gulasjsuppe",
+        "title": "Gulasjsuppe"
+      },
+      {
+        "id": "kyllingkraft",
+        "title": "Kyllingkraft"
+      },
+      {
+        "id": "skalldyrkraft",
+        "title": "Skalldyrkraft"
+      },
+      {
+        "id": "thaisuppe",
+        "title": "Thaisuppe på tur"
+      },
+      {
+        "id": "gulrotsuppe",
+        "title": "Gulrotsuppe"
+      },
+      {
+        "id": "ribbe",
+        "title": "Juleribbe"
+      }
+    ],
+    "kålrot": [
+      {
+        "id": "knokesuppe",
+        "title": "Knokesuppe"
+      }
+    ],
+    "persillerot": [
+      {
+        "id": "knokesuppe",
+        "title": "Knokesuppe"
+      },
+      {
+        "id": "grønnsakskraft",
+        "title": "Grønnsakskraft"
+      }
+    ],
+    "purre": [
+      {
+        "id": "knokesuppe",
+        "title": "Knokesuppe"
+      }
+    ],
+    "potet": [
+      {
+        "id": "knokesuppe",
+        "title": "Knokesuppe"
+      },
+      {
+        "id": "gulasjsuppe",
+        "title": "Gulasjsuppe"
+      },
+      {
+        "id": "bouf-bourgogne",
+        "title": "Boeuf Bourgogne"
+      },
+      {
+        "id": "grilla-ørret",
+        "title": "Grilla ørret"
+      }
+    ],
+    "plommer": [
+      {
+        "id": "nakkekotelett-med-plommer",
+        "title": "Nakkekotelett med plommer"
+      }
+    ],
+    "blåmuggost": [
+      {
+        "id": "nakkekotelett-med-plommer",
+        "title": "Nakkekotelett med plommer"
+      },
+      {
+        "id": "pasta-med-blaamuggost",
+        "title": "Pasta med blåmuggost"
+      }
+    ],
+    "rødløk": [
+      {
+        "id": "nakkekotelett-med-plommer",
+        "title": "Nakkekotelett med plommer"
+      },
+      {
+        "id": "syltet-rødløk",
+        "title": "Sylta rødløk"
+      },
+      {
+        "id": "taco-med-svinenakke",
+        "title": "Taco med svinenakke"
+      },
+      {
+        "id": "pulled-chicken",
+        "title": "Røska høne"
+      },
+      {
+        "id": "skalldyrsalat",
+        "title": "Rønnaug's skalldyrsalat"
+      },
+      {
+        "id": "jordbærsalsa",
+        "title": "Jordbærsalsa"
+      },
+      {
+        "id": "grillspyd",
+        "title": "Grillspyd med tilbehør"
+      },
+      {
+        "id": "gravet-laks",
+        "title": "Gravet laks med fennikelsalat"
+      },
+      {
+        "id": "vegetartaco",
+        "title": "Vegetartaco"
+      }
+    ],
+    "rødvinseddik": [
+      {
+        "id": "nakkekotelett-med-plommer",
+        "title": "Nakkekotelett med plommer"
+      },
+      {
+        "id": "and-med-bringebær",
+        "title": "And med bringebær"
+      },
+      {
+        "id": "tomatsaus",
+        "title": "Tomatsaus til alt!"
+      },
+      {
+        "id": "rødvinssaus",
+        "title": "Rødvinssaus"
+      },
+      {
+        "id": "salsa-verde",
+        "title": "Poteter med salsa verde"
+      }
+    ],
+    "server med for eksempel ris eller salat.": [
+      {
+        "id": "nakkekotelett-med-plommer",
+        "title": "Nakkekotelett med plommer"
+      }
+    ],
+    "mangoer": [
+      {
+        "id": "mangosorbet-med-sticky-rice",
+        "title": "Mangosorbet med sticky rice"
+      }
+    ],
+    "glukose": [
+      {
+        "id": "mangosorbet-med-sticky-rice",
+        "title": "Mangosorbet med sticky rice"
+      }
+    ],
+    "langkornet ris": [
+      {
+        "id": "mangosorbet-med-sticky-rice",
+        "title": "Mangosorbet med sticky rice"
+      }
+    ],
+    "kokoskrem": [
+      {
+        "id": "mangosorbet-med-sticky-rice",
+        "title": "Mangosorbet med sticky rice"
+      }
+    ],
+    "ristet sesamfrø (kan kuttes ut": [
+      {
+        "id": "mangosorbet-med-sticky-rice",
+        "title": "Mangosorbet med sticky rice"
+      }
+    ],
+    "eplecidereddik": [
+      {
+        "id": "syltet-rødløk",
+        "title": "Sylta rødløk"
+      }
+    ],
+    "kyllingkjøttdeig": [
+      {
+        "id": "nudler-med-kyllingkjøttdeig",
+        "title": "Nudler med kyllingkjøttdeig"
+      }
+    ],
+    "fersk ingefær": [
+      {
+        "id": "nudler-med-kyllingkjøttdeig",
+        "title": "Nudler med kyllingkjøttdeig"
+      }
+    ],
+    "rød chili": [
+      {
+        "id": "nudler-med-kyllingkjøttdeig",
+        "title": "Nudler med kyllingkjøttdeig"
+      },
+      {
+        "id": "dampet-torsk",
+        "title": "Dampet torsk med mangosalsa"
+      },
+      {
+        "id": "sriracha",
+        "title": "Sriracha"
+      }
+    ],
+    "sweet chili saus": [
+      {
+        "id": "nudler-med-kyllingkjøttdeig",
+        "title": "Nudler med kyllingkjøttdeig"
+      }
+    ],
+    "østerssaus": [
+      {
+        "id": "nudler-med-kyllingkjøttdeig",
+        "title": "Nudler med kyllingkjøttdeig"
+      }
+    ],
+    "limesaft": [
+      {
+        "id": "nudler-med-kyllingkjøttdeig",
+        "title": "Nudler med kyllingkjøttdeig"
+      },
+      {
+        "id": "crying-tiger",
+        "title": "Crying tiger entrecôte"
+      }
+    ],
+    "fiskesaus": [
+      {
+        "id": "nudler-med-kyllingkjøttdeig",
+        "title": "Nudler med kyllingkjøttdeig"
+      },
+      {
+        "id": "kyllingbryst-med-thaicurry",
+        "title": "Kyllingbryst med thaicurry"
+      },
+      {
+        "id": "chili-skrei",
+        "title": "Ovnsbakt skrei"
+      },
+      {
+        "id": "larpgai",
+        "title": "Larp Gai - kyllingsalat"
+      },
+      {
+        "id": "sriracha",
+        "title": "Sriracha"
+      },
+      {
+        "id": "crying-tiger",
+        "title": "Crying tiger entrecôte"
+      }
+    ],
+    "vårløk": [
+      {
+        "id": "nudler-med-kyllingkjøttdeig",
+        "title": "Nudler med kyllingkjøttdeig"
+      },
+      {
+        "id": "dampet-torsk",
+        "title": "Dampet torsk med mangosalsa"
+      },
+      {
+        "id": "grønnsakskraft",
+        "title": "Grønnsakskraft"
+      },
+      {
+        "id": "kyllingbryst-med-thaicurry",
+        "title": "Kyllingbryst med thaicurry"
+      },
+      {
+        "id": "cajun-kylling",
+        "title": "Cajun kylling"
+      },
+      {
+        "id": "chili-skrei",
+        "title": "Ovnsbakt skrei"
+      },
+      {
+        "id": "salsa-verde",
+        "title": "Poteter med salsa verde"
+      }
+    ],
+    "eggnudler": [
+      {
+        "id": "nudler-med-kyllingkjøttdeig",
+        "title": "Nudler med kyllingkjøttdeig"
+      },
+      {
+        "id": "laks-og-mangosalat",
+        "title": "Laks og mangosalat"
+      },
+      {
+        "id": "kyllingbryst-med-thaicurry",
+        "title": "Kyllingbryst med thaicurry"
+      },
+      {
+        "id": "thaisuppe",
+        "title": "Thaisuppe på tur"
+      }
+    ],
+    "peanøtter": [
+      {
+        "id": "nudler-med-kyllingkjøttdeig",
+        "title": "Nudler med kyllingkjøttdeig"
+      },
+      {
+        "id": "chili-skrei",
+        "title": "Ovnsbakt skrei"
+      }
+    ],
+    "laksefileter": [
+      {
+        "id": "laks-og-mangosalat",
+        "title": "Laks og mangosalat"
+      }
+    ],
+    "cherrytomat": [
+      {
+        "id": "laks-og-mangosalat",
+        "title": "Laks og mangosalat"
+      },
+      {
+        "id": "one-pot-pasta-med-salciccia",
+        "title": "One pot pasta"
+      },
+      {
+        "id": "taco-med-svinenakke",
+        "title": "Taco med svinenakke"
+      },
+      {
+        "id": "crepes",
+        "title": "Crêpes med alt"
+      },
+      {
+        "id": "larpgai",
+        "title": "Larp Gai - kyllingsalat"
+      },
+      {
+        "id": "vegetartaco",
+        "title": "Vegetartaco"
+      },
+      {
+        "id": "enkel-tomatsaus",
+        "title": "Enkel tomatsaus"
+      },
+      {
+        "id": "toast",
+        "title": "Toast"
+      }
+    ],
+    "salsiccia": [
+      {
+        "id": "one-pot-pasta-med-salciccia",
+        "title": "One pot pasta"
+      },
+      {
+        "id": "pizza",
+        "title": "Vi snakker lørdagspizza"
+      }
+    ],
+    "sjampinjong": [
+      {
+        "id": "one-pot-pasta-med-salciccia",
+        "title": "One pot pasta"
+      }
+    ],
+    "pasta": [
+      {
+        "id": "one-pot-pasta-med-salciccia",
+        "title": "One pot pasta"
+      },
+      {
+        "id": "sitronpasta-med-scampi",
+        "title": "Sitronpasta med scampi"
+      }
+    ],
+    "basilikum": [
+      {
+        "id": "one-pot-pasta-med-salciccia",
+        "title": "One pot pasta"
+      },
+      {
+        "id": "tomatsaus",
+        "title": "Tomatsaus til alt!"
+      },
+      {
+        "id": "jordbær-og-mozzarella",
+        "title": "Jordbær og mozzarella"
+      },
+      {
+        "id": "jordbærsalsa",
+        "title": "Jordbærsalsa"
+      },
+      {
+        "id": "crepes",
+        "title": "Crêpes med alt"
+      },
+      {
+        "id": "salsa-verde",
+        "title": "Poteter med salsa verde"
+      },
+      {
+        "id": "panini",
+        "title": "Panini på norsk"
+      }
+    ],
+    "parmesan": [
+      {
+        "id": "one-pot-pasta-med-salciccia",
+        "title": "One pot pasta"
+      },
+      {
+        "id": "entrecôte-med-soppsaus",
+        "title": "Entrecôte med soppsaus"
+      },
+      {
+        "id": "bouf-bourgogne",
+        "title": "Boeuf Bourgogne"
+      },
+      {
+        "id": "parmesankrem",
+        "title": "Parmesankrem"
+      },
+      {
+        "id": "parmesanchips",
+        "title": "Parmesanchips"
+      },
+      {
+        "id": "kjøttboller",
+        "title": "Kjøttboller"
+      },
+      {
+        "id": "grillspyd",
+        "title": "Grillspyd med tilbehør"
+      },
+      {
+        "id": "sopprisotto",
+        "title": "Sopprisotto"
+      },
+      {
+        "id": "panini",
+        "title": "Panini på norsk"
+      },
+      {
+        "id": "sommerkaal-med-parmesansaus",
+        "title": "Sommerkål med parmesansaus"
+      },
+      {
+        "id": "pasta-med-blaamuggost",
+        "title": "Pasta med blåmuggost"
+      },
+      {
+        "id": "rodbet-med-lama",
+        "title": "Rødbet og lama"
+      }
+    ],
+    "entrecôte": [
+      {
+        "id": "entrecôte-med-soppsaus",
+        "title": "Entrecôte med soppsaus"
+      }
+    ],
+    "sopp": [
+      {
+        "id": "entrecôte-med-soppsaus",
+        "title": "Entrecôte med soppsaus"
+      },
+      {
+        "id": "viltgryte",
+        "title": "Viltgryte med tyttebær"
+      }
+    ],
+    "gul løk": [
+      {
+        "id": "entrecôte-med-soppsaus",
+        "title": "Entrecôte med soppsaus"
+      },
+      {
+        "id": "gulasjsuppe",
+        "title": "Gulasjsuppe"
+      },
+      {
+        "id": "tomatsaus",
+        "title": "Tomatsaus til alt!"
+      },
+      {
+        "id": "blomkålsuppe",
+        "title": "Blomkålsuppe"
+      },
+      {
+        "id": "cajun-kylling",
+        "title": "Cajun kylling"
+      },
+      {
+        "id": "mulligatawny",
+        "title": "Mulligatawny-suppe"
+      },
+      {
+        "id": "kebab",
+        "title": "Kebab i skogen"
+      },
+      {
+        "id": "gulrotsuppe",
+        "title": "Gulrotsuppe"
+      },
+      {
+        "id": "vegetartaco",
+        "title": "Vegetartaco"
+      },
+      {
+        "id": "ribbe",
+        "title": "Juleribbe"
+      }
+    ],
+    "hvitvin": [
+      {
+        "id": "entrecôte-med-soppsaus",
+        "title": "Entrecôte med soppsaus"
+      },
+      {
+        "id": "skrei-med-smørsaus",
+        "title": "Skrei med smørsaus"
+      }
+    ],
+    "kyllingfond": [
+      {
+        "id": "entrecôte-med-soppsaus",
+        "title": "Entrecôte med soppsaus"
+      }
+    ],
+    "(hvis vi har": [
+      {
+        "id": "entrecôte-med-soppsaus",
+        "title": "Entrecôte med soppsaus"
+      }
+    ],
+    "babyleafsalat": [
+      {
+        "id": "entrecôte-med-soppsaus",
+        "title": "Entrecôte med soppsaus"
+      }
+    ],
+    "dijon sennep": [
+      {
+        "id": "entrecôte-med-soppsaus",
+        "title": "Entrecôte med soppsaus"
+      },
+      {
+        "id": "grilla-ørret",
+        "title": "Grilla ørret"
+      },
+      {
+        "id": "kebab",
+        "title": "Kebab i skogen"
+      },
+      {
+        "id": "grillspyd",
+        "title": "Grillspyd med tilbehør"
+      },
+      {
+        "id": "røska-lam",
+        "title": "Røska lam"
+      },
+      {
+        "id": "ribbe",
+        "title": "Juleribbe"
+      },
+      {
+        "id": "potetsalat",
+        "title": "Potetsalat"
+      }
+    ],
+    "god olivenolje": [
+      {
+        "id": "entrecôte-med-soppsaus",
+        "title": "Entrecôte med soppsaus"
+      },
+      {
+        "id": "grilla-svinefilet",
+        "title": "Grilla svinefilet"
+      }
+    ],
+    "andebryst": [
+      {
+        "id": "and-med-bringebær",
+        "title": "And med bringebær"
+      }
+    ],
+    "frisk spinat": [
+      {
+        "id": "and-med-bringebær",
+        "title": "And med bringebær"
+      }
+    ],
+    "hvitløkfedd": [
+      {
+        "id": "and-med-bringebær",
+        "title": "And med bringebær"
+      }
+    ],
+    "okse": [
+      {
+        "id": "and-med-bringebær",
+        "title": "And med bringebær"
+      },
+      {
+        "id": "gulasjsuppe",
+        "title": "Gulasjsuppe"
+      }
+    ],
+    "balsamicoeddik": [
+      {
+        "id": "and-med-bringebær",
+        "title": "And med bringebær"
+      },
+      {
+        "id": "karamellisert-løk",
+        "title": "Karamellisert løk"
+      },
+      {
+        "id": "betesalat",
+        "title": "Betesalat"
+      }
+    ],
+    "kanelstang": [
+      {
+        "id": "and-med-bringebær",
+        "title": "And med bringebær"
+      },
+      {
+        "id": "pepperkaker",
+        "title": "Pepperkaker 2.0"
+      },
+      {
+        "id": "karripulver",
+        "title": "Karripulver"
+      }
+    ],
+    "knuste hvitløkfedd": [
+      {
+        "id": "and-med-bringebær",
+        "title": "And med bringebær"
+      }
+    ],
+    "en håndfull friske bringebær": [
+      {
+        "id": "and-med-bringebær",
+        "title": "And med bringebær"
+      }
+    ],
+    "små potet": [
+      {
+        "id": "and-med-bringebær",
+        "title": "And med bringebær"
+      },
+      {
+        "id": "potetsalat",
+        "title": "Potetsalat"
+      }
+    ],
+    "god kvast frisk timian": [
+      {
+        "id": "and-med-bringebær",
+        "title": "And med bringebær"
+      }
+    ],
+    "olje/smør/andefett": [
+      {
+        "id": "and-med-bringebær",
+        "title": "And med bringebær"
+      }
+    ],
+    "melk": [
+      {
+        "id": "pepperkakeis",
+        "title": "Pepperkakeis med klementinsaus"
+      },
+      {
+        "id": "hamburgerbrød",
+        "title": "Hamburgerbrød"
+      },
+      {
+        "id": "crepes",
+        "title": "Crêpes med alt"
+      },
+      {
+        "id": "eplepai",
+        "title": "Kari's eplepai"
+      },
+      {
+        "id": "medisterfest",
+        "title": "Medisterfest!"
+      },
+      {
+        "id": "vørterbrød",
+        "title": "Vørterbrød"
+      },
+      {
+        "id": "formkake",
+        "title": "Farmors formkake"
+      }
+    ],
+    "vaniljestang": [
+      {
+        "id": "pepperkakeis",
+        "title": "Pepperkakeis med klementinsaus"
+      },
+      {
+        "id": "eplepai",
+        "title": "Kari's eplepai"
+      },
+      {
+        "id": "bringebærpai",
+        "title": "Bringebærpai"
+      }
+    ],
+    "eggeplommer": [
+      {
+        "id": "pepperkakeis",
+        "title": "Pepperkakeis med klementinsaus"
+      },
+      {
+        "id": "eplepai",
+        "title": "Kari's eplepai"
+      },
+      {
+        "id": "bringebærpai",
+        "title": "Bringebærpai"
+      },
+      {
+        "id": "pasta",
+        "title": "Pasta"
+      }
+    ],
+    "knuste <a href='/oppskrift/pepperkaker'>pepperkaker</a>": [
+      {
+        "id": "pepperkakeis",
+        "title": "Pepperkakeis med klementinsaus"
+      }
+    ],
+    "klementin": [
+      {
+        "id": "pepperkakeis",
+        "title": "Pepperkakeis med klementinsaus"
+      }
+    ],
+    "knust karve": [
+      {
+        "id": "gulasjsuppe",
+        "title": "Gulasjsuppe"
+      }
+    ],
+    "merian": [
+      {
+        "id": "gulasjsuppe",
+        "title": "Gulasjsuppe"
+      }
+    ],
+    "laubærblad": [
+      {
+        "id": "gulasjsuppe",
+        "title": "Gulasjsuppe"
+      },
+      {
+        "id": "grønnsakskraft",
+        "title": "Grønnsakskraft"
+      },
+      {
+        "id": "kyllingkraft",
+        "title": "Kyllingkraft"
+      },
+      {
+        "id": "skalldyrkraft",
+        "title": "Skalldyrkraft"
+      }
+    ],
+    "sellerirot": [
+      {
+        "id": "gulasjsuppe",
+        "title": "Gulasjsuppe"
+      },
+      {
+        "id": "grønnsakskraft",
+        "title": "Grønnsakskraft"
+      },
+      {
+        "id": "kyllingkraft",
+        "title": "Kyllingkraft"
+      },
+      {
+        "id": "skalldyrkraft",
+        "title": "Skalldyrkraft"
+      },
+      {
+        "id": "viltgryte",
+        "title": "Viltgryte med tyttebær"
+      }
+    ],
+    "torsk eller skrei": [
+      {
+        "id": "dampet-torsk",
+        "title": "Dampet torsk med mangosalsa"
+      }
+    ],
+    "pak choy": [
+      {
+        "id": "dampet-torsk",
+        "title": "Dampet torsk med mangosalsa"
+      }
+    ],
+    "rød løk": [
+      {
+        "id": "dampet-torsk",
+        "title": "Dampet torsk med mangosalsa"
+      }
+    ],
+    "blokk bacon": [
+      {
+        "id": "bouf-bourgogne",
+        "title": "Boeuf Bourgogne"
+      }
+    ],
+    "frisk timian": [
+      {
+        "id": "bouf-bourgogne",
+        "title": "Boeuf Bourgogne"
+      },
+      {
+        "id": "porchetta",
+        "title": "Porchetta"
+      }
+    ],
+    "rødvin": [
+      {
+        "id": "bouf-bourgogne",
+        "title": "Boeuf Bourgogne"
+      },
+      {
+        "id": "rødvinssaus",
+        "title": "Rødvinssaus"
+      },
+      {
+        "id": "viltgryte",
+        "title": "Viltgryte med tyttebær"
+      }
+    ],
+    "oksekraft eller kalvekraft": [
+      {
+        "id": "bouf-bourgogne",
+        "title": "Boeuf Bourgogne"
+      }
+    ],
+    "gulrøtter": [
+      {
+        "id": "bouf-bourgogne",
+        "title": "Boeuf Bourgogne"
+      },
+      {
+        "id": "grønnsakskraft",
+        "title": "Grønnsakskraft"
+      },
+      {
+        "id": "skrei-med-smørsaus",
+        "title": "Skrei med smørsaus"
+      },
+      {
+        "id": "mulligatawny",
+        "title": "Mulligatawny-suppe"
+      }
+    ],
+    "renset delikatesseløk": [
+      {
+        "id": "bouf-bourgogne",
+        "title": "Boeuf Bourgogne"
+      }
+    ],
+    "aromasopp": [
+      {
+        "id": "bouf-bourgogne",
+        "title": "Boeuf Bourgogne"
+      }
+    ],
+    "olje og smør": [
+      {
+        "id": "bouf-bourgogne",
+        "title": "Boeuf Bourgogne"
+      },
+      {
+        "id": "roastbeef",
+        "title": "Vannbakkels med roastbeef"
+      }
+    ],
+    "pastinakk": [
+      {
+        "id": "bouf-bourgogne",
+        "title": "Boeuf Bourgogne"
+      }
+    ],
+    "pizzamel": [
+      {
+        "id": "pizza",
+        "title": "Vi snakker lørdagspizza"
+      }
+    ],
+    "gjær": [
+      {
+        "id": "pizza",
+        "title": "Vi snakker lørdagspizza"
+      },
+      {
+        "id": "hamburgerbrød",
+        "title": "Hamburgerbrød"
+      },
+      {
+        "id": "vørterbrød",
+        "title": "Vørterbrød"
+      },
+      {
+        "id": "pannebrød",
+        "title": "Pannebrød"
+      },
+      {
+        "id": "grillspyd",
+        "title": "Grillspyd med tilbehør"
+      },
+      {
+        "id": "munker",
+        "title": "Munker"
+      }
+    ],
+    "tomatsaus": [
+      {
+        "id": "pizza",
+        "title": "Vi snakker lørdagspizza"
+      }
+    ],
+    "mild blåmuggost": [
+      {
+        "id": "pizza",
+        "title": "Vi snakker lørdagspizza"
+      }
+    ],
+    "granateple": [
+      {
+        "id": "pizza",
+        "title": "Vi snakker lørdagspizza"
+      },
+      {
+        "id": "kebab",
+        "title": "Kebab i skogen"
+      }
+    ],
+    "tomat": [
+      {
+        "id": "tomatsaus",
+        "title": "Tomatsaus til alt!"
+      }
+    ],
+    "oksefond": [
+      {
+        "id": "tomatsaus",
+        "title": "Tomatsaus til alt!"
+      }
+    ],
+    "oregano": [
+      {
+        "id": "tomatsaus",
+        "title": "Tomatsaus til alt!"
+      },
+      {
+        "id": "cajun-kylling",
+        "title": "Cajun kylling"
+      },
+      {
+        "id": "pulled-chicken",
+        "title": "Røska høne"
+      }
+    ],
+    "kanel": [
+      {
+        "id": "tomatsaus",
+        "title": "Tomatsaus til alt!"
+      },
+      {
+        "id": "kebab",
+        "title": "Kebab i skogen"
+      }
+    ],
+    "meierismør": [
+      {
+        "id": "vannbakkels-med-sitronkrem",
+        "title": "Vannbakkels med sitronkrem"
+      },
+      {
+        "id": "sopprisotto",
+        "title": "Sopprisotto"
+      },
+      {
+        "id": "sommerkaal-med-parmesansaus",
+        "title": "Sommerkål med parmesansaus"
+      }
+    ],
+    "egg": [
+      {
+        "id": "vannbakkels-med-sitronkrem",
+        "title": "Vannbakkels med sitronkrem"
+      },
+      {
+        "id": "hamburgerbrød",
+        "title": "Hamburgerbrød"
+      },
+      {
+        "id": "kjøttboller",
+        "title": "Kjøttboller"
+      },
+      {
+        "id": "crepes",
+        "title": "Crêpes med alt"
+      },
+      {
+        "id": "medisterfest",
+        "title": "Medisterfest!"
+      },
+      {
+        "id": "formkake",
+        "title": "Farmors formkake"
+      },
+      {
+        "id": "grillspyd",
+        "title": "Grillspyd med tilbehør"
+      },
+      {
+        "id": "eplekake",
+        "title": "Eplekake"
+      },
+      {
+        "id": "gravet-laks",
+        "title": "Gravet laks med fennikelsalat"
+      },
+      {
+        "id": "munker",
+        "title": "Munker"
+      },
+      {
+        "id": "bringebærpai",
+        "title": "Bringebærpai"
+      },
+      {
+        "id": "roastbeef",
+        "title": "Vannbakkels med roastbeef"
+      },
+      {
+        "id": "sitronterte",
+        "title": "Sitronterte med marengs"
+      },
+      {
+        "id": "pasta",
+        "title": "Pasta"
+      }
+    ],
+    "ferskpresset sitronsaft": [
+      {
+        "id": "vannbakkels-med-sitronkrem",
+        "title": "Vannbakkels med sitronkrem"
+      }
+    ],
+    "eggehviter": [
+      {
+        "id": "vannbakkels-med-sitronkrem",
+        "title": "Vannbakkels med sitronkrem"
+      }
+    ],
+    "blomkål": [
+      {
+        "id": "blomkålsuppe",
+        "title": "Blomkålsuppe"
+      }
+    ],
+    "kylling": [
+      {
+        "id": "blomkålsuppe",
+        "title": "Blomkålsuppe"
+      },
+      {
+        "id": "kyllingkraft",
+        "title": "Kyllingkraft"
+      },
+      {
+        "id": "pulled-chicken",
+        "title": "Røska høne"
+      }
+    ],
+    "fløte hvis du har": [
+      {
+        "id": "blomkålsuppe",
+        "title": "Blomkålsuppe"
+      }
+    ],
+    "chiliolje": [
+      {
+        "id": "blomkålsuppe",
+        "title": "Blomkålsuppe"
+      }
+    ],
+    "eventuelt chorizo": [
+      {
+        "id": "blomkålsuppe",
+        "title": "Blomkålsuppe"
+      }
+    ],
+    "gule løk": [
+      {
+        "id": "grønnsakskraft",
+        "title": "Grønnsakskraft"
+      }
+    ],
+    "kålrabi": [
+      {
+        "id": "grønnsakskraft",
+        "title": "Grønnsakskraft"
+      }
+    ],
+    "stangselleri": [
+      {
+        "id": "grønnsakskraft",
+        "title": "Grønnsakskraft"
+      },
+      {
+        "id": "skalldyrsalat",
+        "title": "Rønnaug's skalldyrsalat"
+      }
+    ],
+    "fennikel": [
+      {
+        "id": "grønnsakskraft",
+        "title": "Grønnsakskraft"
+      },
+      {
+        "id": "skalldyrkraft",
+        "title": "Skalldyrkraft"
+      },
+      {
+        "id": "grilla-ørret",
+        "title": "Grilla ørret"
+      },
+      {
+        "id": "gravet-laks",
+        "title": "Gravet laks med fennikelsalat"
+      }
+    ],
+    "pepperkorn": [
+      {
+        "id": "grønnsakskraft",
+        "title": "Grønnsakskraft"
+      },
+      {
+        "id": "kyllingkraft",
+        "title": "Kyllingkraft"
+      },
+      {
+        "id": "skalldyrkraft",
+        "title": "Skalldyrkraft"
+      }
+    ],
+    "solsikkeolje": [
+      {
+        "id": "grønnsakskraft",
+        "title": "Grønnsakskraft"
+      },
+      {
+        "id": "rødvinssaus",
+        "title": "Rødvinssaus"
+      },
+      {
+        "id": "skalldyrkraft",
+        "title": "Skalldyrkraft"
+      },
+      {
+        "id": "majones",
+        "title": "Majones"
+      },
+      {
+        "id": "roastbeef",
+        "title": "Vannbakkels med roastbeef"
+      }
+    ],
+    "små sjalottløk": [
+      {
+        "id": "red-curry-paste",
+        "title": "Red curry paste"
+      },
+      {
+        "id": "pulled-chicken",
+        "title": "Røska høne"
+      }
+    ],
+    "svart kardemomme": [
+      {
+        "id": "red-curry-paste",
+        "title": "Red curry paste"
+      }
+    ],
+    "røde chilier": [
+      {
+        "id": "red-curry-paste",
+        "title": "Red curry paste"
+      }
+    ],
+    "sitrongresskjerne": [
+      {
+        "id": "red-curry-paste",
+        "title": "Red curry paste"
+      },
+      {
+        "id": "larpgai",
+        "title": "Larp Gai - kyllingsalat"
+      }
+    ],
+    "galangalrot": [
+      {
+        "id": "red-curry-paste",
+        "title": "Red curry paste"
+      }
+    ],
+    "gurkemeie": [
+      {
+        "id": "red-curry-paste",
+        "title": "Red curry paste"
+      },
+      {
+        "id": "karripulver",
+        "title": "Karripulver"
+      }
+    ],
+    "purreløk": [
+      {
+        "id": "kyllingkraft",
+        "title": "Kyllingkraft"
+      },
+      {
+        "id": "skalldyrkraft",
+        "title": "Skalldyrkraft"
+      },
+      {
+        "id": "porchetta",
+        "title": "Porchetta"
+      }
+    ],
+    "timian": [
+      {
+        "id": "kyllingkraft",
+        "title": "Kyllingkraft"
+      },
+      {
+        "id": "rødvinssaus",
+        "title": "Rødvinssaus"
+      },
+      {
+        "id": "cajun-kylling",
+        "title": "Cajun kylling"
+      },
+      {
+        "id": "viltgryte",
+        "title": "Viltgryte med tyttebær"
+      }
+    ],
+    "kyllingbryst": [
+      {
+        "id": "kyllingbryst-med-thaicurry",
+        "title": "Kyllingbryst med thaicurry"
+      }
+    ],
+    "<a href='/oppskrift/red": [
+      {
+        "id": "kyllingbryst-med-thaicurry",
+        "title": "Kyllingbryst med thaicurry"
+      }
+    ],
+    "<a href='/oppskrift/kyllingkraft'>kyllingkraft</a>": [
+      {
+        "id": "kyllingbryst-med-thaicurry",
+        "title": "Kyllingbryst med thaicurry"
+      }
+    ],
+    "soyasaus med mindre salt": [
+      {
+        "id": "kyllingbryst-med-thaicurry",
+        "title": "Kyllingbryst med thaicurry"
+      }
+    ],
+    "palmesukker": [
+      {
+        "id": "kyllingbryst-med-thaicurry",
+        "title": "Kyllingbryst med thaicurry"
+      },
+      {
+        "id": "sriracha",
+        "title": "Sriracha"
+      }
+    ],
+    "friterte nudler hvis du er kul": [
+      {
+        "id": "kyllingbryst-med-thaicurry",
+        "title": "Kyllingbryst med thaicurry"
+      }
+    ],
+    "skrei eller torsk": [
+      {
+        "id": "skrei-med-smørsaus",
+        "title": "Skrei med smørsaus"
+      }
+    ],
+    "grovt havsalt": [
+      {
+        "id": "skrei-med-smørsaus",
+        "title": "Skrei med smørsaus"
+      },
+      {
+        "id": "tacokrydder",
+        "title": "Tacokrydder"
+      }
+    ],
+    "småpotet per person": [
+      {
+        "id": "skrei-med-smørsaus",
+        "title": "Skrei med smørsaus"
+      }
+    ],
+    "appelsinjuice": [
+      {
+        "id": "skrei-med-smørsaus",
+        "title": "Skrei med smørsaus"
+      }
+    ],
+    "finhakket sjalottløk": [
+      {
+        "id": "skrei-med-smørsaus",
+        "title": "Skrei med smørsaus"
+      },
+      {
+        "id": "sopprisotto",
+        "title": "Sopprisotto"
+      },
+      {
+        "id": "roastbeef",
+        "title": "Vannbakkels med roastbeef"
+      },
+      {
+        "id": "potetsalat",
+        "title": "Potetsalat"
+      }
+    ],
+    "grønn kardemomme": [
+      {
+        "id": "skrei-med-smørsaus",
+        "title": "Skrei med smørsaus"
+      },
+      {
+        "id": "pepperkaker",
+        "title": "Pepperkaker 2.0"
+      }
+    ],
+    "kaldt smør": [
+      {
+        "id": "skrei-med-smørsaus",
+        "title": "Skrei med smørsaus"
+      },
+      {
+        "id": "eplepai",
+        "title": "Kari's eplepai"
+      },
+      {
+        "id": "sitronterte",
+        "title": "Sitronterte med marengs"
+      }
+    ],
+    "sitronsaft": [
+      {
+        "id": "skrei-med-smørsaus",
+        "title": "Skrei med smørsaus"
+      },
+      {
+        "id": "pulled-chicken",
+        "title": "Røska høne"
+      },
+      {
+        "id": "panini",
+        "title": "Panini på norsk"
+      },
+      {
+        "id": "roastbeef",
+        "title": "Vannbakkels med roastbeef"
+      }
+    ],
+    "gressløk": [
+      {
+        "id": "skrei-med-smørsaus",
+        "title": "Skrei med smørsaus"
+      }
+    ],
+    "bladpersille": [
+      {
+        "id": "sitronpasta-med-scampi",
+        "title": "Sitronpasta med scampi"
+      },
+      {
+        "id": "medisterfest",
+        "title": "Medisterfest!"
+      },
+      {
+        "id": "salsa-verde",
+        "title": "Poteter med salsa verde"
+      },
+      {
+        "id": "røska-lam",
+        "title": "Røska lam"
+      },
+      {
+        "id": "pasta-med-blaamuggost",
+        "title": "Pasta med blåmuggost"
+      }
+    ],
+    "scampi": [
+      {
+        "id": "sitronpasta-med-scampi",
+        "title": "Sitronpasta med scampi"
+      }
+    ],
+    "svinenakke": [
+      {
+        "id": "taco-med-svinenakke",
+        "title": "Taco med svinenakke"
+      },
+      {
+        "id": "medisterfest",
+        "title": "Medisterfest!"
+      }
+    ],
+    "<a href='/oppskrift/tacokrydder'>hjemmelaget tacokrydder</a>": [
+      {
+        "id": "taco-med-svinenakke",
+        "title": "Taco med svinenakke"
+      },
+      {
+        "id": "vegetartaco",
+        "title": "Vegetartaco"
+      }
+    ],
+    "god eplejuice": [
+      {
+        "id": "taco-med-svinenakke",
+        "title": "Taco med svinenakke"
+      }
+    ],
+    "chipotle": [
+      {
+        "id": "taco-med-svinenakke",
+        "title": "Taco med svinenakke"
+      },
+      {
+        "id": "vegetartaco",
+        "title": "Vegetartaco"
+      }
+    ],
+    "<a href='/oppskrift/majones'>majones</a>": [
+      {
+        "id": "taco-med-svinenakke",
+        "title": "Taco med svinenakke"
+      },
+      {
+        "id": "vegetartaco",
+        "title": "Vegetartaco"
+      },
+      {
+        "id": "rodbet-med-lama",
+        "title": "Rødbet og lama"
+      }
+    ],
+    "med lime": [
+      {
+        "id": "taco-med-svinenakke",
+        "title": "Taco med svinenakke"
+      },
+      {
+        "id": "vegetartaco",
+        "title": "Vegetartaco"
+      }
+    ],
+    "maseca mel": [
+      {
+        "id": "taco-med-svinenakke",
+        "title": "Taco med svinenakke"
+      },
+      {
+        "id": "vegetartaco",
+        "title": "Vegetartaco"
+      }
+    ],
+    "annen tilbehør du liker. for eksempel smuldret ren fetaost. mais. sriracha. o.s.v": [
+      {
+        "id": "taco-med-svinenakke",
+        "title": "Taco med svinenakke"
+      }
+    ],
+    "crème fraîche": [
+      {
+        "id": "parmesankrem",
+        "title": "Parmesankrem"
+      },
+      {
+        "id": "grillspyd",
+        "title": "Grillspyd med tilbehør"
+      }
+    ],
+    "knuste pepperkorn": [
+      {
+        "id": "rødvinssaus",
+        "title": "Rødvinssaus"
+      }
+    ],
+    "kaldt vann": [
+      {
+        "id": "rødvinssaus",
+        "title": "Rødvinssaus"
+      },
+      {
+        "id": "oestberg-skudd",
+        "title": "Østberg-skudd"
+      }
+    ],
+    "skall av skalldyr": [
+      {
+        "id": "skalldyrkraft",
+        "title": "Skalldyrkraft"
+      }
+    ],
+    "sitronskall": [
+      {
+        "id": "skalldyrkraft",
+        "title": "Skalldyrkraft"
+      },
+      {
+        "id": "sitronterte",
+        "title": "Sitronterte med marengs"
+      }
+    ],
+    "hvitløkspulver": [
+      {
+        "id": "cajun-kylling",
+        "title": "Cajun kylling"
+      },
+      {
+        "id": "tacokrydder",
+        "title": "Tacokrydder"
+      }
+    ],
+    "løkpulver": [
+      {
+        "id": "cajun-kylling",
+        "title": "Cajun kylling"
+      },
+      {
+        "id": "tacokrydder",
+        "title": "Tacokrydder"
+      }
+    ],
+    "cajennepepper": [
+      {
+        "id": "cajun-kylling",
+        "title": "Cajun kylling"
+      },
+      {
+        "id": "sommerkaal-med-parmesansaus",
+        "title": "Sommerkål med parmesansaus"
+      }
+    ],
+    "sort kvernet pepper": [
+      {
+        "id": "cajun-kylling",
+        "title": "Cajun kylling"
+      },
+      {
+        "id": "kebab",
+        "title": "Kebab i skogen"
+      }
+    ],
+    "kyllinglårfilet": [
+      {
+        "id": "cajun-kylling",
+        "title": "Cajun kylling"
+      },
+      {
+        "id": "thaisuppe",
+        "title": "Thaisuppe på tur"
+      }
+    ],
+    "pasta penne": [
+      {
+        "id": "cajun-kylling",
+        "title": "Cajun kylling"
+      }
+    ],
+    "knuste tomat": [
+      {
+        "id": "cajun-kylling",
+        "title": "Cajun kylling"
+      }
+    ],
+    "kyllingkraft": [
+      {
+        "id": "cajun-kylling",
+        "title": "Cajun kylling"
+      },
+      {
+        "id": "larpgai",
+        "title": "Larp Gai - kyllingsalat"
+      }
+    ],
+    "naturell kremost": [
+      {
+        "id": "cajun-kylling",
+        "title": "Cajun kylling"
+      }
+    ],
+    "stormkjøkken med kjele": [
+      {
+        "id": "cajun-kylling",
+        "title": "Cajun kylling"
+      }
+    ],
+    "ei sleiv": [
+      {
+        "id": "cajun-kylling",
+        "title": "Cajun kylling"
+      },
+      {
+        "id": "thaisuppe",
+        "title": "Thaisuppe på tur"
+      },
+      {
+        "id": "mulligatawny",
+        "title": "Mulligatawny-suppe"
+      }
+    ],
+    "tallerken og bestikk": [
+      {
+        "id": "cajun-kylling",
+        "title": "Cajun kylling"
+      }
+    ],
+    "ørretside med skinn": [
+      {
+        "id": "grilla-ørret",
+        "title": "Grilla ørret"
+      }
+    ],
+    "dill": [
+      {
+        "id": "grilla-ørret",
+        "title": "Grilla ørret"
+      },
+      {
+        "id": "skalldyrsalat",
+        "title": "Rønnaug's skalldyrsalat"
+      }
+    ],
+    "grovt salt (som du tror du skal strø med": [
+      {
+        "id": "grilla-ørret",
+        "title": "Grilla ørret"
+      }
+    ],
+    "creme fraiche": [
+      {
+        "id": "grilla-ørret",
+        "title": "Grilla ørret"
+      },
+      {
+        "id": "eplekake",
+        "title": "Eplekake"
+      },
+      {
+        "id": "sitronterte",
+        "title": "Sitronterte med marengs"
+      },
+      {
+        "id": "sommerkaal-med-parmesansaus",
+        "title": "Sommerkål med parmesansaus"
+      }
+    ],
+    "nøytral olje": [
+      {
+        "id": "grilla-ørret",
+        "title": "Grilla ørret"
+      },
+      {
+        "id": "pulled-chicken",
+        "title": "Røska høne"
+      },
+      {
+        "id": "grillspyd",
+        "title": "Grillspyd med tilbehør"
+      }
+    ],
+    "sukker eller honning": [
+      {
+        "id": "grilla-ørret",
+        "title": "Grilla ørret"
+      }
+    ],
+    "muskat": [
+      {
+        "id": "pulled-chicken",
+        "title": "Røska høne"
+      },
+      {
+        "id": "medisterfest",
+        "title": "Medisterfest!"
+      }
+    ],
+    "eplemost/god juice": [
+      {
+        "id": "pulled-chicken",
+        "title": "Røska høne"
+      }
+    ],
+    "finsnitta fennikel": [
+      {
+        "id": "pulled-chicken",
+        "title": "Røska høne"
+      }
+    ],
+    "grønt eple i staver": [
+      {
+        "id": "pulled-chicken",
+        "title": "Røska høne"
+      }
+    ],
+    "reddiker i tynne skiver": [
+      {
+        "id": "pulled-chicken",
+        "title": "Røska høne"
+      }
+    ],
+    "gresk yoghurt": [
+      {
+        "id": "pulled-chicken",
+        "title": "Røska høne"
+      },
+      {
+        "id": "fetadipp",
+        "title": "Fetadipp"
+      }
+    ],
+    "håndfull mynte": [
+      {
+        "id": "pulled-chicken",
+        "title": "Røska høne"
+      }
+    ],
+    "server med pitabrød": [
+      {
+        "id": "pulled-chicken",
+        "title": "Røska høne"
+      }
+    ],
+    "reker og krepsehaler": [
+      {
+        "id": "skalldyrsalat",
+        "title": "Rønnaug's skalldyrsalat"
+      }
+    ],
+    "isbergsalat": [
+      {
+        "id": "skalldyrsalat",
+        "title": "Rønnaug's skalldyrsalat"
+      }
+    ],
+    "majones <a href='/oppskrift/majones'>(eller lage sjøl)</a>": [
+      {
+        "id": "skalldyrsalat",
+        "title": "Rønnaug's skalldyrsalat"
+      }
+    ],
+    "kremfløte": [
+      {
+        "id": "skalldyrsalat",
+        "title": "Rønnaug's skalldyrsalat"
+      },
+      {
+        "id": "sjokoladesaus",
+        "title": "Sjokoladesaus"
+      },
+      {
+        "id": "bringebærpai",
+        "title": "Bringebærpai"
+      },
+      {
+        "id": "pasta-med-blaamuggost",
+        "title": "Pasta med blåmuggost"
+      },
+      {
+        "id": "saltkaramellsaus",
+        "title": "Salt karamellsaus"
+      },
+      {
+        "id": "porchetta",
+        "title": "Porchetta"
+      }
+    ],
+    "loff": [
+      {
+        "id": "skalldyrsalat",
+        "title": "Rønnaug's skalldyrsalat"
+      }
+    ],
+    "karbonadekjøttdeig": [
+      {
+        "id": "kjøttboller",
+        "title": "Kjøttboller"
+      }
+    ],
+    "svinekjøttdeig": [
+      {
+        "id": "kjøttboller",
+        "title": "Kjøttboller"
+      }
+    ],
+    "loff uten skorpe": [
+      {
+        "id": "kjøttboller",
+        "title": "Kjøttboller"
+      }
+    ],
+    "kruspersille": [
+      {
+        "id": "kjøttboller",
+        "title": "Kjøttboller"
+      }
+    ],
+    "rista pinjekjerner": [
+      {
+        "id": "kjøttboller",
+        "title": "Kjøttboller"
+      },
+      {
+        "id": "panini",
+        "title": "Panini på norsk"
+      }
+    ],
+    "hvit pepper": [
+      {
+        "id": "kjøttboller",
+        "title": "Kjøttboller"
+      }
+    ],
+    "svinefilet": [
+      {
+        "id": "grilla-svinefilet",
+        "title": "Grilla svinefilet"
+      }
+    ],
+    "fint salt": [
+      {
+        "id": "grilla-svinefilet",
+        "title": "Grilla svinefilet"
+      },
+      {
+        "id": "tacokrydder",
+        "title": "Tacokrydder"
+      }
+    ],
+    "nektariner eller plommer": [
+      {
+        "id": "grilla-svinefilet",
+        "title": "Grilla svinefilet"
+      }
+    ],
+    "babyleafmix": [
+      {
+        "id": "grilla-svinefilet",
+        "title": "Grilla svinefilet"
+      }
+    ],
+    "<a href='/oppskrift/parmesankrem'>parmesankremen</a>": [
+      {
+        "id": "grilla-svinefilet",
+        "title": "Grilla svinefilet"
+      }
+    ],
+    "norske jordbær": [
+      {
+        "id": "jordbær-og-mozzarella",
+        "title": "Jordbær og mozzarella"
+      },
+      {
+        "id": "jordbærsalsa",
+        "title": "Jordbærsalsa"
+      }
+    ],
+    "spekeskinke": [
+      {
+        "id": "jordbær-og-mozzarella",
+        "title": "Jordbær og mozzarella"
+      }
+    ],
+    "balsamico og olivenolje": [
+      {
+        "id": "jordbær-og-mozzarella",
+        "title": "Jordbær og mozzarella"
+      }
+    ],
+    "flaksalt og pepper": [
+      {
+        "id": "jordbær-og-mozzarella",
+        "title": "Jordbær og mozzarella"
+      }
+    ],
+    "red curry paste": [
+      {
+        "id": "thaisuppe",
+        "title": "Thaisuppe på tur"
+      }
+    ],
+    "rød paprika": [
+      {
+        "id": "thaisuppe",
+        "title": "Thaisuppe på tur"
+      }
+    ],
+    "kyllingkraft eller grønnsakskraft": [
+      {
+        "id": "thaisuppe",
+        "title": "Thaisuppe på tur"
+      }
+    ],
+    "fishsauce": [
+      {
+        "id": "thaisuppe",
+        "title": "Thaisuppe på tur"
+      }
+    ],
+    "soyasaus (mindre salt": [
+      {
+        "id": "thaisuppe",
+        "title": "Thaisuppe på tur"
+      }
+    ],
+    "aspargesbønner": [
+      {
+        "id": "thaisuppe",
+        "title": "Thaisuppe på tur"
+      },
+      {
+        "id": "porchetta",
+        "title": "Porchetta"
+      }
+    ],
+    "koriander eller thaibasilikum": [
+      {
+        "id": "thaisuppe",
+        "title": "Thaisuppe på tur"
+      }
+    ],
+    "stormkjøkken med 2 kjeler": [
+      {
+        "id": "thaisuppe",
+        "title": "Thaisuppe på tur"
+      }
+    ],
+    "boller": [
+      {
+        "id": "thaisuppe",
+        "title": "Thaisuppe på tur"
+      }
+    ],
+    "dype tallerken": [
+      {
+        "id": "thaisuppe",
+        "title": "Thaisuppe på tur"
+      }
+    ],
+    "noe å sile av nudelvannet med": [
+      {
+        "id": "thaisuppe",
+        "title": "Thaisuppe på tur"
+      }
+    ],
+    "spinat": [
+      {
+        "id": "crepes",
+        "title": "Crêpes med alt"
+      }
+    ],
+    "fenalår eller annen salt skinke": [
+      {
+        "id": "crepes",
+        "title": "Crêpes med alt"
+      }
+    ],
+    "god olivenolje eller balsamico": [
+      {
+        "id": "crepes",
+        "title": "Crêpes med alt"
+      }
+    ],
+    "rips": [
+      {
+        "id": "crepes",
+        "title": "Crêpes med alt"
+      }
+    ],
+    "<a href='/oppskrift/sjokoladesaus'>sjokoladesaus</a>": [
+      {
+        "id": "crepes",
+        "title": "Crêpes med alt"
+      }
+    ],
+    "stormkjøkken med stekepanne": [
+      {
+        "id": "crepes",
+        "title": "Crêpes med alt"
+      }
+    ],
+    "stekespade": [
+      {
+        "id": "crepes",
+        "title": "Crêpes med alt"
+      },
+      {
+        "id": "kebab",
+        "title": "Kebab i skogen"
+      }
+    ],
+    "tallerken": [
+      {
+        "id": "crepes",
+        "title": "Crêpes med alt"
+      },
+      {
+        "id": "mulligatawny",
+        "title": "Mulligatawny-suppe"
+      }
+    ],
+    "kniv og skjærebrett": [
+      {
+        "id": "crepes",
+        "title": "Crêpes med alt"
+      }
+    ],
+    "mørk sjokolade": [
+      {
+        "id": "sjokoladesaus",
+        "title": "Sjokoladesaus"
+      }
+    ],
+    "multer": [
+      {
+        "id": "multesirup",
+        "title": "Multesirup"
+      }
+    ],
+    "rabarbra": [
+      {
+        "id": "rabarbrasirup",
+        "title": "Rabarbrasirup"
+      }
+    ],
+    "grønne eple": [
+      {
+        "id": "limesorbet",
+        "title": "Limesorbet med rabarbrasirup"
+      },
+      {
+        "id": "mulligatawny",
+        "title": "Mulligatawny-suppe"
+      },
+      {
+        "id": "ribbe",
+        "title": "Juleribbe"
+      }
+    ],
+    "mynteblader": [
+      {
+        "id": "limesorbet",
+        "title": "Limesorbet med rabarbrasirup"
+      },
+      {
+        "id": "larpgai",
+        "title": "Larp Gai - kyllingsalat"
+      }
+    ],
+    "glukosesirup": [
+      {
+        "id": "limesorbet",
+        "title": "Limesorbet med rabarbrasirup"
+      }
+    ],
+    "minimarshmallows": [
+      {
+        "id": "limesorbet",
+        "title": "Limesorbet med rabarbrasirup"
+      }
+    ],
+    "jordbær": [
+      {
+        "id": "limesorbet",
+        "title": "Limesorbet med rabarbrasirup"
+      },
+      {
+        "id": "jordbær-og-mascarpone",
+        "title": "Jordbær med mascarponekrem"
+      }
+    ],
+    "<a href='/oppskrift/rabarbrasirup'>rabarbrasirup</a>": [
+      {
+        "id": "limesorbet",
+        "title": "Limesorbet med rabarbrasirup"
+      },
+      {
+        "id": "rabarbramimosa",
+        "title": "Rabarbramimosa"
+      }
+    ],
+    "romtemperert egg": [
+      {
+        "id": "majones",
+        "title": "Majones"
+      }
+    ],
+    "lime eller sitron": [
+      {
+        "id": "majones",
+        "title": "Majones"
+      }
+    ],
+    "sriracha": [
+      {
+        "id": "majones",
+        "title": "Majones"
+      },
+      {
+        "id": "grillspyd",
+        "title": "Grillspyd med tilbehør"
+      }
+    ],
+    "beter": [
+      {
+        "id": "betesalat",
+        "title": "Betesalat"
+      }
+    ],
+    "rosmarin": [
+      {
+        "id": "betesalat",
+        "title": "Betesalat"
+      },
+      {
+        "id": "ribbe",
+        "title": "Juleribbe"
+      }
+    ],
+    "pekan": [
+      {
+        "id": "betesalat",
+        "title": "Betesalat"
+      }
+    ],
+    "chevre": [
+      {
+        "id": "betesalat",
+        "title": "Betesalat"
+      }
+    ],
+    "salat": [
+      {
+        "id": "betesalat",
+        "title": "Betesalat"
+      }
+    ],
+    "havsalt": [
+      {
+        "id": "betesalat",
+        "title": "Betesalat"
+      }
+    ],
+    "melis": [
+      {
+        "id": "eplepai",
+        "title": "Kari's eplepai"
+      },
+      {
+        "id": "pepperkaker",
+        "title": "Pepperkaker 2.0"
+      },
+      {
+        "id": "formkake",
+        "title": "Farmors formkake"
+      },
+      {
+        "id": "jordbær-og-mascarpone",
+        "title": "Jordbær med mascarponekrem"
+      },
+      {
+        "id": "bringebærpai",
+        "title": "Bringebærpai"
+      },
+      {
+        "id": "sitronterte",
+        "title": "Sitronterte med marengs"
+      },
+      {
+        "id": "marsipan",
+        "title": "Marsipan"
+      }
+    ],
+    "bakepulver": [
+      {
+        "id": "eplepai",
+        "title": "Kari's eplepai"
+      },
+      {
+        "id": "formkake",
+        "title": "Farmors formkake"
+      },
+      {
+        "id": "eplekake",
+        "title": "Eplekake"
+      },
+      {
+        "id": "yoghurtbrød",
+        "title": "Yoghurtbrød"
+      }
+    ],
+    "eple": [
+      {
+        "id": "eplepai",
+        "title": "Kari's eplepai"
+      },
+      {
+        "id": "ribbe",
+        "title": "Juleribbe"
+      }
+    ],
+    "sukker og kanel": [
+      {
+        "id": "eplepai",
+        "title": "Kari's eplepai"
+      }
+    ],
+    "viltkjøtt": [
+      {
+        "id": "viltgryte",
+        "title": "Viltgryte med tyttebær"
+      }
+    ],
+    "kraft": [
+      {
+        "id": "viltgryte",
+        "title": "Viltgryte med tyttebær"
+      }
+    ],
+    "einebær": [
+      {
+        "id": "viltgryte",
+        "title": "Viltgryte med tyttebær"
+      }
+    ],
+    "rørosrømme": [
+      {
+        "id": "viltgryte",
+        "title": "Viltgryte med tyttebær"
+      }
+    ],
+    "ripsgelè": [
+      {
+        "id": "viltgryte",
+        "title": "Viltgryte med tyttebær"
+      }
+    ],
+    "<a href='/oppskrift/multesirup'>multesirup</a>": [
+      {
+        "id": "viltgryte",
+        "title": "Viltgryte med tyttebær"
+      },
+      {
+        "id": "multedrink",
+        "title": "Satans gin&bær"
+      }
+    ],
+    "tyttebær": [
+      {
+        "id": "viltgryte",
+        "title": "Viltgryte med tyttebær"
+      }
+    ],
+    "spekk": [
+      {
+        "id": "medisterfest",
+        "title": "Medisterfest!"
+      }
+    ],
+    "potetmel": [
+      {
+        "id": "medisterfest",
+        "title": "Medisterfest!"
+      }
+    ],
+    "nellik": [
+      {
+        "id": "medisterfest",
+        "title": "Medisterfest!"
+      },
+      {
+        "id": "vørterbrød",
+        "title": "Vørterbrød"
+      },
+      {
+        "id": "pepperkaker",
+        "title": "Pepperkaker 2.0"
+      },
+      {
+        "id": "kebab",
+        "title": "Kebab i skogen"
+      }
+    ],
+    "svinetarm": [
+      {
+        "id": "medisterfest",
+        "title": "Medisterfest!"
+      }
+    ],
+    "allehåndekrydder": [
+      {
+        "id": "medisterfest",
+        "title": "Medisterfest!"
+      }
+    ],
+    "smør og olje": [
+      {
+        "id": "medisterfest",
+        "title": "Medisterfest!"
+      }
+    ],
+    "vaniljesukker": [
+      {
+        "id": "kokosmakroner",
+        "title": "Kokosmakroner"
+      },
+      {
+        "id": "eplekake",
+        "title": "Eplekake"
+      },
+      {
+        "id": "brentemandler",
+        "title": "Brente mandler"
+      }
+    ],
+    "kokosmasse": [
+      {
+        "id": "kokosmakroner",
+        "title": "Kokosmakroner"
+      }
+    ],
+    "vørterøl": [
+      {
+        "id": "vørterbrød",
+        "title": "Vørterbrød"
+      }
+    ],
+    "finmalt pepper": [
+      {
+        "id": "vørterbrød",
+        "title": "Vørterbrød"
+      }
+    ],
+    "mørk sirup": [
+      {
+        "id": "vørterbrød",
+        "title": "Vørterbrød"
+      },
+      {
+        "id": "pepperkaker",
+        "title": "Pepperkaker 2.0"
+      }
+    ],
+    "finmalt rugmel": [
+      {
+        "id": "vørterbrød",
+        "title": "Vørterbrød"
+      }
+    ],
+    "rosiner": [
+      {
+        "id": "vørterbrød",
+        "title": "Vørterbrød"
+      }
+    ],
+    "bringebær": [
+      {
+        "id": "juleflesk",
+        "title": "Juleflesk"
+      },
+      {
+        "id": "bringebærpai",
+        "title": "Bringebærpai"
+      },
+      {
+        "id": "bringebaer-sour",
+        "title": "Bringebær sour"
+      }
+    ],
+    "gelatinplater": [
+      {
+        "id": "juleflesk",
+        "title": "Juleflesk"
+      }
+    ],
+    "bringebærsirup": [
+      {
+        "id": "juleflesk",
+        "title": "Juleflesk"
+      }
+    ],
+    "finkornet sukker (eventuelt morte litt sukker)": [
+      {
+        "id": "juleflesk",
+        "title": "Juleflesk"
+      }
+    ],
+    "natron": [
+      {
+        "id": "pepperkaker",
+        "title": "Pepperkaker 2.0"
+      }
+    ],
+    "mandler": [
+      {
+        "id": "pepperkaker",
+        "title": "Pepperkaker 2.0"
+      },
+      {
+        "id": "sommerkaal-med-parmesansaus",
+        "title": "Sommerkål med parmesansaus"
+      },
+      {
+        "id": "marsipan",
+        "title": "Marsipan"
+      },
+      {
+        "id": "brentemandler",
+        "title": "Brente mandler"
+      }
+    ],
+    "plastfolie og bakepapir": [
+      {
+        "id": "pepperkaker",
+        "title": "Pepperkaker 2.0"
+      }
+    ],
+    "søtpotet": [
+      {
+        "id": "mulligatawny",
+        "title": "Mulligatawny-suppe"
+      }
+    ],
+    "smør og/eller olje": [
+      {
+        "id": "mulligatawny",
+        "title": "Mulligatawny-suppe"
+      }
+    ],
+    "<a href='/oppskrift/karripulver'>karripulver</a>": [
+      {
+        "id": "mulligatawny",
+        "title": "Mulligatawny-suppe"
+      }
+    ],
+    "<a href='/oppskrift/kyllingkraft'>kyllingkraft</a> eller <a href='/oppskrift/grønnsakskraft'>grønnsakskraft</a>": [
+      {
+        "id": "mulligatawny",
+        "title": "Mulligatawny-suppe"
+      }
+    ],
+    "nanbrød og mangochutney": [
+      {
+        "id": "mulligatawny",
+        "title": "Mulligatawny-suppe"
+      }
+    ],
+    "stormkjøkken med kjele og stekepanne": [
+      {
+        "id": "mulligatawny",
+        "title": "Mulligatawny-suppe"
+      }
+    ],
+    "sennespsfrø": [
+      {
+        "id": "karripulver",
+        "title": "Karripulver"
+      }
+    ],
+    "hele spisskummenfrø": [
+      {
+        "id": "karripulver",
+        "title": "Karripulver"
+      }
+    ],
+    "hele kardemommekapsler": [
+      {
+        "id": "karripulver",
+        "title": "Karripulver"
+      }
+    ],
+    "spansk paprikapulver": [
+      {
+        "id": "karripulver",
+        "title": "Karripulver"
+      }
+    ],
+    "skrei/torsk": [
+      {
+        "id": "chili-skrei",
+        "title": "Ovnsbakt skrei"
+      }
+    ],
+    "frisk koriander": [
+      {
+        "id": "chili-skrei",
+        "title": "Ovnsbakt skrei"
+      },
+      {
+        "id": "crying-tiger",
+        "title": "Crying tiger entrecôte"
+      }
+    ],
+    "brokkolini/stk brokkoli)": [
+      {
+        "id": "chili-skrei",
+        "title": "Ovnsbakt skrei"
+      }
+    ],
+    "oystersauce": [
+      {
+        "id": "chili-skrei",
+        "title": "Ovnsbakt skrei"
+      }
+    ],
+    "kokt ris": [
+      {
+        "id": "chili-skrei",
+        "title": "Ovnsbakt skrei"
+      }
+    ],
+    "spisskummin": [
+      {
+        "id": "tacokrydder",
+        "title": "Tacokrydder"
+      },
+      {
+        "id": "kebab",
+        "title": "Kebab i skogen"
+      }
+    ],
+    "sellerisalt": [
+      {
+        "id": "tacokrydder",
+        "title": "Tacokrydder"
+      }
+    ],
+    "oragano": [
+      {
+        "id": "tacokrydder",
+        "title": "Tacokrydder"
+      }
+    ],
+    "purreaske": [
+      {
+        "id": "tacokrydder",
+        "title": "Tacokrydder"
+      }
+    ],
+    "chiliflak": [
+      {
+        "id": "tacokrydder",
+        "title": "Tacokrydder"
+      }
+    ],
+    "purrer": [
+      {
+        "id": "tacokrydder",
+        "title": "Tacokrydder"
+      }
+    ],
+    "sellerifrø": [
+      {
+        "id": "tacokrydder",
+        "title": "Tacokrydder"
+      }
+    ],
+    "romtemperert smør": [
+      {
+        "id": "formkake",
+        "title": "Farmors formkake"
+      },
+      {
+        "id": "eplekake",
+        "title": "Eplekake"
+      }
+    ],
+    "oksekjøtt": [
+      {
+        "id": "kebab",
+        "title": "Kebab i skogen"
+      }
+    ],
+    "yoghurt naturell": [
+      {
+        "id": "kebab",
+        "title": "Kebab i skogen"
+      }
+    ],
+    "knust korianderfrø": [
+      {
+        "id": "kebab",
+        "title": "Kebab i skogen"
+      }
+    ],
+    "kardemomme": [
+      {
+        "id": "kebab",
+        "title": "Kebab i skogen"
+      },
+      {
+        "id": "eplekake",
+        "title": "Eplekake"
+      },
+      {
+        "id": "munker",
+        "title": "Munker"
+      }
+    ],
+    "tørket": [
+      {
+        "id": "kebab",
+        "title": "Kebab i skogen"
+      }
+    ],
+    "til steking": [
+      {
+        "id": "kebab",
+        "title": "Kebab i skogen"
+      }
+    ],
+    "frisk mynte": [
+      {
+        "id": "kebab",
+        "title": "Kebab i skogen"
+      },
+      {
+        "id": "røska-lam",
+        "title": "Røska lam"
+      }
+    ],
+    "med salt og pepper": [
+      {
+        "id": "kebab",
+        "title": "Kebab i skogen"
+      },
+      {
+        "id": "salsa-verde",
+        "title": "Poteter med salsa verde"
+      }
+    ],
+    "stormkjøkken med panne": [
+      {
+        "id": "kebab",
+        "title": "Kebab i skogen"
+      }
+    ],
+    "tallerkener og bestikk": [
+      {
+        "id": "kebab",
+        "title": "Kebab i skogen"
+      }
+    ],
+    "kyllingfilet/lår uten skinnvog ben": [
+      {
+        "id": "larpgai",
+        "title": "Larp Gai - kyllingsalat"
+      }
+    ],
+    "hvitløksfedd": [
+      {
+        "id": "larpgai",
+        "title": "Larp Gai - kyllingsalat"
+      },
+      {
+        "id": "salsa-verde",
+        "title": "Poteter med salsa verde"
+      },
+      {
+        "id": "sopprisotto",
+        "title": "Sopprisotto"
+      }
+    ],
+    "spisskål": [
+      {
+        "id": "larpgai",
+        "title": "Larp Gai - kyllingsalat"
+      }
+    ],
+    "mørt biffkjøtt.": [
+      {
+        "id": "grillspyd",
+        "title": "Grillspyd med tilbehør"
+      }
+    ],
+    "solsikkeolje eller annen nøytral olje": [
+      {
+        "id": "grillspyd",
+        "title": "Grillspyd med tilbehør"
+      }
+    ],
+    "lite hvitløksfedd": [
+      {
+        "id": "grillspyd",
+        "title": "Grillspyd med tilbehør"
+      }
+    ],
+    "babyleaf": [
+      {
+        "id": "grillspyd",
+        "title": "Grillspyd med tilbehør"
+      }
+    ],
+    "hvitvin-": [
+      {
+        "id": "grillspyd",
+        "title": "Grillspyd med tilbehør"
+      }
+    ],
+    "skallet og saften av økologisk sitron": [
+      {
+        "id": "grillspyd",
+        "title": "Grillspyd med tilbehør"
+      }
+    ],
+    "sennepsfrø": [
+      {
+        "id": "grillspyd",
+        "title": "Grillspyd med tilbehør"
+      },
+      {
+        "id": "gravet-laks",
+        "title": "Gravet laks med fennikelsalat"
+      }
+    ],
+    "olivelolje": [
+      {
+        "id": "grillspyd",
+        "title": "Grillspyd med tilbehør"
+      }
+    ],
+    "varmt vann": [
+      {
+        "id": "grillspyd",
+        "title": "Grillspyd med tilbehør"
+      }
+    ],
+    "ansjonsfilet": [
+      {
+        "id": "grillspyd",
+        "title": "Grillspyd med tilbehør"
+      }
+    ],
+    "norske eple": [
+      {
+        "id": "eplekake",
+        "title": "Eplekake"
+      }
+    ],
+    "brunt sukker på toppena av kaka": [
+      {
+        "id": "eplekake",
+        "title": "Eplekake"
+      }
+    ],
+    "laks eller ørretfilet med skinn": [
+      {
+        "id": "gravet-laks",
+        "title": "Gravet laks med fennikelsalat"
+      }
+    ],
+    "frisk dill": [
+      {
+        "id": "gravet-laks",
+        "title": "Gravet laks med fennikelsalat"
+      }
+    ],
+    "akevitt": [
+      {
+        "id": "gravet-laks",
+        "title": "Gravet laks med fennikelsalat"
+      }
+    ],
+    "eggeplomme": [
+      {
+        "id": "gravet-laks",
+        "title": "Gravet laks med fennikelsalat"
+      },
+      {
+        "id": "roastbeef",
+        "title": "Vannbakkels med roastbeef"
+      }
+    ],
+    "sennep": [
+      {
+        "id": "gravet-laks",
+        "title": "Gravet laks med fennikelsalat"
+      },
+      {
+        "id": "ribbe",
+        "title": "Juleribbe"
+      }
+    ],
+    "solsikkeolje/rapsolje": [
+      {
+        "id": "gravet-laks",
+        "title": "Gravet laks med fennikelsalat"
+      }
+    ],
+    "grønt eple": [
+      {
+        "id": "gravet-laks",
+        "title": "Gravet laks med fennikelsalat"
+      }
+    ],
+    "reddiker": [
+      {
+        "id": "gravet-laks",
+        "title": "Gravet laks med fennikelsalat"
+      }
+    ],
+    "seterrømme": [
+      {
+        "id": "gravet-laks",
+        "title": "Gravet laks med fennikelsalat"
+      }
+    ],
+    "pepperrot": [
+      {
+        "id": "gravet-laks",
+        "title": "Gravet laks med fennikelsalat"
+      }
+    ],
+    "mascarpone": [
+      {
+        "id": "jordbær-og-mascarpone",
+        "title": "Jordbær med mascarponekrem"
+      },
+      {
+        "id": "potetsalat",
+        "title": "Potetsalat"
+      }
+    ],
+    "limeskall": [
+      {
+        "id": "jordbær-og-mascarpone",
+        "title": "Jordbær med mascarponekrem"
+      }
+    ],
+    "små nypotet": [
+      {
+        "id": "salsa-verde",
+        "title": "Poteter med salsa verde"
+      }
+    ],
+    "kapers": [
+      {
+        "id": "salsa-verde",
+        "title": "Poteter med salsa verde"
+      },
+      {
+        "id": "potetsalat",
+        "title": "Potetsalat"
+      }
+    ],
+    "ansjosfileter": [
+      {
+        "id": "salsa-verde",
+        "title": "Poteter med salsa verde"
+      }
+    ],
+    "extra virgin olivenolje": [
+      {
+        "id": "salsa-verde",
+        "title": "Poteter med salsa verde"
+      }
+    ],
+    "fetaost": [
+      {
+        "id": "fetadipp",
+        "title": "Fetadipp"
+      }
+    ],
+    "frisk oregano": [
+      {
+        "id": "fetadipp",
+        "title": "Fetadipp"
+      }
+    ],
+    "naturell yoghurt": [
+      {
+        "id": "yoghurtbrød",
+        "title": "Yoghurtbrød"
+      }
+    ],
+    "mel": [
+      {
+        "id": "munker",
+        "title": "Munker"
+      }
+    ],
+    "nøytral eddik": [
+      {
+        "id": "sriracha",
+        "title": "Sriracha"
+      }
+    ],
+    "entrecôte per porsjon": [
+      {
+        "id": "crying-tiger",
+        "title": "Crying tiger entrecôte"
+      }
+    ],
+    "finsnittet rød chili": [
+      {
+        "id": "crying-tiger",
+        "title": "Crying tiger entrecôte"
+      }
+    ],
+    "rå ukokt jasminris": [
+      {
+        "id": "crying-tiger",
+        "title": "Crying tiger entrecôte"
+      }
+    ],
+    "finkuttet sjalottløk": [
+      {
+        "id": "crying-tiger",
+        "title": "Crying tiger entrecôte"
+      }
+    ],
+    "nyplukket steinsopp": [
+      {
+        "id": "sopprisotto",
+        "title": "Sopprisotto"
+      }
+    ],
+    "risottoris": [
+      {
+        "id": "sopprisotto",
+        "title": "Sopprisotto"
+      }
+    ],
+    "finhakket persille": [
+      {
+        "id": "sopprisotto",
+        "title": "Sopprisotto"
+      }
+    ],
+    "finhakket gressløk": [
+      {
+        "id": "sopprisotto",
+        "title": "Sopprisotto"
+      }
+    ],
+    "et dryss knust svart kardemomme": [
+      {
+        "id": "sopprisotto",
+        "title": "Sopprisotto"
+      }
+    ],
+    "kaldt meierismør": [
+      {
+        "id": "bringebærpai",
+        "title": "Bringebærpai"
+      }
+    ],
+    "mandelmel": [
+      {
+        "id": "bringebærpai",
+        "title": "Bringebærpai"
+      }
+    ],
+    "gelatin": [
+      {
+        "id": "bringebærpai",
+        "title": "Bringebærpai"
+      }
+    ],
+    "kylling/grønnsakskraft": [
+      {
+        "id": "gulrotsuppe",
+        "title": "Gulrotsuppe"
+      }
+    ],
+    "chorizo": [
+      {
+        "id": "gulrotsuppe",
+        "title": "Gulrotsuppe"
+      }
+    ],
+    "sorte eller brune bønner": [
+      {
+        "id": "vegetartaco",
+        "title": "Vegetartaco"
+      }
+    ],
+    "<a href='/oppskrift/sriracha'>sriracha</a>": [
+      {
+        "id": "vegetartaco",
+        "title": "Vegetartaco"
+      }
+    ],
+    "akasie honning": [
+      {
+        "id": "vegetartaco",
+        "title": "Vegetartaco"
+      }
+    ],
+    "mer koriander": [
+      {
+        "id": "vegetartaco",
+        "title": "Vegetartaco"
+      }
+    ],
+    "vann etter ønske": [
+      {
+        "id": "enkel-tomatsaus",
+        "title": "Enkel tomatsaus"
+      }
+    ],
+    "salt og sukker": [
+      {
+        "id": "enkel-tomatsaus",
+        "title": "Enkel tomatsaus"
+      }
+    ],
+    "lunket vann": [
+      {
+        "id": "panini",
+        "title": "Panini på norsk"
+      }
+    ],
+    "flaksalt": [
+      {
+        "id": "panini",
+        "title": "Panini på norsk"
+      },
+      {
+        "id": "porchetta",
+        "title": "Porchetta"
+      }
+    ],
+    "romtemperert meierismør": [
+      {
+        "id": "panini",
+        "title": "Panini på norsk"
+      }
+    ],
+    "ferske mozzarella": [
+      {
+        "id": "panini",
+        "title": "Panini på norsk"
+      }
+    ],
+    "ribberull eller annet pålegg som passer. (tomat": [
+      {
+        "id": "panini",
+        "title": "Panini på norsk"
+      }
+    ],
+    "gin": [
+      {
+        "id": "multedrink",
+        "title": "Satans gin&bær"
+      },
+      {
+        "id": "innigranskudden",
+        "title": "Innigranskudden"
+      },
+      {
+        "id": "oestberg-skudd",
+        "title": "Østberg-skudd"
+      }
+    ],
+    "isbiter": [
+      {
+        "id": "multedrink",
+        "title": "Satans gin&bær"
+      },
+      {
+        "id": "innigranskudden",
+        "title": "Innigranskudden"
+      },
+      {
+        "id": "rabarbramimosa",
+        "title": "Rabarbramimosa"
+      },
+      {
+        "id": "bringebaer-sour",
+        "title": "Bringebær sour"
+      },
+      {
+        "id": "limoncello-sour",
+        "title": "Limoncello sour"
+      }
+    ],
+    "flatbiff av kalv": [
+      {
+        "id": "roastbeef",
+        "title": "Vannbakkels med roastbeef"
+      }
+    ],
+    "hyssing godkjent for matlaging": [
+      {
+        "id": "roastbeef",
+        "title": "Vannbakkels med roastbeef"
+      }
+    ],
+    "finhakket kapers": [
+      {
+        "id": "roastbeef",
+        "title": "Vannbakkels med roastbeef"
+      }
+    ],
+    "finhakket fersk bladpersille": [
+      {
+        "id": "roastbeef",
+        "title": "Vannbakkels med roastbeef"
+      }
+    ],
+    "sylteagurk": [
+      {
+        "id": "roastbeef",
+        "title": "Vannbakkels med roastbeef"
+      }
+    ],
+    "dryss salt": [
+      {
+        "id": "roastbeef",
+        "title": "Vannbakkels med roastbeef"
+      }
+    ],
+    "tørkede erter": [
+      {
+        "id": "sitronterte",
+        "title": "Sitronterte med marengs"
+      }
+    ],
+    "lammebog eller lammelår": [
+      {
+        "id": "røska-lam",
+        "title": "Røska lam"
+      }
+    ],
+    "eplejuice eller norsk eplesider": [
+      {
+        "id": "røska-lam",
+        "title": "Røska lam"
+      }
+    ],
+    "søt sennep": [
+      {
+        "id": "røska-lam",
+        "title": "Røska lam"
+      }
+    ],
+    "cayennepepper": [
+      {
+        "id": "røska-lam",
+        "title": "Røska lam"
+      }
+    ],
+    "tyrkisk yoghurt naturell": [
+      {
+        "id": "røska-lam",
+        "title": "Røska lam"
+      }
+    ],
+    "majones": [
+      {
+        "id": "røska-lam",
+        "title": "Røska lam"
+      },
+      {
+        "id": "potetsalat",
+        "title": "Potetsalat"
+      }
+    ],
+    "basmatiris": [
+      {
+        "id": "røska-lam",
+        "title": "Røska lam"
+      }
+    ],
+    "aprikos": [
+      {
+        "id": "røska-lam",
+        "title": "Røska lam"
+      }
+    ],
+    "pistasjnøtter": [
+      {
+        "id": "røska-lam",
+        "title": "Røska lam"
+      },
+      {
+        "id": "pasta-med-blaamuggost",
+        "title": "Pasta med blåmuggost"
+      }
+    ],
+    "granskudd": [
+      {
+        "id": "granskuddsirup",
+        "title": "Granskuddsirup"
+      }
+    ],
+    "<a href='/oppskrift/granskuddsirup'>granskuddsirup</a>": [
+      {
+        "id": "innigranskudden",
+        "title": "Innigranskudden"
+      },
+      {
+        "id": "oestberg-skudd",
+        "title": "Østberg-skudd"
+      }
+    ],
+    "sitronbrus uten sukker": [
+      {
+        "id": "rabarbramimosa",
+        "title": "Rabarbramimosa"
+      }
+    ],
+    "cremant": [
+      {
+        "id": "rabarbramimosa",
+        "title": "Rabarbramimosa"
+      }
+    ],
+    "gin eller bourbon": [
+      {
+        "id": "bringebaer-sour",
+        "title": "Bringebær sour"
+      }
+    ],
+    "sommerkål / nykål": [
+      {
+        "id": "sommerkaal-med-parmesansaus",
+        "title": "Sommerkål med parmesansaus"
+      }
+    ],
+    "finkuttet bladpersille": [
+      {
+        "id": "sommerkaal-med-parmesansaus",
+        "title": "Sommerkål med parmesansaus"
+      }
+    ],
+    "bacon": [
+      {
+        "id": "sommerkaal-med-parmesansaus",
+        "title": "Sommerkål med parmesansaus"
+      },
+      {
+        "id": "pasta-med-blaamuggost",
+        "title": "Pasta med blåmuggost"
+      },
+      {
+        "id": "porchetta",
+        "title": "Porchetta"
+      }
+    ],
+    "plukk noen spiselige blomster til pynt": [
+      {
+        "id": "sommerkaal-med-parmesansaus",
+        "title": "Sommerkål med parmesansaus"
+      }
+    ],
+    "følg <a href='/oppskrift/pasta'>denne pastaoppskriften her</a>": [
+      {
+        "id": "pasta-med-blaamuggost",
+        "title": "Pasta med blåmuggost"
+      }
+    ],
+    "grovkvernet pepper": [
+      {
+        "id": "pasta-med-blaamuggost",
+        "title": "Pasta med blåmuggost"
+      },
+      {
+        "id": "ribbe",
+        "title": "Juleribbe"
+      }
+    ],
+    "tipo 00 mel": [
+      {
+        "id": "pasta",
+        "title": "Pasta"
+      }
+    ],
+    "pastamaskin": [
+      {
+        "id": "pasta",
+        "title": "Pasta"
+      }
+    ],
+    "ramsløkblader": [
+      {
+        "id": "ramslokpuré",
+        "title": "Ramsløkpuré"
+      }
+    ],
+    "olivenolje så det dekker bladene": [
+      {
+        "id": "ramslokpuré",
+        "title": "Ramsløkpuré"
+      }
+    ],
+    "<a href='/oppskrift/ramslokpuré'>ramsløkpuré</a>": [
+      {
+        "id": "rodbet-med-lama",
+        "title": "Rødbet og lama"
+      }
+    ],
+    "smak": [
+      {
+        "id": "rodbet-med-lama",
+        "title": "Rødbet og lama"
+      }
+    ],
+    "rødbet": [
+      {
+        "id": "rodbet-med-lama",
+        "title": "Rødbet og lama"
+      }
+    ],
+    "plasthansker for mat": [
+      {
+        "id": "rodbet-med-lama",
+        "title": "Rødbet og lama"
+      }
+    ],
+    "speket lama": [
+      {
+        "id": "rodbet-med-lama",
+        "title": "Rødbet og lama"
+      }
+    ],
+    "saltet potetgull eller ristet pinjekjerner": [
+      {
+        "id": "rodbet-med-lama",
+        "title": "Rødbet og lama"
+      }
+    ],
+    "spirer og gressløk": [
+      {
+        "id": "rodbet-med-lama",
+        "title": "Rødbet og lama"
+      }
+    ],
+    "brød": [
+      {
+        "id": "toast",
+        "title": "Toast"
+      }
+    ],
+    "salsicciapølse": [
+      {
+        "id": "toast",
+        "title": "Toast"
+      }
+    ],
+    "jarlsberg": [
+      {
+        "id": "toast",
+        "title": "Toast"
+      }
+    ],
+    "brie": [
+      {
+        "id": "toast",
+        "title": "Toast"
+      }
+    ],
+    "spekepølse eller spekeskinke": [
+      {
+        "id": "toast",
+        "title": "Toast"
+      }
+    ],
+    "kraftkar": [
+      {
+        "id": "toast",
+        "title": "Toast"
+      }
+    ],
+    "oregano. gjerne frisk": [
+      {
+        "id": "toast",
+        "title": "Toast"
+      }
+    ],
+    "ribbe fra en glad gris": [
+      {
+        "id": "ribbe",
+        "title": "Juleribbe"
+      }
+    ],
+    "mørkt juleøl": [
+      {
+        "id": "ribbe",
+        "title": "Juleribbe"
+      }
+    ],
+    "hodekål": [
+      {
+        "id": "ribbe",
+        "title": "Juleribbe"
+      }
+    ],
+    "eplejuice": [
+      {
+        "id": "ribbe",
+        "title": "Juleribbe"
+      }
+    ],
+    "eddik 7%": [
+      {
+        "id": "ribbe",
+        "title": "Juleribbe"
+      }
+    ],
+    "karve": [
+      {
+        "id": "ribbe",
+        "title": "Juleribbe"
+      }
+    ],
+    "morenepotet eller småpoteter": [
+      {
+        "id": "ribbe",
+        "title": "Juleribbe"
+      }
+    ],
+    "grovt salt": [
+      {
+        "id": "ribbe",
+        "title": "Juleribbe"
+      }
+    ],
+    "stekesjy fra ribba": [
+      {
+        "id": "ribbe",
+        "title": "Juleribbe"
+      }
+    ],
+    "portvinsgelè": [
+      {
+        "id": "ribbe",
+        "title": "Juleribbe"
+      }
+    ],
+    "worchestersaus": [
+      {
+        "id": "ribbe",
+        "title": "Juleribbe"
+      }
+    ],
+    "tyttebær fra tyttebærturen i høst": [
+      {
+        "id": "ribbe",
+        "title": "Juleribbe"
+      }
+    ],
+    "svisker": [
+      {
+        "id": "ribbe",
+        "title": "Juleribbe"
+      }
+    ],
+    "stekefett fra medisterkaker/pølser": [
+      {
+        "id": "ribbe",
+        "title": "Juleribbe"
+      }
+    ],
+    "<a href='/oppskrift/medisterfest'>medisterkaker</a>": [
+      {
+        "id": "ribbe",
+        "title": "Juleribbe"
+      }
+    ],
+    "stekeform som er ca like stor som ribba": [
+      {
+        "id": "ribbe",
+        "title": "Juleribbe"
+      }
+    ],
+    "tynnribbe av god kvalitet": [
+      {
+        "id": "porchetta",
+        "title": "Porchetta"
+      }
+    ],
+    "olivenolje og salt": [
+      {
+        "id": "porchetta",
+        "title": "Porchetta"
+      }
+    ],
+    "økologisk sitron": [
+      {
+        "id": "porchetta",
+        "title": "Porchetta"
+      }
+    ],
+    "frisk rosmarin": [
+      {
+        "id": "porchetta",
+        "title": "Porchetta"
+      }
+    ],
+    "friske salvieblader": [
+      {
+        "id": "porchetta",
+        "title": "Porchetta"
+      }
+    ],
+    "mandelpotet": [
+      {
+        "id": "porchetta",
+        "title": "Porchetta"
+      }
+    ],
+    "grovkornet svart pepper": [
+      {
+        "id": "porchetta",
+        "title": "Porchetta"
+      }
+    ],
+    "rødkål": [
+      {
+        "id": "porchetta",
+        "title": "Porchetta"
+      }
+    ],
+    "eplesidereddik": [
+      {
+        "id": "porchetta",
+        "title": "Porchetta"
+      }
+    ],
+    "sprit": [
+      {
+        "id": "limoncello",
+        "title": "Limoncello"
+      }
+    ],
+    "sil": [
+      {
+        "id": "limoncello",
+        "title": "Limoncello"
+      }
+    ],
+    "melen potet": [
+      {
+        "id": "potetlomper",
+        "title": "Potetlomper"
+      }
+    ],
+    "siktet rugmel": [
+      {
+        "id": "potetlomper",
+        "title": "Potetlomper"
+      }
+    ],
+    "finsnittet gressløk": [
+      {
+        "id": "potetsalat",
+        "title": "Potetsalat"
+      }
+    ],
+    "finhakket kruspersille": [
+      {
+        "id": "potetsalat",
+        "title": "Potetsalat"
+      }
+    ],
+    "finhakket estragon": [
+      {
+        "id": "potetsalat",
+        "title": "Potetsalat"
+      }
+    ],
+    "sylta agurk": [
+      {
+        "id": "potetsalat",
+        "title": "Potetsalat"
+      }
+    ],
+    "finhakket ansjonsfilet": [
+      {
+        "id": "potetsalat",
+        "title": "Potetsalat"
+      }
+    ],
+    "finhakket rødløk": [
+      {
+        "id": "potetsalat",
+        "title": "Potetsalat"
+      }
+    ],
+    "kokt vann": [
+      {
+        "id": "limoncello-sour",
+        "title": "Limoncello sour"
+      }
+    ],
+    "<a href='/oppskrift/limoncello'>limoncello</a>": [
+      {
+        "id": "limoncello-sour",
+        "title": "Limoncello sour"
+      }
+    ],
+    "ren sitronsaft": [
+      {
+        "id": "limoncello-sour",
+        "title": "Limoncello sour"
+      }
+    ],
+    "oloi saccharum sitron": [
+      {
+        "id": "limoncello-sour",
+        "title": "Limoncello sour"
+      }
+    ],
+    "<a href='https://www.vinmonopolet.no/land/trinidad": [
+      {
+        "id": "limoncello-sour",
+        "title": "Limoncello sour"
+      }
+    ],
+    "ferskpresset lime": [
+      {
+        "id": "oestberg-skudd",
+        "title": "Østberg-skudd"
+      }
+    ]
+  }
+}
