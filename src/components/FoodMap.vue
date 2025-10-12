@@ -203,7 +203,8 @@
 
   <!-- List View -->
   <div :class="['restaurant-list', { hidden: !isActive }]">
-    <div v-if="filteredMarkers.length === 0" class="no-results">
+    <Loader v-if="isLoading" text="Laster restauranter..." />
+    <div v-else-if="filteredMarkers.length === 0" class="no-results">
       <div class="no-results-content">
         <h3>Ingen restauranter funnet</h3>
         <p>Prøv å endre søkekriteriene dine</p>
@@ -269,6 +270,7 @@ import { LMap, LTileLayer, LMarker, LIcon } from "@vue-leaflet/vue-leaflet";
 import FoodMapDescription from "./FoodMapDescription.vue";
 import dataService from "../services/dataService.js";
 import ToggleButton from "./ToggleButton.vue";
+import Loader from "./Loader.vue";
 
 export default {
   components: {
@@ -278,6 +280,7 @@ export default {
     LIcon,
     FoodMapDescription,
     ToggleButton,
+    Loader,
   },
   data() {
     // Base cities with known coordinates
@@ -351,6 +354,7 @@ export default {
       showAllTags: false,
       maxVisibleTags: 6,
       selectedMarker: null,
+      isLoading: true,
     };
   },
   methods: {
@@ -538,8 +542,10 @@ export default {
     },
 
     loadRestaurants() {
+      this.isLoading = true;
       this.markers = dataService.getRestaurants();
       const dataInfo = dataService.getDataSourceInfo();
+      this.isLoading = false;
     },
 
     clearSearch() {

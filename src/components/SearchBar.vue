@@ -175,38 +175,43 @@
 
       <!-- Search Results -->
       <div class="fs-search-bar__results">
-        <p class="fs-search-bar__searchtxt" v-if="sortedItems.length >= 2">
-          Du fant {{ sortedItems.length }} oppskrifter
-        </p>
-        <p
-          class="fs-search-bar__searchtxt"
-          v-else-if="sortedItems.length === 1"
-        >
-          Du fant {{ sortedItems.length }} oppskrift
-        </p>
-        <div class="fs-search-bar__searchtxt" v-else>
-          <p>
-            <span v-if="search"
-              >Ingen oppskrifter funnet for "{{ search }}"</span
-            >
-            <span v-else>Ingen oppskrifter funnet med de valgte filtrene</span>
-            <span style="font-size: 50px">🙈</span>
+        <Loader v-if="isLoading" text="Laster oppskrifter..." />
+        <template v-else>
+          <p class="fs-search-bar__searchtxt" v-if="sortedItems.length >= 2">
+            Du fant {{ sortedItems.length }} oppskrifter
           </p>
-          <p>Be oss om å lage det!</p>
-        </div>
-
-        <Grid v-if="sortedItems.length > 0" :single-column="true">
-          <div v-for="recipe in recipeShowed" :key="recipe.id">
-            <SmallCards
-              :title="recipe.title"
-              :description="recipe.description"
-              :image="recipe.imageurl"
-              :href="'/oppskrift/' + recipe.id"
-              :difficulty="calculateDifficulty(recipe)"
-              :category="recipe.category"
-            />
+          <p
+            class="fs-search-bar__searchtxt"
+            v-else-if="sortedItems.length === 1"
+          >
+            Du fant {{ sortedItems.length }} oppskrift
+          </p>
+          <div class="fs-search-bar__searchtxt" v-else>
+            <p>
+              <span v-if="search"
+                >Ingen oppskrifter funnet for "{{ search }}"</span
+              >
+              <span v-else
+                >Ingen oppskrifter funnet med de valgte filtrene</span
+              >
+              <span style="font-size: 50px">🙈</span>
+            </p>
+            <p>Be oss om å lage det!</p>
           </div>
-        </Grid>
+
+          <Grid v-if="sortedItems.length > 0" :single-column="true">
+            <div v-for="recipe in recipeShowed" :key="recipe.id">
+              <SmallCards
+                :title="recipe.title"
+                :description="recipe.description"
+                :image="recipe.imageurl"
+                :href="'/oppskrift/' + recipe.id"
+                :difficulty="calculateDifficulty(recipe)"
+                :category="recipe.category"
+              />
+            </div>
+          </Grid>
+        </template>
       </div>
     </div>
 
@@ -245,6 +250,7 @@ import Grid from "./Grid.vue";
 import FilterBox from "./FilterBox.vue";
 import FilterBoxBottomSheet from "./FilterBoxBottomSheet.vue";
 import Badge from "./Badge.vue";
+import Loader from "./Loader.vue";
 import { RecipeSearchIndex } from "../utils/searchIndex";
 import {
   calculateDifficulty,
@@ -259,6 +265,7 @@ export default {
     FilterBox,
     FilterBoxBottomSheet,
     Badge,
+    Loader,
   },
   props: {
     category: String,
@@ -286,6 +293,8 @@ export default {
       showHenrikModal: false,
       henrikTimer: null as any,
       henrikTimeRemaining: 0,
+      // Loading state
+      isLoading: true,
     };
   },
 
@@ -299,6 +308,10 @@ export default {
   mounted() {
     // Initialize search index
     this.searchIndex = new RecipeSearchIndex(this.recipes);
+    // Set loading to false after search index is ready
+    this.$nextTick(() => {
+      this.isLoading = false;
+    });
   },
 
   beforeDestroy() {
