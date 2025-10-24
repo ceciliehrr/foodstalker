@@ -917,11 +917,6 @@
             "details": ""
           },
           {
-            "quantity": "2 poser",
-            "name": "babyleaf salat",
-            "details": ""
-          },
-          {
             "quantity": "",
             "name": "olje",
             "details": "til steking"
@@ -967,6 +962,41 @@
             "details": ""
           }
         ]
+      },
+      {
+        "title": "Salat med vinaigrette",
+        "ingredients": [
+          {
+            "quantity": "2 poser",
+            "name": "babyleaf salat",
+            "details": ""
+          },
+          {
+            "quantity": "1 ss",
+            "name": "hvitvinseddik",
+            "details": ""
+          },
+          {
+            "quantity": "1 ss",
+            "name": "honning",
+            "details": ""
+          },
+          {
+            "quantity": "1 ss",
+            "name": "dijon sennep",
+            "details": ""
+          },
+          {
+            "quantity": "",
+            "name": "olivenolje",
+            "details": ""
+          },
+          {
+            "quantity": "smak til",
+            "name": "salt og pepper",
+            "details": ""
+          }
+        ]
       }
     ],
     "steps": [
@@ -998,6 +1028,7 @@
         "title": "",
         "description": "Rør inn hakket koriander i gryta og server med ris og agurksalat."
       },
+
       {
         "title": "Agurksalat",
         "description": "Kok opp sukker, vann, eddik, hakket chili og ingefær i en kjele. Avkjøl når sukkeret er oppløst."
@@ -1005,6 +1036,11 @@
       {
         "title": "",
         "description": "Del agurken i to, del akurkdelene på langs. Ta en skje og skrap ut kjernen av agurken. Dette er for å fjerne mest mulig vann, så laken holder på sin gode smak og agurken på sin sprø konsistens. Hakk sjalottløken og legg i bolle sammen med agurken. Ha laken over agurk og sjalottløken."
+      },
+
+      {
+        "title": "Vinaigrette til salaten",
+        "description": "Bland sammen alle ingrediensene til vinaigretten, hell over en god olivenolje til blandingen tykner og smak til med salt og pepper. Bland dressingen inn i salaten rett før servering."
       }
     ],
     "images": [
