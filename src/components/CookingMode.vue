@@ -184,8 +184,43 @@ export default {
         return "";
       }
 
-      // Handle fractions first (like "1/2 dl", "1/4 stk")
-      const fractionMatch = originalQuantity.match(/(\d+\/\d+)\s*([^\d\s\/]+)/);
+      // Handle ranges with fractions first (like "1/2-1 dl", "1/4-2 stk")
+      const rangeWithFractionMatch = originalQuantity.match(
+        /(\d+\/\d+)\s*-\s*([\d.]+)\s*([^\d\s\/-]+)/
+      );
+      if (rangeWithFractionMatch) {
+        const fraction = rangeWithFractionMatch[1];
+        const secondValue = rangeWithFractionMatch[2];
+        const unit = rangeWithFractionMatch[3];
+
+        // Convert fraction to decimal for calculation
+        const [numerator, denominator] = fraction.split("/").map(Number);
+        const decimalValue = numerator / denominator;
+        const secondNumericValue = parseFloat(secondValue);
+
+        // Adjust both values based on the selected portion
+        const adjustedFirst = (decimalValue / this.portions) * this.portion;
+        const adjustedSecond =
+          (secondNumericValue / this.portions) * this.portion;
+
+        // Format both values as decimals for consistency in ranges
+        const formattedFirst =
+          adjustedFirst % 1 === 0
+            ? adjustedFirst.toFixed(0)
+            : adjustedFirst.toFixed(1);
+
+        const formattedSecond =
+          adjustedSecond % 1 === 0
+            ? adjustedSecond.toFixed(0)
+            : adjustedSecond.toFixed(1);
+
+        return `${formattedFirst}-${formattedSecond} ${unit}`;
+      }
+
+      // Handle simple fractions (like "1/2 dl", "1/4 stk")
+      const fractionMatch = originalQuantity.match(
+        /(\d+\/\d+)\s*([^\d\s\/-]+)/
+      );
       if (fractionMatch) {
         const fraction = fractionMatch[1];
         const unit = fractionMatch[2];
@@ -197,24 +232,12 @@ export default {
         // Adjust the numeric value based on the selected portion
         const adjustedValue = (decimalValue / this.portions) * this.portion;
 
-        // Convert back to fraction if possible, otherwise use decimal
-        if (adjustedValue === 0.5) {
-          return `1/2 ${unit}`;
-        } else if (adjustedValue === 0.25) {
-          return `1/4 ${unit}`;
-        } else if (adjustedValue === 0.75) {
-          return `3/4 ${unit}`;
-        } else if (adjustedValue === 0.33) {
-          return `1/3 ${unit}`;
-        } else if (adjustedValue === 0.67) {
-          return `2/3 ${unit}`;
-        } else {
-          const formattedValue =
-            adjustedValue % 1 === 0
-              ? adjustedValue.toFixed(0)
-              : adjustedValue.toFixed(1);
-          return `${formattedValue} ${unit}`;
-        }
+        // Always format as decimal for consistency
+        const formattedValue =
+          adjustedValue % 1 === 0
+            ? adjustedValue.toFixed(0)
+            : adjustedValue.toFixed(1);
+        return `${formattedValue} ${unit}`;
       }
 
       // Extract the numeric value and unit from the original quantity
