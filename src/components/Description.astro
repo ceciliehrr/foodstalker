@@ -40,9 +40,9 @@ function formatTime(time: string | number | undefined): string {
 
 <div class="fs-description">
   <div class="fs-description__meta">
-    {recipe && <DifficultyBadge recipe={recipe} client:load />}
-    <Badge type="info" icon="🍽️" text={`${portions} posjoner`} client:load />
-    <Badge type="info" icon="⏱️" text={formatTime(time)} client:load />
+    {recipe && <DifficultyBadge recipe={recipe} client:idle />}
+    <Badge type="info" icon="🍽️" text={`${portions} posjoner`} client:idle />
+    <Badge type="info" icon="⏱️" text={formatTime(time)} client:idle />
   </div>
   <Divider grey />
 

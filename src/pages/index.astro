@@ -19,7 +19,7 @@ const sortedRecipes = recipes
 
 <Layout title="Forside">
   <IntroBanner />
-  <SearchBar client:load />
+  <SearchBar client:idle />
   <Divider text="Topp 5" />
   <TopList recipes={recipes} />
   <Divider text="Siste oppskrifter" />

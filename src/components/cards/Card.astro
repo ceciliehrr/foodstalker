@@ -41,12 +41,14 @@ const convertedDate = convertDate(date);
     <Image
       class="fs-card__picture"
       src={image}
-      alt=""
+      alt={title}
       width={800}
       height={300}
-      quality={100}
+      quality={80}
+      format="webp"
       decoding="async"
       loading="lazy"
+      sizes="(max-width: 768px) 100vw, 500px"
     />
   </div>
   <div class="fs-card__content">
@@ -59,7 +61,7 @@ const convertedDate = convertDate(date);
       </p>
     </div>
     <div class="fs-card__footer">
-      <DifficultyBadge recipe={recipe} client:load />
+      <DifficultyBadge recipe={recipe} client:idle />
 
       <div class="fs-card__footer-circle">
         <span>{getCategoryEmoji(emoji)}</span>

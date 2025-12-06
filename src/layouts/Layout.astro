@@ -38,6 +38,14 @@ const {
       content={new URL(Astro.url.pathname, Astro.site).href}
     />
     <link rel="icon" href="/logo-pink35x35.png" />
+
+    <!-- Resource hints for external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="https://plausible.io" />
+    <link rel="dns-prefetch" href="https://foodstalker.b-cdn.net" />
+
+    <!-- Analytics - load with better strategy -->
     <script
       defer
       data-domain="foodstalker.no"
@@ -47,7 +55,7 @@ const {
   </head>
 
   <body class={hideFoodstalkerLayout ? "" : "fs-body"}>
-    {!hideFoodstalkerLayout && <Navbar client:load />}
+    {!hideFoodstalkerLayout && <Navbar client:idle />}
     <main
       class={hideFoodstalkerLayout
         ? ""
@@ -55,6 +63,6 @@ const {
     >
       <slot />
     </main>
-    {!hideFoodstalkerLayout && <Footer client:load />}
+    {!hideFoodstalkerLayout && <Footer client:idle />}
   </body>
 </html>

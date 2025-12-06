@@ -1,7 +1,13 @@
 <template>
   <div class="image-gallery fade-in" id="gallery">
     <div class="image-gallery__images" v-for="image in images" :key="image.id">
-      <img class="image-gallery__image" :src="image.url" :alt="image.alt" />
+      <img
+        class="image-gallery__image"
+        :src="image.url"
+        :alt="image.alt || 'Recipe image'"
+        loading="lazy"
+        decoding="async"
+      />
     </div>
   </div>
 </template>

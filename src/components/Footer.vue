@@ -9,6 +9,8 @@
           alt="circle logo with lime"
           height="24"
           width="24"
+          loading="lazy"
+          decoding="async"
         />
         <p class="fs-footer-made-with-text">
           Made with <span>💖</span> from Pete&Cecilie
@@ -39,6 +41,8 @@
               aria-hidden="true"
               height="24"
               width="24"
+              loading="lazy"
+              decoding="async"
           /></a>
         </div>
       </div>
