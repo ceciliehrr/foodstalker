@@ -17,7 +17,7 @@
   "devDependencies": {
     "@astrojs/vue": "^5.1.1",
     "@vue-leaflet/vue-leaflet": "^0.10.1",
-    "astro": "^5.14.1",
+    "astro": "^5.16.4",
     "leaflet": "^1.9.4",
     "prettier": "^2.7.1",
     "prettier-plugin-astro": "^0.14.1",
