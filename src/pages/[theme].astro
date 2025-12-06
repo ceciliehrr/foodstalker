@@ -1,56 +1,59 @@
 ---
 import getRecipes from "../data/new_recipes.json";
-
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/cards/Card.astro";
-// emojis
-import tadaEmoji from "../assets/tema/party-popper-noto.svg";
 import Grid from "../components/Grid.vue";
 import Divider from "../components/Divider.astro";
-
-// Hent oppskrifter med "sommer" i nøkkelord
-const recipes = getRecipes;
-const seniorRecipes = recipes.filter((recipe) =>
-  recipe.keywords.includes("senior")
-);
+import { getTheme, getAllThemeSlugs } from "../config/themes.js";
 
 export async function getStaticPaths() {
-  // Bare én sti for "sommer"
-  return [
-    {
-      params: { keyword: "senior" },
-      props: {},
-    },
-  ];
+  const themeSlugs = getAllThemeSlugs();
+
+  return themeSlugs.map((slug) => ({
+    params: { theme: slug },
+    props: {},
+  }));
 }
+
+const { theme } = Astro.params;
+const themeConfig = getTheme(theme);
+
+// Return 404 if theme doesn't exist
+if (!themeConfig) {
+  return Astro.redirect("/404");
+}
+
+const recipes = getRecipes;
+const filteredRecipes = recipes.filter((recipe) =>
+  recipe.keywords.includes(themeConfig.keyword)
+);
 
 function capitalizeFirstLetter(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
 }
 ---
 
-<Layout
-  title="Senior Oppskrifter"
-  description="Oppdag deilige og enkle oppskrifter for seniorer. Perfekte for alle som ønsker å lage sunne og smakfulle måltider."
->
+<Layout title={themeConfig.title} description={themeConfig.description}>
   <div class="fs-category__emoji">
-    <img src={tadaEmoji.src} alt="senior emoji" aria-hidden="true" />
+    <img
+      src={themeConfig.emoji.src}
+      alt={`${themeConfig.keyword} emoji`}
+      aria-hidden="true"
+    />
   </div>
 
-  <Divider text={capitalizeFirstLetter("Gratulerer med 40 år, Petter")} />
+  {
+    themeConfig.dividerText && (
+      <Divider text={capitalizeFirstLetter(themeConfig.dividerText)} />
+    )
+  }
 
-  <p>
-    Velkommen til oppskrifter for eldre – for deg som vet at mat smaker best når
-    man har levd lenge nok til å ha smakt det meste. Her finner du retter som er
-    snille med tennene, gode for sjelen, passe krydret og litt gamle i stilen
-    (men aldri på dato). Vi har samlet våre beste oppskrifter som tar hensyn til
-    både fordøyelsen og nostalgien. Velbekomme!
-  </p>
+  {themeConfig.introText && <p>{themeConfig.introText}</p>}
 
   <Divider />
   <Grid>
     {
-      seniorRecipes.map((data) => (
+      filteredRecipes.map((data) => (
         <Card
           href={"/oppskrift/" + data.id}
           title={data.title}
