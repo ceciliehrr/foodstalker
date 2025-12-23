@@ -4,7 +4,7 @@ This directory contains scripts to clean and standardize recipe data.
 
 ## clean-existing-data.js
 
-This script cleans existing recipe data in `new_recipes.json` to ensure consistent formatting.
+This script cleans existing recipe data in `recipes.json` to ensure consistent formatting.
 
 ### What it does:
 
@@ -21,7 +21,7 @@ node clean-existing-data.js
 
 ### Before running:
 
-- The script will create a backup of your original data as `new_recipes_backup.json`
+- The script will create a backup of your original data as `recipes_backup.json`
 - Make sure you have a backup of your data before running the script
 
 ### Time format examples:

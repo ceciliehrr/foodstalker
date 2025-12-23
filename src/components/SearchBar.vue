@@ -244,7 +244,7 @@
 </template>
 
 <script lang="ts">
-import getRecipes from "../data/new_recipes.json";
+import getRecipes from "../data/recipes.json";
 import SmallCards from "./cards/SmallCards.vue";
 import Grid from "./Grid.vue";
 import FilterBox from "./FilterBox.vue";

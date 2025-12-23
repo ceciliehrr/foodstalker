@@ -27,7 +27,7 @@ app.post("/add-recipe", (req, res) => {
     const validatedRecipe = validateAndTransformRecipe(newRecipe);
 
     // Read the existing recipes from the file
-    const recipesPath = join(__dirname, "../../data/new_recipes.json");
+    const recipesPath = join(__dirname, "../../data/recipes.json");
     const existingRecipes = JSON.parse(fs.readFileSync(recipesPath, "utf8"));
 
     // Add the new recipe to the existing recipes

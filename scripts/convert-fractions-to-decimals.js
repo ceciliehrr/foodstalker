@@ -13,7 +13,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Path to the recipes data file
-const RECIPES_FILE = path.join(__dirname, "../src/data/new_recipes.json");
+const RECIPES_FILE = path.join(__dirname, "../src/data/recipes.json");
 
 /**
  * Convert a fraction string to decimal

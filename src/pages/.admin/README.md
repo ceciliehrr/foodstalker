@@ -7,7 +7,7 @@ node server.js
 ```
 
 - Legg til oppskrift.
-- Oppskrift blir lagt til i new_recipes.json i data mappa
+- Oppskrift blir lagt til i recipes.json i data mappa
 
 ### Forbedringer for datakvalitet:
 

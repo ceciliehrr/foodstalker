@@ -18,7 +18,7 @@
 </template>
 
 <script lang="ts">
-import getRecipes from "../data/new_recipes.json";
+import getRecipes from "../data/recipes.json";
 import {
   calculateDifficulty,
   getDifficultyIcon,

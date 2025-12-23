@@ -159,7 +159,7 @@ function cleanRecipe(recipe) {
 
 // Main function to clean all recipes
 function cleanAllRecipes() {
-  const dataPath = path.join(__dirname, "../../../data/new_recipes.json");
+  const dataPath = path.join(__dirname, "../../../data/recipes.json");
 
   try {
     console.log("Reading recipes from:", dataPath);
