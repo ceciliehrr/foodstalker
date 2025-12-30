@@ -17303,5 +17303,135 @@
       "gin",
       "fest"
     ]
+  },
+  {
+    "id": "brune-pinner",
+    "title": "Brune pinner",
+    "category": "søtt",
+    "date": "2025-12-30",
+    "description": "En av X slag til jul. Brune pinner er en av våre favoritter da vi var små. Få barndomsjulestemning med denne oppskriften!",
+    "longDescription": "Selv med relativt enkle ingredienser er det også her ulike tradisjoner på hvordan lage brune pinner. Tynne? Tykke? Stekt helt igjennom? Eller litt seighet i midten? Brun eller lys sirup? Toppes med sukker eller mandler? Alt er lov(e)!!",
+    "time": 30,
+    "portions": 50,
+    "tips": "Test med ulike toppinger, vi testet ut med hakket daimsjokolade. Det var digg! Test gjerne noe nytt!",
+    "chef": "Inger Marie",
+    "tipsurl": "",
+    "imageurl": "https://foodstalker.b-cdn.net/2024/brune-pinner/main.jpg",
+    "alt": "brune pinner i bolle",
+    "ingredients": [
+      {
+        "title": "",
+        "ingredients": [
+          {
+            "name": "smør",
+            "details": "",
+            "quantity": "200 g"
+          },
+          {
+            "name": "brunt sukker",
+            "details": "gjerne økologisk",
+            "quantity": "200 g"
+          },
+          {
+            "name": "egg",
+            "details": "",
+            "quantity": "1 stk"
+          },
+          {
+            "name": "mørk sirup",
+            "details": "",
+            "quantity": "1 ss"
+          },
+          {
+            "name": "kanel",
+            "details": "",
+            "quantity": "1 ts"
+          },
+          {
+            "name": "vaniljesukker",
+            "details": "",
+            "quantity": "1 ts"
+          },
+          {
+            "name": "natron",
+            "details": "",
+            "quantity": "1 ts"
+          },
+          {
+            "name": "hvetemel",
+            "details": "",
+            "quantity": "300 g"
+          },
+          {
+            "name": "mandler, perlesukker eller daimsjokolade",
+            "details": "valgfri topping",
+            "quantity": ""
+          }
+        ]
+      }
+    ],
+    "steps": [
+      {
+        "title": "Brune pinner",
+        "description": "Ta smør ut av kjøleskap og la det bli romtemperert. Visp sukker og smør hvitt, bruk mikser. "
+      },
+      {
+        "title": "",
+        "description": "Bland i sirup og eggeplomme (spar eggehvite til pensling etterpå)"
+      },
+      {
+        "title": "",
+        "description": "Bland i alt det tørre, og elt deigen lett. Legg deigen i ca 30 minutter i kjøleskapet slik at den er enklere å jobbe med."
+      },
+      {
+        "title": "",
+        "description": "Ha bakepapir klart på stekebrett. Hakk eller gjør klart eventuelle toppinger."
+      },
+      {
+        "title": "",
+        "description": "Del deigen i 6 emner. Trill hvert emne til en pølse. Ha 2 pølser på hvert brett. Trykk pølsene med hendene til ca halv centimeter."
+      },
+      {
+        "title": "",
+        "description": "Visp eggehviten litt sammen og pensle de flate deigene og dryss over topping. Sett i ovnen på 175 grader i 12-14 minutter."
+      },
+      {
+        "title": "",
+        "description": "Skjær ca 2 cm brede stenger, imens de er varme, på skrå med for eksempel en pizzarulle. Avkjøl på rist."
+      }
+    ],
+    "images": [
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2024/brune-pinner/DSC08051.jpg",
+        "alt": "sukker og smør pisket hvitt"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2024/brune-pinner/DSC08108.jpg",
+        "alt": "ferdig stekte bruke pinner i en bolle på et juledekorert bord"
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2024/brune-pinner/DSC08080.jpg",
+        "alt": "Trykt deig på et stekebrett"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2024/brune-pinner/DSC08093.jpg",
+        "alt": "skjærer brune pinner på skrå"
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2024/brune-pinner/DSC08099.jpg",
+        "alt": "Ferdig skjærte brune pinner"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2024/brune-pinner/main.jpg",
+        "alt": "ferdig brune pinner i ei bolle"
+      }
+    ],
+    "keywords": ["jul", "kake", "dessert", "bakst", "enkel", ""]
   }
 ]
