@@ -308,6 +308,7 @@ export default {
       lisboa: [38.7223, -9.1393],
       lisbon: [38.7223, -9.1393],
       helsinki: [60.1695, 24.9354],
+      tallinn: [59.437, 24.7536],
     };
 
     const icons = {
@@ -447,6 +448,8 @@ export default {
         athens: [37.9838, 23.7275],
         athen: [37.9838, 23.7275],
         helsinki: [60.1695, 24.9354],
+        tallinn: [59.437, 24.7536],
+        tallin: [59.437, 24.7536],
       };
 
       return cityMap[cityName.toLowerCase()] || null;
