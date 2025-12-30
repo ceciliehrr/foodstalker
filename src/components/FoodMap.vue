@@ -309,6 +309,9 @@ export default {
       lisbon: [38.7223, -9.1393],
       helsinki: [60.1695, 24.9354],
       tallinn: [59.437, 24.7536],
+      lom: [61.837, 8.568],
+      orkanger: [63.305, 9.85],
+      mosjøen: [65.837, 13.191],
     };
 
     const icons = {
@@ -449,7 +452,10 @@ export default {
         athen: [37.9838, 23.7275],
         helsinki: [60.1695, 24.9354],
         tallinn: [59.437, 24.7536],
-        tallin: [59.437, 24.7536],
+        lom: [61.837, 8.568],
+        orkanger: [63.305, 9.85],
+        mosjøen: [65.837, 13.191],
+        mosjoen: [65.837, 13.191],
       };
 
       return cityMap[cityName.toLowerCase()] || null;

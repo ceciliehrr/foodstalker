@@ -52,6 +52,9 @@ This guide will help you set up the Notion API integration for your Foodstalker 
 - Firenze
 - Venezia
 - Tallinn
+- Lom
+- Orkanger
+- Mosjøen
 
 **Category Select Options:**
 
