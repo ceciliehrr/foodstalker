@@ -228,6 +228,7 @@
           <h3 class="restaurant-card__title">{{ restaurant.title }}</h3>
           <div class="restaurant-card__description">
             <p
+              :ref="(el) => setDescriptionRef(restaurant.id, el)"
               :class="[
                 'description-text',
                 { expanded: expandedCards[restaurant.id] },
@@ -236,7 +237,7 @@
               {{ restaurant.description }}
             </p>
             <button
-              v-if="shouldShowReadMore(restaurant.description)"
+              v-if="shouldShowReadMore(restaurant.id, restaurant.description)"
               @click="toggleDescription(restaurant.id)"
               class="read-more-btn"
             >
@@ -359,6 +360,8 @@ export default {
       maxVisibleTags: 6,
       selectedMarker: null,
       isLoading: true,
+      descriptionRefs: {},
+      truncatedDescriptions: {},
     };
   },
   methods: {
@@ -536,11 +539,52 @@ export default {
       });
     },
 
-    shouldShowReadMore(description) {
+    setDescriptionRef(restaurantId, el) {
+      if (el) {
+        this.descriptionRefs[restaurantId] = el;
+        // Check truncation after element is mounted
+        this.$nextTick(() => {
+          this.checkTruncation(restaurantId);
+        });
+      }
+    },
+
+    checkTruncation(restaurantId) {
+      const element = this.descriptionRefs[restaurantId];
+      if (element && !this.expandedCards[restaurantId]) {
+        // Check if content is truncated (scrollHeight > clientHeight indicates truncation)
+        // Add a small buffer (2px) to account for rounding differences
+        const isTruncated = element.scrollHeight > element.clientHeight + 2;
+        this.truncatedDescriptions[restaurantId] = isTruncated;
+      }
+    },
+
+    checkAllTruncations() {
+      // Check truncation for all restaurant descriptions
+      Object.keys(this.descriptionRefs).forEach((restaurantId) => {
+        this.checkTruncation(restaurantId);
+      });
+    },
+
+    shouldShowReadMore(restaurantId, description) {
       if (!description) return false;
-      // Show "Read more" if description is longer than 150 characters
-      const shouldShow = description.length > 150;
-      return shouldShow;
+
+      // Check if element is actually truncated by comparing scrollHeight to clientHeight
+      const element = this.descriptionRefs[restaurantId];
+      if (element && !this.expandedCards[restaurantId]) {
+        // Check if content is truncated (scrollHeight > clientHeight indicates truncation)
+        // Add a small buffer (2px) to account for rounding differences
+        const isTruncated = element.scrollHeight > element.clientHeight + 2;
+        if (isTruncated !== this.truncatedDescriptions[restaurantId]) {
+          this.truncatedDescriptions[restaurantId] = isTruncated;
+        }
+        return isTruncated;
+      }
+
+      // Fallback: if element not available yet, use character count
+      // With 3 lines at line-height 1.5, approximately 90-110 characters fit
+      // Use 90 as a safe threshold to catch descriptions that would be truncated
+      return description.length > 90;
     },
 
     toggleDescription(restaurantId) {
@@ -586,6 +630,16 @@ export default {
     this.loadRestaurants();
     // Update cities with coordinates for any new cities found in the data
     this.updateCitiesFromData();
+    // Check truncation for all descriptions after mount
+    this.$nextTick(() => {
+      this.checkAllTruncations();
+    });
+  },
+  updated() {
+    // Re-check truncations when data updates
+    this.$nextTick(() => {
+      this.checkAllTruncations();
+    });
   },
   watch: {
     selectedCity(newCity) {
