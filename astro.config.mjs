@@ -8,6 +8,7 @@ import vue from "@astrojs/vue";
 export default defineConfig({
   site: "https://foodstalker.no",
   integrations: [vue()],
+  output: "static",
   image: {
     domains: ["https://foodstalker.b-cdn.net"],
     remotePatterns: [
