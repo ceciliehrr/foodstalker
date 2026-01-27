@@ -4,6 +4,7 @@
 
 import partyPopperEmoji from "../assets/tema/party-popper-noto.svg";
 import juletreEmoji from "../assets/tema/juletre.svg";
+import sitronEmoji from "../assets/tema/lemon.svg";
 
 export const themes = {
   jul: {
@@ -24,6 +25,16 @@ export const themes = {
     dividerText: "Gratulerer med 40 år, Petter",
     introText:
       "Velkommen til oppskrifter for eldre – for deg som vet at mat smaker best når man har levd lenge nok til å ha smakt det meste. Her finner du retter som er snille med tennene, gode for sjelen, passe krydret og litt gamle i stilen (men aldri på dato). Vi har samlet våre beste oppskrifter som tar hensyn til både fordøyelsen og nostalgien. Velbekomme!",
+  },
+  sitron: {
+    keyword: "sitron",
+    title: "Sitron oppskrifter",
+    description:
+      "Amalfisitroner er i sesong og kan kjøpes i butikken i januar og februar, lag noe godt med sitroner",
+    emoji: sitronEmoji,
+    dividerText: "Sitron Oppskrifter",
+    introText:
+      "Amalfisitroner er i sesong og kan kjøpes i butikken i januar og februar, lag noe godt med sitroner",
   },
 };
 
