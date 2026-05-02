@@ -5,8 +5,6 @@
         class="fs-card__picture"
         :src="image"
         alt=""
-        width="800"
-        height="300"
         decoding="async"
         loading="lazy"
       />
@@ -91,21 +89,43 @@ function emojiCategory(cat: string): string {
 
   &__image {
     flex-shrink: 0;
+    background: var(--fs-gray-100);
+    line-height: 0;
+
+    @include bp("tablet-big-up") {
+      position: relative;
+      flex: 0 0 12rem;
+      width: 12rem;
+      align-self: stretch;
+      min-height: 0;
+      overflow: hidden;
+      background: transparent;
+      border-top-left-radius: 0.5rem;
+      border-bottom-left-radius: 0.5rem;
+    }
   }
 
   &__picture {
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
+    display: block;
     width: 100%;
-    height: 200px;
-    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
 
     @include bp("tablet-big-up") {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      max-width: none;
       border-radius: 0px;
       border-top-left-radius: 0.5rem;
       border-bottom-left-radius: 0.5rem;
-      width: 12rem;
-      height: 100%;
+      object-fit: cover;
+      object-position: center;
     }
   }
 

@@ -38,13 +38,6 @@ export default defineConfig({
     build: {
       cssMinify: true,
       minify: true,
-      rollupOptions: {
-        output: {
-          manualChunks: {
-            vue: ["vue"],
-          },
-        },
-      },
     },
   },
 
