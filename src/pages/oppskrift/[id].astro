@@ -30,9 +30,54 @@ const images = post.images;
 const mainImage = post.imageurl;
 
 const title = post.title;
+
+function toIsoDuration(time: string | number | undefined): string | undefined {
+  if (!time) return undefined;
+  const minutes = typeof time === "number" ? time : (() => {
+    const t = String(time).toLowerCase().trim();
+    const m = t.match(/(\d+)\s*(?:min|minutter?)/);
+    if (m) return parseInt(m[1]);
+    const h = t.match(/(\d+(?:[.,]\d+)?)\s*(?:timer?|h)/);
+    if (h) return Math.round(parseFloat(h[1].replace(",", ".")) * 60);
+    const r = t.match(/(\d+)\s*-\s*(\d+)\s*(?:timer?|h)/);
+    if (r) return Math.round(((parseInt(r[1]) + parseInt(r[2])) / 2) * 60);
+    return 30;
+  })();
+  const h = Math.floor(minutes / 60);
+  const m = minutes % 60;
+  return h > 0 ? `PT${h}H${m > 0 ? `${m}M` : ""}` : `PT${m}M`;
+}
+
+const recipeIngredients = (post.ingredients ?? []).flatMap((group: any) =>
+  (group.ingredients ?? []).map((i: any) => {
+    const qty = i.quantity ? `${i.quantity} ` : "";
+    const detail = i.details ? ` (${i.details})` : "";
+    return `${qty}${i.name}${detail}`.replace(/<[^>]*>/g, "").trim();
+  })
+);
+
+const schema = {
+  "@context": "https://schema.org/",
+  "@type": "Recipe",
+  "name": post.title,
+  "image": [mainImage],
+  "description": post.description,
+  ...(post.keywords?.length ? { "keywords": post.keywords.join(", ") } : {}),
+  "author": { "@type": "Person", "name": post.chef || "Foodstalker" },
+  ...(post.date ? { "datePublished": post.date } : {}),
+  ...(post.time ? { "totalTime": toIsoDuration(post.time) } : {}),
+  ...(post.portions ? { "recipeYield": `${post.portions} porsjoner` } : {}),
+  ...(post.category ? { "recipeCategory": post.category } : {}),
+  "recipeIngredient": recipeIngredients,
+  "recipeInstructions": (post.steps ?? []).map((step: any) => ({
+    "@type": "HowToStep",
+    ...(step.title ? { "name": step.title } : {}),
+    "text": step.description,
+  })),
+};
 ---
 
-<Layout title={title} description={post.description} image={mainImage}>
+<Layout title={title} description={post.description} image={mainImage} schema={schema}>
   <div class="recipe">
     <div class="recipe-grid">
       <div class="recipe-title">

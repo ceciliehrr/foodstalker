@@ -8,6 +8,7 @@ export interface Props {
   description?: string;
   image?: string;
   hideFoodstalkerLayout?: boolean;
+  schema?: object;
 }
 
 const {
@@ -16,6 +17,7 @@ const {
   description = "Foodstalker en matblogg laget av to matstalkere som blir inspirert av flinke kokker og deler sine favorittoppskrifter",
   image = "https://foodstalker.b-cdn.net/2021/juleflesk/DSC00495-2.jpg",
   hideFoodstalkerLayout = false,
+  schema,
 } = Astro.props as Props;
 ---
 
@@ -37,6 +39,11 @@ const {
       property="og:url"
       content={new URL(Astro.url.pathname, Astro.site).href}
     />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={image} />
+    {schema && <script type="application/ld+json" set:html={JSON.stringify(schema)} />}
     <link rel="icon" href="/logo-pink35x35.png" />
 
     <!-- Resource hints for external domains -->
@@ -51,7 +58,7 @@ const {
       data-domain="foodstalker.no"
       src="https://plausible.io/js/script.js"></script>
 
-    <title>Foodstalker - {title}</title>
+    <title>{title} | Foodstalker</title>
   </head>
 
   <body class={hideFoodstalkerLayout ? "" : "fs-body"}>
