@@ -26,6 +26,7 @@
     "preview": "bash scripts/with-nvm.sh astro preview",
     "fetch-data": "bash scripts/with-nvm.sh node scripts/fetch-notion-data.js",
     "fetch-wine": "bash scripts/with-nvm.sh node scripts/fetch-wine-suggestions.js",
+    "debug-wine": "bash scripts/with-nvm.sh node scripts/debug-wine-api.js",
     "proxy": "mkcert -install && mkcert localhost && local-ssl-proxy --source 3010 --target 3000 --cert localhost.pem --key localhost-key.pem"
   },
   "devDependencies": {
