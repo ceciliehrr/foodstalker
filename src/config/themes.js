@@ -36,6 +36,16 @@ export const themes = {
     introText:
       "Amalfisitroner er i sesong og kan kjøpes i butikken i januar og februar, lag noe godt med sitroner",
   },
+  grill: {
+    keyword: ["grill", "grillmat"],
+    title: "Grill Oppskrifter",
+    description:
+      "Grillsesongen er her! Oppdag våre beste grilloppskrifter for å imponere familie og venner med saftige og smakfulle retter.",
+    emoji: partyPopperEmoji,
+    dividerText: "Grill Oppskrifter",
+    introText:
+      "Grillsesongen er her! Oppdag våre beste grilloppskrifter for å imponere familie og venner med saftige og smakfulle retter.",
+  },
 };
 
 // Helper function to get theme by slug or return null if not found

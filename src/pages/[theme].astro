@@ -24,8 +24,11 @@ if (!themeConfig) {
 }
 
 const recipes = getRecipes;
+const themeKeywords = Array.isArray(themeConfig.keyword)
+  ? themeConfig.keyword
+  : [themeConfig.keyword];
 const filteredRecipes = recipes.filter((recipe) =>
-  recipe.keywords.includes(themeConfig.keyword)
+  themeKeywords.some((kw) => recipe.keywords.includes(kw))
 );
 
 function capitalizeFirstLetter(string) {
