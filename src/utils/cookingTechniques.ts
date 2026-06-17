@@ -242,7 +242,7 @@ export const COOKING_TECHNIQUES: Record<string, CookingTechnique> = {
     name: "panere",
     difficulty: 2,
     category: "intermediate",
-    keywords: ["panere", "mel", "egg", "brødsmuler"],
+    keywords: ["panere", "brødsmuler"],
     description: "Vende i mel/egg/brødsmuler før steking",
   },
 
@@ -277,7 +277,7 @@ export const COOKING_TECHNIQUES: Record<string, CookingTechnique> = {
     name: "temper",
     difficulty: 3,
     category: "advanced",
-    keywords: ["temperere", "temperering"],
+    keywords: ["temperere sjokolade", "temperering sjokolade"],
     description: "Temperering av sjokolade",
   },
   røyke: {
