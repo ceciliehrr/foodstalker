@@ -568,7 +568,7 @@
           },
           {
             "quantity": "",
-            "name": "<a href='/oppskrift/juleflesk'>Bringebærsirup</a>",
+            "name": "Bringebærsirup",
             "details": ""
           }
         ]
@@ -2533,7 +2533,7 @@
           },
           {
             "quantity": "200 g",
-            "name": "knuste <a href='/oppskrift/pepperkaker'>pepperkaker</a>",
+            "name": "knuste pepperkaker",
             "details": ""
           }
         ]
@@ -4305,7 +4305,7 @@
           },
           {
             "quantity": "0.5 l",
-            "name": "<a href='/oppskrift/kyllingkraft'>kyllingkraft</a>",
+            "name": "kyllingkraft",
             "details": ""
           },
           {
@@ -4841,7 +4841,7 @@
           },
           {
             "quantity": "3 ss",
-            "name": "<a href='/oppskrift/tacokrydder'>hjemmelaget tacokrydder</a>",
+            "name": "hjemmelaget tacokrydder",
             "details": ""
           },
           {
@@ -4866,7 +4866,7 @@
           },
           {
             "quantity": "2 dl",
-            "name": "<a href='/oppskrift/majones'>majones</a>",
+            "name": "majones",
             "details": "bytt ut sriracha med hakket chipotle"
           },
           {
@@ -6599,7 +6599,7 @@
           },
           {
             "quantity": "1 pose",
-            "name": "majones <a href='/oppskrift/majones'>(eller lage sjøl)</a>",
+            "name": "majones (eller lage sjøl)",
             "details": ""
           },
           {
@@ -6938,7 +6938,7 @@
           },
           {
             "quantity": "Husk:",
-            "name": "<a href='/oppskrift/parmesankrem'>Parmesankremen</a>",
+            "name": "Parmesankremen",
             "details": ""
           }
         ]
@@ -7629,7 +7629,7 @@
           },
           {
             "quantity": "",
-            "name": "<a href='/oppskrift/sjokoladesaus'>Sjokoladesaus</a>",
+            "name": "Sjokoladesaus",
             "details": ""
           }
         ]
@@ -8120,7 +8120,7 @@
           },
           {
             "quantity": "",
-            "name": "<a href='/oppskrift/rabarbrasirup'>rabarbrasirup</a>",
+            "name": "rabarbrasirup",
             "details": ""
           }
         ]
@@ -8721,7 +8721,7 @@
           },
           {
             "quantity": "ca. 2 ss",
-            "name": "<a href='/oppskrift/multesirup'>multesirup</a>",
+            "name": "multesirup",
             "details": ""
           },
           {
@@ -9756,7 +9756,7 @@
           },
           {
             "quantity": "1 ss",
-            "name": "<a href='/oppskrift/karripulver'>karripulver</a>",
+            "name": "karripulver",
             "details": ""
           },
           {
@@ -9766,7 +9766,7 @@
           },
           {
             "quantity": "1 l",
-            "name": "<a href='/oppskrift/kyllingkraft'>kyllingkraft</a> eller <a href='/oppskrift/grønnsakskraft'>grønnsakskraft</a>",
+            "name": "kyllingkraft eller grønnsakskraft",
             "details": ""
           },
           {
@@ -13227,7 +13227,7 @@
           },
           {
             "quantity": "2 dl",
-            "name": "<a href='/oppskrift/majones'>majones</a>",
+            "name": "majones",
             "details": "bytt ut sriracha med hakket chipotle"
           },
           {
@@ -13342,12 +13342,12 @@
           },
           {
             "quantity": "2 -3 ss",
-            "name": "<a href='/oppskrift/tacokrydder'>hjemmelaget tacokrydder</a>",
+            "name": "hjemmelaget tacokrydder",
             "details": ""
           },
           {
             "quantity": "1 -2 ss",
-            "name": "<a href='/oppskrift/sriracha'>sriracha</a>",
+            "name": "sriracha",
             "details": "kan også kjøpes i vanlige butikker"
           },
           {
@@ -13849,7 +13849,7 @@
           },
           {
             "quantity": "3 cl",
-            "name": "<a href='/oppskrift/multesirup'>multesirup</a>",
+            "name": "multesirup",
             "details": ""
           },
           {
@@ -14722,7 +14722,7 @@
           },
           {
             "quantity": "3 cl",
-            "name": "<a href='/oppskrift/granskuddsirup'>granskuddsirup</a>",
+            "name": "granskuddsirup",
             "details": ""
           },
           {
@@ -14811,7 +14811,7 @@
         "ingredients": [
           {
             "quantity": "4 -5 cl",
-            "name": "<a href='/oppskrift/rabarbrasirup'>rabarbrasirup</a>",
+            "name": "rabarbrasirup",
             "details": ""
           },
           {
@@ -15167,7 +15167,7 @@
         "ingredients": [
           {
             "quantity": "",
-            "name": "følg <a href='/oppskrift/pasta'>denne pastaoppskriften her</a>",
+            "name": "følg denne pastaoppskriften her",
             "details": ""
           }
         ]
@@ -15501,12 +15501,12 @@
         "ingredients": [
           {
             "quantity": "1 ss",
-            "name": "<a href='/oppskrift/ramslokpuré'>Ramsløkpuré</a>",
+            "name": "Ramsløkpuré",
             "details": ""
           },
           {
             "quantity": "ca. 3 dl (ett egg-majones)",
-            "name": "<a href='/oppskrift/majones'>majones</a>",
+            "name": "majones",
             "details": ""
           },
           {
@@ -16448,7 +16448,7 @@
         "ingredients": [
           {
             "quantity": "",
-            "name": "<a href='/oppskrift/medisterfest'>medisterkaker</a>",
+            "name": "medisterkaker",
             "details": "<a href='/oppskrift/medisterfest'>medisterpølser</a>, <a href='/oppskrift/syltet-rødløk'>sylta rødløk</a>"
           },
           {
@@ -17366,7 +17366,7 @@
         "ingredients": [
           {
             "quantity": "6 cl",
-            "name": "<a href='/oppskrift/limoncello'>limoncello</a>",
+            "name": "limoncello",
             "details": ""
           },
           {
@@ -17489,7 +17489,7 @@
           },
           {
             "quantity": "2 dl",
-            "name": "<a href='/oppskrift/granskuddsirup'>granskuddsirup</a>",
+            "name": "granskuddsirup",
             "details": ""
           },
           {
