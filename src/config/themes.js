@@ -2,7 +2,7 @@
 // The key is the URL path (e.g., "jul" creates /jul/ route)
 // The value contains all theme-specific settings
 
-import partyPopperEmoji from "../assets/tema/party-popper-noto.svg";
+import tacoEmoji from "../assets/tema/taco.svg";
 import juletreEmoji from "../assets/tema/juletre.svg";
 import sitronEmoji from "../assets/tema/lemon.svg";
 
@@ -41,7 +41,7 @@ export const themes = {
     title: "Grill Oppskrifter",
     description:
       "Grillsesongen er her! Oppdag våre beste grilloppskrifter for å imponere familie og venner med saftige og smakfulle retter.",
-    emoji: partyPopperEmoji,
+    emoji: tacoEmoji,
     dividerText: "Grill Oppskrifter",
     introText:
       "Grillsesongen er her! Oppdag våre beste grilloppskrifter for å imponere familie og venner med saftige og smakfulle retter.",
