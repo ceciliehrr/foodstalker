@@ -36,7 +36,7 @@ export default defineConfig({
       },
     },
     build: {
-      cssMinify: true,
+      cssMinify: "esbuild",
       minify: true,
     },
   },
