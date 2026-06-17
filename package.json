@@ -21,11 +21,10 @@
     "dev:with-data": "bash scripts/with-nvm.sh node scripts/dev-with-data.js",
     "host": "bash scripts/with-nvm.sh astro dev --host",
     "start": "bash scripts/with-nvm.sh astro dev",
-    "prebuild": "bash scripts/with-nvm.sh node scripts/fetch-notion-data.js && bash scripts/with-nvm.sh node scripts/fetch-wine-suggestions.js",
+    "prebuild": "bash scripts/with-nvm.sh node scripts/fetch-notion-data.js",
     "build": "bash scripts/with-nvm.sh astro build",
     "preview": "bash scripts/with-nvm.sh astro preview",
     "fetch-data": "bash scripts/with-nvm.sh node scripts/fetch-notion-data.js",
-    "fetch-wine": "bash scripts/with-nvm.sh node scripts/fetch-wine-suggestions.js",
     "proxy": "mkcert -install && mkcert localhost && local-ssl-proxy --source 3010 --target 3000 --cert localhost.pem --key localhost-key.pem"
   },
   "devDependencies": {
