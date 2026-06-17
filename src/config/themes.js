@@ -1,8 +1,8 @@
 // Theme configuration for seasonal easter egg pages
 // The key is the URL path (e.g., "jul" creates /jul/ route)
 // The value contains all theme-specific settings
-
 import tacoEmoji from "../assets/tema/taco.svg";
+import partyPopperEmoji from "../assets/tema/party-popper-noto.svg";
 import juletreEmoji from "../assets/tema/juletre.svg";
 import sitronEmoji from "../assets/tema/lemon.svg";
 
