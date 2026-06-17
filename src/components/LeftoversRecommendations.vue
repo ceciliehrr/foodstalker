@@ -154,46 +154,51 @@ export default {
       return hasQuantity || isSubstantial;
     },
     normalizeIngredientName(name: string) {
-      // Remove common prefixes and normalize for better matching
       return name
         .toLowerCase()
+        .replace(/<[^>]*>/g, "") // strip HTML tags
         .replace(
           /^(fersk|tørr|hel|hakket|fin|grov|flytende|røkt|kald|varm|stor|liten)\s+/i,
           ""
         )
-        .replace(/,\s*(.*)$/, "") // Remove everything after comma (legacy support)
+        .replace(/,\s*(.*)$/, "")
         .trim();
+    },
+    ingredientsMatch(a: string, b: string): boolean {
+      if (a === b) return true;
+      // Partial match: "kylling" matches "kyllingbryst", "laks" matches "laksefilet"
+      if (a.length >= 4 && b.includes(a)) return true;
+      if (b.length >= 4 && a.includes(b)) return true;
+      return false;
     },
     getMatchingIngredients(recipe: any) {
       if (!recipe.ingredients || !this.currentRecipeIngredients.length)
         return [];
 
       const matchingIngredients = [];
+      const seen = new Set();
 
       recipe.ingredients.forEach((group: any) => {
         if (group.ingredients) {
           group.ingredients.forEach((ingredient: any) => {
             if (ingredient.name) {
-              const normalizedName = this.normalizeIngredientName(
-                ingredient.name
-              );
-              // Only match if it's a leftover ingredient and exists in current recipe
+              const normalizedName = this.normalizeIngredientName(ingredient.name);
               if (
-                this.currentRecipeIngredients.includes(normalizedName) &&
-                this.isLeftoverIngredient(normalizedName)
+                !seen.has(normalizedName) &&
+                this.isLeftoverIngredient(normalizedName) &&
+                this.currentRecipeIngredients.some((ci: string) =>
+                  this.ingredientsMatch(ci, normalizedName)
+                )
               ) {
-                // Use the new structure if available, fallback to old structure
-                const displayName = ingredient.details
-                  ? `${ingredient.name} (${ingredient.details})`
-                  : ingredient.name;
-                matchingIngredients.push(displayName);
+                seen.add(normalizedName);
+                matchingIngredients.push(ingredient.name);
               }
             }
           });
         }
       });
 
-      return matchingIngredients; // Show all matching ingredients
+      return matchingIngredients;
     },
     calculateMatchingScore(recipe: any) {
       if (!recipe.ingredients) return 0;
@@ -205,13 +210,13 @@ export default {
         if (group.ingredients) {
           group.ingredients.forEach((ingredient: any) => {
             if (ingredient.name) {
-              const normalizedName = this.normalizeIngredientName(
-                ingredient.name
-              );
+              const normalizedName = this.normalizeIngredientName(ingredient.name);
               if (
-                this.currentRecipeIngredients.includes(normalizedName) &&
+                !matchedIngredients.has(normalizedName) &&
                 this.isLeftoverIngredient(normalizedName) &&
-                !matchedIngredients.has(normalizedName)
+                this.currentRecipeIngredients.some((ci: string) =>
+                  this.ingredientsMatch(ci, normalizedName)
+                )
               ) {
                 matchedIngredients.add(normalizedName);
                 score += 1;
