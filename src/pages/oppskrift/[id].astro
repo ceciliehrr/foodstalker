@@ -9,6 +9,7 @@ import StepByStep from "../../components/StepByStep.astro";
 import Divider from "../../components/Divider.astro";
 import Tips from "../../components/Tips.astro";
 import VinTips from "src/components/VinTips.astro";
+import wineSuggestions from "../../data/wine_suggestions.json";
 import CookingMode from "src/components/CookingMode.vue";
 import DifficultyBadge from "../../components/DifficultyBadge.vue";
 import LeftoversRecommendations from "../../components/LeftoversRecommendations.vue";
@@ -55,6 +56,16 @@ const recipeIngredients = (post.ingredients ?? []).flatMap((group: any) =>
     return `${qty}${i.name}${detail}`.replace(/<[^>]*>/g, "").trim();
   })
 );
+
+// Combine manual tip (priority) with API suggestion, max 2
+const wineTips = [];
+if (post.vintipsnavn && post.vintipsUrl) {
+  wineTips.push({ name: post.vintipsnavn, url: post.vintipsUrl });
+}
+const autoSuggestion = (wineSuggestions as Record<string, { name: string; url: string }>)[post.id];
+if (autoSuggestion && wineTips.length < 2) {
+  wineTips.push(autoSuggestion);
+}
 
 const schema = {
   "@context": "https://schema.org/",
@@ -130,14 +141,7 @@ const schema = {
           client:idle
         />
         <Tips tips={post.tips} chef={post.chef} tipsurl={post.tipsurl} />
-        {
-          post.vintipsnavn && (
-            <VinTips
-              vintipsNavn={post.vintipsnavn}
-              vintipsUrl={post.vintipsUrl}
-            />
-          )
-        }
+        {wineTips.length > 0 && <VinTips tips={wineTips} />}
       </div>
     </div>
 

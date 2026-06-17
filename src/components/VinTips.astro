@@ -1,18 +1,37 @@
 ---
-export interface Props {
-  vintipsNavn?: string;
-  vintipsUrl?: string;
+export interface WineTip {
+  name: string;
+  url: string;
 }
-const { vintipsNavn, vintipsUrl } = Astro.props;
+
+export interface Props {
+  tips: WineTip[];
+}
+
+const { tips } = Astro.props;
+
+if (!tips || tips.length === 0) return;
 ---
 
 <div class="recipe-vintips">
-  <h2 class="recipe-vintips__title">🥂</h2>
-  <a target="_blank" href={vintipsUrl}>{vintipsNavn}</a>
+  <h2 class="recipe-vintips__title">🥂 Vintips</h2>
+  <ul class="recipe-vintips__list">
+    {
+      tips.map((tip) => (
+        <li>
+          <a href={tip.url} target="_blank" rel="noopener noreferrer">
+            {tip.name}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
 </div>
 
 <style lang="scss" scoped>
   @use "../styles/mixins/" as *;
+  @use "../styles/mixins/breakpoints" as *;
+
   .recipe-vintips {
     background-color: white;
     border: 1px solid var(--fs-gray-400);
@@ -23,10 +42,30 @@ const { vintipsNavn, vintipsUrl } = Astro.props;
       color: var(--fs-berries-400);
       @include get-text("fs-h5");
       font-weight: 600;
+      margin-bottom: 0.5rem;
 
       @include bp("tablet-up") {
         @include get-text("fs-h4");
         font-weight: 600;
+      }
+    }
+
+    &__list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      a {
+        color: var(--fs-brokkoli);
+        text-decoration: underline;
+        @include get-text("fs-body1");
+
+        &:hover {
+          color: var(--fs-berries-400);
+        }
       }
     }
   }
