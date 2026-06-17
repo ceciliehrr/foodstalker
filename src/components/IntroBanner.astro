@@ -48,8 +48,9 @@ import sitron from "../assets/sitron2.jpg";
       }
       & h1 {
         @include get-text("fs-h5");
+        font-size: clamp(1.5rem, 2.5vw, 2.125rem);
         @include bp("tablet-up") {
-          @include get-text("fs-h4");
+          line-height: 2.25rem;
         }
       }
       & p {
