@@ -81,10 +81,6 @@ Enhanced recipe card component that includes difficulty badges.
 
 Suggest next-level recipes based on current difficulty.
 
-## Demo Page
-
-Visit `/difficulty-demo` to see all features in action.
-
 ## Integration
 
 To add difficulty badges to existing recipe cards:
