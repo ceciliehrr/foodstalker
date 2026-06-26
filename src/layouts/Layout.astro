@@ -58,7 +58,7 @@ const {
       data-domain="foodstalker.no"
       src="https://plausible.io/js/script.js"></script>
 
-    <title>{title} | Foodstalker</title>
+    <title>{title === "Foodstalker" ? title : `${title} | Foodstalker`}</title>
   </head>
 
   <body class={hideFoodstalkerLayout ? "" : "fs-body"}>
