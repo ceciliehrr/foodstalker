@@ -100,10 +100,26 @@
         <input
           v-model="ingredientInput"
           @keydown="handleIngredientInput"
+          @input="showIngredientSuggestions = true"
+          @blur="hideSuggestionsDelayed()"
           type="text"
           placeholder="Skriv ingrediens og trykk Enter..."
           class="fs-search-bar__ingredient-text-input"
+          autocomplete="off"
         />
+        <ul
+          v-if="showIngredientSuggestions && ingredientSuggestions.length > 0"
+          class="fs-search-bar__ingredient-suggestions"
+        >
+          <li
+            v-for="(suggestion, index) in ingredientSuggestions"
+            :key="suggestion"
+            :class="{ 'is-active': index === activeSuggestionIndex }"
+            @mousedown.prevent="selectIngredientSuggestion(suggestion)"
+          >
+            {{ suggestion }}
+          </li>
+        </ul>
       </div>
 
       <!-- Toro message -->
@@ -196,7 +212,19 @@
               >
               <span style="font-size: 50px">🙈</span>
             </p>
-            <p>Be oss om å lage det!</p>
+            <p
+              v-if="
+                search &&
+                (selectedCategories.length > 0 ||
+                  selectedDifficulties.length > 0)
+              "
+            >
+              Prøv å fjerne noen filtre, eller søk på noe annet
+            </p>
+            <p v-else-if="search">
+              Prøv et kortere søkeord eller sjekk stavemåten
+            </p>
+            <p v-else>Prøv å fjerne noen filtre</p>
           </div>
 
           <Grid v-if="sortedItems.length > 0" :single-column="true">
@@ -287,6 +315,8 @@ export default {
       selectedIngredients: [] as string[],
       allIngredients: [] as string[],
       ingredientInput: "",
+      showIngredientSuggestions: false,
+      activeSuggestionIndex: -1,
       showToroMessage: false,
       // Henrik easter egg
       showHenrikEasterEgg: false,
@@ -320,6 +350,19 @@ export default {
   },
 
   computed: {
+    ingredientSuggestions(): string[] {
+      if (!this.ingredientInput.trim() || this.ingredientInput.length < 2)
+        return [];
+      const query = this.ingredientInput.toLowerCase();
+      return this.allIngredients
+        .filter(
+          (ing) =>
+            ing.toLowerCase().includes(query) &&
+            !this.selectedIngredients.includes(ing.toLowerCase()),
+        )
+        .slice(0, 8);
+    },
+
     // Get current search results for FilterBox
     currentSearchResults() {
       if (this.search.trim() && this.searchIndex) {
@@ -337,7 +380,7 @@ export default {
     sortedByCategory() {
       if (this.category) {
         return this.recipes.filter(
-          (element) => element.category === this.category
+          (element) => element.category === this.category,
         );
       } else {
         return this.recipes;
@@ -390,7 +433,7 @@ export default {
                         (() => {
                           const result = this.ingredientsMatch(
                             ingredient.name,
-                            selectedIngredient
+                            selectedIngredient,
                           );
                           if (result.matches) {
                             totalScore += result.score;
@@ -410,7 +453,7 @@ export default {
 
           // Simple percentage: how many ingredients matched out of total selected
           const matchPercentage = Math.round(
-            (matchCount / this.selectedIngredients.length) * 100
+            (matchCount / this.selectedIngredients.length) * 100,
           );
 
           return {
@@ -455,17 +498,17 @@ export default {
         if (this.selectedIngredients.length > 0) {
           filteredSearchResults = this.filterRecipesByIngredients(
             filteredSearchResults,
-            true
+            true,
           ); // Use 'every' for this case
 
           // Process ingredient matching and scoring
           filteredSearchResults = filteredSearchResults.map((recipe) =>
-            this.processIngredientMatching(recipe)
+            this.processIngredientMatching(recipe),
           );
 
           // Sort by ingredient match score (highest first), then by count
           filteredSearchResults = this.sortRecipesByIngredientMatch(
-            filteredSearchResults
+            filteredSearchResults,
           );
         }
 
@@ -478,7 +521,7 @@ export default {
 
         // Process ingredient matching and scoring
         filteredRecipes = filteredRecipes.map((recipe) =>
-          this.processIngredientMatching(recipe)
+          this.processIngredientMatching(recipe),
         );
 
         // Sort by ingredient match score (highest first), then by count
@@ -546,7 +589,7 @@ export default {
     // Helper method to check if ingredients match and return score
     ingredientsMatch(
       ingredientName: string,
-      selectedName: string
+      selectedName: string,
     ): { matches: boolean; score: number } {
       const ingredientLower = ingredientName.toLowerCase();
       const selectedLower = selectedName.toLowerCase();
@@ -601,7 +644,7 @@ export default {
                 // Use ingredient matching with scoring
                 const matchResult = this.ingredientsMatch(
                   ingredient.name,
-                  selectedIngredient
+                  selectedIngredient,
                 );
                 if (matchResult.matches) {
                   matchCount++;
@@ -616,7 +659,7 @@ export default {
 
       // Simple percentage: how many ingredients matched out of total selected
       const matchPercentage = Math.round(
-        (matchCount / this.selectedIngredients.length) * 100
+        (matchCount / this.selectedIngredients.length) * 100,
       );
 
       return {
@@ -630,7 +673,7 @@ export default {
     // Reusable method to filter recipes by ingredients
     filterRecipesByIngredients(
       recipes: any[],
-      requireAll: boolean = true
+      requireAll: boolean = true,
     ): any[] {
       if (this.selectedIngredients.length === 0) {
         return recipes;
@@ -649,7 +692,7 @@ export default {
               if (!ingredient.name) return false;
               const matchResult = this.ingredientsMatch(
                 ingredient.name,
-                selectedIngredient
+                selectedIngredient,
               );
               return matchResult.matches;
             });
@@ -778,8 +821,47 @@ export default {
     handleIngredientInput(event: KeyboardEvent) {
       if (event.key === "Enter") {
         event.preventDefault();
-        this.addIngredientFromInput();
+        if (
+          this.activeSuggestionIndex >= 0 &&
+          (this as any).ingredientSuggestions[this.activeSuggestionIndex]
+        ) {
+          this.selectIngredientSuggestion(
+            (this as any).ingredientSuggestions[this.activeSuggestionIndex],
+          );
+        } else {
+          this.addIngredientFromInput();
+        }
+        this.showIngredientSuggestions = false;
+      } else if (event.key === "ArrowDown") {
+        event.preventDefault();
+        this.activeSuggestionIndex = Math.min(
+          this.activeSuggestionIndex + 1,
+          (this as any).ingredientSuggestions.length - 1,
+        );
+      } else if (event.key === "ArrowUp") {
+        event.preventDefault();
+        this.activeSuggestionIndex = Math.max(
+          this.activeSuggestionIndex - 1,
+          -1,
+        );
+      } else if (event.key === "Escape") {
+        this.showIngredientSuggestions = false;
+        this.activeSuggestionIndex = -1;
       }
+    },
+
+    selectIngredientSuggestion(suggestion: string) {
+      this.ingredientInput = suggestion;
+      this.addIngredientFromInput();
+      this.showIngredientSuggestions = false;
+      this.activeSuggestionIndex = -1;
+    },
+
+    hideSuggestionsDelayed() {
+      setTimeout(() => {
+        this.showIngredientSuggestions = false;
+        this.activeSuggestionIndex = -1;
+      }, 150);
     },
 
     addIngredientFromInput() {
@@ -828,21 +910,21 @@ export default {
           event.preventDefault();
           this.selectedSuggestionIndex = Math.min(
             this.selectedSuggestionIndex + 1,
-            this.searchSuggestions.length - 1
+            this.searchSuggestions.length - 1,
           );
           break;
         case "ArrowUp":
           event.preventDefault();
           this.selectedSuggestionIndex = Math.max(
             this.selectedSuggestionIndex - 1,
-            -1
+            -1,
           );
           break;
         case "Enter":
           if (this.selectedSuggestionIndex >= 0) {
             event.preventDefault();
             this.selectSuggestion(
-              this.searchSuggestions[this.selectedSuggestionIndex]
+              this.searchSuggestions[this.selectedSuggestionIndex],
             );
           }
           break;
@@ -1334,6 +1416,7 @@ export default {
 
   &__ingredient-input {
     margin-bottom: 2rem;
+    position: relative;
 
     label {
       display: block;
@@ -1341,6 +1424,40 @@ export default {
       margin-bottom: 0.5rem;
       font-weight: 600;
       font-size: 1rem;
+    }
+  }
+
+  &__ingredient-suggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    border: 2px solid var(--fs-berries-500);
+    border-top: none;
+    border-radius: 0 0 0.75rem 0.75rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 100;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+    li {
+      padding: 0.75rem 1rem;
+      cursor: pointer;
+      font-size: 1rem;
+      color: #2d3748;
+      border-bottom: 1px solid #f0f0f0;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      &:hover,
+      &.is-active {
+        background-color: #fdf2f8;
+        color: var(--fs-berries-500);
+      }
     }
   }
 

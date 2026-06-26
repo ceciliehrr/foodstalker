@@ -231,7 +231,7 @@ export class RecipeSearchIndex {
         Object.keys(this.index).forEach((indexTerm) => {
           const similarity = this.calculateSimilarity(term, indexTerm);
           // Increased threshold for fuzzy matching to reduce noise
-          if (similarity > 0.8) {
+          if (similarity > 0.7) {
             Object.entries(this.index[indexTerm]).forEach(
               ([recipeId, indexData]) => {
                 const recipe = this.recipes.find((r) => r.id === recipeId);
