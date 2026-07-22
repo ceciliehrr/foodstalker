@@ -3,6 +3,7 @@ $colors: (
   fs-transparent: transparent,
   fs-white: #fff,
   fs-black: #1f1209,
+  fs-gray-50:  #f9fafb,
   fs-gray-100: #f3f4f6,
   fs-gray-200: #e5e7eb,
   fs-gray-300: #cbd5e1,
@@ -25,5 +26,16 @@ $colors: (
   fs-berries-300: #ce8884,
   fs-berries-400: #c06c7e,
   fs-berries-500: #b04c6a,
-  fs-berries-600: #9e3d5a
+  fs-berries-600: #9e3d5a,
+  fs-berries-700: #7d2e48,
+  fs-berries-800: #5c1f33,
+  // Semantic: error, success, warning
+  fs-error-500:   #dc2626,
+  fs-error-600:   #b91c1c,
+  fs-error-700:   #991b1b,
+  fs-success-500: #059669,
+  fs-success-600: #047857,
+  fs-success-700: #065f46,
+  fs-warning-400: #ffc107,
+  fs-warning-800: #856404
 ) !default;

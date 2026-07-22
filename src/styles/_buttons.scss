@@ -11,7 +11,7 @@
   gap: 0.5rem;
   padding: 0.75rem 1.5rem;
   border: 2px solid transparent;
-  border-radius: 0.5rem;
+  border-radius: var(--radius-sm);
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.25rem;
@@ -20,7 +20,7 @@
   transition: all 0.2s ease;
   white-space: nowrap;
   min-height: 3rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--shadow-sm);
 
   &:focus-visible {
     outline: 2px solid var(--fs-berries-500);
@@ -56,14 +56,14 @@
       background-color: var(--fs-berries-600);
       border-color: var(--fs-berries-600);
       transform: translateY(-1px);
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+      box-shadow: var(--shadow-md);
     }
 
     &:active {
       background-color: var(--fs-berries-700);
       border-color: var(--fs-berries-700);
       transform: translateY(0);
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      box-shadow: var(--shadow-sm);
     }
   }
 
@@ -77,14 +77,14 @@
       background-color: var(--fs-gray-50);
       border-color: var(--fs-gray-400);
       transform: translateY(-1px);
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      box-shadow: var(--shadow-md);
     }
 
     &:active {
       background-color: var(--fs-gray-100);
       border-color: var(--fs-gray-500);
       transform: translateY(0);
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      box-shadow: var(--shadow-xs);
     }
   }
 
@@ -99,7 +99,7 @@
       border-color: var(--fs-berries-600);
       color: var(--fs-berries-600);
       transform: translateY(-1px);
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      box-shadow: var(--shadow-md);
     }
 
     &:active {
@@ -107,7 +107,7 @@
       border-color: var(--fs-berries-700);
       color: var(--fs-berries-700);
       transform: translateY(0);
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      box-shadow: var(--shadow-xs);
     }
   }
 
@@ -136,43 +136,43 @@
 
   // Danger button (destructive actions)
   &--danger {
-    background-color: #dc2626;
-    border-color: #dc2626;
+    background-color: var(--fs-error-500);
+    border-color: var(--fs-error-500);
     color: var(--fs-white);
 
     &:hover {
-      background-color: #b91c1c;
-      border-color: #b91c1c;
+      background-color: var(--fs-error-600);
+      border-color: var(--fs-error-600);
       transform: translateY(-1px);
-      box-shadow: 0 4px 8px rgba(220, 38, 38, 0.3);
+      box-shadow: var(--shadow-md);
     }
 
     &:active {
-      background-color: #991b1b;
-      border-color: #991b1b;
+      background-color: var(--fs-error-700);
+      border-color: var(--fs-error-700);
       transform: translateY(0);
-      box-shadow: 0 2px 4px rgba(220, 38, 38, 0.2);
+      box-shadow: var(--shadow-sm);
     }
   }
 
   // Success button (positive actions)
   &--success {
-    background-color: #059669;
-    border-color: #059669;
+    background-color: var(--fs-success-500);
+    border-color: var(--fs-success-500);
     color: var(--fs-white);
 
     &:hover {
-      background-color: #047857;
-      border-color: #047857;
+      background-color: var(--fs-success-600);
+      border-color: var(--fs-success-600);
       transform: translateY(-1px);
-      box-shadow: 0 4px 8px rgba(5, 150, 105, 0.3);
+      box-shadow: var(--shadow-md);
     }
 
     &:active {
-      background-color: #065f46;
-      border-color: #065f46;
+      background-color: var(--fs-success-700);
+      border-color: var(--fs-success-700);
       transform: translateY(0);
-      box-shadow: 0 2px 4px rgba(5, 150, 105, 0.2);
+      box-shadow: var(--shadow-sm);
     }
   }
 

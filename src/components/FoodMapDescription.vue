@@ -64,7 +64,7 @@ export default {
   margin-top: 0.5rem;
   color: var(--fs-black);
   text-decoration: none;
-  border-radius: 0.5rem;
+  border-radius: var(--radius-sm);
   margin-bottom: 1rem;
   width: 100%;
 
@@ -74,7 +74,7 @@ export default {
 
   &__container {
     display: flex;
-    border-radius: 0.75rem;
+    border-radius: var(--radius-md);
     border: 2px solid var(--fs-gray-300);
     box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
     padding: 1rem;

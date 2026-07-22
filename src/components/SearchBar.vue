@@ -1008,7 +1008,7 @@ export default {
   padding: 1rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  border-radius: 0.5rem;
+  border-radius: var(--radius-sm);
 
   @include bp("tablet-up") {
     padding: 2.5rem;
@@ -1043,7 +1043,7 @@ export default {
     line-height: 1.25rem;
     padding: 0.5rem 2.5rem 0.5rem 2.5rem;
     border: 1px solid var(--fs-gray-300);
-    border-radius: 0.5rem;
+    border-radius: var(--radius-sm);
     width: 100%;
     display: block;
     height: 50px;
@@ -1105,11 +1105,11 @@ export default {
     background: var(--fs-white);
     border: 1px solid var(--fs-gray-300);
     border-top: none;
-    border-radius: 0 0 0.5rem 0.5rem;
+    border-radius: 0 0 var(--radius-sm) var(--radius-sm);
     max-height: 200px;
     overflow-y: auto;
-    z-index: 1000;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: var(--z-sticky);
+    box-shadow: var(--shadow-md);
   }
 
   &__suggestion-item {
@@ -1138,9 +1138,9 @@ export default {
     margin-top: 1rem;
     padding: 1rem;
     border: 1px solid var(--fs-gray-300);
-    border-radius: 0.5rem;
+    border-radius: var(--radius-sm);
     background-color: var(--fs-berries-100);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--shadow-xs);
 
     @include bp("tablet-up") {
       margin-top: 1.5rem;
@@ -1164,7 +1164,7 @@ export default {
     padding: 0.5rem;
     border: 1px solid var(--fs-gray-300);
     border-radius: 0.25rem;
-    background: white;
+    background: var(--fs-white);
     font-size: 0.875rem;
     width: 100%;
 
@@ -1188,7 +1188,7 @@ export default {
     padding: 0.5rem 1rem;
     border: 2px solid var(--fs-gray-300);
     border-radius: 2rem;
-    background: white;
+    background: var(--fs-white);
     color: var(--fs-gray-700);
     font-size: 0.875rem;
     font-weight: 500;
@@ -1203,13 +1203,13 @@ export default {
 
     &:hover {
       background-color: var(--fs-berries-400);
-      color: white;
+      color: var(--fs-white);
     }
 
     &--active {
       background: var(--fs-berries-500);
       border-color: var(--fs-berries-500);
-      color: white;
+      color: var(--fs-white);
     }
   }
 
@@ -1229,7 +1229,7 @@ export default {
     padding: 0.375rem 0.75rem;
     border: 1px solid var(--fs-gray-300);
     border-radius: 1.5rem;
-    background: white;
+    background: var(--fs-white);
     color: var(--fs-gray-700);
     font-size: 0.8rem;
     cursor: pointer;
@@ -1300,7 +1300,7 @@ export default {
     gap: 1rem;
     margin: 1.5rem 0;
 
-    @media (min-width: 768px) {
+    @include bp("tablet-up") {
       flex-direction: row;
       justify-content: center;
     }
@@ -1310,13 +1310,13 @@ export default {
     padding: 0.75rem 1.5rem;
     border: 2px solid var(--fs-gray-300);
     border-radius: 2rem;
-    background: white;
+    background: var(--fs-white);
     color: var(--fs-gray-700);
     font-size: 1rem;
     font-weight: 500;
     cursor: pointer;
     transition: all 0.2s ease;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--shadow-sm);
     white-space: nowrap;
     min-height: 3rem;
 
@@ -1329,7 +1329,7 @@ export default {
       border-color: var(--fs-lime);
       color: var(--fs-brokkoli);
       transform: translateY(-1px);
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+      box-shadow: var(--shadow-md);
     }
 
     &.active {
@@ -1359,26 +1359,26 @@ export default {
     font-weight: 500;
     cursor: pointer;
     transition: all 0.2s ease;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--shadow-sm);
 
     &:hover {
       background: var(--fs-berries-600);
       transform: translateY(-1px);
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+      box-shadow: var(--shadow-md);
     }
 
     &.active {
       background: var(--fs-berries-600);
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      box-shadow: var(--shadow-sm);
     }
   }
 
   // Ingredient finder styles
   &__ingredient-finder {
-    background: white;
+    background: var(--fs-white);
     border-radius: 1rem;
     padding: 2rem;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--shadow-lg);
     margin: 2rem 0;
     border: 2px solid var(--fs-berries-200);
 
@@ -1394,7 +1394,7 @@ export default {
 
     h3 {
       font-size: 1.5rem;
-      color: #2d3748;
+      color: var(--fs-gray-800);
       margin: 0 0 0.5rem 0;
       font-weight: 600;
 
@@ -1404,7 +1404,7 @@ export default {
     }
 
     p {
-      color: #718096;
+      color: var(--fs-gray-500);
       margin: 0;
       font-size: 1rem;
 
@@ -1420,7 +1420,7 @@ export default {
 
     label {
       display: block;
-      color: #2d3748;
+      color: var(--fs-gray-800);
       margin-bottom: 0.5rem;
       font-weight: 600;
       font-size: 1rem;
@@ -1432,22 +1432,22 @@ export default {
     top: 100%;
     left: 0;
     right: 0;
-    background: white;
+    background: var(--fs-white);
     border: 2px solid var(--fs-berries-500);
     border-top: none;
     border-radius: 0 0 0.75rem 0.75rem;
     list-style: none;
     padding: 0;
     margin: 0;
-    z-index: 100;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: var(--z-dropdown);
+    box-shadow: var(--shadow-md);
 
     li {
       padding: 0.75rem 1rem;
       cursor: pointer;
       font-size: 1rem;
-      color: #2d3748;
-      border-bottom: 1px solid #f0f0f0;
+      color: var(--fs-gray-800);
+      border-bottom: 1px solid var(--fs-gray-100);
 
       &:last-child {
         border-bottom: none;
@@ -1455,7 +1455,7 @@ export default {
 
       &:hover,
       &.is-active {
-        background-color: #fdf2f8;
+        background-color: var(--fs-berries-50);
         color: var(--fs-berries-500);
       }
     }
@@ -1464,11 +1464,11 @@ export default {
   &__ingredient-text-input {
     width: 100%;
     padding: 1rem;
-    border: 2px solid #e2e8f0;
-    border-radius: 0.75rem;
+    border: 2px solid var(--fs-gray-200);
+    border-radius: var(--radius-md);
     font-size: 1rem;
     transition: all 0.2s ease;
-    background: white;
+    background: var(--fs-white);
 
     @media (max-width: 767px) {
       padding: 0.875rem;
@@ -1478,11 +1478,11 @@ export default {
     &:focus {
       outline: none;
       border-color: var(--fs-berries-500);
-      box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+      box-shadow: var(--shadow-focus);
     }
 
     &::placeholder {
-      color: #a0aec0;
+      color: var(--fs-gray-400);
       font-style: italic;
     }
   }
@@ -1491,7 +1491,7 @@ export default {
     margin-bottom: 2rem;
 
     h4 {
-      color: #2d3748;
+      color: var(--fs-gray-800);
       margin: 0 0 1rem 0;
       font-size: 1.1rem;
       font-weight: 600;
@@ -1530,11 +1530,11 @@ export default {
     padding: 1.5rem;
     background: rgba(255, 193, 7, 0.1);
     border-radius: 1rem;
-    border: 2px solid #ffc107;
+    border: 2px solid var(--fs-warning-400);
 
     p {
       font-size: 1.2rem;
-      color: #856404;
+      color: var(--fs-warning-800);
       margin: 0 0 0.5rem 0;
       font-weight: 600;
     }
@@ -1592,7 +1592,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 9999;
+  z-index: var(--z-modal);
   padding: 1rem;
 
   @media (max-width: 768px) {
@@ -1601,8 +1601,8 @@ export default {
 }
 
 .henrik-modal {
-  background: white;
-  border-radius: 1rem;
+  background: var(--fs-white);
+  border-radius: var(--radius-lg);
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
   max-width: 400px;
   width: 100%;

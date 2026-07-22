@@ -41,14 +41,14 @@
   left: 8px;
   height: 15px;
   width: 15px;
-  background-color: #eee;
-  border: 1px solid #4a686d;
+  background-color: var(--fs-gray-100);
+  border: 1px solid var(--fs-brokkoli);
   border-radius: 50%;
 }
 
 /* On mouse-over, add a grey background color */
 .fs-checkbox__container:hover input ~ .fs-checkmark {
-  background-color: #ccc;
+  background-color: var(--fs-gray-300);
 }
 
 /* When the checkbox is checked, add a blue background */
@@ -72,7 +72,7 @@
 .fs-checkbox__container input:checked ~ .fs-checkbox__text {
   text-decoration: line-through;
   text-decoration-color: var(--fs-berries-500);
-  color: #4a686d;
+  color: var(--fs-brokkoli);
 }
 
 /* Style the checkmark/indicator */

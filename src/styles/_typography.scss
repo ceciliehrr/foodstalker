@@ -1,0 +1,82 @@
+@use "./mixins/typography" as *;
+
+.fs-h1 {
+  @include get-text("fs-h1");
+
+  color: var(--fs-black);
+}
+
+.fs-h2 {
+  @include get-text("fs-h2");
+
+  color: var(--fs-black);
+}
+
+.fs-h3 {
+  @include get-text("fs-h3");
+
+}
+
+.fs-h4 {
+  @include get-text("fs-h4");
+
+}
+
+.fs-h5 {
+  @include get-text("fs-h5");
+}
+
+.fs-h6 {
+  @include get-text("fs-h6");
+}
+
+.fs-body1 {
+  @include get-text("fs-body1");
+  color: var(--fs-black);
+}
+
+.fs-body2 {
+  @include get-text("fs-body2");
+}
+
+.fs-subtitle1 {
+  @include get-text("fs-subtitle1");
+}
+
+.fs-subtitle2 {
+  @include get-text("fs-subtitle2");
+}
+
+.fs-text-button {
+  @include get-text("fs-text-button");
+}
+
+.fs-overline {
+  @include get-text("fs-overline");
+}
+
+.fs-caption {
+  @include get-text("fs-caption");
+}
+
+.fs-oppskrift-title {
+  @include get-text("fs-oppskrift-title");
+}
+
+.fs-oppskrift-title--mobile {
+  @include get-text("fs-oppskrift-title--mobile");
+}
+
+.fs-oppskrift-ingress {
+  @include get-text("fs-oppskrift-ingress");
+}
+
+.fs-oppskrift-steps {
+  @include get-text("fs-oppskrift-steps");
+}
+
+.fstruncate-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

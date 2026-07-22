@@ -377,7 +377,7 @@ button {
   text-decoration-thickness: 3px;
   text-decoration-color: var(--fs-berries-300);
   text-underline-offset: 11px;
-  border-radius: 8px;
+  border-radius: var(--radius-sm);
   background-color: var(--fs-gray-100);
 }
 
@@ -385,7 +385,7 @@ button {
 .fs-btn--kokkemodus {
   background-color: var(--fs-berries-100);
   border: 1px solid var(--fs-berries-500);
-  border-radius: 8px;
+  border-radius: var(--radius-sm);
   padding: 10px 20px;
   color: var(--fs-black);
   cursor: pointer;
@@ -456,7 +456,7 @@ button {
     padding: 0.5rem;
     text-align: center;
     border: 1px solid var(--fs-gray-300);
-    border-radius: 0.5rem;
+    border-radius: var(--radius-sm);
     width: 60px;
     display: block;
 

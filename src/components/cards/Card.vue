@@ -59,7 +59,7 @@ function emojiCategory(cat: string): string {
   border-left-width: 1px;
   border-bottom-width: 1px;
   border-right-width: 1px;
-  border-radius: 0.5rem;
+  border-radius: var(--radius-sm);
   background-color: white;
   color: var(--fs-black);
   text-decoration: none;
@@ -121,7 +121,7 @@ function emojiCategory(cat: string): string {
       width: 100%;
       height: 100%;
       max-width: none;
-      border-radius: 0px;
+      border-radius: 0;
       border-top-left-radius: 0.5rem;
       border-bottom-left-radius: 0.5rem;
       object-fit: cover;
@@ -157,7 +157,7 @@ function emojiCategory(cat: string): string {
       place-items: center;
       background: var(--fs-gray-100);
       border: 1px solid var(--fs-gray-300);
-      border-radius: 9999px;
+      border-radius: var(--radius-full);
       width: 2.5rem;
       height: 2.5rem;
       font-size: 1rem;

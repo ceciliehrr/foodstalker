@@ -102,7 +102,7 @@ const formatTime = (time: string | number | undefined): string => {
 <style scoped>
 .next-level-suggestions {
   background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
-  border-radius: 16px;
+  border-radius: var(--radius-lg);
   padding: 2rem;
   margin: 2rem 0;
   border: 1px solid #e2e8f0;
@@ -137,7 +137,7 @@ const formatTime = (time: string | number | undefined): string => {
 
 .suggestion-card {
   background: white;
-  border-radius: 12px;
+  border-radius: var(--radius-md);
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;

@@ -293,7 +293,7 @@ export default {
     padding: 0.5rem;
     text-align: center;
     border: 1px solid var(--fs-gray-300);
-    border-radius: 0.5rem;
+    border-radius: var(--radius-sm);
     width: 60px;
     display: block;
 

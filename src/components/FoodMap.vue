@@ -729,7 +729,7 @@ export default {
   color: var(--fs-berries-500);
   padding: map.get($spacing, "size-24") 0;
   margin-bottom: map.get($spacing, "size-16");
-  border-radius: 1rem;
+  border-radius: var(--radius-lg);
 
   .hero-content {
     text-align: center;
@@ -765,7 +765,7 @@ export default {
   @include bp("mobile-down") {
     padding: map.get($spacing, "size-16") 0;
     margin-bottom: map.get($spacing, "size-12");
-    border-radius: 0.75rem;
+    border-radius: var(--radius-md);
   }
 }
 
@@ -773,7 +773,7 @@ export default {
 .restaurant-controls {
   background: var(--fs-white);
   border: 2px solid var(--fs-gray-200);
-  border-radius: 1rem;
+  border-radius: var(--radius-lg);
   padding: map.get($spacing, "size-16");
   margin-bottom: map.get($spacing, "size-16");
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
@@ -812,7 +812,7 @@ export default {
     padding: map.get($spacing, "size-8") map.get($spacing, "size-12");
     background: white;
     border: 2px solid var(--fs-berries-300);
-    border-radius: 0.5rem;
+    border-radius: var(--radius-sm);
     color: var(--fs-berries-600);
     font-weight: 500;
     cursor: pointer;
@@ -870,7 +870,7 @@ export default {
   // Filter Box Styles (matching FilterBox.vue)
   .filter-box {
     background: white;
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     padding: 1.5rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     border: 1px solid var(--fs-gray-200);
@@ -914,7 +914,7 @@ export default {
     gap: 0.75rem;
     padding: 0.75rem 1rem;
     border: 2px solid var(--fs-gray-200);
-    border-radius: 0.75rem;
+    border-radius: var(--radius-md);
     background: white;
     cursor: pointer;
     transition: all 0.2s ease;
@@ -962,7 +962,7 @@ export default {
     width: 100%;
     padding: 0.75rem 1rem;
     border: 2px solid var(--fs-gray-300);
-    border-radius: 0.75rem;
+    border-radius: var(--radius-md);
     background: white;
     color: var(--fs-gray-600);
     font-size: 0.875rem;
@@ -987,7 +987,7 @@ export default {
   .filter-box__show-more-btn {
     padding: 0.5rem 1rem;
     border: 1px solid var(--fs-gray-300);
-    border-radius: 0.5rem;
+    border-radius: var(--radius-sm);
     background: var(--fs-gray-50);
     color: var(--fs-gray-600);
     font-size: 0.8rem;
@@ -1031,7 +1031,7 @@ export default {
     width: 100%;
     padding: map.get($spacing, "size-8") map.get($spacing, "size-12");
     border: 2px solid var(--fs-gray-300);
-    border-radius: 0.5rem;
+    border-radius: var(--radius-sm);
     background-color: var(--fs-white);
     color: var(--fs-black);
     transition: all 0.2s ease;
@@ -1106,7 +1106,7 @@ export default {
   .view-toggle {
     display: flex;
     background: var(--fs-gray-100);
-    border-radius: 0.5rem;
+    border-radius: var(--radius-sm);
     padding: 4px;
   }
 
@@ -1156,7 +1156,7 @@ export default {
 .foodstalker-map {
   height: 450px;
   width: 100%;
-  border-radius: 1rem;
+  border-radius: var(--radius-lg);
   border: 2px solid var(--fs-gray-300);
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -1171,7 +1171,7 @@ export default {
 .leaflet-container {
   width: 100% !important;
   height: 100% !important;
-  border-radius: 1rem;
+  border-radius: var(--radius-lg);
 }
 
 // Restaurant List View
@@ -1185,7 +1185,7 @@ export default {
   text-align: center;
   padding: map.get($spacing, "size-24") map.get($spacing, "size-16");
   background: var(--fs-gray-100);
-  border-radius: 1rem;
+  border-radius: var(--radius-lg);
   border: 2px dashed var(--fs-gray-300);
 
   .no-results-content {
@@ -1219,7 +1219,7 @@ export default {
 .restaurant-card {
   background: var(--fs-white);
   border: 2px solid var(--fs-gray-200);
-  border-radius: 1rem;
+  border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;

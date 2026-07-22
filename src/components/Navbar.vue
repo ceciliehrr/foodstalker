@@ -261,7 +261,7 @@ export default {
   padding: 1rem 1rem 0rem 1rem;
   position: sticky;
   top: 0; /* Fester navbar til toppen */
-  z-index: 1000;
+  z-index: var(--z-sticky);
   transform: translateY(0);
   transition: transform 0.3s ease-in-out;
 }
@@ -411,12 +411,12 @@ export default {
   position: absolute;
   background-color: var(--fs-vanilla);
   min-width: 160px;
-  z-index: 1;
+  z-index: var(--z-base);
 
   @include bp("tablet-up") {
     margin-left: 1rem;
-    background-color: white;
-    border: 1px solid black;
+    background-color: var(--fs-white);
+    border: 1px solid var(--fs-black);
   }
 }
 
@@ -425,7 +425,7 @@ export default {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-  color: #333;
+  color: var(--fs-gray-700);
   margin-left: 1.5rem;
   margin-bottom: 0;
 

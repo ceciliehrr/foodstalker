@@ -172,7 +172,7 @@ const clearFilters = () => {
 
 .filter-info {
   background: #f8fafc;
-  border-radius: 12px;
+  border-radius: var(--radius-md);
   padding: 1.5rem;
   border: 1px solid #e2e8f0;
   margin-top: 1rem;
@@ -227,7 +227,7 @@ const clearFilters = () => {
   color: white;
   border: none;
   padding: 0.75rem 1.5rem;
-  border-radius: 8px;
+  border-radius: var(--radius-sm);
   cursor: pointer;
   font-size: 1rem;
   margin-top: 1rem;

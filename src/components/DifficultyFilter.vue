@@ -111,7 +111,7 @@ watch(
 <style scoped>
 .difficulty-filter {
   background: white;
-  border-radius: 12px;
+  border-radius: var(--radius-md);
   padding: 1.5rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 1.5rem;
@@ -137,7 +137,7 @@ watch(
   gap: 0.75rem;
   padding: 0.75rem 1rem;
   border: 2px solid #e5e7eb;
-  border-radius: 8px;
+  border-radius: var(--radius-sm);
   background: white;
   cursor: pointer;
   transition: all 0.2s ease;

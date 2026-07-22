@@ -166,7 +166,7 @@ const clearAllFilters = () => {
 <style scoped>
 .filter-box {
   background: white;
-  border-radius: 12px;
+  border-radius: var(--radius-md);
   padding: 1.5rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   border: 1px solid var(--fs-gray-200);
@@ -210,7 +210,7 @@ const clearAllFilters = () => {
   gap: 0.75rem;
   padding: 0.75rem 1rem;
   border: 2px solid var(--fs-gray-200);
-  border-radius: 0.75rem;
+  border-radius: var(--radius-md);
   background: white;
   cursor: pointer;
   transition: all 0.2s ease;

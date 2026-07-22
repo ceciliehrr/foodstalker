@@ -263,7 +263,7 @@ const applyFilters = () => {
   padding: 0.75rem 1rem;
   background: white;
   border: 2px solid var(--fs-berries-300);
-  border-radius: 0.75rem;
+  border-radius: var(--radius-md);
   color: var(--fs-berries-600);
   font-weight: 500;
   cursor: pointer;
@@ -364,7 +364,7 @@ const applyFilters = () => {
   align-items: center;
   padding: 0.75rem 1rem;
   border: 2px solid var(--fs-gray-200);
-  border-radius: 0.75rem;
+  border-radius: var(--radius-md);
   cursor: pointer;
   transition: all 0.2s ease;
   background: white;
@@ -448,7 +448,7 @@ const applyFilters = () => {
   flex: 2;
   padding: 0.875rem 1rem;
   border: none;
-  border-radius: 0.75rem;
+  border-radius: var(--radius-md);
   background: var(--fs-berries-500);
   color: white;
   font-weight: 600;

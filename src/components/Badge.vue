@@ -56,7 +56,7 @@ const handleClose = () => {
   gap: 0.25rem;
   padding: 0.25rem 0.75rem;
   border: 1px solid var(--fs-berries-200);
-  border-radius: 1rem;
+  border-radius: var(--radius-lg);
   font-size: 0.75rem;
   font-weight: 600;
   color: var(--fs-black);
@@ -68,7 +68,7 @@ const handleClose = () => {
 .badge--category {
   display: grid;
   place-items: center;
-  border-radius: 9999px; /* Circular for category */
+  border-radius: var(--radius-full); /* Circular for category */
   width: 2.5rem;
   height: 2.5rem;
   padding: 0;

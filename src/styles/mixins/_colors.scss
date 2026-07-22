@@ -8,4 +8,13 @@
   @each $name, $color in variables.$colors {
     --#{$name}: #{$color};
   }
+  @each $name, $value in variables.$shadows {
+    --shadow-#{$name}: #{$value};
+  }
+  @each $name, $value in variables.$radii {
+    --radius-#{$name}: #{$value};
+  }
+  @each $name, $value in variables.$z-index {
+    --z-#{$name}: #{$value};
+  }
 }

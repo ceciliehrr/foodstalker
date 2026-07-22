@@ -113,7 +113,7 @@ export default {
   margin-top: 0.5rem;
   color: var(--fs-black);
   text-decoration: none;
-  border-radius: 0.5rem;
+  border-radius: var(--radius-sm);
   @include bp("tablet-big-up") {
     flex-direction: column;
   }
@@ -126,7 +126,7 @@ export default {
   &__container {
     position: relative;
     display: flex;
-    border-radius: 0.75rem;
+    border-radius: var(--radius-md);
     border: 2px solid var(--fs-gray-300);
     box-shadow: 0px 10px 15px -3px rgba(64, 89, 90, 0.1);
     padding: 1rem;
@@ -169,7 +169,7 @@ export default {
       object-fit: cover;
       width: 5rem;
       height: 6rem; // Default height when no footer
-      border-radius: 0.5rem;
+      border-radius: var(--radius-sm);
     }
   }
   &__description {

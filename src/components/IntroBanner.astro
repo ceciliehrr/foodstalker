@@ -5,10 +5,7 @@ import sitron from "../assets/sitron2.jpg";
 
 <div class="fs-banner fade-in">
   <div class="fs-banner__text">
-    <h1 class="bannerTitle">
-      F O O D S T <a href="/grill" class="fs-banner__christmastreeLink">🔥</a> L K
-      E R
-    </h1>
+    <h1 class="bannerTitle">F O O D S T <a href="/grill" class="fs-banner__christmastreeLink">🔥</a> L K E R</h1>
     <p>Vi stalker flinke kokker og deler våre favorittoppskrifter</p>
   </div>
   <div class="fs-banner__image">
@@ -40,15 +37,18 @@ import sitron from "../assets/sitron2.jpg";
       margin: 2rem;
     }
     &__text {
-      display: grid;
-      place-content: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       text-align: center;
       @include bp("tablet-up") {
         flex-basis: 50%;
       }
       & h1 {
         @include get-text("fs-h5");
-        font-size: clamp(1.5rem, 2.5vw, 2.125rem);
+        font-size: clamp(1rem, 3.2vw, 2.125rem);
+        white-space: nowrap;
         @include bp("tablet-up") {
           line-height: 2.25rem;
         }
