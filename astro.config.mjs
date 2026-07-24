@@ -7,7 +7,7 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://foodstalker.no",
+  site: "https://www.foodstalker.no",
   integrations: [vue(), sitemap()],
   output: "static",
   image: {
