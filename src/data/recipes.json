@@ -17744,5 +17744,145 @@
       }
     ],
     "keywords": ["pai", "bacon", "ost", "middelalder", "helg"]
+  },
+  {
+    "id": "deviled-eggs",
+    "imageurl": "https://foodstalker.b-cdn.net/2026/deviled-eggs/DSC01452.jpg",
+    "alt": "deviled egg på frokostbordet med rødbeter i bakgrunnen",
+    "title": "Deviled eggs",
+    "date": "2026-07-25",
+    "category": "helg",
+    "description": "Kokte egg i rødbetelake, fylt med en fyldig og sprek eggeplommekrem.",
+    "longDescription": "Klassiske deviled eggs får et friskt og fargerikt løft av rødbetelake. Skikkelig digg til en 17. mai-frokost - eller som snacks til helgen.",
+    "time": 30,
+    "portions": 6,
+    "tips": "Ikke kast rødbetene du silte av! De er allerede kokt møre i sitron- og saltvannet, og du kan sylte de videre i like deler eddik, vann og sukker til for eksempel en rødbetsalat eller et koldtbord med spekemat(17.mai frokost!) - superdigg.",
+    "chef": "Sosiale medier",
+    "tipsurl": "",
+    "ingredients": [
+      {
+        "title": "Sylting av egg",
+        "ingredients": [
+          {
+            "quantity": "6 stk",
+            "name": "egg",
+            "details": ""
+          },
+          {
+            "quantity": "1.5 l",
+            "name": "vann",
+            "details": ""
+          },
+          {
+            "quantity": "1 stk",
+            "name": "rødbete",
+            "details": "stor"
+          },
+          {
+            "quantity": "1 stk",
+            "name": "sitron",
+            "details": "saften av"
+          },
+          {
+            "quantity": "1 ts",
+            "name": "salt",
+            "details": ""
+          }
+        ]
+      },
+      {
+        "title": "Fyll",
+        "ingredients": [
+          {
+            "quantity": "1 ss",
+            "name": "majones",
+            "details": ""
+          },
+          {
+            "quantity": "1 ts",
+            "name": "dijonsennep",
+            "details": ""
+          },
+          {
+            "quantity": "0.5-1 ss",
+            "name": "sriracha",
+            "details": "smak til"
+          },
+          {
+            "quantity": "til pynt",
+            "name": "gressløk",
+            "details": ""
+          },
+          {
+            "quantity": "smak til",
+            "name": "salt og pepper",
+            "details": ""
+          }
+        ]
+      }
+    ],
+    "steps": [
+      {
+        "title": "Sylting av egg",
+        "description": "Skrell rødbeten og skjær den i små terninger."
+      },
+      {
+        "title": "",
+        "description": "Ha rødbeten, vannet, saltet og saften av sitronen i en kjele. Kok rødbetene tyggemøre, dette er basert på størrelsen, ca. 20-30 minutter om de er grovkuttet. Avkjøl."
+      },
+      {
+        "title": "",
+        "description": "Når de er avkjølt, sil av betevannet i en bolle. Spar på rødbetene og bruk de til for eksempel en rødbetsalat, sylting eller noe i den duren."
+      },
+      {
+        "title": "",
+        "description": "Kok eggene i 8-10 minutter til de er hardkokte, og ha dem rett i en bolle med kaldt vann."
+      },
+      {
+        "title": "",
+        "description": "Skrell eggene og legg dem i en bolle. Hell betevannet over eggene. Dekker ikke vannet eggene helt, fyll på med litt vann så det såvidt dekker. La stå i kjøleskapet fra 3 timer og opptil en natt."
+      },
+      {
+        "title": "Fyll",
+        "description": "Del eggene i to og ta ut plommene i en bolle. Knus plommene og bland inn majones og sennep - ha i majones etter hvilken konsistens du ønsker. Smak til med salt, pepper og sriracha."
+      },
+      {
+        "title": "",
+        "description": "Ha blandingen i en sprøytepose og sprøyt eggeplommeblandingen tilbake i eggene. Pynt med finhakket gressløk."
+      }
+    ],
+    "images": [
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2026/deviled-eggs/DSC01382.jpg",
+        "alt": "egg i rødbetlake"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2026/deviled-eggs/DSC01402.jpg",
+        "alt": "kokte rødbeter i en bolle"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2026/deviled-eggs/DSC01421.jpg",
+        "alt": "fylte egg på et fat"
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2026/deviled-eggs/DSC01407.jpg",
+        "alt": "viser kokte egg i rødbetlake"
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2026/deviled-eggs/DSC01455.jpg",
+        "alt": "deviled egg på frokostbordet"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2026/deviled-eggs/DSC01452.jpg",
+        "alt": "deviled egg på frokostbordet med rødbeter i bakgrunnen"
+      }
+    ],
+    "keywords": ["egg", "rødbete", "sylting", "snacks", "helg", "frokost"]
   }
 ]
