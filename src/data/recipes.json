@@ -13388,7 +13388,7 @@
     "longDescription": "Ingenting slår en hjemmelaget panini på tur. Denne er inspirert av turen vår til Firenze, hvor man kunne få tak i panini som street food på hvert hjørne. Vår favoritt var Ino ved Ponte Vecchio. Der fikk vi servert panini med pesto, burrata og mortadella. Vi har prøvd oss på en norsk versjon med pestosmør, jukseburrata og ribberull. Det funker. Men dette kan varieres i det uendelige. Hva med en vegetarvariant med tomater, mozzarella, basilikum og en god olivenolje? Eller med spekeskinke, brie og honning?",
     "time": 1,
     "portions": 4,
-    "tips": "Prøv gjerne andre kjøttvarianter, men hva med vegetarvariant? Bytt ut kjøttpålegg med tomater! Takk for jukseburrataoppskrift Lise Finckenhagen, takk for pestosmør Hellstrøm og takk for den beste focaccia Julie",
+    "tips": "Prøv gjerne andre kjøttvarianter, men hva med vegetarvariant? Bytt ut kjøttpålegg med tomater! Takk for jukseburrataoppskrift Lise Finckenhagen, takk for pestosmør Hellstrøm og takk for den beste focaccia Julie. Psst - <a href='/oppskrift/grønnkremen'>grønnkremen</a> er sykt digg i denne paninien også, i stedet for pestosmøret.",
     "chef": "Ino panini, Lise Finckenhagen, Hellstrøm og Julies matblogg",
     "tipsurl": "",
     "ingredients": [
@@ -17884,5 +17884,103 @@
       }
     ],
     "keywords": ["egg", "rødbete", "sylting", "snacks", "helg", "frokost"]
+  },
+  {
+    "id": "grønnkremen",
+    "imageurl": "https://foodstalker.b-cdn.net/2026/grønnkrem/DSC01267.jpg",
+    "alt": "grønnkrem i hvit skål med friske basilikumblader, sett ovenfra",
+    "title": "Grønnkremen",
+    "date": "2026-07-29",
+    "category": "tilbehør",
+    "description": "En kremete dip med feta, pistasj og fersk basilikum. Digg til focaccia og grillmat.",
+    "longDescription": "Denne dukket opp i feeden en sommerkveld, og vi var solgt med en gang. Vi moddet den til våre preferanser. Kan dette bli kremen 2.0? Fetaost, ristede pistasjnøtter og en real neve fersk basilikum mikses sammen til en frisk, kremete og grønn dipp. Digg til ferskt brød, grønnsaker og grillmat.",
+    "time": 10,
+    "portions": 4,
+    "tips": "Grønnkremen er digg til grillmat, og vi serverer den gjerne sammen med sylta rødbeter - for eksempel restene av rødbetene fra <a href='/oppskrift/deviled-eggs'>deviled eggs</a>-oppskriften. Den er også sykt digg på <a href='/oppskrift/panini'>focaccia / panini</a>.",
+    "chef": "Sosiale medier",
+    "tipsurl": "",
+    "ingredients": [
+      {
+        "title": "",
+        "ingredients": [
+          {
+            "quantity": "200 g",
+            "name": "fetaost",
+            "details": ""
+          },
+          {
+            "quantity": "40 g",
+            "name": "pistasjnøtter",
+            "details": "usaltet, lett ristet"
+          },
+          {
+            "quantity": "1",
+            "name": "stor neve basilikumblader",
+            "details": "friske"
+          },
+          {
+            "quantity": "smak til",
+            "name": "salt og pepper",
+            "details": ""
+          }
+        ]
+      }
+    ],
+    "steps": [
+      {
+        "title": "",
+        "description": "Rist pistasjnøttene lett i en tørr panne til de dufter og får litt farge. Avkjøl."
+      },
+      {
+        "title": "",
+        "description": "Ha fetaost, pistasjnøtter og basilikumblader i en hurtighakker eller stavmikserbeger. Lager du en større mengde, bruk gjerne en foodprosessor."
+      },
+      {
+        "title": "",
+        "description": "Kjør til kremen er jevn og fin. Smak til med salt og pepper - og vurder om den trenger enda litt mer basilikum eller nøtter."
+      }
+    ],
+    "images": [
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2026/grønnkrem/DSC01620-2.jpg",
+        "alt": "fetaost, pistasjnøtter og basilikum klart i hurtighakkeren"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2026/grønnkrem/DSC01629-2.jpg",
+        "alt": "grønnkremen mikses med stavmikser"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2026/grønnkrem/DSC01267.jpg",
+        "alt": "grønnkrem i hvit skål med friske basilikumblader, sett ovenfra"
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2026/grønnkrem/DSC01630-2.jpg",
+        "alt": "ferdigmikset grønnkrem i hurtighakkerbegeret"
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2026/grønnkrem/DSC01258.jpg",
+        "alt": "grønnkrem i hvit skål, sett ovenfra"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2026/grønnkrem/DSC01636-2.jpg",
+        "alt": "grønnkremen servert som dressing over en rødbetesalat med focaccia og oliven"
+      }
+    ],
+    "keywords": [
+      "feta",
+      "pistasj",
+      "basilikum",
+      "dip",
+      "tilbehør",
+      "grønn",
+      "grill",
+      "grilltilbehør"
+    ]
   }
 ]
