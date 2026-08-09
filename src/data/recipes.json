@@ -17982,5 +17982,172 @@
       "grill",
       "grilltilbehør"
     ]
+  },
+  {
+    "id": "sjokoladekake-i-kasserolle",
+    "imageurl": "https://foodstalker.b-cdn.net/2026/sjokoladekake/main.jpg",
+    "alt": "sjokoladekake med sprinkles og tent lilla bursdagslys, tent med tennstikke",
+    "title": "Sjokoladekake i kasserolle",
+    "date": "2026-08-09",
+    "category": "søtt",
+    "description": "Saftig sjokoladekake kokt rett i kjelen, rask og enkel. Digg bursdagskake i langpanne.",
+    "longDescription": "Denne oppskriften fikk vi fra en tidligere kollega Vibeke, og er blitt den faste bursdagskaken i familien. Ingen mikser, ingen styr - alt kokes rett i en stor kasserolle, og resultatet er en mørk, saftig sjokoladekake med en digg glasur på toppen. Sett på et bursdagslys, strø over valgt pynt, og server til bursdagsbarnet. Denne kaken har vi også brukt til å lage temakaker, som fotballkake og sjørøverkake.",
+    "time": 70,
+    "portions": 20,
+    "tips": "Kaken blir bare bedre av å hvile til dagen etter, så bak den gjerne i god tid før selskapet. Ha glasuren over mens kaken ennå er lunken, så fester strøet seg skikkelig.",
+    "chef": "Vibeke",
+    "tipsurl": "",
+    "ingredients": [
+      {
+        "title": "Kakebunn",
+        "ingredients": [
+          {
+            "quantity": "500 g",
+            "name": "smør",
+            "details": ""
+          },
+          {
+            "quantity": "5 dl",
+            "name": "vann",
+            "details": ""
+          },
+          {
+            "quantity": "6 ss",
+            "name": "kakao",
+            "details": ""
+          },
+          {
+            "quantity": "1 kg",
+            "name": "sukker",
+            "details": ""
+          },
+          {
+            "quantity": "1 boks",
+            "name": "lettrømme",
+            "details": ""
+          },
+          {
+            "quantity": "4",
+            "name": "egg",
+            "details": "ett og ett"
+          },
+          {
+            "quantity": "600 g",
+            "name": "mel",
+            "details": ""
+          },
+          {
+            "quantity": "2 ts",
+            "name": "natron",
+            "details": ""
+          },
+          {
+            "quantity": "1 ts",
+            "name": "salt",
+            "details": ""
+          }
+        ]
+      },
+      {
+        "title": "Glasur",
+        "ingredients": [
+          {
+            "quantity": "120 g",
+            "name": "smør",
+            "details": "smeltes"
+          },
+          {
+            "quantity": "7 ss",
+            "name": "melk",
+            "details": "kan erstatte litt av melken med sterk kaffe"
+          },
+          {
+            "quantity": "4 ss",
+            "name": "kakao",
+            "details": ""
+          },
+          {
+            "quantity": "2 ts",
+            "name": "vaniljesukker",
+            "details": ""
+          },
+          {
+            "quantity": "1 pk",
+            "name": "melis",
+            "details": ""
+          }
+        ]
+      }
+    ],
+    "steps": [
+      {
+        "title": "Kakebunn",
+        "description": "Kok opp smør, vann og kakao i en stor kjele."
+      },
+      {
+        "title": "",
+        "description": "Ta kjelen av platen og bruk en visp til å røre."
+      },
+      {
+        "title": "",
+        "description": "Tilsett sukker, lettrømme og eggene - ett og ett - mens du visper."
+      },
+      {
+        "title": "",
+        "description": "Bland og visp godt inn mel, natron og salt."
+      },
+      {
+        "title": "",
+        "description": "Hell røren i en stor, høy langpanne kledd med bakepapir. Stek i ca. 45-50 minutter ved 180 grader."
+      },
+      {
+        "title": "Glasur",
+        "description": "Smelt smøret og rør sammen med melk, kakao, vaniljesukker og melis til en jevn glasur."
+      },
+      {
+        "title": "",
+        "description": "Ha glasuren over kaken mens den ennå er lunken. Strø over kokos eller annet strø."
+      }
+    ],
+    "images": [
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2026/sjokoladekake/DSC01662.jpg",
+        "alt": "sjokoladekakestykke med sprinkles og tent lilla bursdagslys på blomstrete tallerken"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2026/sjokoladekake/DSC01720.jpg",
+        "alt": "sprinkles drysses over sjokoladekakestykke med tent bursdagslys"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2026/sjokoladekake/IMG_4958-emoji.jpg",
+        "alt": "sjørøver-tema bursdagskake med skattekiste, gullmynter og sjørøverfigur i fondant"
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2026/sjokoladekake/DSC01662.jpg",
+        "alt": "sjokoladekakestykke med lys"
+      },
+      {
+        "orientation": "landscape",
+        "url": "https://foodstalker.b-cdn.net/2026/sjokoladekake/DSC01662.jpg",
+        "alt": "sjokoladekakestykke med sprinkles og tent lilla bursdagslys på blomstrete tallerken"
+      },
+      {
+        "orientation": "portrait",
+        "url": "https://foodstalker.b-cdn.net/2026/sjokoladekake/IMG_5366-1.jpg",
+        "alt": "tolagskake formet som fotball og fotballbane i fondant og marsipan"
+      }
+    ],
+    "keywords": [
+      "sjokoladekake",
+      "kasserolle",
+      "bursdag",
+      "kake",
+      "sjokolade",
+      "søtt"
+    ]
   }
 ]
