@@ -42,6 +42,13 @@ ikke les hele filen på én gang.
 Ny oppskrift legges til **sist** i arrayet — index.astro sorterer selv på `date` ved rendering,
 rekkefølgen i filen spiller ingen rolle.
 
+`quantity`-feltet bør holdes rent numerisk/målbart (`"200 g"`, `"1"`, `"smak til"`) fremover —
+beskrivende ord som "neve", "liten", "stor" hører hjemme i `details` eller fremst i `name` i
+stedet (f.eks. `"stor neve basilikumblader"`), ikke i `quantity` selv. Brukeren har en
+datakvalitetsprosess nedstrøms som strippet et slikt ord fra `quantity`. Mange eldre oppskrifter
+har fortsatt beskrivende ord rått i `quantity` (f.eks. `"1 neve"`) — ikke masse-rett disse med
+mindre brukeren ber om det, dette gjelder kun nye/redigerte oppføringer.
+
 ## Bilder: fast orientation-mønster (viktig!)
 
 `ImageGallery.vue` bruker CSS multi-column masonry. **Nesten alle** oppskrifter (108 av 110, sjekket
@@ -72,6 +79,33 @@ som "PLACEHOLDER - bytt ut når bilde er lastet opp", og si tydelig fra til bruk
 prøver å hente/optimalisere eksterne bilder ved bygg). `npm run dev` går fint helt til man besøker
 akkurat den siden. Legg gjerne inn 6 tomme `images`-slots (riktig orientation-mønster, tom
 `url`/`alt`) som brukeren selv fyller inn etter fotografering.
+
+## Hente bilder fra Bunny CDN
+
+Brukeren laster ofte opp bilder til Bunny Storage før oppskriften skal skrives, og har CLI-en
+`bunny` installert og innlogget på sin maskin.
+
+1. Sjekk først om `bunny` finnes i *denne* shell-sesjonen (`which bunny`). Den er ofte **ikke**
+   det, selv om brukeren er logget inn — CLI-en kan være installert/innlogget i en annen terminal
+   på deres maskin, utenfor det Claude Code har tilgang til. Ikke anta at "logget inn" betyr
+   tilgjengelig her.
+2. Hvis kommandoen ikke finnes i denne sesjonen: be brukeren selv kjøre listekommandoen (i egen
+   terminal, eller prefikset med `!` i chatten) og lime inn output til deg, f.eks.:
+   `bunny storage files list "ÅR/mappenavn"`.
+3. Selve bildefilene er offentlig tilgjengelige på `https://foodstalker.b-cdn.net/ÅR/mappenavn/fil.jpg`
+   — ingen autentisering trengs for å laste dem ned med `curl`. Mappenavn med norske tegn (æøå) må
+   URL-encodes i curl-kallet (`%C3%B8` for `ø` osv.), men lagres **rått** (ikke encodet) i
+   `recipes.json` — se eksisterende konvensjon i filen (mange eldre oppskrifter har æøå rått i URL-en).
+4. Last ned bildene til scratchpad-mappa, sjekk orientering med
+   `sips -g pixelWidth -g pixelHeight fil.jpg` (landscape når bredde > høyde), og bruk `Read`
+   -verktøyet på de lokale filene for å faktisk se motivet — det trengs for å skrive treffende
+   alt-tekster og for å plukke riktige 6 bilder (se under).
+5. Det er vanlig å ha flere bilder tilgjengelig enn de 6 som trengs til orientation-mønsteret. Velg
+   de 6 som forteller historien best (ingredienser → prosess → ferdig rett → evt. serveringsforslag)
+   i stedet for bare de første 6 alfabetisk/kronologisk.
+6. Hovedbildet (topplevel `imageurl`) trenger ikke gjentas i `images`-arrayet (71 av 110 sjekket
+   oppskrifter gjør ikke det), men gjøres det, ligger det oftest i siste `portrait`-slot — det er et
+   vanlig mønster, ikke en fast regel.
 
 ## Stemme og sjargong
 
