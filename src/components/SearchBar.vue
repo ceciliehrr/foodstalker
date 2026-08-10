@@ -342,6 +342,8 @@ export default {
     this.$nextTick(() => {
       this.isLoading = false;
     });
+
+    this.applyIngredientsFromUrl();
   },
 
   beforeDestroy() {
@@ -890,6 +892,29 @@ export default {
       if (index > -1) {
         this.selectedIngredients.splice(index, 1);
       }
+    },
+
+    // Pre-fill ingrediens-søket fra en URL-parameter, f.eks. ?ingrediens=laks,potet
+    // (brukt av appen for å lenke rett til et forhåndsutfylt søk).
+    applyIngredientsFromUrl() {
+      if (typeof window === "undefined") return;
+      const params = new URLSearchParams(window.location.search);
+      const raw = params.get("ingrediens");
+      if (!raw) return;
+
+      const ingredients = raw
+        .split(",")
+        .map((ingredient) => ingredient.trim().toLowerCase())
+        .filter((ingredient) => ingredient && ingredient !== "toro");
+
+      if (ingredients.length === 0) return;
+
+      this.setSearchMode("ingredient");
+      ingredients.forEach((ingredient) => {
+        if (!this.selectedIngredients.includes(ingredient)) {
+          this.selectedIngredients.push(ingredient);
+        }
+      });
     },
 
     // Handle apply from FilterBox components
