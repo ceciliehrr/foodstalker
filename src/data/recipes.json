@@ -1082,7 +1082,8 @@
       "ingefær",
       "anis",
       "selskap",
-      "fest"
+      "fest",
+      "høst"
     ]
   },
   {
@@ -1206,7 +1207,7 @@
         "alt": "dyp tallerken med knokesupp med et dryss persille på."
       }
     ],
-    "keywords": ["suppe", "gris", "grønnskaker", "sunt", "svin", "senior"]
+    "keywords": ["suppe", "gris", "grønnskaker", "sunt", "svin", "senior", "høst"]
   },
   {
     "id": "nakkekotelett-med-plommer",
@@ -1338,7 +1339,8 @@
       "ris",
       "plommer",
       "rask",
-      "senior"
+      "senior",
+      "høst"
     ]
   },
   {
@@ -2228,7 +2230,7 @@
         "alt": "En klype tar tak i en biff i ei stekepanne for å sjekke om biffen er ferdig på den ene siden."
       }
     ],
-    "keywords": ["biff", "sopp", "entrecote"]
+    "keywords": ["biff", "sopp", "entrecote", "høst"]
   },
   {
     "id": "and-med-bringebær",
@@ -3777,7 +3779,8 @@
       "enkelt",
       "bedre enn toro",
       "vegetar",
-      "senior"
+      "senior",
+      "høst"
     ]
   },
   {
@@ -9717,7 +9720,8 @@
       "turmat",
       "søtpotet",
       "curry",
-      "senior"
+      "senior",
+      "høst"
     ]
   },
   {
@@ -11368,7 +11372,7 @@
         "alt": "eplekake"
       }
     ],
-    "keywords": ["kake", "epler", "rask", "middag", "søtt", "dessert", "senior"]
+    "keywords": ["kake", "epler", "rask", "middag", "søtt", "dessert", "senior", "høst"]
   },
   {
     "id": "gravet-laks",
@@ -12633,7 +12637,7 @@
         "alt": "sopprisotto"
       }
     ],
-    "keywords": ["sopp", "risotto", "høst", ""]
+    "keywords": ["sopp", "risotto", "høst"]
   },
   {
     "id": "bringebærpai",

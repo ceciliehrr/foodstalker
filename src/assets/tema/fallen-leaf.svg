@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 128 128">
+  <!-- Lønneblad (høst) -->
+  <path fill="#E8711C" d="M64 8l9 20 12-7-3 25 18-12-2 14 18 2-13 13 9 6-26 8 4 11-22-6V112h-8V82l-22 6 4-11-26-8 9-6L10 50l18-2-2-14 18 12-3-25 12 7z"/>
+  <path fill="#F59A2C" d="M64 18l6 14 8-4-2 18 12-8-1 9 12 1-9 9 6 4-18 5 3 7-17-5z"/>
+  <path fill="none" stroke="#9A3E0B" stroke-width="3" stroke-linecap="round" d="M64 30v84M64 70L36 56M64 70l28-14M64 52L48 38M64 52l16-14"/>
+</svg>

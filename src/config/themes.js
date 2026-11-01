@@ -5,6 +5,7 @@ import tacoEmoji from "../assets/tema/taco.svg";
 import partyPopperEmoji from "../assets/tema/party-popper-noto.svg";
 import juletreEmoji from "../assets/tema/juletre.svg";
 import sitronEmoji from "../assets/tema/lemon.svg";
+import hostEmoji from "../assets/tema/fallen-leaf.svg";
 
 export const themes = {
   jul: {
@@ -45,6 +46,16 @@ export const themes = {
     dividerText: "Grill Oppskrifter",
     introText:
       "Grillsesongen er her! Oppdag våre beste grilloppskrifter for å imponere familie og venner med saftige og smakfulle retter.",
+  },
+  host: {
+    keyword: "høst",
+    title: "Høstoppskrifter",
+    description:
+      "Høsten er her! Varmende supper, gryter og bakst med sesongens beste råvarer – sopp, epler, rotgrønnsaker og vilt.",
+    emoji: hostEmoji,
+    dividerText: "Høstoppskrifter",
+    introText:
+      "Høsten er her! Tenn noen lys og kos deg med varmende supper, gryter og bakst laget av sesongens beste råvarer – sopp, epler, rotgrønnsaker og vilt.",
   },
 };
 
