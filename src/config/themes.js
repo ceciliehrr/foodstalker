@@ -7,6 +7,9 @@ import juletreEmoji from "../assets/tema/juletre.svg";
 import sitronEmoji from "../assets/tema/lemon.svg";
 import hostEmoji from "../assets/tema/fallen-leaf.svg";
 
+// Sesongtemaet som fremheves på forsiden (snarveiraden). Bytt når sesongen skifter.
+export const activeTheme = "host";
+
 export const themes = {
   jul: {
     keyword: "jul",
@@ -53,6 +56,9 @@ export const themes = {
     description:
       "Høsten er her! Varmende supper, gryter og bakst med sesongens beste råvarer – sopp, epler, rotgrønnsaker og vilt.",
     emoji: hostEmoji,
+    // Snarveikortet på forsiden ("Utforsk mer")
+    shortcut: "Høstoppskrifter",
+    shortcutEmoji: "🍂",
     dividerText: "Høstoppskrifter",
     introText:
       "Høsten er her! Tenn noen lys og kos deg med varmende supper, gryter og bakst laget av sesongens beste råvarer – sopp, epler, rotgrønnsaker og vilt.",

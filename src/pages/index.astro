@@ -7,6 +7,7 @@ import SearchBar from "../components/SearchBar.vue";
 import Grid from "../components/Grid.vue";
 import Divider from "../components/Divider.astro";
 import IntroBanner from "../components/IntroBanner.astro";
+import QuickLinks from "../components/QuickLinks.astro";
 
 import getRecipes from "../data/recipes.json";
 import TopList from "../components/TopList.astro";
@@ -20,6 +21,7 @@ const sortedRecipes = recipes
 <Layout title="Foodstalker">
   <IntroBanner />
   <SearchBar client:idle />
+  <QuickLinks />
   <Divider text="Topp 5" />
   <TopList recipes={recipes} />
   <Divider text="Siste oppskrifter" />

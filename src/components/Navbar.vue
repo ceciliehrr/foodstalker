@@ -31,7 +31,7 @@
             <a href="/oppskrift/drikke"><span>🍹</span> Drikke</a>
           </li>
           <li>
-            <a href="/spise-hvor"><span>🍝</span> Hvor vil du spise?</a>
+            <a href="/spise-hvor"><span>🍝</span> Restaurantkart</a>
           </li>
           <li>
             <div class="dropdown" ref="dropdown" @click.stop="toggleDropdown">
@@ -44,7 +44,7 @@
                   <li>
                     <a href="/om-oss">Om oss</a>
                   </li>
-                  <li><a href="/themenu">Menyer</a></li>
+                  <li><a href="/menyer">Menyer</a></li>
                 </ul>
                 <!-- Add more dropdown items if needed -->
               </div>
@@ -87,7 +87,7 @@
           <a href="/oppskrift/drikke"><span>🍹</span> Drikke</a>
         </li>
         <li>
-          <a href="/spise-hvor"><span>🍝</span> Hvor vil du spise?</a>
+          <a href="/spise-hvor"><span>🍝</span> Restaurantkart</a>
         </li>
         <li>
           <div
@@ -108,7 +108,7 @@
                 </li>
 
                 <li>
-                  <a href="/themenu"
+                  <a href="/menyer"
                     ><i class="arrow right arrow--margin-right"></i>Menyer</a
                   >
                 </li>

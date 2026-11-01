@@ -1,0 +1,150 @@
+---
+// Sveipbar rad med emoji-kort til sider som ellers sjelden blir funnet.
+// Første kort er dagens sesongtema (activeTheme i themes.js).
+// Bevisst emoji i stedet for foto, så kortene ikke forveksles med oppskrifter.
+import Divider from "./Divider.astro";
+import { activeTheme, getTheme } from "../config/themes.js";
+
+const theme = getTheme(activeTheme);
+
+const links = [
+  theme && {
+    href: `/${activeTheme}`,
+    label: theme.shortcut ?? theme.title,
+    emoji: theme.shortcutEmoji ?? "✨",
+  },
+  {
+    href: "/spise-hvor",
+    label: "Restaurantkart",
+    emoji: "🗺️",
+  },
+  {
+    href: "/menyer",
+    label: "Menyer",
+    emoji: "📋",
+  },
+  {
+    href: "/om-oss",
+    label: "Om oss",
+    emoji: "👋",
+  },
+].filter(Boolean);
+---
+
+<Divider text="Utforsk mer" />
+<nav class="fs-quicklinks" aria-label="Utforsk mer">
+  <ul class="fs-quicklinks__list">
+    {
+      links.map((link) => (
+        <li>
+          <a class="fs-quicklinks__card" href={link.href}>
+            <span class="fs-quicklinks__emoji" aria-hidden="true">
+              {link.emoji}
+            </span>
+            <span class="fs-quicklinks__label">{link.label}</span>
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</nav>
+
+<style lang="scss">
+  @use "../styles/mixins/breakpoints" as *;
+
+  .fs-quicklinks {
+    margin: 0 0 0.5rem;
+  }
+
+  .fs-quicklinks__list {
+    display: flex;
+    gap: 0.6rem;
+    list-style: none;
+    margin: 0;
+    // Litt luft rundt så skyggen ikke klippes av scroll-containeren
+    padding: 0.25rem 0.25rem 1rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-padding-left: 0.25rem;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    @include bp("tablet-up") {
+      justify-content: center;
+      overflow: visible;
+    }
+
+    li {
+      min-width: 0;
+      // ~2,5–3 kort synlig på mobil – det delvis synlige kortet viser at
+      // raden kan sveipes. Holdes lavere enn Topp 5-kortene.
+      flex: 0 0 7.75rem;
+      scroll-snap-align: start;
+
+      @include bp("tablet-up") {
+        flex-basis: 8.5rem;
+      }
+    }
+  }
+
+  .fs-quicklinks__card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+    border: 2px solid var(--fs-gray-300);
+    border-radius: 0.75rem;
+    background-color: white;
+    box-shadow: 0px 8px 12px -4px rgba(64, 89, 90, 0.1);
+    color: var(--fs-black);
+    text-decoration: none;
+    transition:
+      transform 0.15s ease,
+      box-shadow 0.15s ease;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0px 12px 16px -4px rgba(64, 89, 90, 0.18);
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--fs-berries-500);
+      outline-offset: 2px;
+    }
+  }
+
+  .fs-quicklinks__emoji {
+    display: grid;
+    place-items: center;
+    height: 4rem;
+    font-size: 2.25rem;
+    line-height: 1;
+    background-color: var(--fs-berries-100);
+  }
+
+  .fs-quicklinks__label {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    min-height: 2.25rem;
+    padding: 0.4rem 0.5rem;
+    font-size: 0.72rem;
+    font-weight: 600;
+    line-height: 1.25;
+    overflow-wrap: anywhere;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .fs-quicklinks__card {
+      transition: none;
+
+      &:hover {
+        transform: none;
+      }
+    }
+  }
+</style>
