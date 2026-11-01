@@ -21,6 +21,9 @@
         </button>
       </div>
 
+      <p v-if="wakeLockActive" class="wake-lock-note">
+        🔆 Skjermen holdes på mens kokkemodus er åpen
+      </p>
       <div class="tab-content" v-show="activeTab === 'ingredients'">
         <label class="fs-ingredients__portions" for="portion-cookingmode"
           >Posjoner</label
@@ -32,7 +35,8 @@
           <input
             class="fs-ingredients__input"
             type="number"
-            v-model="portion"
+            min="1"
+            v-model.number="state.portion"
             id="portion-cookingmode"
           />
           <button class="fs-ingredients__button" @click="increaseServing">
@@ -59,6 +63,7 @@
               >
                 <input
                   type="checkbox"
+                  v-model="state.ingredients[index + '-' + ingredientIndex]"
                   :id="'ingredient-cookingmode' + index + '-' + ingredientIndex"
                   :aria-labelledby="
                     'ingredient-label-cookingmode' +
@@ -94,18 +99,27 @@
         </div>
       </div>
       <div class="tab-content" v-show="activeTab === 'steps'">
-        <div v-for="(step, stepsIndex) in steps">
+        <div
+          v-for="(step, stepsIndex) in steps"
+          class="cm-step"
+          :class="{
+            'cm-step--done': state.steps[stepsIndex],
+            'cm-step--current': stepsIndex === currentStep,
+          }"
+          :aria-current="stepsIndex === currentStep ? 'step' : undefined"
+        >
           <h3>{{ step.title }}</h3>
           <ul class="fs-ingredients__ol-list">
             <li class="fs-checkbox__list">
               <label
-                :for="'ingredient-cookingmode' + stepsIndex"
+                :for="'step-cookingmode' + stepsIndex"
                 class="fs-checkbox__container"
                 :id="'ingredient-label-cookingmode' + stepsIndex"
               >
                 <input
                   type="checkbox"
-                  :id="'ingredient-cookingmode' + stepsIndex"
+                  v-model="state.steps[stepsIndex]"
+                  :id="'step-cookingmode' + stepsIndex"
                   :aria-labelledby="
                     'ingredient-label-cookingmode' + stepsIndex
                   " />
@@ -120,6 +134,11 @@
           </ul>
         </div>
       </div>
+      <div class="reset">
+        <button class="reset-button" @click="reset">
+          Nullstill avkrysninger og porsjoner
+        </button>
+      </div>
     </swipe-modal>
   </div>
 </template>
@@ -127,12 +146,21 @@
 <script>
 import swipeModal from "@takuma-ru/vue-swipe-modal";
 import { ref } from "vue";
+import { useRecipeState, resetRecipeState } from "../utils/recipeState";
+import {
+  scaleQuantity,
+  getIngredientDisplayName,
+} from "../utils/scaleQuantity";
 
 export default {
   components: {
     swipeModal,
   },
   props: {
+    recipeId: {
+      type: String,
+      required: true,
+    },
     ingredients: {
       type: Array,
       required: true,
@@ -155,8 +183,39 @@ export default {
         { id: "ingredients", label: "Ingredienser" },
         { id: "steps", label: "Oppskrift" },
       ],
-      portion: this.portions,
+      wakeLock: null,
+      wakeLockActive: false,
     };
+  },
+  setup(props) {
+    return { state: useRecipeState(props.recipeId, props.portions) };
+  },
+  computed: {
+    portion() {
+      return this.state.portion;
+    },
+    // Første steg som ikke er krysset av – der du er i oppskriften nå
+    currentStep() {
+      const index = this.steps.findIndex((_, i) => !this.state.steps[i]);
+      return index === -1 ? null : index;
+    },
+  },
+  watch: {
+    // Dekker både knappen og når modalen sveipes ned
+    isModal(open) {
+      if (open) {
+        this.requestWakeLock();
+      } else {
+        this.releaseWakeLock();
+      }
+    },
+  },
+  mounted() {
+    document.addEventListener("visibilitychange", this.onVisibilityChange);
+  },
+  beforeUnmount() {
+    document.removeEventListener("visibilitychange", this.onVisibilityChange);
+    this.releaseWakeLock();
   },
   methods: {
     switchTab(tabId) {
@@ -171,152 +230,44 @@ export default {
       document.body.style.overflow = ""; // Revert back to default scrolling
     },
     decreaseServing() {
-      this.portion = this.portion - 1;
+      if (this.state.portion > 1) this.state.portion -= 1;
     },
     increaseServing() {
-      this.portion = this.portion + 1;
+      this.state.portion += 1;
+    },
+    // Hold skjermen på mens man lager mat (Screen Wake Lock API).
+    // Støttes ikke i alle nettlesere – da skjer det bare ingenting.
+    async requestWakeLock() {
+      if (!("wakeLock" in navigator) || this.wakeLock) return;
+      try {
+        this.wakeLock = await navigator.wakeLock.request("screen");
+        this.wakeLockActive = true;
+        this.wakeLock.addEventListener("release", () => {
+          this.wakeLock = null;
+          this.wakeLockActive = false;
+        });
+      } catch {
+        this.wakeLockActive = false;
+      }
+    },
+    releaseWakeLock() {
+      this.wakeLock?.release();
+      this.wakeLock = null;
+      this.wakeLockActive = false;
+    },
+    // Nettleseren slipper låsen når fanen skjules – be om den igjen
+    onVisibilityChange() {
+      if (document.visibilityState === "visible" && this.isModal) {
+        this.requestWakeLock();
+      }
+    },
+    reset() {
+      resetRecipeState(this.recipeId, this.portions);
     },
     calculateAdjustedQuantity(originalQuantity) {
-      // Adjust the quantity based on the selected portion
-
-      // Handle empty or invalid quantities
-      if (!originalQuantity || originalQuantity.trim() === "") {
-        return "";
-      }
-
-      // Handle ranges with fractions first (like "1/2-1 dl", "1/4-2 stk")
-      const rangeWithFractionMatch = originalQuantity.match(
-        /(\d+\/\d+)\s*-\s*([\d.]+)\s*([^\d\s\/-]+)/
-      );
-      if (rangeWithFractionMatch) {
-        const fraction = rangeWithFractionMatch[1];
-        const secondValue = rangeWithFractionMatch[2];
-        const unit = rangeWithFractionMatch[3];
-
-        // Convert fraction to decimal for calculation
-        const [numerator, denominator] = fraction.split("/").map(Number);
-        const decimalValue = numerator / denominator;
-        const secondNumericValue = parseFloat(secondValue);
-
-        // Adjust both values based on the selected portion
-        const adjustedFirst = (decimalValue / this.portions) * this.portion;
-        const adjustedSecond =
-          (secondNumericValue / this.portions) * this.portion;
-
-        // Format both values as decimals for consistency in ranges
-        const formattedFirst =
-          adjustedFirst % 1 === 0
-            ? adjustedFirst.toFixed(0)
-            : adjustedFirst.toFixed(1);
-
-        const formattedSecond =
-          adjustedSecond % 1 === 0
-            ? adjustedSecond.toFixed(0)
-            : adjustedSecond.toFixed(1);
-
-        return `${formattedFirst}-${formattedSecond} ${unit}`;
-      }
-
-      // Handle simple fractions (like "1/2 dl", "1/4 stk")
-      const fractionMatch = originalQuantity.match(
-        /(\d+\/\d+)\s*([^\d\s\/-]+)/
-      );
-      if (fractionMatch) {
-        const fraction = fractionMatch[1];
-        const unit = fractionMatch[2];
-
-        // Convert fraction to decimal for calculation
-        const [numerator, denominator] = fraction.split("/").map(Number);
-        const decimalValue = numerator / denominator;
-
-        // Adjust the numeric value based on the selected portion
-        const adjustedValue = (decimalValue / this.portions) * this.portion;
-
-        // Always format as decimal for consistency
-        const formattedValue =
-          adjustedValue % 1 === 0
-            ? adjustedValue.toFixed(0)
-            : adjustedValue.toFixed(1);
-        return `${formattedValue} ${unit}`;
-      }
-
-      // Extract the numeric value and unit from the original quantity
-      // Updated regex to handle ranges with spaces around hyphen
-      const match = originalQuantity.match(/([\d.\s-]+)\s*([^\d\s-]+)/);
-
-      if (match) {
-        // Clean up the numeric part by removing extra spaces
-        const numericPart = match[1].trim();
-        const unit = match[2];
-
-        // Check if it's a range (contains hyphen and has spaces around it)
-        const isRange =
-          numericPart.includes("-") ||
-          numericPart.includes(" -") ||
-          numericPart.includes("- ");
-
-        if (isRange) {
-          // Handle the case where the original quantity is a range
-          // Split on hyphen and clean up spaces
-          const rangeParts = numericPart
-            .split(/-|\s-\s|\s-/)
-            .map((part) => part.trim())
-            .filter((part) => part);
-          const unit = match[2];
-
-          // Adjust each part of the range based on the selected portion
-          const adjustedRange = rangeParts.map((part) => {
-            const numericValue = parseFloat(part);
-
-            // Validate that we have a valid number
-            if (isNaN(numericValue)) {
-              return part; // Return original if not a valid number
-            }
-
-            const adjustedValue = (numericValue / this.portions) * this.portion;
-            const formattedValue =
-              adjustedValue % 1 === 0
-                ? adjustedValue.toFixed(0)
-                : adjustedValue.toFixed(1);
-
-            return formattedValue;
-          });
-
-          // You may want to format the quantity here if needed
-          return `${adjustedRange.join("-")} ${unit}`;
-        } else {
-          // Handle the case where the original quantity is a single value
-          const numericValue = parseFloat(numericPart);
-
-          // Validate that we have a valid number
-          if (isNaN(numericValue)) {
-            return originalQuantity; // Return original if not a valid number
-          }
-
-          const unit = match[2];
-
-          // Adjust the numeric value based on the selected portion
-          const adjustedValue = (numericValue / this.portions) * this.portion;
-
-          const formattedValue =
-            adjustedValue % 1 === 0
-              ? adjustedValue.toFixed(0)
-              : adjustedValue.toFixed(1);
-
-          // You may want to format the quantity here if needed
-          return formattedValue + " " + unit;
-        }
-      } else {
-        // If no numeric value and unit are found, return the original quantity
-        return originalQuantity;
-      }
+      return scaleQuantity(originalQuantity, this.portions, this.portion);
     },
-    getIngredientDisplayName(ingredient) {
-      if (ingredient.details) {
-        return `${ingredient.name} (${ingredient.details})`;
-      }
-      return ingredient.name;
-    },
+    getIngredientDisplayName,
   },
 };
 </script>
@@ -338,6 +289,43 @@ button {
   border-top-right-radius: 2.25rem !important;
 }
 
+.wake-lock-note {
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--fs-gray-600);
+  margin: 0.5rem 0 0;
+}
+.cm-step {
+  padding: 0.5rem 0.75rem;
+  margin: 0 -0.75rem 0.5rem;
+  border-left: 4px solid transparent;
+  border-radius: 0.25rem;
+  transition:
+    opacity 0.2s ease,
+    background-color 0.2s ease;
+
+  &--done {
+    opacity: 0.45;
+  }
+  &--current {
+    border-left-color: var(--fs-berries-400);
+    background-color: var(--fs-berries-50);
+  }
+}
+.reset {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0 1rem;
+}
+.reset-button {
+  background: none;
+  border: none;
+  font-size: 0.875rem;
+  text-decoration: underline;
+  color: var(--fs-gray-600);
+  cursor: pointer;
+  padding: 0.5rem;
+}
 .tabs {
   display: flex;
   position: fixed;

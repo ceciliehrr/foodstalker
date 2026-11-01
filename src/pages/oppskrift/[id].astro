@@ -100,6 +100,7 @@ const schema = {
       </div>
       <div class="recipe-modal">
         <CookingMode
+          recipeId={post.id}
           steps={post.steps}
           ingredients={post.ingredients}
           portions={post.portions}
@@ -125,6 +126,7 @@ const schema = {
 
       <div class="recipe-ingredients">
         <Ingredients
+          recipeId={post.id}
           ingredients={post.ingredients}
           portions={post.portions}
           client:idle

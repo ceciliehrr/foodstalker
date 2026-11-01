@@ -12,7 +12,9 @@
           class="fs-ingredients__input"
           id="portion"
           type="number"
-          v-model="portion"
+          min="1"
+          :value="portion"
+          @input="setPortion($event.target.value)"
         />
         <button class="fs-ingredients__button" @click="increaseServing">
           +
@@ -37,6 +39,11 @@
           >
             <input
               type="checkbox"
+              :checked="isChecked(index + '-' + ingredientIndex)"
+              @change="
+                state.ingredients[index + '-' + ingredientIndex] =
+                  $event.target.checked
+              "
               :id="'ingredient-' + index + '-' + ingredientIndex"
               :aria-labelledby="
                 'ingredient-label' + index + '-' + ingredientIndex
@@ -59,10 +66,19 @@
 </template>
 
 <script lang="ts">
-//import getRecipe from "../data/recipes.json";
+import { onMounted, ref } from "vue";
+import { useRecipeState } from "../utils/recipeState";
+import {
+  scaleQuantity,
+  getIngredientDisplayName,
+} from "../utils/scaleQuantity";
 
 export default {
   props: {
+    recipeId: {
+      type: String,
+      required: true,
+    },
     ingredients: {
       type: Object,
       required: true,
@@ -72,163 +88,44 @@ export default {
       required: true,
     },
   },
-  data() {
+  setup(props) {
+    // Komponenten server-rendres (client:idle). Kokkemodus kan ha lest inn
+    // lagrede valg før denne hydreres, så vi viser standardverdier frem til
+    // vi selv er montert – ellers blir det hydration mismatch.
+    const isMounted = ref(false);
+    onMounted(() => (isMounted.value = true));
     return {
-      portion: this.portions,
+      state: useRecipeState(props.recipeId, props.portions),
+      isMounted,
     };
   },
-  methods: {
-    getIngredientDisplayName(ingredient) {
-      if (ingredient.details) {
-        return `${ingredient.name} (${ingredient.details})`;
-      }
-      return ingredient.name;
+  computed: {
+    portion() {
+      return this.isMounted ? this.state.portion : this.portions;
     },
+  },
+  methods: {
     calculateCombinedIngredient(quantity: string, name: string) {
       const adjusted = this.calculateAdjustedQuantity(quantity);
       return `${adjusted}\u00A0${name}`;
     },
+    isChecked(key) {
+      return this.isMounted && !!this.state.ingredients[key];
+    },
+    setPortion(value) {
+      const n = parseInt(value, 10);
+      if (n > 0) this.state.portion = n;
+    },
     decreaseServing() {
-      this.portion = this.portion - 1;
+      if (this.state.portion > 1) this.state.portion -= 1;
     },
     increaseServing() {
-      this.portion = this.portion + 1;
+      this.state.portion += 1;
     },
     calculateAdjustedQuantity(originalQuantity) {
-      // Adjust the quantity based on the selected portion
-
-      // Handle empty or invalid quantities
-      if (!originalQuantity || originalQuantity.trim() === "") {
-        return "";
-      }
-
-      // Handle ranges with fractions first (like "1/2-1 dl", "1/4-2 stk")
-      const rangeWithFractionMatch = originalQuantity.match(
-        /(\d+\/\d+)\s*-\s*([\d.]+)\s*([^\d\s\/-]+)/
-      );
-      if (rangeWithFractionMatch) {
-        const fraction = rangeWithFractionMatch[1];
-        const secondValue = rangeWithFractionMatch[2];
-        const unit = rangeWithFractionMatch[3];
-
-        // Convert fraction to decimal for calculation
-        const [numerator, denominator] = fraction.split("/").map(Number);
-        const decimalValue = numerator / denominator;
-        const secondNumericValue = parseFloat(secondValue);
-
-        // Adjust both values based on the selected portion
-        const adjustedFirst = (decimalValue / this.portions) * this.portion;
-        const adjustedSecond =
-          (secondNumericValue / this.portions) * this.portion;
-
-        // Format both values as decimals for consistency in ranges
-        const formattedFirst =
-          adjustedFirst % 1 === 0
-            ? adjustedFirst.toFixed(0)
-            : adjustedFirst.toFixed(1);
-
-        const formattedSecond =
-          adjustedSecond % 1 === 0
-            ? adjustedSecond.toFixed(0)
-            : adjustedSecond.toFixed(1);
-
-        return `${formattedFirst}-${formattedSecond} ${unit}`;
-      }
-
-      // Handle simple fractions (like "1/2 dl", "1/4 stk")
-      const fractionMatch = originalQuantity.match(
-        /(\d+\/\d+)\s*([^\d\s\/-]+)/
-      );
-      if (fractionMatch) {
-        const fraction = fractionMatch[1];
-        const unit = fractionMatch[2];
-
-        // Convert fraction to decimal for calculation
-        const [numerator, denominator] = fraction.split("/").map(Number);
-        const decimalValue = numerator / denominator;
-
-        // Adjust the numeric value based on the selected portion
-        const adjustedValue = (decimalValue / this.portions) * this.portion;
-
-        // Always format as decimal for consistency
-        const formattedValue =
-          adjustedValue % 1 === 0
-            ? adjustedValue.toFixed(0)
-            : adjustedValue.toFixed(1);
-        return `${formattedValue} ${unit}`;
-      }
-
-      // Extract the numeric value and unit from the original quantity
-      // Updated regex to handle ranges with spaces around hyphen
-      const match = originalQuantity.match(/([\d.\s-]+)\s*([^\d\s-]+)/);
-
-      if (match) {
-        // Clean up the numeric part by removing extra spaces
-        const numericPart = match[1].trim();
-        const unit = match[2];
-
-        // Check if it's a range (contains hyphen and has spaces around it)
-        const isRange =
-          numericPart.includes("-") ||
-          numericPart.includes(" -") ||
-          numericPart.includes("- ");
-
-        if (isRange) {
-          // Handle the case where the original quantity is a range
-          // Split on hyphen and clean up spaces
-          const rangeParts = numericPart
-            .split(/-|\s-\s|\s-/)
-            .map((part) => part.trim())
-            .filter((part) => part);
-          const unit = match[2];
-
-          // Adjust each part of the range based on the selected portion
-          const adjustedRange = rangeParts.map((part) => {
-            const numericValue = parseFloat(part);
-
-            // Validate that we have a valid number
-            if (isNaN(numericValue)) {
-              return part; // Return original if not a valid number
-            }
-
-            const adjustedValue = (numericValue / this.portions) * this.portion;
-            const formattedValue =
-              adjustedValue % 1 === 0
-                ? adjustedValue.toFixed(0)
-                : adjustedValue.toFixed(1);
-
-            return formattedValue;
-          });
-
-          // You may want to format the quantity here if needed
-          return `${adjustedRange.join("-")} ${unit}`;
-        } else {
-          // Handle the case where the original quantity is a single value
-          const numericValue = parseFloat(numericPart);
-
-          // Validate that we have a valid number
-          if (isNaN(numericValue)) {
-            return originalQuantity; // Return original if not a valid number
-          }
-
-          const unit = match[2];
-
-          // Adjust the numeric value based on the selected portion
-          const adjustedValue = (numericValue / this.portions) * this.portion;
-
-          const formattedValue =
-            adjustedValue % 1 === 0
-              ? adjustedValue.toFixed(0)
-              : adjustedValue.toFixed(1);
-
-          // You may want to format the quantity here if needed
-          return formattedValue + " " + unit;
-        }
-      } else {
-        // If no numeric value and unit are found, return the original quantity
-        return originalQuantity;
-      }
+      return scaleQuantity(originalQuantity, this.portions, this.portion);
     },
+    getIngredientDisplayName,
   },
 };
 </script>
