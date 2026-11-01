@@ -10,6 +10,10 @@ export default defineConfig({
   site: "https://www.foodstalker.no",
   integrations: [vue(), sitemap()],
   output: "static",
+  redirects: {
+    // 17. mai-menyen lå tidligere på /themenu
+    "/themenu": "/menyer/17-mai",
+  },
   image: {
     domains: ["https://foodstalker.b-cdn.net"],
     remotePatterns: [

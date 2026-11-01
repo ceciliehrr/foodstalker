@@ -1,0 +1,49 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Divider from "../../components/Divider.astro";
+import SmallCards from "../../components/cards/SmallCards.vue";
+import { menus } from "../../config/menus.js";
+---
+
+<Layout
+  title="Menyer"
+  description="Menyer fra Foodstalker – komplette oppsett til selskap og høytider, med lenker til alle oppskriftene."
+>
+  <Divider text="Menyer" />
+  <p class="fs-menus__intro">
+    Komplette menyer vi har satt sammen til selskap og høytider. Klikk deg inn
+    for å se hele menyen med oppskrifter.
+  </p>
+  <ul class="fs-menus">
+    {
+      menus.map((menu) => (
+        <li>
+          <SmallCards
+            title={menu.title}
+            description={menu.description}
+            image={menu.image}
+            href={`/menyer/${menu.slug}`}
+            disableTruncation
+          />
+        </li>
+      ))
+    }
+  </ul>
+</Layout>
+
+<style lang="scss">
+  .fs-menus__intro {
+    text-align: center;
+    max-width: 36rem;
+    margin: 0 auto 2rem;
+  }
+  .fs-menus {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto 3rem;
+    max-width: 48rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+</style>
