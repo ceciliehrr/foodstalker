@@ -21,14 +21,6 @@ export default defineConfig({
   },
 
   vite: {
-    resolve: {
-      alias: {
-        "~/*": ["./*"],
-        "@/*": ["./*"],
-        "~~/*": ["./*"],
-        "@@/*": ["./*"],
-      },
-    },
     css: {
       preprocessorOptions: {
         scss: {

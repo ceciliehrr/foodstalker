@@ -16,11 +16,11 @@ import Grid from "../../components/Grid.vue";
 import Divider from "../../components/Divider.astro";
 
 export async function getStaticPaths() {
-  const recipes = getRecipes;
-  return recipes.map((post) => {
+  const categories = [...new Set(getRecipes.map((recipe) => recipe.category))];
+  return categories.map((category) => {
     return {
-      params: { kategori: post.category },
-      props: { post },
+      params: { kategori: category },
+      props: { post: { category } },
     };
   });
 }
