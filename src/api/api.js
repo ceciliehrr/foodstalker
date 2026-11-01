@@ -2,7 +2,7 @@ export async function getTopList(apiKey, recipes) {
     try {
       // Fetch data from Plausible API
       const response = await fetch(
-        `https://plausible.io/api/v1/stats/breakdown?site_id=foodstalker.no&period=30d&property=event:page&limit=10`,
+        `https://plausible.io/api/v1/stats/breakdown?site_id=foodstalker.no&period=30d&property=event:page&limit=50`,
         {
           method: "GET",
           headers: {
@@ -38,24 +38,17 @@ export async function getTopList(apiKey, recipes) {
         .filter((page) => page !== null); // Filter out any null entries
   
   
-      // Sort recipes by visitors in descending order
-      recipesData.sort((a, b) => b.visitors - a.visitors);
-  
-      // Take the top 5 recipes
-      const topFiveRecipes = recipesData.slice(0, 5);
-  
-      // Map recipe IDs to the actual recipes from the input recipes array
-      const sortedRecipes = topFiveRecipes.map(({ id, visitors }) => {
-        const recipe = recipes.find((recipe) => recipe.id === id);
-        if (recipe) {
-          return {
-            ...recipe, // Spread recipe details
-            visitors,  // Add the visitors count
-          };
-        }
-        return null;
-      }).filter(recipe => recipe !== null); // Filter out any null recipes
-  
+      // Keep only real recipes (skips category pages like /oppskrift/helg/),
+      // sort by visitors and take the top 5
+      const sortedRecipes = recipesData
+        .map(({ id, visitors }) => {
+          const recipe = recipes.find((recipe) => recipe.id === id);
+          return recipe ? { ...recipe, visitors } : null;
+        })
+        .filter((recipe) => recipe !== null)
+        .sort((a, b) => b.visitors - a.visitors)
+        .slice(0, 5);
+
       return sortedRecipes;
     } catch (error) {
       console.error("Error in getTopList:", error);
